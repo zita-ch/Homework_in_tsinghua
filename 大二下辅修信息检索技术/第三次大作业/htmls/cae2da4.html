@@ -1,0 +1,704 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>工控人家园 工控论坛</title>
+<meta content="工控,工控论坛,工控人,工控家园,工控人家园,三菱工控论坛,西门子工控论坛,欧姆龙工控论坛,工控网" name="keywords"/>
+<meta content="工控人家园提供资料下载，技术交流，讨论工业自动化产品及应用，设有综合讨论，资料互助，三菱工控论坛，西门子工控论坛等版面" name="description"/>
+<link href="http://www.ymmfa.com/bbs/" rel="archives" title="工控人家园"/>
+<link href="http://www.ymmfa.com/rss.php" rel="alternate" title="RSS" type="application/rss+xml"/>
+<link href="favicon.ico" rel="Shortcut Icon"/>
+<link href="favicon.ico" rel="Bookmark"/>
+<base href="http://www.ymmfa.com/" id="headbase"/>
+<style type="text/css">
+#notice li{list-style:none;float:left;height:18px;white-space:nowrap;}
+.t table tr.tr2 td.f{width:22%;}
+.t table tr.tr2 td.e{width:10em;}
+</style>
+<link href="/data/bbscache/wind.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" src="js/pw_ajax.js" type="text/javascript"></script>
+</head>
+<body onkeydown="try{keyCodes(event);}catch(e){}"><div></div>
+<div id="toptool">
+</div>
+<div id="wrapA">
+<div id="header">
+<table align="center" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr>
+<td class="banner"><a href="http://www.ymmfa.com/index.php"><img alt="工控人家园" height="80" src="logo.png" width="300"/></a></td>
+<td align="right" class="banner" id="banner"></td>
+</tr>
+<tr><td align="center" colspan="2" height="1"></td></tr>
+</tbody></table>
+<div class="c"></div>
+<div id="mainNav">
+<div style="position:absolute;bottom:0;width:250px;">
+<div class="one-hidden" id="one-key" onclick="setTimeout(showInfoBox,200);"></div>
+<div id="user-login">
+<a href="login.php" rel="nofollow" style="color:#FFFF00">用户登陆</a>
+ <a href="rs.php" rel="nofollow" style="color:#FFFF00">免费注册</a>
+ <a href="sendpwd.php" rel="nofollow" style="color:#FFFF00">找回密码</a>
+</div>
+</div>
+<div style="padding-left:250px;">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr>
+<td>
+<ul class="guide" id="guide">
+<li><a href="http://www.ymmfa.com/message.php" rel="nofollow">站内短信</a></li>
+<li><a href="http://www.ymmfa.com/search.php" rel="nofollow">论坛搜索</a></li>
+<li><a href="http://www.ymmfa.com/hack-gkH_name-toolcenter.html" rel="nofollow">道具中心</a></li>
+<li><a href="http://www.ymmfa.com/sort-gkaction-member.html" rel="nofollow"><font color="#33FF00">统计排行</font></a></li>
+<li><a href="http://www.ymmfa.com/hack-gkH_name-medal-action-list.html" rel="nofollow"><font color="#77FF00">勋章中心</font></a></li>
+<li><a href="http://down.ymmfa.com/" target="_blank">工控下载</a></li>
+<li><a href="http://www.ymmfa.com/sell.php" target="_blank">购买产品</a></li>
+</ul>
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+<div class="cc" id="infobox">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr>
+<td id="user_info" style="padding-right:2em" width="53%">
+<div class="fl" style="padding:.5em 0 0 .5em">
+<div>
+<div class="fl" style="padding:0 0 0 .1em;">
+<form action="login.php" method="post" name="login_FORM">
+<input name="jumpurl" type="hidden" value="http://www.ymmfa.com/index.php"/>
+<input name="step" type="hidden" value="2"/>
+<input name="cktime" type="hidden" value="604800"/>
+<div>
+<input checked="" name="lgt" type="radio" value="0"/><span id="login_0">用户名</span>
+<div><input class="input gray" id="pwuser" name="pwuser" onblur="if(getObj('logintab')) getObj('logintab').style.display='';checkinput(this,'input');" onfocus="checkinput(this);" style="width:85px" tabindex="1" value="请输入用户名"/> 
+		   密码<input class="input" name="pwpwd" onclick="this.value='';" style="width:85px;" tabindex="2" type="password"/> 
+  输入答案6+7+8=？<input class="input" name="qanswer" style="width:30px" tabindex="7"/><input name="qkey" type="hidden" value="4"/> 
+		  <input class="btn" style="width:60px" tabindex="8" type="submit" value="登 陆"/>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+<script language="JavaScript">
+function showcustomquest(qid){
+	getObj('customquest').style.display = qid==-1 ? '' : 'none';
+}
+function checkinput(obj,val){
+	if (obj.className.indexOf('gray')!=-1) {
+		obj.value = '';
+		obj.className = obj.className.replace('gray', 'black');
+	} else if (val=='input' && obj.value=='') {
+		var lgtobj = document.getElementsByName('lgt');
+		for (var i=0;i<lgtobj.length;i++) {
+			if (lgtobj[i].checked == true) {
+				var objid = lgtobj[i].value;
+				obj.value = obj.defaultValue = '输入' + getObj('login_'+objid).innerHTML;
+			}
+		}
+		if (obj.className.indexOf('black') == -1) {
+			obj.className += ' gray';
+		} else {
+			obj.className = obj.className.replace('black', 'gray');
+		}
+	}
+}
+function changeType(obj){
+	var objvalue = obj.value;
+	getObj('pwuser').value = '输入' + getObj('login_' + objvalue).innerHTML;
+	if (getObj('pwuser').className.indexOf('black') == -1 && getObj('pwuser').className.indexOf('gray') == -1) {
+		getObj('pwuser').className += ' gray';
+	} else {
+		getObj('pwuser').className = getObj('pwuser').className.replace('black', 'gray');
+	}
+}
+
+</script>
+</td>
+<td>
+<div class="fr tar" style=" padding:5px;">
+<div>今日289 帖，昨日311 帖，现有153500 篇主题，1551251 个帖子</div>
+<div align="right" class="gray">
+<form action="search.php?" method="post">
+<table><tbody><tr><td>提问前可以先搜索一下: 
+<input name="step" type="hidden" value="2"/>
+<input name="sch_time" type="hidden" value="all"/>
+<input name="keyword" size="20" type="text"/>
+<input type="submit" value="搜索"/>
+</td></tr></tbody></table></form></div>
+<div><a href="home.php" target="_blank"><font color="#8A2BE2">社区首页</font></a> |
+<a href="search-gkdigest-1.html" rel="nofollow" target="_blank"><font color="green">查阅精华</font></a> |
+<a href="news.php" target="_blank"><font color="blue">最新主题</font></a> |
+<a href="search-gksch_time-all-orderway-lastpost-asc-desc-newatc-1.html" rel="nofollow" target="_blank"><font color="red">最新回复</font></a></div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<script language="javascript">
+function showInfoBox(){
+	if (IsElement('infobox')) {
+		thisinfobox = getObj('infobox');
+		var date = new Date();
+		if (thisinfobox.style.display == 'none') {
+			thisinfobox.style.display = '';
+			getObj('one-key').className = 'one-hidden';
+			document.cookie="inforhide=1;expires=" + date.toGMTString() + " path=/";
+		} else {
+			thisinfobox.style.display = 'none';
+			getObj('one-key').className = 'one-show';
+			date.setTime(date.getTime()+86400000);
+			document.cookie="inforhide=1;expires=" + date.toGMTString() + " path=/";
+		}
+	}
+}
+</script>
+</div>
+<div id="main">
+<!--
+-->
+<div class="bdbA">
+<div id="breadcrumbs"><a class="crumbs-item"><strong>公告</strong></a>
+<div id="notice" style="overflow: hidden;">
+<div id="notice0" style="width:98%;height: 18px;line-height:18px;overflow-y: hidden;">
+<ul style="margin: 0; padding: 0;">
+<b><li><a href="http://www.ymmfa.com/read-gktid-1640377.html"><font color="red">请注意账号安全</font></a> <span class="f9 gray">17-12-26</span></li><li><a href="http://www.ymmfa.com/read-gktid-142599.html"><font color="green">每日签到专用贴</font></a> <span class="f9 gray">12-03-10</span></li></b>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!--ads begin-->
+<div style="margin-top:7px;"></div>
+<div class="contentc"></div>
+<div id="content">
+<div class="contentwrap z">
+<div class="t t4" id="t_49">
+<table cellpadding="0" cellspacing="0" style="border-collapse: collapse; table-layout:fixed" width="100%">
+<tbody><tr>
+<th class="h" colspan="3"><a class="closeicon fr" onclick="return IndexDeploy('49',0)" style="cursor:pointer;"><img height="17" id="img_49" src="images/wind/index/cate_fold.gif" width="12"/></a>
+				»
+				<h2><a class="cfont" href="index-gkcateid-49.html">站务管理</a></h2>
+</th>
+</tr>
+<tr>
+<td colspan="3" style="padding:0;border-bottom:0;font:0/0 Arial"></td>
+</tr>
+</tbody><tbody class="across" id="cate_49" style="display:;">
+<tr class="tr1 tr">
+<td class="td1 f_one" id="fid_20" style="padding:0" title="主题 : 11  帖子 : 167">
+<table cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr><td style="width:48px;">
+<a href="thread-gkfid-20.html"><img height="42" src="ico/wzgg.gif" style="overflow:hidden;" width="70"/></a>
+</td><td>
+<div class="fl">
+<h3>
+<a class="fnamecolor b" href="thread-gkfid-20.html" id="fn_20">
+网站公告
+</a>
+<span class="f10 s3 fn">( 0 )</span>
+</h3>
+<div class="c"></div>
+<span class="smalltxt gray" id="desc_20"><font color="#FF9900">
+发布各种公告，奖励与惩罚宣布</font><br/><font color="#5495A0"> 
+此区只能回复，不允许发表主题 
+</font></span>
+</div>
+</td></tr></tbody></table>
+</td>
+<td class="td1 f_one" id="fid_59" style="padding:0" title="主题 : 17  帖子 : 20">
+<table cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr><td style="width:48px;">
+<a href="thread-gkfid-59.html"><img height="42" src="ico/ltbz.gif" style="overflow:hidden;" width="70"/></a>
+</td><td>
+<div class="fl">
+<h3>
+<a class="fnamecolor b" href="thread-gkfid-59.html" id="fn_59">
+论坛帮助
+</a>
+<span class="f10 s3 fn">( 0 )</span>
+</h3>
+<div class="c"></div>
+<span class="smalltxt gray" id="desc_59"><font color="#FF9900">
+新人请来看，更快熟悉使用论坛</font><br/><font color="#5495A0">
+此区只能回复，不允许发表主题 
+</font></span>
+</div>
+</td></tr></tbody></table>
+</td>
+<td class="td1 f_one" id="fid_32" style="padding:0" title="主题 : 1041  帖子 : 3813">
+<table cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr><td style="width:48px;">
+<a href="thread-gkfid-32.html"><img height="42" src="ico/ssjy.gif" style="overflow:hidden;" width="70"/></a>
+</td><td>
+<div class="fl">
+<h3>
+<a class="fnamecolor b" href="thread-gkfid-32.html" id="fn_32">
+站务管理
+</a>
+<span class="f10 s3 fn">( 0 )</span>
+</h3>
+<div class="c"></div>
+<span class="smalltxt gray" id="desc_32"><font color="#FF9900">
+家园站务管理，欢迎建议和投诉</font><br/><font color="#5495A0"> 
+处理账号、贴子、侵权方面问题</font></span>
+</div>
+</td></tr></tbody></table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="t" id="t_4">
+<table cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr>
+<th class="h" colspan="6"><a class="closeicon fr" onclick="return IndexDeploy('4',0)" style="cursor:pointer;"><img height="17" id="img_4" src="images/wind/index/cate_fold.gif" width="12"/></a>
+<h2>» <a class="cfont" href="index-gkcateid-4.html">工控论坛</a></h2>
+</th>
+</tr>
+<tr></tr>
+</tbody><tbody id="cate_4" style="display:;">
+<tr class="tr2">
+<td class="tac" colspan="2" width="*"> </td>
+<td class="tal y-style e" width="100"> </td>
+<td class="tal y-style f"> </td>
+<td class="tal" style="width:120px;"> </td>
+</tr>
+<tr class="tr3 f_one" id="fid_18">
+<td class="icon tac" width="45"><a href="thread-gkfid-18.html" target="_blank"><img height="26" src="images/wind/new.gif" width="23"/></a></td>
+<th>
+<a href="thread-gkfid-18.html" target="_blank"><img align="left" height="44" src="ico/2.gif" style="padding-right:5px" width="80"/></a>
+<h3 class="b"><a href="thread-gkfid-18.html" id="fn_18">综合讨论</a></h3>
+<span class="s3 f10">(36)</span>
+<br/>
+<span class="smalltxt gray" id="desc_18">工业自动化技术交流，疑难解答</span>
+</th>
+<td class="tal y-style f10 e">56479 / <span class="gray2 f10">457917</span><br/> </td>
+<th>
+<a class="a2" href="read-gktid-1681643.html">欧姆龙CP1E PLC使用绝对脉冲为何没有脉 ..</a><br/>
+<span class="gray2"><span class="f12">zhaoliguo</span> <span class="f9">[2020-05-09 20:35]</span></span>
+</th>
+<td class="y-style" style="word-break:keep-all;word-wrap:no-wrap;width:140px;border-right:none;">
+					 <!-- guochunyi zyfzxh sjm213 ymmfa  -->
+</td>
+</tr>
+<tr class="tr3 f_one" id="fid_19">
+<td class="icon tac" width="45"><a href="thread-gkfid-19.html" target="_blank"><img height="26" src="images/wind/old.gif" width="23"/></a></td>
+<th>
+<a href="thread-gkfid-19.html" target="_blank"><img align="left" height="44" src="ico/1.gif" style="padding-right:5px" width="80"/></a>
+<h3 class="b"><a href="thread-gkfid-19.html" id="fn_19">资料互助</a></h3>
+<span class="s3 f10">(3)</span>
+<br/>
+<span class="smalltxt gray" id="desc_19">大家互相交流共享各种资料软件</span>
+</th>
+<td class="tal y-style f10 e">14039 / <span class="gray2 f10">299025</span><br/> </td>
+<th>
+<a class="a2" href="read-gktid-1681635.html">安川机器人 motocom32 5.10</a><br/>
+<span class="gray2"><span class="f12">firec</span> <span class="f9">[2020-05-09 17:44]</span></span>
+</th>
+<td class="y-style" style="word-break:keep-all;word-wrap:no-wrap;width:140px;border-right:none;">
+					 <!-- zyfzxh sjm213 wsir123 ymmfa  -->
+</td>
+</tr>
+<tr class="tr3 f_one" id="fid_36">
+<td class="icon tac" width="45"><a href="thread-gkfid-36.html" target="_blank"><img height="26" src="images/wind/new.gif" width="23"/></a></td>
+<th>
+<a href="thread-gkfid-36.html" target="_blank"><img align="left" height="44" src="ico/3.gif" style="padding-right:5px" width="80"/></a>
+<h3 class="b"><a href="thread-gkfid-36.html" id="fn_36">程序样例</a></h3>
+<span class="s3 f10">(9)</span>
+<br/>
+<span class="smalltxt gray" id="desc_36">各种工控程序样例的下载和交流</span>
+</th>
+<td class="tal y-style f10 e">6053 / <span class="gray2 f10">136143</span><br/> </td>
+<th>
+<a class="a2" href="read-gktid-1681374.html">1屏双机信捷XD螺丝机</a><br/>
+<span class="gray2"><span class="f12">lsr0404</span> <span class="f9">[2020-05-09 20:39]</span></span>
+</th>
+<td class="y-style" style="word-break:keep-all;word-wrap:no-wrap;width:140px;border-right:none;">
+					 <!-- wxh0734 zyfzxh sjm213 wsir123 ymmfa  -->
+</td>
+</tr>
+<tr><td class="f_one" colspan="6" style="height:8px"></td></tr>
+</tbody>
+</table>
+</div>
+<div class="t" id="t_44">
+<table cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr>
+<th class="h" colspan="6"><a class="closeicon fr" onclick="return IndexDeploy('44',0)" style="cursor:pointer;"><img height="17" id="img_44" src="images/wind/index/cate_fold.gif" width="12"/></a>
+<h2>» <a class="cfont" href="index-gkcateid-44.html">工控品牌</a></h2>
+</th>
+</tr>
+<tr></tr>
+</tbody><tbody id="cate_44" style="display:;">
+<tr class="tr2">
+<td class="tac" colspan="2" width="*"> </td>
+<td class="tal y-style e" width="100"> </td>
+<td class="tal y-style f"> </td>
+<td class="tal" style="width:120px;"> </td>
+</tr>
+<tr class="tr3 f_one" id="fid_52">
+<td class="icon tac" width="45"><a href="thread-gkfid-52.html" target="_blank"><img height="26" src="images/wind/new.gif" width="23"/></a></td>
+<th>
+<a href="thread-gkfid-52.html" target="_blank"><img align="left" height="44" src="ico/sldj.gif" style="padding-right:5px" width="80"/></a>
+<h3 class="b"><a href="thread-gkfid-52.html" id="fn_52">三菱工控论坛</a></h3>
+<span class="s3 f10">(33)</span>
+<br/>
+<span class="smalltxt gray" id="desc_52">讨论三菱PLC、触摸屏、变频器、伺服系统</span>
+</th>
+<td class="tal y-style f10 e">27534 / <span class="gray2 f10">228757</span><br/> </td>
+<th>
+<a class="a2" href="read-gktid-1681605.html">电机高速重复动作，10次/s，没有思路</a><br/>
+<span class="gray2"><span class="f12">13771165220</span> <span class="f9">[2020-05-09 20:26]</span></span>
+</th>
+<td class="y-style" style="word-break:keep-all;word-wrap:no-wrap;width:140px;border-right:none;">
+					 <!-- guochunyi zyfzxh sjm213 wsir123 ymmfa  -->
+</td>
+</tr>
+<tr class="tr3 f_one" id="fid_45">
+<td class="icon tac" width="45"><a href="thread-gkfid-45.html" target="_blank"><img height="26" src="images/wind/new.gif" width="23"/></a></td>
+<th>
+<a href="thread-gkfid-45.html" target="_blank"><img align="left" height="44" src="ico/xmz.gif" style="padding-right:5px" width="80"/></a>
+<h3 class="b"><a href="thread-gkfid-45.html" id="fn_45">西门子工控论坛</a></h3>
+<span class="s3 f10">(7)</span>
+<br/>
+<span class="smalltxt gray" id="desc_45">讨论西门子PLC、变频器、触摸屏、工控机</span>
+</th>
+<td class="tal y-style f10 e">14683 / <span class="gray2 f10">115403</span><br/> </td>
+<th>
+<a class="a2" href="read-gktid-1669767.html">求助博图V14更换精致面板硬件软件报错， ..</a><br/>
+<span class="gray2"><span class="f12">会飞的猪</span> <span class="f9">[2020-05-09 19:47]</span></span>
+</th>
+<td class="y-style" style="word-break:keep-all;word-wrap:no-wrap;width:140px;border-right:none;">
+					 <!-- guochunyi zyfzxh sjm213 bhqt  -->
+</td>
+</tr>
+<tr class="tr3 f_one" id="fid_53">
+<td class="icon tac" width="45"><a href="thread-gkfid-53.html" target="_blank"><img height="26" src="images/wind/old.gif" width="23"/></a></td>
+<th>
+<a href="thread-gkfid-53.html" target="_blank"><img align="left" height="44" src="ico/omn.gif" style="padding-right:5px" width="80"/></a>
+<h3 class="b"><a href="thread-gkfid-53.html" id="fn_53">欧姆龙工控论坛</a></h3>
+<span class="s3 f10">(3)</span>
+<br/>
+<span class="smalltxt gray" id="desc_53">讨论欧姆龙PLC、变频器、欧姆龙低压电器</span>
+</th>
+<td class="tal y-style f10 e">6266 / <span class="gray2 f10">58324</span><br/> </td>
+<th>
+<a class="a2" href="read-gktid-1681607.html">欧姆龙CP1E PLC使用绝对脉冲为何没有脉 ..</a><br/>
+<span class="gray2"><span class="f12">zhaoliguo</span> <span class="f9">[2020-05-09 12:03]</span></span>
+</th>
+<td class="y-style" style="word-break:keep-all;word-wrap:no-wrap;width:140px;border-right:none;">
+					 <!-- guochunyi zyfzxh sjm213 hlq_0815  -->
+</td>
+</tr>
+<tr class="tr3 f_one" id="fid_46">
+<td class="icon tac" width="45"><a href="thread-gkfid-46.html" target="_blank"><img height="26" src="images/wind/old.gif" width="23"/></a></td>
+<th>
+<a href="thread-gkfid-46.html" target="_blank"><img align="left" height="44" src="ico/hmi.gif" style="padding-right:5px" width="80"/></a>
+<h3 class="b"><a href="thread-gkfid-46.html" id="fn_46">触摸屏技术论坛</a></h3>
+<span class="s3 f10">(1)</span>
+<br/>
+<span class="smalltxt gray" id="desc_46">讨论proface,Eview,威纶,海泰克等触摸屏</span>
+</th>
+<td class="tal y-style f10 e">8031 / <span class="gray2 f10">52509</span><br/> </td>
+<th>
+<a class="a2" href="read-gktid-1681439.html">威纶MT6056I与S7-200的程序</a><br/>
+<span class="gray2"><span class="f12">flit</span> <span class="f9">[2020-05-09 08:45]</span></span>
+</th>
+<td class="y-style" style="word-break:keep-all;word-wrap:no-wrap;width:140px;border-right:none;">
+					 <!-- guochunyi zyfzxh sjm213 wsir123 ymmfa  -->
+</td>
+</tr>
+<tr><td class="f_one" colspan="6" style="height:8px"></td></tr>
+</tbody>
+</table>
+</div>
+<div class="t" id="t_71">
+<table cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr>
+<th class="h" colspan="6"><a class="closeicon fr" onclick="return IndexDeploy('71',0)" style="cursor:pointer;"><img height="17" id="img_71" src="images/wind/index/cate_fold.gif" width="12"/></a>
+<h2>» <a class="cfont" href="index-gkcateid-71.html">工控交流</a></h2>
+</th>
+</tr>
+<tr></tr>
+</tbody><tbody id="cate_71" style="display:;">
+<tr class="tr2">
+<td class="tac" colspan="2" width="*"> </td>
+<td class="tal y-style e" width="100"> </td>
+<td class="tal y-style f"> </td>
+<td class="tal" style="width:120px;"> </td>
+</tr>
+<tr class="tr3 f_one" id="fid_12">
+<td class="icon tac" width="45"><a href="thread-gkfid-12.html" target="_blank"><img height="26" src="images/wind/old.gif" width="23"/></a></td>
+<th>
+<a href="thread-gkfid-12.html" target="_blank"><img align="left" height="44" src="ico/8.gif" style="padding-right:5px" width="80"/></a>
+<h3 class="b"><a href="thread-gkfid-12.html" id="fn_12">工控二手信息</a></h3>
+<span class="s3 f10">(0)</span>
+<br/>
+<span class="smalltxt gray" id="desc_12">网友发布二手PLC、变频器、触摸屏、学习用品等</span>
+</th>
+<td class="tal y-style f10 e">1231 / <span class="gray2 f10">3574</span><br/> </td>
+<th>
+<a class="a2" href="read-gktid-1681594.html">一批工程剩下的plc 触摸屏有意请电1581 ..</a><br/>
+<span class="gray2"><span class="f12">xinpingliu</span> <span class="f9">[2020-05-08 21:49]</span></span>
+</th>
+<td class="y-style" style="word-break:keep-all;word-wrap:no-wrap;width:140px;border-right:none;">
+					 <!-- ymmfa  -->
+</td>
+</tr>
+<tr class="tr3 f_one" id="fid_39">
+<td class="icon tac" width="45"><a href="thread-gkfid-39.html" target="_blank"><img height="26" src="images/wind/old.gif" width="23"/></a></td>
+<th>
+<a href="thread-gkfid-39.html" target="_blank"><img align="left" height="44" src="ico/9.gif" style="padding-right:5px" width="80"/></a>
+<h3 class="b"><a href="thread-gkfid-39.html" id="fn_39">工控人才交流</a></h3>
+<span class="s3 f10">(1)</span>
+<br/>
+<span class="smalltxt gray" id="desc_39">发布人才交流的信息，比如：招聘，求职，私活等</span>
+</th>
+<td class="tal y-style f10 e">2180 / <span class="gray2 f10">9768</span><br/> </td>
+<th>
+<a class="a2" href="read-gktid-1681625.html">东莞及周边非标自动化程序编写、设备调试</a><br/>
+<span class="gray2"><span class="f12">weibo1113</span> <span class="f9">[2020-05-09 14:56]</span></span>
+</th>
+<td class="y-style" style="word-break:keep-all;word-wrap:no-wrap;width:140px;border-right:none;">
+					 <!-- ymmfa  -->
+</td>
+</tr>
+<tr><td class="f_one" colspan="6" style="height:8px"></td></tr>
+</tbody>
+</table>
+</div>
+<div class="t t4" id="t_22">
+<table cellpadding="0" cellspacing="0" style="border-collapse: collapse; table-layout:fixed" width="100%">
+<tbody><tr>
+<th class="h" colspan="3"><a class="closeicon fr" onclick="return IndexDeploy('22',0)" style="cursor:pointer;"><img height="17" id="img_22" src="images/wind/index/cate_fold.gif" width="12"/></a>
+				»
+				<h2><a class="cfont" href="index-gkcateid-22.html">下载专区</a></h2>
+</th>
+</tr>
+<tr>
+<td colspan="3" style="padding:0;border-bottom:0;font:0/0 Arial"></td>
+</tr>
+</tbody><tbody class="across" id="cate_22" style="display:;">
+<tr class="tr1 tr">
+<td class="td1 f_one" id="fid_56" style="padding:0" title="主题 : 30  帖子 : 52">
+<table cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr><td style="width:48px;">
+<div style="width:37px;text-align:center;height:65px; background:url(images/wind/old.gif) right center no-repeat; overflow:hidden"></div>
+</td><td>
+<div class="fl">
+<h3>
+<a class="fnamecolor b" href="thread-gkfid-56.html" id="fn_56">
+三菱PLC软件下载  三菱PLC编程软件
+</a>
+<span class="f10 s3 fn">( 0 )</span>
+</h3>
+<div class="c"></div>
+<span class="smalltxt gray" id="desc_56"><font color="#FF9900">三菱PLC编程软件、仿真软件、设置软件下载</font>
+<br/>此区只能看贴和下载，不能发表主题和回复</span>
+</div>
+</td></tr></tbody></table>
+</td>
+<td class="td1 f_one" id="fid_23" style="padding:0" title="主题 : 21  帖子 : 37">
+<table cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr><td style="width:48px;">
+<div style="width:37px;text-align:center;height:65px; background:url(images/wind/old.gif) right center no-repeat; overflow:hidden"></div>
+</td><td>
+<div class="fl">
+<h3>
+<a class="fnamecolor b" href="thread-gkfid-23.html" id="fn_23">
+FX系列PLC手册  三菱PLC编程手册
+</a>
+<span class="f10 s3 fn">( 0 )</span>
+</h3>
+<div class="c"></div>
+<span class="smalltxt gray" id="desc_23"><font color="#FF9900">三菱PLC编程手册、使用手册、说明书下载</font>
+<br/>此区只能看贴和下载，不能发表主题和回复</span>
+</div>
+</td></tr></tbody></table>
+</td>
+<td class="td1 f_one" id="fid_35" style="padding:0" title="主题 : 23  帖子 : 38">
+<table cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr><td style="width:48px;">
+<div style="width:37px;text-align:center;height:65px; background:url(images/wind/old.gif) right center no-repeat; overflow:hidden"></div>
+</td><td>
+<div class="fl">
+<h3>
+<a class="fnamecolor b" href="thread-gkfid-35.html" id="fn_35">
+Q系列PLC手册  三菱PLC使用手册
+</a>
+<span class="f10 s3 fn">( 0 )</span>
+</h3>
+<div class="c"></div>
+<span class="smalltxt gray" id="desc_35"><font color="#FF9900">Q-PLC编程手册、使用手册、模块手册下载</font>
+<br/>此区只能看贴和下载，不能发表主题和回复</span>
+</div>
+</td></tr></tbody></table>
+</td>
+</tr>
+<tr class="tr1 tr">
+<td class="td1 f_one" id="fid_25" style="padding:0" title="主题 : 19  帖子 : 33">
+<table cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr><td style="width:48px;">
+<div style="width:37px;text-align:center;height:65px; background:url(images/wind/old.gif) right center no-repeat; overflow:hidden"></div>
+</td><td>
+<div class="fl">
+<h3>
+<a class="fnamecolor b" href="thread-gkfid-25.html" id="fn_25">
+三菱触摸屏软件 三菱触摸屏编程手册
+</a>
+<span class="f10 s3 fn">( 0 )</span>
+</h3>
+<div class="c"></div>
+<span class="smalltxt gray" id="desc_25"><font color="#FF9900">三菱触摸屏软件、仿真软件、使用手册下载</font>
+<br/>此区只能看贴和下载，不能发表主题和回复</span>
+</div>
+</td></tr></tbody></table>
+</td>
+<td class="td1 f_one" id="fid_24" style="padding:0" title="主题 : 16  帖子 : 25">
+<table cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr><td style="width:48px;">
+<div style="width:37px;text-align:center;height:65px; background:url(images/wind/old.gif) right center no-repeat; overflow:hidden"></div>
+</td><td>
+<div class="fl">
+<h3>
+<a class="fnamecolor b" href="thread-gkfid-24.html" id="fn_24">
+三菱变频器说明书  三菱变频器设置软件
+</a>
+<span class="f10 s3 fn">( 0 )</span>
+</h3>
+<div class="c"></div>
+<span class="smalltxt gray" id="desc_24"><font color="#FF9900">三菱变频器手册、说明书、设置软件下载</font>
+<br/>此区只能看贴和下载，不能发表主题和回复</span>
+</div>
+</td></tr></tbody></table>
+</td>
+<td class="td1 f_one" id="fid_26" style="padding:0" title="主题 : 14  帖子 : 23">
+<table cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr><td style="width:48px;">
+<div style="width:37px;text-align:center;height:65px; background:url(images/wind/old.gif) right center no-repeat; overflow:hidden"></div>
+</td><td>
+<div class="fl">
+<h3>
+<a class="fnamecolor b" href="thread-gkfid-26.html" id="fn_26">
+三菱伺服使用手册 三菱伺服设置软件
+</a>
+<span class="f10 s3 fn">( 0 )</span>
+</h3>
+<div class="c"></div>
+<span class="smalltxt gray" id="desc_26"><font color="#FF9900">三菱伺服电机、服驱动器的手册和软件下载</font>
+<br/>此区只能看贴和下载，不能发表主题和回复</span>
+</div>
+</td></tr></tbody></table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="t" id="t_74">
+<table cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr>
+<th class="h" colspan="6"><a class="closeicon fr" onclick="return IndexDeploy('74',0)" style="cursor:pointer;"><img height="17" id="img_74" src="images/wind/index/cate_fold.gif" width="12"/></a>
+<h2>» <a class="cfont" href="index-gkcateid-74.html">产品发布</a></h2>
+</th>
+</tr>
+<tr></tr>
+</tbody><tbody id="cate_74" style="display:;">
+<tr class="tr2">
+<td class="tac" colspan="2" width="*"> </td>
+<td class="tal y-style e" width="100"> </td>
+<td class="tal y-style f"> </td>
+<td class="tal" style="width:120px;"> </td>
+</tr>
+<tr class="tr3 f_one" id="fid_75">
+<td class="icon tac" width="45"><a href="thread-gkfid-75.html" target="_blank"><img height="26" src="images/wind/old.gif" width="23"/></a></td>
+<th>
+<h3 class="b"><a href="thread-gkfid-75.html" id="fn_75">触摸屏发布</a></h3>
+<span class="s3 f10">(0)</span>
+<br/>
+<span class="smalltxt gray" id="desc_75"></span>
+</th>
+<td class="tal y-style f10 e">5 / <span class="gray2 f10">5</span><br/> </td>
+<th>
+<a class="a2" href="read-gktid-1661210.html">三菱触摸屏: GS2110-WTBD （10寸 彩色  ..</a><br/>
+<span class="gray2"><span class="f12">ymmfa</span> <span class="f9">[2018-12-17 21:41]</span></span>
+</th>
+<td class="y-style" style="word-break:keep-all;word-wrap:no-wrap;width:140px;border-right:none;">
+					 <!-- ymmfa  -->
+</td>
+</tr>
+<tr><td class="f_one" colspan="6" style="height:8px"></td></tr>
+</tbody>
+</table>
+</div>
+</div></div>
+<div class="c"></div>
+<script language="JavaScript" src="js/Deploy.js"></script>
+<div class="t">
+<table cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr>
+<th class="h" colspan="2"><a class="closeicon fr" onclick="return IndexDeploy('info',0)" style="cursor:pointer;"><img height="17" id="img_info" src="images/wind/index/cate_fold.gif" width="12"/></a></th>
+</tr>
+<tr></tr>
+</tbody><tbody id="cate_info" style="display:;">
+<tr class="tr2"><td colspan="2"><b>» 友情链接</b></td></tr>
+<tr class="tr3">
+<th class="f_one" style="word-break: keep-all;border-right:none;" width="100%">
+
+[<a href="http://www.ymmfa.com/index.php" target="_blank">工控人家园</a>]
+
+[<a href="http://www.angui.org/" target="_blank">安规网</a>] 
+
+[<a href="http://www.autozhaopin.com/" target="_blank">中国自动化招聘网</a>] 
+
+[<a href="http://www.pv265.com/" target="_blank">工程学习网</a>] 
+
+[<a href="http://www.gkcity.com/" target="_blank">工控商务网</a>] 
+
+[<a href="http://www.mmic.net.cn/" target="_blank">买卖IC网</a>] 
+
+[<a href="http://www.51hei.com/" target="_blank">单片机教程网</a>]
+
+[<a href="http://www.yeya-home.com/" target="_blank">液压论坛</a>]
+
+[<a href="http://www.chinakong.com/" target="_blank">中国工控网</a>]
+
+
+</th>
+</tr>
+<tr class="tr2"><td colspan="2"><b>» 促销产品</b></td></tr>
+<tr class="tr2"><td colspan="2">
+<a href="http://www.ymmfa.com/plc/" target="_blank" title="三菱PLC">三菱FX系列PLC</a>
+<a href="http://www.ymmfa.com/qplc/" target="_blank" title="三菱Q系列PLC">三菱Q系列PLC</a>
+<a href="http://www.ymmfa.com/hmi/" target="_blank" title="三菱触摸屏">三菱触摸屏</a>
+<a href="http://www.ymmfa.com/inv/" target="_blank" title="三菱变频器">三菱变频器</a>
+<a href="http://www.ymmfa.com/ser/" target="_blank" title="三菱伺服电机">三菱伺服电机</a>
+<a href="http://www.ymmfa.com/s.php?s=%C8%FD%C1%E2" target="_blank" title="三菱工控产品查询系统">三菱工控产品查询系统</a>
+</td></tr>
+<tr class="tr2"><td colspan="2"><b>» 在线情况</b></td></tr>
+<tr class="tr2"><td colspan="2">
+工控人家园当前有 1113 人在线，其中 112 位会员，1001 位访客<br/>
+</td></tr>
+</tbody>
+</table>
+</div>
+<!--
+-->
+</div>
+<div class="c"></div>
+<div id="bottom"></div>
+<center style="margin-top:.3em;"></center><br/>
+</div>
+<div id="footer"><div class="footer"><center>
+<p>主办单位: 上海明控机电科技有限公司 工控人家园与您共同进步！</p>
+<p><font color="red">遵守法律，文明发言</font> 现在时间:05-09 21:38 论坛系统: PHPWind7Plus</p>
+<p><font color="green">本站所有内容均为网友自行发布，不代表网站立场，如有版权纠纷请与本站管理员联系</font></p>
+<p>沪ICP备10210768号 <img src="http://www.ymmfa.com/images/ga.png"/>沪公网安备31010802001143号</p>
+</center><br/>
+<span id="stats"></span>
+</div></div>
+<script language="JavaScript" src="js/global.js"></script>
+<script language="JavaScript">
+var openmenu = {'td_hack' : 'menu_hack','td_skin' : 'menu_skin'};
+read.InitMenu();
+</script>
+</body></html>

@@ -1,0 +1,400 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta content="pc" name="applicable-device"/>
+<meta content="0" http-equiv="Expires"/>
+<meta content="no-cache" http-equiv="Pragma"/>
+<meta content="no-cache" http-equiv="Cache-control"/>
+<meta content="no-cache" http-equiv="Cache"/>
+<script src="//hm.baidu.com/hm.js?7cfa071240e6d924fea0be6853d51a9c"></script><script src="/ajax/common.ashx" type="text/javascript"></script>
+<script src="/ajax/Industry.Vivian,Industry.ashx" type="text/javascript"></script>
+<script type="text/javascript">
+var CheckJustPC=Vivian.CheckJustPC().value;
+if(CheckJustPC=="false"){if(navigator.userAgent.match(/(iPhone|iPod|Android|ios)/i)&&window.location.host.indexOf('www')>=0){
+    window.location = window.location.href.replace("www", "m").replace("https", "http");
+}
+ }
+</script>
+<script type="text/javascript">
+if (document.location.host.indexOf("gkzhan.com")==-1 && document.location.host.indexOf("192.168.")==-1 && document.location.host.indexOf("10.115.")==-1) {
+location.href = location.href.replace(document.location.host, 'www.gkzhan.com');
+}
+</script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible"/>
+<title>智能装备求购_机器人求购_3D打印机求购信息_智能制造网</title>
+<meta content="智能制造网求购信息频道为用户提供智能装备、自动化设备、机器人、3D打印机、3D打印材料、物联网、云计算、大数据等智能制造相关产品的求购信息" name="description"/>
+<meta content="智能装备求购,机器人求购,3D打印机求购" name="Keywords"/>
+<link href="https://www.gkzhan.com/css/Inpublic201606.css" rel="stylesheet" type="text/css"/>
+<link href="https://www.gkzhan.com/css/business v=201606.css" rel="stylesheet" type="text/css"/>
+<link href="https://www.gkzhan.com/css/business v=201607.css" rel="stylesheet" type="text/css"/>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?7cfa071240e6d924fea0be6853d51a9c";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<script src="/js/select.js?v=20160421113127" type="text/javascript"></script>
+<script src="/js/Jquery.js?v=20160421113128" type="text/javascript"></script>
+<script type="text/javascript">
+    //window.onload=function(){gxs('a','b',0,2,'anbj');};
+	    function gxs(a, b, index, all, classNa) {
+	        for (i = 0; i < all; i++) {
+	            document.getElementById(b + i).style.display = "none";
+	            document.getElementById(a + i).className = "";
+	        }
+	        document.getElementById(b + index).style.display = "";
+	        document.getElementById(a + index).className = classNa;
+	    }
+	    function DrawImage(ImgD, wh) {
+	        var image = new Image();
+	        image.src = ImgD.src;
+	        if (image.width >= wh) {
+	            ImgD.width = wh;
+	        }
+	        else if (image.height > wh) {
+	            ImgD.height = wh;
+	        }
+	    }
+
+	    /*   把当前选中的条件添加到顶部已选择标签中   */
+	    $(document).ready(function () {
+
+	        /* 动态拼接Url */
+
+	        var url = CheckPageUrl();
+	        url = GetSearchKey(url);
+
+	        $(".type.indstry ul li").each(function () {
+	            $(this).find("a").attr("href", GetReplaceUrl(url, $(this).find("a").attr("href"), 1));
+	        });
+	        $("#hangyforall").attr("href", GetReplaceUrl(url, $("#hangyforall").attr("href"), 1));
+	    });
+
+	    function CheckPageUrl() {
+	        var url = window.location.href;
+	        var r = new RegExp("/offer_buy/T[\\d]+/list_P[\\d]+_CH[\\d]+(_K\\S*?)*\.html", "i");
+	        if (!r.test(url)) {
+	            r = new RegExp("/(T[\\d]+)/list(_P[\\d]+)*\.html", "i");
+	            if (r.test(url)) {
+	                url = url.replace(r, "/$1/list_P1_CH0.html");
+	            }
+	            else {
+	                url = "/offer_buy/T0/list_P1_CH0.html";
+	            }
+	        }
+	        else {
+	            //将需要生成的Url定位到第一页
+	            r = new RegExp("/list_p[\\d]+", "i");
+	            if (r.test(url)) {
+	                url = url.replace(r, "/list_P1");
+	            }
+	            else {
+	                r = new RegExp("/list", "i");
+	                url = url.replace(r, "/list_P1");
+	            }
+
+	        }
+	        return url;
+	    }
+	    function GetSearchKey(url) {
+	        var str = $("form > a").attr("href");
+	        var reg = new RegExp("_k(\\S*)\.html", "i");
+	        if (reg.test(str)) {
+	            str = str.replace(reg, "Key=$1");
+	            key = str.substring(str.indexOf("Key=") + 4, str.length);
+	        }
+	        else {
+	            key = "";
+	        }
+
+	        if (key != "") {
+	            var reg = new RegExp("_(_K\\S*?)*\.html", "i");
+	            url = url.replace(reg, "_K" + key + ".html");
+	        }
+	        return url;
+	    }
+	    function GetReplaceUrl(url, p, n) {
+	        switch (n) {
+	            case 1: //匹配CH参数
+	                var reg = new RegExp("_CH[\\d]+", "i");
+	                url = url.replace(reg, "_CH" + p);
+	                break;
+	        }
+	        if (key != "") {
+	            var reg = new RegExp("_(_K\\S*?)*\.html", "i");
+	            url = url.replace(reg, "_K" + key + ".html");
+	        }
+	        return url;
+	    }
+</script>
+<script>
+    function reurl(url){
+        location.href=url;
+    }
+    </script>
+</head>
+<body>
+<div id="head">
+<div>
+<p>欢迎来到智能制造网! 　请<a class="reg" href="https://www.gkzhan.com/UserManage/default.aspx" target="blank">登录</a><a href="https://www.gkzhan.com/UserManage/login.aspx?RegIndex" target="blank">免费注册</a></p>
+<span><a href="https://www.gkzhan.com/" target="_blank">首页</a>-<a href="https://www.gkzhan.com/News/" target="_blank">资讯</a>-<a href="https://www.gkzhan.com/Technology/" target="_blank">技术</a>-<a href="https://www.gkzhan.com/product/" target="_blank">商城</a>-<a href="https://www.gkzhan.com/Offer/" target="_blank">商机</a>-<a href="https://www.gkzhan.com/company/" target="_blank">企业</a>-<a href="https://www.gkzhan.com/brands/">品牌</a>-<a href="https://www.gkzhan.com/Sample/" target="_blank">样本</a>-<a href="https://www.gkzhan.com/exhibition/" target="_blank">展会</a>-<a href="https://www.gkzhan.com/job/" target="_blank">人才</a>- <a class="mobile" href="https://www.gkzhan.com/m-instro/" target="_blank">手机版</a></span></div>
+</div>
+<div id="top"><a href="https://www.gkzhan.com/" target="_blank"><img src="/images/index/logo2016.png"/></a><strong>商机</strong>
+<p><a class="hot" href="javascript:void(0)" id="searchChose1" onclick="changeSearch(1)">产品</a><a href="javascript:void(0)" id="searchChose2" onclick="changeSearch(2)">求购</a><a href="javascript:void(0)" id="searchChose3" onclick="changeSearch(3)">企业</a><a href="javascript:void(0)" id="searchChose4" onclick="changeSearch(4)">资讯</a><a href="javascript:void(0)" id="searchChose5" onclick="changeSearch(5)">会展</a><a href="javascript:void(0)" id="searchChose6" onclick="changeSearch(6)">供应</a></p>
+<form action="/product/t0/list_p0.html" id="searchForm" method="post" name="search" target="_self">
+<div>
+<input id="keys" name="K" onfocus="ClearFont()" onkeydown="ondowns(event)" type="text" value="请输入您要查找的关键词"/>
+<button onclick="return go();"></button>
+</div>
+</form>
+<b><a href="https://www.gkzhan.com/help/index.html" target="_blank">网站帮助</a><a href="https://www.gkzhan.com/service/service1.html" target="_blank">榜上有名</a><a class="purchase" href="https://www.gkzhan.com/offer/fbqg.html" target="_blank">发布采购</a><a href="https://www.gkzhan.com/Login/Login.aspx" target="_blank">企业建站</a></b></div>
+<script>
+var searchUrl = "https://www.gkzhan.com/chanpin-0_p0.html";
+function changeSearch(s)
+{
+    switch(s)
+    {
+       case 1:
+         searchUrl="https://www.gkzhan.com/chanpin-0_p0.html";//products search
+         changeSearchStyle(1);
+         break;
+       case 2:
+       	 searchUrl="https://www.gkzhan.com/offer_buy/t0/list_p0.html";//求购
+         changeSearchStyle(2);
+         break;
+       case 3:
+         searchUrl="https://www.gkzhan.com/company/a_t0/list_p0.html ";//企业
+         changeSearchStyle(3);
+         break;
+	   case 4:
+         searchUrl="https://www.gkzhan.com/news/t0/list_p0.html";//资讯
+         changeSearchStyle(4);
+         break;
+       case 5:
+         searchUrl="https://www.gkzhan.com/exhibition/t0/list_p0.html";//展会
+         changeSearchStyle(5);
+         break;
+       case 6:
+         searchUrl="https://supply.gkzhan.com/sale/t0_p0/";//供应
+         changeSearchStyle(6);
+         break;
+    }
+}
+
+function changeSearchStyle(s){
+	var idValue = "";
+	for(var i=1;i<=6;i++){
+		idValue = "searchChose"+i;
+		if(s==i)
+			document.getElementById(idValue).className = "hot";
+		else
+			document.getElementById(idValue).className = "";
+	}
+}
+
+function go(){
+	var keys = document.getElementById("keys").value;
+	keys = keys.replace(/(^[^\S]+)|([^\S]+$)/g,"");
+	keys= keys.replace(/\+/g,"%2b");//替换'+'号，如果不处理‘+’号会被替换成空  add by 李晨 2010-05-31
+	var f = document.getElementById("searchForm");
+	f.target = "_self";
+	if(keys=="" || keys=="请输入您要查找的关键词"){		
+		 alert("请输入您要搜索的内容！");
+			return false;
+	}
+	f.action=searchUrl; 
+	f.submit();	
+}
+
+function ClearFont(){
+	if(document.getElementById("keys").value=='请输入您要查找的关键词')
+		document.getElementById("keys").value='';
+}
+</script><div class="location">
+<p><a>您所在的位置</a><a href="https://www.gkzhan.com/" target="_blank">智能制造网</a><a href="https://www.gkzhan.com/offer/" target="_blank">供求商机</a><a class="last">求购信息</a></p>
+<span>共找到<b>114596</b>条  产品</span> </div>
+<div class="busititle">
+<h3><a href="https://www.gkzhan.com/offer_sale/t0/list.html" target="_blank">供应信息</a><a class="hot" href="https://www.gkzhan.com/offer_buy/t0/list.html" target="_blank">求购信息</a><a href="https://www.gkzhan.com/offer_tender/t0/list.html" target="_blank">招标信息</a><a href="https://www.gkzhan.com/invest_act/t205/list.html" target="_blank">代理信息</a></h3>
+</div>
+<div class="business">
+<div class="businessleft">
+<table class="buylisttop">
+<tbody><tr>
+<td width="392">采购信息</td>
+<td width="150">采购数量</td>
+<td width="126">所在地</td>
+<td width="116">有效期</td>
+</tr>
+</tbody></table>
+<table class="buylistbot">
+<tbody><tr>
+<td width="392"><span><a href="https://www.gkzhan.com/offer_buy/detail/975343.html" target="_blank">UR机器人</a>2020-05-09</span><p></p></td>
+<td width="150"><b>1</b></td>
+<td width="126">暂无</td>
+<td width="116">还剩<b>10</b>天</td>
+</tr>
+<tr>
+<td width="392"><span><a href="https://www.gkzhan.com/offer_buy/detail/975342.html" target="_blank">多功能震荡仪</a>2020-05-09</span><p></p></td>
+<td width="150"><b>1</b></td>
+<td width="126">暂无</td>
+<td width="116">还剩<b>10</b>天</td>
+</tr>
+<tr>
+<td width="392"><span><a href="https://www.gkzhan.com/offer_buy/detail/975341.html" target="_blank">MK9A160AP</a>2020-05-09</span><p></p></td>
+<td width="150"><b>1</b></td>
+<td width="126">暂无</td>
+<td width="116">还剩<b>10</b>天</td>
+</tr>
+<tr>
+<td width="392"><span><a href="https://www.gkzhan.com/offer_buy/detail/975340.html" target="_blank">Testo 875-1i</a>2020-05-09</span><p></p></td>
+<td width="150"><b>1</b></td>
+<td width="126">暂无</td>
+<td width="116">还剩<b>10</b>天</td>
+</tr>
+<tr>
+<td width="392"><span><a href="https://www.gkzhan.com/offer_buy/detail/975339.html" target="_blank">航空插座</a>2020-05-09</span><p></p></td>
+<td width="150"><b>1</b></td>
+<td width="126">暂无</td>
+<td width="116">还剩<b>10</b>天</td>
+</tr>
+<tr>
+<td width="392"><span><a href="https://www.gkzhan.com/offer_buy/detail/975338.html" target="_blank">现场仪表</a>2020-05-09</span><p></p></td>
+<td width="150"><b>1</b></td>
+<td width="126">暂无</td>
+<td width="116">还剩<b>10</b>天</td>
+</tr>
+<tr>
+<td width="392"><span><a href="https://www.gkzhan.com/offer_buy/detail/975337.html" target="_blank">胶胆式水锤消除器</a>2020-05-09</span><p></p></td>
+<td width="150"><b>1</b></td>
+<td width="126">暂无</td>
+<td width="116">还剩<b>10</b>天</td>
+</tr>
+<tr>
+<td width="392"><span><a href="https://www.gkzhan.com/offer_buy/detail/975336.html" target="_blank">7ML5221-1BA18</a>2020-05-09</span><p></p></td>
+<td width="150"><b>1</b></td>
+<td width="126">暂无</td>
+<td width="116">还剩<b>10</b>天</td>
+</tr>
+<tr>
+<td width="392"><span><a href="https://www.gkzhan.com/offer_buy/detail/975335.html" target="_blank">套袋机</a>2020-05-09</span><p></p></td>
+<td width="150"><b>1</b></td>
+<td width="126">暂无</td>
+<td width="116">还剩<b>10</b>天</td>
+</tr>
+<tr>
+<td width="392"><span><a href="https://www.gkzhan.com/offer_buy/detail/975334.html" target="_blank">EM600L CD</a>2020-05-09</span><p></p></td>
+<td width="150"><b>1</b></td>
+<td width="126">暂无</td>
+<td width="116">还剩<b>10</b>天</td>
+</tr>
+<tr>
+<td width="392"><span><a href="https://www.gkzhan.com/offer_buy/detail/975333.html" target="_blank">耐久试验机</a>2020-05-09</span><p></p></td>
+<td width="150"><b>1</b></td>
+<td width="126">暂无</td>
+<td width="116">还剩<b>10</b>天</td>
+</tr>
+<tr>
+<td width="392"><span><a href="https://www.gkzhan.com/offer_buy/detail/975332.html" target="_blank">电机</a>2020-05-09</span><p></p></td>
+<td width="150"><b>1</b></td>
+<td width="126">暂无</td>
+<td width="116">还剩<b>10</b>天</td>
+</tr>
+<tr>
+<td width="392"><span><a href="https://www.gkzhan.com/offer_buy/detail/975331.html" target="_blank">电机</a>2020-05-09</span><p></p></td>
+<td width="150"><b>1</b></td>
+<td width="126">暂无</td>
+<td width="116">还剩<b>10</b>天</td>
+</tr>
+<tr>
+<td width="392"><span><a href="https://www.gkzhan.com/offer_buy/detail/975330.html" target="_blank">检测开关</a>2020-05-09</span><p></p></td>
+<td width="150"><b>1</b></td>
+<td width="126">暂无</td>
+<td width="116">还剩<b>10</b>天</td>
+</tr>
+<tr>
+<td width="392"><span><a href="https://www.gkzhan.com/offer_buy/detail/975329.html" target="_blank">圣邦微</a>2020-05-09</span><p></p></td>
+<td width="150"><b>1</b></td>
+<td width="126">暂无</td>
+<td width="116">还剩<b>10</b>天</td>
+</tr>
+<tr>
+<td width="392"><span><a href="https://www.gkzhan.com/offer_buy/detail/975328.html" target="_blank">细胞计数仪</a>2020-05-09</span><p></p></td>
+<td width="150"><b>1</b></td>
+<td width="126">暂无</td>
+<td width="116">还剩<b>10</b>天</td>
+</tr>
+<tr>
+<td width="392"><span><a href="https://www.gkzhan.com/offer_buy/detail/975327.html" target="_blank">NS704C</a>2020-05-09</span><p></p></td>
+<td width="150"><b>1</b></td>
+<td width="126">暂无</td>
+<td width="116">还剩<b>10</b>天</td>
+</tr>
+<tr>
+<td width="392"><span><a href="https://www.gkzhan.com/offer_buy/detail/975326.html" target="_blank">触摸屏</a>2020-05-09</span><p></p></td>
+<td width="150"><b>1</b></td>
+<td width="126">暂无</td>
+<td width="116">还剩<b>10</b>天</td>
+</tr>
+<tr>
+<td width="392"><span><a href="https://www.gkzhan.com/offer_buy/detail/975325.html" target="_blank">转移冷烫机</a>2020-05-09</span><p></p></td>
+<td width="150"><b>1</b></td>
+<td width="126">暂无</td>
+<td width="116">还剩<b>10</b>天</td>
+</tr>
+<tr>
+<td width="392"><span><a href="https://www.gkzhan.com/offer_buy/detail/975324.html" target="_blank">在线分析仪</a>2020-05-09</span><p></p></td>
+<td width="150"><b>1</b></td>
+<td width="126">暂无</td>
+<td width="116">还剩<b>10</b>天</td>
+</tr>
+</tbody></table>
+<div class="pg_turn newpage"><span id="fLink" style="display:none">/offer_buy/t0/list.html</span><a class="ft" href="/offer_buy/t0/list.html" title="第一页"></a><a class="prev" href="#"></a><a class="on" href="/offer_buy/t0/list.html">1</a><a href="/offer_buy/t0/list_p2.html">2</a><a href="/offer_buy/t0/list_p3.html">3</a><a href="/offer_buy/t0/list_p4.html">4</a><a href="/offer_buy/t0/list_p5.html">5</a><a class="lt" href="/offer_buy/t0/list_p2.html" title="下一页"></a><a class="next" href="/offer_buy/t0/list_p100.html" title="最后一页"></a><span class="jump">共100页114596条记录<input id="selPage" name="selPage" onkeydown="if(event.keyCode&gt;=96&amp;&amp;event.keyCode&lt;=105 ||event.keyCode&gt;=48&amp;&amp;event.keyCode&lt;=57||event.keyCode==8||event.keyCode==46)return true;else if(event.keyCode==13){var pVal=this.value;if(pVal=='')pVal=1;var f=document.getElementById('pagenum');var act=document.getElementById('fLink').innerHTML.toLowerCase();if(act.indexOf('_p')==-1){if(act.indexOf('.html')==-1)act=act.substring(0,act.length-1)+'_p'+pVal+'/';else	act=act.replace('.html','_p'+pVal+'.html')}else{act=act.replace(/_p(\d+)/,'_P'+pVal);}location.href=act;}else return false;"/><button id="btnGopage" onclick="var pVal=document.getElementById('selPage').value;if(pVal=='')pVal=1;var f=document.getElementById('pagenum');var act=document.getElementById('fLink').innerHTML.toLowerCase();if(act.indexOf('_p')==-1){if(act.indexOf('.html')==-1)act=act.substring(0,act.length-1)+'_p'+pVal+'/';else	act=act.replace('.html','_p'+pVal+'.html')}else{act=act.replace(/_p(\d+)/,'_P'+pVal);}location.href=act;">确定</button></span></div>
+</div>
+<div class="businessright">
+<div class="subsupply"><a href="https://www.gkzhan.com/login" target="_blank"></a></div>
+<h3>热门微商城</h3>
+<div class="hotwbox-list">
+<p><a href="https://www.gkzhan.com/shop/wlcsyq_8679.html" target="_blank">网络测试仪器</a><a href="https://www.gkzhan.com/shop/wdyb_3708.html" target="_blank">温度仪表</a><a href="https://www.gkzhan.com/shop/wdkg_2975.html" target="_blank">微动开关</a><a href="https://www.gkzhan.com/shop/wdxsyx_11476.html" target="_blank">稳定性试验箱</a><a href="https://www.gkzhan.com/shop/wdcgq_2940.html" target="_blank">温度传感器</a><a href="https://www.gkzhan.com/shop/wdbsq_5430.html" target="_blank">温度变送器</a><a href="https://www.gkzhan.com/shop/txdy_876.html" target="_blank">通信电源</a><a href="https://www.gkzhan.com/shop/sjszhf_9679.html" target="_blank">升降式止回阀</a><a href="https://www.gkzhan.com/shop/txclq_3596.html" target="_blank">图像处理器</a><a href="https://www.gkzhan.com/shop/txcjl_10498.html" target="_blank">图像采集卡</a><a href="https://www.gkzhan.com/shop/txdl_3116.html" target="_blank">通信电缆</a><a href="https://www.gkzhan.com/shop/sjjdq_4794.html" target="_blank">时间继电器</a><a href="https://www.gkzhan.com/shop/sjcgq_3497.html" target="_blank">视觉传感器</a><a href="https://www.gkzhan.com/shop/sgbjq_6562.html" target="_blank">声光报警器</a><a href="https://www.gkzhan.com/shop/sxyb_3335.html" target="_blank">数显仪表</a><a href="https://www.gkzhan.com/shop/rmfzf_9554.html" target="_blank">软密封闸阀</a><a href="https://www.gkzhan.com/shop/tbdj_1539.html" target="_blank">同步电机</a><a href="https://www.gkzhan.com/shop/sdcgq_2917.html" target="_blank">湿度传感器</a><a href="https://www.gkzhan.com/shop/sysb_11485.html" target="_blank">试验设备</a><a href="https://www.gkzhan.com/shop/qrskzq_2665.html" target="_blank">嵌入式控制器</a><a href="https://www.gkzhan.com/shop/qtbjq_6605.html" target="_blank">气体报警器</a><a href="https://www.gkzhan.com/shop/slfm_9370.html" target="_blank">塑料阀门</a><a href="https://www.gkzhan.com/shop/sjxt_3548.html" target="_blank">视觉系统</a><a href="https://www.gkzhan.com/shop/qtfxy_11466.html" target="_blank">气体分析仪</a><a href="https://www.gkzhan.com/shop/sjcj_179.html" target="_blank">数据采集</a><a href="https://www.gkzhan.com/shop/qtllj_1919.html" target="_blank">气体流量计</a><a href="https://www.gkzhan.com/shop/sfxt_1524.html" target="_blank">伺服系统</a><a href="https://www.gkzhan.com/shop/qqjcy_11464.html" target="_blank">氢气检测仪</a><a href="https://www.gkzhan.com/shop/sfdj_10340.html" target="_blank">伺服电机</a><a href="https://www.gkzhan.com/shop/qrsxt_10117.html" target="_blank">嵌入式系统</a><a href="https://www.gkzhan.com/shop/scmk_2389.html" target="_blank">数传模块</a><a href="https://www.gkzhan.com/shop/qtcgq_2847.html" target="_blank">气体传感器</a><a href="https://www.gkzhan.com/shop/pyfj_4464.html" target="_blank">排烟风机</a><a href="https://www.gkzhan.com/shop/nzsyj_11481.html" target="_blank">扭转试验机</a><a href="https://www.gkzhan.com/shop/scdt_2372.html" target="_blank">数传电台</a><a href="https://www.gkzhan.com/shop/qqbjq_11463.html" target="_blank">氢气报警器</a><a href="https://www.gkzhan.com/shop/rmdz_2889.html" target="_blank">热敏电阻</a><a href="https://www.gkzhan.com/shop/qtjc_3900.html" target="_blank">气体检测</a><a href="https://www.gkzhan.com/shop/qdzxq_5672.html" target="_blank">气动执行器</a><a href="https://www.gkzhan.com/shop/plyb_3498.html" target="_blank">配料仪表</a><a href="https://www.gkzhan.com/shop/qdlhq_5709.html" target="_blank">气动离合器</a><a href="https://www.gkzhan.com/shop/pdxt_1031.html" target="_blank">配电系统</a><a href="https://www.gkzhan.com/shop/plsyj_11492.html" target="_blank">疲劳试验机</a><a href="https://www.gkzhan.com/shop/pdxg_1019.html" target="_blank">配电箱柜</a><a href="https://www.gkzhan.com/shop/pdmx_1004.html" target="_blank">配电母线</a><a href="https://www.gkzhan.com/shop/nbdy_851.html" target="_blank">逆变电源</a><a href="https://www.gkzhan.com/shop/pbdn_168.html" target="_blank">平板电脑</a><a href="https://www.gkzhan.com/shop/nmsyj_11482.html" target="_blank">耐磨试验机</a><a href="https://www.gkzhan.com/shop/mcgq_2827.html" target="_blank">门传感器</a><a href="https://www.gkzhan.com/shop/lzsp_11391.html" target="_blank">离子色谱</a></p>
+</div> <h3>热门企业推荐</h3>
+<!--<ul class="hotcompany">
+    </ul>-->
+<div class="ggdw">
+</div>
+</div>
+<br class="clear"/>
+</div>
+<div class="nowant">没有您要采购的产品型号/类型？ <a href="https://www.gkzhan.com/offer/fbqg.html" target="_blank">马上发布求购信息</a>，让供应商招商门来！</div>
+<div class="leftAdv" id="leftAdv" style="top:200px;left:0px;position:fixed; z-index:99999;">
+<img src="/images/leftAdv1.gif" style="display:block;"/>
+<a onclick="document.getElementById('leftAdv').style.display ='none';" style="color:#888; padding:5px 0 0 0;display:block;">关闭</a>
+</div>
+<div id="nfoot">
+<span><a href="https://www.gkzhan.com/update/newproduct.html" target="_blank">产品更新列表</a>
+<a href="https://www.gkzhan.com/allst.html" target="_blank">企业名录</a>
+<a href="https://www.gkzhan.com/update/newnews.html" target="_blank">动态更新列表</a>
+<a href="https://www.gkzhan.com/update/newprice.html" target="_blank">报价更新列表</a>
+<a href="https://www.gkzhan.com/update/newziliao.html" target="_blank">资料更新列表</a>
+<a href="https://www.gkzhan.com/update/newarticle.html" target="_blank">技术文献更新</a>
+<a href="https://www.gkzhan.com/update/newtype.html" target="_blank">产品分类浏览</a></span>
+<p>智能制造网 - 工业4.0时代智能制造领域“互联网＋”服务平台</p>
+<span><a href="https://www.gkzhan.com/service/service21.html" target="_blank">关于我们</a>|<a href="https://www.gkzhan.com/service/service1.html" target="_blank">本站服务</a>|<a href="https://www.gkzhan.com/service/service17.html" target="_blank">企业建站</a>|<a href="https://www.gkzhan.com/service/service3.html" target="_blank">会员服务</a>|<a href="https://www.gkzhan.com/service/service4.html" target="_blank">广告服务</a>|<a href="https://www.gkzhan.com/service/service18.html" target="_blank">商站通服务</a>|<a href="http://www.mtnets.com/www.aspx" target="_blank">旗下网站</a>|<a href="https://www.gkzhan.com/link/" target="_blank">友情链接</a>|<a href="https://www.gkzhan.com/guest.html" target="_blank">意见反馈</a></span>
+<p><strong>Copyright 2020 gkzhan.com  All Rights Reserved</strong>法律顾问：浙江天册律师事务所 贾熙明律师</p>
+<p>客服热线：<strong>0571-87756395</strong>加盟热线：<strong>0571-87759904</strong>网站客服：<strong><b><a href="tencent://message/?uin=386392707&amp;Site=智能制造网&amp;Menu=yes" target="blank"><img src="/images/Public/qq.jpg"/></a></b></strong></p>
+<br class="clear"/>
+</div>
+<div style="display:none">
+<script language="javascript" src="https://js.users.51.la/4248376.js" type="text/javascript"></script><a href="https://www.51.la/?comId=4248376" target="_blank" title="51.La 网站流量统计系统"><span style="display:inline-block;background-color:#EF5350;color:#fff;padding:2px 5px;font-family:arial;font-size:12px;font-weight:bold;">51La</span></a>
+<noscript><a href="http://www.51.la/?4248376" target="_blank"><img alt="我要啦免费统计" src="https://img.users.51.la4248376.asp" style="border:none"/></a></noscript>
+</div>
+<script src="https://public.mtnets.com/Plugins/jQuery/1.11.3/jquery.min.js"></script>
+<script>
+			jQuery(function(){
+				var adv = '<i style="position:absolute;left:0;bottom:0;z-index:9;width:24px;height:12px;background:url(https://public.mtnets.com/Images/public/adv.png) no-repeat;"></i>';
+				jQuery(".advs").css("position","relative").css("display","block");
+				jQuery(".advs").find("img").css("display","block");
+				jQuery(".advs").append(adv);
+			});
+		</script>
+</body></html>

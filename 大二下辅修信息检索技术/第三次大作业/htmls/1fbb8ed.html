@@ -1,0 +1,530 @@
+<html><head>
+<title>资料下载 - 下载中心 - 北京泛华恒兴科技有限公司</title>
+<!--head--->
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>北京泛华恒兴科技有限公司</title>
+<meta content="版权所有，未经允许不得转载。" name="copyright"/>
+<meta content="北京泛华恒兴科技有限公司（以下简称：泛华恒兴）是国内领先的行业测控专家及测控技术专业公司，为各行业用户，尤其是“航空、航天和军工领域”高科技企业提供专业测试测量解决方案和成套检测设备。" name="description"/>
+<meta content="泛华,测控技术,测试测量" name="keywords"/>
+<!--head结束--->
+<link href="/css/main.css" rel="stylesheet" type="text/css"/>
+<link href="/css/nav.css" rel="stylesheet" type="text/css"/>
+<script async="" src="http://www.google-analytics.com/ga.js" type="text/javascript"></script><script src="/js/jquery-1.4.2.min.js" type="text/javascript"></script>
+<script>
+function jumpPage() {
+    var opt = document.main.pageNum;
+    if (opt.value == "") {
+        alert("请输入跳转的页码！");
+        opt.focus();
+        return;
+    }
+    if (isNaN(opt.value)) {
+        alert("您输入的跳转页码不合法！");
+        opt.focus();
+        return;
+    }
+    
+    
+      
+    
+    if (opt.value > 1) {
+        alert("您输入的跳转页码超出最大页数！");
+        opt.focus();
+        return;
+    }
+    opt.value = trim(opt.value);
+    document.main.action = "/download/toDownloadList.do?channelId=24&pageNum=" + opt.value;
+    document.main.submit();
+}
+</script>
+</head>
+<body>
+<div class="box">
+<!--header--->
+<style type="text/css">
+/* common styling */
+.menu img{border:0px;margin-top:0px!important;margin-top:15px;}
+.menu {font-family: arial, sans-serif;width:753px;position:relative;margin:0px;font-size:12px;background-color: #ffffff;line-height: 30px;height: 30px;padding-top: 0px;background-attachment: scroll;background-image: url(/images/nav_bg.jpg);background-repeat: no-repeat;background-position: left top; float:left;}
+.menu ul li a, .menu ul li a:visited {display:block;text-decoration:none;color:#fff;width:80px;height:30px;text-align:center;line-height:30px;font-size:12px;overflow:hidden; padding-right:2px;}
+.menu ul li a:hover{ color:#FFFFFF; text-decoration:none;background-attachment: scroll;background-image: url(/images/nav_li.jpg);background-repeat: no-repeat;background-position: left top;}
+.menu ul {padding:0;list-style-type: none;margin: 0px;}
+.menu ul li {float:left;margin-right:1px;position:relative;}
+.menu ul li ul {display: none;}
+/* specific to non IE browsers */
+.menu ul li:hover a {color:#fff;line-height: 30px;margin-top:0px;height: 30px;text-decoration: none; font-size:12px;}
+.menu ul li:hover a img {margin-top: 0px;}
+.menu ul li:hover ul {display:block;position:absolute;top:22px;left:0px;width:120px;margin-top: 8px;}
+.menu ul li a:hover ul li {margin:0}
+.menu ul li:hover ul li a.hide {color:#ffffff;line-height:25px;height:25px;background:#5097d2 url(/images/menu_icon.gif) no-repeat right center;margin:0px; min-width:100px; text-align:left; padding-left:12px;}
+.menu ul li:hover ul li:hover a.hide {color:#fff;margin: 0px;background: #0f67c5 url(/images/menu_icon.gif) no-repeat right center;}
+.menu ul li:hover ul li ul {display: none;margin-left:30px;}
+.menu ul li:hover ul li a {display:block;color:#ffffff;border-bottom:1px solid #ffffff;background:#5097d2;margin:0px;line-height:25px;height: 25px;width:100px; text-align:left; padding-left:12px;}
+.menu ul li:hover ul li a:hover {color:#fff;margin:0px;line-height:25px;height:25px;background:#0054ae;}
+.menu ul li:hover ul li:hover ul {display:block; position:absolute; left:84px; top:-8px;}
+.menu ul li:hover ul li:hover ul.left {left:-83px;}
+.menu1 {font-family: arial, sans-serif;width:575px;position:relative;margin:0px;font-size:12px;background-color: #ffffff;line-height: 30px;height: 30px;padding-top: 0px;background-attachment: scroll;background-image: url(/images/nav_bg.jpg);background-repeat: no-repeat;background-position: left top;}
+</style>
+<!--[if lte IE 6]>
+<style type="text/css">
+.menu ul li a.hide, .menu ul li a:visited.hide {height:30px;line-height:30px;display:none;}
+.menu ul li a:hover{ color:#FFFFFF; text-decoration:none;background-attachment: scroll;background-image: url(/images/nav_li.jpg);background-repeat: no-repeat;background-position: left top;}
+.menu ul li a:hover ul li a.hide {display:none;}
+.menu ul li a:hover ul li {margin:0}
+.menu ul li a:hover ul {display:block; position:absolute;top:22px; margin-top:8px;left:0; color:#000;}
+.menu ul li a:hover ul li a.sub {color:#fff;padding:0px 2px 0px 0px;margin:0px;line-height:25px;height:25px;background:#5097d2 url(/images/menu_icon.gif) no-repeat right center;margin:0px; min-width:100px; text-align:left; padding-left:12px;}
+
+.menu ul li a:hover ul li .sub hover {color:#fff;margin: 0px;background: #0054ae url(/images/menu_icon.gif) no-repeat right center;}
+
+.menu ul li a:hover ul li a {display:block;background:#5097d2;color:#ffffff;border-bottom:1px solid #6BB69C;line-height:25px;height:25px;width:100px; text-align:left; padding-left:12px;}
+.menu ul li a:hover ul li a ul {visibility:hidden;margin-left:30px;}
+.menu ul li a:hover ul li a:hover {background:#0054ae; line-height: 25px;height: 25px;color:#fff;}
+.menu ul li a:hover ul li a:hover ul {visibility:visible; position:absolute; left:83px; top:-8px; color:#000;}
+.menu ul li a:hover ul li a:hover ul.left {left:-83px;}
+
+</style>
+<![endif]-->
+<script language="javascript">
+function BOX_show(e)//显示
+{
+    if(document.getElementById(e)==null)
+    {
+        return ;
+    }
+    var selects = document.getElementsByTagName('select');
+    for(i = 0; i < selects.length; i++)
+    {
+        selects[i].style.visibility = "hidden";
+    } 
+
+    BOX_layout(e);
+    window.onresize = function(){BOX_layout(e);} //改变窗体重新调整位置
+    window.onscroll = function(){BOX_layout(e);} //滚动窗体重新调整位置
+    document.onkeyup = function(event)
+    {
+        var evt = window.event || event;
+        var code = evt.keyCode?evt.keyCode : evt.which;
+        //alert(code);
+
+        if(code == 27)
+        {
+            BOX_remove(e);
+        }
+    }
+
+}
+
+function BOX_remove(e)//移除
+{
+    window.onscroll = null;
+    window.onresize = null;
+    document.getElementById('BOX_overlay').style.display="none";
+    document.getElementById(e).style.display="none";
+
+    var selects = document.getElementsByTagName('select');
+    for(i = 0; i < selects.length; i++)
+    {
+        selects[i].style.visibility = "visible";
+    }
+}
+
+function BOX_layout(e)//调整位置
+{
+    var a = document.getElementById(e);
+
+    if (document.getElementById('BOX_overlay')==null)//判断是否新建遮掩层
+    {
+
+        var overlay = document.createElement("div");
+        overlay.setAttribute('id','BOX_overlay');
+
+        //overlay.onclick=function(){BOX_remove(e);};
+        //a.parentNode.appendChild(overlay);
+        document.body.appendChild(overlay);
+    }
+
+    document.getElementById('BOX_overlay').ondblclick=function(){BOX_remove(e);};
+    //取客户端左上坐标，宽，高
+    var scrollLeft = (document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft);
+    var scrollTop = (document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop);
+
+    var clientWidth;
+    if (window.innerWidth)
+    {
+        clientWidth = window.innerWidth;
+       // clientWidth = ((Sys.Browser.agent === Sys.Browser.Safari) ? window.innerWidth : Math.min(window.innerWidth, document.documentElement.clientWidth));
+    }
+    else
+    {
+        clientWidth = document.documentElement.clientWidth;
+    }
+
+    var clientHeight;
+    if (window.innerHeight)
+    {
+        clientHeight = window.innerHeight;
+        //clientHeight = ((Sys.Browser.agent === Sys.Browser.Safari) ? window.innerHeight : Math.min(window.innerHeight, document.documentElement.clientHeight));
+    }
+    else
+    {
+        clientHeight = document.documentElement.clientHeight;
+    }
+
+    var bo = document.getElementById('BOX_overlay');
+    bo.style.left = scrollLeft+'px';
+    bo.style.top = scrollTop+'px';
+    bo.style.width = clientWidth+'px';
+    bo.style.height = clientHeight+'px';
+    bo.style.display="";
+    //Popup窗口定位
+    a.style.position = 'absolute';
+    a.style.zIndex=999;
+    a.style.display="";
+    //a.style.left = scrollLeft+((clientWidth-a.offsetWidth)/2)+'px';
+    //a.style.top = scrollTop+((clientHeight-a.offsetHeight)/2)+'px';
+}
+
+function HiddenButton(e)
+{
+    e.style.visibility='hidden';
+    e.coolcodeviousSibling.style.visibility='visible'
+}
+</script>
+<style type="text/css">
+
+#BOX_overlay{position: absolute;z-index: 100;top: 0px;left: 0px;background-color:#ccc;filter: alpha(opacity=70);-moz-opacity: 0.7;opacity: 0.7;}
+
+</style>
+<!-- search  -->
+<div class="hd">
+<div class="logo"><img src="/images/logo.jpg"/></div>
+<div class="search">
+<form action="/d/gloalSearch.do" method="get">
+<input name="isRolling" type="hidden" value="false"/>
+<table align="right" border="0" cellpadding="0" cellspacing="2">
+<tbody><tr>
+<td colspan="3"><div class="weibo"><a href="http://weibo.com/pansinos" target="_blank">微博关注</a></div><div class="tel">4006354800</div></td>
+</tr>
+<tr>
+<td align="center" valign="top">搜索</td>
+<td valign="top"><input class="input1" name="keyword" type="text" value=""/></td>
+<td><input src="/images/go.gif" type="image"/> </td>
+</tr>
+</tbody></table>
+</form>
+</div>
+</div>
+<!-- search end -->
+<div class="nav">
+<!-- 导航部分 -->
+<div class="menu">
+<ul>
+<li><a class="hide" href="/"><strong>首  页</strong></a>
+</li>
+<!--解决方案2-->
+<li><a class="hide" href="/solution/index.do"><strong>解决方案</strong></a>
+</li>
+<!--产品3-->
+<li><a class="hide" href="#"><strong>产  品</strong></a>
+<ul>
+<li><a href="/product/list.do?channelId=14" title="装备保障">装备保障</a></li>
+<li><a href="/product/list.do?channelId=370" title="自动测试">自动测试</a></li>
+<li><a href="/product/list.do?channelId=372" title="海量互连接口">海量互连接口</a></li>
+<li><a href="/product/list.do?channelId=11" title="软件">软件</a></li>
+<li><a href="/product/list.do?channelId=12" title="工程教育">工程教育</a></li>
+<li><a href="/product/list.do?channelId=375" title="智能电子仪器">智能电子仪器</a></li>
+<li><a href="/product/list.do?channelId=376" title="分布测试设备">分布测试设备</a></li>
+</ul>
+</li>
+<!--新闻中心4-->
+<li><a class="hide" href="/news/toNewsList.do"><strong>新闻中心</strong></a>
+<ul>
+<li><a href="/news/toNewsList.do?channelId=16" title="公司新闻">公司新闻</a></li>
+<li><a href="/news/toNewsList.do?channelId=17" title="媒体报道">媒体报道</a></li>
+<li><a href="/news/toNewsList.do?channelId=18" title="技术文章">技术文章</a></li>
+</ul>
+</li>
+<!--市场活动5-->
+<li><a class="hide" href="/workshop/workshopAllList.do"><strong>市场活动 </strong></a>
+<ul>
+<li><a href="/workshop/toWorkshopList.do?channelId=355" title="研讨会">研讨会</a></li>
+<li><a href="/workshop/toWorkshopList.do?channelId=366" title="展会">展会</a></li>
+<li><a href="/workshop/toWorkshopList.do?channelId=374" title="在线研讨会">在线研讨会</a></li>
+</ul>
+</li>
+<!--下载中心6-downloadIndexDetail-downloadAllList-->
+<li><a class="hide" href="/download/downloadAllList.do"><strong>下载中心</strong></a>
+<ul>
+<li><a href="/download/toDownloadList.do?channelId=22" title="软件下载">软件下载</a></li>
+<li><a href="/download/toDownloadList.do?channelId=24" title="资料下载">资料下载</a></li>
+<li><a href="/download/toDownloadList.do?channelId=354" title="知识库">知识库</a></li>
+</ul>
+</li>
+<!--关于公司7-->
+<li><a class="hide" href="/about/index.do"><strong>关于公司</strong></a>
+<ul>
+<li><a href="/about/detail.do?channelId=151" title="公司简介">公司简介</a></li>
+<li><a href="/about/detail.do?channelId=152" title="资质与荣誉">资质与荣誉</a></li>
+<li><a href="/about/detail.do?channelId=154" title="合作伙伴">合作伙伴</a></li>
+</ul>
+</li>
+<!--联系我们8-->
+<li><a class="hide" href="/contact/index.do"><strong>联系我们</strong></a>
+</li>
+<!--人才招聘9-->
+<li><a class="hide" href="/recruit/index.do"><strong>人才招聘</strong></a>
+<!-- 
+          <ul>
+        	  <li><a href="/recruit/list.do?channelId=64" title="校园招聘">校园招聘</a></li>
+        	  <li><a href="/recruit/list.do?channelId=65" title="社会招聘">社会招聘</a></li>
+          </ul>
+       -->
+</li>
+</ul>
+</div>
+<!-- 导航部分  end-->
+<!-- 登录、注册 -->
+<script type="text/javascript">
+var login = function(slef){
+	var loading = $(slef).prev("span:eq(0)");
+	loading.show();
+	$.get("/d/login.do", $("#loginForm").serialize(), function(data, textStatus){
+		//alert(data.result);
+		var rs = data.result;
+		rs=='登录成功'?(function(){$('#errorshow').hide();$('#successshow').text(rs);$('#successshow').show();BOX_remove('messdiv');})():(function(){$('#successshow').hide();$('#errorshow').text(rs);$('#errorshow').show();})();
+		loading.hide();
+		location.reload() 
+		
+		
+	}, "json");
+}
+
+var destory = function(slef){
+	$.get("/d/destory.do", $("#loginForm").serialize(), function(data, textStatus){
+		//alert(data.result);
+		var rs = data.result;
+		location.reload() 
+		alert(rs);
+	}, "json");
+}
+</script>
+<div class="reg">
+<img border="0" onclick="BOX_show('messdiv')" src="/images/dl.gif" style="cursor:pointer;margin-right:25px;"/>
+<img border="0" onclick="location='/d/toRegister.do?url='+encodeURIComponent(window.location.href);" src="/images/zc.gif" style="cursor:pointer;"/>
+</div>
+<div id="messdiv" style="position:absolute; display:none; top:121px; left:850px; width:210px; padding:10px 20px 0; text-align:left; border:1px solid #d6d4d4;z-index:999; font-size:12px; background-image:url(images/dl_bj.gif); background-repeat:repeat-x; background-position:bottom; background-color:#ffffff;">
+<form action="/d/login.do" id="loginForm" method="get">
+<table border="0" cellpadding="0" cellspacing="5" width="100%">
+<tbody><tr>
+<td align="right" colspan="2">
+<font id="errorshow" style="display:none;float: left;line-height:16px;font-size:12px; color:#FF0000;background: url('../images/error.jpg') no-repeat;padding-left: 20px;"></font>
+<font id="successshow" style="display:none;float: left;line-height:16px;font-size:12px; color:#33cc00;background: url('../images/success.jpg') no-repeat;padding-left: 20px;">xxxxxxxxx</font>
+<a href="javascript:void(0)" onclick="BOX_remove('messdiv')" style="line-height:16px;font-size:12px; color:#333;" target="_self" title="关闭">关闭</a></td>
+</tr>
+<tr>
+<td align="left" valign="middle" width="60">用户名：</td>
+<td align="left" valign="middle">
+<label>
+<input name="userId" style="width:120px;" type="text"/>
+</label>
+</td>
+</tr>
+<tr>
+<td align="left" valign="middle">密　码：</td>
+<td align="left" valign="middle"><input name="loginPassword" style="width:120px;" type="password"/></td>
+</tr>
+<tr>
+<td align="center" colspan="2">
+<span style="display: none;"><img alt="" src="/images/loading.gif"/></span>
+<img align="absmiddle" height="21" onclick="javascript:login(this);" src="/images/dl01.gif" style="cursor:pointer;" width="61"/>  
+			<span id="or">·<a href="/d/forgetPwd.do" style="font-size:12px;">忘记密码</a></span></td>
+</tr>
+</tbody></table>
+</form>
+<div style="clear:both;"></div>
+</div>
+<div id="BOX_overlay"></div>
+<!-- 登录、注册 -->
+</div>
+<!--header结束--->
+<div class="line"></div>
+<div class="pagebody_zy">
+<div class="left_zy">
+<!-- 左侧导航 -->
+<div class="lanmu"><span class="zi_blue_14">下载中心</span> / Download</div>
+<div class="left_menu">
+<div class="left_menu_n"><a href="/download/toDownloadList.do?channelId=22">软件下载</a></div>
+<div class="left_menu_y"><a href="/download/toDownloadList.do?channelId=24">资料下载</a></div>
+<div class="left_menu_n"><a href="/download/toDownloadList.do?channelId=354">知识库</a></div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+	var channelId =  24;
+	if(channelId==0 || channelId==153)return;
+	$(".left_menu a[href*="+channelId+"]").parent().attr('class','left_menu_y');
+});
+</script>
+<!-- 联系我们 -->
+<div class="left_b_title">在线留言</div>
+<form action="" id="messageForm" method="get">
+<input name="navigationId" type="hidden" value="121"/>
+<div class="left_b_con">
+<div>内容：</div>
+<div>
+<textarea name="inProblem" style="width:160px; height:50px;"></textarea>
+</div>
+<div>联系方式：</div>
+<div>
+<input id="contact" name="contact" style="width:160px;" type="text"/>
+</div>
+<div>验证码：</div>
+<div>
+<input name="checkCode" style="width:80px;" type="text"/>
+<img align="absmiddle" id="refreshcode" onclick="refresh()" src="/check" style="cursor:pointer;" title="看不清楚，换一个"/>
+</div>
+<div class="sub"><img height="23" onclick="javascript:leaveMesage();" src="/images/sub.jpg" style="cursor:pointer;" width="64"/></div>
+<div class="blank"></div>
+<div class="blank"></div>
+<div class="lxfs">
+<div id="font_14"><strong>联系方式</strong></div>
+<div id="or"><strong>Tel: 4006354800</strong></div>
+<div id="or"><strong>Email: <br/>sales@pansino-solutions.com</strong></div>
+<div>北京市海淀区西小口路66号东升科技园·北领地A-4楼</div>
+</div>
+<div class="blank"></div>
+</div>
+</form>
+<script>
+var leaveMesage = function(){
+	$.get("/d/leaveMesage.do", $("#messageForm").serialize(), function(data, textStatus){
+		var rs = data.result;
+		
+		if("留言成功！"==rs){document.getElementById("messageForm").reset();refresh();}
+		alert(rs);
+	}, "json");
+}
+
+function refresh(){ $("#refreshcode")[0].src="/check?timestamp="+new Date().getTime(); }
+</script>
+</div>
+<div class="right_zy">
+<div class="lm">
+<div class="bt">资料下载</div>
+<div class="location">• <a href="/">首页</a> &gt; <span><a href="/download/downloadAllList.do">下载中心</a></span> &gt; <span class="zi_red">资料下载</span></div>
+</div>
+<div class="content">
+<div class="new_list">
+<ul>
+<li><div class="lit_title2">
+<span style="float: right; margin-right:10px;">发布时间：</span>
+<span style="font-weight:bold;"><a href="/download/downloadDetail.do?channelId=24&amp;&amp;resourceId=145">8通道动态数据采集模块（PS LAN-3284）</a></span>
+<img border="0" height="9" src="/images/new03.gif" width="21"/>
+</div>
+</li>
+</ul>
+<ul>
+<li><div class="lit_title2">
+<span style="float: right; margin-right:10px;">发布时间：2016.03.22</span>
+<span style="font-weight:bold;"><a href="/download/downloadDetail.do?channelId=24&amp;&amp;resourceId=144">测试测量仪器</a></span>
+</div>
+</li>
+</ul>
+<ul>
+<li><div class="lit_title2">
+<span style="float: right; margin-right:10px;">发布时间：2016.03.22</span>
+<span style="font-weight:bold;"><a href="/download/downloadDetail.do?channelId=24&amp;&amp;resourceId=143">便携式测试仪器平台PS TU-9106</a></span>
+</div>
+</li>
+</ul>
+<ul>
+<li><div class="lit_title2">
+<span style="float: right; margin-right:10px;">发布时间：2015.09.16</span>
+<span style="font-weight:bold;"><a href="/download/downloadDetail.do?channelId=24&amp;&amp;resourceId=142">汽车传感器测试台（速度位置）</a></span>
+</div>
+</li>
+</ul>
+<ul>
+<li><div class="lit_title2">
+<span style="float: right; margin-right:10px;">发布时间：2015.09.16</span>
+<span style="font-weight:bold;"><a href="/download/downloadDetail.do?channelId=24&amp;&amp;resourceId=141">泛华汽车仪表盘测试台</a></span>
+</div>
+</li>
+</ul>
+<ul>
+<li><div class="lit_title2">
+<span style="float: right; margin-right:10px;">发布时间：2015.09.16</span>
+<span style="font-weight:bold;"><a href="/download/downloadDetail.do?channelId=24&amp;&amp;resourceId=140">泛华测试测量解决方案</a></span>
+</div>
+</li>
+</ul>
+<ul>
+<li><div class="lit_title2">
+<span style="float: right; margin-right:10px;">发布时间：2013.08.20</span>
+<span style="font-weight:bold;"><a href="/download/downloadDetail.do?channelId=24&amp;&amp;resourceId=133">2012 柔性测试技术与应用（PDF）</a></span>
+</div>
+</li>
+</ul>
+<ul>
+<li><div class="lit_title2">
+<span style="float: right; margin-right:10px;">发布时间：2013.08.14</span>
+<span style="font-weight:bold;"><a href="/download/downloadDetail.do?channelId=24&amp;&amp;resourceId=132">海量连接解决方案（PDF）</a></span>
+</div>
+</li>
+</ul>
+</div>
+<div class="blank"></div>
+<div class="page">
+<table border="0">
+<form method="post" name="main"></form>
+<tbody><tr height="30">
+<td align="center" id="page_14">  
+                        
+                        
+                        页次：1/1页
+                        共有8条记录
+                        转到<input id="pageNum" maxlength="5" name="pageNum" onkeydown="if(event.keyCode == 13) {jumpPage();return false}" size="1" tyep="text"/>页
+                        <input onclick="jumpPage();return false;" type="submit" value="go"/>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="blank"></div>
+</div>
+</div>
+</div>
+<!--footer--->
+<!--ft开始-->
+<div class="footer">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fc4930954d28ea0e28656bbda43b3422c' type='text/javascript'%3E%3C/script%3E"));
+</script><script src=" http://hm.baidu.com/h.js?c4930954d28ea0e28656bbda43b3422c" type="text/javascript"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-33829198-1']);
+  _gaq.push(['_setDomainName', 'pansino-solutions.com']);
+  _gaq.push(['_addOrganic', 'soso', 'w']);
+  _gaq.push(['_addOrganic', 'sogou', 'query']);
+  _gaq.push(['_addOrganic', 'baidu', 'word']); 
+  _gaq.push(['_addOrganic', 'youdao', 'q']);
+  _gaq.push(['_addOrganic', 'so.360', 'q']);
+  _gaq.push(['_trackPageview']);
+
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="l"><a href="http://www.pansino.com.cn/" target="_blank"><img border="0" src="/images/f_logo1.png"/></a>　<a href="http://www.nextu.com.cn/" target="_blank"><img border="0" height="38" src="/images/f_logo3.png" width="110"/> </a><a href="http://xdesigner.pansino-solutions.com/" target="_blank"><img border="0" height="38" src="/images/xdesigner.png" width="145"/></a></div>
+<div class="r"><p><a href="/about/detail.do?channelId=151">公司简介</a>　|　<a href="/contact/index.do">与我联系</a>　|　<a href="/about/lawDetail.do?channelId=368">法律声明</a>　|　<a href="/about/siteMap.do?channelId=360">网站地图</a></p><p>版权所有 北京泛华恒兴科技有限公司</p>
+<p><a href="http://www.beian.miit.gov.cn/">京ICP备 11010121号</a> 京公网安备110108400441号</p></div>
+</div>
+<!-- 广告位：数据采集研讨会右侧banner-->
+<script charset="gb2312" src="http://js.adm.cnzz.net/s.php?sid=133243" type="text/javascript"></script>
+<!--ft结束--->
+<!--footer结束--->
+</div>
+</body></html>

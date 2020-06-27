@@ -1,0 +1,384 @@
+<html><head>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="webkit" name="renderer"/>
+<!--强制360使用极速模式-->
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>电子发烧友论坛-中国电子技术论坛 - 最好最受欢迎电子论坛!</title>
+<!--<link rel="stylesheet" type="text/css" href="data/cache/style_19_common.css?Gde" />
+	<link rel="stylesheet" type="text/css" href="data/cache/style_19_forum_index.css?Gde" />-->
+<!--<link rel="stylesheet" type="text/css" href="static/css/404.css" />-->
+<style>
+		* {
+			margin: 0;
+			padding: 0;
+			font-family: "微软雅黑";
+			font-size: 14px;
+		}
+		.wrapper{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    *z-index: 0;
+}
+a{
+	color: #333;
+	text-decoration: none;
+}
+.float_left{
+    float: left;
+}
+.float_right{
+    float: right;
+}
+.clearfix:after {
+    content: '\20';
+    display: block;
+    height: 0;
+    clear: both;
+}
+.clearfix {
+    zoom: 1;
+}
+.clear {
+    clear: both;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+    visibility: hidden;
+    overflow: hidden;
+}
+		#page_header {
+			background: #D22222;
+			*position: relative;
+			*z-index: 1000;
+		}
+		#header_logo {
+			width: 180px;
+			height: 50px;
+			margin-right: 36px;
+		}
+		.parent_li {
+			display: block;
+			float: left;
+			position: relative;
+		}
+		.parent_li a {
+			display: block;
+			padding: 0 15px;
+			font-size: 16px;
+			line-height: 50px;
+			height: 50px;
+			color: #fff;
+			padding: 0 20px;
+		}
+		.parent_li a:hover, #header_nav .parent_li.active a {
+			background: #BB0000;
+		}
+		/*二级导航*/
+	
+
+		/*搜索框*/
+		
+		#header_search {
+			width: 200px;
+			height: 28px;
+			background: #F2F2F2;
+			margin-top: 11px;
+			-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			border-radius: 3px;
+			overflow: hidden;
+		}
+		#header_search input {
+			background: none;
+			border: none;
+			height: 28px;
+			width: 150px;
+			padding: 0 10px;
+			float: left;
+			outline: none
+		}
+		#header_search button {
+			width: 30px;
+			float: right;
+			height: 28px;
+			border: none;
+			outline: none;
+			background: url(/template/elecfans_201508/images/sou.png) no-repeat;
+			text-indent: -999em;
+		}
+		/*登录注册*/
+		
+		#header_login .login, #header_login .regist {
+			font-size: 14px;
+			height: 50px;
+			line-height: 50px;
+			color: #fff;
+			display: block;
+			padding: 0 11px;
+			float: left;
+		}
+		#header_login {
+			*float: none;
+		}
+		#header_login .login {
+			margin-left: 15px;
+		}
+		#header_login .login:hover, #header_login .regist:hover {
+			background: #BB0000;
+		}
+		#header_login .space_line {
+			display: block;
+			margin-top: 20px;
+			width: 1px;
+			height: 13px;
+			border-left: 1px dashed #fff;
+			float: left;
+		}
+		/*登录上样式*/
+		
+		.login_username, .login_username:hover {
+			padding-left: 15px;
+			display: inline-block;
+			line-height: 50px;
+			color: #fff;
+			font-size: 12px;
+			max-width: 60px;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			overflow: hidden;
+			float: right;
+		}
+		.header_user_img {
+			position: relative;
+			float: right;
+			margin-top: 11px;
+			margin-left: 12px;
+			height: 39px;
+		}
+		.header_user_img .img_box {
+			display: block;
+			float: right;
+			width: 30px;
+			height: 30px;
+			-webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+			border-radius: 50%;
+			padding: 0;
+			border: 0;
+			*float: none;
+		}
+		.header_user_menu {
+			display: none;
+			background: #515151;
+			width: 108px;
+			border-radius: 3px;
+			position: absolute;
+			top: 41px;
+			right: -5px;
+			z-index: 99999999;
+			padding: 4px 0;
+			before: "before";
+		}
+		.header_user_img:hover .header_user_menu {
+			display: block;
+		}
+		.header_user_menu:before {
+			content: '';
+			position: absolute;
+			top: -8px;
+			left: 84px;
+			border-bottom: 8px solid #515151;
+			border-left: 5px solid transparent;
+			border-right: 5px solid transparent;
+		}
+		.header_user_menu a {
+			display: block;
+			color: #fff;
+			width: 88px;
+			height: 28px;
+			line-height: 28px;
+			padding-left: 20px;
+			font-size: 13px;
+			color: #fff;
+		}
+		.header_user_menu a:hover {
+			background: #333;
+		}
+		#go_top {
+			background: url(../images/go_top.png) no-repeat center center;
+			width: 50px;
+			height: 50px;
+			position: fixed;
+			bottom: 100px;
+			right: 0;
+			z-index: 100;
+			background-color: #7F7F7F;
+		}
+		#go_top:hover {
+			background-color: #D22222;
+			cursor: pointer;
+		}
+		#content {
+			width: 1000px;
+			margin: 0 auto;
+			text-align: center;
+			margin-top: 20px;
+		}
+		.tip-404 {
+			font-size: 16px;
+			color: #666;
+			font-weight: 400;
+		}
+		.tip-404 a {
+			color: #0066DC;
+		}
+		.other-pages {
+			margin: 50px 0px 0px 0px;
+			font-size: 14px;
+			color: #666;
+			border-top: 1px solid #E0E0E0;
+			padding: 50px 0px;
+		}
+		.other-pages {
+			margin: 50px 0px 0px 0px;
+			color: #666;
+			border-top: 1px solid #E0E0E0;
+			padding: 50px 0px;
+		}
+		.other-pages {
+			margin: 50px 0px 0px 0px;
+			color: #666;
+			border-top: 1px solid #E0E0E0;
+			padding: 50px 60px 50px 0px;
+		}
+		.other-pages a {
+			color: #0066DC;
+			display: inline-block;
+			margin: 0px 12px;
+			text-decoration: none;
+			position: relative;
+		}
+		.other-pages a:after {
+			content: "|";
+			position: absolute;
+			display: block;
+			right: -16px;
+			top: -1px;
+			color: #d6d6d6;
+		}
+		.other-pages a:last-child:after {
+			content: "";
+			/*去掉最后边线*/
+		}
+		.other-pages a:hover {
+			text-decoration: underline;
+		}
+		.footer {
+			position: relative;
+			border-top: 1px solid #c4c4c4;
+			padding: 5px 0px 0px 0px;
+			line-height: 21px;
+			text-align: center;
+			margin-top: 10px;
+			font-family: arial;
+			width: 1000px;
+			margin: 0px auto;
+		}
+		.foot-link {
+			padding-left: 166px;
+			float: left;
+			padding-top: 6px;
+		}
+		.a1 {
+			color: #293a42;
+			padding: 0px 10px;
+		}
+		.gray {
+			color: #cccccc;
+		}
+		.foot-link p {
+			padding-top: 4px;
+		}
+		.small-wx {
+			float: right;
+		}
+	</style>
+</head>
+<body>
+<div id="page_header">
+<div class="wrapper clearfix">
+<a class="hide" href="/eetalk/" id="touch_back"></a>
+<div class="float_left" id="header_logo">
+<a class="logo" href="http://bbs.elecfans.com/" title="中国电子技术论坛"> <img alt="中国电子技术论坛" src="http://bbs.elecfans.com/static/image/common/logo_new.png"/> </a>
+</div>
+<!--*导航条-->
+<ul class="float_left" id="header_nav">
+<li class="home_cur parent_li">
+<a href="http://www.elecfans.com">首页</a>
+</li>
+<li class="forum_cur parent_li">
+<a class="forum_dot has_child" href="http://bbs.elecfans.com/" title="点击查看全部版块">版块</a>
+</li>
+<li class="try_cur parent_li">
+<a href="/try.html" target="_blank">开发板试用</a>
+</li>
+<li class="eetalk parent_li">
+<a href="http://z.elecfans.com/" target="_blank">工程师众筹</a>
+</li>
+<li class="jifen_cur parent_li">
+<a href="http://jifen.elecfans.com/" target="_blank">积分商城</a>
+</li>
+<li class="download_cur parent_li">
+<a href="http://www.elecfans.com/soft/" target="_blank">下载</a>
+</li>
+<li class="discovery_cur parent_li" id="drag_nav">
+<a class="discovery_dot has_child" href="/" title="查看更多内容资源">发现</a>
+</li>
+</ul>
+<!--#导航条-->
+<div class="float_right" id="header_login">
+<!--*没有登录样式-->
+<a class="login" href="/member.php?mod=logging&amp;action=login">登录</a> <span class="space_line"></span>
+<a class="regist" href="/member.php?mod=reg">注册</a>
+<!--*没有登录样式-->
+</div>
+<form action="http://s.elecfans.com/cse/search" autocomplete="off" class="float_right" id="header_search" method="get" target="_blank"> <input autocomplete="off" class="xg1" id="scbar_txt" name="q" placeholder="请输入搜索内容" speech="" type="text" x-webkit-speech=""/> <input name="s" type="hidden" value="6298135183618923127"/> <input name="nsid" type="hidden" value="2"/> <button id="scbar_btn" mid="lVUTkRUmgWWWWWWWWWWWWWWWWWWWWWWW" sc="1" type="submit" value="true">帖子</button> </form>
+</div>
+</div>
+<div id="page">
+<div id="content"> <img src="http://www.elecfans.com/images2013/404.png"/>
+<p class="tip-404">喔~发烧友君把你的页面抢走了！
+				<a href="/">返回首页</a>
+</p>
+<div class="other-pages"> <span>您还可以逛逛：</span>
+<a href="http://www.elecfans.com">电子发烧友</a>
+<a href="http://bbs.elecfans.com">电子论坛</a>
+<a href="http://www.elecfans.com/soft/">资料下载</a>
+<a href="http://bbs.elecfans.com/try.html">开发板试用</a>
+<a href="http://z.elecfans.com">聚丰众筹</a>
+<a href="http://t.elecfans.com">发烧友学院</a>
+</div>
+</div>
+</div>
+<div id="footer">
+<div class="footer">
+<div class="foot-link">
+<a class="a1" href="http://www.elecfans.com/about/">关于本站</a><span class="gray"> | </span>
+<a class="a1" href="http://www.elecfans.com/about/contribute.html">欢迎投稿</a><span class="gray"> | </span>
+<a class="a1" href="http://www.elecfans.com/about/feedback.html">用户建议</a><span class="gray"> | </span>
+<a class="a1" href="http://www.elecfans.com/about/copyright.html">版权申明</a><span class="gray"> | </span>
+<a class="a1" href="http://www.elecfans.com/about/friendlink.html">友情链接</a><span class="gray"> | </span>
+<a class="a1" href="http://www.elecfans.com/about/contact.html">联系我们</a><span class="gray"> | </span>
+<a class="a1" href="http://www.elecfans.com/about/sitemap.html">网站地图</a>
+<p>版权所有 © 深圳华强聚丰电子科技有限公司</p>
+<p>
+<a href="http://www.elecfans.com">电子发烧友</a> （ <strong><a href="http://www.elecfans.com">电路图</a></strong> ）
+					<a href="http://www.miibeian.gov.cn/" id="elecfans-beianhao" target="_blank">粤ICP备14022951号</a>
+</p>
+</div>
+<div class="small-wx"> <img alt="微信扫描" src="http://skin.elecfans.com/images/small-wx.jpg"/> </div>
+</div>
+<div id="hm_t_11649"></div>
+</div>
+</body></html>

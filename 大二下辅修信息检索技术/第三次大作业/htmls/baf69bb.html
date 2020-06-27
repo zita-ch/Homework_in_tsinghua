@@ -1,0 +1,176 @@
+<html><head><meta charset="utf-8"/><title>创建您的华强PCB账号 - 华强PCB后台</title><meta content="" name="description"/><meta content="" name="keywords"/><meta content="width=1200" name="viewport"/><meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/><meta content="webkit" name="renderer"/><!-- 套壳浏览器使用webkit模式 --><link href="//www.hqpcb.com/favicon.ico" rel="shortcut icon" type="image/x-icon"/><link href="/static/ui/base.css?ver=11deb1?ver=11deb1" rel="stylesheet"/><link href="/static/ui/common.css?ver=e502ae" rel="stylesheet"/><link href="/static/ui/base.css?ver=11deb1?ver=11deb1" rel="stylesheet"/><link href="/static/ui/common.css?ver=e502ae" rel="stylesheet"/><link href="/Public/css/register.css?ver=9253ae" rel="stylesheet"/><link href="/Public/css/user.css?ver=8eaffd" rel="stylesheet"/><style>		body{
+            background: #f6f6f6;
+        }
+        #header {
+            margin-bottom: 0;
+        }
+        #footer {
+            margin-top: 0;
+        }
+        #main {
+            position: relative;
+            min-height: 630px;
+            background: url('/Public/images/member/reg-img-bg.jpg') center center;
+        }
+        .reg {
+            position: absolute;
+            left: 50%;
+            top: 110px;
+            margin-left: 240px;
+            width: 300px;
+            padding: 20px 30px;
+            background-color: #fff;
+        }
+        .reg iframe {
+            min-height: 240px;
+        }
+		.reg-title {
+            font-size: 26px;
+            color: #111;
+            margin-bottom:20px;
+            padding-bottom: 8px;
+            border-bottom: 1px dashed #e0e0e0;
+        }
+        .redpacket{position: relative;top: -34px;left: 65px;zoom: 1;}
+        .reg-title{margin: 0;padding-top: 5px;}
+	</style><script src="//hm.baidu.com/hm.js?cefb40a0589bc3d899b1c55a87a2c7df"></script><script async="" src="/static/js/sa-sdk/1.14.9/sensorsdata.min.js"></script><script type="text/javascript">        // 2019-10-14到2019-11-15之间用活动背景图
+        var now = new Date();
+        document.write('<style>#main{background-image: url("/Public/images/member/reg-img-bg'+ (now > new Date('2019-10-14') && now < new Date(new Date('2019-11-15 18:00:00')) ? '_act_temp' : '') +'.jpg");}</style>')
+    </script><style>#main{background-image: url("/Public/images/member/reg-img-bg.jpg");}</style><link href="http://www.hqpcb.com/Public/js/layer/skin/layer.css" id="layui_layer_skinlayercss" rel="stylesheet" style=""/></head><body><script>(function(para) {
+  var p = para.sdk_url, n = para.name, w = window, d = document, s = 'script',x = null,y = null;
+  if(typeof(w['sensorsDataAnalytic201505']) !== 'undefined') {
+      return false;
+  }
+  w['sensorsDataAnalytic201505'] = n;
+  w[n] = w[n] || function(a) {return function() {(w[n]._q = w[n]._q || []).push([a, arguments]);}};
+  var ifs = ['track','quick','register','registerPage','registerOnce','clearAllRegister','trackSignup', 'trackAbtest', 'setProfile','setOnceProfile','appendProfile', 'incrementProfile', 'deleteProfile', 'unsetProfile', 'identify','login','logout','trackLink','clearAllRegister'];
+  for (var i = 0; i < ifs.length; i++) {
+    w[n][ifs[i]] = w[n].call(null, ifs[i]);
+  }
+  if (!w[n]._t) {
+    x = d.createElement(s), y = d.getElementsByTagName(s)[0];
+    x.async = 1;
+    x.src = p;
+    y.parentNode.insertBefore(x, y);
+    w[n].para = para;
+  }
+})({
+      sdk_url: '/static/js/sa-sdk/1.14.9/sensorsdata.min.js',
+      name: 'sensors',
+      server_url: 'https://data.hqchip.com:4006/sa?project=production',
+      heatmap_url: "/static/js/sa-sdk/heatmap.min.js",
+      show_log: false,
+      send_type: 'ajax',
+      heatmap: {
+         clickmap:'default',
+         scroll_notice_map:'default'
+      }
+    });
+    // 注册公共属性
+    sensors.registerPage({
+      site_domain: document.domain,
+      from_channel: ''
+    });
+</script><style type="text/css">	.ic_tip_hot{
+	    position: absolute;
+	    right: 10px;
+	    top: 0px;
+	    padding: 1px 3px;
+	    background-color: rgb(255, 51, 0);
+	    color: rgb(255, 255, 255);
+	    font-weight: 400;
+	    font-size: 12px;
+	    line-height: 1;
+	    border-radius: 3px;
+	    font-style: italic;
+	}
+</style><header id="header"><div class="container logo-container"><div class="logo"><a href="/"><img alt="华秋电路 logo" height="50" src="/static/ui/images/pcb-logo-new.png?v=20191108"/></a></div><div class="login"><!-- 未登录 --><div class="login-status" id="account"><a class="item" href="/account/login/?back_act=http%3A%2F%2Fwww.hqpcb.com%2Faccount%2Fregister%3Ftid%3D653" id="J_Login">登录</a><a class="item" href="/account/register/?back_act=http%3A%2F%2Fwww.hqpcb.com%2Faccount%2Fregister%3Ftid%3D653" id="J_Register"><img alt="红包" class="pull-left" src="/static/images/home/redpacket_small.jpg" style="margin-right: 6px; margin-top: -3px;"/>免费注册</a><a class="item quote" href="/quote/">在线下单</a></div><script>var account = 'logout';</script></div></div><div class="nav-wrap"><div class="container"><nav class="nav"><a class="home" href="/">首页</a><a class="pay" href="/pay.html">付款方式</a><a class="flow" href="/orderstep.html">下单流程</a><a class="ability" href="/ability.html">制程能力</a><a class="product" href="/product.html">产品展示</a><a class="about" href="/about.html">关于我们</a><a href="/pcbjishu/">技术中心</a><a class="ic" href="https://data.hqchip.com:4006/t/Y5E" style="position: relative;" target="_blank">                    IC现货
+                </a><a class="smt" href="http://smt.hqchip.com/?pcbdaohang" style="position: relative;" target="_blank">SMT<!-- <span class="ic_tip_hot">hot</span> --></a><a class="coupon" href="/coupon">优惠专区</a></nav></div></div></header><script type="text/javascript">    // (function(){
+    //     var today = new Date();
+    //     var min = new Date('2019/06/10 09:00:00');
+    //     var max = new Date('2019/06/29 00:00:00');
+    //     if (today >= min && today <= max) {
+            // document.write('<div style="position: fixed;right: 0;top: 62%;z-index: 99999;"><i style="position: absolute;right: 15px;top: 15px;width: 20px;height: 20px;cursor: pointer;" onclick="this.parentNode.remove()"></i><a href="/account/login/?back_act=/account/finance/refill/" target="_blank"><img src="/static/images/activity/charge201911/home_fixed.png"></a></div>');
+    //     }
+    // }())
+</script><main id="main"><div class="reg"><h1 class="reg-title">注册</h1><div class="redpacket"><img alt="红包" class="fl" src="/static/images/home/redpacket.png" style="vertical-align: text-bottom;"/><span class="f14 fl" style="color: #f00;">*注册下单随机减</span></div><div class="form"><iframe data-ssoreferer="http%3A%2F%2Fwww.hqpcb.com%2Faccount%2Fregister%3Ftid%3D653" frameborder="0" name="sso-RegistIframe" scrolling="no" src="https://passport.elecfans.com/register?tid=653&amp;referer=http%3A%2F%2Fwww.hqpcb.com&amp;siteid=17&amp;scene=&amp;account=#http%3A%2F%2Fwww.hqpcb.com%2Faccount%2Fregister%3Ftid%3D653"></iframe><!-- <img src="/Public/images/topic/a3.png" style="position: absolute;right: 0;top: 0;"> --></div></div><!-- End .wrap --></main><footer class="footer" id="footer"><div class="container"><div class="equal footer-link"><h3>我们提供</h3><div class="content"><a href="/quote/">PCB打样</a><a href="/quote/">PCB小批量</a><a href="//www.hqchip.com/" onclick="if(confirm('确认打开链接进入第三方网站吗？')==false)return false;" target="_blank">BOM采购服务</a><a href="//smt.hqchip.com/" onclick="if(confirm('确认打开链接进入第三方网站吗？')==false)return false;" target="_blank">SMT贴片服务</a></div></div><div class="equal footer-link"><h3>技术支持</h3><div class="content"><a href="/quote/">在线计价</a><a href="/orderstep.html">下单流程</a><a href="/pcbjishu/">技术专栏</a><a href="/pcbjishu/PCBsoft/">PCB软件及工具</a></div></div><div class="equal footer-link"><h3>账户与支付</h3><div class="content"><a href="/pay.html">支付方式</a><!-- <a href="/pay.html#chongzhi">充值返现</a><a href="#">索取发票</a> --></div></div><div class="equal footer-link footer-company"><h3>友情链接</h3><div class="content"><a href="/">华秋电路</a><a href="//www.hqchip.com/" target="_blank">华秋商城</a><a href="//www.elecfans.com/" target="_blank">电子发烧友网</a><a href="/joinus.html">加入我们</a></div></div><div class="equal online-service"><!-- <a href="#"><img src="/static/ui/images/qq-footer.png" alt=""></a> --><h4 class="tel">400-990-8686</h4><p class="working-time">周一至周六 9:00-18:30</p><div class="renzheng"><a href="http://database.ul.com/cgi-bin/XYV/template/LISEXT/1FRAME/showpage.html?name=ZPMV2.E469747&amp;ccnshorttitle=Wiring,+Printed+-+Component&amp;objid=1084355595&amp;cfgid=1073741824&amp;version=versionless&amp;parent_id=1073814637&amp;sequence=1" onclick="if(confirm('确认打开链接进入第三方网站吗？')==false)return false;" target="_blank"><img alt="华秋电路通过了UL认证,ROHS认证" height="" src="/static/ui/images/renzheng.png" width="160"/></a></div></div></div><div class="container not-flex copyright"><p>Copyright ©2012-2020 hqpcb.com.All Rights Reserved <a class="grey-link" href="http://www.miibeian.gov.cn/">粤ICP备14022951号-4</a></p><div style="margin-top: 15px;"><a href="http://szcert.ebs.org.cn/c6db625a-ba09-414a-bba4-f57240baac9c" style="color: #7b7b7b;" target="_blank"><img alt="工商网监认证" src="/static/images/ebsIcon.png" style="margin: -5px 10px 0 0;"/>工商网监
+                </a></div></div></footer><div class="fixed-toolbar" id="fixedToolbar"><div class="tool blue kefu-weixin" id="weixinkefu"><img height="32" src="/static/ui/images/timg.png" width="32"/></div><div class="weixin-list-box" id="weixinList"><div class="weixin-list"><img src="/static/ui/images/weixinkefu/2.png?v=20191111" width="120"/><p>扫描二维码咨询客服</p><select><option value="2">华秋电路-王小姐</option>undefined<option value="1">华秋电路-吴小姐</option><option value="3">华秋电路-张小姐</option><option value="4">华秋电路-黄小姐</option><option value="5">华秋电路-宋小姐</option></select></div></div><div class="tool blue kefu-qq" onclick="window.open('http://wpa.b.qq.com/cgi/wpa.php?ln=1&amp;key=XzgwMDAyNjA0OF80Nzc0NzJfODAwMDI2MDQ4Xw')" style="cursor: pointer" title="通过QQ在线交谈"><i class="icon-qq"></i></div><div class="tool blue kefu-phone" id="phonekefu" title="通过电话联系客服"><img alt="华秋电路电话客服" height="40" src="/static/ui/images/kefu.gif" width="40"/></div><!-- <div class="tool weixin" title="微信在线客服" id="weixinkefu"><img src="http://www.hqpcb.com/Public/images/wechat_qrcode.jpg" width="42" alt="华秋电路微信公众账号"></div> --><div class="back-to-top"><div class="tool" id="backToTop" title="返回顶部"><span class="icon icon-angle-up"></span></div></div><!-- <a href="/topic/38/" class="tool" title="建议&amp;反馈"><span aria-hidden="true" class="icon icon-pencil"></span>       反馈
+    </a> --><!-- <div class="weixinpop" id="weixinpop"><img src="http://www.hqpcb.com/Public/images/wechat_qrcode.jpg" width="39" alt="华秋电路微信公众账号"></div> --><div class="phone-list logout" id="phoneList"><!-- 报价 --><h4 class="phone-name"><i class="icon icon-volume-control-phone"></i> 客服（深圳）</h4><div class="phone-number logout"><!-- <p>李女士 <span class="number">0755-83863769</span></p><p>郑女士 <span class="number">0755-83863739</span></p><p>王女士 <span class="number">0755-23986802</span></p>     --><p><span class="number">0755-23986801</span></p><p><span class="number">0755-23986802</span></p><p><span class="number">0755-23986803</span></p><p><span class="number">0755-23986804</span></p></div><!-- 跟单 --><h4 class="phone-name"><i class="icon icon-volume-control-phone"></i> 客服（九江）</h4><div class="phone-number logout"><!-- <p>吴女士 <span class="number">0755-83794266</span></p><p>王女士 <span class="number">0755-83863779</span></p><p>杨女士 <span class="number">0755-83793466</span></p>   --><p><span class="number">0792-8983001</span></p><p><span class="number">0792-8983002</span></p><p><span class="number">0792-8983003</span></p><p><span class="number">0792-8983004</span></p></div><!-- 投诉 --><h4 class="phone-name"><i class="icon icon-volume-control-phone"></i> 服务投诉</h4><div class="phone-number"><p><span class="number">0755-83863759</span></p></div><div class="work-time"><p class="phone-name">工作时间：</p><h4>9:00-20:00 (周一至周六) </h4><p></p></div></div></div><script type="text/javascript">var TPL_VAR = {
+	SSO_SITE : "https://passport.elecfans.com",
+	REFERER : "http%3A%2F%2Fwww.hqpcb.com",
+	SSO_SITE_ID : 17,
+	IS_LOGIN : 0,
+	STATIC: '/static',
+	PUBLIC: '/Public'
+};
+</script><script src="/static/js/jquery.js?ver=c0180d"></script><script src="/static/vue/vue.js"></script><script src="/static/js/plugins.js?ver=47a663"></script><script src="/Public/js/analytics.js?ver=b15cad"></script><script data-ssoreferer="http%3A%2F%2Fwww.hqpcb.com" data-ssosite="https://passport.elecfans.com" data-ssositeid="17" id="sso_script" src="https://passport.elecfans.com/public/pc/js/sso.passport.js?v=1.0"></script><script src="/static/js/common.js?ver=b1c1c9"></script><script type="text/javascript">	var mid = "", unionid = "";
+	if(unionid){
+		if( sensors ){
+			sensors.login(unionid);
+		}
+	}else if(getCookie('unionid')){
+		if(sensors){
+			sensors.login(getCookie('unionid'));
+		}
+	}
+	if(sensors){
+		sensors.quick('autoTrack');
+	}
+</script><script src="/Public/js/layer/layer.js" type="text/javascript"></script><script src="/Public/js/activity.js?ver=04a513" type="text/javascript"></script><!--[if lt IE 9]><link rel="stylesheet" type="text/css" href="/Public/Plugin/iealert/style.css" /><script src="/static/js/browser-alert.js?ver=64b69e"></script><script type="text/javascript">browser_alert();</script><![endif]--><div class="analytics"></div><script>	var referer = document.referrer;
+	var enterTime = Date.parse(new Date());
+	var refererTitle;
+	if( referer.indexOf('quote') != -1 ){
+		refererTitle = '计价';
+	}else{
+		refererTitle = localStorage.getItem('sensorsTitle', $('title').text());
+		if( refererTitle && refererTitle.split('_')[0] == 'PCB打样'){
+			refererTitle = '首页';
+		}
+	}
+	// 神策  （进入注册页面）
+	if(sensors){
+	    sensors.track('clickregister',{
+	        current_url: referer,
+	        current_title: refererTitle
+	    });
+	}
+	$.receiveMessage(function(e){
+        // 接收到纯数字时设置iframe的高度
+        if($.isNumeric(e.data)){
+            $('.reg iframe').height(e.data);
+        	return false;
+        } else if ( typeof e.data == 'string' ) {
+            var url = decodeURIComponent(e.data);
+            if (url.search(location.protocol + '//' + document.domain) === 0 ) {
+                $.ajax({
+                    type : "get",
+                    url : url,
+                    success : function(msg){
+                        // 神策  （注册成功）
+                        var outerTime = Date.parse(new Date());
+                        var register_source = location.href;
+                        if (location.pathname === '/') {
+                            register_source = '首页'
+                        } else if (location.pathname === '/quote') {
+                            register_source = '计价页'
+                        }
+                        sensors.track('signup',{
+                            event_duration: (outerTime-enterTime)/60,
+                            register_source: register_source
+                        });
+                    }
+                })
+            } else {
+                // 监听sso相关事件百度统计
+                try {
+                    var data = new Function("return "+ e.data +"")();
+                    if (data.type === 'event') {
+                        if (data.data.msg === 'register') {
+                            _hmt.push(['_trackEvent','注册下单','点击','注册页面点击'])
+                        }
+                    }
+                } catch(e) {}
+            }
+        }
+    }, TPL_VAR.SSO_SITE );
+</script></body></html>

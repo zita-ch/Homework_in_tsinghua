@@ -1,0 +1,963 @@
+<html><head>
+<meta charset="utf-8"/>
+<title>SCADA/RTU专栏-RTU，SCADA系统-供应-中国测控网</title>
+<meta content="RTU,SCADA系统" name="keywords"/>
+<meta content="SCADA/RT供应商SCADA/RT制造商" name="description"/>
+<meta content="ie=7" http-equiv="x-ua-compatible"/>
+<meta content="all" name="robots"/>
+<meta content="all" name="googlebot"/>
+<meta content="all" name="baiduspider"/>
+<meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible"/>
+<meta content="IE=7" http-equiv="X-UA-Compatible"/>
+<link href="http://www.ck365.cn/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<link href="http://www.ck365.cn/favicon.ico" rel="bookmark" type="image/x-icon"/>
+<link href="http://www.ck365.cn/skin/default/product.css" rel="stylesheet" type="text/css"/>
+<!--[if lte IE 6]>
+<link rel="stylesheet" type="text/css" href="http://www.ck365.cn/skin/default/ie6.css"/>
+<![endif]-->
+<script async="" src="https://pos.baidu.com/auto_dup?psi=c1c0d03030ecb33ae19800cfce113060&amp;di=0&amp;dri=0&amp;dis=0&amp;dai=0&amp;ps=0x0&amp;enu=encoding&amp;exps=110011&amp;ant=0&amp;dcb=___baidu_union_callback&amp;dtm=AUTO_JSONP&amp;dvi=0.0&amp;dci=-1&amp;dpt=none&amp;tsr=0&amp;tpr=1589032026026&amp;ti=SCADA%2FRTU%E4%B8%93%E6%A0%8F-RTU%EF%BC%8CSCADA%E7%B3%BB%E7%BB%9F-%E4%BE%9B%E5%BA%94-%E4%B8%AD%E5%9B%BD%E6%B5%8B%E6%8E%A7%E7%BD%91&amp;ari=2&amp;ver=0506&amp;dbv=2&amp;drs=1&amp;pcs=1920x1080&amp;pss=1920x1080&amp;cfv=0&amp;cpl=0&amp;chi=50&amp;cce=true&amp;cec=UTF-8&amp;tlm=1430799331&amp;prot=2&amp;rw=1080&amp;ltu=http%3A%2F%2Fcp.ck365.cn%2Fscada%2F&amp;ecd=1&amp;uc=1920x1080&amp;pis=-1x-1&amp;sr=1920x1080&amp;tcn=1589032026&amp;dc=4" type="text/javascript"></script><script async="" src="https://pos.baidu.com/gcxm?psi=c1c0d03030ecb33ae19800cfce113060&amp;di=u299844&amp;dri=0&amp;dis=0&amp;dai=1&amp;ps=224x480&amp;enu=encoding&amp;exps=110011&amp;ant=0&amp;dcb=___adblockplus_&amp;dtm=SSP_JSONP&amp;dvi=0.0&amp;dci=-1&amp;dpt=none&amp;tsr=0&amp;tpr=1589032026026&amp;ti=SCADA%2FRTU%E4%B8%93%E6%A0%8F-RTU%EF%BC%8CSCADA%E7%B3%BB%E7%BB%9F-%E4%BE%9B%E5%BA%94-%E4%B8%AD%E5%9B%BD%E6%B5%8B%E6%8E%A7%E7%BD%91&amp;ari=2&amp;ver=0506&amp;dbv=2&amp;drs=1&amp;pcs=1920x1080&amp;pss=1920x1080&amp;cfv=0&amp;cpl=0&amp;chi=50&amp;cce=true&amp;cec=UTF-8&amp;tlm=1430799331&amp;prot=2&amp;rw=1080&amp;ltu=http%3A%2F%2Fcp.ck365.cn%2Fscada%2F&amp;ecd=1&amp;uc=1920x1080&amp;pis=-1x-1&amp;sr=1920x1080&amp;tcn=1589032026" type="text/javascript"></script><script src="//hm.baidu.com/hm.js?f386cc82598fd5ffddc536e30e23cb81"></script><script type="text/javascript">window.onerror= function(){return true;}</script><script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?f386cc82598fd5ffddc536e30e23cb81";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<script src="http://www.ck365.cn/data/script/jquery.js" type="text/javascript"></script>
+<script src="http://www.ck365.cn/lang/zh-cn/lang.js" type="text/javascript"></script>
+<script src="http://www.ck365.cn/data/script/config.js" type="text/javascript"></script>
+<script src="http://www.ck365.cn/data/script/common.js" type="text/javascript"></script>
+<script src="http://www.ck365.cn/data/script/page.js" type="text/javascript"></script>
+</head>
+<body><div id="BAIDU_DUP_fp_wrapper" style="position: absolute; left: -1px; bottom: -1px; z-index: 0; width: 0px; height: 0px; overflow: hidden; visibility: hidden; display: none;"><iframe id="BAIDU_DUP_fp_iframe" src="https://pos.baidu.com/wh/o.htm?ltr=" style="width: 0px; height: 0px; visibility: hidden; display: none;"></iframe></div>
+<div class="d-header">
+<div class="headnav1">
+<div class="nav-l">
+<ul>
+<li class="home"><a href="http://www.ck365.cn/"> 首页</a></li>
+<li><a href="http://www.ck365.cn/company/">企业库</a></li>
+<li><a href="http://cp.ck365.cn/">测控产品</a></li>
+<li><a href="http://www.ck365.cn/news/">资讯报道</a></li>
+<li><a href="http://www.ck365.cn/lunwen/">技术论文</a></li>
+<li><a href="http://www.ck365.cn/anli/">解决方案</a></li>
+<li><a href="http://www.ck365.cn/download/">资料下载</a></li>
+<li><a href="http://www.ck365.cn/know/">测控问答</a></li>
+<li><a href="http://www.ck365.cn/baike/">测控百科</a></li>
+<li><a href="http://www.ck365.cn/peixun/">培训</a></li>
+<li><a href="http://www.ck365.cn/job/">人才</a></li>
+<li><a href="http://www.ck365.cn/exhibit/">展会</a></li>
+<li><a href="http://www.ck365.cn/zazhi/">期刊</a></li>
+<li><a href="http://bbs.ck365.cn/">论坛</a></li>
+</ul>
+</div>
+<div id="xzgcms_member" style="line-height:27px; _margin-top:7px;"></div>
+</div>
+</div>
+<div class="nav">
+<div class="logo"><a href="http://www.ck365.cn/" target="-black"><img alt="中国测控网" src="http://www.ck365.cn/skin/default/image/logo.png"/></a></div>
+<div class="logo2" style="height:40px">
+<span>测·控领域专业互动媒体平台<br/>
+推动测试测量,检测诊断,传感物联,遥测自控智能化发展</span></div>
+<div class="second_top_r">
+<ul>
+<li class="none"><p><a href="http://dzclw.ck365.cn/" title="电子测量网">电子测量网</a></p>
+<p><a href="#" title="电气测控网">电气测控网</a></p></li>
+<li><p><a href="#" title="无损检测网">无损检测网</a></p>
+<p><a href="#" title="实验分析网">实验分析网</a></p></li>
+<li><p><a href="#" title="遥测导航网">遥测导航网</a></p>
+<p><a href="#" title="数据采集网">数据采集网</a></p></li>
+<li><p><a href="#" title="检测诊断网">检测诊断网</a></p>
+<p><a href="#" title="虚拟仪器网">虚拟仪器网</a></p></li>
+</ul>
+</div>
+</div>
+<div class="clear"></div><div class="m">
+<div class="cpnav1">
+<div class="cpnav1-l"><a href="http://cp.ck365.cn/" style="color:#FFF">测控产品库</a></div>
+<div class="cpnav3-r">
+<ul>
+<li><a href="http://www.ck365.cn/buy/">求购信息</a></li>
+<li><img src="http://www.ck365.cn/skin/default/image/lines.jpg"/></li>
+<li><a href="http://cp.ck365.cn/index-htm-typeid-4.html">招商代理</a></li>
+<li><img src="http://www.ck365.cn/skin/default/image/lines.jpg"/></li>
+<li><a href="http://cp.ck365.cn/index-htm-typeid-2.html">二手代理</a></li>
+<li><img src="http://www.ck365.cn/skin/default/image/lines.jpg"/></li>
+<li><a href="http://cp.ck365.cn/index-htm-typeid-1.html">提供服务</a></li>
+<li><img src="http://www.ck365.cn/skin/default/image/lines.jpg"/></li>
+<li><a href="http://cp.ck365.cn/index-htm-typeid-6.html">促销产品</a></li>
+<li><img src="http://www.ck365.cn/skin/default/image/lines.jpg"/></li>
+<li><a href="http://www.ck365.cn/buy/index-htm-typeid-3.html">寻求加工</a></li>
+<li><img src="http://www.ck365.cn/skin/default/image/lines.jpg"/></li>
+<li><a href="http://cp.ck365.cn/index-htm-typeid-3.html">提供加工 </a></li>
+<li><img src="http://www.ck365.cn/skin/default/image/lines.jpg"/></li>
+<li><a href="http://www.ck365.cn/buy/index-htm-typeid-5.html">招标信息</a></li>
+<li><img src="http://www.ck365.cn/skin/default/image/lines.jpg"/></li>
+<li><a href="http://www.ck365.cn/buy/index-htm-typeid-4.html">寻求合作</a></li>
+<li><img src="http://www.ck365.cn/skin/default/image/lines.jpg"/></li>
+<li><a href="http://www.ck365.cn/qynews/leibie/1/">新品速递</a></li>
+</ul>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+<!--
+function z_search(obj, u, m){
+	for(var i = 1; i <= 7; i++){$('#z_s_'+i).removeClass();}
+	obj.addClass('z_menuon');
+	u = u + 'index.php';
+	$('#z_search_f').attr('action', u);
+	$.post(AJPath, {a:'keyword', mid:m}, function(data){$('#z_s_tag').html(data);});
+}
+-->
+</script>
+<div class="m z_search">
+<div class="z_s_l">
+<div class="z_search_box">
+<ul id="search_d">
+<li class="z_menuon" id="z_s_1" onclick="z_search($(this),'http://cp.ck365.cn/',5);">产品</li>
+<li style="width:1px; background:#1F4685; height:15px;margin-top:10px;"></li>
+<li id="z_s_2" onclick="z_search($(this),'http://www.ck365.cn/buy/',6);">求购</li>
+<li style="width:1px; background:#1F4685; height:15px;margin-top:10px;"></li>
+<li id="z_s_7" onclick="z_search($(this),'http://www.ck365.cn/company/',4);">企业</li>
+<li style="width:1px; background:#1F4685; height:15px;margin-top:10px;"></li>
+<li id="z_s_3" onclick="z_search($(this),'http://www.ck365.cn/news/',21);">资讯</li>
+<li style="width:1px; background:#1F4685; height:15px;margin-top:10px;"></li>
+<li id="z_s_4" onclick="z_search($(this),'http://www.ck365.cn/lunwen/',28);">论文</li>
+<li style="width:1px; background:#1F4685; height:15px;margin-top:10px;"></li>
+<li id="z_s_5" onclick="z_search($(this),'http://www.ck365.cn/anli/',23);">案例</li>
+<li style="width:1px; background:#1F4685; height:15px;margin-top:10px;"></li>
+<li id="z_s_6" onclick="z_search($(this),'http://www.ck365.cn/download/',9);">下载</li>
+</ul>
+</div>
+<div class="z_s_d">
+<div class="z_s_d_f">
+<form action="http://cp.ck365.cn/index.php" id="z_search_f">
+<input name="a" type="hidden" value="search"/>
+<input class="z_s_kw" id="z_s_kw" name="kw" onfocus="this.value='';" type="text" value="请输入关键字"/>
+</form>
+</div>
+<div class="z_s_button" onclick="if($('#z_s_kw').val() == '' || $('#z_s_kw').val() == '请输入关键字'){$('#z_s_kw').val(''); $('#z_s_kw').focus();}else{$('#z_search_f').submit();}"> </div>
+</div>
+</div>
+<div class="z_s_r">
+<strong>热门搜索：</strong>
+<span id="z_s_tag"><a href="http://cp.ck365.cn/index-htm-a-search-kw-TES.html" title="TES">TES</a>  <a href="http://cp.ck365.cn/index-htm-a-search-kw-%E7%A4%BA%E6%B3%A2%E5%99%A8.html" title="示波器">示波器</a>  <a href="http://cp.ck365.cn/index-htm-a-search-kw-%E4%BC%A0%E6%84%9F%E5%99%A8.html" title="传感器">传感器</a>  <a href="http://cp.ck365.cn/index-htm-a-search-kw-%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E5%8D%A1.html" title="数据采集卡">数据采集卡</a>  <a href="http://cp.ck365.cn/index-htm-a-search-kw-%E8%87%AA%E6%8E%A7%2F%E4%BB%AA%E5%99%A8%E4%BB%AA%E8%A1%A8.html" title="自控/仪器仪表">自控/仪器</a>  <a href="http://cp.ck365.cn/index-htm-a-search-kw-%E7%94%B5%E6%BA%90.html" title="电源">电源</a>  <a href="http://cp.ck365.cn/index-htm-a-search-kw-LabVIEW.html" title="LabVIEW">LabVIEW</a>  <a href="http://cp.ck365.cn/index-htm-a-search-kw-Fluke.html" title="Fluke">Fluke</a>  <a href="http://cp.ck365.cn/index-htm-a-search-kw-%E6%B3%B0%E4%BB%95TES.html" title="泰仕TES">泰仕TES</a>  <a href="http://cp.ck365.cn/index-htm-a-search-kw-%E6%B5%8B%E5%8E%9A%E4%BB%AA.html" title="测厚仪">测厚仪</a>  </span>
+</div>
+</div><div class="m b5"></div><div class="m">
+<script type="text/javascript">
+/*960*60，创建于2010-11-30*/
+var cpro_id = "u299844";
+</script>
+<script src="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script><div id="BAIDU_SSP__wrapper_u299844_0"><iframe align="center,center" allowtransparency="true" frameborder="0" height="90" hspace="0" id="iframeu299844_0" marginheight="0" marginwidth="0" name="iframeu299844_0" scrolling="no" src="https://pos.baidu.com/gcxm?conwid=960&amp;conhei=90&amp;rdid=299844&amp;dc=3&amp;exps=110011&amp;psi=c1c0d03030ecb33ae19800cfce113060&amp;di=u299844&amp;dri=0&amp;dis=0&amp;dai=1&amp;ps=224x480&amp;enu=encoding&amp;ant=0&amp;dcb=___adblockplus_&amp;dtm=HTML_POST&amp;dvi=0.0&amp;dci=-1&amp;dpt=none&amp;tsr=0&amp;tpr=1589032026026&amp;ti=SCADA%2FRTU%E4%B8%93%E6%A0%8F-RTU%EF%BC%8CSCADA%E7%B3%BB%E7%BB%9F-%E4%BE%9B%E5%BA%94-%E4%B8%AD%E5%9B%BD%E6%B5%8B%E6%8E%A7%E7%BD%91&amp;ari=2&amp;ver=0506&amp;dbv=2&amp;drs=1&amp;pcs=1920x1080&amp;pss=1920x1080&amp;cfv=0&amp;cpl=0&amp;chi=50&amp;cce=true&amp;cec=UTF-8&amp;tlm=1430799331&amp;prot=2&amp;rw=1080&amp;ltu=http%3A%2F%2Fcp.ck365.cn%2Fscada%2F&amp;ecd=1&amp;uc=1920x1080&amp;pis=-1x-1&amp;sr=1920x1080&amp;tcn=1589032026&amp;qn=5e5da1842568f3e9&amp;tt=1589032026019.8.45.46" style="border:0;vertical-align:bottom;margin:0;width:960px;height:90px" vspace="0" width="960"></iframe></div>
+<!-- ad960x90结束 -->
+<div class="b5"> </div>
+<div id="s_m_left">
+<div class="s_m_l_c">
+<div class="t_type">当前位置: <a href="http://www.ck365.cn/">首页</a> » <a href="http://cp.ck365.cn/">供应</a> » <a href="http://cp.ck365.cn/yaoceyaokong/">导航/遥测遥控</a> » <a href="http://cp.ck365.cn/scada/">SCADA/RTU</a></div>
+<div class="category">
+<p><img alt="" height="12" src="http://www.ck365.cn/skin/default/image/arrow.gif" width="17"/> <strong>按行业浏览</strong></p>
+<div>
+<table cellpadding="3" width="100%">
+<tbody><tr> <td><a href="http://cp.ck365.cn/rtu/" target="_blank">RTU</a></td>
+<td><a href="http://cp.ck365.cn/SCADAxitong/" target="_blank">SCADA系统</a></td>
+</tr></tbody></table>
+</div>
+<p><img alt="" height="12" src="http://www.ck365.cn/skin/default/image/arrow.gif" width="17"/> <strong>按省份浏览</strong></p>
+<ul id="category_more">
+<li><a href="http://cp.ck365.cn/index-htm-a-search-areaid-1-kw-SCADA%2FRTU.html">北京</a></li>
+<li><a href="http://cp.ck365.cn/index-htm-a-search-areaid-2-kw-SCADA%2FRTU.html">上海</a></li>
+<li><a href="http://cp.ck365.cn/index-htm-a-search-areaid-3-kw-SCADA%2FRTU.html">天津</a></li>
+<li><a href="http://cp.ck365.cn/index-htm-a-search-areaid-4-kw-SCADA%2FRTU.html">重庆</a></li>
+<li><a href="http://cp.ck365.cn/index-htm-a-search-areaid-5-kw-SCADA%2FRTU.html">河北</a></li>
+<li><a href="http://cp.ck365.cn/index-htm-a-search-areaid-6-kw-SCADA%2FRTU.html">山西</a></li>
+<li><a href="http://cp.ck365.cn/index-htm-a-search-areaid-7-kw-SCADA%2FRTU.html">内蒙古</a></li>
+<li><a href="http://cp.ck365.cn/index-htm-a-search-areaid-8-kw-SCADA%2FRTU.html">辽宁</a></li>
+<li><a href="http://cp.ck365.cn/index-htm-a-search-areaid-9-kw-SCADA%2FRTU.html">吉林</a></li>
+<li><a href="http://cp.ck365.cn/index-htm-a-search-areaid-10-kw-SCADA%2FRTU.html">黑龙江</a></li>
+<li><a href="http://cp.ck365.cn/index-htm-a-search-areaid-11-kw-SCADA%2FRTU.html">江苏</a></li>
+<li style="display:none"><a href="http://cp.ck365.cn/index-htm-a-search-areaid-12-kw-SCADA%2FRTU.html">浙江</a></li>
+<li style="display:none"><a href="http://cp.ck365.cn/index-htm-a-search-areaid-13-kw-SCADA%2FRTU.html">安徽</a></li>
+<li style="display:none"><a href="http://cp.ck365.cn/index-htm-a-search-areaid-14-kw-SCADA%2FRTU.html">福建</a></li>
+<li style="display:none"><a href="http://cp.ck365.cn/index-htm-a-search-areaid-15-kw-SCADA%2FRTU.html">江西</a></li>
+<li style="display:none"><a href="http://cp.ck365.cn/index-htm-a-search-areaid-16-kw-SCADA%2FRTU.html">山东</a></li>
+<li style="display:none"><a href="http://cp.ck365.cn/index-htm-a-search-areaid-17-kw-SCADA%2FRTU.html">河南</a></li>
+<li style="display:none"><a href="http://cp.ck365.cn/index-htm-a-search-areaid-18-kw-SCADA%2FRTU.html">湖北</a></li>
+<li style="display:none"><a href="http://cp.ck365.cn/index-htm-a-search-areaid-19-kw-SCADA%2FRTU.html">湖南</a></li>
+<li style="display:none"><a href="http://cp.ck365.cn/index-htm-a-search-areaid-20-kw-SCADA%2FRTU.html">广东</a></li>
+<li style="display:none"><a href="http://cp.ck365.cn/index-htm-a-search-areaid-21-kw-SCADA%2FRTU.html">广西</a></li>
+<li style="display:none"><a href="http://cp.ck365.cn/index-htm-a-search-areaid-22-kw-SCADA%2FRTU.html">海南</a></li>
+<li style="display:none"><a href="http://cp.ck365.cn/index-htm-a-search-areaid-23-kw-SCADA%2FRTU.html">四川</a></li>
+<li style="display:none"><a href="http://cp.ck365.cn/index-htm-a-search-areaid-24-kw-SCADA%2FRTU.html">贵州</a></li>
+<li style="display:none"><a href="http://cp.ck365.cn/index-htm-a-search-areaid-25-kw-SCADA%2FRTU.html">云南</a></li>
+<li style="display:none"><a href="http://cp.ck365.cn/index-htm-a-search-areaid-26-kw-SCADA%2FRTU.html">西藏</a></li>
+<li style="display:none"><a href="http://cp.ck365.cn/index-htm-a-search-areaid-27-kw-SCADA%2FRTU.html">陕西</a></li>
+<li style="display:none"><a href="http://cp.ck365.cn/index-htm-a-search-areaid-28-kw-SCADA%2FRTU.html">甘肃</a></li>
+<li style="display:none"><a href="http://cp.ck365.cn/index-htm-a-search-areaid-29-kw-SCADA%2FRTU.html">青海</a></li>
+<li style="display:none"><a href="http://cp.ck365.cn/index-htm-a-search-areaid-30-kw-SCADA%2FRTU.html">宁夏</a></li>
+<li style="display:none"><a href="http://cp.ck365.cn/index-htm-a-search-areaid-31-kw-SCADA%2FRTU.html">新疆</a></li>
+<li style="display:none"><a href="http://cp.ck365.cn/index-htm-a-search-areaid-32-kw-SCADA%2FRTU.html">台湾</a></li>
+<li style="display:none"><a href="http://cp.ck365.cn/index-htm-a-search-areaid-33-kw-SCADA%2FRTU.html">香港</a></li>
+<li style="display:none"><a href="http://cp.ck365.cn/index-htm-a-search-areaid-34-kw-SCADA%2FRTU.html">澳门</a></li>
+<li class="category_button" id="cat_more_show" onclick="cat_more_show()">   查看更多</li>
+<li class="category_button_1" id="cat_more_hide" onclick="cat_more_hide(10)" style="display:none">   精简模式</li>
+<div class="clear b10"></div>
+</ul>
+<div class="clear"></div>
+</div>
+<div class="type">
+<a class="type_1" href="http://cp.ck365.cn/">供应信息</a>
+</div>
+<div class="clear"></div>
+<form method="post">
+<script type="text/javascript">var search = 'http://cp.ck365.cn/index.php?a=search&catid=1736';</script>
+<div class="tool">
+<input onclick="Go(search+'&amp;thumb=1');" type="checkbox"/> 图片 
+					<input onclick="Go(search+'&amp;vip=1');" type="checkbox"/> VIP 
+					<select onchange="Go(search+'&amp;day='+$(this).val())">
+<option value="0">更新时间</option>
+<option value="1">1天内</option>
+<option value="3">3天内</option>
+<option value="7">7天内</option>
+<option value="15">15天内</option>
+<option value="30">30天内</option>
+</select> 
+					<select onchange="Go(search+'&amp;order='+$(this).val())">
+<option value="0">显示顺序</option>
+<option value="2">价格由高到低</option>
+<option value="3">价格由低到高</option>
+<option value="4">VIP级别由高到低</option>
+<option value="5">VIP级别由低到高</option>
+<option value="6">供货量由高到低</option>
+<option value="7">供货量由低到高</option>
+<option value="8">起订量由高到低</option>
+<option value="9">起订量由低到高</option>
+</select> 
+					<img align="absmiddle" alt="文字列表" class="c_p" height="16" onclick="Go(search+'&amp;list=2');" src="http://www.ck365.cn/skin/default/image/list_txt.gif" width="16"/> 
+					<img align="absmiddle" alt="图片列表" class="c_p" height="16" onclick="Go(search+'&amp;list=1');" src="http://www.ck365.cn/skin/default/image/list_img.gif" width="16"/> 
+					<img align="absmiddle" alt="图文列表" class="c_p" height="16" onclick="Go(search+'&amp;list=0');" src="http://www.ck365.cn/skin/default/image/list_mix_on.gif" width="16"/> 
+				</div>
+<script type="text/javascript">var mid = 5;</script>
+<script src="http://www.ck365.cn/data/script/sell.js" type="text/javascript"></script><div class="sell_tips" id="sell_tips" style="display: none; top: 30px;">
+<div class="tips_head"><a class="f_r" href="javascript:tips_close();"></a>[<span id="tips_items">0</span>/5]</div>
+<div class="tips_body" id="tips_body"></div>
+<div class="tips_foot">
+<div class="b5"></div>
+<input class="tip_btn" onclick="Go('http://cp.ck365.cn/compare.php')" type="button" value="对比选中"/>
+<input class="tip_btn" onclick="Go('http://cp.ck365.cn/inquiry.php')" type="button" value="批量询价"/>
+<div class="b5"></div>
+<a href="javascript:tips_clear()"> 清空 </a>
+<div class="b10"></div>
+</div>
+</div>
+<div class="list" id="item_217567">
+<table>
+<tbody><tr align="center">
+<td width="25"> <input id="check_217567" name="itemid[]" onclick="item_tip($(this), 217567);" type="checkbox" value="217567"/> </td>
+<td width="90"><div><a href="http://cp.ck365.cn/44/detail_217567.html" target="_blank"><img alt="GPRS无线数传 GPRS远程监控 GPRS数据透明传输" class="lazy" height="80" original="http://www.ck365.cn/data/upload/201302/01/143439-19-31947.jpg.thumb.jpg" src="http://www.ck365.cn/skin/default/image/lazy.gif" width="80"/></a></div></td>
+<td width="10"> </td>
+<td align="left">
+<ul>
+<!--<li><a href="http://cp.ck365.cn/44/detail_217567.html" target="_blank"><strong class="px14">GPRS无线数传 GPRS远程监控 GPRS数据透明传输</strong></a></li>-->
+<li><a href="http://cp.ck365.cn/44/detail_217567.html" target="_blank"><strong class="px14">GPRS无线数传 GPRS远程监控 GPRS数据透明传输</strong></a></li>
+<li><span class="f_r px11">2013-11-04 16:15  </span>品牌：达泰 型号：DTP-S09F 规格：原厂      <a href="http://cp.ck365.cn/rtu/" style="color:#D60000" target="_blank">RTU</a></li>
+<li>
+<span class="f_r f_gray">[陕西西安市]  </span>
+</li>
+<li>
+<span class="f_r f_gray">
+</span>
+<a href="http://www.ck365.cn/dataieco/" target="_blank">西安达泰电子有限责任公司</a> 
+			<span class="f_gray">
+</span>
+</li>
+</ul>
+</td>
+<td width="10"> </td>
+<td width="100">
+<span class="f_gray">面议</span><br/>
+<img alt="询价" class="iq_btn" onclick="Go('http://cp.ck365.cn/inquiry-htm-itemid-217567.html');" src="http://www.ck365.cn/skin/default/image/inquiry.gif"/>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="list" id="item_240315">
+<table>
+<tbody><tr align="center">
+<td width="25"> <input id="check_240315" name="itemid[]" onclick="item_tip($(this), 240315);" type="checkbox" value="240315"/> </td>
+<td width="90"><div><a href="http://cp.ck365.cn/49/detail_240315.html" target="_blank"><img alt="功能强大GPRS DTU串口服务器,短信设备" class="lazy" height="80" original="http://www.ck365.cn/file/upload/201203/21/11-44-22-90-73516.jpg.thumb.jpg" src="http://www.ck365.cn/skin/default/image/lazy.gif" width="80"/></a></div></td>
+<td width="10"> </td>
+<td align="left">
+<ul>
+<!--<li><a href="http://cp.ck365.cn/49/detail_240315.html" target="_blank"><strong class="px14">功能强大GPRS DTU串口服务器,短信设备</strong></a></li>-->
+<li><a href="http://cp.ck365.cn/49/detail_240315.html" target="_blank"><strong class="px14">功能强大GPRS DTU串口服务器,短信设备</strong></a></li>
+<li><span class="f_r px11">2013-10-24 10:23  </span>品牌：艾博 型号：DU600 规格：92x62x22      <a href="http://cp.ck365.cn/SCADAxitong/" style="color:#D60000" target="_blank">SCADA系统</a></li>
+<li>
+<span class="f_r f_gray">[四川成都市]  </span>
+</li>
+<li>
+<span class="f_r f_gray">
+</span>
+<a href="http://www.ck365.cn/sanxingkejico/" target="_blank">成都三幸科技发展有限公司</a> 
+			<span class="f_gray">
+</span>
+</li>
+</ul>
+</td>
+<td width="10"> </td>
+<td width="100">
+<span class="f_red"><strong class="px14">1</strong>/套</span><br/>
+		1套起订<br/>
+<img alt="询价" class="iq_btn" onclick="Go('http://cp.ck365.cn/inquiry-htm-itemid-240315.html');" src="http://www.ck365.cn/skin/default/image/inquiry.gif"/>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="list" id="item_240316">
+<table>
+<tbody><tr align="center">
+<td width="25"> <input id="check_240316" name="itemid[]" onclick="item_tip($(this), 240316);" type="checkbox" value="240316"/> </td>
+<td width="90"><div><a href="http://cp.ck365.cn/49/detail_240316.html" target="_blank"><img alt="专业生产工业级超高低温GPRS DTU" class="lazy" height="80" original="http://www.ck365.cn/file/upload/201203/21/11-53-02-23-73516.jpg.thumb.jpg" src="http://www.ck365.cn/skin/default/image/lazy.gif" width="80"/></a></div></td>
+<td width="10"> </td>
+<td align="left">
+<ul>
+<!--<li><a href="http://cp.ck365.cn/49/detail_240316.html" target="_blank"><strong class="px14">专业生产工业级超高低温GPRS DTU</strong></a></li>-->
+<li><a href="http://cp.ck365.cn/49/detail_240316.html" target="_blank"><strong class="px14">专业生产工业级超高低温GPRS DTU</strong></a></li>
+<li><span class="f_r px11">2013-10-24 10:23  </span>品牌：ZNZ 型号：ZJ600 规格：92x62x22      <a href="http://cp.ck365.cn/SCADAxitong/" style="color:#D60000" target="_blank">SCADA系统</a></li>
+<li>
+<span class="f_r f_gray">[四川成都市]  </span>
+</li>
+<li>
+<span class="f_r f_gray">
+</span>
+<a href="http://www.ck365.cn/sanxingkejico/" target="_blank">成都三幸科技发展有限公司</a> 
+			<span class="f_gray">
+</span>
+</li>
+</ul>
+</td>
+<td width="10"> </td>
+<td width="100">
+<span class="f_red"><strong class="px14">1</strong>/套</span><br/>
+		1套起订<br/>
+<img alt="询价" class="iq_btn" onclick="Go('http://cp.ck365.cn/inquiry-htm-itemid-240316.html');" src="http://www.ck365.cn/skin/default/image/inquiry.gif"/>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="list" id="item_242582">
+<table>
+<tbody><tr align="center">
+<td width="25"> <input id="check_242582" name="itemid[]" onclick="item_tip($(this), 242582);" type="checkbox" value="242582"/> </td>
+<td width="90"><div><a href="http://cp.ck365.cn/49/detail_242582.html" target="_blank"><img alt="功能强大GPRS DTU串口服务器,短信设备" height="80" src="http://www.ck365.cn/skin/default/image/nopic.gif" width="80"/></a></div></td>
+<td width="10"> </td>
+<td align="left">
+<ul>
+<!--<li><a href="http://cp.ck365.cn/49/detail_242582.html" target="_blank"><strong class="px14">功能强大GPRS DTU串口服务器,短信设备</strong></a></li>-->
+<li><a href="http://cp.ck365.cn/49/detail_242582.html" target="_blank"><strong class="px14">功能强大GPRS DTU串口服务器,短信设备</strong></a></li>
+<li><span class="f_r px11">2013-10-24 10:23  </span>品牌：三幸科技 型号：DU600 规格：92x62x22      <a href="http://cp.ck365.cn/SCADAxitong/" style="color:#D60000" target="_blank">SCADA系统</a></li>
+<li>
+<span class="f_r f_gray">[四川成都市]  </span>
+</li>
+<li>
+<span class="f_r f_gray">
+</span>
+<a href="http://www.ck365.cn/sanxingkejico/" target="_blank">成都三幸科技发展有限公司</a> 
+			<span class="f_gray">
+</span>
+</li>
+</ul>
+</td>
+<td width="10"> </td>
+<td width="100">
+<span class="f_red"><strong class="px14">1</strong>/套</span><br/>
+		1套起订<br/>
+<img alt="询价" class="iq_btn" onclick="Go('http://cp.ck365.cn/inquiry-htm-itemid-242582.html');" src="http://www.ck365.cn/skin/default/image/inquiry.gif"/>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="list" id="item_431087">
+<table>
+<tbody><tr align="center">
+<td width="25"> <input id="check_431087" name="itemid[]" onclick="item_tip($(this), 431087);" type="checkbox" value="431087"/> </td>
+<td width="90"><div><a href="http://cp.ck365.cn/87/detail_431087.html" target="_blank"><img alt="超低功耗一体测控站" class="lazy" height="80" original="http://www.ck365.cn/file/upload/201210/16/14-00-38-72-87255.jpg.thumb.jpg" src="http://www.ck365.cn/skin/default/image/lazy.gif" width="80"/></a></div></td>
+<td width="10"> </td>
+<td align="left">
+<ul>
+<!--<li><a href="http://cp.ck365.cn/87/detail_431087.html" target="_blank"><strong class="px14">超低功耗一体测控站</strong></a></li>-->
+<li><a href="http://cp.ck365.cn/87/detail_431087.html" target="_blank"><strong class="px14">超低功耗一体测控站</strong></a></li>
+<li><span class="f_r px11">2013-10-12 13:04  </span>品牌：北京聚英电子 型号：一体RTU测控站 规格：一体RTU测控站      <a href="http://cp.ck365.cn/rtu/" style="color:#D60000" target="_blank">RTU</a></li>
+<li>
+<span class="f_r f_gray">[北京]  </span>
+</li>
+<li>
+<span class="f_r f_gray">
+</span>
+<a href="http://www.ck365.cn/juyingeleco/" target="_blank">北京聚英翱翔电子有限公司</a> 
+			<span class="f_gray">
+</span>
+</li>
+</ul>
+</td>
+<td width="10"> </td>
+<td width="100">
+<span class="f_gray">面议</span><br/>
+<img alt="询价" class="iq_btn" onclick="Go('http://cp.ck365.cn/inquiry-htm-itemid-431087.html');" src="http://www.ck365.cn/skin/default/image/inquiry.gif"/>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="list" id="item_431189">
+<table>
+<tbody><tr align="center">
+<td width="25"> <input id="check_431189" name="itemid[]" onclick="item_tip($(this), 431189);" type="checkbox" value="431189"/> </td>
+<td width="90"><div><a href="http://cp.ck365.cn/87/detail_431189.html" target="_blank"><img alt="远程测控通用型RTU" class="lazy" height="80" original="http://www.ck365.cn/file/upload/201210/19/08-56-49-50-87255.jpg.thumb.jpg" src="http://www.ck365.cn/skin/default/image/lazy.gif" width="80"/></a></div></td>
+<td width="10"> </td>
+<td align="left">
+<ul>
+<!--<li><a href="http://cp.ck365.cn/87/detail_431189.html" target="_blank"><strong class="px14">远程测控通用型RTU</strong></a></li>-->
+<li><a href="http://cp.ck365.cn/87/detail_431189.html" target="_blank"><strong class="px14">远程测控通用型RTU</strong></a></li>
+<li><span class="f_r px11">2013-10-12 13:04  </span>品牌：北京聚英电子 型号：JY-RTU6640 规格：108*68*23mm      <a href="http://cp.ck365.cn/rtu/" style="color:#D60000" target="_blank">RTU</a></li>
+<li>
+<span class="f_r f_gray">[北京]  </span>
+</li>
+<li>
+<span class="f_r f_gray">
+</span>
+<a href="http://www.ck365.cn/juyingeleco/" target="_blank">北京聚英翱翔电子有限公司</a> 
+			<span class="f_gray">
+</span>
+</li>
+</ul>
+</td>
+<td width="10"> </td>
+<td width="100">
+<span class="f_gray">面议</span><br/>
+<img alt="询价" class="iq_btn" onclick="Go('http://cp.ck365.cn/inquiry-htm-itemid-431189.html');" src="http://www.ck365.cn/skin/default/image/inquiry.gif"/>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="list" id="item_431190">
+<table>
+<tbody><tr align="center">
+<td width="25"> <input id="check_431190" name="itemid[]" onclick="item_tip($(this), 431190);" type="checkbox" value="431190"/> </td>
+<td width="90"><div><a href="http://cp.ck365.cn/87/detail_431190.html" target="_blank"><img alt="远程测控Modbus主机RTU " class="lazy" height="80" original="http://www.ck365.cn/file/upload/201210/19/08-59-20-33-87255.jpg.thumb.jpg" src="http://www.ck365.cn/skin/default/image/lazy.gif" width="80"/></a></div></td>
+<td width="10"> </td>
+<td align="left">
+<ul>
+<!--<li><a href="http://cp.ck365.cn/87/detail_431190.html" target="_blank"><strong class="px14">远程测控Modbus主机RTU </strong></a></li>-->
+<li><a href="http://cp.ck365.cn/87/detail_431190.html" target="_blank"><strong class="px14">远程测控Modbus主机RTU </strong></a></li>
+<li><span class="f_r px11">2013-10-12 13:04  </span>品牌：北京聚英电子 型号：JY-RTU6640-M 规格：105*68*28      <a href="http://cp.ck365.cn/rtu/" style="color:#D60000" target="_blank">RTU</a></li>
+<li>
+<span class="f_r f_gray">[北京]  </span>
+</li>
+<li>
+<span class="f_r f_gray">
+</span>
+<a href="http://www.ck365.cn/juyingeleco/" target="_blank">北京聚英翱翔电子有限公司</a> 
+			<span class="f_gray">
+</span>
+</li>
+</ul>
+</td>
+<td width="10"> </td>
+<td width="100">
+<span class="f_gray">面议</span><br/>
+<img alt="询价" class="iq_btn" onclick="Go('http://cp.ck365.cn/inquiry-htm-itemid-431190.html');" src="http://www.ck365.cn/skin/default/image/inquiry.gif"/>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="list" id="item_431192">
+<table>
+<tbody><tr align="center">
+<td width="25"> <input id="check_431192" name="itemid[]" onclick="item_tip($(this), 431192);" type="checkbox" value="431192"/> </td>
+<td width="90"><div><a href="http://cp.ck365.cn/87/detail_431192.html" target="_blank"><img alt="GPS定位RTU " class="lazy" height="80" original="http://www.ck365.cn/file/upload/201210/19/09-02-59-43-87255.jpg.thumb.jpg" src="http://www.ck365.cn/skin/default/image/lazy.gif" width="80"/></a></div></td>
+<td width="10"> </td>
+<td align="left">
+<ul>
+<!--<li><a href="http://cp.ck365.cn/87/detail_431192.html" target="_blank"><strong class="px14">GPS定位RTU </strong></a></li>-->
+<li><a href="http://cp.ck365.cn/87/detail_431192.html" target="_blank"><strong class="px14">GPS定位RTU </strong></a></li>
+<li><span class="f_r px11">2013-10-12 13:04  </span>品牌：北京聚英电子 型号：GPRS跟踪定位器 规格：gprs定位追踪器,gprs定位跟踪器,汽车gprs定位器,GPRS定位器      <a href="http://cp.ck365.cn/rtu/" style="color:#D60000" target="_blank">RTU</a></li>
+<li>
+<span class="f_r f_gray">[北京]  </span>
+</li>
+<li>
+<span class="f_r f_gray">
+</span>
+<a href="http://www.ck365.cn/juyingeleco/" target="_blank">北京聚英翱翔电子有限公司</a> 
+			<span class="f_gray">
+</span>
+</li>
+</ul>
+</td>
+<td width="10"> </td>
+<td width="100">
+<span class="f_gray">面议</span><br/>
+<img alt="询价" class="iq_btn" onclick="Go('http://cp.ck365.cn/inquiry-htm-itemid-431192.html');" src="http://www.ck365.cn/skin/default/image/inquiry.gif"/>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="list" id="item_89413">
+<table>
+<tbody><tr align="center">
+<td width="25"> <input id="check_89413" name="itemid[]" onclick="item_tip($(this), 89413);" type="checkbox" value="89413"/> </td>
+<td width="90"><div><a href="http://cp.ck365.cn/18/detail_89413.html" target="_blank"><img alt="供应SIM卡测试卡" class="lazy" height="80" original="http://www.ck365.cn/file/upload/201102/23/16-58-28-25-29416.jpg.thumb.jpg" src="http://www.ck365.cn/skin/default/image/lazy.gif" width="80"/></a></div></td>
+<td width="10"> </td>
+<td align="left">
+<ul>
+<!--<li><a href="http://cp.ck365.cn/18/detail_89413.html" target="_blank"><strong class="px14">供应SIM卡测试卡</strong></a></li>-->
+<li><a href="http://cp.ck365.cn/18/detail_89413.html" target="_blank"><strong class="px14">供应SIM卡测试卡</strong></a></li>
+<li><span class="f_r px11">2013-09-09 15:31  </span>品牌：安捷伦 型号：CY000016 规格：标准      <a href="http://cp.ck365.cn/scada/" style="color:#D60000" target="_blank">SCADA/RTU</a></li>
+<li>
+<span class="f_r f_gray">[广东深圳市]  </span>
+</li>
+<li>
+<span class="f_r f_gray">
+</span>
+<a href="http://www.ck365.cn/szcomwayco/" target="_blank">深圳市广为电子有限公司</a> 
+			<span class="f_gray">
+</span>
+</li>
+</ul>
+</td>
+<td width="10"> </td>
+<td width="100">
+<span class="f_gray">面议</span><br/>
+<img alt="询价" class="iq_btn" onclick="Go('http://cp.ck365.cn/inquiry-htm-itemid-89413.html');" src="http://www.ck365.cn/skin/default/image/inquiry.gif"/>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="list" id="item_89124">
+<table>
+<tbody><tr align="center">
+<td width="25"> <input id="check_89124" name="itemid[]" onclick="item_tip($(this), 89124);" type="checkbox" value="89124"/> </td>
+<td width="90"><div><a href="http://cp.ck365.cn/18/detail_89124.html" target="_blank"><img alt="供应手机测试卡" class="lazy" height="80" original="http://www.ck365.cn/uploadfile/UploadFile/nopicture.gif" src="http://www.ck365.cn/skin/default/image/lazy.gif" width="80"/></a></div></td>
+<td width="10"> </td>
+<td align="left">
+<ul>
+<!--<li><a href="http://cp.ck365.cn/18/detail_89124.html" target="_blank"><strong class="px14">供应手机测试卡</strong></a></li>-->
+<li><a href="http://cp.ck365.cn/18/detail_89124.html" target="_blank"><strong class="px14">供应手机测试卡</strong></a></li>
+<li><span class="f_r px11">2013-09-09 15:31  </span> 规格：1      <a href="http://cp.ck365.cn/scada/" style="color:#D60000" target="_blank">SCADA/RTU</a></li>
+<li>
+<span class="f_r f_gray">[广东深圳市]  </span>
+</li>
+<li>
+<span class="f_r f_gray">
+</span>
+<a href="http://www.ck365.cn/szcomwayco/" target="_blank">深圳市广为电子有限公司</a> 
+			<span class="f_gray">
+</span>
+</li>
+</ul>
+</td>
+<td width="10"> </td>
+<td width="100">
+<span class="f_gray">面议</span><br/>
+<img alt="询价" class="iq_btn" onclick="Go('http://cp.ck365.cn/inquiry-htm-itemid-89124.html');" src="http://www.ck365.cn/skin/default/image/inquiry.gif"/>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="list" id="item_119149">
+<table>
+<tbody><tr align="center">
+<td width="25"> <input id="check_119149" name="itemid[]" onclick="item_tip($(this), 119149);" type="checkbox" value="119149"/> </td>
+<td width="90"><div><a href="http://cp.ck365.cn/24/detail_119149.html" target="_blank"><img alt="供应矿用本安型防爆电话机耦合器" class="lazy" height="80" original="http://www.ck365.cn/uploadfile/UploadFile/2008-3/36708200834151024.jpg" src="http://www.ck365.cn/skin/default/image/lazy.gif" width="80"/></a></div></td>
+<td width="10"> </td>
+<td align="left">
+<ul>
+<!--<li><a href="http://cp.ck365.cn/24/detail_119149.html" target="_blank"><strong class="px14">供应矿用本安型防爆电话机耦合器</strong></a></li>-->
+<li><a href="http://cp.ck365.cn/24/detail_119149.html" target="_blank"><strong class="px14">供应矿用本安型防爆电话机耦合器</strong></a></li>
+<li><span class="f_r px11">2013-08-13 06:43  </span>      <a href="http://cp.ck365.cn/scada/" style="color:#D60000" target="_blank">SCADA/RTU</a></li>
+<li>
+<span class="f_r f_gray">[上海]  </span>
+</li>
+<li>
+<span class="f_r f_gray">
+</span>
+<a href="http://www.ck365.cn/jijiadxco/" target="_blank">上海技佳电信设备有限公司</a> 
+			<span class="f_gray">
+</span>
+</li>
+</ul>
+</td>
+<td width="10"> </td>
+<td width="100">
+<span class="f_gray">面议</span><br/>
+<img alt="询价" class="iq_btn" onclick="Go('http://cp.ck365.cn/inquiry-htm-itemid-119149.html');" src="http://www.ck365.cn/skin/default/image/inquiry.gif"/>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="list" id="item_119152">
+<table>
+<tbody><tr align="center">
+<td width="25"> <input id="check_119152" name="itemid[]" onclick="item_tip($(this), 119152);" type="checkbox" value="119152"/> </td>
+<td width="90"><div><a href="http://cp.ck365.cn/24/detail_119152.html" target="_blank"><img alt="供应矿用本安型防爆电话机分线盒" class="lazy" height="80" original="http://www.ck365.cn/uploadfile/UploadFile/2008-3/36708200834151151.jpg" src="http://www.ck365.cn/skin/default/image/lazy.gif" width="80"/></a></div></td>
+<td width="10"> </td>
+<td align="left">
+<ul>
+<!--<li><a href="http://cp.ck365.cn/24/detail_119152.html" target="_blank"><strong class="px14">供应矿用本安型防爆电话机分线盒</strong></a></li>-->
+<li><a href="http://cp.ck365.cn/24/detail_119152.html" target="_blank"><strong class="px14">供应矿用本安型防爆电话机分线盒</strong></a></li>
+<li><span class="f_r px11">2013-08-13 06:43  </span>      <a href="http://cp.ck365.cn/scada/" style="color:#D60000" target="_blank">SCADA/RTU</a></li>
+<li>
+<span class="f_r f_gray">[上海]  </span>
+</li>
+<li>
+<span class="f_r f_gray">
+</span>
+<a href="http://www.ck365.cn/jijiadxco/" target="_blank">上海技佳电信设备有限公司</a> 
+			<span class="f_gray">
+</span>
+</li>
+</ul>
+</td>
+<td width="10"> </td>
+<td width="100">
+<span class="f_gray">面议</span><br/>
+<img alt="询价" class="iq_btn" onclick="Go('http://cp.ck365.cn/inquiry-htm-itemid-119152.html');" src="http://www.ck365.cn/skin/default/image/inquiry.gif"/>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="list" id="item_214738">
+<table>
+<tbody><tr align="center">
+<td width="25"> <input id="check_214738" name="itemid[]" onclick="item_tip($(this), 214738);" type="checkbox" value="214738"/> </td>
+<td width="90"><div><a href="http://cp.ck365.cn/43/detail_214738.html" target="_blank"><img alt="供应抗噪扩音电话" class="lazy" height="80" original="http://www.ck365.cn/uploadfile/UploadFile/2010-7/629032010729105511.jpg" src="http://www.ck365.cn/skin/default/image/lazy.gif" width="80"/></a></div></td>
+<td width="10"> </td>
+<td align="left">
+<ul>
+<!--<li><a href="http://cp.ck365.cn/43/detail_214738.html" target="_blank"><strong class="px14">供应抗噪扩音电话</strong></a></li>-->
+<li><a href="http://cp.ck365.cn/43/detail_214738.html" target="_blank"><strong class="px14">供应抗噪扩音电话</strong></a></li>
+<li><span class="f_r px11">2013-06-26 21:27  </span>      <a href="http://cp.ck365.cn/scada/" style="color:#D60000" target="_blank">SCADA/RTU</a></li>
+<li>
+<span class="f_r f_gray">[广东深圳市]  </span>
+</li>
+<li>
+<span class="f_r f_gray">
+<a href="http://wpa.qq.com/msgrd?v=3&amp;uin=2466051535&amp;site=qq&amp;menu=yes" rel="nofollow" target="_blank"><img align="absmiddle" onerror="this.src=XZGPath+'data/image/qq-off.gif'" src="http://wpa.qq.com/pa?p=1:2466051535:4" title="点击QQ交谈/留言"/></a> 			<a href="http://amos.im.alisoft.com/msg.aw?v=2&amp;uid=yucky00&amp;site=cnalichn&amp;s=6" rel="nofollow" target="_blank"><img align="absmiddle" onerror="this.src=XZGPath+'data/image/ali-off.gif'" onload="if(this.width&gt;20)this.src=XZGPath+'data/image/ali-off.gif'" src="http://amos.im.alisoft.com/online.aw?v=2&amp;uid=yucky00&amp;site=cnalichn&amp;s=6" title="点击旺旺交谈/留言"/></a> 						</span>
+<a href="http://www.ck365.cn/yucky00co/" target="_blank">深圳市西骏科技有限公司</a> 
+			<span class="f_gray">
+</span>
+</li>
+</ul>
+</td>
+<td width="10"> </td>
+<td width="100">
+<span class="f_gray">面议</span><br/>
+<img alt="询价" class="iq_btn" onclick="Go('http://cp.ck365.cn/inquiry-htm-itemid-214738.html');" src="http://www.ck365.cn/skin/default/image/inquiry.gif"/>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="list" id="item_214739">
+<table>
+<tbody><tr align="center">
+<td width="25"> <input id="check_214739" name="itemid[]" onclick="item_tip($(this), 214739);" type="checkbox" value="214739"/> </td>
+<td width="90"><div><a href="http://cp.ck365.cn/43/detail_214739.html" target="_blank"><img alt="供应紧急求助电话机" class="lazy" height="80" original="http://www.ck365.cn/uploadfile/UploadFile/2010-7/629032010729105741.jpg" src="http://www.ck365.cn/skin/default/image/lazy.gif" width="80"/></a></div></td>
+<td width="10"> </td>
+<td align="left">
+<ul>
+<!--<li><a href="http://cp.ck365.cn/43/detail_214739.html" target="_blank"><strong class="px14">供应紧急求助电话机</strong></a></li>-->
+<li><a href="http://cp.ck365.cn/43/detail_214739.html" target="_blank"><strong class="px14">供应紧急求助电话机</strong></a></li>
+<li><span class="f_r px11">2013-06-26 21:27  </span>      <a href="http://cp.ck365.cn/scada/" style="color:#D60000" target="_blank">SCADA/RTU</a></li>
+<li>
+<span class="f_r f_gray">[广东深圳市]  </span>
+</li>
+<li>
+<span class="f_r f_gray">
+<a href="http://wpa.qq.com/msgrd?v=3&amp;uin=2466051535&amp;site=qq&amp;menu=yes" rel="nofollow" target="_blank"><img align="absmiddle" onerror="this.src=XZGPath+'data/image/qq-off.gif'" src="http://wpa.qq.com/pa?p=1:2466051535:4" title="点击QQ交谈/留言"/></a> 			<a href="http://amos.im.alisoft.com/msg.aw?v=2&amp;uid=yucky00&amp;site=cnalichn&amp;s=6" rel="nofollow" target="_blank"><img align="absmiddle" onerror="this.src=XZGPath+'data/image/ali-off.gif'" onload="if(this.width&gt;20)this.src=XZGPath+'data/image/ali-off.gif'" src="http://amos.im.alisoft.com/online.aw?v=2&amp;uid=yucky00&amp;site=cnalichn&amp;s=6" title="点击旺旺交谈/留言"/></a> 						</span>
+<a href="http://www.ck365.cn/yucky00co/" target="_blank">深圳市西骏科技有限公司</a> 
+			<span class="f_gray">
+</span>
+</li>
+</ul>
+</td>
+<td width="10"> </td>
+<td width="100">
+<span class="f_gray">面议</span><br/>
+<img alt="询价" class="iq_btn" onclick="Go('http://cp.ck365.cn/inquiry-htm-itemid-214739.html');" src="http://www.ck365.cn/skin/default/image/inquiry.gif"/>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="list" id="item_226328">
+<table>
+<tbody><tr align="center">
+<td width="25"> <input id="check_226328" name="itemid[]" onclick="item_tip($(this), 226328);" type="checkbox" value="226328"/> </td>
+<td width="90"><div><a href="http://cp.ck365.cn/46/detail_226328.html" target="_blank"><img alt="无线转发器一体模块" class="lazy" height="80" original="http://www.ck365.cn/file/upload/201102/28/09-36-03-80-67021.jpg.thumb.jpg" src="http://www.ck365.cn/skin/default/image/lazy.gif" width="80"/></a></div></td>
+<td width="10"> </td>
+<td align="left">
+<ul>
+<!--<li><a href="http://cp.ck365.cn/46/detail_226328.html" target="_blank"><strong class="px14">无线转发器一体模块</strong></a></li>-->
+<li><a href="http://cp.ck365.cn/46/detail_226328.html" target="_blank"><strong class="px14">无线转发器一体模块</strong></a></li>
+<li><span class="f_r px11">2013-05-25 10:09  </span>品牌：Linseis 型号：DTD433 规格：原厂      <a href="http://cp.ck365.cn/rtu/" style="color:#D60000" target="_blank">RTU</a></li>
+<li>
+<span class="f_r f_gray">[陕西西安市]  </span>
+</li>
+<li>
+<span class="f_r f_gray">
+</span>
+<a href="http://www.ck365.cn/mydatairenco/" target="_blank">西安达泰电子公司</a> 
+			<span class="f_gray">
+</span>
+</li>
+</ul>
+</td>
+<td width="10"> </td>
+<td width="100">
+<span class="f_red"><strong class="px14">780</strong>/块</span><br/>
+		1块起订<br/>
+<img alt="询价" class="iq_btn" onclick="Go('http://cp.ck365.cn/inquiry-htm-itemid-226328.html');" src="http://www.ck365.cn/skin/default/image/inquiry.gif"/>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="list" id="item_215068">
+<table>
+<tbody><tr align="center">
+<td width="25"> <input id="check_215068" name="itemid[]" onclick="item_tip($(this), 215068);" type="checkbox" value="215068"/> </td>
+<td width="90"><div><a href="http://cp.ck365.cn/44/detail_215068.html" target="_blank"><img alt="低价供应菲尼克斯工具系列" class="lazy" height="80" original="http://www.ck365.cn/uploadfile/UploadFile/2010-8/62909201082175965.jpg" src="http://www.ck365.cn/skin/default/image/lazy.gif" width="80"/></a></div></td>
+<td width="10"> </td>
+<td align="left">
+<ul>
+<!--<li><a href="http://cp.ck365.cn/44/detail_215068.html" target="_blank"><strong class="px14">低价供应菲尼克斯工具系列</strong></a></li>-->
+<li><a href="http://cp.ck365.cn/44/detail_215068.html" target="_blank"><strong class="px14">低价供应菲尼克斯工具系列</strong></a></li>
+<li><span class="f_r px11">2013-04-11 13:57  </span>品牌：Phoenix 型号：CRIMPFOX 25 规格：15*70      <a href="http://cp.ck365.cn/scada/" style="color:#D60000" target="_blank">SCADA/RTU</a></li>
+<li>
+<span class="f_r f_gray">[上海]  </span>
+</li>
+<li>
+<span class="f_r f_gray">
+</span>
+<a href="http://www.ck365.cn/boyi0504co/" target="_blank">上海博谊自控电气设备有限公司</a> 
+			<span class="f_gray">
+</span>
+</li>
+</ul>
+</td>
+<td width="10"> </td>
+<td width="100">
+<span class="f_gray">面议</span><br/>
+<img alt="询价" class="iq_btn" onclick="Go('http://cp.ck365.cn/inquiry-htm-itemid-215068.html');" src="http://www.ck365.cn/skin/default/image/inquiry.gif"/>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="list" id="item_218836">
+<table>
+<tbody><tr align="center">
+<td width="25"> <input id="check_218836" name="itemid[]" onclick="item_tip($(this), 218836);" type="checkbox" value="218836"/> </td>
+<td width="90"><div><a href="http://cp.ck365.cn/44/detail_218836.html" target="_blank"><img alt="供应平板型（方形）高效接地模块/电力接地降阻模块（石墨强焦型" class="lazy" height="80" original="http://www.ck365.cn/uploadfile/UploadFile/2010-10/64180201010595553.jpg" src="http://www.ck365.cn/skin/default/image/lazy.gif" width="80"/></a></div></td>
+<td width="10"> </td>
+<td align="left">
+<ul>
+<!--<li><a href="http://cp.ck365.cn/44/detail_218836.html" target="_blank"><strong class="px14">供应平板型（方形）高效接地模块/电力接地降阻模块（石墨强焦型</strong></a></li>-->
+<li><a href="http://cp.ck365.cn/44/detail_218836.html" target="_blank"><strong class="px14">供应平板型（方形）高效接地模块/电力接地降阻模块（石墨强焦型</strong></a></li>
+<li><span class="f_r px11">2013-04-01 08:24  </span>品牌：海天 型号：齐全 规格：齐全（尺寸加工）      <a href="http://cp.ck365.cn/scada/" style="color:#D60000" target="_blank">SCADA/RTU</a></li>
+<li>
+<span class="f_r f_gray">[山东青岛市]  </span>
+</li>
+<li>
+<span class="f_r f_gray">
+</span>
+<a href="http://www.ck365.cn/qingdaocagco/" target="_blank">青岛中电防雷科技有限公司</a> 
+			<span class="f_gray">
+</span>
+</li>
+</ul>
+</td>
+<td width="10"> </td>
+<td width="100">
+<span class="f_gray">面议</span><br/>
+<img alt="询价" class="iq_btn" onclick="Go('http://cp.ck365.cn/inquiry-htm-itemid-218836.html');" src="http://www.ck365.cn/skin/default/image/inquiry.gif"/>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="list" id="item_225466">
+<table>
+<tbody><tr align="center">
+<td width="25"> <input id="check_225466" name="itemid[]" onclick="item_tip($(this), 225466);" type="checkbox" value="225466"/> </td>
+<td width="90"><div><a href="http://cp.ck365.cn/46/detail_225466.html" target="_blank"><img alt="供应2口485共享器（2进1出），2路485放大器1进2出" class="lazy" height="80" original="http://www.ck365.cn/uploadfile/UploadFile/2011-1/534932011111173423.jpg" src="http://www.ck365.cn/skin/default/image/lazy.gif" width="80"/></a></div></td>
+<td width="10"> </td>
+<td align="left">
+<ul>
+<!--<li><a href="http://cp.ck365.cn/46/detail_225466.html" target="_blank"><strong class="px14">供应2口485共享器（2进1出），2路485放大器1进2出</strong></a></li>-->
+<li><a href="http://cp.ck365.cn/46/detail_225466.html" target="_blank"><strong class="px14">供应2口485共享器（2进1出），2路485放大器1进2出</strong></a></li>
+<li><span class="f_r px11">2013-03-27 15:18  </span> 规格：标准      <a href="http://cp.ck365.cn/scada/" style="color:#D60000" target="_blank">SCADA/RTU</a></li>
+<li>
+<span class="f_r f_gray">[广东深圳市]  </span>
+</li>
+<li>
+<span class="f_r f_gray">
+</span>
+<a href="http://www.ck365.cn/yfcctvco/" target="_blank">深圳市宇飞智能科技有限公司</a> 
+			<span class="f_gray">
+</span>
+</li>
+</ul>
+</td>
+<td width="10"> </td>
+<td width="100">
+<span class="f_gray">面议</span><br/>
+<img alt="询价" class="iq_btn" onclick="Go('http://cp.ck365.cn/inquiry-htm-itemid-225466.html');" src="http://www.ck365.cn/skin/default/image/inquiry.gif"/>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="list" id="item_240375">
+<table>
+<tbody><tr align="center">
+<td width="25"> <input id="check_240375" name="itemid[]" onclick="item_tip($(this), 240375);" type="checkbox" value="240375"/> </td>
+<td width="90"><div><a href="http://cp.ck365.cn/49/detail_240375.html" target="_blank"><img alt="IN801G GPRS DTU通讯模块" class="lazy" height="80" original="http://www.ck365.cn/file/upload/201203/22/11-12-03-58-69169.jpg.thumb.jpg" src="http://www.ck365.cn/skin/default/image/lazy.gif" width="80"/></a></div></td>
+<td width="10"> </td>
+<td align="left">
+<ul>
+<!--<li><a href="http://cp.ck365.cn/49/detail_240375.html" target="_blank"><strong class="px14">IN801G GPRS DTU通讯模块</strong></a></li>-->
+<li><a href="http://cp.ck365.cn/49/detail_240375.html" target="_blank"><strong class="px14">IN801G GPRS DTU通讯模块</strong></a></li>
+<li><span class="f_r px11">2013-03-07 15:13  </span>品牌：亿邦 型号：IN801G 规格：标准      <a href="http://cp.ck365.cn/rtu/" style="color:#D60000" target="_blank">RTU</a></li>
+<li>
+<span class="f_r f_gray">[河北石家庄市]  </span>
+</li>
+<li>
+<span class="f_r f_gray">
+<a href="http://wpa.qq.com/msgrd?v=3&amp;uin=26312555&amp;site=qq&amp;menu=yes" rel="nofollow" target="_blank"><img align="absmiddle" onerror="this.src=XZGPath+'data/image/qq-off.gif'" src="http://wpa.qq.com/pa?p=1:26312555:4" title="点击QQ交谈/留言"/></a> 									</span>
+<a href="http://www.ck365.cn/sjzyb01co/" target="_blank">石家庄亿邦科技有限公司</a> 
+			<span class="f_gray">
+</span>
+</li>
+</ul>
+</td>
+<td width="10"> </td>
+<td width="100">
+<span class="f_gray">面议</span><br/>
+<img alt="询价" class="iq_btn" onclick="Go('http://cp.ck365.cn/inquiry-htm-itemid-240375.html');" src="http://www.ck365.cn/skin/default/image/inquiry.gif"/>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="list" id="item_240885">
+<table>
+<tbody><tr align="center">
+<td width="25"> <input id="check_240885" name="itemid[]" onclick="item_tip($(this), 240885);" type="checkbox" value="240885"/> </td>
+<td width="90"><div><a href="http://cp.ck365.cn/49/detail_240885.html" target="_blank"><img alt="远程数据采集器---RTU" class="lazy" height="80" original="http://www.ck365.cn/file/upload/201203/31/16-09-00-97-73560.jpg.thumb.jpg" src="http://www.ck365.cn/skin/default/image/lazy.gif" width="80"/></a></div></td>
+<td width="10"> </td>
+<td align="left">
+<ul>
+<!--<li><a href="http://cp.ck365.cn/49/detail_240885.html" target="_blank"><strong class="px14">远程数据采集器---RTU</strong></a></li>-->
+<li><a href="http://cp.ck365.cn/49/detail_240885.html" target="_blank"><strong class="px14">远程数据采集器---RTU</strong></a></li>
+<li><span class="f_r px11">2013-02-19 16:40  </span>品牌：RDTEC 型号：RDB20XX 规格：xx      <a href="http://cp.ck365.cn/rtu/" style="color:#D60000" target="_blank">RTU</a></li>
+<li>
+<span class="f_r f_gray">[北京]  </span>
+</li>
+<li>
+<span class="f_r f_gray">
+</span>
+<a href="http://www.ck365.cn/rdteckjco/" target="_blank">北京润德泰科科技有限公司</a> 
+			<span class="f_gray">
+</span>
+</li>
+</ul>
+</td>
+<td width="10"> </td>
+<td width="100">
+<span class="f_gray">面议</span><br/>
+<img alt="询价" class="iq_btn" onclick="Go('http://cp.ck365.cn/inquiry-htm-itemid-240885.html');" src="http://www.ck365.cn/skin/default/image/inquiry.gif"/>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="pages"><input id="xzgcms_previous" type="hidden" value="http://cp.ck365.cn/scada/list_13.html"/><a href="http://cp.ck365.cn/scada/list_13.html" target="_parent" title="上一页"> « </a> <strong> 1 </strong> <a href="http://cp.ck365.cn/scada/list_2.html" target="_parent"> 2 </a> <a href="http://cp.ck365.cn/scada/list_3.html" target="_parent"> 3 </a> <a href="http://cp.ck365.cn/scada/list_4.html" target="_parent"> 4 </a> <a href="http://cp.ck365.cn/scada/list_5.html" target="_parent"> 5 </a> <a href="http://cp.ck365.cn/scada/list_6.html" target="_parent"> 6 </a> <a href="http://cp.ck365.cn/scada/list_7.html" target="_parent"> 7 </a> <a href="http://cp.ck365.cn/scada/list_8.html" target="_parent"> 8 </a> <a href="http://cp.ck365.cn/scada/list_9.html" target="_parent"> 9 </a> <a href="http://cp.ck365.cn/scada/list_10.html" target="_parent"> 10 </a>   …  <a href="http://cp.ck365.cn/scada/list_13.html" target="_parent"> 13 </a> <input id="xzgcms_next" type="hidden" value="http://cp.ck365.cn/scada/list_2.html"/><a href="http://cp.ck365.cn/scada/list_2.html" target="_parent" title="下一页"> » </a></div> </form>
+</div>
+<div class="s_m_l_c" style="border:0;">
+<a href="http://www.ck365.cn/buy/search-htm-kw-SCADA%2FRTU.html" style="color:#333333;" target="_blank">查看 <span class="f_red">“SCADA/RTU</span>” 求购信息</a> | <a href="http://www.ck365.cn/company/search-htm-kw-SCADA%2FRTU.html" style="color:#333333;" target="_blank">查看 <span class="f_red">“SCADA/RTU</span>” 公司信息</a> | <a href="http://cp.ck365.cn/search-htm-kw-SCADA%2FRTU.html" style="color:#333333;" target="_blank">查看 <span class="f_red">“SCADA/RTU</span>” 供应信息</a>
+</div>
+<div class="s_m_l_c">
+<div class="b5"></div>
+<div class="sell_s_l">
+			搜索排行：
+			</div>
+<div class="sell_s_r">
+<ul>
+<li title="搜索800次 约868条结果"><a href="http://cp.ck365.cn/index-htm-a-search-kw-CEM%20DT.html">CEM DT</a></li>
+<li title="搜索239次 约100000条结果"><a href="http://cp.ck365.cn/index-htm-a-search-kw-%E8%87%AA%E6%8E%A7%2F%E4%BB%AA%E5%99%A8%E4%BB%AA%E8%A1%A8.html">自控/仪器仪表</a></li>
+<li title="搜索229次 约85035条结果"><a href="http://cp.ck365.cn/index-htm-a-search-kw-%E7%94%B5%E6%B0%94%E6%B5%8B%E9%87%8F.html">电气测量</a></li>
+<li title="搜索217次 约100000条结果"><a href="http://cp.ck365.cn/index-htm-a-search-kw-%E8%B4%A8%E6%A3%80%2F%E5%88%86%E6%9E%90%E5%AE%9E%E9%AA%8C.html">质检/分析实验</a></li>
+<li title="搜索217次 约70175条结果"><a href="http://cp.ck365.cn/index-htm-a-search-kw-%E6%95%B0%E5%AD%97%E4%B8%87%E7%94%A8%E8%A1%A8.html">数字万用表</a></li>
+<li title="搜索213次 约100000条结果"><a href="http://cp.ck365.cn/index-htm-a-search-kw-%E6%B0%94%E4%BD%93%2F%E7%8E%AF%E5%A2%83%E6%B5%8B%E6%8E%A7.html">气体/环境测控</a></li>
+<li title="搜索211次 约89230条结果"><a href="http://cp.ck365.cn/index-htm-a-search-kw-%E4%BC%A0%E6%84%9F%E5%99%A8.html">传感器</a></li>
+<li title="搜索193次 约85127条结果"><a href="http://cp.ck365.cn/index-htm-a-search-kw-%E7%94%B5%E5%AD%90%2F%E9%80%9A%E4%BF%A1%E6%B5%8B%E9%87%8F.html">电子/通信测量</a></li>
+<li title="搜索188次 约93544条结果"><a href="http://cp.ck365.cn/index-htm-a-search-kw-%E9%80%9A%E8%AE%AF%2F%E6%80%BB%E7%BA%BF%E6%8A%80%E6%9C%AF.html">通讯/总线技术</a></li>
+<li title="搜索188次 约85020条结果"><a href="http://cp.ck365.cn/index-htm-a-search-kw-%E7%B2%BE%E5%AF%86%2F%E6%97%A0%E6%8D%9F%E6%A3%80%E6%B5%8B.html">精密/无损检测</a></li>
+</ul> </div>
+<div class="clear b5"></div>
+</div>
+</div>
+<div id="s_m_right">
+<!--添加广告位-->
+<div class="s_m_r_c" style="border:0; width:190px;">
+<img src="http://www.ck365.cn/skin/default/image/list_right_top.gif" style="border:0; width:190px; height:38px;" usemap="#Map"/>
+<map id="Map" name="Map">
+<area coords="130,4,187,18" href="http://www.ck365.cn/" shape="rect"/>
+</map>
+</div>
+<div class="s_m_r_c" style="border:0; width:190px;margin-top:0"><script src="http://www.ck365.cn/data/script/A280.js" type="text/javascript"></script></div>
+<div class="s_m_r_c" style="border:0; width:190px;"><script src="http://www.ck365.cn/data/script/A260.js" type="text/javascript"></script></div>
+<div class="s_m_r_c">
+<div class="h_type">同行业最新产品</div>
+<div class="box_body">
+<ul>
+<li><a href="http://cp.ck365.cn/87/detail_431087.html" target="_blank" title="超低功耗一体测控站">超低功耗一体测控站</a></li>
+<li><a href="http://cp.ck365.cn/70/detail_348223.html" target="_blank" title="GPS+GPRS DTU">GPS+GPRS DTU</a></li>
+<li><a href="http://cp.ck365.cn/67/detail_334320.html" target="_blank" title="供应液氨气体泄漏报警器lian河北液氨泄露检测仪">供应液氨气体泄漏报警器lia</a></li>
+<li><a href="http://cp.ck365.cn/49/detail_241187.html" target="_blank" title="网络远程控制器">网络远程控制器</a></li>
+<li><a href="http://cp.ck365.cn/49/detail_240885.html" target="_blank" title="远程数据采集器---RTU">远程数据采集器---RTU</a></li>
+<li><a href="http://cp.ck365.cn/49/detail_240375.html" target="_blank" title="IN801G GPRS DTU通讯模块">IN801G GPRS DTU通讯模块</a></li>
+<li><a href="http://cp.ck365.cn/49/detail_240315.html" target="_blank" title="功能强大GPRS DTU串口服务器,短信设备">功能强大GPRS DTU串口服务</a></li>
+<li><a href="http://cp.ck365.cn/49/detail_240241.html" target="_blank" title="户外电力设备、路灯断电报警器">户外电力设备、路灯断电报</a></li>
+<li><a href="http://cp.ck365.cn/47/detail_232427.html" target="_blank" title="超小体积、超低功耗RTU/DTU">超小体积、超低功耗RTU/DTU</a></li>
+<li><a href="http://cp.ck365.cn/46/detail_228295.html" target="_blank" title="GPRS DTU模块">GPRS DTU模块</a></li>
+<li><a href="http://cp.ck365.cn/32/detail_159321.html" target="_blank" title="供应厦门才茂高端精品GPRS DTU">供应厦门才茂高端精品GPRS </a></li>
+<li><a href="http://cp.ck365.cn/48/detail_238943.html" target="_blank" title="远程巡更模块">远程巡更模块</a></li>
+</ul>
+</div>
+</div><div class="s_m_r_c">
+<script type="text/javascript">
+/*180*150，创建于2012-11-18*/
+var cpro_id = "u1127927";
+</script>
+<script src="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script><div id="BAIDU_SSP__wrapper_u1127927_0"><iframe align="center,center" allowtransparency="true" frameborder="0" height="150" hspace="0" id="iframeu1127927_0" marginheight="0" marginwidth="0" name="iframeu1127927_0" scrolling="no" src="https://pos.baidu.com/gcxm?conwid=180&amp;conhei=150&amp;rdid=1127927&amp;dc=3&amp;exps=110011&amp;psi=c1c0d03030ecb33ae19800cfce113060&amp;di=u1127927&amp;dri=0&amp;dis=0&amp;dai=2&amp;ps=678x1242&amp;enu=encoding&amp;ant=0&amp;dcb=___adblockplus_&amp;dtm=HTML_POST&amp;dvi=0.0&amp;dci=-1&amp;dpt=none&amp;tsr=0&amp;tpr=1589032026026&amp;ti=SCADA%2FRTU%E4%B8%93%E6%A0%8F-RTU%EF%BC%8CSCADA%E7%B3%BB%E7%BB%9F-%E4%BE%9B%E5%BA%94-%E4%B8%AD%E5%9B%BD%E6%B5%8B%E6%8E%A7%E7%BD%91&amp;ari=2&amp;ver=0506&amp;dbv=2&amp;drs=1&amp;pcs=1903x1080&amp;pss=1903x2943&amp;cfv=0&amp;cpl=0&amp;chi=50&amp;cce=true&amp;cec=UTF-8&amp;tlm=1430799331&amp;prot=2&amp;rw=1080&amp;ltu=http%3A%2F%2Fcp.ck365.cn%2Fscada%2F&amp;ecd=1&amp;uc=1920x1080&amp;pis=-1x-1&amp;sr=1920x1080&amp;tcn=1589032027&amp;qn=cbd7e8150cd1d0df&amp;tt=1589032026584.2.2.2" style="border:0;vertical-align:bottom;margin:0;width:180px;height:150px" vspace="0" width="180"></iframe></div></div>
+<div class="s_m_r_c">
+<div class="h_type">最新加入企业</div>
+<div class="box_body">
+<ul>
+<li><span class="f_r f_gray">江苏</span><a href="http://www.ck365.cn/itechmarket9co/" target="_blank">艾德克斯电子（南京）有限公司</a></li>
+<li><span class="f_r f_gray">北京</span><a href="http://www.ck365.cn/fylliugang520co/" target="_blank">北京福意电器有限公司</a></li>
+<li><span class="f_r f_gray">江苏</span><a href="http://www.ck365.cn/liuliangji2015co/" target="_blank">南京帕罗肯科技有限公司</a></li>
+<li><span class="f_r f_gray">陕西</span><a href="http://www.ck365.cn/xhrningchaoco/" target="_blank">陕西欣鸿然自动化有限公司</a></li>
+<li><span class="f_r f_gray">辽宁</span><a href="http://www.ck365.cn/sys66429333co/" target="_blank">沈阳沈开科技有限公司</a></li>
+<li><span class="f_r f_gray">上海</span><a href="http://www.ck365.cn/pooher1co/" target="_blank">上海普赫生物科技有限公司</a></li>
+<li><span class="f_r f_gray">上海</span><a href="http://www.ck365.cn/jiangyuanbaico/" target="_blank">托驰（上海）工业传感器有限公司</a></li>
+<li><span class="f_r f_gray">上海</span><a href="http://www.ck365.cn/love156487co/" target="_blank">上海默然光电有限公司</a></li>
+<li><span class="f_r f_gray">湖北</span><a href="http://www.ck365.cn/yeweiji888co/" target="_blank">武汉新烽光电光纤液位计科技有限公司</a></li>
+<li><span class="f_r f_gray">江苏</span><a href="http://www.ck365.cn/qinxindzco/" target="_blank">勤鑫电子科技有限公司</a></li>
+</ul>
+</div>
+</div><div class="s_m_r_c">
+<script type="text/javascript">
+/*180*150，创建于2012-11-18*/
+var cpro_id = "u1127927";
+</script>
+<script src="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script><div id="BAIDU_SSP__wrapper_u1127927_1"><iframe align="center,center" allowtransparency="true" frameborder="0" height="150" hspace="0" id="iframeu1127927_1" marginheight="0" marginwidth="0" name="iframeu1127927_1" scrolling="no" src="https://pos.baidu.com/gcxm?conwid=180&amp;conhei=150&amp;rdid=1127927&amp;dc=3&amp;exps=110011&amp;psi=c1c0d03030ecb33ae19800cfce113060&amp;di=u1127927&amp;dri=1&amp;dis=0&amp;dai=3&amp;ps=1103x1242&amp;enu=encoding&amp;ant=0&amp;dcb=___adblockplus_&amp;dtm=HTML_POST&amp;dvi=0.0&amp;dci=-1&amp;dpt=none&amp;tsr=0&amp;tpr=1589032026026&amp;ti=SCADA%2FRTU%E4%B8%93%E6%A0%8F-RTU%EF%BC%8CSCADA%E7%B3%BB%E7%BB%9F-%E4%BE%9B%E5%BA%94-%E4%B8%AD%E5%9B%BD%E6%B5%8B%E6%8E%A7%E7%BD%91&amp;ari=2&amp;ver=0506&amp;dbv=2&amp;drs=1&amp;pcs=1903x1080&amp;pss=1903x2943&amp;cfv=0&amp;cpl=0&amp;chi=50&amp;cce=true&amp;cec=UTF-8&amp;tlm=1430799331&amp;prot=2&amp;rw=1080&amp;ltu=http%3A%2F%2Fcp.ck365.cn%2Fscada%2F&amp;ecd=1&amp;uc=1920x1080&amp;pis=-1x-1&amp;sr=1920x1080&amp;tcn=1589032027&amp;qn=e58d45cf74bf266e&amp;tt=1589032026589.3.3.3" style="border:0;vertical-align:bottom;margin:0;width:180px;height:150px" vspace="0" width="180"></iframe></div></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clear b5"></div>
+</body></html>

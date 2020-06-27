@@ -1,0 +1,1534 @@
+<html><head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<title>图像传感器在汽车行业的改善案例用途集|图像传感器|传感器|按产品分类|行业应用|欧姆龙自动化（中国）有限公司官网</title>
+<meta content="欧姆龙自动化（中国）有限公司唯一官网" name="keywords"/>
+<meta content="欧姆龙自动化（中国）有限公司唯一官网" name="description"/>
+<meta content="http://www.irealtech.com" name="author"/><!-- Apple iOS and Android stuff -->
+<meta content="yes" name="apple-mobile-web-app-capable"/>
+<meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+<link href="/favicon.ico" rel="icon" type="image/x-icon"/>
+<link href="/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<link href="/images/icon.png" rel="apple-touch-icon"/>
+<link href="/images/icon.png" rel="apple-touch-icon-precomposed"/>
+<link href="/images/startup.png" media="screen and (orientation: portrait)" rel="apple-touch-startup-image"/>
+<link href="/images/startupL.png" media="screen and (orientation: landscape)" rel="apple-touch-startup-image"/>
+<script src="https://hm.baidu.com/hm.js?e62d7463dedc1f46714a1f68ac96b0c1"></script><script src="https://hm.baidu.com/hm.js?7fe280388de024a5005c8ee230fab0e4"></script><script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?7fe280388de024a5005c8ee230fab0e4";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!--欧姆龙的百度统计代码-->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?e62d7463dedc1f46714a1f68ac96b0c1";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<link href="/html2014/css/reset.css" rel="stylesheet" type="text/css"/>
+<link href="/html2014/css/layout.css" rel="stylesheet" type="text/css"/>
+<link href="/html2014/css/common.css" rel="stylesheet" type="text/css"/>
+<link href="/html2014/css/solutions.css" rel="stylesheet" type="text/css"/>
+<!--[if IE]><script src="/html2014/js/html5.js"></script><![endif]-->
+<!--[if lt IE 10]><script type="text/javascript" src="/html2014/js/PIE.js"></script><![endif]-->
+<script src="/html2014/js/jquery.min.js" type="text/javascript"></script>
+<script src="/html2014/js/jquery.easing.1.3.js" type="text/javascript"></script>
+<script src="/html2014/js/jsfloat.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function(){
+	$(".dataList tr").hover(function(){
+		$(this).find("td").addClass("hover");
+	},function(){
+		$(this).find("td").removeClass("hover");
+	});	
+	$(".dataList tr:last td").css("borderBottom","0");
+});
+</script>
+</head>
+<body><div id="cboxOverlay" style="display: none;"></div><div class="" id="colorbox" style="padding-bottom: 42px; padding-right: 42px; display: none;"><div id="cboxWrapper" style=""><div style=""><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div class="" id="cboxLoadedContent" style="width: 0px; height: 0px; overflow: hidden;"></div><div class="" id="cboxLoadingOverlay" style=""></div><div class="" id="cboxLoadingGraphic" style=""></div><div class="" id="cboxTitle" style=""></div><div class="" id="cboxCurrent" style=""></div><div class="" id="cboxNext" style=""></div><div class="" id="cboxPrevious" style=""></div><div class="" id="cboxSlideshow" style=""></div><div class="" id="cboxClose" style=""></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none;"></div></div>
+<script src="/js/jquery.colorbox.js"></script>
+<script src="/html2014/js/jquery.select.js" type="text/javascript"></script>
+<script type="text/javascript">
+if (top.location !== self.location) {
+top.location=self.location;
+}
+//IE8拿不到HTTP_REFERER 解决方法其他js里面调用即可
+function gotoUrl(url){
+	 var gotoLink = document.createElement('a');
+
+	 gotoLink .href = url;
+
+	 document.body.appendChild(gotoLink);
+
+	 gotoLink .click();
+	 
+}
+//新窗口打开连接
+function openTargetUrl(url){
+	 var gotoLink = document.createElement('a');
+
+	 gotoLink .href = url;
+	 gotoLink.target = "_blank";
+	 document.body.appendChild(gotoLink);
+
+	 gotoLink .click();
+}
+//代理店维修栏目的“导出”调用
+var e = 0;
+function exps(){
+	if(e == 0){
+		var str = $("#searchForm").serialize();
+		$(".dca").text("正在导出...");
+		e++;
+		$.ajax({
+			url:'/index.php?cat_code=/service/repair/ajaxExpCsv',
+			type:"POST",
+			data:str,
+			success: function(data){
+				e = 0;
+				$(".dca").text("导出");
+				
+				data = data.split(',')
+				if(data[0]=='ok'){
+					//window.open(data[1]);
+					//openWindow(data[1]);
+					$("#exp_pop").find("a").attr("href",data[1]);
+					$.colorbox({ "inline": true, "opacity": "0.5", "href": "#exp_pop" });
+				}else
+					alert(data[1]);
+				
+			}
+		});
+	}
+} 
+</script>
+<header>
+<div class="cw toolsBody">
+<a class="logo fl" href="/">欧姆龙自动化（中国）有限公司</a>
+<div class="logoTxt fl">
+<span class="ml20">工业自动化</span>
+<em>|</em>
+<a class="headerPop cboxElement" href="javascript:;">中国</a>
+</div>
+<div class="tools fr">
+<div>
+<a href="/catalog" target="_blank">综合样本索取</a>
+<em>|</em>
+<a href="/mail" target="_blank">售前咨询</a>
+<em>|</em>
+<!--<a href="/user.php?cat_code=register" id="dlzc_old" class="mr20">注册</a>-->
+<a class="mr20" href="/register" id="dlzc">注册</a>
+</div>
+<div>
+<a href="/login" id="dlzc2">登录</a>
+<span id="hyzx" style="display:none;">欢迎您 <a href="/user.php" id="u"></a> [<a class="col_06c" href="/user.php?cat_code=logout&amp;to_url=/">注销</a>]</span>
+</div>
+</div>
+</div>
+<script src="/html2014/js/checkInput.js" type="text/javascript"></script>
+<link href="/html2014/css/popterm2.css" rel="stylesheet" type="text/css"/>
+<script src="/html2014/js/popterm2_honban.js" type="text/javascript"></script>
+<script src="/html2014/js/nav_scroll.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function(){
+
+var bForcepc = fGetQuery("dv") == "pc";    
+function fBrowserRedirect()
+{    
+    var sUserAgent = navigator.userAgent.toLowerCase();    
+    var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";      
+    var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";    
+    var bIsMidp = sUserAgent.match(/midp/i) == "midp";    
+    var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";    
+    var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";    
+    var bIsAndroid = sUserAgent.match(/android/i) == "android";    
+    var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";    
+    var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";   
+
+    if(bIsIpad){          
+        if(!bForcepc){    
+			$("#pc").hide();
+            $("#mobile_phone").show();
+        }    
+    }    
+    if(bIsIphoneOs || bIsAndroid){           
+        if(!bForcepc){    
+            $("#pc").hide();
+            $("#mobile_phone").show();
+        }    
+    }     
+}   
+
+function fGetQuery(name){//获取参数值    
+    var sUrl = window.location.search.substr(1);    
+    var r = sUrl.match(new RegExp("(^|&)" + name + "=([^&]*)(&|$)"));    
+    return (r == null ? null : unescape(r[2]));    
+} 
+
+function fShowVerBlock(){       
+    if(bForcepc){    
+        document.getElementById("dv_block").style.display = "block";    
+    }    
+    else{    
+        document.getElementById("ad_block").style.display = "block";    
+    }    
+}  
+
+fBrowserRedirect();  
+
+var nav_timer;
+var nav_flg = 0;
+$(".navList>li").hover(function(){
+	var index = $(".navList>li").index($(this));
+	nav_flg = index;
+	//$(".navList li .sub_nav").stop(false,true);
+	nav_timer = setTimeout(function(){
+		$(".navList>li .sub_nav").stop(false,true).slideUp(700);
+		$(".navList>li").eq(nav_flg).find(".sub_nav").slideDown(700);
+	},500);
+},function(){
+	clearTimeout(nav_timer);
+	$(".navList>li .sub_nav").stop(false,true).slideUp(700);
+	//$(this).find(".sub_nav").slideUp(700);
+});
+
+});
+</script>
+<div class="navBody">
+<div class="cw">
+<ul class="navList fl">
+<li class="nav_2"><a href="/" id="sy"><span>首页</span></a><em>|</em></li>
+<li class="nav_2"><a href="/products/index.html" id="menu_1687"><span>产品</span></a><em>|</em>
+<div class="sub_nav s_n_c">
+<div class="clearfix">
+<div class="sub_nav_bg_2 fl"></div>
+<div class="in_sub fl">
+<div class="sub_nav_list_body fl">
+<dl class="clearfix">
+<dd class="c_1"><a href="/products/category/sensors/index.html">传感器</a></dd>
+<dd class="c_2"><a href="/products/category/switches/index.html">开关</a></dd>
+<dd class="c_3"><a href="/products/category/safety-components/index.html">安全产品</a></dd>
+<dd class="c_4"><a href="/products/category/relays/index.html">继电器</a></dd>
+<dd class="c_5"><a href="/products/category/control-components/index.html">温控器/定时器/计时器</a></dd>
+<dd class="c_6"><a href="/products/category/automation-systems/index.html">PLC/机械控制器/IPC/多轴控制器/触摸屏</a></dd>
+<dd class="c_7"><a href="/products/category/motion_drives/index.html">变频/伺服</a></dd>
+<dd class="c_10"><a href="/products/category/robotics/index.html">机器人</a></dd>
+<dd class="c_8"><a href="/products/category/energy-conservation-support_environment-measure-equipment/index.html">节能/环保</a></dd>
+<dd class="c_9"><a href="/products/category/power-supplies_in-addition/index.html">电源/其他</a></dd>
+</dl>
+</div>
+<div class="sub_nav_right_con fl">
+<h3>
+<a href="/new/products/">MORE</a>
+<img src="/html2014/images/common/sub_nav_search_ico.jpg"/>
+										最新产品
+									</h3>
+<p>
+<img src="/html2014/images/common/sub_nav_img_1.jpg"/>
+</p>
+<ol class="clearfix">
+<li><a href="/new/products/2019/11/">2019年11月</a></li>
+<li><a href="/new/products/2019/10/">2019年10月</a></li>
+<li><a href="/new/products/2019/09/">2019年09月</a></li>
+<li><a href="/new/products/2019/08/">2019年08月</a></li>
+<!--										<li><a href="/new/products/2019/06/">2019年06月</a></li>
+										<li><a href="/new/products/2019/05/">2019年05月</a></li>-->
+<!--										<li><a href="/new/products/2019/04/">2019年04月</a></li>
+<!--									    <li><a href="/new/products/2019/01/">2019年01月</a></li>
+<!--									    <li><a href="/new/products/2018/12/">2018年12月</a></li>-->
+<!--										<li><a href="/new/products/2018/11/">2018年11月</a></li>-->
+<ol>
+</ol></ol></div>
+</div>
+<div class="sub_nav_bg_3 fl"></div>
+</div>
+<div class="sub_nav_bg_1"></div>
+</div>
+</li>
+<li class="nav_2"><a href="/special" id="menu_2175"><span>专题</span></a><em>|</em>
+<div class="sub_nav s_n_z">
+<div class="clearfix">
+<div class="sub_nav_bg_2 fl"></div>
+<div class="in_sub fl">
+<div class="sub_nav_list_body fl">
+<dl class="clearfix">
+<dd><a href="/advanced-technology">核心技术展示</a></dd>
+<dd><a href="/safetynavigator">安全导航家</a></dd>
+<dd><a href="/product-feature">产品专题</a></dd>
+<dd><a href="/index.php?cat_code=/sap/control">Sysmac Family</a></dd>
+<dd><a href="/solution/panel/">控制柜设计助手（Panel Assist Web）</a></dd>
+</dl>
+</div>
+<div class="sub_nav_right_con fl">
+<h3>
+<img src="/html2014/images/common/sub_nav_search_ico.jpg"/>
+										欧姆龙核心技术
+									</h3>
+<div class="sub_nav_change_body" id="sub_nav_scroll_1">
+<ul style="width: 6000px; left: -3000px;">
+<li>
+<a href="/conveyor_2020">
+<img src="/html2014/images/common/conveyor_250.jpg"/>
+</a>
+<h6>智能传送带技术</h6>
+</li>
+<li>
+<a href="/sleper_2019">
+<img src="/html2014/images/common/sleeper_250.jpg"/>
+</a>
+<h6>枕式包装机技术</h6>
+</li>
+<li>
+<a href="/visualfeedback">
+<img src="/html2014/images/common/visual_250.jpg"/>
+</a>
+<h6>视觉反馈技术</h6>
+</li>
+<li>
+<a href="/servopress">
+<img src="/html2014/images/common/servo_250.jpg"/>
+</a>
+<h6>伺服压力技术</h6>
+</li>
+<li>
+<a href="/fly_2018">
+<img src="/html2014/images/common/fly_250.jpg"/>
+</a>
+<h6>飞行拍照技术</h6>
+</li>
+<li>
+<a href="/temperature_2018">
+<img src="/html2014/images/common/temperature_2018_250.jpg"/>
+</a>
+<h6>温度均一控制技术</h6>
+</li>
+<li>
+<a href="/flexibility_2018">
+<img src="/html2014/images/common/flexibility_2018_1_250.jpg"/>
+</a>
+<h6>精 • 巧 柔性控制技术</h6>
+</li>
+<li>
+<a href="/hightechnology">
+<img src="/html2014/images/common/sub_nav_img_6.jpg"/>
+</a>
+<h6>领先的抑振技术</h6>
+</li>
+<li>
+<a href="/hightechnology2">
+<img src="/html2014/images/common/sub_nav_img_7.jpg"/>
+</a>
+<h6>高速、高精度对位技术</h6>
+</li>
+<li>
+<a href="/hightechnology3">
+<img src="/html2014/images/common/sub_nav_img_8.jpg"/>
+</a>
+<h6>精 • 益 过程控制技术</h6>
+</li>
+<li>
+<a href="/hightechnology4">
+<img src="/html2014/images/common/sub_nav_img_9.jpg"/>
+</a>
+<h6>超群的张力控制技术</h6>
+</li>
+<li>
+<a href="/hightechnology5">
+<img src="/html2014/images/common/sub_nav_img_10.jpg"/>
+</a>
+<h6>灵 • 动 轨迹控制技术</h6>
+</li>
+<li>
+<a href="/conveyor_2020">
+<img src="/html2014/images/common/conveyor_250.jpg"/>
+</a>
+<h6>智能传送带技术</h6>
+</li>
+<li>
+<a href="/sleper_2019">
+<img src="/html2014/images/common/sleeper_250.jpg"/>
+</a>
+<h6>枕式包装机技术</h6>
+</li>
+<li>
+<a href="/visualfeedback">
+<img src="/html2014/images/common/visual_250.jpg"/>
+</a>
+<h6>视觉反馈技术</h6>
+</li>
+<li>
+<a href="/servopress">
+<img src="/html2014/images/common/servo_250.jpg"/>
+</a>
+<h6>伺服压力技术</h6>
+</li>
+<li>
+<a href="/fly_2018">
+<img src="/html2014/images/common/fly_250.jpg"/>
+</a>
+<h6>飞行拍照技术</h6>
+</li>
+<li>
+<a href="/temperature_2018">
+<img src="/html2014/images/common/temperature_2018_250.jpg"/>
+</a>
+<h6>温度均一控制技术</h6>
+</li>
+<li>
+<a href="/flexibility_2018">
+<img src="/html2014/images/common/flexibility_2018_1_250.jpg"/>
+</a>
+<h6>精 • 巧 柔性控制技术</h6>
+</li>
+<li>
+<a href="/hightechnology">
+<img src="/html2014/images/common/sub_nav_img_6.jpg"/>
+</a>
+<h6>领先的抑振技术</h6>
+</li>
+<li>
+<a href="/hightechnology2">
+<img src="/html2014/images/common/sub_nav_img_7.jpg"/>
+</a>
+<h6>高速、高精度对位技术</h6>
+</li>
+<li>
+<a href="/hightechnology3">
+<img src="/html2014/images/common/sub_nav_img_8.jpg"/>
+</a>
+<h6>精 • 益 过程控制技术</h6>
+</li>
+<li>
+<a href="/hightechnology4">
+<img src="/html2014/images/common/sub_nav_img_9.jpg"/>
+</a>
+<h6>超群的张力控制技术</h6>
+</li>
+<li>
+<a href="/hightechnology5">
+<img src="/html2014/images/common/sub_nav_img_10.jpg"/>
+</a>
+<h6>灵 • 动 轨迹控制技术</h6>
+</li>
+</ul>
+<a class="btn prev" href="javascript:;"></a>
+<a class="btn next" href="javascript:;"></a>
+</div>
+</div>
+</div>
+<div class="sub_nav_bg_3 fl"></div>
+</div>
+<div class="sub_nav_bg_1"></div>
+</div>
+</li>
+<li class="nav_4"><a class="cur" href="/solution/industry" id="menu_1688"><span>行业应用</span></a><em>|</em>
+<div class="sub_nav s_n_h" id="s_h_1">
+<div class="clearfix">
+<div class="sub_nav_bg_2 fl"></div>
+<div class="in_sub fl">
+<div class="sub_nav_list_body fl">
+<div class="show_hide_body">
+<dl class="clearfix" style="display: block; opacity: 0.251775;">
+<dd><a href="/solution/electron">电子行业</a></dd>
+<dd><a href="/solution/semiconductor">半导体/FPD行业</a></dd>
+<dd><a href="/solution/solar">太阳能行业</a></dd>
+<dd><a href="/solution/moldingmachine">机床行业</a></dd>
+<dd><a href="/solution/secondarybattery">二次电池行业</a></dd>
+<dd><a href="/solution/transportationequipment">输送设备/自动仓储行业</a></dd>
+<dd><a href="/solution/package">包装行业</a></dd>
+<dd><a href="/solution/food">食品/医疗机械行业</a></dd>
+<dd><a href="/solution/homeelectronics">家用电子/办公自动化行业</a></dd>
+<dd><a href="/solution/rubber">橡胶/塑料机械行业</a></dd>
+<dd><a href="/solution/robot">机器人行业</a></dd>
+<dd><a href="/solution/transportation">轨道交通/交通运输行业</a></dd>
+<dd><a href="/solution/car">汽车行业</a></dd>
+<dd><a href="/solution/traffic">水处理/能源控制行业</a></dd>
+<dd><a href="/solution/other">其他设备制造行业</a></dd>
+</dl>
+<dl class="clearfix" style="display: none;">
+<dd><a href="/solution/detect">检测/测量</a></dd>
+<dd><a href="/solution/positiondetection">位置检测</a></dd>
+<dd><a href="/solution/pressuredetection">压力检测/识别</a></dd>
+<dd><a href="/solution/control">控制</a></dd>
+<dd><a href="/solution/security">安全/故障检测</a></dd>
+<dd><a href="/solution/othersensor">其他传感和控制场合</a></dd>
+</dl>
+<dl class="clearfix" style="display: none;">
+<dd><a href="/solution/products#products_1">传感器</a></dd>
+<dd><a href="/solution/products#products_2">开关</a></dd>
+<dd><a href="/solution/products#products_3">安全产品</a></dd>
+<dd><a href="/solution/products#products_4">继电器</a></dd>
+<dd><a href="/solution/products#products_5">温控器/定时器/计数器</a></dd>
+<dd><a href="/solution/products#products_6">PLC/触摸屏/RFID</a></dd>
+<dd><a href="/solution/products#products_7">伺服/变频</a></dd>
+<dd><a href="/solution/products#products_8">节能/环保</a></dd>
+<dd><a href="/solution/products#products_9">电源/其他</a></dd>
+</dl>
+</div>
+</div>
+<div class="sub_nav_right_con fl">
+<h3>
+<img src="/html2014/images/common/sub_nav_search_ico.jpg"/>
+										行业应用分类
+									</h3>
+<p>
+<img src="/html2014/images/common/sub_nav_img_3.jpg"/>
+</p>
+<ol class="show_hide_list">
+<li><a class="sub_nav_cur" href="javascript:;">按行业分类</a></li>
+<li><a href="javascript:;">按工序分类</a></li>
+<li class="last"><a href="javascript:;">按产品分类</a></li>
+<ol>
+</ol></ol></div>
+</div>
+<div class="sub_nav_bg_3 fl"></div>
+</div>
+<div class="sub_nav_bg_1"></div>
+</div>
+</li>
+<li class="nav_4"><a href="/document" id="menu_2028"><span>资料汇总</span></a><em>|</em></li>
+<li class="nav_4"><a href="/service-introduction" id="menu_1689"><span>自助服务</span></a><em>|</em>
+<div class="sub_nav s_n_zz" id="s_h_2">
+<div class="clearfix">
+<div class="sub_nav_bg_2 fl"></div>
+<div class="in_sub fl">
+<div class="sub_nav_list_body fl">
+<div class="show_hide_body">
+<dl class="clearfix" style="display: block; opacity: 0.251775;">
+<dd><a href="/document">资料查询</a></dd>
+<dd><a href="/service/repair">维修申请 / 查询</a></dd>
+<dd><a href="/faq">常见问题查询</a></dd>
+<dd><a href="/contact/office">代理商资质查询</a></dd>
+<dd><a href="/elearning/">e-Learning学习</a></dd>
+<dd><a href="/contactus#pagetab">销售联系方式查询</a></dd>
+<dd><a href="/alternative">停产替代查询</a></dd>
+<dd><a href="/rohs">RoHS法规信息</a></dd>
+<dd><a href="http://www.ia.omron.com/view/product/certification/search/cn/certification.cgi">认证查询</a></dd>
+<dd><a href="/iso">体系证书信息</a></dd>
+<dd><a href="/security#tab2">防伪查询 </a></dd>
+</dl>
+<dl class="clearfix" style="display: none;">
+<dd><a href="/service/repair/apply_step1">维修申请</a></dd>
+<dd><a href="/training/classroom.php">课堂培训报名申请</a></dd>
+<dd><a href="/service/repair?pageId=3">紧急配送申请</a></dd>
+<dd><a href="/service/sps/visit">SPS展厅参观申请</a></dd>
+<dd><a href="/service/survey">客户满意度调查</a></dd>
+<dd><a href="/msdproject">安全顾问咨询</a></dd>
+<dd><a href="/service/voc">投诉申请</a></dd>
+</dl>
+<dl class="clearfix" style="display: none;">
+<dd><a href="/service/repair">维修服务</a></dd>
+<dd><a href="/elearning/key-account">重点客户学习园地</a></dd>
+<dd><a href="/training/gototemplate.php?temp=howApply">课堂培训</a></dd>
+<dd><a href="/service/chat">在线客服</a></dd>
+<dd><a href="/service/callcenter">电话咨询</a></dd>
+<dd><a href="/jphome/rxqy">日系企業樣向けサポート情報</a></dd>
+<dd><a href="/service/global">全球服务支援信息</a></dd>
+<dd><a href="/service/csc">客户服务中心指南</a></dd>
+<dd><a href="/factory/index">代理店学习园地</a></dd>
+<dd><a href="/forum/">技术论坛（已关闭）</a></dd>
+</dl>
+</div>
+</div>
+<div class="sub_nav_right_con fl">
+<h3>
+<img src="/html2014/images/common/sub_nav_search_ico.jpg"/>
+										自助服务
+									</h3>
+<p>
+<img src="/html2014/images/common/sub_nav_img_2.jpg"/>
+</p>
+<ol class="show_hide_list">
+<li><a class="sub_nav_cur" href="javascript:;">自助查询</a></li>
+<li><a href="javascript:;">自助申请</a></li>
+<li class="last"><a href="javascript:;">服务介绍</a></li>
+<ol>
+</ol></ol></div>
+</div>
+<div class="sub_nav_bg_3 fl"></div>
+</div>
+<div class="sub_nav_bg_1"></div>
+</div>
+</li>
+<li class="nav_4"><a href="/study-garden" id="menu_2174"><span>学习园地</span></a><em>|</em>
+<div class="sub_nav s_n_x">
+<div class="clearfix">
+<div class="sub_nav_bg_2 fl"></div>
+<div class="in_sub fl">
+<div class="sub_nav_list_body fl">
+<dl class="clearfix">
+<dd><a href="/training/classroom.php">课堂培训</a></dd>
+<dd><a href="/elearning/">e-Learning学习中心</a></dd>
+<!--<dd><a href="/elearning/key-account">重点客户学习园地</a></dd>-->
+<dd><a href="/factory/index">代理店学习园地</a></dd>
+<dd><a href="/network_training">网络培训</a></dd>
+</dl>
+</div>
+<div class="sub_nav_right_con fl">
+<h3>
+<img src="/html2014/images/common/sub_nav_search_ico.jpg"/>
+										e-L推荐课程
+									</h3>
+<p>
+<img src="/html2014/images/common/sub_nav_img_4.jpg"/>
+</p>
+<ol>
+<li><a href="/elearning/video/697">梯形图编程基本规则及常用指令</a></li>
+<li><a href="/elearning/video/288">什么是PLC及其用途</a></li>
+<ol>
+</ol></ol></div>
+</div>
+<div class="sub_nav_bg_3 fl"></div>
+</div>
+<div class="sub_nav_bg_1"></div>
+</div>
+</li>
+<li class="nav_2"><a href="/industrialabout2019" id="menu_2358"><span>展会</span></a><em>|</em></li>
+<li class="nav_4 last"><a href="/aboutus" id="menu_1690"><span>关于我们</span></a>
+<div class="sub_nav s_n_g">
+<div class="clearfix">
+<div class="sub_nav_bg_2 fl"></div>
+<div class="in_sub fl">
+<div class="sub_nav_list_body fl">
+<dl class="clearfix">
+<dd><a href="/aboutus/omron">公司介绍</a></dd>
+<dd><a href="/contactus">事务所联系方式</a></dd>
+<dd><a href="/aboutus-company">公司特长</a></dd>
+<dd><a href="/contact/office">代理商资质查询</a></dd>
+<dd><a href="/hr/position">人才招聘</a></dd>
+<dd><a href="/jphome/rxqy">日系企業専門スタッフによるサポート</a></dd>
+<dd><a href="/aboutus/cooperation">校企合作</a></dd>
+<dd><a href="/year60">经典产品回顾</a></dd>
+</dl>
+</div>
+<div class="sub_nav_right_con fl">
+<h3>
+<img src="/html2014/images/common/sub_nav_search_ico.jpg"/>
+<a class="sub_nav_con_link" href="/contactus#tit2">各地事务所一览表</a>
+</h3>
+<p>
+<img src="/html2014/images/common/sub_nav_img_5.jpg"/>
+</p>
+</div>
+</div>
+<div class="sub_nav_bg_3 fl"></div>
+</div>
+<div class="sub_nav_bg_1"></div>
+</div>
+</li>
+</ul>
+<div class="out">
+<div class="newSearch fl">
+<form action="http://search2.ia.omron.com/OEZ/" id="search_website" method="get" name="search_website" onsubmit="return check_input()" target="_blank">
+<input autocomplete="off" class="search-str checkTxt" id="search_str" name="q" size="20" type="text" value="多条件请通过空格区分"/><table class="popterm1_hidden" id="popterm1" style="position: absolute; display: none; width: 227px; visibility: hidden;"><tbody></tbody></table>
+<input class="submit40L" id="" type="submit" value="搜索"/>
+<link href="/html2014/css/popterm2.css" rel="stylesheet" type="text/css"/></form>
+<script>
+						  function check_input()
+						  {
+							var txt = document.getElementById("search_str").value;
+							if (txt == "多条件请通过空格区分" || txt.length < 1)
+							{
+								alert("请输入查询条件！");
+								return false;  
+							}
+						  }
+						  //var p1 = new popTerm({'id': 'popterm',  'targetid': 'q_str',  'css': 'popterm2.css','trid':'0'}); 
+						  //p1.popterm_click = function() {
+							//  document.getElementById("q_search_website").submit();
+						  //}
+						  var p1 = new popTerm({'id': 'popterm1',  'targetid': 'search_str',  'css': '/html2014/css/popterm2.css','trid':'0',
+																	'ssl_css': '/html2014/css/popterm2.css',
+																	'ssl_url': 'https://omron-fa.sitesearch.jp/popterm-OEZ/popterm.pl'}); 
+						  p1.popterm_click = function() {
+							  document.getElementById("search_website").submit();
+						  }
+					</script>
+</div>
+</div>
+</div>
+</div>
+<script>
+	var inof=window.location.href;
+	if(inof.indexOf('/forum')>0)
+	{
+		$("#menu_1689").addClass("cur");
+	}
+	if(inof.indexOf('/training')>0|| inof.indexOf('/elearning')>0|| inof.indexOf('/factory')>0){
+		$("#menu_2174").addClass("cur");
+	}
+	if(inof.indexOf('/authentication')>0)
+	{
+		$("#menu_1687").addClass("cur");
+	}
+	if(inof.indexOf('/solution')>0)
+	{
+		$("#menu_1688").addClass("cur");
+	}
+	if(inof.indexOf('/hr')>0||inof.indexOf('/info')>0)
+	{
+		$("#menu_1690").addClass("cur");
+	}
+	if(inof.indexOf('/document')>0)
+	{
+		$("#menu_2028").addClass("cur");
+	}
+	if(inof.indexOf('/aboutus')>0||inof.indexOf('/jphome/rxqy')>0||inof.indexOf('/aboutus-company')>0||inof.indexOf('/contact/office')>0)
+	{
+		$("#menu_1690").addClass("cur");
+	}
+	if(window.location.pathname=='/')
+	{
+		$("#sy").addClass("cur");
+	}
+	
+	$(function(){
+		$.fn.sub_nav_scroll("#sub_nav_scroll_1",250);
+
+		
+
+		$.fn.nav_show_hide = function(_cla)
+		{
+			$(_cla).find(".show_hide_list a").click(function(){
+				var index = $(_cla).find(".show_hide_list a").index($(this));
+				var curIndex = $(_cla).find(".show_hide_list a").index($(_cla).find(".show_hide_list a.sub_nav_cur"));
+				if (index == curIndex)
+				{
+					return;
+				}
+				$(_cla).find(".show_hide_list a").removeClass("sub_nav_cur").eq(index).addClass("sub_nav_cur");
+				$(_cla).find(".show_hide_body dl").hide().eq(index).fadeIn();
+			}).eq(0).click();
+		}
+
+		$.fn.nav_show_hide("#s_h_1");
+		$.fn.nav_show_hide("#s_h_2");
+	});
+
+    </script>
+<div style="display:none">
+<div class="pop_body" id="exp_pop">
+<a href="#" target="_blank">点击下载</a>
+</div>
+</div>
+<div style="display:none">
+<div id="headerPopBody">
+<div id="region-list">
+<p class="regionHeading"> <em>快速链接到欧姆龙其他国家/地区的网站。</em></p>
+<p class="regionHeading withLine"><a href="http://www.ia.omron.com/" style="color:#06c;" target="_blank">欧姆龙全球</a></p>
+<ul class="first-child">
+<li class="first-child">
+<dl>
+<dt><a class="none-link" id="region00" name="Europe" style="text-decoration:none;">欧洲</a></dt>
+<dd>
+<ul>
+<li><a href="http://industrial.omron.eu/" target="_blank">欧洲</a></li>
+<li><a href="http://industrial.omron.at/" target="_blank">奥地利</a></li>
+<li><a href="http://industrial.omron.be/" target="_blank">比利时</a></li>
+<li><a href="http://industrial.omron.cz/" target="_blank">捷克共和国</a></li>
+<li><a href="http://industrial.omron.dk/" target="_blank">丹麦</a></li>
+<li><a href="http://industrial.omron.fi/" target="_blank">芬兰</a></li>
+<li><a href="http://industrial.omron.fr/" target="_blank">法国</a></li>
+<li><a href="http://industrial.omron.de/" target="_blank">德国</a></li>
+<li><a href="http://industrial.omron.hu/" target="_blank">匈牙利</a></li>
+<li><a href="http://industrial.omron.it/" target="_blank">意大利</a></li>
+<li><a href="http://industrial.omron.nl/" target="_blank">荷兰</a></li>
+<li><a href="http://industrial.omron.no/" target="_blank">挪威</a></li>
+<li><a href="http://industrial.omron.pl/" target="_blank">波兰</a></li>
+<li><a href="http://industrial.omron.pt/" target="_blank">葡萄牙</a></li>
+<li><a href="http://industrial.omron.ru/" target="_blank">俄罗斯</a></li>
+<li><a href="http://industrial.omron.es/" target="_blank">西班牙</a></li>
+<li><a href="http://industrial.omron.se/" target="_blank">瑞典</a></li>
+<li><a href="http://industrial.omron.ch/" target="_blank">瑞士</a></li>
+<li><a href="http://industrial.omron.com.tr/" target="_blank">土耳其</a></li>
+<li><a href="http://industrial.omron.co.uk/" target="_blank">英国</a></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<ul>
+<li class="first-child">
+<dl>
+<dt><a class="none-link" id="region02" name="Middle East" style="text-decoration:none;">中东</a></dt>
+<dd><p>请联系我们的欧洲总部。</p></dd>
+</dl>
+</li>
+<li class="first-child">
+<dl>
+<dt><a class="none-link" id="region01" name="Africa" style="text-decoration:none;">非洲</a></dt>
+<dd>
+<ul>
+<li><a href="http://industrial.omron.co.za/" style="text-decoration:none;" target="_blank">南非</a></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<ul>
+<li class="first-child">
+<dl>
+<dt><a class="none-link" id="region02" name="Greater China" style="text-decoration:none;">大中国区</a></dt>
+<dd>
+<ul>
+<li><a href="/" target="_blank">中国</a></li>
+<li><a href="http://www.omron.com.tw/" target="_blank">台湾</a></li>
+<li><a href="/" target="_blank">香港</a></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li class="first-child">
+<dl>
+<dt><a class="none-link" id="region03" name="Asia-Pacific" style="text-decoration:none;">亚太</a></dt>
+<dd>
+<ul>
+<li><a href="http://www.omron.com.au/" target="_blank">澳大利亚</a></li>
+<li><a href="http://www.omron-ap.co.in/" target="_blank">印度</a></li>
+<li><a href="http://www.omron.co.id/" target="_blank">印度尼西亚</a></li>
+<li><a href="http://www.omron-ap.com.my/" target="_blank">马来西亚</a></li>
+<li><a href="http://www.omron-ap.co.nz/" target="_blank">新西兰</a></li>
+<li><a href="http://www.omron-ap.com.ph/" target="_blank">菲律宾</a></li>
+<li><a href="http://www.omron-ap.com/" target="_blank">新加坡</a></li>
+<li><a href="http://www.omron-ap.co.th/" target="_blank">泰国</a></li>
+<li><a href="http://www.omron.com.vn" target="_blank">越南</a></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<ul>
+<li class="first-child">
+<dl>
+<dt><a class="none-link" id="region04" name="Japan / Korea" style="text-decoration:none;">日本 / 韩国</a></dt>
+<dd>
+<ul>
+<li><a href="http://www.fa.omron.co.jp/" target="_blank">日本</a></li>
+<li><a href="http://www.ia.omron.co.kr/" target="_blank">韩国</a></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li class="first-child">
+<dl>
+<dt><a class="none-link" id="region05" name="Americas" style="text-decoration:none;">美洲</a></dt>
+<dd>
+<ul>
+<li><a href="http://industrial.omron.com.br/" target="_blank">巴西</a></li>
+<li><a href="http://industrial.omron.ca/en/home" target="_blank">加拿大</a></li>
+<li><a href="http://industrial.omron.us/en/home" target="_blank">美国</a></li>
+<li><a href="http://www.sti.com/" target="_blank">美国[安全]</a></li>
+<li><a href="http://industrial.omron.us/es/home" target="_blank">墨西哥</a></li>
+<li><a href="http://industrial.omron.us/es/home" target="_blank">阿根廷</a></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</header>
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".headerPop").colorbox({inline:true, href:"#headerPopBody", opacity:0.4});
+	var url = "/iuser.php";
+	try{
+	$.getJSON(
+			url,
+			function(json){
+				try{
+					if(json != "")
+					{
+						$('#u').html(json)
+						//$('#u').html('我的欧姆龙')
+						$('#dlzc').css('display','none');
+						$('#dlzc2').css('display','none');
+						$('#hyzx').css('display','block');
+					}
+				}
+				catch(e){}
+			}
+		);
+	}
+	catch(e){
+		return false;
+	}
+});
+</script>
+<div class="innerBanner solutionsBanner"></div>
+<script src="/html2014/js/jsfloat.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function(){
+	$(".sidebarBody").smartFloat();
+	$(".sidebarBody.fixed").live({
+        mouseenter: function() {
+            $(".sidebarCon").show();
+        },
+        mouseleave: function() {
+            $(".sidebarCon").hide();
+        }
+    });
+    $(".sidebarList li a").live({
+		click: function() {
+			var index = $(".sidebarList li a").index($(this));
+			$(".sidebarList li a").removeClass("cur").eq(index).addClass("cur");
+			$(".sidebarCon .con").hide();
+			$(".sidebarCon .con").eq(index).show();
+		},
+		mouseenter: function() {
+			var index = $(".sidebarList li a").index($(this));
+			$(".sidebarList li a.cur").removeClass("cur");
+			$(this).addClass("cur");
+			$(".sidebarCon .con").hide();
+			$(".sidebarCon .con").eq(index).show();
+		},
+		mouseleave: function() {
+			//$(".sidebarList li a.hover").removeClass("hover");
+		}
+	});
+
+});
+</script>
+<style>
+.sidebarCon .con .type_3{padding-bottom:15px;}
+</style>
+<!--
+<div class="sidebarBodyOut">
+<div class="sidebarBody cw">
+	 <ul class="sidebarList type_3">
+		<li><a href="/solution/Industry" >按行业分类</a></li>
+		<li><a href="/solution/Process" >按工序分类</a></li>
+		<li><a href="/solution/Products"  class="cur" >按产品分类</a></li>                                                                                                         
+	</ul>
+	<div class="sidebarCon">
+		<div class="con clearfix type_3" >
+			<img src="/html2014/images/productInfo/img_1.jpg" alt="img" class="fl" />
+			<div class="fl">
+				                <a href="/solution/electron" >电子行业</a>
+                                <a href="/solution/moldingmachine" >机床行业</a>
+                                <a href="/solution/package" >包装行业</a>
+                                <a href="/solution/rubber" >橡胶/塑料机械行业</a>
+                                <a href="/solution/car" >汽车行业</a>
+                                <a href="/solution/food" >食品/医疗/化工行业</a>
+                                <a href="/solution/spinning" >纺织机械行业</a>
+                                <a href="/solution/printingmachinery" >印刷行业</a>
+                                <a href="/solution/elevator" >电梯/立体车库行业</a>
+                                <a href="/solution/robot" >机器人行业</a>
+                                <a href="/solution/traffic" >水处理/能源控制行业</a>
+                                <a href="/solution/semiconductor" >半导体/FPD行业</a>
+                                <a href="/solution/secondarybattery" >二次电池行业</a>
+                                <a href="/solution/solar" >太阳能行业</a>
+                                <a href="/solution/transportationequipment" >输送设备/自动仓储行业</a>
+                                <a href="/solution/homeelectronics" >家用电子/办公自动化行业</a>
+                                <a href="/solution/transportation" >轨道交通/交通运输行业</a>
+                                <a href="/solution/other" >其他设备制造行业</a>
+                			</div>
+		</div>
+		<div class="con clearfix type_3" >
+			<img src="/html2014/images/productInfo/img_1.jpg" alt="img" class="fl" />
+			<div class="fl">
+				                <a href="/solution/detect" >检测/测量</a>
+                                <a href="/solution/positiondetection" >位置检测</a>
+                                <a href="/solution/pressuredetection" >压力检测/识别</a>
+                                <a href="/solution/control" >控制</a>
+                                <a href="/solution/security" >安全/故障检测</a>
+                                <a href="/solution/othersensor" >其他传感和控制场合</a>
+                			</div>
+		</div>
+		<div class="con clearfix type_3"  style="display:block;" >
+			<img src="/html2014/images/productInfo/img_1.jpg" alt="img" class="fl" />
+			<div class="fl">
+				                <a href="/solution/sensor"  class="cur" >传感器</a>
+                                <a href="/solution/switches" >开关</a>
+                                <a href="/solution/safety-components" >安全产品</a>
+                                <a href="/solution/relays" >继电器</a>
+                                <a href="/solution/control-components" >温控器/定时器/计数器</a>
+                                <a href="/solution/automation-systems" >PLC/机械控制器/IPC/多轴控制器/触摸屏</a>
+                                <a href="/solution/motion-drives" >伺服/变频</a>
+                                <a href="/123" >机器人</a>
+                                <a href="/solution/environment" >节能/环保</a>
+                                <a href="/solution/power-supplies_in-addition" >电源/其他</a>
+                			</div>
+		</div>
+	</div>                                                                                                  
+</div>
+</div>
+-->
+<div class="breakBar_2014_6">
+<div class="main cw">
+<div>
+<a href="/">首页</a>  &gt;  <a href="/solutionlist">行业应用</a>  &gt;  <a href="/solution/products">按产品分类</a>  &gt;  <a href="/solution/sensor">传感器</a>  &gt;  <a href="/solution/sensor/vision-sensors_machine-vision-systems">图像传感器</a>
+</div>
+</div>
+</div>
+<div class="main" style="padding-top:20px;">
+<!-- 内容区开始 -->
+<!-- 内容区开始 -->
+<style type="text/css">
+		body{background-color:#fff;}
+		.leftCon{width:700px;overflow:hidden;min-height:600px;}
+		.rightCon{width:270px;margin-left:10px;overflow:hidden;float:left;}
+		.rightCon .rrCon{padding:10px;background-color:#F4F4F4;}
+		.rightCon .tab{height: 51px; line-height:51px;border-bottom:1px solid #0053bb;}
+		.rightCon .tab li{float:left;margin: 0 3px 0 0; }
+		.rightCon .tab li a{display: block; height: 49px; line-height:49px; border: 1px #ccc solid;font-size:14px; 
+	color:#0053BC;padding: 0 26px 0 38px;background:#fff url(/html2014/images/common/pagetab_li.png) no-repeat 10px 50%;
+	float:left;}
+		.rightCon .tab li a:hover , .rightCon .tab li a.cur{text-decoration:none;background:#0053BC url(/html2014/images/common/pagetab_li_c.png) no-repeat 10px 50%;
+			color:#fff;}
+		.rightCon .rightBox .txtBody{margin-top:10px;border-bottom:1px solid #ccc;padding-bottom:10px;
+			margin-bottom:10px;}
+		.rightCon .rightBox .txtBody p{font-size:13px;line-height:20px;color:#333;}
+		.rightCon h6{font-size:13px;color:#333;}
+		.rightCon h6 strong{color:#0153b6;}
+		.rightCon .rightBox .con{display:none;}
+		.proScroll{margin-top:20px;height:290px;margin-left:20px;width:965px;z-index:100;}
+		.proScroll ul li{width:210px;padding-bottom:10px;height:290px;margin-right:15px;
+			 background-color:#fff;}
+		.proScroll ul li h3{margin-top:5px;height:24px;line-height:24px;overflow:hidden;
+white-space: nowrap;
+text-overflow: ellipsis;}
+		.proScroll ul li p{height:36px;line-height:18px;overflow:hidden;}
+		.scrollOut{background-color:#f3f3f3;padding-bottom:20px;position:relative;z-index:9200;}
+		.scrollOut .bigTit{padding:20px 23px 0 20px;}
+		.scrollOut .btn{display:block;width:40px;height:60px;position:absolute;top:170px;z-index:9999;display:none;}
+		.scrollOut .leftB{left:0;background:url(/html2014/images/leftB.png) no-repeat;}
+		.scrollOut .rightB{right:0;background:url(/html2014/images/rightB.png) no-repeat;}
+		a.otherLink3{background: #989fad none repeat scroll 0 0;display: block;
+			height: 60px;margin-bottom: 20px;margin-top: 20px;padding-top: 15px;width: 270px;}
+		a.otherLink3 em{background:url("/images/common/website.png") no-repeat scroll 0 0;
+			float: left;height: 47px;margin-left: 34px;margin-right: 17px;width: 41px;}
+		a.otherLink3:hover{background:#0053bd;text-decoration:none;}
+		a.otherLink3 span{background:url("/images/common/arrow-bot.png") no-repeat scroll left bottom;
+			color: #fff;float: left;font-family: "microsoft yahei";ont-size: 14px;line-height: 17px;padding-bottom: 16px;}
+		</style>
+<script type="text/javascript">
+		$(function(){
+			$(".tab li a").click(function(){
+				var index = $(".tab li a").index($(this));
+				$(".tab li a").removeClass("cur").eq(index).addClass("cur");
+				$(".rightBox .con").hide().eq(index).fadeIn();
+			}).eq(0).click();
+
+
+			
+		});
+		</script>
+<div class="cw">
+<div class="clearfix">
+<!-- === [primary-contents-area] === -->
+<div class="leftCon fl">
+<div class="fckBody">
+<p style="color:#000;padding-top:20px;margin-bottom:20px;font-size:22px;">图像传感器在汽车行业的改善案例用途集</p>
+<p><strong>尺寸检测<br/>
+</strong></p>
+<p><strong>FIPG密封胶检测</strong></p>
+<p>自动检测密封胶的涂布是否存在中断。</p>
+<p>·以前的方法</p>
+<p>由于很多复杂的曲线宽度用目测较难判断，人工判断时涂布宽度也会有所出入，所以导致品质检测的结果参差不齐。</p>
+<p>·检测的要点和导入效果</p>
+<p>使用欧姆龙专有的FIPG专用软件，只要在画面上指示出涂布的起始点和终止点，即可检测涂布剂的轮廓。即使没有视觉传感器的操作经验或专业知识，也可轻松设定。涂布状态能以数据化形态进行保存，从而实现对涂布工程的品质管理和溯源管理。</p>
+<p><img alt="" height="330" src="/upload/fckimage/image/20141202141740.jpg" width="355"/></p>
+<p> </p>
+<p><strong>有无检测<br/>
+</strong></p>
+<p><strong>凸轮轴的巢穴检测</strong></p>
+<p>通过划痕污点、标签等检测巢穴的有无。</p>
+<p>·以前的方法</p>
+<p>用目测抽样检测时，可能流出有巢穴的不良品。</p>
+<p>·检测的要点和导入效果</p>
+<p>在顶部的反射光过强的情况下，可通过调整智能相机的光源，或者用其他光源使巢穴的对比度增强。利用自动化，可进行全数检测，还可防止因人工检测造成的误差。</p>
+<p><img alt="" height="313" src="/upload/fckimage/image/20141202141831.jpg" width="338"/></p>
+<p> </p>
+<p><strong>有无检测<br/>
+</strong></p>
+<p><strong>O型环的有无检测</strong></p>
+<p>抽出O型环的橙色部分进行有无检测</p>
+<p>·以前的方法</p>
+<p>组装风扇马达时发生O型环脱落。激光传感器等会因为工件错位而发生误动作。</p>
+<p>·检测的要点和导入效果</p>
+<p>偏光滤镜能抑制工件的油光，利用颜色抽出功能对颜色进行判断。由于是区域检测，只要在检测区域内就不会受错位影响，可进行稳定检测。</p>
+<p><img alt="" height="216" src="/upload/fckimage/image/20141202142057.jpg" width="400"/></p>
+<p> </p>
+<p><strong>位置检测<br/>
+</strong></p>
+<p><strong>焊缝的位置检测</strong></p>
+<p>检测焊缝的位置。</p>
+<p>·以前的方法</p>
+<p>由于色彩传感器是通过点来捕捉工件，所以焊缝表面的状态、颜色不均都会导致检测位置发生错位。</p>
+<p>·检测的要点和导入效果</p>
+<p>由于是区域检测，受表面状态或颜色不均的影响将大大减轻，检测效果要比彩色传感器稳定。</p>
+<p>稳定的检测可大大提高成品率。</p>
+<p><img alt="" height="268" src="/upload/fckimage/image/20141202142253.jpg" width="304"/></p>
+<p> </p>
+<p><strong>有无检测<br/>
+</strong></p>
+<p><strong>刻印有无检测</strong></p>
+<p>检测刻印的有无。</p>
+<p>·以前的方法</p>
+<p>由于是在金属上刻字，文字和背景的对比不够清晰，无法进行稳定识别。</p>
+<p>· 检测的要点和导入效果</p>
+<p>利用照明控制功能，可使文字和背景的阴影更加分明，有助于识别。设定的变更也很容易，有助于缩短工序准备时间。</p>
+<p><img alt="" height="230" src="/upload/fckimage/image/20141202142505.jpg" width="306"/></p>
+<p> </p>
+<p><strong>有无检测</strong></p>
+<p><strong>活塞上有无铁屑附着的检测</strong></p>
+<p>检测活塞上有无铁屑附着。</p>
+<p>·以前的方法</p>
+<p>活塞上有铁屑或异物附着时会引起嵌合不良，从而产生不良产品。</p>
+<p>· 检测的要点和导入效果</p>
+<p>开启背景背光，增强对比度后拍摄铁屑的图像。设定各区域，通过二值化处理进行铁屑量的判断。从而减少不良品，提高品种。</p>
+<p><img alt="" height="207" src="/upload/fckimage/image/20141202142944.jpg" width="328"/></p>
+</div>
+</div>
+<!-- === /[primary-contents-area] === -->
+<div class="rightCon fl">
+<div class="rrCon">
+<p class="bigTit pb20">具体咨询方案</p>
+<ul class="tab">
+<li><a class="cur" href="javascript:;">部门介绍</a></li>
+<li><a href="javascript:;">服务内容</a></li>
+</ul>
+<div class="rightBox">
+<div class="con" style="display: block; opacity: 0.251775;">
+<div class="txtBody">
+<p></p>
+</div>
+<p>咨询请求功能需要登录，请<a href="/index.php?cat_code=login">登录</a>。</p>
+</div>
+<div class="con" style="display: none;">
+<div class="txtBody">
+<p> </p>
+</div>
+</div>
+</div>
+</div>
+<a class="otherLink3" href="/NewSurvey/index.php?cat_code=/NewSurvey&amp;id=60" target="_blank"><em></em><span>官网体验调查</span></a>
+</div>
+</div>
+</div>
+<div class="bg_w" style="display:none;">
+<div class="cw">
+<div class="clearfix askBody">
+<div class="fl leftBody">
+<p class="bigTit pt30">具体咨询方案</p>
+                         
+                    </div>
+<div class="fl rightBody">
+<h2 class="bigTit pt30"> </h2>
+<h3> </h3>
+<p>如果您有以上问题，请联系我们</p>
+<p>联系电话：<strong>86-21-60230333*2203</strong>  吕小姐</p>
+<p>咨询请求功能需要登录，请<a href="/index.php?cat_code=login">登录</a>。</p>
+</div>
+</div>
+</div>
+</div>
+<div class="cw" style="margin:40px auto;">
+<script src="/html2014/js/scrollImg.js" type="text/javascript"></script>
+<script type="text/javascript">
+			$(function(){
+				$.fn.scrollImg(".proScroll ul",".leftB",".rightB",4,245,400);
+				$(".proScroll ul li").hover(function(){
+					$(this).addClass("hover");	
+				},function(){
+					$(this).removeClass("hover");
+				});	
+
+				$(".scrollOut").hover(function(){
+					$(this).find(".btn").show();
+				},function(){
+					$(this).find(".btn").hide();
+				});
+			});
+            </script>
+<div class="scrollOut">
+<a class="btn leftB" href="javascript:;"></a>
+<a class="btn rightB" href="javascript:;"></a>
+<p class="bigTit">相关产品</p>
+<div class="proScroll">
+<ul>
+<li class="">
+<a href="/products/family/1746/"><img height="198" src="/img/l_1746-15-119085-198x198.jpg" style="margin:0 auto;"/></a>
+<h3>视觉传感器ZFV-C</h3>
+<p>ZFV-C 采用了与传统视觉传感器相同的 250,000 像素 CCD，可快速而准确地检测和识别，是测量效果更佳稳定</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- 内容区结束 -->
+</div>
+<script>
+	var topId = '1688';
+	var topId2 = '1793';
+	//2018-5-21 2128/2129/2130 改为2352、2353、2356、2357 liul
+	//if(window.location.href.indexOf('/training')>0||topId2 == '2128'||topId2 == '2129'||topId2 == '2130')//2128=代理店学习园地、2129代理店学习园地-课程列表、课程试题及评分
+	if(window.location.href.indexOf('/training')>0||topId2 == '2352'||topId2 == '2353'||topId2 == '2356'||topId2 == '2357')//2352=SKILL MAP、2356-应用案例课程、2357-卖点培训课程
+	{
+		$("#menu_2174").addClass("cur");
+	}
+	else if(topId2 == '1713')
+	{
+		$("#menu_2028").addClass("cur");
+	}
+	else if(topId2 == '1716')
+	{
+		$("#menu_2029").addClass("cur");
+	}
+	else if(topId2 == '2019'||topId2 == '2020')
+	{
+		$("#menu_2030").addClass("cur");
+	}
+	else if(topId == '1688')
+	{
+		$("#menu_2031").addClass("cur");
+	}else if(topId2 == '2171'||topId2 == '2172')
+	{
+		$("#menu_1689").addClass("cur");
+	}else if(topId2 == '2175'||topId2 == '2176'||topId2 == '1974'||topId2 == '2177'||topId2 == '2139'||topId2 == '2121'||topId2 == '2111'||topId2 == '2006')
+	{
+		$("#menu_2175").addClass("cur");
+	}else if(topId2 == '2358')//展会 lih
+	{
+		$("#menu_2358").addClass("cur");
+	}else if(topId2 == '2384')
+	{
+		$("#menu_1690").addClass("cur");//关于我们app 20190322添加
+	}
+	else
+	{
+		
+		if(topId.indexOf('}')>0) topId = '';
+   		$("#menu_"+topId).addClass("cur");
+	}
+	$(function(){
+	
+		$(".btmList li").hover(function(){
+			$(this).find("*").stop(false,true);
+			$(this).find(".mask").animate({"left":"0px"},300);	
+		},function(){
+			$(this).find("*").stop(false,true);
+			$(this).find(".mask").animate({"left":"-240px"},300);	
+		});
+
+		/*
+		
+		$(".btmList li").hover(function(){
+			$(this).find("*").stop(false,true);
+			$(this).find(".mask").animate({"top":"0px"},800);	
+		},function(){
+			$(this).find("*").stop(false,true);
+			$(this).find(".mask").animate({"top":"-110px"},600);	
+		});
+		
+		*/
+
+	});
+    </script>
+<style>
+.footerRight_2015 .qr_body_2015 .qrBox.qr_1{width:125px;margin-right:0;}
+</style>
+<footer>
+<div class="footerTop" style="padding-top:20px;">
+<div class="cw">
+<div class="clearfix">
+<div class="footerLeft fl">
+<ul class="footerList clearfix">
+<li style="margin-left:30px;width:148px;">
+<h3><a href="/products/index.html" target="_blank">产品中心</a></h3>
+<!--<a href="/products/category/automation-systems/machine-automation-controllers/controller-nj-series/index.html">NJ控制器</a>-->
+<p><a href="/products/category/automation-systems/programmable-controllers/index.html" target="_blank">PLC</a></p>
+<p><a href="/products/category/automation-systems/machine-automation-controllers/index.html" target="_blank">机械控制器</a></p>
+<p><a href="/products/category/automation-systems/industrial-pc-platform/index.html" target="_blank">IPC平台</a></p>
+<p><a href="/products/category/automation-systems/multi-axis-controller/index.html" target="_blank">多轴控制器</a></p>
+<p><a href="/products/category/automation-systems/programmable-terminals/index.html" target="_blank">触摸屏</a></p>
+<p><a href="/products/category/motion_drives/inverters/index.html" target="_blank">变频器</a></p>
+<p><a href="/products/category/robotics/index.html" target="_blank">机器人</a></p>
+<p><a href="/products/category/motion_drives/servomotors_servo-drivers/index.html" target="_blank">伺服</a></p>
+<p><a href="/products/category/safety-components/index.html" target="_blank">安全产品</a></p>
+<p><a href="/products/category/sensors/index.html" target="_blank">传感器</a></p>
+<p><a href="/products/category/control-components/temperature-controllers/index.html" target="_blank">温控器</a></p>
+<p><a href="/products/category/relays/index.html" target="_blank">继电器</a></p>
+<p><a href="/products/category/switches/index.html" target="_blank">开关</a></p>
+<p><a href="/products/category/control-components/timers/index.html" target="_blank">定时器</a></p>
+<p><a href="/products/category/power-supplies_in-addition/power-supplies/index.html" target="_blank">电源</a></p>
+</li>
+<li>
+<h3><a href="/commoninformation" target="_blank">共通信息</a></h3>
+<p><a href="/security" target="_blank">产品防伪查询</a></p>
+<p><a href="/alternative" target="_blank">停产替代查询</a></p>
+<p><a href="/authentication" target="_blank">认证索取</a></p>
+<p><a href="/rohs" target="_blank">RoHS法规信息</a></p>
+<p><a href="/iso" target="_blank">体系证书信息</a></p>
+<p><a href="/guide" target="_blank">技术指南</a></p>
+<h3 class="mt20"><a href="/document" target="_blank">资料目录下载</a></h3>
+<p><a href="/templates/pdf.php?id=1" target="_blank">样本列表</a></p>
+<p><a href="/templates/pdf.php?id=2" target="_blank">手册列表</a></p>
+<p><a href="/templates/pdf.php?id=7" target="_blank">常见问题列表</a></p>
+<p><a href="/templates/pdf.php?id=4" target="_blank">资料勘误</a></p>
+<p><a href="/document" target="_blank">2018产品精选</a></p>
+<!--
+						<p><a href="/index.php?cat_code=down&art_id=1294968106" target="_blank">BEST样本CONTROL篇</a></p>
+						<p><a href="/index.php?cat_code=down&art_id=1294968107" target="_blank">BEST样本SENSING篇</a></p>
+						-->
+<!-- 
+						<p><a href="/index.php?cat_code=down&art_id=1294968105" target="_blank">BEST综合样本2016版<br />CONTROL篇</a></p>
+						<p><a href="/index.php?cat_code=down&art_id=1294968106" target="_blank">BEST综合样本2016版<br />SENSING篇</a></p>
+						-->
+</li>
+<li>
+<h3><a href="/special" target="_blank">专题</a></h3>
+<p><a href="/advanced-technology" target="_blank">核心技术展示</a></p>
+<p><a href="/safetynavigator" target="_blank">安全导航家</a></p>
+<p><a href="/index.php?cat_code=/sap/control" target="_blank">Sysmac Family</a></p>
+<p><a href="http://www.fa.omron.com.cn/solution/panel/" target="_blank">控制柜设计助手</a></p>
+<h3 class="mt20"><a href="/service" target="_blank">服务与支持</a></h3>
+<p><a href="/service/repair/apply_step" target="_blank">维修申请</a></p>
+<p><a href="/elearning/" target="_blank">e-Learning</a></p>
+<!--?php if($_SESSION['user_catalog'] == 'vip'){ ?-->
+<p><a href="/elearning/key-account" target="_blank">重点客户学习园地</a></p>
+<!--?php } ?-->
+<p><a href="/factory/index" target="_blank">代理店学习园地</a></p>
+<p><a href="/training/index.php" target="_blank">课堂培训报名</a></p>
+<p><a href="/user.php?cat_code=myrepair" target="_blank">产品修理查询</a></p>
+<!--
+						<p><a href="/service/sps/visit" target="_blank">展厅参观报名</a></p>
+						-->
+<p><a href="/service/survey" target="_blank">满意度调查</a></p>
+<p><a href="/service/voc" target="_blank">投诉申请</a></p>
+<p><a href="/msdproject" target="_blank">安全顾问咨询</a></p>
+<p><a href="/service/csc" target="_blank">客户服务指南</a></p>
+<!--
+                        <a href="/training/index.php">课堂培训报名</a>
+						-->
+</li>
+<li class="mr20">
+<h3><a href="/contact/agents" target="_blank">联系我们</a></h3>
+<p><a href="/contactus" target="_blank">事务所一览表</a></p>
+<p><a href="/contact/office" target="_blank">代理商资质查询</a></p>
+<p><a href="/jphome/rxqy" target="_blank">日系企業様向けサポート情報</a></p>
+<p><a href="/hr/flow" target="_blank">人才招聘</a></p>
+<p><a href="/aboutus/cooperation" target="_blank">校企合作</a></p>
+<h3 class="mt20">相关网站链接</h3>
+<p><a href="http://www.omron.com.cn/" target="_blank">欧姆龙(中国)有限公司</a></p>
+<p><a href="http://www.omron.com.tw/" target="_blank">欧姆龙自动化(台湾)网站</a></p>
+<p><a href="/ups/" target="_blank">欧姆龙不间断电源(UPS)</a></p>
+<p><a href="http://www.ecb.omron.com.cn/" target="_blank">欧姆龙电子部品事业部</a></p>
+<p><a href="/aoi/" target="_blank">欧姆龙AOI网站</a></p>
+</li>
+</ul>
+</div>
+<script type="text/javascript">
+			  	function focusemail(){
+					$("#eventVal").val('index_dingyue');
+					if($("#dingyue").val()=="sample@omron.com.cn")
+						$("#dingyue").val("");
+				}
+				function bluremail(){
+					$("#eventVal").val('index_dingyue');
+					if($("#dingyue").val()=="")
+						$("#dingyue").val("sample@omron.com.cn");
+				}
+				function saveDing(){
+					var email=$("#dingyue").val();
+					var reg_email=/\w@\w*\.\w/;
+					if(email=="sample@omron.com.cn"){
+						alert('请输入您的邮箱');
+					}
+					else if(!reg_email.test(email)){
+						alert('请输入正确的邮箱地址');
+						return false;
+					}else{
+						$.ajax({
+							url:'/index.php?cat_code=/saveemail_2015',
+							data:'email='+email,
+							type:'POST',
+							cache:false,
+							success: function(data){
+								alert(data);
+							}
+						})
+					}
+					return false;
+				}
+				document.onkeydown = function(event_e){  
+					 if(window.event)  
+						 event_e = window.event;  
+					 var int_keycode = event_e.charCode||event_e.keyCode;  
+					 if(int_keycode ==13){ 
+					  if($("#eventVal").val()=='index_dingyue')		
+							saveDing();
+					 }
+				} 
+			  </script>
+<div class="footerRight fl footerRight_2015">
+<!--
+                <h3>电子月刊订阅</h3>
+				<div class="mail_2015">
+                <input type="hidden" id="eventVal" value="0"/>
+					<input type="text" id="dingyue" onfocus="focusemail()" onblur="bluremail()" class="mail_txt_2015" value="sample@omron.com.cn" />
+					<a href="javascript:void(0)" onclick="saveDing()" class="mail_btn_2015">订阅</a>
+				</div>
+				<div class="qr_body_2015">
+					<div class="clearfix">
+						<div class="qrBox fl qr_1">
+							<p><img src="/html2014/images/common/ico_100.png" />服务</p>
+							<p><img src="/html2014/images/index2015/qr_service.jpg" /></p>
+						</div>
+						<div class="qrBox fl">
+							<p><img src="/html2014/images/common/ico_100.png" />资讯</p>
+							<p><img src="/html2014/images/index2015/qr_info.jpg" /></p>
+						</div>
+					</div>
+				</div>
+
+				<div class="tel_2015">
+					<img src="/html2014/images/index2015/tel_ico.jpg" />
+					400-820-4535
+				</div>
+				-->
+<div class="tel_2019">
+<img src="/html2014/images/index2015/tel_ico.jpg"/>
+					400-820-4535
+				</div>
+<div class="qr_body_2015">
+<div class="clearfix">
+<div class="qrBox fl qr_1">
+<p><img src="/html2014/images/common/ico_105.png"/>微信服务号</p>
+<p><img src="/html2014/images/index2015/qr_info_2.jpg"/></p>
+</div>
+<div class="qrBox fl">
+<p><img src="/html2014/images/common/ico_105.png"/>微信资讯号</p>
+<p><img src="/html2014/images/index2015/qr_info.jpg"/></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footerBottom cw" style="height:80px;">
+<p>
+<a href="http://www.omron.com/" target="_blank">OMRON Corporation</a>
+<em>|</em>
+<a href="/syxz" target="_blank">使用须知</a>
+<em>|</em>
+<a href="/promise" target="_blank">承诺事项</a>
+<em>|</em>
+<a href="/sitemap" target="_blank">网站地图</a>
+</p>
+<p>
+        	© Copyright 欧姆龙自动化（中国）有限公司 版权所有 2005-2020. All Rights Reserved. 
+        </p>
+<p>
+<a class="mr10" href="http://www.beian.miit.gov.cn/" target="_blank">京ICP备16038189号-1</a>
+<img src="/html2014/images/ga_ico.jpg" style="vertical-align:middle;margin-right:5px;"/> 沪公网安备 31011502002231号
+		</p>
+</div>
+</footer>
+<div class="toolsBar_2016">
+<div class="toolsBar_pop"><em class="closeBtn"></em></div>
+<!--
+	<div class="toosBar_ico ico_1">
+		<a href="/service-introduction?from=toolsbar" target="_blank"><p>自助服务</p></a>
+	</div>
+
+	<div class="toosBar_ico ico_3">
+		<a href="/contactus?from=toolsbar" target="_blank"><p>联系方式</p></a>
+	</div>
+	<div class="toosBar_ico ico_4">
+		<a href="javascript:;"><p>微信扫码</p></a>
+		<div class="qr_list_2015">
+			<img src="/html2014/images/index2015/qr_list_ico.png" class="qr_list_ico" />
+			<div class="qrBody_2015">
+				<img src="/html2014/images/index2015/qr_1.jpg" />
+				<p>欧姆龙自动化</p>
+			</div>
+		</div>
+	</div>
+	-->
+<div class="toosBar_ico ico_4">
+<a href="javascript:;"><p>APP下载</p></a>
+<div class="qr_list_2015">
+<img class="qr_list_ico" src="/html2014/images/index2015/qr_list_ico.png"/>
+<div class="qrBody_2015">
+<img src="/html2014/images/index2015/qr_3.jpg"/>
+<p>欧姆龙FA世界</p>
+</div>
+</div>
+</div>
+<div class="toosBar_ico ico_2">
+<a href="/webservice?from=toolsbar" target="_blank"><p>在线客服</p></a>
+</div>
+<div class="toosBar_ico ico_5">
+<a href="/NewSurvey/index.php?cat_code=/NewSurvey&amp;id=60&amp;from=toolsbar" target="_blank"><p>调查问卷</p></a>
+</div>
+<div class="top_ico">
+<a href="javascript:;"><p>TOP</p></a>
+</div>
+</div>
+<script type="text/javascript">
+$(function(){
+
+	var tools_timer;
+	var tools_nmu = 1;
+	var tools_flg = true;
+		setTimeout(function(){
+		//$(".toolsBar_pop").fadeIn();
+	},1500);
+		
+	$(".toolsBar_pop .closeBtn").click(function(){
+		$.ajax({
+			url:"/index.php?cat_code=/shezhi_fuwu_zhuangtai",
+			success: function(data){
+				
+			}
+		})
+		$(".toolsBar_pop").fadeOut();
+	});
+
+	$(".toolsBar_2016 .toosBar_ico").hover(function(){
+
+		var index = $(".toolsBar_2016 .toosBar_ico").index($(this));
+		
+			tools_timer = setTimeout(function(){
+				if (tools_nmu != index || tools_flg)
+				{
+					$(".toolsBar_2016 .toosBar_ico").removeClass("cur").eq(index).addClass("cur");
+					$(".toolsBar_2016 .toosBar_ico a").not($(".toolsBar_2016 .toosBar_ico a").eq(index)).animate({
+						"height":"45px"
+					},200);
+					$(".toolsBar_2016 .toosBar_ico a").eq(index).animate({
+						"height":"74px"
+					},200);
+
+					tools_nmu = index;
+					tools_flg = false;
+				}
+				$(".toolsBar_2016 .toosBar_ico").eq(index).find(".qr_list_2015").stop(false,true).delay(220).fadeIn();
+				
+				
+			},500);
+			
+		
+	},function(){
+		clearTimeout(tools_timer);
+		$(".toolsBar_2016 .toosBar_ico .qr_list_2015").fadeOut();
+	}).eq(0).mouseover();
+
+	$(".toolsBar_2016 .top_ico").click(function(){
+		$('body,html').animate({scrollTop:0},800);
+		return false;
+	});
+});
+</script>
+</body></html>

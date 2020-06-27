@@ -1,0 +1,261 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>光交叉波分复用器名词解释_技术实现方法_性能指标分析-维库电子通</title>
+<meta content="光交叉波分复用器名词解释,光交叉波分复用器技术实现方法,光交叉波分复用器性能指标分析" name="keywords"/>
+<meta content="光交叉波分复用器(Interleaver)又叫光交叉复用/解复用器，是一种用在光纤通信中密集波分复用(DWDM)系统的光学路由器(Optical router),也称梳状滤波器(Comb filter)。" name="description"/>
+<link href="http://img3.dzsc.com/css/web/common/base.css?v=11222016.css" rel="stylesheet" type="text/css"/>
+<link href="http://img3.dzsc.com/css/web/common/top.css?v=11222016.css" rel="stylesheet" type="text/css"/>
+<link href="http://img3.dzsc.com/css/web/news/common.css" rel="stylesheet" type="text/css"/>
+<link href="http://img3.dzsc.com/css/web/news/news.css" rel="stylesheet" type="text/css"/>
+<script src="//push.zhanzhang.baidu.com/push.js"></script><script src="https://hm.baidu.com/hm.js?4b49b84f5d3fbea3caf3b7cfde1e1b0d"></script><script src="http://img3.dzsc.com/js/jquery/jquery-1.10.2.min.js" type="text/javascript"></script>
+<script charset="utf-8" src="http://img3.dzsc.com/js/web/wangmeng.js" type="text/javascript"></script>
+<script charset="utf-8" src="http://img3.dzsc.com/js/web/dgk/index.js" type="text/javascript"></script>
+<!--移动端适配-->
+<meta content="pc" name="applicable-device"/>
+<meta content="format=html5;url=http://m.dzsc.com/wiki/15115.html" name="mobile-agent"/>
+<meta content="format=xhtml;url=http://m.dzsc.com/wiki/15115.html" name="mobile-agent"/>
+<meta content="no-transform" http-equiv="Cache-Control"/>
+<meta content="no-siteapp" http-equiv="Cache-Control"/>
+<link href="http://m.dzsc.com/wiki/15115.html" media="only screen and(max-width: 640px)" rel="alternate"/>
+<script src="http://img3.dzsc.com/js/common/uaredirect.js" type="text/javascript"></script>
+<script type="text/javascript">uaredirect("http://m.dzsc.com/wiki/15115.html");</script>
+<script type="application/ld+json">
+    {
+        "@context": "https://zhanzhang.baidu.com/contexts/cambrian.jsonld",
+        "@id":"http://wiki.dzsc.com/15115.html",
+        "appid":"1582126773244911",
+        "title": "光交叉波分复用器名词解释_技术实现方法_性能指标分析-维库电子通",
+        "images": [],
+        "description": "光交叉波分复用器(Interleaver)又叫光交叉复用/解复用器，是一种用在光纤通信中密集波分复用(DWDM)系统的光学路由器(Optical router),也称梳状滤波器(Comb filter)。",
+        "pubDate": "2019-01-15T13:56:24",
+        "upDate":"2019-01-15T13:56:24"
+    }
+    </script>
+</head>
+<body style="">
+<div class="top">
+<div class="w1190">
+<div class="fl">
+            您好，欢迎来到维库电子市场网
+                
+                
+            <a class="blue" href="http://www.dzsc.com/member/login.aspx?returnurl=http%3a%2f%2fwiki.dzsc.com%2fdetail.aspx%3ffullurl%3d15115.html" rel="nofollow" target="_self">登录</a> | <a class="blue" href="http://www.dzsc.com/member/reg.aspx" rel="nofollow" target="_self">免费注册</a>
+</div>
+<div class="fr">
+<span><a class="gray" href="http://www.dzsc.com/" target="_self">网站首页</a></span>
+            | <span class="relative"><a class="gray" href="javascript:;" onmouseout="javascript:$('#pur').hide();" onmouseover="javascript:$('#pur').show()" rel="nofollow">采购商服务<i></i></a> <font id="pur" onmouseout="javascript:$('#pur').hide();" onmouseover="javascript:$('#pur').show()" style="display: none"><a href="http://www.dzsc.com/ic/buystockadd.aspx" rel="nofollow" target="_blank">发布采购信息</a><br/>
+<a href="http://www.dzsc.com/ic/buystocklist.aspx" rel="nofollow" target="_blank">修改/删除采购</a><br/>
+<a href="http://www.dzsc.com/weituo/" rel="nofollow" target="_blank">委托宝</a> </font>
+</span>| <span class="relative"><a class="gray" href="javascript:;" onmouseout="javascript:$('#vip1').hide();" onmouseover="javascript:$('#vip1').show()" rel="nofollow">会员服务<i></i></a> <font id="vip1" onmouseout="javascript:$('#vip1').hide();" onmouseover="javascript:$('#vip1').show()" style="display: none">
+<a href="http://www.dzsc.com/topic/freespotservice/" rel="nofollow" target="_blank">免费现货认证</a><br/>
+<a href="http://www.dzsc.com/topic/serv_member/" rel="nofollow" target="_blank">基础会员服务</a><br/>
+<a href="http://www.dzsc.com/topic/serv_bigcustom/" rel="nofollow" target="_blank">百维通</a><br/>
+<a href="http://www.dzsc.com/topic/marketing_softwen/" rel="nofollow" target="_blank">软文营销</a> </font>
+</span>| <span class="relative"><a class="gray" href="javascript:;" onmouseout="javascript:$('#ser').hide();" onmouseover="javascript:$('#ser').show()" rel="nofollow">工程师服务<i></i></a> <font id="ser" onmouseout="javascript:$('#ser').hide();" onmouseover="javascript:$('#ser').show()" style="display: none">
+<a href="http://pdf.dzsc.com/" target="_blank">PDF下载</a><br/>
+<a href="http://www.dzsc.com/data/" target="_blank">技术资料</a><br/>
+<a href="http://product.dzsc.com/news/" target="_blank">电子资讯</a><br/>
+<a href="http://www.dzsc.com/data/circuitmore.html" target="_blank">电路图</a> </font></span>|
+                <span class="relative"><a class="gray" href="javascript:;" onmouseout="javascript:$('#map').hide();" onmouseover="javascript:$('#map').show()" rel="nofollow">网站导航<i></i></a> <font id="map" onmouseout="javascript:$('#map').hide();" onmouseover="javascript:$('#map').show()" style="display: none"><a href="http://www.dzsc.com/" target="_blank">
+                            网站首页</a><br/>
+<a href="http://product.dzsc.com/" target="_blank">电子元器件</a><br/>
+<a href="http://ic.dzsc.com/" target="_blank">IC交易网</a><br/>
+<a href="http://www.dzsc.com/data/" target="_blank">技术资料</a><br/>
+<a href="http://product.dzsc.com/news/" target="_blank">电子资讯</a><br/>
+<a href="http://pdf.dzsc.com/" target="_blank">Datasheet</a><br/>
+<a href="http://www.dzsc.com/data/circuitmore.html" target="_blank">电路图</a><br/>
+<a href="http://wiki.dzsc.com/" target="_blank">电子通</a> </font></span>
+</div>
+</div>
+</div>
+<div class="w1190">
+<div class="logo_box">
+<a class="logo" href="http://www.dzsc.com/"><img alt="维库电子市场网" src="http://img3.dzsc.com/img/web/common/logo.png"/></a>
+<div class="Search">
+<form action="http://wiki.dzsc.com/list.aspx" id="form1" method="get" onsubmit="return checkOthers(0)">
+<span class="relative" onmouseout="javascript:$('#choose').hide();" onmouseover="javascript:$('#choose').show()">
+<a href="javascript:void(0)" id="searchtitle">电子通</a><i></i> <font id="choose" onmouseout="javascript:$('#choose').hide();" onmouseover="javascript:$('#choose').show()" style="z-index: 100; display: none">
+<a href="javascript:void(0)" onclick="ChangeSearch(0,$(this).html())">产品</a><br/>
+<a href="javascript:void(0)" onclick="ChangeSearch(1,$(this).html())">PDF</a><br/>
+<a href="javascript:void(0)" onclick="ChangeSearch(2,$(this).html())">资讯</a><br/>
+<a href="javascript:void(0)" onclick="ChangeSearch(3,$(this).html())">资料</a><br/>
+<a href="javascript:void(0)" onclick="ChangeSearch(5,$(this).html())">电子通</a>
+</font></span>
+<input class="ss_text" id="keyword" name="keyword" type="text" value=""/>
+<input class="enter" type="submit" value="搜索"/>
+</form>
+</div>
+<div class="fabu fr">
+<a class="enter mr10" href="http://www.dzsc.com/ic/buystockadd.aspx" rel="nofollow" target="_blank"><i></i>发布采购信息</a> <a class="enter01" href="http://www.dzsc.com/ic/buystocklist.aspx" rel="nofollow" target="_blank">修改/删除采购【看报价】</a>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+    if (typeof (jQuery) == "undefined") document.write("<sc" + "ript lang" + "uage=\"java" + "script\" src=\"http://img3.dzsc.com/js/jquery/jquery-1.4.2.min.js\"></scr" + "ipt>");
+    var stype = 5;
+
+</script>
+<script src="http://img3.dzsc.com/js/web/common/top.js" type="text/javascript"></script>
+<div class="w1190">
+<div class="breadcrumb">
+            您所在的位置：<a href="http://www.dzsc.com/">电子元器件采购网</a><span>&gt;</span><a href="http://wiki.dzsc.com/">电子通</a><span>&gt;</span>光交叉波分复用器
+        </div>
+</div>
+<div class="w1190 encyclopedias-info mt10 mb10 cfix">
+<div class="info-left fl">
+<div class="latestEntry">
+<div class="encyclopedias-details">
+<div class="encyclopedias-briefing">
+<h1 class="normal cfix">光交叉波分复用器<div><span><i class="i-ico i-yuedu"></i>阅读：2785</span><span><i class="i-ico i-date"></i>时间：2019-01-15 13:56:24</span></div>
+</h1>
+<p><font face="Verdana">    光交叉波分<a href="http://wiki.dzsc.com/954.html" target="_blank">复用器</a>(Interleaver)又叫光交叉复用/解复用器，是一种用在<a href="http://wiki.dzsc.com/77.html" target="_blank">光纤</a>通信中密集波分复用(DWDM)系统的光学<a href="http://wiki.dzsc.com/1802.html" target="_blank">路由器</a>(Optical router),也称梳状<a href="http://wiki.dzsc.com/1750.html" target="_blank">滤波器</a>(Comb filter)。</font></p>
+<div class="catalog cfix">
+<div class="catalog-box fl">
+<span class="fl">目录</span>
+<ul class="fl">
+<li><a href="#md52799"><i></i>名词解释</a></li>
+<li><a href="#md52800"><i></i>技术实现方法</a></li>
+<li><a href="#md52801"><i></i>性能指标分析</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="encyclopedias-details-item" id="md52799">
+<h2 class="normal">
+<i></i>
+<span>名词解释</span>
+</h2>
+<div>
+<p><font face="Verdana">   光交叉波分复用器的解复用功能是把单组输入DWDM光信号分解成两组奇偶信道输出，且两组光输出信号信道间隔两倍于输入光信号信道间隔。它使较窄信道间隔设计的DWDM系统，如100GHz(或50GHz)能进一步解分复用成信道间隔为200GHz（或100GHz）的更疏松的DWM系统。</font></p>
+</div>
+</div>
+<div class="encyclopedias-details-item" id="md52800">
+<h2 class="normal">
+<i></i>
+<span>技术实现方法</span>
+</h2>
+<div>
+<p><font face="Verdana">   Interleaver的技术实现方法大致有以下几种类型：<br/>   1． 全光纤马赫-曾德（Mach-Zehnder）干涉仪型<br/>   2． 利用双折射晶体波片的偏振光干涉型<br/>   3． 迈克尔逊G-T干涉仪型<br/>   4． 光纤光栅型<br/>   5． 阵列波导光栅（AWG）型<br/>   6． 利用多光束干涉原理的法布里伯罗（F-P）腔型</font></p>
+</div>
+</div>
+<div class="encyclopedias-details-item" id="md52801">
+<h2 class="normal">
+<i></i>
+<span>性能指标分析</span>
+</h2>
+<div>
+<p><font face="Verdana">   在评估Interleaver时,要测量的参数首先是插损、通带形状、所要求的信道间距间的串扰。正如所有的器件一样，特别是Interleaver,因它和DWDM滤波器层叠使用，它的插损越小越好。当信号波长漂移时，为了尽量减小信道功率变动，一致的平通带形状是很可取的。任何最初信道功率不平衡将会当信号更加不平衡通过多重放大器，并影响系统的信噪比性能。经常，在取得平顶通带形状和插损之间采取折中，因为增加的滤波元件经常会增大插损。最后，串扰性能是很关键的，因为Interleaver用作滤波器的前置部位，并决定这集合装置的串扰性能。虽然附加的DWDM滤波器用在Interleaver的输出端，这些滤波器会有更宽的通带，但不能提高毗连信道的串扰性能。<br/>   即使以上三个基本参数达到了设计目标，还有许多其他参数得考虑。这个装置必须以ITU 波长为中心波长，不关是一个通道的中心波长为ITU波长，而且是整个系统的所有的通道的中心波长都必须是ITU波长。在工作温度范围内这个装置的波长漂移必须被考虑，最大的波长偏移量将用来分析系统的通带性能和串扰。</font></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="info-right fr right">
+<div class="encyclopedias-text mb10">
+<p><strong>维库电子通，电子知识，一查百通！</strong></p>
+<p>已收录词条<em>13949</em>个</p>
+</div>
+<div class="news-item ph-item mb10">
+<h4 class="normal">热门电子百科排行</h4>
+<ul class="block J_tabbox">
+</ul>
+</div>
+<div class="news-item c-item mb10">
+<h4 class="normal">相关词条<span class="fr"><a href="/list.html">更多&gt;&gt;</a></span></h4>
+<ul class="cfix">
+<li><a href="http://wiki.dzsc.com/5972.html" target="_blank" title="ac dc电源模块">ac dc电源模块</a></li>
+<li><a href="http://wiki.dzsc.com/13567.html" target="_blank" title="刀架编码器">刀架编码器</a></li>
+<li><a href="http://wiki.dzsc.com/282.html" target="_blank" title="净化稳压电源">净化稳压电源</a></li>
+<li><a href="http://wiki.dzsc.com/12549.html" target="_blank" title="电热蒸馏水器">电热蒸馏水器</a></li>
+<li><a href="http://wiki.dzsc.com/6718.html" target="_blank" title="LED液晶电视">LED液晶电视</a></li>
+<li><a href="http://wiki.dzsc.com/11426.html" target="_blank" title="混沌摆">混沌摆</a></li>
+<li><a href="http://wiki.dzsc.com/3936.html" target="_blank" title="带微打智能型介损测量仪">带微打智能型介损测量仪</a></li>
+<li><a href="http://wiki.dzsc.com/11607.html" target="_blank" title="整流桥KBPC2510">整流桥KBPC2510</a></li>
+<li><a href="http://wiki.dzsc.com/10116.html" target="_blank" title="开关量信号">开关量信号</a></li>
+<li><a href="http://wiki.dzsc.com/10551.html" target="_blank" title="雨量传感器">雨量传感器</a></li>
+</ul>
+</div>
+<div class="news-item c-item mb10">
+<h4 class="normal">最新产品</h4>
+<ul class="cfix">
+<li><a class="f14" href="http://product.dzsc.com/product/infomation/948723/2013627161930150.html" target="_blank" title="供应自动升降发电机移动照明车">供应自动升降发电机移动照明车</a></li>
+<li><a class="f14" href="http://product.dzsc.com/product/1065347-2015511132045875.html" target="_blank" title="供应奥林巴斯三目显微镜CKX53">供应奥林巴斯三目显微镜CKX53</a></li>
+<li><a class="f14" href="http://product.dzsc.com/product/1156303-202059174217764.html" target="_blank" title="13F-39MNL集成电路IC">13F-39MNL集成电路IC</a></li>
+<li><a class="f14" href="http://product.dzsc.com/product/796864-202059174327145.html" target="_blank" title="W25N01GVZEIGTR华邦芯片存储器-IC-1Gb现货">W25N01GVZEIGTR华邦芯片存储器-IC-1Gb现货</a></li>
+<li><a class="f14" href="http://product.dzsc.com/product/950388-2019822053365.html" target="_blank" title="ST意法 STD2HNK60Z-1 TO-252 原装MOS管">ST意法 STD2HNK60Z-1 TO-252 原装MOS管</a></li>
+<li><a class="f14" href="http://product.dzsc.com/product/950388-201982217680.html" target="_blank" title="L7806CV-DG TO-220  原装ST MOS管">L7806CV-DG TO-220  原装ST MOS管</a></li>
+<li><a class="f14" href="http://product.dzsc.com/product/950388-2019822121953.html" target="_blank" title="ST意法 STP55NF06 TO-220 原装 60V50A">ST意法 STP55NF06 TO-220 原装 60V50A</a></li>
+<li><a class="f14" href="http://product.dzsc.com/product/950388-2019822130917.html" target="_blank" title="STD11NM60N TO-252 场效应管MOS管原装ST">STD11NM60N TO-252 场效应管MOS管原装ST</a></li>
+<li><a class="f14" href="http://product.dzsc.com/product/950388-201982222112.html" target="_blank" title="MOS管STP65NF06 TO-220 N沟道场效应管">MOS管STP65NF06 TO-220 N沟道场效应管</a></li>
+<li><a class="f14" href="http://product.dzsc.com/product/950388-2019822214320.html" target="_blank" title="STP60NF06 TO-220 ST意法 60V 60A 110W">STP60NF06 TO-220 ST意法 60V 60A 110W</a></li>
+</ul>
+</div>
+<div class="news-item c-item mb10">
+<h4 class="normal">热门产品</h4>
+<ul class="cfix">
+<li><a href="http://product.dzsc.com/product/searchfile/5333.html" target="_blank">
+            单面pcb线路板
+        </a></li>
+<li><a href="http://product.dzsc.com/product/searchfile/5334.html" target="_blank">
+            车载MP3
+        </a></li>
+<li><a href="http://product.dzsc.com/product/searchfile/5335.html" target="_blank">
+            四层线路板
+        </a></li>
+<li><a href="http://product.dzsc.com/product/searchfile/5336.html" target="_blank">
+            加急pcb
+        </a></li>
+<li><a href="http://product.dzsc.com/product/searchfile/5337.html" target="_blank">
+            灯板
+        </a></li>
+<li><a href="http://product.dzsc.com/product/searchfile/5338.html" target="_blank">
+            VCD
+        </a></li>
+<li><a href="http://product.dzsc.com/product/searchfile/5339.html" target="_blank">
+            无线网卡
+        </a></li>
+<li><a href="http://product.dzsc.com/product/searchfile/5340.html" target="_blank">
+            环氧树脂板
+        </a></li>
+<li><a href="http://product.dzsc.com/product/searchfile/5341.html" target="_blank">
+            七彩灯
+        </a></li>
+<li><a href="http://product.dzsc.com/product/searchfile/5342.html" target="_blank">
+            铝基覆铜板
+        </a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="w1190">
+</div>
+<div class="w1190">
+<div class="footer">
+<p>
+<strong>IC型号索引：</strong>
+<a class="c666" href="http://www.dzsc.com/A/" target="_blank" title="A开头IC芯片">A</a> <a class="c666" href="http://www.dzsc.com/B/" target="_blank" title="B开头IC芯片">B</a> <a class="c666" href="http://www.dzsc.com/C/" target="_blank" title="C开头IC芯片">C</a> <a class="c666" href="http://www.dzsc.com/D/" target="_blank" title="D开头IC芯片">D</a> <a class="c666" href="http://www.dzsc.com/E/" target="_blank" title="E开头IC芯片">E</a> <a class="c666" href="http://www.dzsc.com/F/" target="_blank" title="F开头IC芯片">F</a> <a class="c666" href="http://www.dzsc.com/G/" target="_blank" title="G开头IC芯片">G</a> <a class="c666" href="http://www.dzsc.com/H/" target="_blank" title="H开头IC芯片">H</a> <a class="c666" href="http://www.dzsc.com/I/" target="_blank" title="I开头IC芯片">I</a> <a class="c666" href="http://www.dzsc.com/J/" target="_blank" title="J开头IC芯片">J</a> <a class="c666" href="http://www.dzsc.com/K/" target="_blank" title="K开头IC芯片">K</a> <a class="c666" href="http://www.dzsc.com/L/" target="_blank" title="L开头IC芯片">L</a> <a class="c666" href="http://www.dzsc.com/M/" target="_blank" title="M开头IC芯片">M</a> <a class="c666" href="http://www.dzsc.com/N/" target="_blank" title="N开头IC芯片">N</a> <a class="c666" href="http://www.dzsc.com/O/" target="_blank" title="O开头IC芯片">O</a> <a class="c666" href="http://www.dzsc.com/P/" target="_blank" title="P开头IC芯片">P</a> <a class="c666" href="http://www.dzsc.com/Q/" target="_blank" title="Q开头IC芯片">Q</a> <a class="c666" href="http://www.dzsc.com/R/" target="_blank" title="R开头IC芯片">R</a> <a class="c666" href="http://www.dzsc.com/S/" target="_blank" title="S开头IC芯片">S</a> <a class="c666" href="http://www.dzsc.com/T/" target="_blank" title="T开头IC芯片">T</a> <a class="c666" href="http://www.dzsc.com/U/" target="_blank" title="U开头IC芯片">U</a> <a class="c666" href="http://www.dzsc.com/V/" target="_blank" title="V开头IC芯片">V</a> <a class="c666" href="http://www.dzsc.com/W/" target="_blank" title="W开头IC芯片">W</a> <a class="c666" href="http://www.dzsc.com/X/" target="_blank" title="X开头IC芯片">X</a> <a class="c666" href="http://www.dzsc.com/Y/" target="_blank" title="Y开头IC芯片">Y</a> <a class="c666" href="http://www.dzsc.com/Z/" target="_blank" title="Z开头IC芯片">Z</a> <a class="c666" href="http://www.dzsc.com/0/" target="_blank" title="0开头IC芯片">0</a> <a class="c666" href="http://www.dzsc.com/1/" target="_blank" title="1开头IC芯片">1</a> <a class="c666" href="http://www.dzsc.com/2/" target="_blank" title="2开头IC芯片">2</a> <a class="c666" href="http://www.dzsc.com/3/" target="_blank" title="3开头IC芯片">3</a> <a class="c666" href="http://www.dzsc.com/4/" target="_blank" title="4开头IC芯片">4</a> <a class="c666" href="http://www.dzsc.com/5/" target="_blank" title="5开头IC芯片">5</a> <a class="c666" href="http://www.dzsc.com/6/" target="_blank" title="6开头IC芯片">6</a> <a class="c666" href="http://www.dzsc.com/7/" target="_blank" title="7开头IC芯片">7</a> <a class="c666" href="http://www.dzsc.com/8/" target="_blank" title="8开头IC芯片">8</a> <a class="c666" href="http://www.dzsc.com/9/" target="_blank" title="9开头IC芯片">9</a> 
+        </p>
+<p>
+            ©2020 维库电子市场网（www.dzsc.com）　经营许可证编号：<a href="http://beian.miit.gov.cn/" rel="nofollow" target="_blank">浙B2-20050339</a> <a href="http://www.dzsc.com/about/about5.asp" rel="nofollow" target="_blank">版权声明</a>
+</p>
+<p>十六年专注打造优质<a href="http://www.dzsc.com/" target="_blank">电子元器件采购网</a>、IC交易平台。</p>
+<p>
+            买家服务热线：0571-85317666 | 买家服务部QQ：
+      <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=1609526468&amp;site=www.dzsc.com&amp;menu=yes" rel="nofollow" target="_blank" title="QQ:1609526468">
+<img alt="QQ:1609526468" border="0" onerror="this.src='http://www.dzsc.com/img/images/common/qq.gif'" src="http://wpa.qq.com/pa?p=2:1609526468:4"/></a>
+<br/>
+            卖家服务热线：0571-85317586 | 卖家服务部QQ： <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=331652727&amp;site=www.dzsc.com&amp;menu=yes" rel="nofollow" target="_blank" title="QQ:331652727">
+<img alt="QQ:331652727" border="0" onerror="this.src='http://www.dzsc.com/img/images/common/qq.gif'" src="http://wpa.qq.com/pa?p=2:331652727:4"/></a>
+</p>
+</div>
+</div>
+<script src="http://www.dzsc.com/js/4vcount.js"></script><script language="javascript" src="http://counter.dzsc.com/stat.aspx?sitecode=070b9a8e53932e24"></script>
+<script type="text/javascript">
+        dgkdianzitong();
+        dgkhome();
+        $(function () {
+            var hei = $(".catalog-box ul").height() + 35;
+            $(".catalog-box span").css("line-height", hei + 'px');
+        })
+    </script>
+</body></html>

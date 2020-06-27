@@ -1,0 +1,584 @@
+<html><head>
+<meta content="text/html;charset=utf-8" http-equiv="content-type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Bom配单_IC现货bom配单_上传电子元器件bom表配单平台_维库电子市场网</title>
+<meta content="bom配单,bom表配单,bom单,bom智能配单,IC现货bom配单,IC锁货bom配单,电子bom配单,元器件bom配单,bom配单平台" name="keywords"/>
+<meta content="Bom配单就来维库电子市场网，上千家现货认证商家，海量现货库存，一键上传电子元器件bom配单，一站式智能IC现货bom配单，优先保证现货、低价，bom表配单服务，让您的采购更高效。" name="description"/>
+<link href="http://img3.dzsc.com/css/web/common/base.css?v=20200306.css" rel="stylesheet" type="text/css"/>
+<link href="http://img3.dzsc.com/css/web/common/top.css?v=20200306.css" rel="stylesheet" type="text/css"/>
+<link href="http://img3.dzsc.com/css/web/ic/dropzone.css" rel="stylesheet" type="text/css"/>
+<link href="http://img3.dzsc.com/css/web/ic/icsuohuo.css?v=20200306.css" rel="stylesheet" type="text/css"/>
+<script src="//push.zhanzhang.baidu.com/push.js"></script><script src="https://hm.baidu.com/hm.js?4b49b84f5d3fbea3caf3b7cfde1e1b0d"></script><script src="http://img3.dzsc.com/js/jquery/jquery-1.10.2.min.js" type="text/javascript"></script>
+<script src="http://img3.dzsc.com/js/common/adlist.js?r=20200306.js" type="text/javascript"></script>
+<script charset="utf-8" src="http://img3.dzsc.com/js/web/ic/icseoafterv3.js?v=47877" type="text/javascript"></script>
+<style>
+        #filedropzone {
+            width: 900px;
+            height: 220px;
+            margin-left: 200px;
+            margin-top: 100px;
+            border: 3px dashed green;
+            border-radius: 2%;
+            box-shadow: 3px 3px 5px #888888;
+        }
+    </style>
+</head>
+<body>
+<div class="top-nav">
+<div class="w1190 clearfix">
+<ul class="fl">
+<li class="top-navmenu top-iphone">
+<div class="top-navmenutitle"><i class="ico-iphone"></i>手机端<i class="ico-iphone-jt"></i></div>
+<div class="top-iphone-ewm clearfix">
+<dl>
+<dt><img src="http://img3.dzsc.com/img/web/common/iphoneewm.jpg" width="100"/></dt>
+<dd>手机版</dd>
+</dl>
+<dl>
+<dt><img src="http://img3.dzsc.com/img/web/common/dzscapp.png" width="100"/></dt>
+<dd>Android APP</dd>
+</dl>
+<dl>
+<dt><img src="http://img3.dzsc.com/img/web/common/gzh.jpg" width="100"/></dt>
+<dd>微信公众号</dd>
+</dl>
+</div>
+</li>
+<li class="top-line">|</li>
+<li class="login">
+<div class="login-out clearfix">
+<div class="fl" id="topuserinfo">
+<p class="fl">你好，欢迎来到维库电子市场网</p>
+<a class="blue fl" href="/member/login.aspx?returnurl=http%3a%2f%2fwww.dzsc.com%2fspotlock%2fbomindex.aspx" rel="nofollow" target="_self">登录</a>
+<span class="fl">|</span>
+<a class="blue fl" href="http://www.dzsc.com/member/reg.aspx" rel="nofollow" target="_self">免费注册</a>
+</div>
+</div>
+</li>
+</ul>
+<ul class="fr">
+<li class="top-navmenu">
+<a class="gray" href="/cart/" rel="nofollow" target="_self"><i class="ico-gwc"></i>购物车</a>
+</li>
+<li class="top-line">|</li>
+<li class="top-navmenu">
+<a class="gray" href="http://www.dzsc.com/" target="_self">网站首页</a>
+</li>
+<li class="top-line">|</li>
+<li class="top-navmenu">
+<div class="top-navmenutitle"><a class="gray" href="javascript:;" rel="nofollow">采购商服务<i class="ico-topxjt"></i></a></div>
+<div class="top-navmenulist">
+<div><a href="/ic/buystockadd.aspx" rel="nofollow" target="_blank">发布采购信息</a></div>
+<div><a href="/ic/buystocklist.aspx" rel="nofollow" target="_blank">修改/删除采购</a></div>
+</div>
+</li>
+<li class="top-line">|</li>
+<li class="top-navmenu">
+<div class="top-navmenutitle"><a class="gray" href="javascript:;" rel="nofollow">会员服务<i class="ico-topxjt"></i></a></div>
+<div class="top-navmenulist">
+<div><a href="http://xianhuo.dzsc.com/service/agent.aspx" rel="nofollow" target="_blank">现货认证</a></div>
+<div><a href="/topic/serv_member/" rel="nofollow" target="_blank">基础会员服务</a></div>
+<div><a href="/topic/serv_bigcustom/" rel="nofollow" target="_blank">百维通</a></div>
+<div><a href="http://www.dzsc.com/topic/marketing_softwen/" rel="nofollow" target="_blank">软文营销</a></div>
+</div>
+</li>
+<li class="top-line">|</li>
+<li class="top-navmenu">
+<div class="top-navmenutitle"><a class="gray" href="javascript:;" rel="nofollow">工程师服务<i class="ico-topxjt"></i></a></div>
+<div class="top-navmenulist">
+<div><a href="http://pdf.dzsc.com/" target="_blank">PDF下载</a></div>
+<div><a href="http://www.dzsc.com/data/" target="_blank">技术资料</a></div>
+<div><a href="http://product.dzsc.com/news/" target="_blank">电子资讯</a></div>
+<div><a href="http://www.dzsc.com/data/circuitmore.html" target="_blank">电路图</a></div>
+</div>
+</li>
+<li class="top-line">|</li>
+<li class="top-navmenu">
+<div class="top-navmenutitle"><a class="gray" href="javascript:;" rel="nofollow">网站导航<i class="ico-topxjt"></i></a></div>
+<div class="top-navmenulist" style="min-width:77px;">
+<div><a href="http://www.dzsc.com/" target="_blank">网站首页</a></div>
+<div><a href="http://product.dzsc.com/" target="_blank">电子元器件</a></div>
+<div><a href="http://www.dzsc.com/ic/" target="_blank">IC</a></div>
+<div><a href="http://www.dzsc.com/data/" target="_blank">技术资料</a></div>
+<div><a href="http://product.dzsc.com/news/" target="_blank">电子资讯</a></div>
+<div><a href="http://pdf.dzsc.com/" target="_blank">Datasheet</a></div>
+<div><a href="http://www.dzsc.com/data/Circuitmore.asp" target="_blank">电路图</a></div>
+<div><a href="http://wiki.dzsc.com/" target="_blank">电子通</a></div>
+<div><a href="http://www.dzsc.com/topic/" rel="nofollow" target="_blank">维库活动</a></div>
+<div><a href="http://www.dzsc.com/ic/caution.asp" rel="nofollow" target="_blank">行业黑名单</a></div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<script type="text/javascript">
+   
+        $.ajax({
+            url: "/member/login.aspx",
+            data: { act: "checklogin", r: Math.random() },
+            dataType: "json",
+            success: function (result) {
+                if (result.islogin == 1) {
+                    $("#topuserinfo").html('<p class="fl">你好，'+result.username + ',</p><a href="/member/" rel="nofollow" class="blue fl">我的会员助手</a><span class="fl">|</span><a href="/member/exit.asp" class="blue fl" rel="nofollow">退出</a>');
+                    var loginbox = $(".login-box");
+                    if (loginbox) {
+                        $(".login-tx").find("img").attr("src", result.cmppic);
+                        $(".login-w").hide();
+                        loginbox.append("<div class=\"login-y\"><a href=\"http://www.dzsc.com/member/\" target=\"_blank\">进入会员中心</a></div>");
+                    }
+                }
+               
+            }
+        });
+ 
+</script>
+<div class="w1200">
+<div class="logo_box clearfix">
+<a class="logo" href="/spotlock/">
+<img src="http://img3.dzsc.com/img/web/ic/icsuohuo/icsuohuo_logo.png"/></a>
+<div class="Search">
+<form action="http://www.dzsc.com/ic/locksearch.html" id="form1" method="get" onsubmit="return SearchSpotStk(this)">
+<input autocomplete="off" class="ss_text" id="keyword" name="keyword" onblur="javascript:blur_key(this);" onfocus="javascript:focus_key(this);" onkeyup="javascript:autolist(this);" type="text" value="请输入元器件的型号"/>
+<input class="enter" type="submit" value="搜索"/>
+<div class="search-result">
+</div>
+</form>
+</div>
+<div class="shopping-cart">
+<a href="/cart/" rel="nofollow" target="_blank">
+<i class="ico-car"></i>
+<span>购物车</span>
+<em id="cartcount">0</em>
+</a>
+</div>
+</div>
+<div class="fixed-search">
+<div class="w1200 clearfix">
+<a class="logo" href="/spotlock/">
+<img src="http://img3.dzsc.com/img/web/ic/icsuohuo/icsuohuo_logo02.png"/></a>
+<div class="Search">
+<form action="http://www.dzsc.com/ic/locksearch.html" id="fixedform1" method="get" onsubmit="return SearchSpotStk(this)">
+<input autocomplete="off" class="ss_text" name="keyword" onblur="javascript:blur_key(this);" onfocus="javascript:focus_key(this);" onkeyup="javascript:autolist(this);" type="text" value="请输入元器件的型号"/>
+<input class="enter" type="submit" value="搜索"/>
+<div class="search-result"></div>
+</form>
+</div>
+<div class="shopping-cart">
+<a href="/cart/" rel="nofollow" target="_blank">
+<i class="ico-car"></i>
+<span>购物车</span>
+<em id="fixedcartcount">0</em>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!--头部js-->
+<script src="http://img3.dzsc.com/js/common/jquery.fly.min.js"></script>
+<!--[if lte IE 9]>
+<script src="http://img3.dzsc.com/js/common/requestAnimationFrame.js"></script>
+<![endif]-->
+<script type="text/javascript"> 
+    
+    $.ajax({
+        url: "/ajax/cartoperating.aspx",
+        data: { act: "getCartCount", r: Math.random() },
+        dataType: "html",
+        success: function (result) {
+            if (result > 0) {
+                $("#cartcount").html(result);
+                $("#fixedcartcount").html(result);
+            }
+        }
+    });
+    if(typeof(jQuery)=="undefined") document.write("<sc" + "ript lang" + "uage=\"java" + "script\" src=\"http://img3.dzsc.com/js/jquery/jquery-1.4.2.min.js\"></scr" + "ipt>");
+    var isBox = false;
+    var stype = 0;
+    stype = 0;
+
+    function SearchSpotStk(obj){ 
+        var spotkeyword=$.trim($(obj).find("input[name='keyword']").val());
+        if (!/^[0-9a-zA-Z#][0-9a-zA-Z-_\+\/\.\\ \(\)#\=%\,:]{2,49}$/.test(spotkeyword)) 
+        {
+            alert("请正确填写搜索锁货型号！");
+            $("input[name='keyword']").focus();
+            return false;
+        }
+        return true;
+    }
+    function hidesearch()
+    {
+        $(".search-result").hide(); 
+    }
+    function focus_key(obj)
+    {
+        console.log($(obj).val());
+        if($(obj).val()=='请输入元器件的型号')
+            $(obj).val("");
+        $(obj).addClass("Black"); 
+        isBox=true;
+        autolist(obj);    
+    }
+
+    function blur_key(obj)
+    {
+        if($(obj).val()=='')
+            $(obj).val("请输入元器件的型号");
+        $(obj).removeClass("Black");     
+        if (isBox == true) return;
+        hidesearch();
+    }
+    $(".search-result,#keyword").mousemove(function () { // 鼠标进入input-box区域内打开焦点开关
+        isBox = true;    
+    });
+    $(".search-result,#keyword").mouseout(function () { // 鼠标离开input-box区域内关闭焦点开关
+        isBox = false;        
+    });
+    
+    function autolist(obj) {
+        var keyword=$.trim($(obj).val());
+        $("#form1").find("input[name=keyword]").val(keyword);
+        $("#fixedform1").find("input[name=keyword]").val(keyword);
+        if (keyword != '' && /^[0-9a-zA-Z#][0-9a-zA-Z-_\+\/\.\\ \(\)#\=%\,:]{0,49}$/.test(keyword)) {
+            $.ajax({
+                url: '/ajax/iclock.aspx?act=geticlock&keyword=' + escape(keyword.replace('%', '')) + "&t=" + Math.random(),
+                dataType: 'text',
+                success: function (data) {
+                    if (data != "none") {
+                        $(".search-result").html('');
+                        $(".search-result").html(data);
+                        $(".search-result").show();
+                    }
+                }
+            });
+        }
+    }
+    $(window).scroll(function () {
+        var stop = $(document).scrollTop();
+        var headertop = $(".logo_box").offset().top + 100;
+        if (stop > headertop) {
+            $(".fixed-search").show();
+        } else {
+            $(".fixed-search").hide();
+        }
+    })
+
+</script>
+<script src="http://img3.dzsc.com/js/web/common/top.js" type="text/javascript"></script>
+<div class="navigation">
+<div class="w1200 clearfix">
+<div class="allclass fl">
+<div class="allclass-title"><i class="i-ico i-fenlei"></i>全部商品分类<a href="http://www.dzsc.com/spotlock/list.html">全部</a></div>
+<div class="allclass-sub">
+<div>
+<i class="allclass-ico01"></i>
+<dl>
+<dt><a href="http://www.dzsc.com/spotlock/list1.html" target="_blank">集成电路</a></dt>
+<dd><a href="http://www.dzsc.com/spotlock/list9.html" target="_blank">射频IC</a></dd>
+<dd><a href="http://www.dzsc.com/spotlock/list10.html" target="_blank">电脑IC</a></dd>
+<dd><a href="http://www.dzsc.com/spotlock/list11.html" target="_blank">通信IC</a></dd>
+<dd><a href="http://www.dzsc.com/spotlock/list12.html" target="_blank">门铃IC</a></dd>
+</dl>
+</div>
+<div>
+<i class="allclass-ico02"></i>
+<dl>
+<dt><a href="http://www.dzsc.com/spotlock/list2.html" target="_blank">二极管</a></dt>
+<dd><a href="http://www.dzsc.com/spotlock/list31.html" target="_blank">贴片二极管</a></dd>
+<dd><a href="http://www.dzsc.com/spotlock/list32.html" target="_blank">肖特基二极管</a></dd>
+<dd><a href="http://www.dzsc.com/spotlock/list33.html" target="_blank">功率二极管</a></dd>
+<dd><a href="http://www.dzsc.com/spotlock/list34.html" target="_blank">稳压二极管</a></dd>
+</dl>
+</div>
+<div>
+<i class="allclass-ico03"></i>
+<dl>
+<dt><a href="http://www.dzsc.com/spotlock/list4.html" target="_blank">晶体管</a></dt>
+<dd><a href="http://www.dzsc.com/spotlock/list94.html" target="_blank">射频晶体管</a></dd>
+<dd><a href="http://www.dzsc.com/spotlock/list95.html" target="_blank">双极结型晶体管</a></dd>
+<dd><a href="http://www.dzsc.com/spotlock/list96.html" target="_blank">IGBT</a></dd>
+<dd><a href="http://www.dzsc.com/spotlock/list97.html" target="_blank">单结晶体管</a></dd>
+</dl>
+</div>
+<div>
+<i class="allclass-ico04"></i>
+<dl>
+<dt><a href="http://www.dzsc.com/spotlock/list6.html" target="_blank">放大器</a></dt>
+<dd><a href="http://www.dzsc.com/spotlock/list104.html" target="_blank">模拟比较器</a></dd>
+<dd><a href="http://www.dzsc.com/spotlock/list105.html" target="_blank">音频放大器</a></dd>
+<dd><a href="http://www.dzsc.com/spotlock/list106.html" target="_blank">运算放大器</a></dd>
+<dd><a href="http://www.dzsc.com/spotlock/list107.html" target="_blank">其他放大器</a></dd>
+</dl>
+</div>
+<div>
+<i class="allclass-ico05"></i>
+<dl>
+<dt><a href="http://www.dzsc.com/spotlock/list5.html" target="_blank">整流器</a></dt>
+<dd><a href="http://www.dzsc.com/spotlock/list99.html" target="_blank">可控硅</a></dd>
+<dd><a href="http://www.dzsc.com/spotlock/list100.html" target="_blank">双向可控硅</a></dd>
+<dd><a href="http://www.dzsc.com/spotlock/list101.html" target="_blank">可控硅模块</a></dd>
+<dd><a href="http://www.dzsc.com/spotlock/list102.html" target="_blank">三端双向可控硅</a></dd>
+</dl>
+</div>
+<div>
+<i class="allclass-ico06"></i>
+<dl>
+<dt><a href="http://www.dzsc.com/spotlock/list3.html" target="_blank">三极管</a></dt>
+<dd><a href="http://www.dzsc.com/spotlock/list72.html" target="_blank">贴片三极管</a></dd>
+<dd><a href="http://www.dzsc.com/spotlock/list73.html" target="_blank">功率三极管</a></dd>
+<dd><a href="http://www.dzsc.com/spotlock/list74.html" target="_blank">开关三极管</a></dd>
+<dd><a href="http://www.dzsc.com/spotlock/list75.html" target="_blank">三端稳压管(器)</a></dd>
+</dl>
+</div>
+</div>
+</div>
+<ul class="nav fl">
+<li><a href="http://www.dzsc.com/" target="_blank">首页</a></li>
+<li><a href="http://xianhuo.dzsc.com/" target="_blank">IC原装/现货频道</a></li>
+<li><a href="http://product.dzsc.com/" target="_blank">电子元器件</a></li>
+<li><a href="http://www.dzsc.com/data/" target="_blank">技术资料</a></li>
+<li><a href="http://product.dzsc.com/news/" target="_blank">电子资讯</a></li>
+<li><a href="http://www.dzsc.com/data/iccompany/" target="_blank">原厂查询</a></li>
+</ul>
+</div>
+</div>
+<script type="text/javascript">
+    $(function () {
+        $(".allclass").hover(function () {
+            if ($(this).hasClass("on")) {
+                $(this).unbind("hover");
+            } else {
+                $(this).find(".allclass-sub").stop().slideToggle();
+            }
+        })
+        $(".body").each(function () {
+            var ht = $(this).height();
+            if (ht > 40) {
+                $(this).next().show();
+            } else {
+                $(this).next().hide();
+            }
+        })
+        $(".foot a").click(function () {
+            if ($(this).parents(".row").hasClass("row-mode")) {
+                $(this).parents(".row").removeClass("row-mode");
+                $(this).html('更多<i class="i-ico"></i>');
+                $(this).parents(".row").find(".body").css({ "overflow-y": "visible" });
+            } else {
+                $(this).parents(".row").addClass("row-mode");
+                $(this).html('收起<i class="i-ico"></i>');
+                $(this).parents(".row").find(".body").css({ "overflow-y": "auto" });
+            }
+        })
+    })
+</script>
+<div class="bom-main">
+<div class="w1200 rel">
+<div class="text">
+<h1>智能BOM配单，让采购更高效</h1>
+<p><i></i>海量现货库存，一站式配单</p>
+<p><i></i>智能推荐，优先保证原装锁货、现货与低价，省时省力</p>
+</div>
+<div class="upload" id="uploaddiv" style="display: none;">
+<form action="/" id="bomform" method="post">
+<div class="upload-box-bg"></div>
+<div class="upload-box">
+<div>
+<label class="filelabel" for="FileData">上传BOM文件</label>
+<input accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel" id="FileData" name="FileData" onchange="upbomcheck();" type="file"/>
+<input name="key" type="hidden" value="0"/>
+<input name="checkcode" type="hidden" value="fde7171b19a42731"/>
+<input name="uptype" type="hidden" value="4"/>
+<input name="style" type="hidden" value="1"/>
+<a href="http://img3.dzsc.com/img/common/维库电子市场bom配单模版.xls" target="_blank">下载模板</a>
+</div>
+<p>点击按钮上传文件</p>
+</div>
+</form>
+</div>
+<div class="dropdiv" id="dropdiv" style="display: none;">
+<form action="/" id="bomform" method="post">
+<div class="upload dropzone dz-clickable" id="dropz">
+</div>
+<a class="dropdown" href="http://img3.dzsc.com/img/common/维库电子市场bom配单模版.xls" target="_blank">下载模板</a>
+<input name="key" type="hidden" value="0"/>
+<input name="checkcode" type="hidden" value="fde7171b19a42731"/>
+<input name="uptype" type="hidden" value="4"/>
+<input name="style" type="hidden" value="1"/>
+</form>
+</div>
+<div class="yaoqiu">
+<p style="width: 100%;">要求：</p>
+<p>- 文件必须是xls、xlsx、csv格式</p>
+<p>- 文件大小必须小于4MB</p>
+<p>- 每次匹配型号最多1000条</p>
+<p>- 为了获得更好的BOM搜索体验，您可以参考模板修改</p>
+</div>
+</div>
+</div>
+<div class="youshi">
+<div class="w1200 clearfix">
+<dl>
+<dt>
+<img src="http://img3.dzsc.com/img/web/ic/icsuohuo/bz04.png"/></dt>
+<dd>正品保障    放心选购</dd>
+</dl>
+<dl>
+<dt>
+<img src="http://img3.dzsc.com/img/web/ic/icsuohuo/bz05.png"/></dt>
+<dd>质量第一    品质保证</dd>
+</dl>
+<dl>
+<dt>
+<img src="http://img3.dzsc.com/img/web/ic/icsuohuo/bz06.png"/></dt>
+<dd>品类齐全    一站购齐</dd>
+</dl>
+<dl>
+<dt>
+<img src="http://img3.dzsc.com/img/web/ic/icsuohuo/bz07.png"/></dt>
+<dd>急速物流    如约送货</dd>
+</dl>
+</div>
+</div>
+<div class="icsuohuo-footer">
+<div class="fuwu w1200">
+<div class="fl">
+<ul class="clearfix">
+<li>
+<b class="f14">新手指南</b>
+<p>
+<a href="/member/reg.asp" rel="nofollow" target="_blank">新用户注册</a><a href="/member/login.asp" rel="nofollow" target="_blank">账号密码</a><a href="/service/faq_list.aspx?classid=30" rel="nofollow" target="_blank">买家入门</a><a href="/service/faq_list.aspx?classid=23" rel="nofollow" target="_blank">卖家入门</a>
+</p>
+</li>
+<li>
+<b class="f14">会员服务</b>
+<p>
+<a href="http://xianhuo.dzsc.com/" rel="nofollow" target="_blank">现货认证</a><a href="/topic/serv_member/" rel="nofollow" target="_blank">基础会员服务</a><a href="/topic/serv_bigcustom/" rel="nofollow" target="_blank">百维通（百度优化）</a><a href="http://www.dzsc.com/topic/marketing_softwen/" rel="nofollow" target="_blank">软文营销</a>
+</p>
+</li>
+<li>
+<b class="f14">工程师服务</b>
+<p>
+<a href="http://pdf.dzsc.com/" target="_blank">PDF下载</a><a href="/data/" target="_blank">技术资料</a><a href="http://product.dzsc.com/news/" target="_blank">电子资讯</a><a href="/data/Circuitmore.html" target="_blank">电路图</a>
+</p>
+</li>
+<li>
+<b class="f14">交易安全</b>
+<p>
+<a href="http://www.dzsc.com/ic/entrustdeal.html" target="_blank">三方委托交易</a>
+<a href="/service/faq_contact.aspx" rel="nofollow" target="_blank">投诉举报</a>
+<a href="http://www.dzsc.com/ic/caution.asp" rel="nofollow" target="_blank">行业黑名单</a>
+</p>
+</li>
+</ul>
+</div>
+<div class="fr">
+<dl>
+<dd>
+<img src="http://img3.dzsc.com/img/web/ic/icsuohuo/ewm.jpg"/></dd>
+<dd>微信公众号</dd>
+</dl>
+<dl>
+<dd>
+<img src="http://img3.dzsc.com/img/web/common/mdzsc.jpg"/></dd>
+<dd>移动端网站</dd>
+</dl>
+</div>
+</div>
+<div class="suoyin w1200">
+<p>
+<b>产品索引：</b> <a class="c666" href="http://www.dzsc.com/a/" target="_blank">A</a> <a class="c666" href="http://www.dzsc.com/b/" target="_blank">B</a> <a class="c666" href="http://www.dzsc.com/c/" target="_blank">C</a> <a class="c666" href="http://www.dzsc.com/d/" target="_blank">D</a> <a class="c666" href="http://www.dzsc.com/e/" target="_blank">E</a> <a class="c666" href="http://www.dzsc.com/f/" target="_blank">F</a> <a class="c666" href="http://www.dzsc.com/g/" target="_blank">G</a> <a class="c666" href="http://www.dzsc.com/h/" target="_blank">H</a> <a class="c666" href="http://www.dzsc.com/i/" target="_blank">I</a> <a class="c666" href="http://www.dzsc.com/j/" target="_blank">J</a> <a class="c666" href="http://www.dzsc.com/k/" target="_blank">K</a> <a class="c666" href="http://www.dzsc.com/l/" target="_blank">L</a> <a class="c666" href="http://www.dzsc.com/m/" target="_blank">M</a> <a class="c666" href="http://www.dzsc.com/n/" target="_blank">N</a> <a class="c666" href="http://www.dzsc.com/o/" target="_blank">O</a> <a class="c666" href="http://www.dzsc.com/p/" target="_blank">P</a> <a class="c666" href="http://www.dzsc.com/q/" target="_blank">Q</a> <a class="c666" href="http://www.dzsc.com/r/" target="_blank">R</a> <a class="c666" href="http://www.dzsc.com/s/" target="_blank">S</a> <a class="c666" href="http://www.dzsc.com/t/" target="_blank">T</a> <a class="c666" href="http://www.dzsc.com/u/" target="_blank">U</a> <a class="c666" href="http://www.dzsc.com/v/" target="_blank">V</a> <a class="c666" href="http://www.dzsc.com/w/" target="_blank">W</a> <a class="c666" href="http://www.dzsc.com/x/" target="_blank">X</a> <a class="c666" href="http://www.dzsc.com/y/" target="_blank">Y</a> <a class="c666" href="http://www.dzsc.com/z/" target="_blank">Z</a> <a class="c666" href="http://www.dzsc.com/0/" target="_blank">0</a> <a class="c666" href="http://www.dzsc.com/1/" target="_blank">1</a> <a class="c666" href="http://www.dzsc.com/2/" target="_blank">2</a> <a class="c666" href="http://www.dzsc.com/3/" target="_blank">3</a> <a class="c666" href="http://www.dzsc.com/4/" target="_blank">4</a> <a class="c666" href="http://www.dzsc.com/5/" target="_blank">5</a> <a class="c666" href="http://www.dzsc.com/6/" target="_blank">6</a> <a class="c666" href="http://www.dzsc.com/7/" target="_blank">7</a> <a class="c666" href="http://www.dzsc.com/8/" target="_blank">8</a> <a class="c666" href="http://www.dzsc.com/9/" target="_blank">9</a>
+</p>
+</div>
+<div class="footer-info w1200">
+<p>©2019 维库电子市场网 版权所有：杭州威士顿网络科技有限公司 经营许可证编号：浙B2-20050339 版权声明</p>
+<p>买家服务热线：0571-85317607  | 买家服务部QQ：<a href="tencent://message/?uin=1609526468&amp;Site=www.dzsc.com&amp;Menu=yes" rel="nofollow" title="QQ:1609526468"><img alt="QQ:1609526468" border="0" onerror="this.src='http://img1.dzsc.com/img/common/qq.png'" src="http://wpa.qq.com/pa?p=2:1609526468:4"/></a></p>
+<p>卖家服务热线：0571-85317607  | 卖家服务部QQ：<a href="tencent://message/?uin=331652727&amp;Site=www.dzsc.com&amp;Menu=yes" rel="nofollow" title="QQ:331652727"><img alt="QQ:331652727" border="0" onerror="this.src='http://img1.dzsc.com/img/common/qq.png'" src="http://wpa.qq.com/pa?p=2:331652727:4"/></a></p>
+</div>
+</div>
+<div class="flayertitle"></div>
+<link href="http://img3.dzsc.com/css/web/feedback/feedback.css" rel="stylesheet" type="text/css"/>
+<div class="toolbar">
+<div class="toolbar-default clearfix">
+<a class="default-a" href="javascript:;"><i class="default-ico toolbar-ico01"></i></a>
+<div class="hover-box">
+<div class="hover-service">
+<p class="hover-title">在线人工客服</p>
+<div class="qq">
+<div class="clearfix">
+<span class="fl">买家服务：</span>
+<a class="fl" href="mqqwpa://im/chat?chat_type=wpa&amp;uin=1609526468&amp;version=1&amp;src_type=web&amp;web_src=oicqzone.com">
+<img class="fl" src="http://img3.dzsc.com/img/common/qq.png"/></a>
+</div>
+<div class="clearfix">
+<span class="fl">卖家服务：</span>
+<a class="fl" href="mqqwpa://im/chat?chat_type=wpa&amp;uin=331652727&amp;version=1&amp;src_type=web&amp;web_src=oicqzone.com">
+<img class="fl" src="http://img3.dzsc.com/img/common/qq.png"/></a>
+</div>
+</div>
+<p class="hover-tel"><i class="toolbar-ico05"></i><strong>0571-85317607</strong></p>
+<p class="hover-date">
+                    客服在线时间周一至周五<br/>
+                    9:00-17:30
+                </p>
+</div>
+</div>
+</div>
+<div class="toolbar-default clearfix">
+<a class="default-a" href="javascript:;"><i class="default-ico toolbar-ico02"></i></a>
+<div class="hover-box">
+<div class="hover-weixin">
+<p class="hover-title">
+                    关注官方微信号，<br/>
+                    第一时间获取资讯。
+                </p>
+<div class="hover-ewm">
+<img src="http://img3.dzsc.com/img/web/common/gzh.jpg"/>
+</div>
+</div>
+</div>
+</div>
+<div class="toolbar-default clearfix">
+<a class="default-a default-width fankui-btn" href="javascript:;" onclick="$('.fankui-popup').show();"><span class="fl">建议反馈</span><i class="default-ico toolbar-ico03"></i></a>
+</div>
+<div class="toolbar-default clearfix">
+<a class="default-a default-width" href="javascript:;" onclick="$('html,body').animate({scrollTop: '0px'}, 500);"><span class="fl">返回顶部</span><i class="default-ico toolbar-ico04"></i></a>
+</div>
+</div>
+<div class="fankui-popup">
+<div class="fankui-bg"></div>
+<div class="fankui-box">
+<h2>建议反馈 <a href="javascript:;" onclick="$(this).parents('.fankui-popup').hide();">
+<img class="fl" src="http://img3.dzsc.com/img/common/ts_ico06.png"/></a></h2>
+<div class="fankui-text">
+            非常感谢您使用维库电子市场网，欢迎向阿库提出宝贵的意见。您的参与是维库提升服务的动力！意见一经采纳，就有感恩红包奉上哦！ 
+        </div>
+<div class="fankui-item">
+<p>联系人：</p>
+<input id="feedconname" name="feedconname" placeholder="请填写联系人" type="text"/>
+</div>
+<div class="fankui-item">
+<p>联系方式：</p>
+<input id="feedcontel" name="feedcontel" placeholder="手机号码或QQ号码" type="text"/>
+</div>
+<div class="fankui-item">
+<p>建议或问题：</p>
+<textarea id="feednote" name="feednote" placeholder="请输入建议或问题，不超200个字符"></textarea>
+</div>
+<div class="fankui-btns">
+<div class="outer mb14" id="outerfeed">
+<input class="CaptchaID" type="hidden" value="0"/>
+<div class="filter-box"></div>
+<span class="txtRoll">按住滑块，拖拽到最右边</span>
+<div class="inner">&gt;&gt;</div>
+</div>
+<input id="feedbackcode" name="feedbackcode" type="hidden" value="A6O0"/>
+<input id="feedbackuserid" name="feedbackuserid" type="hidden" value="0"/>
+<input id="feedbackcheckcode" name="feedbackcheckcode" type="hidden" value=""/>
+<input class="fankui-submit" name="" onclick="saveFeedBack();" type="button" value="提交"/>
+</div>
+</div>
+</div>
+<script src="http://img3.dzsc.com/js/web/feedback/feedback.js" type="text/javascript"></script>
+<script src="http://www.dzsc.com/js/4vcount.js" type="text/javascript"></script><script language="javascript" src="http://counter.dzsc.com/stat.aspx?sitecode=070b9a8e53932e24"></script></body></html>

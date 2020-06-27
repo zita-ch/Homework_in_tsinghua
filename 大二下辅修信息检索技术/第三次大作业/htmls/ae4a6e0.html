@@ -1,0 +1,143 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta content="pc" name="applicable-device"/>
+<meta content="0" http-equiv="Expires"/>
+<meta content="no-cache" http-equiv="Pragma"/>
+<meta content="no-cache" http-equiv="Cache-control"/>
+<meta content="no-cache" http-equiv="Cache"/>
+<script src="/ajax/common.ashx" type="text/javascript"></script>
+<script src="/ajax/Industry.Vivian,Industry.ashx" type="text/javascript"></script>
+<script type="text/javascript">
+var CheckJustPC=Vivian.CheckJustPC().value;
+if(CheckJustPC=="false"){if(navigator.userAgent.match(/(iPhone|iPod|Android|ios)/i)&&window.location.host.indexOf('www')>=0){
+    window.location = window.location.href.replace("www", "m").replace("https", "http");
+}
+ }
+</script>
+<script type="text/javascript">
+if (document.location.host.indexOf("gkzhan.com")==-1 && document.location.host.indexOf("192.168.")==-1 && document.location.host.indexOf("10.115.")==-1) {
+location.href = location.href.replace(document.location.host, 'www.gkzhan.com');
+}
+</script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>留言反馈</title>
+<script src="/js/Base.js?v=20160419113753" type="text/javascript"></script>
+<script src="/js/jquery-1.9.1.min.js?v=20160419113755" type="text/javascript"></script>
+<script src="/js/jquery.boxy.js?v=20160419113753" type="text/javascript"></script>
+<script src="/js/jquery.form.js?v=20160419113755" type="text/javascript"></script>
+<script src="/ajax/common.ashx" type="text/javascript"></script>
+<script src="/ajax/Industry.Vivian,Industry.ashx" type="text/javascript"></script>
+<script src="js/guest_select.js?v=20160419113755" type="text/javascript"></script>
+<link href="css/boxy.css" rel="stylesheet" type="text/css"/>
+<link href="css/guest.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
+    ImgServerUrl = 'http://imgsvr8.chem17.com';
+</script>
+<script>
+    function reurl(url){
+        location.href=url;
+    }
+    </script>
+</head>
+<body>
+<div id="head">
+<div class="header">
+<p>欢迎来智能制造网，请<a class="login" href="https://www.gkzhan.com/usermanage/login.aspx">登录</a><a href="https://www.gkzhan.com/UserManage/login.aspx?RegIndex">注册</a></p>
+<b><a href="https://www.gkzhan.com/m-instro/">手机版</a></b> <span><a href="https://www.gkzhan.com/">首页</a>-<a href="https://www.gkzhan.com/news/">资讯</a>-<a href="https://www.gkzhan.com/technology/">技术</a>-<a href="https://supply.gkzhan.com//">商机</a>-<a href="https://www.gkzhan.com/shop/">商城</a>-<a href="https://www.gkzhan.com/company/">企业</a>-<a href="https://www.gkzhan.com/exhibition/">展会</a>-<a href="https://www.gkzhan.com/magazine/t0/list.html">期刊</a>-<a href="https://www.gkzhan.com/brands/">品牌</a>-<a href="https://www.gkzhan.com/interview/">访谈</a>-<a href="https://www.gkzhan.com/picture/">图片</a>-<a href="https://www.gkzhan.com/topics/">专题</a>-<a href="https://www.gkzhan.com/video/">视频</a>-<a href="https://www.gkzhan.com/job/">人才</a>-<a href="https://www.gkzhan.com/Sample/">样本</a></span> </div>
+</div>
+<div id="top">
+<div class="top"><a href="#"><img src="/images/index/logo2016.png"/></a>
+<h3>留言反馈</h3>
+<form action="/Help/t0/helplist_p1.html" id="searchForm2" method="post" target="_blank">
+<input onblur="this.value=this.value==''?'请输入您想搜索的问题':this.value" onfocus="this.value=this.value=='请输入您想搜索的问题'?'':this.value" type="text" value="请输入您想搜索的问题"/>
+</form>
+<button onclick="document.getElementById('searchForm2').submit();"></button>
+<a class="question" href="tencent://message/?uin=386392707&amp;Site=%E4%BA%9A%E6%B4%B2%E5%BB%BA%E6%9D%90%E7%BD%91&amp;Menu=yes"></a></div>
+</div>
+<div class="guestbanner"><img src="images/Public/guestbanner.jpg"/></div>
+<div class="main">
+<div class="maintop">请把您的问题/意见告诉我们</div>
+<dl>
+<dt><em>*</em>反馈主题</dt>
+<dd>
+<input class="text" id="complaintTheme" name="complaintTheme" onblur="CheckText('complaintTheme');checkLength('complaintTheme', 56);" type="text"/><div class="wrong" id="complaintThemeWrong" style="display:none;">请填写反馈主题</div><div class="right" id="complaintThemeRight" style="display:none;"></div>
+</dd>
+</dl>
+<dl>
+<dt><em>*</em>分类</dt>
+<dd style="z-index:9999;">
+<div class="selectlist"><input id="classId" onclick="hide('productlists')" type="text" value="请选择一个分类"/></div><div class="wrong" id="classIdWrong" style="width:620px;display:none;">请选择一个分类</div><div class="right" id="classIdRight" style="width:620px; display:none;"></div>
+<input id="rClassId" type="hidden" value="0"/>
+<div class="productlists" id="productlists" style="display:none;"><span onclick="pick('网页错误','2692')" onmouseout="nocolor(this)" onmouseover="bgcolor(this)">网页错误</span><span onclick="pick('使用疑问','2693')" onmouseout="nocolor(this)" onmouseover="bgcolor(this)">使用疑问</span><span onclick="pick('提建议','2694')" onmouseout="nocolor(this)" onmouseover="bgcolor(this)">提建议</span><span onclick="pick('举报虚假信息','2695')" onmouseout="nocolor(this)" onmouseover="bgcolor(this)">举报虚假信息</span><span onclick="pick('举报禁限销售信息','2696')" onmouseout="nocolor(this)" onmouseover="bgcolor(this)">举报禁限销售信息</span><span onclick="pick('举报欺诈信息','2697')" onmouseout="nocolor(this)" onmouseover="bgcolor(this)">举报欺诈信息</span><span onclick="pick('其它','2698')" onmouseout="nocolor(this)" onmouseover="bgcolor(this)">其它</span></div>
+<iframe frameborder="0" id="DivShim" scrolling="no" src="javascript:false;" style="position: absolute; top:36px; left:0px; display:none;"></iframe>
+</dd>
+</dl>
+<dl>
+<dt>相关链接</dt>
+<dd>
+<input class="text" id="relatedLink" name="relatedLink" type="text" value="http://"/>
+</dd>
+</dl>
+<dl>
+<dt><em>*</em>描述</dt>
+<dd>
+<textarea cols="" id="detail" name="detail" onblur="CheckText('detail')" onfocus="dWrite('detail')" rows="" style="margin-bottom:10px">请尽量详细得描述您遇到您的问题/建议! 
+如:网页发生错误前的操作，使用何种浏览器，错误发生的时间等</textarea>
+<div class="wrong" id="detailWrong" style="width:799px;display:none;">请填写详细描述</div><div class="right" id="detailRight" style="width:799px; display:none;"></div>
+<form action="" enctype="multipart/form-data" id="uploadform" method="post">
+<div class="divUpfile" id="addImg">
+<input class="upfile" id="upfile" name="upfile" onchange="fileUpload(this)" style="-moz-opacity:0;filter:alpha(opacity: 0);opacity:0; cursor:pointer;" type="file"/>
+<a class="add">添加图片</a>
+</div>
+</form>
+<div class="loading" id="imgLoading" style="display:none"><img src="images/Public/loading.gif"/>图片上传中...</div>
+<div class="loading" id="imgFilePath" style="display:none">
+          文件名：
+          <a id="Picture" target="_blank"></a>
+<a href="javascript:DelPicture()" id="PictureDel">删除</a>
+</div>
+<div id="uploadFileTip" style="display:none"></div>
+</dd>
+</dl>
+<dl>
+<dt><em>*</em>姓名</dt>
+<dd>
+<input class="text" id="authorName" name="authorName" onblur="CheckText('authorName')" style="width:130px;" type="text"/>
+<div class="sex">
+<input checked="checked" name="authorSex" type="radio" value="1"/>先生</div>
+<div class="sex">
+<input name="authorSex" type="radio" value="0"/>女士</div><div class="wrong" id="authorNameWrong" style="width:490px;display:none;">请填写您的姓名</div><div class="right" id="authorNameRight" style="width:490px; display:none;"></div>
+</dd>
+</dl>
+<dl>
+<dt><em>*</em>联系方式</dt>
+<dd>
+<input class="text" id="telphone" name="telphone" onblur="CheckText('telphone')" onfocus="dWrite('telphone')" style="color: #aaaaaa;" type="text" value="手机/邮箱"/><div class="wrong" id="telphoneWrong" style="display:none;">请填写您的联系方式 手机或邮箱</div><div class="right" id="telphoneRight" style="display:none;"></div>
+</dd>
+</dl>
+<dl>
+<dt></dt>
+<dd>
+<p style="color:#5c5c5c;"><input checked="checked" id="isReply" name="isReply" type="checkbox" value="1"/>希望在问题处理后，得到工作人员回复</p>
+</dd>
+</dl>
+<dl>
+<dt></dt>
+<dd>
+<button onclick="AddComplaintsInfo()">立即提交</button>
+</dd>
+</dl>
+<dl>
+<dt></dt>
+<dd>
+<p>注：您在此页面提交的问题，工作人员将会尽快处理，如您希望在问题处理完毕后得到回复，请勾选提交按钮上方的选项
+        感谢您对智能制造网的支持!</p>
+</dd>
+</dl>
+<br class="clear"/>
+</div>
+<div id="foot">
+<div class="bottom">
+<p><a href="https://www.gkzhan.com/service/Service21.html">关于我们</a>|<a href="https://www.gkzhan.com/aboutus/about_dh.html">网站导航</a>|<a href="https://www.gkzhan.com/service/service1.html">本站服务</a>|<a href="https://www.gkzhan.com/service/Service3.html">会员服务</a>|<a href="https://www.gkzhan.com/service/Service18.html">商站通服务</a>|<a href="http://www.mtnets.com/www.aspx">旗下网站</a>|<a href="https://www.gkzhan.com/link/">友情链接</a>|<a href="https://www.gkzhan.com/xwt/download">兴旺通</a></p>
+  Copyright 2018 gkzhan.com All Rights Reserved        法律顾问：浙江天册律师事务所 贾熙明律师<b></b></div>
+</div>
+</body></html>

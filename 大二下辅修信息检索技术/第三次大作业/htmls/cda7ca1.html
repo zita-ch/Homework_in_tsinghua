@@ -1,0 +1,306 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>并网逆变器简介_典型的运作方式_技术-维库电子通</title>
+<meta content="并网逆变器简介,并网逆变器典型的运作方式,并网逆变器技术,并网逆变器特性" name="keywords"/>
+<meta content="并网逆变器（grid-tie inverter，简称GTI）是一种特殊的逆变器，除了可以将直流电转换成交流电外，其输出的交流电可以与市电的频率及相位同步，因此输出的交流电可以回到市电。并网逆变器常用在一些直流电压源（如太阳能板或是小型风力发电机）和电网连接的应..." name="description"/>
+<link href="http://img3.dzsc.com/css/web/common/base.css?v=11222016.css" rel="stylesheet" type="text/css"/>
+<link href="http://img3.dzsc.com/css/web/common/top.css?v=11222016.css" rel="stylesheet" type="text/css"/>
+<link href="http://img3.dzsc.com/css/web/news/common.css" rel="stylesheet" type="text/css"/>
+<link href="http://img3.dzsc.com/css/web/news/news.css" rel="stylesheet" type="text/css"/>
+<script src="//push.zhanzhang.baidu.com/push.js"></script><script src="https://hm.baidu.com/hm.js?4b49b84f5d3fbea3caf3b7cfde1e1b0d"></script><script src="http://img3.dzsc.com/js/jquery/jquery-1.10.2.min.js" type="text/javascript"></script>
+<script charset="utf-8" src="http://img3.dzsc.com/js/web/wangmeng.js" type="text/javascript"></script>
+<script charset="utf-8" src="http://img3.dzsc.com/js/web/dgk/index.js" type="text/javascript"></script>
+<!--移动端适配-->
+<meta content="pc" name="applicable-device"/>
+<meta content="format=html5;url=http://m.dzsc.com/wiki/15039.html" name="mobile-agent"/>
+<meta content="format=xhtml;url=http://m.dzsc.com/wiki/15039.html" name="mobile-agent"/>
+<meta content="no-transform" http-equiv="Cache-Control"/>
+<meta content="no-siteapp" http-equiv="Cache-Control"/>
+<link href="http://m.dzsc.com/wiki/15039.html" media="only screen and(max-width: 640px)" rel="alternate"/>
+<script src="http://img3.dzsc.com/js/common/uaredirect.js" type="text/javascript"></script>
+<script type="text/javascript">uaredirect("http://m.dzsc.com/wiki/15039.html");</script>
+<script type="application/ld+json">
+    {
+        "@context": "https://zhanzhang.baidu.com/contexts/cambrian.jsonld",
+        "@id":"http://wiki.dzsc.com/15039.html",
+        "appid":"1582126773244911",
+        "title": "并网逆变器简介_典型的运作方式_技术-维库电子通",
+        "images": [],
+        "description": "并网逆变器（grid-tie inverter，简称GTI）是一种特殊的逆变器，除了可以将直流电转换成交流电外，其输出的交流电可以与市电的频率及相位同步，因此输出的交流电可以回到市电。并网逆变器常用在一些直流电压源（如太阳能板或是小型风力发电机）和电网连接的应用中。",
+        "pubDate": "2018-11-26T15:10:35",
+        "upDate":"2018-11-26T15:10:35"
+    }
+    </script>
+</head>
+<body style="">
+<div class="top">
+<div class="w1190">
+<div class="fl">
+            您好，欢迎来到维库电子市场网
+                
+                
+            <a class="blue" href="http://www.dzsc.com/member/login.aspx?returnurl=http%3a%2f%2fwiki.dzsc.com%2fdetail.aspx%3ffullurl%3d15039.html" rel="nofollow" target="_self">登录</a> | <a class="blue" href="http://www.dzsc.com/member/reg.aspx" rel="nofollow" target="_self">免费注册</a>
+</div>
+<div class="fr">
+<span><a class="gray" href="http://www.dzsc.com/" target="_self">网站首页</a></span>
+            | <span class="relative"><a class="gray" href="javascript:;" onmouseout="javascript:$('#pur').hide();" onmouseover="javascript:$('#pur').show()" rel="nofollow">采购商服务<i></i></a> <font id="pur" onmouseout="javascript:$('#pur').hide();" onmouseover="javascript:$('#pur').show()" style="display: none"><a href="http://www.dzsc.com/ic/buystockadd.aspx" rel="nofollow" target="_blank">发布采购信息</a><br/>
+<a href="http://www.dzsc.com/ic/buystocklist.aspx" rel="nofollow" target="_blank">修改/删除采购</a><br/>
+<a href="http://www.dzsc.com/weituo/" rel="nofollow" target="_blank">委托宝</a> </font>
+</span>| <span class="relative"><a class="gray" href="javascript:;" onmouseout="javascript:$('#vip1').hide();" onmouseover="javascript:$('#vip1').show()" rel="nofollow">会员服务<i></i></a> <font id="vip1" onmouseout="javascript:$('#vip1').hide();" onmouseover="javascript:$('#vip1').show()" style="display: none">
+<a href="http://www.dzsc.com/topic/freespotservice/" rel="nofollow" target="_blank">免费现货认证</a><br/>
+<a href="http://www.dzsc.com/topic/serv_member/" rel="nofollow" target="_blank">基础会员服务</a><br/>
+<a href="http://www.dzsc.com/topic/serv_bigcustom/" rel="nofollow" target="_blank">百维通</a><br/>
+<a href="http://www.dzsc.com/topic/marketing_softwen/" rel="nofollow" target="_blank">软文营销</a> </font>
+</span>| <span class="relative"><a class="gray" href="javascript:;" onmouseout="javascript:$('#ser').hide();" onmouseover="javascript:$('#ser').show()" rel="nofollow">工程师服务<i></i></a> <font id="ser" onmouseout="javascript:$('#ser').hide();" onmouseover="javascript:$('#ser').show()" style="display: none">
+<a href="http://pdf.dzsc.com/" target="_blank">PDF下载</a><br/>
+<a href="http://www.dzsc.com/data/" target="_blank">技术资料</a><br/>
+<a href="http://product.dzsc.com/news/" target="_blank">电子资讯</a><br/>
+<a href="http://www.dzsc.com/data/circuitmore.html" target="_blank">电路图</a> </font></span>|
+                <span class="relative"><a class="gray" href="javascript:;" onmouseout="javascript:$('#map').hide();" onmouseover="javascript:$('#map').show()" rel="nofollow">网站导航<i></i></a> <font id="map" onmouseout="javascript:$('#map').hide();" onmouseover="javascript:$('#map').show()" style="display: none"><a href="http://www.dzsc.com/" target="_blank">
+                            网站首页</a><br/>
+<a href="http://product.dzsc.com/" target="_blank">电子元器件</a><br/>
+<a href="http://ic.dzsc.com/" target="_blank">IC交易网</a><br/>
+<a href="http://www.dzsc.com/data/" target="_blank">技术资料</a><br/>
+<a href="http://product.dzsc.com/news/" target="_blank">电子资讯</a><br/>
+<a href="http://pdf.dzsc.com/" target="_blank">Datasheet</a><br/>
+<a href="http://www.dzsc.com/data/circuitmore.html" target="_blank">电路图</a><br/>
+<a href="http://wiki.dzsc.com/" target="_blank">电子通</a> </font></span>
+</div>
+</div>
+</div>
+<div class="w1190">
+<div class="logo_box">
+<a class="logo" href="http://www.dzsc.com/"><img alt="维库电子市场网" src="http://img3.dzsc.com/img/web/common/logo.png"/></a>
+<div class="Search">
+<form action="http://wiki.dzsc.com/list.aspx" id="form1" method="get" onsubmit="return checkOthers(0)">
+<span class="relative" onmouseout="javascript:$('#choose').hide();" onmouseover="javascript:$('#choose').show()">
+<a href="javascript:void(0)" id="searchtitle">电子通</a><i></i> <font id="choose" onmouseout="javascript:$('#choose').hide();" onmouseover="javascript:$('#choose').show()" style="z-index: 100; display: none">
+<a href="javascript:void(0)" onclick="ChangeSearch(0,$(this).html())">产品</a><br/>
+<a href="javascript:void(0)" onclick="ChangeSearch(1,$(this).html())">PDF</a><br/>
+<a href="javascript:void(0)" onclick="ChangeSearch(2,$(this).html())">资讯</a><br/>
+<a href="javascript:void(0)" onclick="ChangeSearch(3,$(this).html())">资料</a><br/>
+<a href="javascript:void(0)" onclick="ChangeSearch(5,$(this).html())">电子通</a>
+</font></span>
+<input class="ss_text" id="keyword" name="keyword" type="text" value=""/>
+<input class="enter" type="submit" value="搜索"/>
+</form>
+</div>
+<div class="fabu fr">
+<a class="enter mr10" href="http://www.dzsc.com/ic/buystockadd.aspx" rel="nofollow" target="_blank"><i></i>发布采购信息</a> <a class="enter01" href="http://www.dzsc.com/ic/buystocklist.aspx" rel="nofollow" target="_blank">修改/删除采购【看报价】</a>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+    if (typeof (jQuery) == "undefined") document.write("<sc" + "ript lang" + "uage=\"java" + "script\" src=\"http://img3.dzsc.com/js/jquery/jquery-1.4.2.min.js\"></scr" + "ipt>");
+    var stype = 5;
+
+</script>
+<script src="http://img3.dzsc.com/js/web/common/top.js" type="text/javascript"></script>
+<div class="w1190">
+<div class="breadcrumb">
+            您所在的位置：<a href="http://www.dzsc.com/">电子元器件采购网</a><span>&gt;</span><a href="http://wiki.dzsc.com/">电子通</a><span>&gt;</span>并网逆变器
+        </div>
+</div>
+<div style="margin: 0 auto 10px auto; width: 1190px; overflow: hidden; position: relative;">
+<div style="float: left;">
+<a href="http://product.dzsc.com/product/234729-201761511363695.html" target="_blank">
+<img src="http://file3.dzsc.com/bigcustomerad/20/04/22/173058204.png" style="border: 0;"/></a>
+</div>
+<div class="newinfo" style="float: left; position: relative;">
+<a href="http://yangxing.dzsc.com/" target="_blank">
+<img src="http://file3.dzsc.com/bigcustomerad/20/04/22/173058329.png" style="border: 0;"/></a>
+<div style="position: absolute; bottom: 23px; left: 410px; padding: 8px 20px;">
+                联系供应商在线客服： <a href="tencent://message/?uin=3003139545&amp;Site=www.dzsc.com&amp;Menu=yes" onclick="$.ajax({url:'http://www.dzsc.com/flowqqstats.asp?qq=3003139545&amp;userid=234729&amp;keyword=234729-201761511363695.html',async:false});return true;" rel="nofollow" title="QQ:3003139545"><img alt="QQ:3003139545" border="0" onerror="this.src='http://img1.dzsc.com/img/common/qq.png'" onload="javascript:if ($(this).height()==22 &amp;&amp; $(this).width()==77){$(this).attr('src','http://www.dzsc.com/images/qq.gif');}" src="http://wpa.qq.com/pa?p=2:3003139545:4"/></a>
+</div>
+</div>
+<span class="ad-label-lb king-lb">广告</span>
+</div>
+<div class="w1190 encyclopedias-info mt10 mb10 cfix">
+<div class="info-left fl">
+<div class="latestEntry">
+<div class="encyclopedias-details">
+<div class="encyclopedias-briefing">
+<h1 class="normal cfix">并网逆变器<div><span><i class="i-ico i-yuedu"></i>阅读：13712</span><span><i class="i-ico i-date"></i>时间：2018-11-26 15:10:35</span></div>
+</h1>
+<p><font face="Verdana">    并网<a href="http://wiki.dzsc.com/599.html" target="_blank">逆变器</a>（grid-tie inverter，简称GTI）是一种特殊的逆变器，除了可以将直流电转换成交流电外，其输出的交流电可以与市电的频率及相位同步，因此输出的交流电可以回到市电。并网逆变器常用在一些直流电压源（如太阳能板或是小型风力发<a href="http://wiki.dzsc.com/1231.html" target="_blank">电机</a>）和电网连接的应用中。</font></p>
+<div class="catalog cfix">
+<div class="catalog-box fl">
+<span class="fl">目录</span>
+<ul class="fl">
+<li><a href="#md52554"><i></i>简介</a></li>
+<li><a href="#md52555"><i></i>典型的运作方式</a></li>
+<li><a href="#md52556"><i></i>技术</a></li>
+<li><a href="#md52557"><i></i>特性</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="encyclopedias-details-item" id="md52554">
+<h2 class="normal">
+<i></i>
+<span>简介</span>
+</h2>
+<div>
+<p><font face="Verdana">   并网逆变器（grid-tie inverter，简称GTI）是一种特殊的逆变器，除了可以将直流电转换给交流电外，其输出的交流电可以和和市电的频率及相位同步，因此输出的交流电可以回到市电。并网逆变器常用在一些直流电压源（如太阳能板或是小型风力发电机）和电网连接的应用中。<br/>   在许多国家，有并网电力系统的住家或是公司，可以将其产生的电力再卖给电力公司。输送回电网的电力有几种不同的补贴方式。净计量电价是指有可再生能源设备的住家或公司，依其送回电网的净能量来领取补贴，例如某一个月，一个住家送回电网的电力为500千瓦-小时，而从电网用的电力为100千瓦-小时，则依400千瓦-小时来领取补贴。在美国，净能量的政策会依司法管辖区不同而不同。另一种政策是上网电价补贴政策，产生每一千瓦-小时的电依照和输电公司所订契约中列的补贴方式来进行补贴。<br/>   在美国，并网能源系统是在国家电气规范（NEC）管理范围以内，因此会对并网逆变器有一些强制性的要求。</font></p>
+</div>
+</div>
+<div class="encyclopedias-details-item" id="md52555">
+<h2 class="normal">
+<i></i>
+<span>典型的运作方式</span>
+</h2>
+<div>
+<p><font face="Verdana">   逆变器会将直流电源转换为交流电源，以便送回电网。并网逆变器的输出电压的频率需和电网频率（50或60Hz）相同，一般会用机器中的振荡器达成，并且也会限制输出电压不超过电网电压。现代高品质的并网逆变器，其输出的功率因素可以为1，表示其输出的电压及电流相位是相同旳，和电网电压之间的相位差在1度以内。逆变器中有微处理器可以感测电网的交流波形，并且依此波形来产生电压送回电网。不过送回电网的电需有一定比例的无功功率，使附近电网的电力在允许的限制范围内，否则，若某一区域电网的再生能源比例较高，在高电能产出的时候（例如中午）其电压可能会上升的太高。<br/>   若电网的电力断电时，并网逆变器需要快速的和电网离线。这是美国国家电气规范（NEC）的规定，以确保在电网断电时，并网逆变器也不会提供电力给电网，此时维修电网的工人才不会因此而触电。<br/>   若适当的配置，并网逆变器可以让一个家庭可以使用其自行发电的替代能源（例如太阳能或是风力发电），而不需要繁杂的配线，也不需要电池。若是替代能源不足，不足的部分仍然会用电网的电来提供。</font></p>
+</div>
+</div>
+<div class="encyclopedias-details-item" id="md52556">
+<h2 class="normal">
+<i></i>
+<span>技术</span>
+</h2>
+<div>
+<p><font face="Verdana">   并网逆变器架构有使用较新的高频变压器、传统的工频变压器，或是无变压器的逆变器架构。高频变压器不是直接提供120 V或240 V的AC电源，而是有电脑控制的多步程式，让电源转换为高频的交流电，再转换为直流电，最后再转换为电源需要的电压及频率。无变压器的逆变器比有变压器的逆变器要轻，其效率也较好，在欧洲很流行。不过因为直流电路和交流电路之间没有的电隔离，担心有故障时，直流端的短路电流会直接跳入市电电路，因此较晚才进入美国市场。不过从2005年起，美国消防协会（NFPA）的国家电气规范已取消了所有太阳能系统都需要负端接地的规定，并加上新的安全要求，因此允许无变压器（或是无电隔离）的逆变器进入美国市场。VDE 0126-1-1及IEC 6210也已允许及定义这类系统需要的安全机制。首先，需要有残留电流或是接地电路以检测异常短路的情形，并且也要进行绝缘测试以确认直流电路与交流电路之间的分离。</font></p>
+</div>
+</div>
+<div class="encyclopedias-details-item" id="md52557">
+<h2 class="normal">
+<i></i>
+<span>特性</span>
+</h2>
+<div>
+<p><font face="Verdana">   逆变器会针对其产品线印制资料表。各厂家资料表中的用词及内容可能会有所不同，但一般会包括以下内容：<br/>   额定输出功率（Rated output power）：单位可以是瓦特或是千瓦。有些逆变器可能会针对不同的输出电压有不同的额定输出功率。例如逆变器可以设定在240VAC或208VAC输出，两者的额定输出功率就会不同。<br/>   输出电压（Output voltage）：是指逆变器可以连接的电网电压。若是小型的家用并网逆变器，其输出电压多半会是240VAC。若是商用的逆变器，其电压会是208, 240, 277, 400, 480 或600VAC，而且可能会是三相输出。<br/>   峰值效率（Peak efficiency）：峰值效率是指逆变器可以输出的最佳效率（效率是以其输出交流电功率除以逆变器输入的直流电功率）。在2009年7月时，大部分市面上的并网逆变器峰值效率可以到94%，有些可以高到96%。其散失的能量主要是散失为热能。为了让逆变器输出到额定功率，其输入的电功率需大于额定功率。例如5000W逆变器其满功率时效率为95%，因此需要5,263W的输入功率（额定功率除以效率）。若逆变器可以在数个不同电压下输出电能，也会在各电压下有其峰值效率。<br/>   CEC加权效率（CEC weighted efficiency）：此效率的计算方式是加州能源委员会（CEC）在其GoSolar网站公布的算法为主。和峰值效率不同，CEC加权效率是平均效率，比较可以表示逆变器在运作时的情形。若逆变器可以在数个不同电压下输出电能，也会在各电压下有其CEC加权效率。<br/>   最大输入电流（Maximum input current）：是逆变器可以使用的最大直流电流。若系统（例如太阳能电池）输出的电流超过此一上限，逆变器无法使用此一电流。<br/>   最大输出电流（Maximum output current）：是指逆变器可以连续提供的最大交流电流。此数值一般会用来确认过电流保护设备（保险丝或无熔丝开关）的最小电流额定，以及将电路断开相关设备的最小电流额定。若逆变器可以在数个不同的交流电压下输出，也有可能在各电压有不同的最大输出电流。<br/>   峰值功率追踪电压（Peak power tracking voltage）：这表示逆变器的最大功率点追踪（MPPT）可以运作的直流电压范围。系统设计者需确认系统的串接已经过优化，在一年的大多数时间，串接后产生的电压是在上述范围内。因为电压可能会波动，而且会随着温度而变化，这可能是个困难的工作。<br/>   启动电压（Start voltage）：不是所有的逆变器都会标示此项数值，此数值是指逆变器要启动及开始运转需要的最低直流电压，在太阳能的应用下格外重要，因为系统设计者需确认已有够多的光伏模组串联，其电压可以超过启动电压。若厂商未标示此一数值，系统设计者一般会以峰值功率追踪电压的下限为逆变器的最低电压。<br/>   国际防护等级认证（IPxx rating）：防护等级或是IP编号分类是针对产品有关固体异物（在防护等级的第1码表示）以及水（在防护等级的第2码表示）的防护能力。数字越大表示防护能力越好。美国的NEMA外壳类型用途也是类似国际防护等级。大部分用在室外逆变器是IP45（不防尘）或IP65 （防尘），或者在美国则是NEMA 3R（无扬尘保护）或是NEMA 4X（防尘、防直接溅水，及额外的防腐蚀保护）。</font></p>
+</div>
+</div>
+</div>
+</div>
+<div class="news-item mt10">
+<h4 class="normal cfix">并网逆变器相关资讯
+                    <a class="fr f12" href="http://product.dzsc.com/newssearch.aspx?keyword=并网逆变器" style="color: #999; margin-right: 10px;" target="_blank">更多<font style="font-family: '宋体';">&gt;&gt;</font></a>
+</h4>
+<ul class="encyclopedias-list-news cfix">
+<li><i>1</i>. <a href="http://product.dzsc.com/news/2008-3-24/71291.html" target="_blank" title="镇江研制新型光伏并网逆变器">镇江研制新型光伏并网逆变器</a></li>
+<li><i>2</i>. <a href="http://product.dzsc.com/news/2008-3-19/70755.html" target="_blank" title="南自通华研发的光伏并网逆变器达国际先进水平">南自通华研发的光伏并网逆变器达国际先进水平</a></li>
+<li><i>3</i>. <a href="http://product.dzsc.com/news/2006-12-4/24256.html" target="_blank" title="电工所成功研制中型太阳光伏并网逆变器">电工所成功研制中型太阳光伏并网逆变器</a></li>
+</ul></div>
+<div class="news-item mt10">
+<h4 class="normal cfix">并网逆变器相关技术资料<span class="fr"><a href="http://www.dzsc.com/data/search.aspx?keyword=并网逆变器" target="_blank">更多&gt;&gt;</a></span></h4>
+<ul class="encyclopedias-list-news cfix">
+<li><a href="http://www.dzsc.com/data/2018-5-15/117386.html" target="_blank">离网逆变器和并网逆变器工作原理</a></li>
+<li><a href="http://www.dzsc.com/data/2015-8-26/108695.html" target="_blank">基于一款小功率光伏并网逆变器控制的设计</a></li>
+<li><a href="http://www.dzsc.com/data/2015-2-6/107897.html" target="_blank">基于FPGA 的太阳能并网逆变器的研究</a></li>
+<li><a href="http://www.dzsc.com/data/2014-12-3/107556.html" target="_blank">一“部”到位，风能并网逆变器全方位测试</a></li>
+<li><a href="http://www.dzsc.com/data/2014-11-14/107353.html" target="_blank">单相光伏并网逆变器直流注入问题的成因和抑制</a></li>
+<li><a href="http://www.dzsc.com/data/2014-5-29/105704.html" target="_blank">一种变换器关键参数的设计方法</a></li>
+<li><a href="http://www.dzsc.com/data/2014-2-17/105011.html" target="_blank">光伏分布式发电中的逆变系统设计</a></li>
+<li><a href="http://www.dzsc.com/data/2013-12-11/104627.html" target="_blank">基于LCL型滤波器的光伏并网逆变器的设计方案</a></li>
+</ul> </div>
+</div>
+<div class="info-right fr right">
+<div class="encyclopedias-text mb10">
+<p><strong>维库电子通，电子知识，一查百通！</strong></p>
+<p>已收录词条<em>13949</em>个</p>
+</div>
+<div class="news-item ph-item mb10">
+<h4 class="normal">热门电子百科排行</h4>
+<ul class="block J_tabbox">
+</ul>
+</div>
+<div class="news-item c-item mb10">
+<h4 class="normal">相关词条<span class="fr"><a href="/list.html">更多&gt;&gt;</a></span></h4>
+<ul class="cfix">
+<li><a href="http://wiki.dzsc.com/9329.html" target="_blank" title="网络插座">网络插座</a></li>
+<li><a href="http://wiki.dzsc.com/10196.html" target="_blank" title="压电陶瓷晶片">压电陶瓷晶片</a></li>
+<li><a href="http://wiki.dzsc.com/5092.html" target="_blank" title="PCM复用设备">PCM复用设备</a></li>
+<li><a href="http://wiki.dzsc.com/5638.html" target="_blank" title="激光气体流量计">激光气体流量计</a></li>
+<li><a href="http://wiki.dzsc.com/10774.html" target="_blank" title="中频变频器">中频变频器</a></li>
+<li><a href="http://wiki.dzsc.com/4007.html" target="_blank" title="PWM控制器">PWM控制器</a></li>
+<li><a href="http://wiki.dzsc.com/9038.html" target="_blank" title="网管交换机">网管交换机</a></li>
+<li><a href="http://wiki.dzsc.com/3121.html" target="_blank" title="蓄电池电导测试仪">蓄电池电导测试仪</a></li>
+<li><a href="http://wiki.dzsc.com/12343.html" target="_blank" title="低速大容量离心机">低速大容量离心机</a></li>
+<li><a href="http://wiki.dzsc.com/3863.html" target="_blank" title="电子连接器">电子连接器</a></li>
+</ul>
+</div>
+<div class="news-item c-item mb10">
+<h4 class="normal">最新产品</h4>
+<ul class="cfix">
+<li><a class="f14" href="http://product.dzsc.com/product/infomation/948723/2013627161930150.html" target="_blank" title="供应自动升降发电机移动照明车">供应自动升降发电机移动照明车</a></li>
+<li><a class="f14" href="http://product.dzsc.com/product/1065347-2015511132045875.html" target="_blank" title="供应奥林巴斯三目显微镜CKX53">供应奥林巴斯三目显微镜CKX53</a></li>
+<li><a class="f14" href="http://product.dzsc.com/product/1156303-202059174217764.html" target="_blank" title="13F-39MNL集成电路IC">13F-39MNL集成电路IC</a></li>
+<li><a class="f14" href="http://product.dzsc.com/product/796864-202059174327145.html" target="_blank" title="W25N01GVZEIGTR华邦芯片存储器-IC-1Gb现货">W25N01GVZEIGTR华邦芯片存储器-IC-1Gb现货</a></li>
+<li><a class="f14" href="http://product.dzsc.com/product/950388-2019822053365.html" target="_blank" title="ST意法 STD2HNK60Z-1 TO-252 原装MOS管">ST意法 STD2HNK60Z-1 TO-252 原装MOS管</a></li>
+<li><a class="f14" href="http://product.dzsc.com/product/950388-201982217680.html" target="_blank" title="L7806CV-DG TO-220  原装ST MOS管">L7806CV-DG TO-220  原装ST MOS管</a></li>
+<li><a class="f14" href="http://product.dzsc.com/product/950388-2019822121953.html" target="_blank" title="ST意法 STP55NF06 TO-220 原装 60V50A">ST意法 STP55NF06 TO-220 原装 60V50A</a></li>
+<li><a class="f14" href="http://product.dzsc.com/product/950388-2019822130917.html" target="_blank" title="STD11NM60N TO-252 场效应管MOS管原装ST">STD11NM60N TO-252 场效应管MOS管原装ST</a></li>
+<li><a class="f14" href="http://product.dzsc.com/product/950388-201982222112.html" target="_blank" title="MOS管STP65NF06 TO-220 N沟道场效应管">MOS管STP65NF06 TO-220 N沟道场效应管</a></li>
+<li><a class="f14" href="http://product.dzsc.com/product/950388-2019822214320.html" target="_blank" title="STP60NF06 TO-220 ST意法 60V 60A 110W">STP60NF06 TO-220 ST意法 60V 60A 110W</a></li>
+</ul>
+</div>
+<div class="news-item c-item mb10">
+<h4 class="normal">热门产品</h4>
+<ul class="cfix">
+<li><a href="http://product.dzsc.com/product/searchfile/24875.html" target="_blank">
+            1812贴片电阻
+        </a></li>
+<li><a href="http://product.dzsc.com/product/searchfile/24877.html" target="_blank">
+            小阻值贴片电阻
+        </a></li>
+<li><a href="http://product.dzsc.com/product/searchfile/24879.html" target="_blank">
+            贴片式电阻
+        </a></li>
+<li><a href="http://product.dzsc.com/product/searchfile/24880.html" target="_blank">
+            片式固定电阻器
+        </a></li>
+<li><a href="http://product.dzsc.com/product/searchfile/24881.html" target="_blank">
+            厚膜片式电阻
+        </a></li>
+<li><a href="http://product.dzsc.com/product/searchfile/24882.html" target="_blank">
+            片式压敏电阻器
+        </a></li>
+<li><a href="http://product.dzsc.com/product/searchfile/24883.html" target="_blank">
+            厚膜片式固定电阻器
+        </a></li>
+<li><a href="http://product.dzsc.com/product/searchfile/24884.html" target="_blank">
+            多层片式压敏电阻
+        </a></li>
+<li><a href="http://product.dzsc.com/product/searchfile/24885.html" target="_blank">
+            精密碳膜电阻
+        </a></li>
+<li><a href="http://product.dzsc.com/product/searchfile/24886.html" target="_blank">
+            2w碳膜电阻
+        </a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="w1190">
+</div>
+<div class="w1190">
+<div class="footer">
+<p>
+<strong>IC型号索引：</strong>
+<a class="c666" href="http://www.dzsc.com/A/" target="_blank" title="A开头IC芯片">A</a> <a class="c666" href="http://www.dzsc.com/B/" target="_blank" title="B开头IC芯片">B</a> <a class="c666" href="http://www.dzsc.com/C/" target="_blank" title="C开头IC芯片">C</a> <a class="c666" href="http://www.dzsc.com/D/" target="_blank" title="D开头IC芯片">D</a> <a class="c666" href="http://www.dzsc.com/E/" target="_blank" title="E开头IC芯片">E</a> <a class="c666" href="http://www.dzsc.com/F/" target="_blank" title="F开头IC芯片">F</a> <a class="c666" href="http://www.dzsc.com/G/" target="_blank" title="G开头IC芯片">G</a> <a class="c666" href="http://www.dzsc.com/H/" target="_blank" title="H开头IC芯片">H</a> <a class="c666" href="http://www.dzsc.com/I/" target="_blank" title="I开头IC芯片">I</a> <a class="c666" href="http://www.dzsc.com/J/" target="_blank" title="J开头IC芯片">J</a> <a class="c666" href="http://www.dzsc.com/K/" target="_blank" title="K开头IC芯片">K</a> <a class="c666" href="http://www.dzsc.com/L/" target="_blank" title="L开头IC芯片">L</a> <a class="c666" href="http://www.dzsc.com/M/" target="_blank" title="M开头IC芯片">M</a> <a class="c666" href="http://www.dzsc.com/N/" target="_blank" title="N开头IC芯片">N</a> <a class="c666" href="http://www.dzsc.com/O/" target="_blank" title="O开头IC芯片">O</a> <a class="c666" href="http://www.dzsc.com/P/" target="_blank" title="P开头IC芯片">P</a> <a class="c666" href="http://www.dzsc.com/Q/" target="_blank" title="Q开头IC芯片">Q</a> <a class="c666" href="http://www.dzsc.com/R/" target="_blank" title="R开头IC芯片">R</a> <a class="c666" href="http://www.dzsc.com/S/" target="_blank" title="S开头IC芯片">S</a> <a class="c666" href="http://www.dzsc.com/T/" target="_blank" title="T开头IC芯片">T</a> <a class="c666" href="http://www.dzsc.com/U/" target="_blank" title="U开头IC芯片">U</a> <a class="c666" href="http://www.dzsc.com/V/" target="_blank" title="V开头IC芯片">V</a> <a class="c666" href="http://www.dzsc.com/W/" target="_blank" title="W开头IC芯片">W</a> <a class="c666" href="http://www.dzsc.com/X/" target="_blank" title="X开头IC芯片">X</a> <a class="c666" href="http://www.dzsc.com/Y/" target="_blank" title="Y开头IC芯片">Y</a> <a class="c666" href="http://www.dzsc.com/Z/" target="_blank" title="Z开头IC芯片">Z</a> <a class="c666" href="http://www.dzsc.com/0/" target="_blank" title="0开头IC芯片">0</a> <a class="c666" href="http://www.dzsc.com/1/" target="_blank" title="1开头IC芯片">1</a> <a class="c666" href="http://www.dzsc.com/2/" target="_blank" title="2开头IC芯片">2</a> <a class="c666" href="http://www.dzsc.com/3/" target="_blank" title="3开头IC芯片">3</a> <a class="c666" href="http://www.dzsc.com/4/" target="_blank" title="4开头IC芯片">4</a> <a class="c666" href="http://www.dzsc.com/5/" target="_blank" title="5开头IC芯片">5</a> <a class="c666" href="http://www.dzsc.com/6/" target="_blank" title="6开头IC芯片">6</a> <a class="c666" href="http://www.dzsc.com/7/" target="_blank" title="7开头IC芯片">7</a> <a class="c666" href="http://www.dzsc.com/8/" target="_blank" title="8开头IC芯片">8</a> <a class="c666" href="http://www.dzsc.com/9/" target="_blank" title="9开头IC芯片">9</a> 
+        </p>
+<p>
+            ©2020 维库电子市场网（www.dzsc.com）　经营许可证编号：<a href="http://beian.miit.gov.cn/" rel="nofollow" target="_blank">浙B2-20050339</a> <a href="http://www.dzsc.com/about/about5.asp" rel="nofollow" target="_blank">版权声明</a>
+</p>
+<p>十六年专注打造优质<a href="http://www.dzsc.com/" target="_blank">电子元器件采购网</a>、IC交易平台。</p>
+<p>
+            买家服务热线：0571-85317666 | 买家服务部QQ：
+      <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=1609526468&amp;site=www.dzsc.com&amp;menu=yes" rel="nofollow" target="_blank" title="QQ:1609526468">
+<img alt="QQ:1609526468" border="0" onerror="this.src='http://www.dzsc.com/img/images/common/qq.gif'" src="http://wpa.qq.com/pa?p=2:1609526468:4"/></a>
+<br/>
+            卖家服务热线：0571-85317586 | 卖家服务部QQ： <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=331652727&amp;site=www.dzsc.com&amp;menu=yes" rel="nofollow" target="_blank" title="QQ:331652727">
+<img alt="QQ:331652727" border="0" onerror="this.src='http://www.dzsc.com/img/images/common/qq.gif'" src="http://wpa.qq.com/pa?p=2:331652727:4"/></a>
+</p>
+</div>
+</div>
+<script src="http://www.dzsc.com/js/4vcount.js"></script><script language="javascript" src="http://counter.dzsc.com/stat.aspx?sitecode=070b9a8e53932e24"></script>
+<script type="text/javascript">
+        dgkdianzitong();
+        dgkhome();
+        $(function () {
+            var hei = $(".catalog-box ul").height() + 35;
+            $(".catalog-box span").css("line-height", hei + 'px');
+        })
+    </script>
+</body></html>

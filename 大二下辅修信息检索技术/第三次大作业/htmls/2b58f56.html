@@ -1,0 +1,519 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>单片机教程网-51开发板,学习板,MCU视频教程-编程实验教学</title>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="本站提供单片机视频教程,51单片机学习开发资料,单片机学习开发板,C语言汇编教程,编程器,仿真软件下载,还有单片机论坛提供交流,是学习者和电子工程师不容错过的技术站点" name="description"/><meta content="单片机,51单片机学习,单片机视频教程,单片机开发板" name="keywords"/>
+<link href="hugab/main.css" rel="stylesheet" type="text/css"/><link href="hugab/foucs.css" rel="stylesheet" type="text/css"/>
+<meta content="MSHTML 6.00.3790.3304" name="GENERATOR"/>
+<style type="text/css">
+<!--
+.STYLE2 {
+	font-size: 14px;
+	color: #000000;
+}
+-->
+</style>
+<link href="http://bdimg.share.baidu.com/static/css/bdsstyle.css?cdnversion=20131219" rel="stylesheet" type="text/css"/></head>
+<body><iframe frameborder="0" style="display: none;"></iframe><div id="bdshare_s" style="display: block;"><iframe frameborder="0" id="bdsIfr" style="position:absolute;display:none;z-index:9999;"></iframe><div id="bdshare_l" style="display: none;"><div id="bdshare_l_c"><h6>分享到</h6><ul><li><a class="bds_mshare mshare" href="#">一键分享</a></li><li><a class="bds_qzone qqkj" href="#">QQ空间</a></li><li><a class="bds_tsina xlwb" href="#">新浪微博</a></li><li><a class="bds_bdysc bdysc" href="#">百度云收藏</a></li><li><a class="bds_renren rrw" href="#">人人网</a></li><li><a class="bds_tqq txwb" href="#">腾讯微博</a></li><li><a class="bds_bdxc bdxc" href="#">百度相册</a></li><li><a class="bds_kaixin001 kxw" href="#">开心网</a></li><li><a class="bds_tqf txpy" href="#">腾讯朋友</a></li><li><a class="bds_tieba bdtb" href="#">百度贴吧</a></li><li><a class="bds_douban db" href="#">豆瓣网</a></li><li><a class="bds_tsohu shwb" href="#">搜狐微博</a></li><li><a class="bds_bdhome bdhome" href="#">百度新首页</a></li><li><a class="bds_sqq sqq" href="#">QQ好友</a></li><li><a class="bds_thx thx" href="#">和讯微博</a></li><li><a class="bds_more" href="#">更多...</a></li></ul><p><a class="goWebsite" href="#">百度分享</a></p></div></div></div>
+<div class="wrap">
+<script src="https://hm.baidu.com/hm.js?85fb66a4d8a26adebaeeafa1df93222e"></script><script src="hugab/jquery-1.4.2.min.js" type="text/javascript"></script>
+<script src="hugab/yu.js" type="text/javascript"></script>
+<script src="hugab/tb.js" type="text/javascript"></script>
+<div class="topbar">
+<div class="n">
+<div class="l">1</div>
+<div class="r">
+
+
+  公告:<marquee height="20" onmouseout="this.start()" onmouseover="this.stop()" scrollamount="2" scrolldelay="4" width="430">
+单片机软件与硬件技术学习QQ群（：582644647 欢迎加入共同学习  
+  </marquee>
+<span class="topbar_dot"> <a href="#" onclick="javascript:window.external.addFavorite('http://www.51hei.com/','单片机教程网')">加入收藏</a> <a href="http://www.51hei.com/lianxi.htm" target="_blank">联系我们</a></span> <span class="topuser"></span></div>
+</div></div>
+<div class="header_bg">
+<h1 class="logo"><a href="http://www.51hei.com/">单片机教程网</a></h1>
+<div class="headerSearch">
+<div class="headerTel">站长手机：<span class="red">15173607302（短信,胡先生） </span>
+</div>
+<div>
+<form action="http://www.alldatasheetcn.com/view.jsp" onsubmit="gourl(document.getElementById('sinput').value)" target="_blank"><input class="headerSearch_input gray" id="sinput" maxlength="50" name="sSearchword" value="输入芯片名称，如Max232，即可下载其PDF资料"/><input class="headerSearch_btn" id="button2" type="submit" value="提交"/>
+</form></div></div></div>
+<ul class="menu">
+<li class="l1" id="tt1" onmouseover="javascript:Show(1,1);"><a href="http://www.51hei.com/">首 页</a> </li>
+<li class="l2" id="tt2" onmouseover="javascript:Show(2,2);"><a href="http://www.51hei.com/mcuteach/">单片机基础知识</a> </li>
+<li class="l2" id="tt3" onmouseover="javascript:Show(3,1);"><a href="http://www.51hei.com/mcu/">设计实例</a> </li>
+<li class="l2" id="tt4" onmouseover="javascript:Show(4,1);"><a href="http://www.51hei.com/chip/">常用芯片知识</a> </li>
+<li class="l2" id="tt5" onmouseover="javascript:Show(5,1);"><a href="http://www.51hei.com/dianzi/">电子基础</a> </li>
+<li class="l2" id="tt6" onmouseover="javascript:Show(6,1);"><a href="http://www.51hei.com/mcudown/">软件下载</a> </li>
+</ul>
+<div class="menu2">
+<div class="cc black" id="c1">
+<div id="icefable1">
+<div id="icefable2">
+<div class="gun">
+<a href="http://www.51hei.com/bbs/" target="_blank">51hei单片机论坛导航</a>: <a href="http://www.51hei.com/bbs/mcu-2-1.html" target="_blank">
+<font color="#FF0000">51单片机论坛</font></a>(<font color="#FF0000">热</font>)
+<a href="http://www.51hei.com/bbs/mcu-avr-1.html" target="_blank">AVR单片机</a> 
+<a href="http://www.51hei.com/bbs/mcu-pic-1.html" target="_blank">PIC单片机</a> 
+<a href="http://www.51hei.com/bbs/mcu-msp430-1.html" target="_blank">MSP430单片机</a> 
+<a href="http://www.51hei.com/bbs/mcu-arm-1.html" target="_blank">ARM</a> 
+<a href="http://www.51hei.com/bbs/mcu-zhi-1.html" target="_blank">智能小车/机器人</a> 
+<a href="http://www.51hei.com/bbs/mcu-cj-1.html" target="_blank">拆机乐园</a>  
+<a href="http://www.51hei.com/bbs/mcu-Arduino-1.html" target="_blank">Arduino</a> 
+<a href="http://www.51hei.com/bbs/mcu-6-1.html" target="_blank">MCU综合区</a>  
+<a href="http://www.51hei.com/sp/" target="_blank"><font color="#FF0000">单片机视频教程</font></a>
+</div>
+</div></div></div>
+<div class="cc black" id="c2" style="DISPLAY: none"><a href="http://www.51hei.com/mcuteach/252.html">单片机基础</a> <a href="http://www.51hei.com/mcuteach/150.html">单片机C语言</a> <a href="http://www.51hei.com/mcu/keil教程.html">Keil教程</a> <a href="http://www.51hei.com/sp/">单片机视频</a> </div>
+<div class="cc black" id="c3" style="DISPLAY: none">
+</div>
+<div class="cc black" id="c4" style="DISPLAY: none">
+</div>
+<div class="cc black" id="c5" style="DISPLAY: none">
+</div>
+<div class="cc black" id="c6" style="DISPLAY: none">
+</div></div>
+<table bgcolor="#bed8f1" border="0" cellpadding="0" cellspacing="1" style="margin-bottom: 10px;" width="100%">
+<tbody><tr>
+<td align="center" bgcolor="#ffffff" height="80" width="11%">
+<a href="http://www.51hei.com/bbs/mcu-2-1.html" target="_blank">
+<img border="0" height="60" src="http://www.51hei.com/bb/bbstu/51.gif" width="60"/></a><br/>
+<a href="http://www.51hei.com/bbs/mcu-2-1.html" target="_blank">51单片机</a>(<font color="#FF0000">热</font>)</td>
+<td align="center" bgcolor="#ffffff" width="11%">
+<a href="http://www.51hei.com/bbs/mcu-diy-1.html" target="_blank">
+<img alt="是" border="0" height="60" src="http://www.51hei.com/bb/bbstu/diy.gif" width="60"/></a><br/>
+<a href="http://www.51hei.com/bbs/mcu-diy-1.html" target="_blank">单片机DIY</a>(<font color="#FF0000">热</font>)</td>
+<td align="center" bgcolor="#ffffff" width="11%"><a href="http://www.51hei.com/bbs/mcu-h24-1.html" target="_blank"><img border="0" height="60" src="http://www.51hei.com/bb/bbstu/24h.jpg" width="60"/></a><br/>
+<a href="http://www.51hei.com/bbs/mcu-h24-1.html" target="_blank">24小时必答区</a>(<font color="#FF0000">热</font>)</td>
+<td align="center" bgcolor="#ffffff" width="11%"><a href="http://www.51hei.com/bbs/mcu-xuexi-1.html" target="_blank"><img border="0" height="60" src="http://www.51hei.com/bb/bbstu/xue.gif" width="60"/></a><br/>
+<a href="http://www.51hei.com/bbs/mcu-xuexi-1.html" target="_blank">单片机初学</a></td>
+<td align="center" bgcolor="#ffffff" width="12%">
+<a href="http://www.51hei.com/bbs/mcu-stm32-1.html" target="_blank">
+<img border="0" height="60" src="http://www.51hei.com/bb/bbstu/stm.gif" width="60"/></a><br/>
+<a href="http://www.51hei.com/bbs/mcu-stm32-1.html" target="_blank">STM32</a>(<font color="#FF0000">热</font>)</td>
+<td align="center" bgcolor="#ffffff" width="11%">
+<a href="http://www.51hei.com/bbs/mcu-cortexm3-1.html" target="_blank">
+<img border="0" height="56" src="http://www.51hei.com/bb/bbstu/m3.gif" width="60"/></a><br/>
+<a href="http://www.51hei.com/bbs/mcu-cortexm3-1.html" target="_blank">Cortex M3/M0/M4</a></td>
+<td align="center" bgcolor="#ffffff" width="11%"><a href="http://www.51hei.com/bbs/mcu-proteus-1.html" target="_blank"><img border="0" height="60" src="http://www.51hei.com/bb/bbstu/fangzhen.gif" width="60"/></a><br/>
+<a href="http://www.51hei.com/bbs/mcu-proteus-1.html" target="_blank">单片机仿真</a></td>
+<td align="center" bgcolor="#ffffff" width="11%"><a href="http://www.51hei.com/bbs/mcu-dianzidiy-1.html" target="_blank"><img border="0" src="http://www.51hei.com/bb/bbstu/dzdiy.png"/></a><br/>
+<a href="http://www.51hei.com/bbs/mcu-dianzidiy-1.html" target="_blank">电子DIY</a></td>
+<td align="center" bgcolor="#ffffff" width="11%"><a href="http://www.51hei.com/bbs/mcu-dianzi-1.html" target="_blank"><img border="0" height="60" src="http://www.51hei.com/bb/bbstu/moni.gif" width="60"/></a><br/>
+<a href="http://www.51hei.com/bbs/mcu-dianzi-1.html" target="_blank">模拟/数字电子</a></td>
+</tr>
+</tbody></table>
+<div class="newLeft">
+<div class="newLbox">
+<div class="title">
+<h2>MCU精彩技术资料</h2>
+</div>
+<div class="content">
+<li><a href="http://www.51hei.com/mcu/2660.html" target="_blank">点亮第一个发光二极管</a> </li>
+<li><a href="http://www.51hei.com/mcu/2667.html" target="_blank">键盘检测与应用</a> </li>
+<li><a href="http://www.51hei.com/mcu/2670.html" target="_blank">51单片机头文件reg51.h详解</a> </li>
+<li><a href="http://www.51hei.com/mcu/1474.html" target="_blank">LED流星雨灯51单片机程序</a> </li>
+<li><a href="http://www.51hei.com/mcu/1287.html" target="_blank">51单片机电子钟制作-升级版</a> </li>
+<li><a href="http://www.51hei.com/mcu/3972.html" target="_blank">光立方的制作</a> </li>
+<li><a href="http://www.51hei.com/mcu/4195.html" target="_blank">快速掌握一款新型MCU的方法</a> </li>
+<li><a href="http://www.51hei.com/mcu/58.html" target="_blank">单片机交通灯设计</a> </li>
+<li><a href="http://www.51hei.com/mcu/184.html" target="_blank">单片机红外遥控器设计</a> </li>
+<li><a href="http://www.51hei.com/mcu/42.html" target="_blank">AT89S51单片机实验板简介</a> </li>
+<li><a href="http://www.51hei.com/mcu/774.html" target="_blank">关于学习单片机的一些经验 </a> </li>
+<li><a href="http://www.51hei.com/mcu/2062.html" target="_blank">基于stc51单片机的光立方</a> </li>
+<li><a href="http://www.51hei.com/mcu/2077.html" target="_blank">51单片机LED流星雨拖尾灯</a> </li>
+<li><a href="http://www.51hei.com/bbs/dpj-19358-1.html" target="_blank">自行车风火轮制作</a> </li>
+<li><a href="http://www.51hei.com/mcu/754.html" target="_blank">如何严格1秒点亮一次</a> </li>
+</div>
+<div class="title">
+<h2>视频教程</h2></div>
+<div class="content">
+<li><a href="http://www.51hei.com/sp/4296.htm" target="_blank">视频教程1-1 学单片机预备知识</a></li>
+<li><a href="http://www.51hei.com/sp/4297.htm" target="_blank">视频教程1-2 学单片机预备知识</a></li>
+<li><a href="http://www.51hei.com/sp/4298.htm" target="_blank">视频教程1-3 学单片机预备知识</a></li>
+<li><a href="http://www.51hei.com/sp/4299.htm" target="_blank">视频教程2-1 单片机流水灯设计</a></li>
+<li><a href="http://www.51hei.com/sp/4300.htm" target="_blank">视频教程2-2 单片机流水灯设计</a></li>
+<li><a href="http://www.51hei.com/sp/4301.htm" target="_blank">视频教程3 单片机数码管显示的</a></li>
+<li><a href="http://www.51hei.com/sp/4302.htm" target="_blank">视频教程4 数码管的动态显示原</a></li>
+<li><a href="http://www.51hei.com/sp/4303.htm" target="_blank">视频教程5 单片机独立键盘、矩</a></li>
+<li><a href="http://www.51hei.com/sp/4304.htm" target="_blank">视频教程6 单片机AD、DA的工作</a></li>
+<li><a href="http://www.51hei.com/sp/4305.htm" target="_blank">视频教程7 单片机串口通讯原理</a></li>
+<li><a href="http://www.51hei.com/sp/4306.htm" target="_blank">视频教程8 单片机驱动1602液晶</a></li>
+<li><a href="http://www.51hei.com/sp/4307.htm" target="_blank">视频教程9 IIC总线AT24C02芯片</a></li>
+<li><a href="http://www.51hei.com/sp/4308.htm" target="_blank">视频教程10 利用51单片机的定</a></li>
+<li><a href="http://www.51hei.com/sp/4309.htm" target="_blank">视频教程11 用DS12C887时钟芯</a></li>
+</div>
+<div class="title">
+<h2>单片机设计实例</h2></div>
+<div class="content">
+
+
+内容待添加
+
+</div>
+<div class="title">
+<h2>常用芯片资料</h2></div>
+<div class="content">
+<li><a href="http://www.51hei.com/chip/355.html" target="_blank">单片机8031,8051管脚图引脚功</a> </li>
+<li><a href="http://www.51hei.com/chip/353.html" target="_blank">三极管9014管脚图参数与应用</a> </li>
+<li><a href="http://www.51hei.com/chip/167.html" target="_blank">74系列芯片引脚图资料大全</a> </li>
+<li><a href="http://www.51hei.com/chip/351.html" target="_blank">cd4046引脚图及分频倍频计数</a> </li>
+<li><a href="http://www.51hei.com/chip/350.html" target="_blank">光耦pc817应用电路与pdf中文</a> </li>
+<li><a href="http://www.51hei.com/chip/173.html" target="_blank">USB引脚图与引脚定义</a> </li>
+<li><a href="http://www.51hei.com/chip/193.html" target="_blank">使用万用表的技巧</a> </li>
+<li><a href="http://www.51hei.com/chip/3978.html" target="_blank">74HC595引脚图时序图工作原理</a> </li>
+<li><a href="http://www.51hei.com/chip/158.html" target="_blank">MAX232引脚图及RS232引脚定义</a> </li>
+<li><a href="http://www.51hei.com/chip/179.html" target="_blank">二极管的种类 </a> </li>
+</div>
+<div class="title">
+<h2>技术交流QQ群</h2></div>
+<div class="content">
+本站将引导您一步一步的走进单片机世界 ……本站QQ群:582644647 欢迎加入共同学习.</div>
+</div></div>
+<div class="newRight">
+<div class="huqinsd">
+<div id="MainPromotionBanner">
+<div id="SlidePlayer">
+<ul class="Slides">
+<li style=""><a href="http://www.51hei.com/" target="_blank"><img src="hugab/fuwu.jpg"/> </a></li>
+<li style=""><a href="http://www.51hei.com/" target="_blank"><img src="hugab/fuwu.jpg"/></a> </li>
+<li style=""><a href="http://www.51hei.com/" target="_blank"><img src="hugab/x03.gif"/></a> </li></ul><ul class="SlideTriggers"><li class="Current">1</li><li>2</li><li>3</li></ul></div></div>
+<script type="text/javascript">
+
+TB.widget.SimpleSlide.decoration('SlidePlayer', {eventType:'mouse', effect:'scroll'});
+
+</script>
+<table border="0" cellpadding="0" cellspacing="0" width="500">
+<tbody>
+<tr>
+<th colspan="3">本站热门点击</th>
+</tr>
+<tr>
+<td bgcolor="#f5f5f5" width="33%">1.<a href="http://www.51hei.com/" target="_blank">51Hei单片机知识</a></td>
+<td bgcolor="#f5f5f5" width="33%">2.<a href="http://www.51hei.com/sp" target="_blank">51单片机-源码</a></td>
+<td bgcolor="#f5f5f5">3.<a href="http://www.51hei.com/mcuteach/252.html" target="_blank">单片机教程（通俗易懂）</a></td></tr>
+<tr>
+<td bgcolor="#eaeaea">4.<a href="http://www.51hei.com/mcuteach/150.html" target="_blank">单片机C语言教程</a></td>
+<td bgcolor="#eaeaea">5.<a href="http://www.51hei.com/keil下载.html" target="_blank">Keil下载(集成开发环境)</a></td>
+<td bgcolor="#eaeaea">6.<a href="http://www.51hei.com/mcu/keil教程.html" target="_blank">Keil教程</a></td></tr>
+<tr class="lastTr">
+<td bgcolor="#f5f5f5">7.<a href="http://www.51hei.com/sp/" target="_blank">单片机视频教程</a></td>
+<td bgcolor="#f5f5f5">8.<a href="http://www.51hei.com/bbs/" target="_blank">单片机论坛</a></td>
+<td bgcolor="#f5f5f5" width="33%">9.<a href="http://www.51hei.com/bbs/dpj-897-1.html" target="_blank">单片机小软件下载</a></td></tr></tbody></table></div>
+<div class="itel">
+<ul>
+<li><a href="#" target="_blank"><font color="#ec6200">开源</font></a></li>
+<li><a href="#" target="_blank"><font color="#ec6200">代码</font></a></li>
+<li><a href="#" target="_blank"><font color="#ec6200">技术</font></a></li>
+<li><a href="#" target="_blank"><font color="#ec6200">研究</font></a></li>
+</ul>
+<div><div align="center"><a href="tencent://message/?uin=125739409&amp;Site=51hei%E5%8D%95%E7%89%87%E6%9C%BA&amp;Menu=yes"><img border="0" height="81" src="http://www.51hei.com/hugab/img/qq2.png" width="166"/></a></div>
+</div></div>
+<div class="clear"></div>
+<div class="danjiaocheng">
+<div class="hotTitle"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td colspan="3">
+<table border="0" cellpadding="0" cellspacing="0" style="margin-bottom:0px; margin-top:0px;" width="100%">
+<tbody><tr>
+<td background="http://www.51hei.com/hugab/img/fxtt.png" style="background-repeat:no-repeat;" width="326">
+			 
+			<b>
+<a href="http://www.51hei.com/mcuteach/252.html" target="_blank">
+			单片机教程</a></b>        (有史以来,最简单易懂的单片机教程) 
+			</td>
+<td>
+<!-- Baidu Button BEGIN -->
+<div class="bdshare_t bds_tools get-codes-bdshare" id="bdshare">
+<span class="bds_more">分享到:</span>
+<a class="bds_qzone" href="#" title="分享到QQ空间">QQ空间</a>
+<a class="bds_qq" href="#" title="分享到QQ收藏">QQ收藏</a>
+<a class="bds_tsina" href="#" title="分享到新浪微博">新浪微博</a>
+<a class="bds_renren" href="#" title="分享到人人网">人人网</a>
+<a class="shareCount" href="#"></a>
+</div>
+<!-- Baidu Button END --><div class="clear"></div>
+</td>
+</tr>
+</tbody></table>
+</td></tr>
+<tr>
+<td width="33%">
+<ul>
+<li><a href="http://www.51hei.com/mcuteach/252.html" target="_blank">51单片机教程（目录）</a><span>热</span></li>
+<li><a href="http://www.51hei.com/mcuteach/249.html" target="_blank">3课:存储器结构</a></li>
+<li><a href="http://www.51hei.com/mcuteach/246.html" target="_blank">6课:并行口结构 </a></li>
+<li><a href="http://www.51hei.com/mcuteach/243.html" target="_blank">9课:数据传递类指令 </a></li>
+<li><a href="http://www.51hei.com/mcuteach/240.html" target="_blank">12课:逻辑运算类指令 </a></li>
+<li><a href="http://www.51hei.com/mcuteach/237.html" target="_blank">15课:位操作指令 </a></li>
+<li>
+<a href="http://www.51hei.com/mcuteach/234.html" target="_blank">18课:中断系统 </a></li>
+<li>
+<a href="http://www.51hei.com/mcuteach/231.html" target="_blank">21课:串行口介绍 </a></li>
+<li>
+<a href="http://www.51hei.com/mcuteach/228.html" target="_blank">24课:动态扫描显示接口电路及程序 </a></li>
+<li>
+<a href="http://www.51hei.com/mcuteach/225.html" target="_blank">27课:关于单片机的一些基本概念 </a></li>
+</ul></td>
+<td width="33%">
+<ul>
+<li><a href="http://www.51hei.com/mcuteach/251.html" target="_blank">1课:单片机简叙</a><span>热</span></li>
+<li><a href="http://www.51hei.com/mcuteach/248.html" target="_blank">4课:第一个单片机小程序 </a></li>
+<li><a href="http://www.51hei.com/mcuteach/245.html" target="_blank">7课:特殊功能寄存器 </a></li>
+<li><a href="http://www.51hei.com/mcuteach/242.html" target="_blank">10课:数据传送类指令</a></li>
+<li><a href="http://www.51hei.com/mcuteach/239.html" target="_blank">13课:逻辑与或异或指令祥解 </a></li>
+<li><a href="http://www.51hei.com/mcuteach/236.html" target="_blank">16课:定时器与计数器</a></li>
+<li>
+<a href="http://www.51hei.com/mcuteach/233.html" target="_blank">19课:定时器、中断试验 </a></li>
+<li>
+<a href="http://www.51hei.com/mcuteach/230.html" target="_blank">22课:单片机串行口通信程序设计 </a></li>
+<li>
+<a href="http://www.51hei.com/mcuteach/227.html" target="_blank">25课:键盘接口程序设计 </a></li>
+<li>
+<a href="http://www.51hei.com/mcuteach/224.html" target="_blank">28课:音乐程序设计 </a></li>
+</ul></td>
+<td class="lastTd" width="33%">
+<ul>
+<li><a href="http://www.51hei.com/mcuteach/250.html" target="_blank">2课:单片机引脚介绍</a> <span>热</span> </li>
+<li><a href="http://www.51hei.com/mcuteach/247.html" target="_blank">5课:延时程序分析</a></li>
+<li><a href="http://www.51hei.com/mcuteach/244.html" target="_blank">8课:寻址方式与指令系统 </a></li>
+<li><a href="http://www.51hei.com/mcuteach/241.html" target="_blank">11课:算术运算指令 </a></li>
+<li><a href="http://www.51hei.com/mcuteach/238.html" target="_blank">14课:条件转移指令</a></li>
+<li><a href="http://www.51hei.com/mcuteach/235.html" target="_blank">17课:定时器/计数器的方式 </a></li>
+<li>
+<a href="http://www.51hei.com/mcuteach/232.html" target="_blank">20课:定时/计数器实验 </a></li>
+<li>
+<a href="http://www.51hei.com/mcuteach/229.html" target="_blank">23课:LED数码管静态显示接口与编</a></li>
+<li>
+<a href="http://www.51hei.com/mcuteach/226.html" target="_blank">26课:矩阵式键盘接口技术及程序设计 </a></li>
+<li>
+<a href="http://www.51hei.com/mcuteach/1312.html" target="_blank">附录:51单片机指令表 </a></li>
+</ul>
+</td></tr></tbody></table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<th colspan="3"><a href="http://www.51hei.com/mcuteach/150.html" target="_blank">单片机C语言教程</a></th></tr>
+<tr>
+<td width="33%">
+<ul>
+<li><a href="http://www.51hei.com/mcuteach/150.html" target="_blank">单片机c语言教程概述 </a></li>
+<li><a href="http://www.51hei.com/mcuteach/146.html" target="_blank">第三课 C51数据类型</a></li>
+<li><a href="http://www.51hei.com/mcuteach/143.html" target="_blank">第六课 C51运算符和表达式</a></li>
+<li><a href="http://www.51hei.com/mcuteach/140.html" target="_blank">第九课 C51运算符和表达式(指针和</a></li>
+<li><a href="http://www.51hei.com/mcuteach/137.html" target="_blank">第十二课 C51开关分支语句 </a></li>
+<li><a href="http://www.51hei.com/mcuteach/134.html" target="_blank">第十五课 C51数组的使用 </a></li>
+<li><a href="http://www.51hei.com/mcuteach/131.html" target="_blank">附录(运算符优先级和结合性等) </a></li>
+</ul></td>
+<td width="33%">
+<ul>
+<li><a href="http://www.51hei.com/mcuteach/149.html" target="_blank">第一课 建立你的第一个KeilC51项</a></li>
+<li><a href="http://www.51hei.com/mcuteach/145.html" target="_blank">第四课 C51常量 </a></li>
+<li><a href="http://www.51hei.com/mcuteach/142.html" target="_blank">第七课 运算符和表达式(关系运算 </a></li>
+<li><a href="http://www.51hei.com/mcuteach/139.html" target="_blank">第十课 C51表达式语句及仿真器</a></li>
+<li><a href="http://www.51hei.com/mcuteach/136.html" target="_blank">第十三课 C51循环语句</a></li>
+<li><a href="http://www.51hei.com/mcuteach/133.html" target="_blank">第十六课 C51指针的使用</a></li>
+<li> </li>
+</ul></td>
+<td class="lastTd" width="33%">
+<ul>
+<li><a href="http://www.51hei.com/mcuteach/148.html" target="_blank">第二课 C51HEX文件的生成和单片机 </a></li>
+<li><a href="http://www.51hei.com/mcuteach/144.html" target="_blank">第五课 C51变量 </a></li>
+<li><a href="http://www.51hei.com/mcuteach/141.html" target="_blank">第八课 运算符和表达式(位运算符</a></li>
+<li><a href="http://www.51hei.com/mcuteach/138.html" target="_blank">第十一课 C51复合语句和条件语句</a></li>
+<li><a href="http://www.51hei.com/mcuteach/135.html" target="_blank">第十四课 C51函数 </a></li>
+<li><a href="http://www.51hei.com/mcuteach/132.html" target="_blank">第十七课 C51结构、联合和枚举</a></li>
+<li> </li>
+</ul></td></tr></tbody></table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<th colspan="3"><strong>Keil教程及下载</strong></th>
+</tr>
+<tr>
+<td width="33%">
+<ul>
+<li><a href="http://www.51hei.com/keil下载.html" target="_blank">keil下载</a></li>
+<li><a href="http://www.51hei.com/mcuteach/276.html" target="_blank" title="Keil教程(1)">Keil教程(1)</a></li>
+<li><a href="http://www.51hei.com/mcuteach/273.html" target="_blank" title="Keil教程(4)">Keil教程(4)</a></li>
+</ul></td>
+<td width="33%">
+<ul>
+<li><a href="http://www.51hei.com/ziliao/keil/Keilshipin.rar" target="_blank">Keil经典视频教程</a></li>
+<li><a href="http://www.51hei.com/mcuteach/275.html" target="_blank" title="Keil教程(2)">Keil教程(2)</a></li>
+<li><a href="http://www.51hei.com/ziliao/keil/Keil C51编译器用户手册.rar" target="_blank">Keil   C51编译器用户手册.rar</a></li>
+</ul></td>
+<td class="lastTd" width="33%">
+<ul>
+<li><a href="http://www.51hei.com/mcu/keil教程.html" target="_blank">keil教程</a></li>
+<li><a href="http://www.51hei.com/mcuteach/274.html" target="_blank" title="Keil教程(3)">Keil教程(3)</a></li>
+<li><a href="http://www.51hei.com/ziliao/keil/Keil C51使用详解.rar" target="_blank">Keil C51使用详解.rar</a></li>
+</ul></td></tr></tbody></table></div>
+<table bgcolor="#bed8f1" border="0" cellpadding="0" cellspacing="1" style="margin-bottom: 10px;" width="100%">
+<tbody><tr>
+<td bgcolor="#ffffff" colspan="5" width="182"><div align="left"><b>
+<a href="http://www.51hei.com/bbs/mcu-2-1.html" target="_blank">
+				单片机diy制作</a> 
+				<a href="http://www.51hei.com/bbs/mcu-2-1.html" target="_blank">
+				更多……</a></b></div></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#ffffff" width="20%">
+<a href="http://www.51hei.com/bbs/dpj-19324-1.html" target="_blank">
+<img border="0" height="80" src="http://www.51hei.com/bb/suo/suo1.gif" width="95"/></a><br/>
+<a href="http://www.51hei.com/bbs/dpj-19324-1.html" target="_blank">单片机红外遥控万年历，带上位机、视频演示</a>　</td>
+<td align="center" bgcolor="#ffffff" width="20%">
+<a href="http://www.51hei.com/bbs/dpj-19370-1.html" target="_blank">
+<img border="0" height="80" src="http://www.51hei.com/bb/suo/suo2.gif" width="100"/></a><br/>
+<a href="http://www.51hei.com/bbs/dpj-19370-1.html" target="_blank">创意pov镜面旋转LED屏（含C源码、原理图）</a>　</td>
+<td align="center" bgcolor="#ffffff" width="20%">
+<a href="http://www.51hei.com/bbs/dpj-19044-1.html" target="_blank">
+<img border="0" height="80" src="http://www.51hei.com/bb/suo/suo3.gif" width="104"/></a><br/>
+<a href="http://www.51hei.com/bbs/dpj-19044-1.html" target="_blank">单片机+光立方制作完全资料(非常详细)</a>　</td>
+<td align="center" bgcolor="#ffffff" width="20%">
+<a href="http://www.51hei.com/bbs/dpj-19294-1.html" target="_blank">
+<img border="0" height="80" src="http://www.51hei.com/bb/suo/suo4.gif" width="106"/></a><br/>
+<a href="http://www.51hei.com/bbs/dpj-19294-1.html" target="_blank">自制FM 收音机，51单片机+TEA5767</a>　</td>
+<td align="center" bgcolor="#ffffff" width="20%">
+<a href="http://www.51hei.com/bbs/dpj-19310-1.html" target="_blank">
+<img border="0" height="80" src="http://www.51hei.com/bb/suo/suo5.gif" width="100"/></a><br/>
+<a href="http://www.51hei.com/bbs/dpj-19310-1.html" target="_blank">stc51单片机做的GPS定位及轨迹记录器</a>　</td>
+</tr>
+</tbody></table>
+<div class="sub_left">
+<div class="isbox">
+<h2>最新</h2>
+<ul class="list1 black ifqa">
+内容待添加
+ 　
+  
+  </ul></div></div>
+<div class="sub_right">
+<div class="hbox">
+<h3 class="ht3">编程器实验板制作</h3>
+<ul class="list1 black ifqa">
+<li> 学习单片机第一步就是要制作编程器不然什么也干不了这里介绍几种便于制作的编程器:</li>
+<li><a href="http://www.51hei.com/bianchengqi/AT89s51bianchengqi.htm" target="_blank"><font color="#ff0000">热：</font>AT89s51编程器制作方法
+</a> </li>
+<li><a href="http://www.51hei.com/mcu/585.html" target="_blank"><font color="#ff0000">热：</font>单片机USB-ISP下载线制作</a> </li>
+<li><a href="http://www.51hei.com/bbs/dpj-19046-1.html" target="_blank"><font color="#ff0000">热：</font>自制单片机开发板全过程(傻瓜式教程).pdf</a> </li>
+<li><a href="http://www.51hei.com/bianchengqi/89C51biancheng.htm" target="_blank"><font color="#ff0000">热：</font>AT89C51编程器制作方法</a> </li>
+<li><a href="http://www.51hei.com/mcu/582.html" target="_blank"><font color="#ff0000">热：</font>自制单片机实验板</a> </li>
+</ul></div></div>
+<div class="clear"></div>
+<div class="sub_left">
+<div class="newstab">
+<ul class="tab">
+<li class="l1" id="nt1" onmouseover="javascript:ShowLayers3(1,4);">学习心得 </li>
+<li class="l2" id="nt2" onmouseover="javascript:ShowLayers3(2,4);">C51 学习 </li>
+<li class="l2" id="nt3" onmouseover="javascript:ShowLayers3(3,4);">资料下载 </li>
+<li class="l2" id="nt4" onmouseover="javascript:ShowLayers3(4,4);">软件下载 </li></ul>
+<div class="c">
+<ul class="list3 black" id="news1">
+<li><a href="http://www.51hei.com/mcu/652.html" target="_blank">肺腑之言-写给喜欢单片机的初学者</a><span>(2012-11-22)</span> </li>
+<li><a href="http://www.51hei.com/mcu/770.html" target="_blank">我的经历:从一名产线工人到单片机工程师</a><span>(2012-11-22)</span> </li>
+<li><a href="http://www.51hei.com/mcu/678.html" target="_blank">详细介绍用51单片机解密任何红外遥控器</a><span>(2012-11-22)</span> </li>
+<li><a href="http://www.51hei.com/mcu/676.html" target="_blank">谈谈我学习单片机的经历</a><span>(2012-11-22)</span> </li>
+<li><a href="http://www.51hei.com/mcu/653.html" target="_blank">如何学习单片机-自学篇</a><span>(2012-11-22)</span> </li>
+<li><a href="http://www.51hei.com/mcu/1577.html" target="_blank">STM32单片机的学习经验</a><span>(2012-11-22)</span> </li>
+<li><a href="http://www.51hei.com/mcu/1381.html" target="_blank">分享一些FPGA学习的经验</a><span>(2012-11-22)</span> </li>
+<li><a href="http://www.51hei.com/mcu/1472.html" target="_blank">写给要接触单片机和刚接触单片机的人</a><span>(2012-11-22)</span> </li></ul>
+<ul class="list3 black" id="news2" style="DISPLAY: none">
+<li><a href="http://www.51hei.com/ziliao/keil/Keilshipin.rar" target="_blank">Keil经典视频教程
+</a><span>(2010-02-23)</span> </li>
+<li><a href="http://www.51hei.com/mcu/keil教程.html" target="_blank">keil教程
+</a><span>(2012-01-15)</span> </li>
+<li><a href="http://www.51hei.com/ziliao/keil/keil%20c51教程.rar" target="_blank">keil c51教程.rar</a><span>(2012-01-15)</span> </li>
+<li><a href="http://www.51hei.com/ziliao/keil/Keil%20C51编译器用户手册.rar" target="_blank">Keil C51编译器用户手册.rar</a><span>(2012-01-15)</span> </li>
+<li><a href="http://www.51hei.com/ziliao/keil/51单片机Keil%20C语言入门教程.rar" target="_blank">Keil C语言入门教程.rar
+</a><span>(2010-01-26)</span> </li>
+<li><a href="http://www.51hei.com/ziliao/keil/Keil%20C51使用详解.rar" target="_blank">Keil C51使用详解.rar</a><span>(2012-01-15)</span> </li>
+<li><a href="http://www.51hei.com/ziliao/keil/51单片机C语言编程手册.rar" target="_blank">51单片机C语言编程手册.rar</a><span>(2010-03-26)</span> </li>
+<li><a href="http://www.51hei.com/ziliao/keil/30章Keil%20C51入门教程.rar" target="_blank">30章Keil C51入门教程.rar</a><span>(2010-01-26)</span> </li></ul>
+<ul class="list3 black" id="news3" style="DISPLAY: none">
+<li><a href="http://www.51hei.com/ziliao/tec/单片机(入门篇).rar" target="_blank">51MCU(入门篇).rar</a><span>(2012-11-19)</span> </li>
+<li><a href="http://www.51hei.com/ziliao/tec/单片机(提高篇).rar" target="_blank">51MCU(提高篇).rar</a><span>(2012-11-08)</span> </li>
+<li><a href="http://www.51hei.com/ziliao/tec/单片机指令系统分析.rar" target="_blank">单片机指令系统分析.rar</a><span>(2012-06-26)</span> </li>
+<li><a href="http://www.51hei.com/ziliao/tec/单片机自学教程.rar" target="_blank">单片机自学教程.rar</a><span>(2012-06-13)</span> </li>
+<li><a href="http://www.51hei.com/ziliao/tec/单片机全方位教程.rar" target="_blank">单片机全方位教程.rar
+</a><span>(2012-05-24)</span> </li>
+<li><a href="http://www.51hei.com/ziliao/tec/单片机原理与应用.rar" target="_blank">单片机原理与应用.rar
+</a><span>(2012-05-24)</span> </li>
+<li><a href="http://www.51hei.com/f/51单片机并行口及其应用.ppt" target="_blank">51单片机并行口及其应用.ppt
+</a><span>(2012-05-24)</span> </li>
+</ul>
+<ul class="list3 black" id="news4" style="DISPLAY: none">
+<li><a href="http://www.51hei.com/ziliao/KeiluVision2.rar" target="_blank">keil uVision2英文版
+</a><span>(2012-09-28)</span> </li>
+<li><a href="http://www.51hei.com/ziliao/Keil中文版.rar" target="_blank">keil uVision2中文版
+</a><span>(2010-12-27)</span> </li>
+<li><a href="http://www.51hei.com/ziliao/file/串口调试助手.rar" target="_blank">串口调试助手</a><span>(2011-01-15)</span> </li>
+<li><a href="http://www.51hei.com/ziliao/file/单片机定时器软件.rar" target="_blank">单片机定时器初值计算软件</a><span>(2012-11-07)</span> </li>
+<li><a href="http://www.51hei.com/ziliao/file/串口通信波特率计算器.rar" target="_blank">串口通信波特率信计算器</a><span>(2010-10-12)</span> </li>
+<li><a href="http://www.51hei.com/ziliao/file/数码管段位设码程序.rar" target="_blank">数码管段位设码程序</a><span>(2010-06-13)</span> </li>
+<li><a href="http://www.51hei.com/f/字模工具PCtoLCD2002中文完美版.rar" target="_blank">字模工具PCtoLCD2002中文完美版</a><span>(2010-07-16)</span> </li>
+<li><a href="http://www.51hei.com/ziliao/file/单片机反编译软件.rar" target="_blank">单片机反编译软件</a><span>(2011-08-17)</span>
+</li></ul></div></div></div>
+<div class="clear"></div></div>
+<div class="clear"></div>
+<div class="flink">
+<ul class="tab">
+<li class="t1" id="ft1" onmouseover="javascript:ShowLayers4(1,1);">友情链接 </li>
+</ul>
+<div class="fc" id="f1">
+<table cellspacing="2" width="100%">
+<tbody><tr>
+<td nowrap="nowrap" width="12%"><a href="http://www.chinasmartgrid.com.cn/" id="link191" target="_blank">北极星智能电网</a></td><td nowrap="nowrap" width="12%"><a href="http://product.dzsc.com" id="link244" target="_blank">电子元器件</a></td><td nowrap="nowrap" width="12%"><a href="http://www.znczz.com" id="link183" target="_blank">智能车制作</a></td><td nowrap="nowrap" width="12%"><a href="http://www.diangon.com" id="link206" target="_blank">电工论坛</a></td><td nowrap="nowrap" width="12%"><a href="http://www.easiu.com/" id="link218" target="_blank">中国易修网</a></td><td nowrap="nowrap" width="12%"><a href="http://www.chinapower.com.cn/" id="link219" target="_blank">中国电力网</a></td><td nowrap="nowrap" width="12%"><a href="http://www.lcdhome.net/" id="link222" target="_blank">LCDHOME</a></td><td nowrap="nowrap" width="12%"><a href="http://www.chinafix.com/" id="link224" target="_blank">迅维网</a></td></tr>
+<tr>
+<td nowrap="nowrap" width="12%"><a href="http://www.hifime.net/" id="link226" target="_blank">HiFi音响论坛</a></td><td nowrap="nowrap" width="12%"><a href="http://www.jdwx.info/" id="link228" target="_blank">家电维修论坛</a></td><td nowrap="nowrap" width="12%"><a href="http://www.ymmfa.com/" id="link229" target="_blank">工控人家园</a></td><td nowrap="nowrap" width="12%"><a href="http://www.dgzj.com/" id="link231" target="_blank">电工之家</a></td><td nowrap="nowrap" width="12%"><a href="http://bbs.musicool.cn" id="link238" target="_blank">炫音音乐论坛</a></td><td nowrap="nowrap" width="12%"><a href="http://www.e-works.net.cn" id="link239" target="_blank">e-works</a></td><td nowrap="nowrap" width="12%"><a href="http://www.hqchip.com" id="link242" target="_blank">华强芯城</a></td><td nowrap="nowrap" width="12%"><a href="http://www.zwcad.com/" id="link243" target="_blank">中望CAD</a></td></tr>
+<tr>
+<td nowrap="nowrap" width="12%"><a href="http://bbs.125.la/" id="link246" target="_blank">精易e语言论坛</a></td><td nowrap="nowrap" width="12%"><a href="http://www.crystalradio.cn" id="link237" target="_blank">矿石收音机</a></td><td nowrap="nowrap" width="12%"><a href="http://www.shoudian.org/" id="link236" target="_blank">手电大家谈</a></td><td nowrap="nowrap" width="12%"><a href="http://www.mfcad.com" id="link240" target="_blank">沐风网</a></td><td nowrap="nowrap" width="12%"><a href="http://www.51hei.com/plus/link/reg" target="_blank" title="点击申请">您的位置</a></td><td nowrap="nowrap" width="12%"><a href="http://www.51hei.com/plus/link/reg" target="_blank" title="点击申请">您的位置</a></td><td nowrap="nowrap" width="12%"><a href="http://www.51hei.com/plus/link/reg" target="_blank" title="点击申请">您的位置</a></td><td nowrap="nowrap" width="12%"><a href="http://www.51hei.com/plus/link/reg" target="_blank" title="点击申请">您的位置</a></td></tr>
+</tbody></table>
+</div>
+</div>
+<script>
+
+  //连续滚动
+
+function AutoScroll(obj) {   
+
+            $(obj).find("ul:first").animate({   
+
+                marginTop:"-24px"  
+
+            }, 500, function() {   
+
+                $(this).css({marginTop:"0px"}).find("li:first").appendTo(this);   
+
+            }); 
+
+        }   
+
+        $(document).ready(function() {   
+
+            t = setInterval('AutoScroll("#scrollDiv")', 1500);
+
+        });
+
+		$("#scrollDiv").mouseover(function(){ clearInterval(t) }).mouseout(function(){ t = setInterval('AutoScroll("#scrollDiv")', 1500); });
+
+  </script>
+<div class="footer">
+<div class="logo_bottom"><a href="http://www.51hei.com/"><img alt="单片机教程网" border="0" height="93" src="hugab/logo_bottom.gif" width="239"/></a></div>
+<div class="copyright"><a href="http://www.51hei.com/">本站首页</a> | 
+	<a href="http://www.51hei.com/about.htm" target="_blank">关于本站</a>| <a href="http://www.51hei.com/lianxi.htm" target="_blank">联系我们</a> | <a href="http://www.51hei.com/copy.htm" target="_blank">版权声明</a> | <a href="http://www.51hei.com/sitemap.htm" target="_blank">网站地图</a><br/>
+地址:湖南省常德市鼎城区金霞大道106号 手机：15173607302 E m a i l:hkccd#QQ-com(自行替换)
+<br/>
+QQ群:582644647 <a href="//shang.qq.com/wpa/qunwpa?idkey=63aacbd543e8f6015a3c6ad737529c0171e8f0fb1cdb06a175ee4e9e2e7b5031" target="_blank"><img alt="51黑电子论坛单片机." border="0" src="//pub.idqqimg.com/wpa/images/group.png" title="51黑电子论坛单片机."/></a> 联系QQ:125739409   沪ICP备14001068号-1<script src="/JS/tj.js"></script>
+</div>
+</div>
+<script src="http://bdimg.share.baidu.com/static/js/logger.js?cdnversion=441398"></script></div>
+<!-- WPA Button Begin -->
+<script src="hugab/wpa.js" type="text/javascript"></script>
+<!-- WPA Button END -->
+<script>function Show(n,m){ 	$(".cc").hide();	$(".menu li").attr("class","l2");	$("#tt"+n).attr("class","l1");	$("#c"+m).show();}function ShowLayers(n,m){  for(i=1;i<=m;i++) {  eval("document.getElementById('title"+i+"').className=\"li2\";");  eval("document.getElementById('content"+i+"')").style.display="none"; }  eval("document.getElementById('title"+n+"').className=\"li1\";");  eval("document.getElementById('content"+n+"')").style.display="";}function ShowLayers2(n,m){  for(i=1;i<=m;i++) {  eval("document.getElementById('t"+i+"').className=\"t2\";");  eval("document.getElementById('w"+i+"')").style.display="none"; }  eval("document.getElementById('t"+n+"').className=\"t1\";");  eval("document.getElementById('w"+n+"')").style.display="";}function ShowLayers3(n,m){  for(i=1;i<=m;i++) {  eval("document.getElementById('nt"+i+"').className=\"l2\";");  eval("document.getElementById('news"+i+"')").style.display="none"; }  eval("document.getElementById('nt"+n+"').className=\"l1\";");  eval("document.getElementById('news"+n+"')").style.display="";}function ShowLayers4(n,m){  for(i=1;i<=m;i++) {  eval("document.getElementById('ft"+i+"').className=\"t2\";");  eval("document.getElementById('f"+i+"')").style.display="none"; }  eval("document.getElementById('ft"+n+"').className=\"t1\";");  eval("document.getElementById('f"+n+"')").style.display="";}function ShowLayers5(n,m){  for(i=1;i<=m;i++) {  eval("document.getElementById('m"+i+"').className=\"l2\";");  eval("document.getElementById('c"+i+"')").style.display="none"; }  eval("document.getElementById('m"+n+"').className=\"l1\";");  eval("document.getElementById('c"+n+"')").style.display="";}//滚动链接function ShowLayers(n,m){  for(i=1;i<=m;i++) {  eval("document.getElementById('title"+i+"').className=\"li2\";");  eval("document.getElementById('content"+i+"')").style.display="none"; }  eval("document.getElementById('title"+n+"').className=\"li1\";");  eval("document.getElementById('content"+n+"')").style.display="";}function ShowLayers2(n,m){  for(i=1;i<=m;i++) {  eval("document.getElementById('t"+i+"').className=\"t2\";");  eval("document.getElementById('w"+i+"')").style.display="none"; }  eval("document.getElementById('t"+n+"').className=\"t1\";");  eval("document.getElementById('w"+n+"')").style.display="";}function ShowLayers3(n,m){  for(i=1;i<=m;i++) {  eval("document.getElementById('nt"+i+"').className=\"l2\";");  eval("document.getElementById('news"+i+"')").style.display="none"; }  eval("document.getElementById('nt"+n+"').className=\"l1\";");  eval("document.getElementById('news"+n+"')").style.display="";}function ShowLayers4(n,m){  for(i=1;i<=m;i++) {  eval("document.getElementById('ft"+i+"').className=\"t2\";");  eval("document.getElementById('f"+i+"')").style.display="none"; }  eval("document.getElementById('ft"+n+"').className=\"t1\";");  eval("document.getElementById('f"+n+"')").style.display="";}function ShowLayers5(n,m){  for(i=1;i<=m;i++) {  eval("document.getElementById('m"+i+"').className=\"l2\";");  eval("document.getElementById('c"+i+"')").style.display="none"; }  eval("document.getElementById('m"+n+"').className=\"l1\";");  eval("document.getElementById('c"+n+"')").style.display="";}marque(800,30,"icefable1","icefable2")//320是滚动的宽度。30是一次滚动的高度，也就是行高var scrollElemh;var stopscrollh;var stoptimeh;var preToph;var leftElemh;var currentToph;var marqueesHeighth;function marque(width,height,marqueName,marqueCName){	try{	  marqueesHeighth = height;	  stopscrollh     = false;	  scrollElemh = document.getElementById(marqueName);	  with(scrollElemh){		style.width     = width;		style.height    = marqueesHeighth;		style.overflow  = 'hidden';		noWrap          = true;	  }	  scrollElemh.onmouseover = new Function('stopscrollh = true');	  scrollElemh.onmouseout  = new Function('stopscrollh = false');	  preToph     = 0; 	  currentToph = 0; 	  stoptimeh   = 0;	  leftElemh = document.getElementById(marqueCName);	  scrollElemh.appendChild(leftElemh.cloneNode(true));		  	  init_srolltexth();	}catch(e) {}}function init_srolltexth(){  scrollElemh.scrollTop = 0;  setInterval('scrollUph()', 20);}function scrollUph(){  if(stopscrollh) return;  currentToph += 1;  if(currentToph == marqueesHeighth+1) {    stoptimeh += 1;    currentToph -= 1;    if(stoptimeh == (marqueesHeighth)*3) {//停顿时间      currentToph = 0;      stoptimeh = 0;    }  }else{    preToph = scrollElemh.scrollTop;    scrollElemh.scrollTop += 1;    if(preToph == scrollElemh.scrollTop){      scrollElemh.scrollTop = marqueesHeighth;      scrollElemh.scrollTop += 1;    }  }}//搜搜框默认文字$(".headerSearch_input").click(function(){if($(this).val()=="输入国家名称，可以使用拼音…")$(this).val("");}).mouseout(function(){tt = $(this).val();$(this).val("");$(this).val(tt);}); </script>
+<script data="type=tools&amp;uid=451164" id="bdshare_js" src="http://bdimg.share.baidu.com/static/js/bds_s_v2.js?cdnversion=441398" type="text/javascript"></script>
+<script type="text/javascript">
+document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000);
+</script>
+</body></html>

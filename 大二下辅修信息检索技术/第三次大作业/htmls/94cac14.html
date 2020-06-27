@@ -1,0 +1,932 @@
+<html><head>
+<title>电子发烧友直播_发烧友课堂_全国最好的电子工程师在线直播平台</title>
+<meta content="webkit|ie-comp|ie-stand" name="renderer"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="电子发烧友直播,发烧友课堂,在线直播,电子工程师,电子技术直播,专家直播,网络直播,在线培圳,在线学习,技术培训,在线教育,在线课堂,名师讲堂,视频课程" name="keywords"/>
+<meta content="电子发烧友直播是电子发烧友网旗下电子技术在线直播平台，依托电子发烧友网200万会员，汇聚大量原厂专家、技术大牛，企业高管开展在线技术直播，直播技术领域涵盖嵌入式、电源技术、测试测量等，应用领域涵盖物联网、人工智能、汽车电子、智能家居等领域，电子工程师及行业人士可通过直播实现与专家零距离沟通，是您可信赖的电子行业直播学习平台" name="description"/>
+<link href="/Public/pc/live/css/index15.css" rel="stylesheet" type="text/css"/>
+<link href="/Public/mobile/iconfont/iconfont.css" rel="stylesheet" type="text/css"/>
+<link href="/Public/pc/live/css/publicTop.css" rel="stylesheet" type="text/css"/>
+<link href="/Public/mobile/js/layer_mobile/need/layer.css" rel="stylesheet" type="text/css"/>
+<!--*公共head内容 -->
+<meta charset="utf-8"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="webkit" name="renderer"/><!--强制360使用极速模式-->
+<meta content="pc" name="applicable-device"/>
+<script src="//hm.baidu.com/hm.js?e1444aaa50dfc5522a254600b5e930b0"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script async="" src="//www.elecfans.com/static/vendor/sa-sdk/1.14.9/sensorsdata.min.js"></script><script src="/Public/pc/js/jquery-1.11.3.min.js"></script>
+<!--注意：html5.js必须放在header中，否则ie中无法生效,selectivizr-min.js依赖于jquery-->
+<!--[if lt IE 9]>
+<script src="/Public/pc/js/html5.min.js"></script>
+<script src="/Public/pc/js/selectivizr-min.js"></script>
+<![endif]-->
+<link href="http://www.elecfans.com/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<link href="/Public/pc/css/ui-dialog.css" rel="stylesheet"/>
+<link href="/Public/pc/css/common.css?t=20181210" rel="stylesheet"/>
+<!--#公共head内容-->
+<script type="text/javascript">
+  /**
+   * 神策统计
+   */
+  ;(function(para) {
+    var p = para.sdk_url, n = para.name, w = window, d = document, s = 'script',x = null,y = null;
+    if(typeof(w['sensorsDataAnalytic201505']) !== 'undefined') {
+        return false;
+    }
+    w['sensorsDataAnalytic201505'] = n;
+    w[n] = w[n] || function(a) {return function() {(w[n]._q = w[n]._q || []).push([a, arguments]);}};
+    var ifs = ['track','quick','register','registerPage','registerOnce','clearAllRegister','trackSignup', 'trackAbtest', 'setProfile','setOnceProfile','appendProfile', 'incrementProfile', 'deleteProfile', 'unsetProfile', 'identify','login','logout','trackLink','clearAllRegister'];
+    for (var i = 0; i < ifs.length; i++) {
+      w[n][ifs[i]] = w[n].call(null, ifs[i]);
+    }
+    if (!w[n]._t) {
+      x = d.createElement(s), y = d.getElementsByTagName(s)[0];
+      x.async = 1;
+      x.src = p;
+      y.parentNode.insertBefore(x, y);
+      w[n].para = para;
+    }
+  })({
+        sdk_url: '//www.elecfans.com/static/vendor/sa-sdk/1.14.9/sensorsdata.min.js',
+        name: 'sensors',
+        server_url: 'https://data.hqchip.com:4006/sa?project=production',
+        //heatmap_url神策分析中点击分析及触达分析功能代码，代码生成工具会自动生成。如果神策代码中 `sensorsdata.min.js` 版本是 1.9.1 及以上版本，这个参数必须配置，低于此版本不需要配置。
+        heatmap_url: "//www.elecfans.com/static/vendor/sa-sdk/1.14.9/heatmap.min.js",
+        //web_url 神策分析中点击分析及触达分析功能会用到此地址，代码生成工具会自动生成。如果神策后台版本及 `sensorsdata.min.js` 均是 1.10 及以上版本，这个参数不需要配置。
+        // web_url:"神策分析后台地址",
+        show_log: false,
+        // ie10以下用默认方式，如果用ajax会报错
+        // send_type: ~navigator.userAgent.search(/msie(\s*)?(6|7|8|9)/i) ? '' : 'ajax',
+        heatmap: {
+           //是否开启点击图，默认 default 表示开启，自动采集 $WebClick 事件，可以设置 'not_collect' 表示关闭
+           //需要 JSSDK 版本号大于 1.7
+           clickmap:'default',
+           //是否开启触达注意力图，默认 default 表示开启，自动采集 $WebStay 事件，可以设置 'not_collect' 表示关闭
+           //需要 JSSDK 版本号大于 1.9.1
+           scroll_notice_map:'default'
+        }
+      });
+    // 注册公共属性
+    sensors.registerPage({
+      site_domain: document.domain,
+      from_channel: "发烧友学院"
+    });
+    // 神策
+    if (0) {
+        sensors.login();
+    }
+    sensors.quick('autoTrack');
+</script>
+<style type="text/css">
+            .ui-dialog{
+                border: none;
+            }
+            .ui-dialog-header{
+                background: #fff;
+                border: none;
+                border-top-left-radius: 6px;
+                border-top-right-radius: 6px;
+            }
+            .ui-dialog-title{
+                display: none;
+            }
+        </style>
+<link href="http://t.elecfans.com/Public/mobile/js/layer_mobile/need/layer.css" id="layermcss" rel="styleSheet" type="text/css"/><link href="http://www.elecfans.com/static/kf/css/swiper.min.css" rel="stylesheet" type="text/css"/></head>
+<body style="">
+<!--页头      #############################################################-->
+<link href="https://passport.elecfans.com/public/pc/css/sso.dialogPassport.css" rel="stylesheet"/>
+<div class="live-top">
+<div class="live-header clearfix">
+<div class="top-left lf">
+<a href="/live">
+<img src="/Public/pc/live/img/u4.png" style="height: 38px"/>
+<span>直播</span>
+</a>
+</div>
+<div class="top-right lr">
+<a class="active" href="/live">
+<i class="iconfont icon-live-shouye"></i>
+<span>直播首页</span>
+</a>
+<a class="" href="/live/allactivities/">
+<i class="iconfont icon-zhibo1"></i>
+<span>全部直播</span>
+</a>
+<a class="" href="/live/topic/">
+<i class="iconfont icon-zhuanti"></i>
+<span>精彩专题</span>
+</a>
+<a href="/">
+<i class="iconfont icon-kecheng"></i>
+<span>学院课程</span>
+</a>
+<a class="origin-item" href="https://data.hqchip.com:4006/t/Xka" target="_blank">原厂入驻<i class="hot">New</i></a>
+<a class="live-login" href="http://t.elecfans.com/passport/index.html">
+<!--未登录-->
+<i class="iconfont icon-siji"></i>
+<span>我的直播</span>
+</a> </div>
+</div>
+</div>
+<script>
+        (function(){
+            /*
+             * 插入单点登录JS
+             */
+            var setHost ='https://passport.elecfans.com'; //设置域名
+            var script = document.createElement('script');
+            script.type = 'text/javascript';
+            script.src = setHost + '/public/pc/js/t.passport.js';
+            script.setAttribute("id", "sso_script");
+            script.setAttribute("data-ssoSite", setHost);
+            script.setAttribute("data-ssoReferer", encodeURIComponent(location.href));
+            script.setAttribute("data-ssoSiteid", "7");
+            var body = document.getElementsByTagName("body").item(0);
+            body.appendChild(script);
+        })();
+    </script><script data-ssoreferer="http%3A%2F%2Ft.elecfans.com%2Flive" data-ssosite="https://passport.elecfans.com" data-ssositeid="7" id="sso_script" src="https://passport.elecfans.com/public/pc/js/t.passport.js" type="text/javascript"></script>
+<!--页头 end#############################################################-->
+<div class="banner" id="slid_banner">
+<ul class="banner_img_list banner-list">
+<li class="nowImg" style='background-image: url("/Public/Upload/ComImg/20200415/5e96a65f94836.png"); z-index: 2;'>
+<a class="apply-prj" href="http://z.elecfans.com/320.html?elecfans_trackid=xybanner" target="_blank"></a>
+</li><li style="background-image: url(//file.elecfans.com/web1/M00/B3/65/o4YBAF4hKfqANtGFAAJBLVFKn9E747.jpg);">
+<a class="apply-prj" href="http://t.elecfans.com/topic/295.html" target="_blank"></a>
+</li><li style="background-image: url(/Public/Upload/ComImg/20200423/5ea14b1a35807.png);">
+<a class="apply-prj" href="http://t.elecfans.com/train/301.html?elecfans_trackid=xybanner" target="_blank"></a>
+</li><li style="background-image: url(/Public/Upload/ComImg/20200330/5e81c3c24a3d2.png);">
+<a class="apply-prj" href="http://z.elecfans.com/315.html?elecfans_trackid=xueyuan_home_banner" target="_blank"></a>
+</li><li style="background-image: url(/Public/Upload/ComImg/20200410/5e90386931007.png);">
+<a class="apply-prj" href="http://t.elecfans.com/train/303.html" target="_blank"></a>
+</li><li style="background-image: url(/Public/Upload/ComImg/20200427/5ea64d8bed44e.png);">
+<a class="apply-prj" href="http://z.elecfans.com/322.html" target="_blank"></a>
+</li> </ul>
+<!--<div class="wrapper">
+                    <a href="javascript:;" rel="nofollow" class="slid_control slid_prev"></a>
+                    <a href="javascript:;" rel="nofollow" class="slid_control slid_next"></a>
+                </div>-->
+<p><span class="now"></span><span></span><span></span><span></span><span></span><span></span></p></div> <div class="index-main clearfix">
+<div class="lf main-left">
+<article class="pb48">
+<!--   <section class="bg_part1" style="font-size: 0px">
+                        <a href="http://t.elecfans.com/live/teacherapply.html"><img src="/Public/pc/live/img/index_bg_01.jpg" /></a>
+                    </section>-->
+<section class="live-part" id="livePartTwo">
+<div class="live-list" data-nextp="2" id="indexLoad">
+<li class="live-column">
+<div class="fixclear">
+<a href="http://t.elecfans.com/live/1200.html">
+<div class="list-people lf">
+<img src="//file.elecfans.com/web1/M00/B8/8C/pIYBAF5zFkGARN-eAABkb8ouTrQ830.png"/>
+</div>
+</a>
+<div class="live-column-text lf">
+<a href="http://t.elecfans.com/live/1200.html">
+<div class="live-column-tit"><span>LabVIEW通用视觉软件详细讲解</span></div>
+<div class="live-author-detail fixclear">
+<div class="author-name lf">莱伯维尔智能测控</div>
+<div class="through-line lf"></div>
+<div class="author-company lf">苏州莱伯维尔智能科技有限公司</div>
+<div class="author-lever lf">技术负责人</div>
+</div>
+</a>
+<div class="live-list-detail fixclear">
+<div class="square lf">技术开发</div>
+<div class="square lf">3天后</div> <div class="through-line lf"></div>
+<div class="lf ml10 live-column-apply" style="margin-left: 0px;">
+                                                                                                        4215次浏览</div>
+<div class="through-line lf"></div>
+<div class="lf ml10 live-column-apply" id="notify_1200" onclick="book('1200')" style="cursor: pointer; color: red; margin-left: 0px;">开启提醒</div> <div class="free lr">免费</div>
+</div>
+</div>
+</div>
+</li><li class="live-column">
+<div class="fixclear">
+<a href="http://t.elecfans.com/live/1196.html">
+<div class="list-people lf">
+<img src="//file.elecfans.com/web1/M00/BB/30/o4YBAF6n0XqALp5NAAQurPPtKzY239.png"/>
+</div>
+</a>
+<div class="live-column-text lf">
+<a href="http://t.elecfans.com/live/1196.html">
+<div class="live-column-tit"><i class="start-logo">大咖秀</i><span>物联网HMI新技术应用和机遇</span></div>
+<div class="live-author-detail fixclear">
+<div class="author-name lf">陈之昀</div>
+<div class="through-line lf"></div>
+<div class="author-company lf">NDT</div>
+<div class="author-lever lf">CTO</div>
+</div>
+</a>
+<div class="live-list-detail fixclear">
+<div class="square lf">技术开发</div>
+<div class="square lf">4天后</div> <div class="through-line lf"></div>
+<div class="lf ml10 live-column-apply" style="margin-left: 0px;">
+                                                                                                        24次浏览</div>
+<div class="through-line lf"></div>
+<div class="lf ml10 live-column-apply" id="notify_1196" onclick="book('1196')" style="cursor: pointer; color: red; margin-left: 0px;">开启提醒</div> <div class="free lr">免费</div>
+</div>
+</div>
+</div>
+</li><li class="live-column">
+<div class="fixclear">
+<a href="http://t.elecfans.com/live/1201.html">
+<div class="list-people lf">
+<img src="//file.elecfans.com/web1/M00/A3/A9/pIYBAF1U0zeAOhijAAIp0qLwbR4711.jpg"/>
+</div>
+</a>
+<div class="live-column-text lf">
+<a href="http://t.elecfans.com/live/1201.html">
+<div class="live-column-tit"><span>硬件+工具+时序分析</span></div>
+<div class="live-author-detail fixclear">
+<div class="author-name lf">Mill</div>
+<div class="through-line lf"></div>
+<div class="author-company lf">MYMINIEYE</div>
+<div class="author-lever lf">COO</div>
+</div>
+</a>
+<div class="live-list-detail fixclear">
+<div class="square lf">技术开发</div>
+<div class="square lf">5天后</div> <div class="through-line lf"></div>
+<div class="lf ml10 live-column-apply" style="margin-left: 0px;">
+                                                                                                        4人已报名</div>
+<div class="through-line lf"></div>
+<div class="lf ml10 live-column-apply" id="notify_1201" onclick="book('1201')" style="cursor: pointer; color: red; margin-left: 0px;">开启提醒</div> <div class="free lr">免费</div>
+</div>
+</div>
+</div>
+</li><li class="live-column">
+<div class="fixclear">
+<a href="http://t.elecfans.com/live/1186.html">
+<div class="list-people lf">
+<img src="//file.elecfans.com/web1/M00/A3/A9/pIYBAF1U0uKAce74AAH6ORStN-8213.png"/>
+</div>
+</a>
+<div class="live-column-text lf">
+<a href="http://t.elecfans.com/live/1186.html">
+<div class="live-column-tit"><span>【第二期】TRIAC双向可控硅的设计与实践</span></div>
+<div class="live-author-detail fixclear">
+<div class="author-name lf">白纪龙</div>
+<div class="through-line lf"></div>
+<div class="author-company lf"></div>
+<div class="author-lever lf" style="margin-left: 0px;">资深工程师</div>
+</div>
+</a>
+<div class="live-list-detail fixclear">
+<div class="square lf">技术开发</div>
+<div class="square lf">12天后</div> <div class="square blue lf">精选推荐</div> <div class="through-line lf"></div>
+<div class="lf ml10 live-column-apply" style="margin-left: 0px;">
+                                                                                                        128人已报名</div>
+<div class="through-line lf"></div>
+<div class="lf ml10 live-column-apply" id="notify_1186" onclick="book('1186')" style="cursor: pointer; color: red; margin-left: 0px;">开启提醒</div> <div class="free lr">免费</div>
+</div>
+</div>
+</div>
+</li><li class="live-column">
+<div class="fixclear">
+<a href="http://t.elecfans.com/live/1187.html">
+<div class="list-people lf">
+<img src="//file.elecfans.com/web1/M00/A3/A9/pIYBAF1U0uKAce74AAH6ORStN-8213.png"/>
+</div>
+</a>
+<div class="live-column-text lf">
+<a href="http://t.elecfans.com/live/1187.html">
+<div class="live-column-tit"><span>【第三期】TRIAC实现恒功率控制的关键:过零检测</span></div>
+<div class="live-author-detail fixclear">
+<div class="author-name lf">白纪龙</div>
+<div class="through-line lf"></div>
+<div class="author-company lf"></div>
+<div class="author-lever lf" style="margin-left: 0px;">资深工程师</div>
+</div>
+</a>
+<div class="live-list-detail fixclear">
+<div class="square lf">技术开发</div>
+<div class="square lf">26天后</div> <div class="through-line lf"></div>
+<div class="lf ml10 live-column-apply" style="margin-left: 0px;">
+                                                                                                        34人已报名</div>
+<div class="through-line lf"></div>
+<div class="lf ml10 live-column-apply" id="notify_1187" onclick="book('1187')" style="cursor: pointer; color: red; margin-left: 0px;">开启提醒</div> <div class="free lr">免费</div>
+</div>
+</div>
+</div>
+</li><li class="live-column">
+<div class="fixclear">
+<a href="http://t.elecfans.com/live/1188.html">
+<div class="list-people lf">
+<img src="//file.elecfans.com/web1/M00/A3/A9/pIYBAF1U0uKAce74AAH6ORStN-8213.png"/>
+</div>
+</a>
+<div class="live-column-text lf">
+<a href="http://t.elecfans.com/live/1188.html">
+<div class="live-column-tit"><span>【第四期】TRIAC双向可控硅控制U马达+电热阻丝</span></div>
+<div class="live-author-detail fixclear">
+<div class="author-name lf">白纪龙</div>
+<div class="through-line lf"></div>
+<div class="author-company lf"></div>
+<div class="author-lever lf" style="margin-left: 0px;">资深工程师</div>
+</div>
+</a>
+<div class="live-list-detail fixclear">
+<div class="square lf">技术开发</div>
+<div class="square lf">40天后</div> <div class="through-line lf"></div>
+<div class="lf ml10 live-column-apply" style="margin-left: 0px;">
+                                                                                                        48人已报名</div>
+<div class="through-line lf"></div>
+<div class="lf ml10 live-column-apply" id="notify_1188" onclick="book('1188')" style="cursor: pointer; color: red; margin-left: 0px;">开启提醒</div> <div class="free lr">免费</div>
+</div>
+</div>
+</div>
+</li><li class="live-column">
+<div class="fixclear">
+<a href="http://t.elecfans.com/live/1071.html">
+<div class="list-people lf">
+<img src="//file.elecfans.com/web1/M00/A3/56/o4YBAF1U0ouATkuHAABhZJmiKiw811.png"/>
+</div>
+</a>
+<div class="live-column-text lf">
+<a href="http://t.elecfans.com/live/1071.html">
+<div class="live-column-tit"><span>慕尼黑上海电子展-视频采访直播间（智慧工厂、智慧生活、智慧出行）</span></div>
+<div class="live-author-detail fixclear">
+<div class="author-name lf">黄晶晶</div>
+<div class="through-line lf"></div>
+<div class="author-company lf">电子发烧友</div>
+<div class="author-lever lf">主编</div>
+</div>
+</a>
+<div class="live-list-detail fixclear">
+<div class="square lf">技术开发</div>
+<div class="square lf">55天后</div> <div class="through-line lf"></div>
+<div class="lf ml10 live-column-apply" style="margin-left: 0px;">
+                                                                                                        27706次浏览</div>
+<div class="through-line lf"></div>
+<div class="lf ml10 live-column-apply" id="notify_1071" onclick="book('1071')" style="cursor: pointer; color: red; margin-left: 0px;">开启提醒</div> <div class="free lr">免费</div>
+</div>
+</div>
+</div>
+</li><li class="live-column">
+<div class="fixclear">
+<a href="http://t.elecfans.com/live/1073.html">
+<div class="list-people lf">
+<img src="//file.elecfans.com/web1/M00/A3/A9/pIYBAF1U0seAJN9PAABL_ubpof0289.png"/>
+</div>
+</a>
+<div class="live-column-text lf">
+<a href="http://t.elecfans.com/live/1073.html">
+<div class="live-column-tit"><span>慕尼黑上海电子展-视频采访直播间（5G+、+AI、IoT+）</span></div>
+<div class="live-author-detail fixclear">
+<div class="author-name lf">章鹰</div>
+<div class="through-line lf"></div>
+<div class="author-company lf">电子发烧友</div>
+<div class="author-lever lf">执行副主编</div>
+</div>
+</a>
+<div class="live-list-detail fixclear">
+<div class="square lf">技术开发</div>
+<div class="square lf">55天后</div> <div class="through-line lf"></div>
+<div class="lf ml10 live-column-apply" style="margin-left: 0px;">
+                                                                                                        12262次浏览</div>
+<div class="through-line lf"></div>
+<div class="lf ml10 live-column-apply" id="notify_1073" onclick="book('1073')" style="cursor: pointer; color: red; margin-left: 0px;">开启提醒</div> <div class="free lr">免费</div>
+</div>
+</div>
+</div>
+</li><li class="live-column">
+<div class="fixclear">
+<a href="http://t.elecfans.com/live/1074.html">
+<div class="list-people lf">
+<img src="//file.elecfans.com/web1/M00/B2/97/o4YBAF4UA6eAJc0GAAByJzz9-_A827.png"/>
+</div>
+</a>
+<div class="live-column-text lf">
+<a href="http://t.elecfans.com/live/1074.html">
+<div class="live-column-tit"><span>慕尼黑上海电子展-视频采访直播间（中国力量、初创企业）</span></div>
+<div class="live-author-detail fixclear">
+<div class="author-name lf">程文智</div>
+<div class="through-line lf"></div>
+<div class="author-company lf">电子发烧友</div>
+<div class="author-lever lf">行业分析师</div>
+</div>
+</a>
+<div class="live-list-detail fixclear">
+<div class="square lf">技术开发</div>
+<div class="square lf">55天后</div> <div class="through-line lf"></div>
+<div class="lf ml10 live-column-apply" style="margin-left: 0px;">
+                                                                                                        12522次浏览</div>
+<div class="through-line lf"></div>
+<div class="lf ml10 live-column-apply" id="notify_1074" onclick="book('1074')" style="cursor: pointer; color: red; margin-left: 0px;">开启提醒</div> <div class="free lr">免费</div>
+</div>
+</div>
+</div>
+</li><li class="live-column">
+<div class="fixclear">
+<a href="http://t.elecfans.com/live/1185.html">
+<div class="list-people lf">
+<img src="//file.elecfans.com/web1/M00/A3/A9/pIYBAF1U0uKAce74AAH6ORStN-8213.png"/>
+</div>
+</a>
+<div class="live-column-text lf">
+<a href="http://t.elecfans.com/live/1185.html">
+<div class="live-column-tit"><span>【第一期】电源入口电路设计关键+SCR导通特性深度解析</span></div>
+<div class="live-author-detail fixclear">
+<div class="author-name lf">白纪龙</div>
+<div class="through-line lf"></div>
+<div class="author-company lf"></div>
+<div class="author-lever lf" style="margin-left: 0px;">资深工程师</div>
+</div>
+</a>
+<div class="live-list-detail fixclear">
+<div class="square lf">技术开发</div>
+<div class="square blue lf">精选推荐</div> <div class="through-line lf"></div>
+<div class="lf ml10 live-column-apply" style="margin-left: 0px;">
+                                                    644人听过</div>
+<div class="free lr">免费</div>
+</div>
+</div>
+</div>
+</li><li class="live-column">
+<div class="fixclear">
+<a href="http://t.elecfans.com/live/1180.html">
+<div class="list-people lf">
+<img src="//file.elecfans.com/web1/M00/A3/A9/pIYBAF1U0zeAOhijAAIp0qLwbR4711.jpg"/>
+</div>
+</a>
+<div class="live-column-text lf">
+<a href="http://t.elecfans.com/live/1180.html">
+<div class="live-column-tit"><span>携手华秋10W+工程师走进深圳科技圈</span></div>
+<div class="live-author-detail fixclear">
+<div class="author-name lf">Mill</div>
+<div class="through-line lf"></div>
+<div class="author-company lf">MYMINIEYE</div>
+<div class="author-lever lf">COO</div>
+</div>
+</a>
+<div class="live-list-detail fixclear">
+<div class="square lf">技术开发</div>
+<div class="square blue lf">精选推荐</div> <div class="through-line lf"></div>
+<div class="lf ml10 live-column-apply" style="margin-left: 0px;">
+                                                    52人听过</div>
+<div class="free lr">免费</div>
+</div>
+</div>
+</div>
+</li><li class="live-column">
+<div class="fixclear">
+<a href="http://t.elecfans.com/live/1190.html">
+<div class="list-people lf">
+<img src="//file.elecfans.com/web1/M00/A3/A9/pIYBAF1U0zeAOhijAAIp0qLwbR4711.jpg"/>
+</div>
+</a>
+<div class="live-column-text lf">
+<a href="http://t.elecfans.com/live/1190.html">
+<div class="live-column-tit"><span>写好状态机--从2019年全国FPGA竞赛谈Verilog编码技巧</span></div>
+<div class="live-author-detail fixclear">
+<div class="author-name lf">Mill</div>
+<div class="through-line lf"></div>
+<div class="author-company lf">MYMINIEYE</div>
+<div class="author-lever lf">COO</div>
+</div>
+</a>
+<div class="live-list-detail fixclear">
+<div class="square lf">技术开发</div>
+<div class="through-line lf"></div>
+<div class="lf ml10 live-column-apply" style="margin-left: 0px;">
+                                                    270人听过</div>
+<div class="free lr">免费</div>
+</div>
+</div>
+</div>
+</li><li class="live-column">
+<div class="fixclear">
+<a href="http://t.elecfans.com/live/1176.html">
+<div class="list-people lf">
+<img src="//file.elecfans.com/web1/M00/BA/64/pIYBAF6VLLSAQwJ6AAKpVwTqCO8923.png"/>
+</div>
+</a>
+<div class="live-column-text lf">
+<a href="http://t.elecfans.com/live/1176.html">
+<div class="live-column-tit"><span>人工智能在垃圾分选中的应用</span></div>
+<div class="live-author-detail fixclear">
+<div class="author-name lf">李高强</div>
+<div class="through-line lf"></div>
+<div class="author-company lf">北京安麒智能科技有限公司</div>
+<div class="author-lever lf">总经理</div>
+</div>
+</a>
+<div class="live-list-detail fixclear">
+<div class="square lf">技术开发</div>
+<div class="through-line lf"></div>
+<div class="lf ml10 live-column-apply" style="margin-left: 0px;">
+                                                    148人听过</div>
+<div class="free lr">免费</div>
+</div>
+</div>
+</div>
+</li><li class="live-column">
+<div class="fixclear">
+<a href="http://t.elecfans.com/live/1183.html">
+<div class="list-people lf">
+<img src="//file.elecfans.com/web1/M00/BA/C6/pIYBAF6ab4KACZncAARDcxfpAnA526.png"/>
+</div>
+</a>
+<div class="live-column-text lf">
+<a href="http://t.elecfans.com/live/1183.html">
+<div class="live-column-tit"><span>【直播大揭秘】华秋额温枪方案：破冰20元的PCBA，到底长什么样？</span></div>
+<div class="live-author-detail fixclear">
+<div class="author-name lf">戴上举</div>
+<div class="through-line lf"></div>
+<div class="author-company lf">深圳华秋电子有限公司</div>
+<div class="author-lever lf">华秋智造总经理</div>
+</div>
+</a>
+<div class="live-list-detail fixclear">
+<div class="square lf">技术开发</div>
+<div class="through-line lf"></div>
+<div class="lf ml10 live-column-apply" style="margin-left: 0px;">
+                                                    378人听过</div>
+<div class="free lr">免费</div>
+</div>
+</div>
+</div>
+</li><li class="live-column">
+<div class="fixclear">
+<a href="http://t.elecfans.com/live/1168.html">
+<div class="list-people lf">
+<img src="//file.elecfans.com/web1/M00/B4/A5/o4YBAF5aD76AN8WfAABmMpO0dtE584.png"/>
+</div>
+</a>
+<div class="live-column-text lf">
+<a href="http://t.elecfans.com/live/1168.html">
+<div class="live-column-tit"><span>共模电感EMC仿真模型、PCB分地处理仿真分析与案例解析</span></div>
+<div class="live-author-detail fixclear">
+<div class="author-name lf">深圳市赛盛技术有限公司</div>
+<div class="author-company lf"></div>
+<div class="author-lever lf" style="margin-left: 0px;"></div>
+</div>
+</a>
+<div class="live-list-detail fixclear">
+<div class="square lf">技术开发</div>
+<div class="lf ml10 live-column-apply" style="margin-left: 0px;">
+                                                    1147人听过</div>
+<div class="free lr">免费</div>
+</div>
+</div>
+</div>
+</li><li class="live-column">
+<div class="fixclear">
+<a href="http://t.elecfans.com/live/1164.html">
+<div class="list-people lf">
+<img src="//file.elecfans.com/web1/M00/A3/A9/pIYBAF1U0qWAe_9kAABoadPbgYw008.png"/>
+</div>
+</a>
+<div class="live-column-text lf">
+<a href="http://t.elecfans.com/live/1164.html">
+<div class="live-column-tit"><span>李增高速信号仿真基础班+进阶班毕业直播</span></div>
+<div class="live-author-detail fixclear">
+<div class="author-name lf">李增</div>
+<div class="through-line lf"></div>
+<div class="author-company lf"></div>
+<div class="author-lever lf" style="margin-left: 0px;">Cadence高速互联系列课程高级讲师</div>
+</div>
+</a>
+<div class="live-list-detail fixclear">
+<div class="square lf">技术开发</div>
+<div class="through-line lf"></div>
+<div class="lf ml10 live-column-apply" style="margin-left: 0px;">
+                                                    20人听过</div>
+<div class="enter-money lr">￥199</div>
+</div>
+</div>
+</div>
+</li><li class="live-column">
+<div class="fixclear">
+<a href="http://t.elecfans.com/live/1173.html">
+<div class="list-people lf">
+<img src="//file.elecfans.com/web1/M00/BA/49/pIYBAF6TyQCAXU8qAADXDTMxDqc963.png"/>
+</div>
+</a>
+<div class="live-column-text lf">
+<a href="http://t.elecfans.com/live/1173.html">
+<div class="live-column-tit"><span>MR+教育在5G时代的创新应用和机遇</span></div>
+<div class="live-author-detail fixclear">
+<div class="author-name lf">陈清甫</div>
+<div class="through-line lf"></div>
+<div class="author-company lf">英科信息技术(北京)有限公司</div>
+<div class="author-lever lf">创始人 CEO</div>
+</div>
+</a>
+<div class="live-list-detail fixclear">
+<div class="square lf">技术开发</div>
+<div class="through-line lf"></div>
+<div class="lf ml10 live-column-apply" style="margin-left: 0px;">
+                                                    64人听过</div>
+<div class="free lr">免费</div>
+</div>
+</div>
+</div>
+</li><li class="live-column">
+<div class="fixclear">
+<a href="http://t.elecfans.com/live/1165.html">
+<div class="list-people lf">
+<img src="//file.elecfans.com/web1/M00/A3/A9/pIYBAF1U0qWAe_9kAABoadPbgYw008.png"/>
+</div>
+</a>
+<div class="live-column-text lf">
+<a href="http://t.elecfans.com/live/1165.html">
+<div class="live-column-tit"><span>李增和大家讨论怎么学好信号互连仿真知识与技术工程师的出路在那里？</span></div>
+<div class="live-author-detail fixclear">
+<div class="author-name lf">李增</div>
+<div class="through-line lf"></div>
+<div class="author-company lf"></div>
+<div class="author-lever lf" style="margin-left: 0px;">Cadence高速互联系列课程高级讲师</div>
+</div>
+</a>
+<div class="live-list-detail fixclear">
+<div class="square lf">技术开发</div>
+<div class="through-line lf"></div>
+<div class="lf ml10 live-column-apply" style="margin-left: 0px;">
+                                                    326人听过</div>
+<div class="free lr">免费</div>
+</div>
+</div>
+</div>
+</li><li class="live-column">
+<div class="fixclear">
+<a href="http://t.elecfans.com/live/1161.html">
+<div class="list-people lf">
+<img src="//file.elecfans.com/web1/M00/B8/BA/o4YBAF59Y8aAEHZvAAC0f1v5ZLs336.png"/>
+</div>
+</a>
+<div class="live-column-text lf">
+<a href="http://t.elecfans.com/live/1161.html">
+<div class="live-column-tit"><span>对话：新基建中物联网的发展趋势和机会分析</span></div>
+<div class="live-author-detail fixclear">
+<div class="author-name lf">李宝骐</div>
+<div class="through-line lf"></div>
+<div class="author-company lf">上海磐启微电子有限公司</div>
+<div class="author-lever lf">创始人&amp;CEO</div>
+</div>
+</a>
+<div class="live-list-detail fixclear">
+<div class="square lf">技术开发</div>
+<div class="through-line lf"></div>
+<div class="lf ml10 live-column-apply" style="margin-left: 0px;">
+                                                    196人听过</div>
+<div class="free lr">免费</div>
+</div>
+</div>
+</div>
+</li><li class="live-column">
+<div class="fixclear">
+<a href="http://t.elecfans.com/live/1156.html">
+<div class="list-people lf">
+<img src="//file.elecfans.com/web1/M00/B8/35/o4YBAF50ZgWAVK_zABfTVTFc9co930.png"/>
+</div>
+</a>
+<div class="live-column-text lf">
+<a href="http://t.elecfans.com/live/1156.html">
+<div class="live-column-tit"><span>新基建趋势下5G产业和投资机会分析</span></div>
+<div class="live-author-detail fixclear">
+<div class="author-name lf">步日欣</div>
+<div class="through-line lf"></div>
+<div class="author-company lf">创道咨询</div>
+<div class="author-lever lf">合伙人</div>
+</div>
+</a>
+<div class="live-list-detail fixclear">
+<div class="square lf">技术开发</div>
+<div class="through-line lf"></div>
+<div class="lf ml10 live-column-apply" style="margin-left: 0px;">
+                                                    150人听过</div>
+<div class="free lr">免费</div>
+</div>
+</div>
+</div>
+</li> </div>
+</section>
+</article>
+</div>
+<div class="main-right lr">
+<div class="right-part">
+<div class="right-title">
+<h3>精选推荐</h3>
+</div>
+<ul class="commend-column">
+<li>
+<!-- $vo['live_sign'] == 1 为 技术日 为什么没有连接 -->
+<div class="commend-tit"><span><a href="http://t.elecfans.com/live/1180.html">携手华秋10W+工程师走进深圳科技圈</a></span></div>
+<div class="commend-detail fixclear">
+<div class="lf">Mill</div>
+<div class="through-line lf"></div>
+<div class="lf"></div>
+<div class="commend-lever lf">COO</div>
+</div>
+</li><li>
+<!-- $vo['live_sign'] == 1 为 技术日 为什么没有连接 -->
+<div class="commend-tit"><span><a href="http://t.elecfans.com/live/1186.html">【第二期】TRIAC双向可控硅的设计与实践</a></span></div>
+<div class="commend-detail fixclear">
+<div class="lf">白纪龙</div>
+<div class="through-line lf"></div>
+<div class="lf"></div>
+<div class="commend-lever lf">资深工程师</div>
+</div>
+</li><li>
+<!-- $vo['live_sign'] == 1 为 技术日 为什么没有连接 -->
+<div class="commend-tit"><span><a href="http://t.elecfans.com/live/1185.html">【第一期】电源入口电路设计关键+SCR导通特性深度解析</a></span></div>
+<div class="commend-detail fixclear">
+<div class="lf">白纪龙</div>
+<div class="through-line lf"></div>
+<div class="lf"></div>
+<div class="commend-lever lf">资深工程师</div>
+</div>
+</li><li>
+<!-- $vo['live_sign'] == 1 为 技术日 为什么没有连接 -->
+<div class="commend-tit"><span><a href="http://t.elecfans.com/live/1134.html">专家手把手教你EMC案例分析与仿真解析</a></span></div>
+<div class="commend-detail fixclear">
+<div class="lf">深圳市赛盛技术有限公司</div>
+<div class="through-line lf"></div>
+<div class="lf"></div>
+<div class="commend-lever lf"></div>
+</div>
+</li> </ul>
+</div>
+<div class="right-part">
+<div class="right-title">
+<h3>电子发烧友网</h3>
+</div>
+<div class="right-text">
+<div class="wid244">
+                             关注电子发烧友微信公众号，即时收听电子行业动态，抢先知晓半导体行业发生的最新事件。
+                         </div>
+<img class="gongzong2" src="/Public/pc/live/img/u268.jpg"/>
+</div>
+</div>
+<div class="right-part">
+<div class="right-title">
+<h3>下载APP</h3>
+</div>
+<div class="right-text">
+<div class="wid244">
+                             加入电子发烧友，结识行业大牛，了解电子资讯
+                         </div>
+<img class="gongzong2" src="/Public/pc/live/img/u40.png"/>
+</div>
+</div>
+</div>
+</div>
+<!--页尾      #############################################################-->
+<!--页尾      #############################################################-->
+<link href="http://skin.elecfans.com/css/footgather.css" rel="stylesheet"/>
+<div class="gather-bottom">
+<div class="footer-gather">
+<div class="gather-top ga-clear">
+<div class="ga-lf">
+<b><a href="https://www.huaqiu.cn/" target="_blank">华秋（原“华强聚丰”）：</a></b>
+<a href="http://www.elecfans.com/" target="_blank">电子发烧友</a>
+<a href="http://www.elecfans.com/kf/" target="_blank">华秋开发</a>
+<a href="https://data.hqchip.com:4006/t/Aka" target="_blank">华秋电路（原“华强PCB”）</a>
+<a href="https://data.hqchip.com:4006/t/Bka" target="_blank">华秋商城（原“华强芯城”）</a>
+<a href="https://data.hqchip.com:4006/t/Fka" target="_blank">华秋智造</a>
+</div>
+<div class="ga-lr">
+<a href="http://home.elecfans.com/" rel="nofollow" target="_blank">My ElecFans </a>
+<a href="http://www.elecfans.com/app/" target="_blank"> APP </a>
+<a href="http://www.elecfans.com/sitemap.html" target="_blank">网站地图</a>
+</div>
+</div>
+<div class="gather-main ga-clear" id="gatherMain">
+<ul class="ga-lf wid138">
+<b>产业</b>
+<li><a href="http://www.elecfans.com/iot/" target="_blank">物联网</a></li>
+<li><a href="http://www.elecfans.com/jiqiren/" target="_blank">机器人</a></li>
+<li><a href="http://www.elecfans.com/rengongzhineng/" target="_blank">人工智能</a></li>
+<li><a href="http://www.elecfans.com/vr/" target="_blank">vr|ar|虚拟现实</a></li>
+<li><a href="http://www.elecfans.com/wearable/" target="_blank">可穿戴设备</a></li>
+<li><a href="http://www.elecfans.com/video/" target="_blank">音视频及家电</a></li>
+<li><a href="http://www.elecfans.com/led/" target="_blank">LEDs</a></li>
+<li><a href="http://www.elecfans.com/qichedianzi/" target="_blank">汽车电子</a></li>
+<li><a href="http://www.elecfans.com/tongxin/" target="_blank">通信网络</a></li>
+<li><a href="http://www.elecfans.com/yiliaodianzi/" target="_blank">医疗电子</a></li>
+<li><a href="http://www.elecfans.com/dianyuan/diandongche_xinnenyuan/" target="_blank">智能电网</a></li>
+<li><a href="http://www.elecfans.com/application/Security/" target="_blank">安全设备/系统</a></li>
+<li><a href="http://www.elecfans.com/application/Military_avionics/" target="_blank">军用/航空电子</a></li>
+<li><a href="http://www.elecfans.com/application/Communication/" target="_blank">移动通信</a></li>
+<li><a href="http://www.elecfans.com/consume/bianxiedianzishebei/" target="_blank">便携设备</a></li>
+<li><a href="http://www.elecfans.com/consume/chukongjishu/" target="_blank">触控感测</a></li>
+<li><a href="http://www.elecfans.com/kongzhijishu/" target="_blank">工业控制</a></li>
+</ul>
+<ul class="ga-lf wid134">
+<b>技术</b>
+<li><a href="http://www.elecfans.com/pld/" target="_blank">可编程逻辑</a></li>
+<li><a href="http://www.elecfans.com/article/83/" target="_blank">电源/新能源</a></li>
+<li><a href="http://www.elecfans.com/article/88/142/" target="_blank">MEMS/传感技术</a></li>
+<li><a href="http://www.elecfans.com/article/85/" target="_blank">测量仪表</a></li>
+<li><a href="http://www.elecfans.com/emb/" target="_blank">嵌入式技术</a></li>
+<li><a href="http://www.elecfans.com/article/90/155/" target="_blank">制造/封装</a></li>
+<li><a href="http://www.elecfans.com/analog/" target="_blank">模拟技术</a></li>
+<li><a href="http://www.elecfans.com/connector/" target="_blank">连接器</a></li>
+<li><a href="http://www.elecfans.com/emc_emi/" target="_blank">EMC/EMI设计</a></li>
+<li><a href="http://www.elecfans.com/xianshi/" target="_blank">光电显示</a></li>
+<li><a href="http://www.elecfans.com/consume/cunchujishu/" target="_blank">存储技术</a></li>
+<li><a href="http://www.elecfans.com/bandaoti/eda/" target="_blank">EDA/IC设计</a></li>
+<li><a href="http://www.elecfans.com/emb/dsp/" target="_blank">处理器/DSP</a></li>
+<li><a href="http://www.elecfans.com/emb/jiekou/" target="_blank">接口/总线/驱动</a></li>
+<li><a href="http://www.elecfans.com/emb/danpianji/" target="_blank">控制/MCU</a></li>
+<li><a href="http://www.elecfans.com/tongxin/rf/" target="_blank">RF/无线</a></li>
+</ul>
+<ul class="ga-lf wid114">
+<b>特色栏目</b>
+<li><a href="http://www.elecfans.com/d/column/" target="_blank">专栏</a></li>
+<li><a href="http://www.elecfans.com/d/" target="_blank">电子说</a></li>
+<li><a href="http://t.elecfans.com/" target="_blank">发烧友学院</a></li>
+<li><a href="http://www.elecfans.com/soft/" target="_blank">资料下载</a></li>
+<li><a href="http://www.elecfans.com/topic/" target="_blank">技术专题</a></li>
+<li><a href="http://39.elecfans.com/" target="_blank">39°</a></li>
+<li><a href="http://pdf.elecfans.com/" target="_blank">Datasheet</a></li>
+<li><a href="http://www.elecfans.com/article/88/131/" target="_blank">电路图</a></li>
+<li><a href="http://www.elecfans.com/baike/" target="_blank">电子百科</a></li>
+<li><a href="http://www.elecfans.com/yuanqijian/" target="_blank">元器件知识</a></li>
+<li><a href="http://www.elecfans.com/tools/" target="_blank">在线工具</a></li>
+</ul>
+<ul class="ga-lf wid109">
+<b>社群</b>
+<li><a href="http://bbs.elecfans.com/ask.html" target="_blank">问答</a></li>
+<li><a href="http://bbs.elecfans.com/" target="_blank">论坛</a></li>
+<li><a href="http://bbs.elecfans.com/group" target="_blank">小组</a></li>
+<li><a href="http://home.elecfans.com/infocenter.php" target="_blank">博客</a></li>
+<li><a href="http://z.elecfans.com/" target="_blank">华秋众筹</a></li>
+<li><a href="http://bbs.elecfans.com/try.html" target="_blank">评测试用</a></li>
+<li><a href="http://www.elecfans.com/vipdownload/pay" target="_blank">VIP会员</a></li>
+</ul>
+<ul class="ga-lf wid124">
+<b>供应链服务</b>
+<li><a href="http://www.elecfans.com/custom/" target="_blank">项目外包</a></li>
+<li><a href="http://www.hqchip.com/bom.html" target="_blank">BOM配单</a></li>
+<li><a href="http://www.hqpcb.com/" target="_blank">PCB打板</a></li>
+<li><a href="http://smt.hqchip.com/" target="_blank">SMT加工</a></li>
+<li><a href="http://www.hqchip.com/" target="_blank">元器件商城</a></li>
+<b class="mt15">媒体服务</b>
+<li><a href="http://www.elecfans.com/help/service.html" target="_blank">网站广告</a></li>
+<li><a href="http://webinar.elecfans.com/" target="_blank">在线研讨会</a></li>
+<li><a href="http://event.elecfans.com/" target="_blank">活动策划</a></li>
+<li><a href="http://www.elecfans.com/news/" target="_blank">新闻发布</a></li>
+<li><a href="http://www.elecfans.com/xinpian/ic/" target="_blank">新品发布</a></li>
+<li><a href="http://www.elecfans.com/resource/" target="_blank">资源中心</a></li>
+<li><a href="http://www.elecfans.com/quiz/" target="_blank">小测验</a></li>
+<li><a href="http://www.elecfans.com/contest/" target="_blank">设计大赛</a></li>
+<li><a target="_blank">eDM</a></li>
+</ul>
+<ul class="ga-lf wid152" style="width: 140px"> <b>华秋</b> <li><a href="http://www.elecfans.com/about/" rel="nofollow" target="_blank">关于我们</a></li> <li><a href="http://www.hqchip.com/help/factsheet.html" rel="nofollow" target="_blank">投资关系</a></li> <li><a href="http://www.hqchip.com/help/news/lists.html" rel="nofollow" target="_blank">新闻动态</a></li> <li><a target="_blank">媒体报道</a></li> <li><a href="http://www.elecfans.com/about/zhaopin.html" rel="nofollow" target="_blank">加入我们</a></li> <li><a href="http://www.elecfans.com/about/contact.html" rel="nofollow" target="_blank">联系我们</a></li> <li><a href="http://www.elecfans.com/about/tousu.html" rel="nofollow" target="_blank">侵权投诉</a></li> <b class="mt15">社交网络</b> <li><a href="http://weibo.com/elecfanscom" rel="nofollow" target="_blank">微博</a></li> <b class="mt15">移动</b> <li><a href="http://www.elecfans.com/app/" target="_blank">电子发烧友 APP</a></li> <li><a href="http://m.elecfans.com/" target="_blank">电子发烧友 WAP</a></li> </ul> <ul class="ga-lf wid152" style="width: 120px"> <b>联系我们</b> <p>大中华区广告合作</p> <p>Ben Tseng</p> <p><a href="mailto:hezuo@elecfans.com">hezuo@elecfans.com</a></p> <p>Mike Zhang</p> <p class="mb16"><a href="mailto:mikezhang@elecfans.com">mikezhang@elecfans.com</a></p> <p>内容合作</p> <p>黄晶晶</p> <p class="mb16"><a href="mailto:huangjingjing@elecfans.com">huangjingjing@elecfans.com</a></p> <p>内容合作（海外）</p> <p>Brandon Smith</p> <p><a href="mailto:brandon.smith@elecfans.com">brandon.smith@elecfans.com</a></p> <div class="ga-attend"> <p>关注我们的微信</p> <img src="//skin.elecfans.com/images/u267.png"/> </div> </ul> <ul class="ga-lf absolute-ga"> <b> </b> <p>供应链服务 PCB/IC/PCBA</p> <p>江良华</p> <p class="mb16"><a href="mailto:lanhu@hqchip.com">lanhu@hqchip.com</a></p> <p>投资合作</p> <p>曾海银</p> <p class="mb16"><a href="mailto:zenghaiyin@elecfans.com">zenghaiyin@elecfans.com</a></p> <p>原厂入驻：<a href="http://www.hqchip.com/gongsi/settle.html" style="text-decoration: underline;" target="_blank">点击了解详情</a></p> <p>杨超群：134 2870 7711</p> <div class="ga-attend"> <p>下载发烧友APP</p> <img src="//skin.elecfans.com/images/u40.png"/> </div> </ul></div>
+<div class="ther-footer">
+<div class="foot-link">
+<a href="http://www.elecfans.com/about/" rel="nofollow" target="_blank">关于本站</a> ｜
+                <a href="http://www.elecfans.com/about/contribute.html" rel="nofollow" target="_blank">欢迎投稿</a> ｜
+                <a href="http://www.elecfans.com/about/feedback.html" rel="nofollow" target="_blank">用户建议</a> ｜
+                <a href="http://www.elecfans.com/about/copyright.html" rel="nofollow" target="_blank">版权申明</a> ｜
+                <a href="http://www.elecfans.com/about/friendlink.html" rel="nofollow" target="_blank">友情链接</a> ｜
+                <a href="http://www.elecfans.com/about/contact.html" rel="nofollow" target="_blank">联系我们</a> ｜
+                <a href="http://www.elecfans.com/sitemap.html" target="_blank">网站地图</a>
+</div>
+<p>版权所有 © 深圳华秋电子有限公司 <a href="http://www.elecfans.com">电子发烧友</a> （ <strong><a href="http://www.elecfans.com" target="_blank">电路图</a></strong> ） <a href="http://www.miibeian.gov.cn/" id="elecfans-beianhao" rel="nofollow" target="_blank">粤ICP备14022951号</a></p>
+</div>
+</div>
+</div>
+<script src="http://skin.elecfans.com/js/footer.js"></script>
+<!--页尾      #############################################################-->
+<script src="/Public/pc/js/dialog-min.js"></script>
+<script src="/Public/pc/js/common.js?t=20161115"></script>
+<script src="/Public/pc/live/js/jquery-2.0.3.min.js"></script>
+<script src="/Public/mobile/js/layer_mobile/layer.js"></script>
+<script src="/Public/pc/live/js/common.js"></script>
+<script src="/Public/pc/live/js/livenormal.js"></script>
+<script type="text/javascript">
+            var notifydlg = '';
+            var interval = '';
+            function getSignal(notify_id) {
+                $.get("/Home/Wechat/getScanSignal?id=" + notify_id, {}, function (res) {
+                    if (res == 1) {
+                        notifydlg.close();
+                        $('#notify').text('已开启提醒');
+                        $('#notify').css('color', 'gray');
+                        clearInterval(interval);
+                    }
+                })
+            }
+
+            function book(id) {
+                var host = window.location.host;
+                var url = "http://t.elecfans.com/wechat/getSubscribeQr.html?id=" + id;
+                url = url.replace(host, host+'/home');
+                $.get(url, {}, function (res) {
+                    if(res.data != 0){
+                        notifydlg = dialog({
+                            id: "dialog",
+                            width: 300,
+                            title: " ",
+                            content: '<div><h4 style="text-align: center;font-size: 16px;font-weight: normal;margin-bottom: 10px;">关注微信服务号，开启提醒</h4><p style="color: #333; text-align: center;font-size: 13px;">直播开始时将通过服务号通知</p><img id="img" style="border: 1px solid #ececec; padding: 10px; box-sizing: border-box;display:block;margin: 10px auto" src="' + res.info + '" width="180" height="180" alt="如果没有显示二维码请刷新页面"/></div>',
+                        }).showModal();
+                        interval = setInterval(function(){
+                            getSignal(res.data)
+                        },1500)
+                    }
+                });
+            }
+        </script>
+</body></html>

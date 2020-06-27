@@ -1,0 +1,723 @@
+<html><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1.0,minimum-scale=0.5,maximum-scale=2.0,user-scalable=yes" name="”viewport”"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="webkit" name="renderer"/>
+<!--强制360使用极速模式-->
+<title>Keysight信号完整性小测验</title>
+<meta content="是德|keysight|信号完整性" name="keywords"/>
+<meta content="" name="description"/>
+<!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <![endif]-->
+<style type="text/css">
+
+        body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button {
+            margin: 0;
+            padding: 0;
+        }
+        fieldset,img {
+            border: none;
+        }
+        dl,ul,ol,menu,li {
+            list-style: none;
+        }
+        blockquote,q {
+            quotes: none;
+        }
+        blockquote:before,blockquote:after,q:before,q:after {
+            content: '';
+            content: none;
+        }
+        input,select,textarea,button {
+            vertical-align: middle;
+        }
+        button {
+            border: 0 none;
+            background-color: transparent;
+            cursor: pointer;
+        }
+        body {
+            background: #fff;
+        }
+        body,th,td,input,select,textarea,button {
+            font-size: 14px;
+            line-height: 1;
+            font-family: "微软雅黑", "黑体", "宋体";
+            color: #333333;
+        }
+        a {
+            color: #333333;
+            text-decoration: none;
+        }
+        a:active,a:hover {
+            text-decoration: none;
+        }
+        address,caption,cite,code,dfn,em,var {
+            font-style: normal;
+            font-weight: normal;
+        }
+        mark {
+            background: none;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border-spacing: 0;
+            table-layout: fixed;
+        }
+        img {
+            vertical-align: top;
+        }
+        .float_left {
+            float: left;
+        }
+        .float_right {
+            float: right;
+        }
+        .wrapper {
+            width: 1000px;
+            margin: 0 auto;
+        }
+        .clearfix {
+            zoom: 1;
+        }
+        .clearfix:after {
+            content: '';
+            display: block;
+            height: 0;
+            clear: both;
+        }
+        .clear {
+            clear: both;
+        }
+        .hide {
+            display: none;
+        }
+        .img_box {
+            display: block;
+            overflow: hidden;
+        }
+        .img_box img {
+            display: block;
+            width: 100%;
+        }
+        /*颜色样式*/
+        .color_gray {
+            color: #999999;
+        }
+        .color_orange {
+            color: #ff8913;
+        }
+        .color_blue {
+            color: #007ac2;
+        }
+        .color_red {
+            color: #dd2222;
+        }
+        .renew_btn {
+            display: inline-block;
+            background: #FBD74F;
+            font-size: 16px;
+            border-radius: 35px;
+            line-height: 35px;
+            padding: 0 25px;
+        }
+        .renew_btn:hover {
+            background: #FACA0C;
+        }
+        .font_smalll {
+            font-size: 12px;
+        }
+        .font_big {
+            font-size: 16px;
+        }
+        .text_center {
+            text-align: center;
+        }
+        .text_left {
+            text-align: left;
+        }
+        .text_right {
+            text-align: right;
+        }
+        .btn {
+            display: inline-block;
+            *display: inline;
+            padding: 8px 12px;
+            margin-bottom: 0;
+            font-size: 14px;
+            line-height: 14px;
+            color: #333333;
+            text-align: center;
+            vertical-align: middle;
+            cursor: pointer;
+            background-color: #f2f2f2;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            *zoom: 1;
+            border: none;
+            border: 1px solid #ddd;
+        }
+        .btn:hover {
+            filter: alpha(opacity=90);
+            opacity: .9;
+        }
+        .select_box {
+            display: inline-block;
+            position: relative;
+            padding: 0 10px;
+            line-height: 35px;
+            height: 35px;
+            border: 1px solid #ddd;
+            padding-right: 15px;
+            width: 150px;
+            vertical-align: middle;
+        }
+        .select_box ins {
+            text-decoration: none;
+        }
+        .select_box:after {
+            content: "";
+            border: 5px solid #fff;
+            border-top: 5px solid #ddd;
+            width: 0;
+            height: 0;
+            overflow: hidden;
+            display: block;
+            position: absolute;
+            right: 5px;
+            top: 15px;
+        }
+        .select_box select {
+            display: block;
+            height: 35px;
+            line-height: 35px;
+            width: 175px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            -moz-opacity: 0;
+            filter: alpha(opacity=0);
+            opacity: 0;
+            z-index: 1;
+            width: 100%;
+        }
+        #page_footer {
+            color: #999999;
+            text-align: center;
+            padding: 20px 0;
+            line-height: 25px;
+            font-size: 12px;
+            margin-top: 30px;
+            border-top: 1px solid #ddd;
+            background: #fff;
+        }
+        #page_footer li {
+            display: inline;
+        }
+        #page_footer li:after {
+            content: "|";
+            padding: 0 5px;
+        }
+        #page_footer li:last-child:after {
+            content: "";
+        }
+        #page_footer a {
+            color: #999999;
+        }
+        #page_footer a:hover {
+            text-decoration: underline;
+            color: #333333;
+        }
+        body {
+            background: #F2F2F2;
+        }
+        #page_header {
+            background-position: top center;
+			background-repeat:no-repeat;
+			overflow:hidden;
+			background-repeat:no-repeat;
+        }
+		#page_header img{
+			visibility:hidden;
+		}
+        #page_main {
+            padding: 50px 0;
+        }
+        /*左侧表单*/
+        #paget_left {
+            border: 1px solid #ddd;
+            background: #fff;
+            padding: 20px;
+            width: 620px;
+        }
+        #paget_left h1 {
+            font-size: 16px;
+            display: block;
+            margin-bottom: 30px;
+        }
+        #paget_left h1 span {
+            font-weight: bold;
+            font-size: 14px;
+            vertical-align: bottom;
+        }
+        #paget_left .submit_btn {
+            width: 245px;
+            height: 32px;
+            line-height: 32px;
+            padding: 0;
+            background: #0085B2;
+            border: none;
+            color: #fff;
+            margin: 20px 0 50px 70px;
+        }
+        /*问答内容*/
+        #question_list {
+            margin-bottom: 120px;
+        }
+        #question_list dl {
+            margin-bottom: 20px;
+            line-height: 25px;
+        }
+        #question_list dt {
+            font-weight: bold;
+        }
+        #question_list dt span {
+            font-weight: normal;
+        }
+        #question_list dd {
+            zoom: 1;
+        }
+        #question_list dd:after {
+            content: '';
+            display: block;
+            height: 0;
+            clear: both;
+        }
+        #question_list dd input {
+            margin-right: 5px;
+            vertical-align: middle;
+            margin-top: -3px;
+        }
+        #question_list dd span {
+            display: block;
+            float: left;
+            width: 50%;
+            color: #666;
+        }
+        /*用户信息表单*/
+        #user_info_form {
+            display: block;
+        }
+        #user_info_form p {
+            color: #f00;
+            display: block;
+            margin-bottom: 10px;
+        }
+        #user_info_form dl {
+            display: block;
+            margin-bottom: 20px;
+        }
+        #user_info_form dt {
+            float: left;
+            width: 81px;
+            line-height: 30px;
+            text-align: right;
+            font-weight: normal;
+            margin: 0;
+        }
+        #user_info_form i {
+            color: #f00;
+            font-style: normal;
+        }
+        #user_info_form dd {
+            display: block;
+            float: left;
+            padding-left: 81px;
+        }
+        #user_info_form input {
+            height: 25px;
+            line-height: 25px;
+            border: 1px solid #999;
+            width: 230px;
+            padding: 0 10px;
+        }
+        #user_info_form .select_box {
+            width: 225px;
+            border-color: #999;
+            height: 25px;
+            line-height: 25px;
+        }
+        #user_info_form .select_box select {
+            height: 25px;
+            line-height: 25px;
+        }
+        #user_info_form .select_box:after {
+            top: 10px;
+        }
+        #user_info_form .address_select {
+            width: 97px;
+        }
+        #user_info_form textarea {
+            padding: 5px 10px;
+            display: block;
+            margin-top: 10px;
+
+            width: 230px;
+            border: 1px solid #999;
+            resize: none;
+        }
+        #user_info_form .question_dl dt {
+            width: auto;
+            float: none;
+            text-align: left;
+        }
+        #user_info_form .question_dl input {
+            width: auto;
+            height: auto;
+            margin: 0 5px;
+            border: none;
+        }
+        #user_info_form dd {
+            float: none;
+            display: block;
+        }
+        #user_info_form small {
+            color: #999;
+        }
+        /*右侧边内容*/
+        #paget_right {
+            width: 315px;
+            color: #666;
+        }
+        .right_module {
+            border: 1px solid #ddd;
+            background: #fff;
+            padding: 20px 15px;
+            margin-bottom: 20px;
+            line-height: 25px;
+        }
+        .right_module_title {
+            font-size: 14px;
+            display: block;
+            margin-bottom: 10px;
+            color: #000;
+        }
+        .right_module_content{
+            font-size:14px;
+            line-height:25px;
+            color:#666;
+        }
+
+        .right_module_content img {
+            max-width: 100%;
+        }
+		#user_info_form  .province_select,#user_info_form  .city_select{
+			width:97px;
+		}
+        #user_info_form .more-select input{
+            width: 16px;
+            height: 16px;
+        }
+        #user_info_form .more-select{
+            margin-top: 10px;
+        }
+
+        .fix-code {
+            position: fixed;
+            font-size: 12px;
+            color: #333;
+            top: 50%;
+            text-align: center;
+            background-color: #fff;
+            padding-bottom: 12px;
+            left: 24px;
+            display: none;
+        }
+
+        .fix-code p {
+            padding-top: 5px;
+        }
+
+        .fix-code img {
+            width: 125px;
+        }
+
+        @media screen and (min-width: 1900px) {
+            .fix-code {
+                left: 264px;
+            }
+        }
+    </style>
+<script async="" src="//www.google-analytics.com/analytics.js"></script><script src="//hm.baidu.com/hm.js?4dbddc73fd0fe464304ba8ad95cbc96e"></script><script async="" src="//www.elecfans.com/static/vendor/sa-sdk/1.14.9/sensorsdata.min.js"></script><script src="/skin-2012/js/elecfans/mobileAdapt.js"></script><script src="/skin-2012/js/elecfans/mobileAdapt.js"></script><link href="http://passport.elecfans.com/public/pc/css/sso.dialogPassport.css" rel="stylesheet"/><link href="http://www.elecfans.com/webapi/public/quiz/js/skin/layer.css" id="layui_layer_skinlayercss" rel="stylesheet" style=""/></head>
+<body>
+<!-- *页头###########################################################################-->
+<header id="page_header" style="background-image: url('http://file.elecfans.com/web1/M00/BA/AA/o4YBAF6f60-AUJ8SAAKM04Fxm6g056.png');">
+<a href="/">
+<img alt="" class="banner" src="http://file.elecfans.com/web1/M00/BA/AA/o4YBAF6f60-AUJ8SAAKM04Fxm6g056.png"/>
+</a></header>
+<!-- #页头###########################################################################-->
+<!-- *页身###########################################################################-->
+<div class="fix-code">
+<img src="/webapi/public/images/erweima.jpg"/>
+<p>参与工程师薪资调查</p>
+<p>了解电子行业新动态</p>
+</div>
+<div class="wrapper clearfix" id="page_main">
+<!-- *左侧表单***-->
+<div class="float_left" id="paget_left">
+<form action="/webapi/quiz/index/savequiz.html" data-id="79" id="question_form" method="POST">
+<h1><span class="color_gray"></span></h1>
+<!-- *问题项-->
+<div id="question_list">
+<dl data-notnull="true">
+<dt>
+                            1. 在白皮书《信号完整性基础知识》中，提到哪些要点？                            <span class="color_gray">（<span class="color_red">*必填</span> 单选）</span>
+</dt>
+<dd class="jq_question">
+<label>
+<input class="answers_565" name="answers[565][]" type="radio" value="A"/>
+                                                                                A.  确定信号衰减的根本原因                                                                                                                            </label>
+</dd><dd class="jq_question">
+<label>
+<input class="answers_565" name="answers[565][]" type="radio" value="B"/>
+                                                                                B.  探索和设计信号完整性的解决方案                                                                                                                            </label>
+</dd><dd class="jq_question">
+<label>
+<input class="answers_565" name="answers[565][]" type="radio" value="C"/>
+                                                                                C.  信号完整性测量分析                                                                                                                            </label>
+</dd><dd class="jq_question">
+<label>
+<input class="answers_565" name="answers[565][]" type="radio" value="D"/>
+                                                                                D.  以上都有                                                                                                                            </label>
+</dd> </dl><dl data-notnull="true">
+<dt>
+                            2. 下列关于数据中心的说法，不正确的是？                            <span class="color_gray">（<span class="color_red">*必填</span> 单选）</span>
+</dt>
+<dd class="jq_question">
+<label>
+<input class="answers_566" name="answers[566][]" type="radio" value="A"/>
+                                                                                A.  数据中心利用发射系统和接收系统之间的通道，传递信息                                                                                                                            </label>
+</dd><dd class="jq_question">
+<label>
+<input class="answers_566" name="answers[566][]" type="radio" value="B"/>
+                                                                                B.  通道性能不佳，可能会导致信号不完整、影响数据解读                                                                                                                            </label>
+</dd><dd class="jq_question">
+<label>
+<input class="answers_566" name="answers[566][]" type="radio" value="C"/>
+                                                                                C.  在开发通道设备和互连产品时，确保高度的信号完整性不重要                                                                                                                            </label>
+</dd><dd class="jq_question">
+<label>
+<input class="answers_566" name="answers[566][]" type="radio" value="D"/>
+                                                                                D.  工程师要解决测试、识别和解决导致设备信号完整性的问题                                                                                                                            </label>
+</dd> </dl><dl data-notnull="true">
+<dt>
+                            3. 通道仿真中，关于眼图的说法有误的选项？                            <span class="color_gray">（<span class="color_red">*必填</span> 单选）</span>
+</dt>
+<dd class="jq_question">
+<label>
+<input class="answers_567" name="answers[567][]" type="radio" value="A"/>
+                                                                                A.  示波器上的眼图，无法帮助评估通道性能                                                                                                                            </label>
+</dd><dd class="jq_question">
+<label>
+<input class="answers_567" name="answers[567][]" type="radio" value="B"/>
+                                                                                B.  眼图的宽度和高度是信号失真的关键指标                                                                                                                            </label>
+</dd><dd class="jq_question">
+<label>
+<input class="answers_567" name="answers[567][]" type="radio" value="C"/>
+                                                                                C.  宽大的眼图意味着数据传输良好                                                                                                                            </label>
+</dd><dd class="jq_question">
+<label>
+<input class="answers_567" name="answers[567][]" type="radio" value="D"/>
+                                                                                D.  闭合的眼图表示信号完整性大幅降低                                                                                                                            </label>
+</dd> </dl><dl data-notnull="true">
+<dt>
+                            4. 安装夹具能兼容多种连接器，白皮书中未提到哪一项？                            <span class="color_gray">（<span class="color_red">*必填</span> 单选）</span>
+</dt>
+<dd class="jq_question">
+<label>
+<input class="answers_568" name="answers[568][]" type="radio" value="A"/>
+                                                                                A.  HDMI                                                                                                                            </label>
+</dd><dd class="jq_question">
+<label>
+<input class="answers_568" name="answers[568][]" type="radio" value="B"/>
+                                                                                B.  显示端口                                                                                                                            </label>
+</dd><dd class="jq_question">
+<label>
+<input class="answers_568" name="answers[568][]" type="radio" value="C"/>
+                                                                                C.  串行ATA                                                                                                                            </label>
+</dd><dd class="jq_question">
+<label>
+<input class="answers_568" name="answers[568][]" type="radio" value="D"/>
+                                                                                D.  Type-c                                                                                                                            </label>
+</dd> </dl><dl data-notnull="true">
+<dt>
+                            5. 尽早解决信号完整性问题，可以开发出可靠性更高的产品，也有助于降低成本。                            <span class="color_gray">（<span class="color_red">*必填</span> 单选）</span>
+</dt>
+<dd class="jq_question">
+<label>
+<input class="answers_569" name="answers[569][]" type="radio" value="A"/>
+                                                                                A.  正确                                                                                                                            </label>
+</dd><dd class="jq_question">
+<label>
+<input class="answers_569" name="answers[569][]" type="radio" value="B"/>
+                                                                                B.  错误                                                                                                                            </label>
+</dd> </dl> </div>
+<!-- #问题项-->
+<!-- *用户信息表单-->
+<div id="user_info_form">
+<p class="red_tips">请正确填写您的个人资料，以便专题交流和获奖时联系到您</p>
+<dl class="clearfix">
+<dt style="">
+<i>*</i>                                姓：
+                            </dt>
+<dd class="">
+<input data-name="" data-reg="notnull" name="users[547]" type="text" value=""/>
+</dd>
+</dl><dl class="clearfix">
+<dt style="">
+<i>*</i>                                名：
+                            </dt>
+<dd class="">
+<input data-name="" data-reg="notnull" name="users[548]" type="text" value=""/>
+</dd>
+</dl><dl class="clearfix">
+<dt style="">
+<i>*</i>                                邮箱：
+                            </dt>
+<dd class="">
+<input data-name="" data-reg="notnull" name="users[549]" type="text" value=""/>
+</dd>
+</dl><dl class="clearfix">
+<dt style="">
+<i>*</i>                                手机：
+                            </dt>
+<dd class="">
+<input data-name="" data-reg="notnull" name="users[553]" type="text" value=""/>
+</dd>
+</dl><dl class="clearfix">
+<dt style="">
+<i>*</i>                                公司：
+                            </dt>
+<dd class="">
+<input data-name="" data-reg="notnull" name="users[550]" type="text" value=""/>
+</dd>
+</dl><dl class="clearfix">
+<dt style="">
+<i>*</i>                                职位：
+                            </dt>
+<dd class="">
+<input data-name="" data-reg="notnull" name="users[551]" type="text" value=""/>
+</dd>
+</dl><dl class="clearfix">
+<dt style="">
+<i>*</i>                                地址：
+                            </dt>
+<dd class="">
+<span class="address_select">
+<span class="select_box province_select">
+<select class="province" data-name="province" data-reg="province,notnull" name="users[552][province]"><option value="">请选择省份</option><option data-city="东城|西城|崇文|宣武|朝阳|丰台|石景山|海淀|门头沟|房山|通州|顺义|昌平|大兴|平谷|怀柔|密云|延庆" value="北京">北京</option><option data-city="黄浦|卢湾|徐汇|长宁|静安|普陀|闸北|虹口|杨浦|闵行|宝山|嘉定|浦东|金山|松江|青浦|南汇|奉贤|崇明" value="上海">上海</option><option data-city="和平|东丽|河东|西青|河西|津南|南开|北辰|河北|武清|红挢|塘沽|汉沽|大港|宁河|静海|宝坻|蓟县" value="天津">天津</option><option data-city="万州|涪陵|渝中|大渡口|江北|沙坪坝|九龙坡|南岸|北碚|万盛|双挢|渝北|巴南|黔江|长寿|綦江|潼南|铜梁 |大足|荣昌|壁山|梁平|城口|丰都|垫江|武隆|忠县|开县|云阳|奉节|巫山|巫溪|石柱|秀山|酉阳|彭水|江津|合川|永川|南川" value="重庆">重庆</option><option data-city="石家庄|邯郸|邢台|保定|张家口|承德|廊坊|唐山|秦皇岛|沧州|衡水" value="河北">河北</option><option data-city="太原|大同|阳泉|长治|晋城|朔州|吕梁|忻州|晋中|临汾|运城" value="山西">山西</option><option data-city="呼和浩特|包头|乌海|赤峰|呼伦贝尔盟|阿拉善盟|哲里木盟|兴安盟|乌兰察布盟|锡林郭勒盟|巴彦淖尔盟|伊克昭盟" value="内蒙">内蒙</option><option data-city="沈阳|大连|鞍山|抚顺|本溪|丹东|锦州|营口|阜新|辽阳|盘锦|铁岭|朝阳|葫芦岛" value="辽宁">辽宁</option><option data-city="长春|吉林|四平|辽源|通化|白山|松原|白城|延边" value="吉林">吉林</option><option data-city="哈尔滨|齐齐哈尔|牡丹江|佳木斯|大庆|绥化|鹤岗|鸡西|黑河|双鸭山|伊春|七台河|大兴安岭" value="黑龙江">黑龙江</option><option data-city="南京|镇江|苏州|南通|扬州|盐城|徐州|连云港|常州|无锡|宿迁|泰州|淮安" value="江苏">江苏</option><option data-city="杭州|宁波|温州|嘉兴|湖州|绍兴|金华|衢州|舟山|台州|丽水" value="浙江">浙江</option><option data-city="合肥|芜湖|蚌埠|马鞍山|淮北|铜陵|安庆|黄山|滁州|宿州|池州|淮南|巢湖|阜阳|六安|宣城|亳州" value="安徽">安徽</option><option data-city="福州|厦门|莆田|三明|泉州|漳州|南平|龙岩|宁德" value="福建">福建</option><option data-city="南昌市|景德镇|九江|鹰潭|萍乡|新馀|赣州|吉安|宜春|抚州|上饶" value="江西">江西</option><option data-city="济南|青岛|淄博|枣庄|东营|烟台|潍坊|济宁|泰安|威海|日照|莱芜|临沂|德州|聊城|滨州|菏泽" value="山东">山东</option><option data-city="郑州|开封|洛阳|平顶山|安阳|鹤壁|新乡|焦作|濮阳|许昌|漯河|三门峡|南阳|商丘|信阳|周口|驻马店|济源" value="河南">河南</option><option data-city="武汉|宜昌|荆州|襄樊|黄石|荆门|黄冈|十堰|恩施|潜江|天门|仙桃|随州|咸宁|孝感|鄂州" value="湖北">湖北</option><option data-city="广州|深圳|珠海|汕头|东莞|中山|佛山|韶关|江门|湛江|茂名|肇庆|惠州|梅州|汕尾|河源|阳江|清远|潮州|揭阳|云浮" value="广东">广东</option><option data-city="长沙|常德|株洲|湘潭|衡阳|岳阳|邵阳|益阳|娄底|怀化|郴州|永州|湘西|张家界" value="湖南">湖南</option><option data-city="南宁|柳州|桂林|梧州|北海|防城港|钦州|贵港|玉林|南宁地区|柳州地区|贺州|百色|河池" value="广西">广西</option><option data-city="海口|三亚" value="海南">海南</option><option data-city="成都|绵阳|德阳|自贡|攀枝花|广元|内江|乐山|南充|宜宾|广安|达川|雅安|眉山|甘孜|凉山|泸州" value="四川">四川</option><option data-city="贵阳|六盘水|遵义|安顺|铜仁|黔西南|毕节|黔东南|黔南" value="贵州">贵州</option><option data-city="昆明|大理|曲靖|玉溪|昭通|楚雄|红河|文山|思茅|西双版纳|保山|德宏|丽江|怒江|迪庆|临沧" value="云南">云南</option><option data-city="拉萨|日喀则|山南|林芝|昌都|阿里|那曲" value="西藏">西藏</option><option data-city="西安|宝鸡|咸阳|铜川|渭南|延安|榆林|汉中|安康|商洛" value="陕西">陕西</option><option data-city="兰州|嘉峪关|金昌|白银|天水|酒泉|张掖|武威|定西|陇南|平凉|庆阳|临夏|甘南" value="甘肃">甘肃</option><option data-city="银川|石嘴山|吴忠|固原" value="宁夏">宁夏</option><option data-city="西宁|海东|海南|海北|黄南|玉树|果洛|海西" value="青海">青海</option><option data-city="乌鲁木齐|石河子|克拉玛依|伊犁|巴音郭勒|昌吉|克孜勒苏柯尔克孜|博尔塔拉|吐鲁番|哈密|喀什|和田|阿克苏" value="新疆">新疆</option><option data-city="香港特别行政区" value="香港">香港</option><option data-city="澳门特别行政区" value="澳门">澳门</option><option data-city="台北|高雄|台中|台南|屏东|南投|云林|新竹|彰化|苗栗|嘉义|花莲|桃园|宜兰|基隆|台东|金门|马祖|澎湖" value="台湾">台湾</option></select>
+<ins>请选择省份</ins></span>
+<span class="select_box city_select">
+<select class="city" data-name="city" data-reg="city,notnull" name="users[552][city]"><option value="">请选择市/区</option></select>
+<ins>请选择市/区</ins></span>
+<textarea data-name="" data-reg="address,notnull" name="users[552][address]" placeholder="详细地址，不需要重复填写省市"></textarea>
+</span> </dd>
+</dl> </div>
+<!-- #用户信息表单-->
+<input data-name="uid" name="user_id" type="hidden" value=""/>
+<input name="act_id" type="hidden" value="79"/>
+<input name="trackid" type="hidden" value="txt8"/>
+<!--<input type="hidden" name="uid" value="" />-->
+<button class="btn submit_btn" type="submit">提交</button>
+</form> </div>
+<!-- *左侧表单***-->
+<!-- *右侧边内容-->
+<aside class="float_right" id="paget_right">
+<div class="right_module des">
+<h3 class="right_module_title">活动介绍</h3>
+<div class="right_module_content">
+<p><span style='font-family: 微软雅黑, "Microsoft YaHei"; font-size: 14px; color: rgb(63, 63, 63);'>信号完整性对于确保数据质量和客户满意度非常关键。</span></p><p><span style='font-family: 微软雅黑, "Microsoft YaHei"; font-size: 14px; color: rgb(63, 63, 63);'><br/></span></p><p><span style='font-family: 微软雅黑, "Microsoft YaHei"; font-size: 14px; color: rgb(63, 63, 63);'>下载<a href="http://url.elecfans.com/u/52495748a6" style='text-decoration: underline; font-family: 微软雅黑, "Microsoft YaHei"; color: rgb(0, 0, 0); font-size: 14px;' target="_blank" title="信号完整性基础知识-白皮书"><span style='font-family: 微软雅黑, "Microsoft YaHei"; color: rgb(0, 0, 0); font-size: 14px;'><strong>《信号完整性基础知识》</strong></span></a>白皮书，了解从仿真到测量的广泛知识。</span></p><p><span style='font-family: 微软雅黑, "Microsoft YaHei"; font-size: 14px; color: rgb(63, 63, 63);'><br/></span></p><p><span style='text-decoration: underline; font-family: 微软雅黑, "Microsoft YaHei"; font-size: 14px; color: rgb(255, 0, 0);'><strong><a href="http://url.elecfans.com/u/32c777e0db" style='text-decoration: underline; font-family: 微软雅黑, "Microsoft YaHei"; font-size: 14px; color: rgb(255, 0, 0);' target="_blank" title="白皮书下载">立即下载</a></strong></span></p> </div>
+</div><div class="right_module des">
+<h3 class="right_module_title">活动规则</h3>
+<div class="right_module_content">
+<p style="margin-top: 0px; margin-bottom: 0px; white-space: normal; padding: 0px; font-family: 微软雅黑, 黑体, 宋体; background-color: rgb(255, 255, 255);">1、活动时间：即日起 - 5月31日</p><p style="margin-top: 0px; margin-bottom: 0px; white-space: normal; padding: 0px; font-family: 微软雅黑, 黑体, 宋体; background-color: rgb(255, 255, 255);">2、<a href="http://url.elecfans.com/u/52495748a6" style="color: rgb(255, 0, 0); text-decoration: underline;" target="_blank" title="阅读白皮书"><span style="color: rgb(255, 0, 0);"><strong>阅读白皮书</strong></span></a>，并答对全部问题，即有机会获奖</p><p style="margin-top: 0px; margin-bottom: 0px; white-space: normal; padding: 0px; font-family: 微软雅黑, 黑体, 宋体; background-color: rgb(255, 255, 255);">3、奖品将在活动结束后15个工作日内发放<br/></p><p style="margin-top: 0px; margin-bottom: 0px; white-space: normal; padding: 0px; font-family: 微软雅黑, 黑体, 宋体; background-color: rgb(255, 255, 255);"><span style="font-size: 14px;">( 逾期未提供详细信息，即视为自动放弃奖品。本活动最终解释权归电子发烧友所有 )</span></p><p style="margin-top: 0px; margin-bottom: 0px; white-space: normal; padding: 0px; font-family: 微软雅黑, 黑体, 宋体; background-color: rgb(255, 255, 255);"><br/></p><p style="margin-top: 0px; margin-bottom: 0px; white-space: normal; padding: 0px; font-family: 微软雅黑, 黑体, 宋体; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;"><strong>注</strong>：本活动是“电子发烧友”和“是德科技”合办，点击“提交”，表明您将同意【</span><a href="https://www.keysight.com/main/editorial.jspx?pmode=Privacy&amp;lc=chi&amp;cc=CN" style="color: rgb(0, 112, 192); text-decoration: underline; font-size: 12px;" target="_blank" title="是德科技隐私声明"><span style="font-size: 12px;">是德科技隐私声明</span></a><span style="font-size: 12px;">】。此声明解释了是德科技是如何收集和使用您的个人信息的。</span></p><p><br/></p> </div>
+</div><div class="right_module des">
+<h3 class="right_module_title">活动奖品</h3>
+<div class="right_module_content">
+<p style="text-align: center;"><img alt="img_20200417155759.png" height="137" src="http://file.elecfans.com/web1/M00/BA/48/o4YBAF6ZYYeAOg6RAAPQGLy79FM178.png" title="img_20200417155759.png" width="150"/></p><p style="text-align: center;"><strong>小米写字板（10英寸）*5块</strong></p><p style="white-space: normal; text-align: center;"><img alt="img_20191225172101.png" height="90" src="http://file.elecfans.com/web1/M00/B1/C3/o4YBAF4DKf2AcZ_wAAZcQsua0aM134.png" title="img_20191225172101.png" width="150"/></p><p style="white-space: normal; text-align: center;"><strong>京东E卡 （50元）* 5张</strong></p><p style="white-space: normal; text-align: center;"><strong><img alt="img_20200417160835.png" height="114" src="http://file.elecfans.com/web1/M00/BA/B6/pIYBAF6ZZAOAETSLAAPD9UILlbk986.png" title="img_20200417160835.png" width="150"/></strong></p><p style="white-space: normal; text-align: center;"><strong><strong style="text-align: center; white-space: normal;">京东E卡 （20元）* 10张</strong></strong></p><p><br/></p> </div>
+</div> <!--{/loop}-->
+</aside>
+<!-- #右侧边内容-->
+</div>
+<!-- #页身###########################################################################-->
+<!-- *页尾###########################################################################-->
+<!-- *页尾###########################################################################-->
+<footer id="page_footer">
+<nav>
+<li>
+<a href="/help/about.html">关于本站</a>
+</li>
+<li>
+<a href="/help/service.html">广告服务</a>
+</li>
+<li>
+<a href="/help/feedback.html">用户建议</a>
+</li>
+<li>
+<a href="/help/copyright.html">版权申明</a>
+</li>
+<li>
+<a href="/link/">友情链接</a>
+</li>
+<li>
+<a href="/member/upload.php" target="_blank">资料分享</a>
+</li>
+<li>
+<a href="/sitemap.html">网站地图</a>
+</li>
+</nav>
+<p>Copyright © 2006-2020 elecfans.com.All Rights Reserved</p>
+<p>
+<a href="http://www.elecfans.com/" target="_blank">电子发烧友</a>（
+        <a href="http://www.elecfans.com/article/88/131/" target="_blank">电路图</a> ）粤ICP备14022951号-2
+    </p>
+</footer>
+<!-- #页尾###########################################################################-->
+<!-- #页尾###########################################################################-->
+<!-- *脚本###########################################################################-->
+<script src="/webapi/public/quiz/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+    var ACT_ID = '79';
+</script>
+<!--引入单点登录JS 注意：包含的属性JS中需要用得到-->
+<script data-ssoreferer="http://www.elecfans.com/quiz/79" data-ssosite="http://passport.elecfans.com" data-ssositeid="11" id="sso_script" src="http://passport.elecfans.com/public/pc/js/sso.passport.js?v=2.0"></script>
+<!--引用统计代码-->
+<script src="/webapi/public/quiz/js/quiz.min.js?20190627"></script>
+<script src="http://skin.elecfans.com/js/tongji.js"></script>
+<style type="text/css">
+        .border_red{
+            border: 1px solid #d22222;
+        }
+    </style>
+<script type="text/javascript">
+        $(".submit_btn").click(function(e){
+            var isPsss = true;
+            $("#question_list").find('select').each(function(){
+                if($(this).siblings("input").is(":checked") && !$(this).val()){
+                    $(this).addClass("border_red");
+                    isPsss = false;
+                }
+            })
+            if(isPsss){
+                $(".submit_btn").submit()
+            } else {
+                layer.msg("请选择勾选后的下拉框");
+                return false;
+            }
+            return false
+        })
+    </script>
+<div class="sso_layer"></div><div class="sso_dialog"><div class="sso_dialog_header"><span class="sso_dialog_title">登录</span><button class="sso_dialog_close">×</button></div><div class="sso_dialog_content"><iframe frameborder="0" onload="" scrolling="no" src="http://passport.elecfans.com/login?referer=http://www.elecfans.com/quiz/79&amp;siteid=11&amp;scene=&amp;account=#http%3A%2F%2Fwww.elecfans.com%2Fquiz%2F79%3Felecfans_source%3Dtxt8"></iframe></div></div></body></html>

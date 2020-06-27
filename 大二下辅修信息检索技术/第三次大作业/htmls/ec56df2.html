@@ -1,0 +1,251 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>OMRON编码器工作原理_信号输出-维库电子通</title>
+<meta content="OMRON编码器工作原理,OMRON编码器信号输出" name="keywords"/>
+<meta content="OMRON编码器是用来测量转速的装置，光电式旋转编码器通过光电转换，可将输出轴的角位移、角速度等机械量转换成相应的电脉冲以数字量输出（REP）。它分为单路输出和双路输出两种。技术参数主要有每转脉冲数（几十个到几千个都有），和供电电压等。单路输出是指..." name="description"/>
+<link href="http://img3.dzsc.com/css/web/common/base.css?v=11222016.css" rel="stylesheet" type="text/css"/>
+<link href="http://img3.dzsc.com/css/web/common/top.css?v=11222016.css" rel="stylesheet" type="text/css"/>
+<link href="http://img3.dzsc.com/css/web/news/common.css" rel="stylesheet" type="text/css"/>
+<link href="http://img3.dzsc.com/css/web/news/news.css" rel="stylesheet" type="text/css"/>
+<script src="//push.zhanzhang.baidu.com/push.js"></script><script src="https://hm.baidu.com/hm.js?4b49b84f5d3fbea3caf3b7cfde1e1b0d"></script><script src="http://img3.dzsc.com/js/jquery/jquery-1.10.2.min.js" type="text/javascript"></script>
+<script charset="utf-8" src="http://img3.dzsc.com/js/web/wangmeng.js" type="text/javascript"></script>
+<script charset="utf-8" src="http://img3.dzsc.com/js/web/dgk/index.js" type="text/javascript"></script>
+<!--移动端适配-->
+<meta content="pc" name="applicable-device"/>
+<meta content="format=html5;url=http://m.dzsc.com/wiki/15145.html" name="mobile-agent"/>
+<meta content="format=xhtml;url=http://m.dzsc.com/wiki/15145.html" name="mobile-agent"/>
+<meta content="no-transform" http-equiv="Cache-Control"/>
+<meta content="no-siteapp" http-equiv="Cache-Control"/>
+<link href="http://m.dzsc.com/wiki/15145.html" media="only screen and(max-width: 640px)" rel="alternate"/>
+<script src="http://img3.dzsc.com/js/common/uaredirect.js" type="text/javascript"></script>
+<script type="text/javascript">uaredirect("http://m.dzsc.com/wiki/15145.html");</script>
+<script type="application/ld+json">
+    {
+        "@context": "https://zhanzhang.baidu.com/contexts/cambrian.jsonld",
+        "@id":"http://wiki.dzsc.com/15145.html",
+        "appid":"1582126773244911",
+        "title": "OMRON编码器工作原理_信号输出-维库电子通",
+        "images": [],
+        "description": "OMRON编码器是用来测量转速的装置，光电式旋转编码器通过光电转换，可将输出轴的角位移、角速度等机械量转换成相应的电脉冲以数字量输出（REP）。它分为单路输出和双路输出两种。技术参数主要有每转脉冲数（几十个到几千个都有），和供电电压等。单路输出是指旋转编码器的输出是一组脉冲，而双路输出的旋转编码器输出两组A/",
+        "pubDate": "2019-03-05T17:09:24",
+        "upDate":"2019-03-05T17:09:24"
+    }
+    </script>
+</head>
+<body style="">
+<div class="top">
+<div class="w1190">
+<div class="fl">
+            您好，欢迎来到维库电子市场网
+                
+                
+            <a class="blue" href="http://www.dzsc.com/member/login.aspx?returnurl=http%3a%2f%2fwiki.dzsc.com%2fdetail.aspx%3ffullurl%3d15145.html" rel="nofollow" target="_self">登录</a> | <a class="blue" href="http://www.dzsc.com/member/reg.aspx" rel="nofollow" target="_self">免费注册</a>
+</div>
+<div class="fr">
+<span><a class="gray" href="http://www.dzsc.com/" target="_self">网站首页</a></span>
+            | <span class="relative"><a class="gray" href="javascript:;" onmouseout="javascript:$('#pur').hide();" onmouseover="javascript:$('#pur').show()" rel="nofollow">采购商服务<i></i></a> <font id="pur" onmouseout="javascript:$('#pur').hide();" onmouseover="javascript:$('#pur').show()" style="display: none"><a href="http://www.dzsc.com/ic/buystockadd.aspx" rel="nofollow" target="_blank">发布采购信息</a><br/>
+<a href="http://www.dzsc.com/ic/buystocklist.aspx" rel="nofollow" target="_blank">修改/删除采购</a><br/>
+<a href="http://www.dzsc.com/weituo/" rel="nofollow" target="_blank">委托宝</a> </font>
+</span>| <span class="relative"><a class="gray" href="javascript:;" onmouseout="javascript:$('#vip1').hide();" onmouseover="javascript:$('#vip1').show()" rel="nofollow">会员服务<i></i></a> <font id="vip1" onmouseout="javascript:$('#vip1').hide();" onmouseover="javascript:$('#vip1').show()" style="display: none">
+<a href="http://www.dzsc.com/topic/freespotservice/" rel="nofollow" target="_blank">免费现货认证</a><br/>
+<a href="http://www.dzsc.com/topic/serv_member/" rel="nofollow" target="_blank">基础会员服务</a><br/>
+<a href="http://www.dzsc.com/topic/serv_bigcustom/" rel="nofollow" target="_blank">百维通</a><br/>
+<a href="http://www.dzsc.com/topic/marketing_softwen/" rel="nofollow" target="_blank">软文营销</a> </font>
+</span>| <span class="relative"><a class="gray" href="javascript:;" onmouseout="javascript:$('#ser').hide();" onmouseover="javascript:$('#ser').show()" rel="nofollow">工程师服务<i></i></a> <font id="ser" onmouseout="javascript:$('#ser').hide();" onmouseover="javascript:$('#ser').show()" style="display: none">
+<a href="http://pdf.dzsc.com/" target="_blank">PDF下载</a><br/>
+<a href="http://www.dzsc.com/data/" target="_blank">技术资料</a><br/>
+<a href="http://product.dzsc.com/news/" target="_blank">电子资讯</a><br/>
+<a href="http://www.dzsc.com/data/circuitmore.html" target="_blank">电路图</a> </font></span>|
+                <span class="relative"><a class="gray" href="javascript:;" onmouseout="javascript:$('#map').hide();" onmouseover="javascript:$('#map').show()" rel="nofollow">网站导航<i></i></a> <font id="map" onmouseout="javascript:$('#map').hide();" onmouseover="javascript:$('#map').show()" style="display: none"><a href="http://www.dzsc.com/" target="_blank">
+                            网站首页</a><br/>
+<a href="http://product.dzsc.com/" target="_blank">电子元器件</a><br/>
+<a href="http://ic.dzsc.com/" target="_blank">IC交易网</a><br/>
+<a href="http://www.dzsc.com/data/" target="_blank">技术资料</a><br/>
+<a href="http://product.dzsc.com/news/" target="_blank">电子资讯</a><br/>
+<a href="http://pdf.dzsc.com/" target="_blank">Datasheet</a><br/>
+<a href="http://www.dzsc.com/data/circuitmore.html" target="_blank">电路图</a><br/>
+<a href="http://wiki.dzsc.com/" target="_blank">电子通</a> </font></span>
+</div>
+</div>
+</div>
+<div class="w1190">
+<div class="logo_box">
+<a class="logo" href="http://www.dzsc.com/"><img alt="维库电子市场网" src="http://img3.dzsc.com/img/web/common/logo.png"/></a>
+<div class="Search">
+<form action="http://wiki.dzsc.com/list.aspx" id="form1" method="get" onsubmit="return checkOthers(0)">
+<span class="relative" onmouseout="javascript:$('#choose').hide();" onmouseover="javascript:$('#choose').show()">
+<a href="javascript:void(0)" id="searchtitle">电子通</a><i></i> <font id="choose" onmouseout="javascript:$('#choose').hide();" onmouseover="javascript:$('#choose').show()" style="z-index: 100; display: none">
+<a href="javascript:void(0)" onclick="ChangeSearch(0,$(this).html())">产品</a><br/>
+<a href="javascript:void(0)" onclick="ChangeSearch(1,$(this).html())">PDF</a><br/>
+<a href="javascript:void(0)" onclick="ChangeSearch(2,$(this).html())">资讯</a><br/>
+<a href="javascript:void(0)" onclick="ChangeSearch(3,$(this).html())">资料</a><br/>
+<a href="javascript:void(0)" onclick="ChangeSearch(5,$(this).html())">电子通</a>
+</font></span>
+<input class="ss_text" id="keyword" name="keyword" type="text" value=""/>
+<input class="enter" type="submit" value="搜索"/>
+</form>
+</div>
+<div class="fabu fr">
+<a class="enter mr10" href="http://www.dzsc.com/ic/buystockadd.aspx" rel="nofollow" target="_blank"><i></i>发布采购信息</a> <a class="enter01" href="http://www.dzsc.com/ic/buystocklist.aspx" rel="nofollow" target="_blank">修改/删除采购【看报价】</a>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+    if (typeof (jQuery) == "undefined") document.write("<sc" + "ript lang" + "uage=\"java" + "script\" src=\"http://img3.dzsc.com/js/jquery/jquery-1.4.2.min.js\"></scr" + "ipt>");
+    var stype = 5;
+
+</script>
+<script src="http://img3.dzsc.com/js/web/common/top.js" type="text/javascript"></script>
+<div class="w1190">
+<div class="breadcrumb">
+            您所在的位置：<a href="http://www.dzsc.com/">电子元器件采购网</a><span>&gt;</span><a href="http://wiki.dzsc.com/">电子通</a><span>&gt;</span>OMRON编码器
+        </div>
+</div>
+<div class="w1190 encyclopedias-info mt10 mb10 cfix">
+<div class="info-left fl">
+<div class="latestEntry">
+<div class="encyclopedias-details">
+<div class="encyclopedias-briefing">
+<h1 class="normal cfix">OMRON编码器<div><span><i class="i-ico i-yuedu"></i>阅读：9422</span><span><i class="i-ico i-date"></i>时间：2019-03-05 17:09:24</span></div>
+</h1>
+<p><font face="Verdana">    OMRON<a href="http://wiki.dzsc.com/1768.html" target="_blank">编码器</a>是用来测量转速的装置，光电式<a href="http://wiki.dzsc.com/24.html" target="_blank">旋转编码器</a>通过光电转换，可将输出轴的角位移、角速度等机械量转换成相应的电脉冲以数字量输出（REP）。它分为单路输出和双路输出两种。技术参数主要有每转脉冲数（几十个到几千个都有），和供电电压等。单路输出是指旋转编码器的输出是一组脉冲，而双路输出的旋转编码器输出两组A/B相位差90度的脉冲，通过这两组脉冲不仅可以测量转速，还可以判断旋转的方向。</font></p>
+<div class="catalog cfix">
+<div class="catalog-box fl">
+<span class="fl">目录</span>
+<ul class="fl">
+<li><a href="#md52902"><i></i>工作原理</a></li>
+<li><a href="#md52903"><i></i>信号输出</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="encyclopedias-details-item" id="md52902">
+<h2 class="normal">
+<i></i>
+<span>工作原理</span>
+</h2>
+<div>
+<p><font face="Verdana">   由一个中心有轴的光电码盘，其上有环形通、暗的刻线，有光电发射和接收器件读取,获得四组正弦波信号组合成A、B、C、D,每个正弦波相差90度相位差（相对于一个周波为360度），将C、D信号反向，叠加在A、B两相上，可增强稳定信号；另每转输出一个Z相脉冲以代表零位参考位。 　由于A、B两相相差90度，可通过比较A相在前还是B相在前，以判别编码器的正转与反转，通过零位脉冲，可获得编码器的零位参考位。 　编码器码盘的材料有玻璃、金属、塑料，玻璃码盘是在玻璃上沉积很薄的刻线，其热稳定性好，精度高，金属码盘直接以通和不通刻线，不易碎，但由于金属有一定的厚度，精度就有限制，其热稳定性就要比玻璃的差一个数量级，塑料码盘是经济型的，其成本低，但精度、热稳定性、寿命均要差一些。 　分辨率—编码器以每旋转360度提供多少的通或暗刻线称为分辨率，也称解析分度、或直接称多少线，一般在每转分度5~10000线。</font></p>
+</div>
+</div>
+<div class="encyclopedias-details-item" id="md52903">
+<h2 class="normal">
+<i></i>
+<span>信号输出</span>
+</h2>
+<div>
+<p><font face="Verdana">   信号输出有正弦波（电流或电压）,方波（TTL、HTL）,集电极开路（PNP、NPN）,推拉式多种形式，其中TTL为长线差分驱动（对称A,A-;B,B-;Z,Z-）,HTL也称推拉式、推挽式输出，编码器的信号接收设备接口应与编码器对应。 　信号连接—编码器的脉冲信号一般连接计数器、PLC、计算机，PLC和计算机连接的模块有低速模块与高速模块之分，开关频率有低有高。 　如单相联接，用于单方向计数，单方向测速。 　A.B两相联接，用于正反向计数、判断正反向和测速。 　A、B、Z三相联接，用于带参考位修正的位置测量。 　A、A-，B、B-，Z、Z-连接，由于带有对称负信号的连接，电流对于电缆贡献的电磁场为0，衰减最小，抗干扰最佳，可传输较远的距离。 　对于TTL的带有对称负信号输出的编码器，信号传输距离可达150米。 　旋转编码器由精密器件构成，故当受到较大的冲击时，可能会损坏内部功能，使用上应充分注意。安装 　安装时不要给轴施加直接的冲击。 　编码器轴与机器的连接，应使用柔性连接器。在轴上装连接器时，不要硬压入。即使使用连接器，因安装不良，也有可能给轴加上比允许负荷还大的负荷，或造成拨芯现象，因此，要特别注意。 　轴承寿命与使用条件有关，受轴承荷重的影响特别大。如轴承负荷比规定荷重小，可大大延长轴承寿命。 　不要将旋转编码器进行拆解，这样做将有损防油和防滴性能。防滴型产品不宜长期浸在水、油中，表面有水、油时应擦拭干净。 　（2）振动 　加在旋转编码器上的振动，往往会成为误脉冲发生的原因。因此，应对设置场所、安装场所加以注意。每转发生的脉冲数越多，旋转槽圆盘的槽孔间隔越窄，越易受到振动的影响。在低速旋转或停止时，加在轴或本体上的振动使旋转槽圆盘抖动，可能会发生误脉冲。 　（3）关于配线和连接 　误配线，可能会损坏内部回路，故在配线时应充分注意： 　① 配线应在电源OFF状态下进行，电源接通时，若输出线接触电源，则有时会损坏输出回路。 　② 若配线错误，则有时会损坏内部回路，所以配线时应充分注意电源的极性等。 　3 若和高压线、动力线并行配线，则有时会受到感应造成误动作成损坏，所以要分离开另行配线。 　④ 延长电线时，应在10m以下。并且由于电线的分布容量，波形的上升、下降时间会较长，有问题时，采用施密特回路等对波形进行整形。 　⑤ 为了避免感应噪声等，要尽量用最短距离配线。向集成电路输入时，特别需要注意。 　6 电线延长时，因导体电阻及线间电容的影响，波形的上升、下降时间加长，容易产生信号间的干扰（串音），因此应用电阻小、线间电容低的电线（双绞线、屏蔽线）。 　对于HTL的带有对称负信号输出的编码器，信号传输距离可达300米</font></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="info-right fr right">
+<div class="encyclopedias-text mb10">
+<p><strong>维库电子通，电子知识，一查百通！</strong></p>
+<p>已收录词条<em>13949</em>个</p>
+</div>
+<div class="news-item ph-item mb10">
+<h4 class="normal">热门电子百科排行</h4>
+<ul class="block J_tabbox">
+</ul>
+</div>
+<div class="news-item c-item mb10">
+<h4 class="normal">相关词条<span class="fr"><a href="/list.html">更多&gt;&gt;</a></span></h4>
+<ul class="cfix">
+<li><a href="http://wiki.dzsc.com/8422.html" target="_blank" title="冷链温度记录仪">冷链温度记录仪</a></li>
+<li><a href="http://wiki.dzsc.com/11233.html" target="_blank" title="自动吸盘振动器">自动吸盘振动器</a></li>
+<li><a href="http://wiki.dzsc.com/4127.html" target="_blank" title="晶闸管智能模块">晶闸管智能模块</a></li>
+<li><a href="http://wiki.dzsc.com/12000.html" target="_blank" title="熔配一体化模块">熔配一体化模块</a></li>
+<li><a href="http://wiki.dzsc.com/6203.html" target="_blank" title="永磁同步电机">永磁同步电机</a></li>
+<li><a href="http://wiki.dzsc.com/6396.html" target="_blank" title="继电器续流二极管">继电器续流二极管</a></li>
+<li><a href="http://wiki.dzsc.com/6141.html" target="_blank" title="整流电路">整流电路</a></li>
+<li><a href="http://wiki.dzsc.com/2968.html" target="_blank" title="指纹读取器">指纹读取器</a></li>
+<li><a href="http://wiki.dzsc.com/13111.html" target="_blank" title="电梯专用稳压器">电梯专用稳压器</a></li>
+<li><a href="http://wiki.dzsc.com/6108.html" target="_blank" title="埋弧焊">埋弧焊</a></li>
+</ul>
+</div>
+<div class="news-item c-item mb10">
+<h4 class="normal">最新产品</h4>
+<ul class="cfix">
+<li><a class="f14" href="http://product.dzsc.com/product/infomation/948723/2013627161930150.html" target="_blank" title="供应自动升降发电机移动照明车">供应自动升降发电机移动照明车</a></li>
+<li><a class="f14" href="http://product.dzsc.com/product/1065347-2015511132045875.html" target="_blank" title="供应奥林巴斯三目显微镜CKX53">供应奥林巴斯三目显微镜CKX53</a></li>
+<li><a class="f14" href="http://product.dzsc.com/product/1156303-202059174217764.html" target="_blank" title="13F-39MNL集成电路IC">13F-39MNL集成电路IC</a></li>
+<li><a class="f14" href="http://product.dzsc.com/product/796864-202059174327145.html" target="_blank" title="W25N01GVZEIGTR华邦芯片存储器-IC-1Gb现货">W25N01GVZEIGTR华邦芯片存储器-IC-1Gb现货</a></li>
+<li><a class="f14" href="http://product.dzsc.com/product/950388-2019822053365.html" target="_blank" title="ST意法 STD2HNK60Z-1 TO-252 原装MOS管">ST意法 STD2HNK60Z-1 TO-252 原装MOS管</a></li>
+<li><a class="f14" href="http://product.dzsc.com/product/950388-201982217680.html" target="_blank" title="L7806CV-DG TO-220  原装ST MOS管">L7806CV-DG TO-220  原装ST MOS管</a></li>
+<li><a class="f14" href="http://product.dzsc.com/product/950388-2019822121953.html" target="_blank" title="ST意法 STP55NF06 TO-220 原装 60V50A">ST意法 STP55NF06 TO-220 原装 60V50A</a></li>
+<li><a class="f14" href="http://product.dzsc.com/product/950388-2019822130917.html" target="_blank" title="STD11NM60N TO-252 场效应管MOS管原装ST">STD11NM60N TO-252 场效应管MOS管原装ST</a></li>
+<li><a class="f14" href="http://product.dzsc.com/product/950388-201982222112.html" target="_blank" title="MOS管STP65NF06 TO-220 N沟道场效应管">MOS管STP65NF06 TO-220 N沟道场效应管</a></li>
+<li><a class="f14" href="http://product.dzsc.com/product/950388-2019822214320.html" target="_blank" title="STP60NF06 TO-220 ST意法 60V 60A 110W">STP60NF06 TO-220 ST意法 60V 60A 110W</a></li>
+</ul>
+</div>
+<div class="news-item c-item mb10">
+<h4 class="normal">热门产品</h4>
+<ul class="cfix">
+<li><a href="http://product.dzsc.com/product/searchfile/22069.html" target="_blank">
+            中高压电解电容
+        </a></li>
+<li><a href="http://product.dzsc.com/product/searchfile/22070.html" target="_blank">
+            源IC
+        </a></li>
+<li><a href="http://product.dzsc.com/product/searchfile/22071.html" target="_blank">
+            遥控发射器
+        </a></li>
+<li><a href="http://product.dzsc.com/product/searchfile/22072.html" target="_blank">
+            仪表电缆
+        </a></li>
+<li><a href="http://product.dzsc.com/product/searchfile/22073.html" target="_blank">
+            光照变送器
+        </a></li>
+<li><a href="http://product.dzsc.com/product/searchfile/22074.html" target="_blank">
+            固定式低压开关柜
+        </a></li>
+<li><a href="http://product.dzsc.com/product/searchfile/22076.html" target="_blank">
+            变频器电抗器
+        </a></li>
+<li><a href="http://product.dzsc.com/product/searchfile/22077.html" target="_blank">
+            TC端子
+        </a></li>
+<li><a href="http://product.dzsc.com/product/searchfile/22078.html" target="_blank">
+            SCN条形连接器
+        </a></li>
+<li><a href="http://product.dzsc.com/product/searchfile/22079.html" target="_blank">
+            MP3显示屏
+        </a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="w1190">
+</div>
+<div class="w1190">
+<div class="footer">
+<p>
+<strong>IC型号索引：</strong>
+<a class="c666" href="http://www.dzsc.com/A/" target="_blank" title="A开头IC芯片">A</a> <a class="c666" href="http://www.dzsc.com/B/" target="_blank" title="B开头IC芯片">B</a> <a class="c666" href="http://www.dzsc.com/C/" target="_blank" title="C开头IC芯片">C</a> <a class="c666" href="http://www.dzsc.com/D/" target="_blank" title="D开头IC芯片">D</a> <a class="c666" href="http://www.dzsc.com/E/" target="_blank" title="E开头IC芯片">E</a> <a class="c666" href="http://www.dzsc.com/F/" target="_blank" title="F开头IC芯片">F</a> <a class="c666" href="http://www.dzsc.com/G/" target="_blank" title="G开头IC芯片">G</a> <a class="c666" href="http://www.dzsc.com/H/" target="_blank" title="H开头IC芯片">H</a> <a class="c666" href="http://www.dzsc.com/I/" target="_blank" title="I开头IC芯片">I</a> <a class="c666" href="http://www.dzsc.com/J/" target="_blank" title="J开头IC芯片">J</a> <a class="c666" href="http://www.dzsc.com/K/" target="_blank" title="K开头IC芯片">K</a> <a class="c666" href="http://www.dzsc.com/L/" target="_blank" title="L开头IC芯片">L</a> <a class="c666" href="http://www.dzsc.com/M/" target="_blank" title="M开头IC芯片">M</a> <a class="c666" href="http://www.dzsc.com/N/" target="_blank" title="N开头IC芯片">N</a> <a class="c666" href="http://www.dzsc.com/O/" target="_blank" title="O开头IC芯片">O</a> <a class="c666" href="http://www.dzsc.com/P/" target="_blank" title="P开头IC芯片">P</a> <a class="c666" href="http://www.dzsc.com/Q/" target="_blank" title="Q开头IC芯片">Q</a> <a class="c666" href="http://www.dzsc.com/R/" target="_blank" title="R开头IC芯片">R</a> <a class="c666" href="http://www.dzsc.com/S/" target="_blank" title="S开头IC芯片">S</a> <a class="c666" href="http://www.dzsc.com/T/" target="_blank" title="T开头IC芯片">T</a> <a class="c666" href="http://www.dzsc.com/U/" target="_blank" title="U开头IC芯片">U</a> <a class="c666" href="http://www.dzsc.com/V/" target="_blank" title="V开头IC芯片">V</a> <a class="c666" href="http://www.dzsc.com/W/" target="_blank" title="W开头IC芯片">W</a> <a class="c666" href="http://www.dzsc.com/X/" target="_blank" title="X开头IC芯片">X</a> <a class="c666" href="http://www.dzsc.com/Y/" target="_blank" title="Y开头IC芯片">Y</a> <a class="c666" href="http://www.dzsc.com/Z/" target="_blank" title="Z开头IC芯片">Z</a> <a class="c666" href="http://www.dzsc.com/0/" target="_blank" title="0开头IC芯片">0</a> <a class="c666" href="http://www.dzsc.com/1/" target="_blank" title="1开头IC芯片">1</a> <a class="c666" href="http://www.dzsc.com/2/" target="_blank" title="2开头IC芯片">2</a> <a class="c666" href="http://www.dzsc.com/3/" target="_blank" title="3开头IC芯片">3</a> <a class="c666" href="http://www.dzsc.com/4/" target="_blank" title="4开头IC芯片">4</a> <a class="c666" href="http://www.dzsc.com/5/" target="_blank" title="5开头IC芯片">5</a> <a class="c666" href="http://www.dzsc.com/6/" target="_blank" title="6开头IC芯片">6</a> <a class="c666" href="http://www.dzsc.com/7/" target="_blank" title="7开头IC芯片">7</a> <a class="c666" href="http://www.dzsc.com/8/" target="_blank" title="8开头IC芯片">8</a> <a class="c666" href="http://www.dzsc.com/9/" target="_blank" title="9开头IC芯片">9</a> 
+        </p>
+<p>
+            ©2020 维库电子市场网（www.dzsc.com）　经营许可证编号：<a href="http://beian.miit.gov.cn/" rel="nofollow" target="_blank">浙B2-20050339</a> <a href="http://www.dzsc.com/about/about5.asp" rel="nofollow" target="_blank">版权声明</a>
+</p>
+<p>十六年专注打造优质<a href="http://www.dzsc.com/" target="_blank">电子元器件采购网</a>、IC交易平台。</p>
+<p>
+            买家服务热线：0571-85317666 | 买家服务部QQ：
+      <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=1609526468&amp;site=www.dzsc.com&amp;menu=yes" rel="nofollow" target="_blank" title="QQ:1609526468">
+<img alt="QQ:1609526468" border="0" onerror="this.src='http://www.dzsc.com/img/images/common/qq.gif'" src="http://wpa.qq.com/pa?p=2:1609526468:4"/></a>
+<br/>
+            卖家服务热线：0571-85317586 | 卖家服务部QQ： <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=331652727&amp;site=www.dzsc.com&amp;menu=yes" rel="nofollow" target="_blank" title="QQ:331652727">
+<img alt="QQ:331652727" border="0" onerror="this.src='http://www.dzsc.com/img/images/common/qq.gif'" src="http://wpa.qq.com/pa?p=2:331652727:4"/></a>
+</p>
+</div>
+</div>
+<script src="http://www.dzsc.com/js/4vcount.js"></script><script language="javascript" src="http://counter.dzsc.com/stat.aspx?sitecode=070b9a8e53932e24"></script><script language="javascript" src="http://counter.dzsc.com/counter.aspx?sitecode=070b9a8e53932e24&amp;visitor=070b9a8e53932e24-202059213159996-41475529&amp;visitedtimes=1&amp;pcfristtoday=0&amp;referrer=&amp;visitpage=http%3A//wiki.dzsc.com/15145.html"></script>
+<script type="text/javascript">
+        dgkdianzitong();
+        dgkhome();
+        $(function () {
+            var hei = $(".catalog-box ul").height() + 35;
+            $(".catalog-box span").css("line-height", hei + 'px');
+        })
+    </script>
+</body></html>

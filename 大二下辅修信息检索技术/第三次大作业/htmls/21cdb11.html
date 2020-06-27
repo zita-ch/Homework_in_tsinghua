@@ -1,0 +1,2235 @@
+<html style="height: 0px;"><head>
+<meta charset="utf-8"/>
+<title>设计技术-技术文章-电子发烧友网</title>
+<meta content="设计技术,设计案例,解决方案,技术方案" name="keywords"/>
+<meta content="设计技术" name="description"/>
+<meta content="format=xhtml; url=http://m.elecfans.com/list/992/page/1.html" http-equiv="mobile-agent"/>
+<meta content="format=html5; url=http://m.elecfans.com/list/992/page/1.html" http-equiv="mobile-agent"/>
+<link href="http://www.elecfans.com/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<link href="/min/?f=skin-2012/css/base2013.css,skin-2012/css/list.css" rel="stylesheet" type="text/css"/>
+<script async="" src="http://www.elecfans.com/webapi/analytics/collection?typeid=992&amp;typename=可编程逻辑&amp;aid=0&amp;tags=&amp;url=http%3A%2F%2Fwww.elecfans.com%2Ftechnical%2Fall%2F&amp;referrer=&amp;siteid=1"></script><script async="" src="http://hm.baidu.com/h.js?4dbddc73fd0fe464304ba8ad95cbc96e" type="text/javascript"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script src="http://push.zhanzhang.baidu.com/push.js"></script><script async="" src="http://znsv.baidu.com/customer_search/api/js?sid=6298135183618923127&amp;plate_url=http%3A%2F%2Fwww.elecfans.com%2Ftechnical%2Fall%2F&amp;t=441398" type="text/javascript"></script><script async="" src="//www.elecfans.com/static/vendor/sa-sdk/1.14.9/sensorsdata.min.js"></script><script src="/skin-2012/js/elecfans/mobileAdapt.js"></script><script async="" src="http://skin.elecfans.com/js/fixbdshare.js"></script><link href="https://passport.elecfans.com/public/pc/css/sso.dialogPassport.css" rel="stylesheet"/></head>
+<body style="height: 0px;"><div id="AD-background" style=" display:block;margin-top:25px; position:absolute;width:100%; z-index:-100"><div id="AD-background-close" style="position: absolute; width: 1320px; margin: 0px auto 0px -660px; left: 50%; top: 675px;"><span style="float: left; cursor: pointer; background: rgb(255, 255, 255); border: 1px solid rgb(215, 215, 215); width: 156px; height: 20px;"><a href="javascript:;" style="display:block;margin:2px;border:1px solid #D7D7D7;color:#999999;font-size:10px;width:36px;height:14px;line-height:14px;text-align:center;float:left;">关闭</a></span><span style="float: right; cursor: pointer; background: rgb(255, 255, 255); border: 1px solid rgb(215, 215, 215); width: 156px; height: 20px;"><a href="javascript:;" style="display:block;margin:2px;border:1px solid #D7D7D7;color:#999999;font-size:10px;width:36px;height:14px;line-height:14px;text-align:center;float:right;">关闭</a></span></div><a class="bk_link" href="http://www1.elecfans.com/www/delivery/ck.php?n=be3a8346&amp;cb=1589032287" style="display: block; height: 675px;" target="_blank"><img src="http://www1.elecfans.com/www/delivery/avw.php?zoneid=601&amp;cb=1589032287&amp;n=be3a8346" style="border: none; position: absolute; left: 50%; margin-left: -660px; width: 1320px;"/></a><div></div></div>
+<div id="top">
+<div class="top">
+<div class="top-nav">
+<ul class="top-nav-list">
+<li id="website_ind_wrap">
+<a class="wraplist_title" href="http://www.elecfans.com/sitemap.html">网站导航<i class="down-arrow d-corner">▼</i><i class="up-arrow d-corner">▲</i></a>
+<div id="website_nav"><div class="sub_dis_wrap"> <h3 class="disTitle"><a href="http://www.elecfans.com/" target="_blank">电子发烧友</a></h3> <ul class="disList"> <li><a href="http://www.elecfans.com/news/hangye/" target="_blank">电子新闻</a></li> <li><a href="http://www.elecfans.com/soft/" target="_blank">资料下载</a></li> <li><a href="http://www.elecfans.com/dianlutu/" target="_blank">电子电路</a></li> <li><a href="http://www.elecfans.com/article/interview/" target="_blank">高端访谈</a></li> </ul> <ul class="disList"> <li><a href="http://www.elecfans.com/technical/all/" target="_blank">设计技术</a></li> <li><a href="http://www.elecfans.com/application/" target="_blank">行业应用</a></li> <li><a href="http://www.elecfans.com/tags/" target="_blank">电子标签</a></li> <li><a href="http://www.elecfans.com/tekan/" target="_blank">电子特刊</a></li> </ul> <ul class="disList" style="margin-right: 0;"> <li><a href="http://bbs.elecfans.com/forum.php" target="_blank">工程师社区</a></li> <li><a href="http://event.elecfans.com/index/seminar.html" target="_blank">技术研讨会</a></li> <li><a href="http://webinar.elecfans.com/" target="_blank">在线研讨会</a></li> <li><a href="http://www.elecfans.com/yuanqijian/" target="_blank">电子元器件</a></li> </ul></div><div class="sub_dis_wrap"> <h3 class="disTitle"><a>特色服务</a></h3> <ul class="disList"> <li><a href="http://bbs.elecfans.com/try.html" target="_blank">开发板试用</a></li> <li><a href="http://z.elecfans.com/" target="_blank">聚丰众筹</a></li> <li><a href="http://www.elecfans.com/d" target="_blank">电子说</a></li> <li><a href="http://www.elecfans.com/tools/" target="_blank">在线工具</a></li> </ul> <ul class="disList" style="margin-right: 0;"> <li><a href="http://t.elecfans.com/" target="_blank">发烧友学院</a></li> <li><a href="http://www.elecfans.com/d/column" target="_blank">专栏</a></li> <li><a href="http://pdf.elecfans.com/" target="_blank">Datasheet查询</a></li> <li><a href="http://bbs.elecfans.com/" target="_blank">电子问答</a></li> </ul></div><div class="sub_dis_wrap"> <h3 class="disTitle"><a href="http://www.hqpcb.com/" target="_blank">华强PCB</a></h3> <ul class="disList" style="margin-right: 0;"> <li><a href="http://www.hqpcb.com/online.html" target="_blank">在线算价</a></li> <li><a href="http://www.hqpcb.com/pay.html" target="_blank">付款方式</a></li> <li><a href="http://www.hqpcb.com/orderstep.html" target="_blank">下单流程</a></li> <li><a href="http://www.hqpcb.com/product.html" target="_blank">产品展示</a></li> </ul></div><div class="sub_dis_wrap" style="border-right: 0;"> <h3 class="disTitle"><a href="http://www.hqchip.com/" target="_blank">华强芯城</a></h3> <ul class="disList"> <li><a href="http://www.hqchip.com/" target="_blank">元器件搜索</a></li> <li><a href="http://www.hqchip.com/fangan/" target="_blank">方案中心</a></li> <li><a href="http://www.hqchip.com/mozu/" target="_blank">模组专区</a></li> <li><a href="http://www.hqchip.com/promote/" target="_blank">现货库存</a></li> </ul> <ul class="disList" style="margin-right: 0;"> <li><a href="http://www.hqchip.com/glist/all_cate.html" target="_blank">元器件分类</a></li> <li><a href="http://www.hqchip.com/kaifaban/" target="_blank">开发板专区</a></li> <li><a href="http://www.hqchip.com/bom/" target="_blank">BOM服务</a></li> <li><a href="http://bbs.elecfans.com/forum.php?gid=263" target="_blank">原厂专区</a></li> </ul></div></div>
+</li>
+<li><a href="http://bbs.elecfans.com/" target="_blank">电子论坛</a></li>
+<li><a href="http://pdf.elecfans.com/" target="_blank">datasheet</a></li>
+<li><a href="http://www.elecfans.com/d" target="_blank">电子说</a></li>
+<li><a href="http://t.elecfans.com/" target="_blank">学院</a></li>
+<li><a href="http://www.hqchip.com/" target="_blank">芯城</a></li>
+<li><a href="http://www.hqpcb.com/" target="_blank">PCB</a></li>
+<li><a href="http://smt.hqchip.com/" target="_blank">SMT</a></li>
+<li><a href="http://www.elecfans.com/article/special/" target="_blank">最新更新</a></li>
+<li><a href="/d/column/" target="_blank">专栏</a></li>
+<li><a href="http://www.elecfans.com/topic/iot2018/" target="_blank">中国IOT大会</a></li>
+<li><a href="http://www.elecfans.com/2018hicc/" target="_blank">中国硬件创新大赛</a></li>
+</ul>
+</div>
+<div class="login-info" id="login-info" style=""> <a class="login-link" href="http://bbs.elecfans.com/member.php?mod=logging&amp;action=login" id="btnLogin" rel="nofollow">登录</a> <span class="sp">|</span> <a class="register-link" href="http://bbs.elecfans.com/member.php?mod=reg" rel="nofollow">注册</a> </div><a class="origin-item" href="https://data.hqchip.com:4006/t/tca" target="_blank">原厂入驻<i class="hot">New</i></a>
+</div>
+</div>
+<div id="header" style="width: 1000px; margin: 0px auto; background-color: rgb(255, 255, 255);">
+<div class="header">
+<div class="clearfix">
+<div class="logo"><a href="/"><img alt="电子发烧友网Logo" height="70" src="http://skin.elecfans.com/base2012/images/logo.png" width="210"/></a></div>
+<div class="search">
+<ul class="search-tab clearfix">
+<li class="curr-tab" typeid="1">技术资料</li>
+<li typeid="2">买IC/元器件</li>
+</ul>
+<div class="search-form clearfix">
+<form action="/plus/search.php" id="search" method="get" name="formsearch">
+<fieldset>
+<legend>电子搜索</legend>
+<input name="kwtype" type="hidden" value="0"/>
+<input name="searchtype" type="hidden" value="title"/>
+<input id="typeid" name="typeid" type="hidden" value="1"/>
+<label class="search-def-label" for="searchBox"></label>
+<label class="search-def-label none" for="searchBox" style="display: none;">请输入元器件型号</label>
+<div class="search-ipt-area">
+<input autocomplete="off" id="searchBox" name="q" type="text"/>
+</div>
+<button id="searchBtn" type="submit">搜 索</button>
+</fieldset>
+</form>
+<script type="text/javascript">(function(){document.write(unescape('%3Cdiv id="bdcs"%3E%3C/div%3E'));var bdcs = document.createElement('script');bdcs.type = 'text/javascript';bdcs.async = true;bdcs.src = 'http://znsv.baidu.com/customer_search/api/js?sid=6298135183618923127' + '&plate_url=' + encodeURIComponent(window.location.href) + '&t=' + Math.ceil(new Date()/3600000);var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(bdcs, s);})();</script><div id="bdcs"></div>
+</div>
+<div class="search-key"><a href="http://www.elecfans.com/d/column">发现专栏</a> <a href="http://www.elecfans.com/tekan/editor.html">编辑计划</a><a href="http://www.elecfans.com/article/interview/">高端访谈</a></div>
+</div>
+<div class="search-right"><a class="btn btn-dataShare" href="http://www.elecfans.com/member/upload.php" target="_blank">资料分享</a><img class="live-new" src="/images2013/icon-new.png"/> <a class="btn btn-emailFeed" href="http://www.elecfans.com/d/mp" target="_blank">申请专栏</a>
+</div>
+</div>
+<div class="nav">
+<ul id="nav">
+<li class="nav-item"><a class="nav-a nav-home" href="http://www.elecfans.com" target="_self">首页</a></li>
+<li class="nav-item"> <a class="nav-a dropdown-toggle" href="http://www.elecfans.com/technical/all/">设计技术</a>
+<div class="dropdown-menu tech-menu tese-zone f12">
+<ul class="left-menu clearfix" style="padding-left: 20px;">
+<li><a href="http://www.elecfans.com/pld/">可编程逻辑</a></li>
+<li><a href="http://www.elecfans.com/article/80/">PCB设计</a></li>
+<li><a href="http://www.elecfans.com/article/83/">电源/新能源</a></li>
+<li><a href="http://www.elecfans.com/article/88/142/">MEMS/传感技术</a></li>
+<li><a href="http://www.elecfans.com/article/85/">测量仪表</a></li>
+<li><a href="http://www.elecfans.com/emb/">嵌入式技术</a></li>
+<li><a href="http://www.elecfans.com/article/89/">制造/封装</a></li>
+<li><a href="http://www.elecfans.com/analog/">模拟技术</a></li>
+<li><a href="http://www.elecfans.com/connector/">连接器</a></li>
+<li><a href="http://www.elecfans.com/emc_emi/">EMC/EMI设计</a></li>
+<li><a href="http://www.elecfans.com/xianshi/">光电显示</a></li>
+<li><a href="http://www.elecfans.com/consume/cunchujishu/">存储技术</a></li>
+<li><a href="http://www.elecfans.com/bandaoti/eda/">EDA/IC设计</a></li>
+<li><a href="http://www.elecfans.com/emb/dsp/">处理器/DSP</a></li>
+<li><a href="http://www.elecfans.com/emb/jiekou/">接口/总线/驱动</a></li>
+<li><a href="http://www.elecfans.com/emb/danpianji/">控制/MCU</a></li>
+<li><a href="http://www.elecfans.com/tongxin/rf/">RF/无线</a></li>
+</ul>
+</div></li>
+<li class="nav-item"> <a class="nav-a dropdown-toggle" href="http://www.elecfans.com/application/">行业应用</a>
+<div class="dropdown-menu application-menu">
+<ul class="left-menu clearfix">
+<li><a href="http://www.elecfans.com/led/">LEDs</a> </li>
+<li><a href="http://www.elecfans.com/video/">音视频及家电</a> </li>
+<li><a href="http://www.elecfans.com/qichedianzi/">汽车电子</a> </li>
+<li><a href="http://www.elecfans.com/tongxin/">通信网络</a> </li>
+<li><a href="http://www.elecfans.com/yiliaodianzi/">医疗电子</a> </li>
+<li><a href="http://www.elecfans.com/jiqiren/">机器人</a> </li>
+<li><a href="http://www.elecfans.com/rengongzhineng/">人工智能</a> </li>
+<li><a href="http://www.elecfans.com/vr/">vr|ar|虚拟现实</a> </li>
+<li><a href="http://www.elecfans.com/wearable/">可穿戴设备</a> </li>
+<li><a href="http://www.elecfans.com/application/Security/">安全设备/系统</a> </li>
+<li><a href="http://www.elecfans.com/application/Military_avionics/">军用/航空电子</a> </li>
+<li><a href="http://www.elecfans.com/application/Communication/">移动通信</a> </li>
+<li><a href="http://www.elecfans.com/kongzhijishu/">工业控制</a> </li>
+<li><a href="http://www.elecfans.com/consume/bianxiedianzishebei/">便携设备</a> </li>
+<li><a href="http://www.elecfans.com/consume/chukongjishu/">触控感测</a> </li>
+<li><a href="http://www.elecfans.com/iot/">物联网</a> </li>
+<li><a href="http://www.elecfans.com/dianyuan/diandongche_xinnenyuan/">智能电网</a> </li>
+<li><a href="http://www.elecfans.com/blockchain/">区块链</a> </li>
+</ul>
+</div>
+</li>
+<li class="nav-item"><a class="nav-a" href="/news/hangye/">行业</a></li>
+<li class="nav-item"><a class="nav-a" href="/technical/">文库</a></li>
+<li class="nav-item"> <a class="nav-a dropdown-toggle" href="/soft/">资料</a>
+<div class="dropdown-menu data-menu">
+<div class="left-menu">
+<h5 class="small-title"><a href="http://www.elecfans.com/soft/">资料下载</a></h5>
+<ul class="clearfix">
+<li><a href="http://www.elecfans.com/soft/70/">电源技术</a></li>
+<li><a href="http://www.elecfans.com/soft/802/">可编程逻辑</a></li>
+<li><a href="http://www.elecfans.com/soft/test/">测试测量</a></li>
+<li><a href="http://www.elecfans.com/soft/5/">FPGA/ASIC</a></li>
+<li><a href="http://www.elecfans.com/soft/58/">行业软件</a></li>
+<li><a href="http://www.elecfans.com/soft/432/">工控技术</a></li>
+<li><a href="http://www.elecfans.com/soft/33/">单片机</a></li>
+<li><a href="http://www.elecfans.com/soft/21/">无线通讯</a></li>
+<li><a href="http://www.elecfans.com/soft/20/">传感控制</a></li>
+<li><a href="http://www.elecfans.com/soft/fangzhenjishu/">仿真技术</a></li>
+<li><a href="http://www.elecfans.com/soft/cun/">存储技术</a></li>
+<li><a href="http://www.elecfans.com/soft/22/">EDA教程</a></li>
+<li><a href="http://www.elecfans.com/soft/6/">C语言|源代码</a></li>
+<li><a href="http://www.elecfans.com/soft/31/">显示及光电</a></li>
+<li><a href="http://www.elecfans.com/soft/72/">音视频类</a></li>
+<li><a href="http://www.elecfans.com/soft/EMC/">电磁兼容</a></li>
+<li><a href="http://www.elecfans.com/soft/3G/">3G技术</a></li>
+<li><a href="http://www.elecfans.com/soft/anfang/">安防技术</a></li>
+<li><a href="http://www.elecfans.com/soft/34/">机械电子</a></li>
+<li><a href="http://www.elecfans.com/soft/interface/">接口技术</a></li>
+<li><a href="http://www.elecfans.com/soft/study/">电子论文</a></li></ul>
+</div>
+<div class="dropmenu-right-block clearfix">
+<div class="dropmenu-right-leftBlock">
+<h5 class="small-title"><a href="http://www.elecfans.com/article/88/131/">电路图</a></h5>
+<ul class="text-list">
+<li><a href="http://www.elecfans.com/article/88/131/101/" target="_blank">嵌入式电路</a></li>
+<li><a href="http://www.elecfans.com/soft/49/mobi/" target="_blank">手机电路</a></li>
+<li><a href="http://www.elecfans.com/article/88/131/138/" target="_blank">电源电路</a></li>
+<!--        <li><a target="_blank" href="/article/88/131/189/">信号处理</a></li>
+ --> <li><a href="/article/88/131/190/" target="_blank">消费电子</a></li>
+<!--        <li><a target="_blank" href="/article/88/131/194/">电动机控制</a></li>
+ --> <li><a href="http://www.elecfans.com/article/88/131/LED/" target="_blank">LED电路</a></li>
+<li><a href="http://www.elecfans.com/article/88/131/195/" target="_blank">功率放大</a></li>
+<!--        <li ><a target="_blank" href="/article/88/131/time/">数字时钟</a></li>
+ --> <li><a href="/article/88/131/dis/" target="_blank">光电显示</a></li>
+<li><a href="http://www.elecfans.com/article/88/131/">&gt;&gt;更多</a></li>
+</ul>
+</div>
+<div class="dropmenu-right-rightBlock clearfix">
+<ul class="text-list">
+<li><a href="http://www.elecfans.com/topic/hotsoft/">常用软件</a></li>
+<li><a href="http://www.elecfans.com/soft/">资料分享</a></li>
+<li><a href="http://www.elecfans.com/yuanqijian/">元器件</a></li>
+<li><a href="http://www.elecfans.com/baike/">百科</a></li>
+<li><a href="http://www.elecfans.com/tools/">在线工具</a></li>
+<li><a href="http://www.elecfans.com/book/">电子书籍</a></li>
+<li><a href="http://www.elecfans.com/soft/162/">规则标准</a></li>
+<li><a href="http://bbs.elecfans.com/zhuti_288_1.html">工程师创意</a></li>
+</ul>
+<div class="pdf-link-area">
+<div class="pdf-logo"> <a href="http://pdf.elecfans.com"></a> </div>
+<ul class="pdf-tab clearfix">
+<li class="curr" name="name">型 号</li>
+<li name="_all">产品描述</li>
+</ul>
+<div class="pdf-form">
+<form action="http://pdf.elecfans.com/Search">
+<input class="pdf-type" name="f" type="hidden" value="name"/>
+<input autocomplete="off" class="pdf-ipt" name="q" type="text" value="请输入要搜索的元器件的型号"/><button class="pdf-btn" type="submit">搜</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="nav-item">
+<a class="nav-a dropdown-toggle" href="http://bbs.elecfans.com/">问答</a>
+<div class="dropdown-menu engineer-menu">
+<div class="en-guide">
+<span class="fb">社区活动：</span>
+		• 
+		<a href="http://www.elecfans.com/company/rohm2019/index.html?textlink5" target="_blank" title="逛ROHM技术科技展，赢大奖！">逛ROHM技术科技展，赢大奖！</a> | 	
+		• 
+		<a href="http://www.elecfans.com/quiz/42?elecfans_source=bbs" target="_blank" title="Silicon Labs小测验送入门套件">Silicon Labs小测验送入门套件</a> | 		
+		• <a href="http://bbs.elecfans.com/try_max17270.html?wd" target="_blank" title="试用：NanoPower SIMO 开发板">试用：NanoPower SIMO 开发板</a> | 
+		• <a href="http://webinar.elecfans.com/425.html?elecfans_trackid=textlink4" target="_blank" title="ADI全新集成烟雾探测解决方案">ADI全新集成烟雾探测解决方案</a>
+</div>
+<div class="mt15 clearfix">
+<div class="dropmenu-right-leftBlock">
+<h5 class="small-title">推荐帖子</h5>
+<dl class="img-txt">
+<dd>
+<div class="imgArea"><a href="http://bbs.elecfans.com/try_max17270.html?navdown" target="_blank"><img alt="img" height="119" src="http://www.elecfans.com/topic/edm/images/Maxim_17270_105x119.jpg" width="105"/></a></div>
+<div class="txtArea">
+<h5 class="txtArea-title"><a class="fb" href="http://bbs.elecfans.com/try_max17270.html?navdown" target="_blank">【免费试用】如何找到低功耗和小尺寸之间的最佳平衡点？</a></h5>
+<p> Maxim MAX17270开发板，创新SIMO和Nanopower电源技术，助您轻松实现低功耗和小尺寸的最佳平衡。<a class="color-blue" href="http://bbs.elecfans.com/try_max17270.html?navdown" target="_blank">【立即试用】</a></p>
+</div>
+</dd>
+</dl>
+<ul class="text-list dot-line">
+<li><a href="http://www.elecfans.com/quiz/42?elecfans_source=bbs" target="_blank">【有奖问答】学知识答题赢入门套件！</a></li>
+<li><a href="http://webinar.elecfans.com/425.html?elecfans_trackid=textlink4" target="_blank">【立即学习】你所不知的全新烟雾探测器！</a></li>
+<li><a href="http://www.elecfans.com/company/rohm2019/downFlies.html?textlink6" target="_blank">【学习抽奖】61份技术资料+6场技术演讲，还能抽奖</a></li>
+<li><a href="http://bbs.elecfans.com/try_max17270.html?wd" target="_blank">【免费试用】Maxim NanoPower SIMO 开发板</a></li>
+<li><a href="http://webinar.elecfans.com/415.html?elecfans_trackid=bbs" target="_blank">【即刻学习】可穿戴式生命体征监测技术</a></li>
+<li><a href="http://www.elecfans.com/quiz/40?elecfans_source=bbs" target="_blank">【有奖问答】你了解菲力尔的热像仪吗？</a></li>
+</ul>
+</div>
+<div class="dropmenu-right-rightBlock">
+<div class="top-company">
+<h5 class="small-title" style="font-family: '微软雅黑 Regular', '微软雅黑';">厂商社区</h5>
+<ul class="imgList clearfix">
+<li>
+<a href="http://www.elecfans.com/company/rohm2019/index.html?rohm_logo_100-40">
+<img alt="rohm" height="40" src="http://www.elecfans.com/topic/edm/images/rohm_logo_100-40.jpg" width="100"/>
+</a>
+</li>
+<li>
+<a href="http://www.elecfans.com/company/ADI201808/index.html?hplogo_100-40">
+<img alt="ADI" height="40" src="http://www.elecfans.com/topic/edm/images/ADI_logo_100-40.jpg" width="100"/>
+</a>
+</li>
+<li>
+<a href="http://www.elecfans.com/quiz/42?elecfans_source=logo100-40">
+<img alt="silabs" height="40" src="http://www.elecfans.com/topic/edm/images/silabs-logo-100x40.png" width="100"/>
+</a>
+</li>
+<li>
+<a href="http://www.elecfans.com/quiz/40?elecfans_source=logo">
+<img alt="flir" height="40" src="http://www.elecfans.com/topic/edm/images/flir-logo-100x40.jpg" width="100"/>
+</a>
+</li>
+<li>
+<a href="http://bbs.elecfans.com/try_max17270.html?wd">
+<img alt="Maxim" height="40" src="http://www.elecfans.com/topic/edm/images/Maxim_logo_100x40r.png" width="100"/>
+</a>
+</li>
+<li>
+<a href="http://www.elecfans.com/company/ni_engineering/?elecfans_source=20181128">
+<img alt="ni" height="40" src="http://www.elecfans.com/topic/edm/images/100x40-ni.png" width="100"/>
+</a>
+</li>
+<li>
+<a href="http://www.elecfans.com/company/keysight201808/index.html?logo100-40">
+<img alt="keysight" height="40" src="http://www.elecfans.com/topic/edm/images/100x40-keysight.png" width="100"/>
+</a>
+</li>
+<li>
+<a href="http://webinar.elecfans.com/403.html?elecfans_trackid=hpbbs">
+<img alt="fluke" height="40" src="http://www.elecfans.com/topic/edm/images/100x40-fluke-.png" width="100"/>
+</a>
+</li>
+<li>
+<a href="http://www.elecfans.com/company/te_connectivity2018/?hp100x40">
+<img alt="TE Connectivity" height="40" src="http://www.elecfans.com/topic/edm/images/TE_logo_100x40_rev.jpg" width="100"/>
+</a>
+</li>
+<li>
+<a href="http://ti.elecfans.com/">
+<img alt="TI-RC" height="40" src="http://www.elecfans.com/topic/edm/images/100x40-ti-rc.png" width="100"/>
+</a>
+</li>
+</ul>
+<dl class="smaller-title clearfix" style="font-family: '微软雅黑 Regular', '微软雅黑';">
+<dt>技术小站：</dt>
+<dd><a href="http://www.elecfans.com/quiz/42?elecfans_source=jsxz" target="_blank">Silicon Labs 知识小测验</a></dd>
+<dd><a href="http://www.elecfans.com/quiz/40?elecfans_source=wd" target="_blank">FLIR 红外热像仪有奖问答</a></dd>
+<dd><a href="http://www.elecfans.com/quiz/41?elecfans_source=textlink4" target="_blank">示波器测试小调研</a></dd>
+<dd><a href="http://www.elecfans.com/company/ni_engineering/?elecfans_source=20181128" target="_blank">NI 创新教育有奖调研</a></dd>
+<dd><a href="http://www.elecfans.com/quiz/37?elecfans_source=wd3" target="_blank">Heilind 智慧家庭小测验</a></dd>
+<dd><a href="http://www.elecfans.com/quiz/33?elecfans_source=textlink4" target="_blank">NI 虚拟仪器知识小测验</a></dd>
+</dl>
+<dl class="act-company clearfix" style="font-family: '微软雅黑 Regular', '微软雅黑';">
+<dt>厂商活动</dt>
+<dd>
+<a href="http://www.elecfans.com/company/rohm2019/index.html?textlink7" target="_blank">☞ ROHM 科技展全网上线啦！</a>
+<p>• 61份资料+6场技术演讲，学习抽奖两不误</p>
+</dd>
+<dd>
+<a href="http://webinar.elecfans.com/425.html?elecfans_trackid=textlink5" target="_blank">☞ ADI 光学模块集成烟雾探测解决方案</a>
+<p>• 学习新知、下载资料，赢取精美礼品！</p>
+</dd>
+<dd>
+<a href="http://www.elecfans.com/quiz/42?elecfans_source=wd" target="_blank">☞ Silicon Labs 本月知识小测验</a>
+<p>• 答题赢入门套件！</p>
+</dd>
+<dd>
+<a href="http://bbs.elecfans.com/try_max17270.html?wd" target="_blank">☞ Maxim NanoPower SIMO 开发板</a>
+<p>• 轻松实现低功耗和小尺寸的最佳平衡</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+</div>
+</li>
+<!-- 互动中心 -->
+<li class="nav-item">
+<a class="nav-a dropdown-toggle">互动中心</a>
+<div class="dropdown-menu hudong-center f12">
+            ﻿<div class="dropmenu-right-leftBlock dropmenu-yantaohui-online">
+<h5 class="small-title small-title1"><a href="http://webinar.elecfans.com/">在线研讨会</a></h5>
+<div class="clearfix mt20">
+<h6 class="clearfix"><span class="fl">[直播] </span> <a href="http://webinar.elecfans.com/425.html?elecfans_trackid=hp1" title="光学模块集成烟雾探测解决方案">光学模块集成烟雾探测解决方案</a></h6>
+<div>
+<a class="fl mr10" href="http://webinar.elecfans.com/425.html?elecfans_trackid=hp1" title=""><img alt="logo" height="56" src="http://webinar.elecfans.com/Public/Upload/ComImg/20180705/5b3d823edcde1.png" width="90"/></a>
+<p>作者：James Frame</p>
+<p>2019.3.20</p>
+<p><a href="http://webinar.elecfans.com/425.html?elecfans_trackid=hp1" title="">预先报名&gt;&gt;</a></p>
+</div>
+</div>
+<div class="clearfix mt20">
+<h6 class="clearfix"><span class="fl">[点播] </span> <a href="http://webinar.elecfans.com/415.html?elecfans_trackid=hp1" title="可穿戴设备和生命体征监测技术">可穿戴设备和生命体征监测技术</a></h6>
+<div>
+<a class="fl mr10" href="http://webinar.elecfans.com/415.html?elecfans_trackid=hp1" title=""><img alt="logo" height="56" src="http://webinar.elecfans.com/Public/Upload/ComImg/20180705/5b3d823edcde1.png" width="90"/></a>
+<p>ADI中国技术支持中心</p>
+<p>精彩回放</p>
+<p><a href="http://webinar.elecfans.com/415.html?elecfans_trackid=hp1" title="">即刻点播&gt;&gt;</a></p>
+</div>
+</div>
+</div>
+<div class="dropmenu-right-leftBlock f12">
+<h5 class="small-title small-title2">
+<!--<a href="#">-->设计大赛</h5>
+<ul class="mt10">
+<li class="clearfix mt10"> <a class="fl mr5" href="http://www.elecfans.com/topic/2018hicc/index.html"><img alt="logo" src="http://www.elecfans.com/uploads/allimg/161020/31-1610201146280-L.jpg" width="90px"/></a> <p class="fb"><a href="http://www.elecfans.com/topic/2018hicc/index.html">2018中国硬件创新大赛</a></p> <p>2018.5-2018.12</p> </li>
+<li class="clearfix"> <a class="fl mr5" href="http://www.elecfans.com/2018hicc/scs/"><img alt="logo" src="http://file.elecfans.com/web1/M00/50/2E/o4YBAFrwBoaAd0lmAAA5ExWTDgQ393.jpg" width="90px"/></a> <p class="fb"><a href="http://www.elecfans.com/2018hicc/scs/">第十届中国深圳创新创业大赛</a></p> <p>2018.5-2018.6.25</p> </li>
+</ul>
+<div class="clearfix dot-line mt15">
+<!-- <p>[回顾]</p>-->
+<div class="mt10">
+<a class="fl mr5" href="http://www.elecfans.com/project/contest/2018idt/index.html?textlink9"><img alt="" src="http://www.elecfans.com/tt/images/idtlogo_90x45.png" width="90px"/></a>
+<p class="fb"><a href="http://www.elecfans.com/project/contest/2018idt/index.html?textlink9">IDT 传感器应用创新设计大赛</a></p>
+<p>2018.09.18-2019.01.25</p>
+</div>
+</div>
+</div>
+<div class="dropmenu-right-leftBlock dropmenu-yantaohui-jishu f12">
+<h5 class="small-title small-title3"><a href="http://t.elecfans.com/topic/index.html">精彩课程</a></h5>
+<ul class="yantaohui-jishu-ing mt15">
+<li class="clearfix">
+<p>张飞电子工程师速成全集</p>
+<p><a href="http://t.elecfans.com/topic/9.html" target="_blank">立即报名&gt;&gt;</a></p> </li>
+<li class="clearfix">
+<p>10天掌握PCB AD画板</p> <p><a href="http://t.elecfans.com/topic/31.html" target="_blank">立即报名&gt;&gt;</a></p> </li>
+<li class="clearfix">
+<p>教你高速PCB项目整体设计</p>
+<p><a href="http://t.elecfans.com/topic/24.html" target="_blank">立即报名&gt;&gt;</a></p> </li>
+<li class="clearfix">
+<p>如何设计STM32单片机系统？</p> <p><a href="http://t.elecfans.com/5611.html" target="_blank">立即报名&gt;&gt;</a></p> </li>
+<li class="clearfix">
+<p>物联网操作系统从写到用</p>
+<p><a href="http://t.elecfans.com/topic/28.html" target="_blank">立即报名&gt;&gt;</a></p> </li>
+</ul>
+<p class="tr f14"><a href="#"></a></p>
+</div>
+<div class="dropmenu-right-leftBlock f12" style="border-right:none;">
+<h5 class="small-title small-title4">社区活动</h5>
+<ul class="bbs-activity-list">
+<li><a href="http://www.elecfans.com/quiz/42?elecfans_source=drop" title="Silicon Labs小测验，学知识再答题">Silicon Labs小测验，答题赢入门套件</a></li>
+<li><a href="http://bbs.elecfans.com/try_max17270.html" title="免费试用 NanoPower SIMO 开发板">免费试用 NanoPower SIMO 开发板</a></li>
+<li><a href="http://www.elecfans.com/company/rohm2019/index.html#video_box?textlink8" title="ROHM 6场技术演讲视频全网上线！">ROHM 6场技术演讲视频全网上线！</a></li>
+<li><a href="http://www.elecfans.com/quiz/41?elecfans_source=drop" title="参与示波器调研，赢小度智能音箱！">参与示波器调研，赢小度智能音箱！</a></li>
+<li><a href="http://www.elecfans.com/quiz/40?elecfans_source=drop" title="菲力尔红外热像仪知识小测验">菲力尔红外热像仪知识小测验</a></li>
+<li><a href="http://www.elecfans.com/company/ni_engineering/?elecfans_source=20181128" title="NI 邀你一起造就创新性工程教育">NI 邀你一起造就创新性工程教育</a></li>
+<li><a href="http://bbs.elecfans.com/try_max32660.html" title="免费试用 MAX32660 DARWIN 开发板">免费试用 MAX32660 DARWIN 开发板</a></li>
+</ul>
+<p class="tr f14 mt10"><a href="#"></a></p>
+</div>
+</div>
+</li>
+<!--end 互动中心 -->
+<li class="nav-item"><a class="nav-a" href="http://www.elecfans.com/topic/tech/">专题</a></li>
+<!-- 活动 -->
+<li class="nav-item">
+<a class="nav-a dropdown-toggle" href="http://event.elecfans.com/">活动</a>
+<div class="dropdown-menu engineer-menu"> 
+            ﻿<style>
+	.active_left .news_box{
+		width: 325px!important;
+		padding: 6px 15px 20px 0;
+	}
+
+</style>
+<div class="active_left fl">
+<h3 class="cl">热门会议</h3>
+<div class="news_box" style="width: 154px;">
+<a href="http://webinar.elecfans.com/415.html?elecfans_trackid=active" target="_blank"><img class="active_img" src="http://www.elecfans.com/topic/edm/images/adi-0115-arc-325x146.jpg"/></a>
+</div>
+<div class="news_box" style="width: 154px;">
+<a href="http://www.elecfans.com/project/contest/2018idt/index.html?active" target="_blank"><img class="active_img" src="http://www.elecfans.com/topic/edm/images/idt-ds-325x146-.png"/></a>
+</div>
+<div class="news_box" style="width: 154px;">
+<a href="http://bbs.elecfans.com/jishu_1704168_1_1.html" target="_blank"><img class="active_img" src="http://www.elecfans.com/topic/edm/images/bldc_325-146.jpg"/></a>
+</div>
+<div class="news_box" style="width: 154px;">
+<a href="http://www.elecfans.com/topic/iot2018/review.html" target="_blank"><img class="active_img" src="http://www.elecfans.com/topic/edm/images/2018IoT_325-146.jpg"/></a>
+<!--  <p class="addr_time">时间：7月10日 14:00 - 18:00</p>
+	   <p class="addr_time">地点：四川成都武侯区高新区世纪城路88号</p> ROHM-0822-325X146-arc -->
+</div>
+</div>
+<div class="active_right fl">
+<h3>热门课程</h3>
+<ul>
+<li>
+<p><a class="addr_time" href="http://t.elecfans.com/898.html">张飞硬件设计视频全套+免费课</a></p>
+<p class="about"><span class="act_cont mr20">讲师：张飞</span><a href="http://t.elecfans.com/898.html" target="_blank">立即报名</a> </p>
+</li>
+<li>
+<p><a class="addr_time" href="http://t.elecfans.com/5611.html">基于STM32嵌入式系统设计</a><span></span></p>
+<p class="about"><span class="act_cont mr20">讲师：华清远见</span><a href="http://t.elecfans.com/5611.html" target="_blank">立即报名</a> </p>
+</li>
+<li>
+<p><a class="addr_time" href="http://t.elecfans.com/topic/24.html">高速PCB设计项目实战，直播开营中！</a></p>
+<p class="about"><span class="act_cont mr20">讲师：林超文</span><a href="http://t.elecfans.com/topic/24.html" target="_blank">立即报名</a> </p>
+</li>
+<li>
+<p><a class="addr_time" href="http://t.elecfans.com/topic/31.html">51单片机AD画板高速PCB设计</a></p>
+<p class="about mb20"><span class="act_cont mr20">讲师：郑振宇</span><a href="http://t.elecfans.com/topic/31.html" target="_blank">立即报名</a> </p>
+</li>
+<li>
+<p><a class="addr_time" href="http://t.elecfans.com/topic/28.html">RTOS开发流程，自己动手写RTOS系统</a></p>
+<p class="about"><span class="act_cont mr20">讲师：李述铜</span><a href="http://t.elecfans.com/topic/28.html" target="_blank">立即报名</a> </p>
+</li>
+</ul>
+<a class="more_meeting" href="http://t.elecfans.com/0_0_0_2_0">更多精彩课程 &gt;&gt;</a>
+</div>
+</div>
+</li>
+<!--end 活动 -->
+<li class="nav-item">
+<a class="nav-a dropdown-toggle" href="http://t.elecfans.com/">教育</a>
+<div class="dropdown-menu webinar-menu f12">
+<!-- 4个内容 拉取逻辑：后台设置推荐的课程 -->
+<div class="fancier-college dropmenu-right-leftBlock">
+<div class="clearfix">
+<h5 class="small-title"><a href="http://t.elecfans.com/" target="_blank">发烧友学院</a></h5>
+<div class="college-video-lists clearfix">
+<div class="sub-video-blank">
+<div class="video-avatar"><a href="http://t.elecfans.com/live/1180.html" target="_blank" title="携手华秋10W+工程师走进深圳科技圈"><img src="//file.elecfans.com/web1/M00/BA/DB/pIYBAF6dBiuAMGJLAAMdBqHVsog273.png"/><span class="play-ani"></span></a></div>
+<a class="video-title" href="http://t.elecfans.com/live/1180.html" target="_blank" title="携手华秋10W+工程师走进深圳科技圈">携手华秋10W+工程师走进深圳科技圈</a>
+<p class="video-des">已有<i>52</i>人学习</p>
+</div><div class="sub-video-blank">
+<div class="video-avatar"><a href="http://t.elecfans.com/live/1186.html" target="_blank" title="【第二期】TRIAC双向可控硅的设计与实践"><img src="//file.elecfans.com/web1/M00/BA/93/o4YBAF6esZuAdiBQAAORuk1k6Ho600.png"/><span class="play-ani"></span></a></div>
+<a class="video-title" href="http://t.elecfans.com/live/1186.html" target="_blank" title="【第二期】TRIAC双向可控硅的设计与实践">【第二期】TRIAC双向可控硅的设计与实践</a>
+<p class="video-des">已有<i>128</i>人学习</p>
+</div><div class="sub-video-blank">
+<div class="video-avatar"><a href="http://t.elecfans.com/live/1185.html" target="_blank" title="【第一期】电源入口电路设计关键+SCR导通特性深度解析"><img src="//file.elecfans.com/web1/M00/BA/92/o4YBAF6esUSAXql1AAOSVL2Q5J0415.png"/><span class="play-ani"></span></a></div>
+<a class="video-title" href="http://t.elecfans.com/live/1185.html" target="_blank" title="【第一期】电源入口电路设计关键+SCR导通特性深度解析">【第一期】电源入口电路设计关键+SCR导通特性深度解析</a>
+<p class="video-des">已有<i>644</i>人学习</p>
+</div><div class="sub-video-blank">
+<div class="video-avatar"><a href="http://t.elecfans.com/live/1134.html" target="_blank" title="专家手把手教你EMC案例分析与仿真解析"><img src="//file.elecfans.com/web1/M00/B4/73/o4YBAF5WWgeAVSQ2AAXqQo4Raac107.png"/><span class="play-ani"></span></a></div>
+<a class="video-title" href="http://t.elecfans.com/live/1134.html" target="_blank" title="专家手把手教你EMC案例分析与仿真解析">专家手把手教你EMC案例分析与仿真解析</a>
+<p class="video-des">已有<i>2797</i>人学习</p>
+</div> </div>
+</div>
+</div>
+<!-- 最新课程  拉取目前的课程列表按最新添加的课程来排序 -->
+<div class="college-new-course dropmenu-right-leftBlock">
+<div class="clearfix">
+<h5 class="small-title-2">最新课程</h5>
+<div class="new-course-lists">
+<div class="sub-new-course">
+<h3 class="course-title"><a href="http://t.elecfans.com/c1202.html?elecfans_trackid=pchomedu" target="_blank" title="半导体功率器件应用与设计">半导体功率器件应用与设计</a></h3>
+<p class="course-des">讲师：白纪龙 资深工程师</p>
+</div><div class="sub-new-course">
+<h3 class="course-title"><a href="http://t.elecfans.com/c1199.html?elecfans_trackid=pchomedu" target="_blank" title="【综合班—基础】高速信号仿真训练营直播课">【综合班—基础】高速信号仿真训练营直播课</a></h3>
+<p class="course-des">讲师：李增 Cadence高速互联系列课程高级讲师</p>
+</div><div class="sub-new-course">
+<h3 class="course-title"><a href="http://t.elecfans.com/c1198.html?elecfans_trackid=pchomedu" target="_blank" title="PCB电磁兼容设计案例分析与仿真解析">PCB电磁兼容设计案例分析与仿真解析</a></h3>
+<p class="course-des">讲师：深圳市赛盛技术有限公司 </p>
+</div><div class="sub-new-course">
+<h3 class="course-title"><a href="http://t.elecfans.com/c1197.html?elecfans_trackid=pchomedu" target="_blank" title="PCB电磁兼容设计案例分析与仿真分析">PCB电磁兼容设计案例分析与仿真分析</a></h3>
+<p class="course-des">讲师：深圳市赛盛技术有限公司 </p>
+</div><div class="sub-new-course">
+<h3 class="course-title"><a href="http://t.elecfans.com/c1193.html?elecfans_trackid=pchomedu" target="_blank" title="疯壳智能硬件精英班课程">疯壳智能硬件精英班课程</a></h3>
+<p class="course-des">讲师：疯壳 </p>
+</div> </div>
+</div>
+</div>
+<div class="webinars-online dropmenu-right-leftBlock" style="border:0;"><div class="clearfix"><h5 class="small-title"><a href="http://webinar.elecfans.com/" target="_blank">在线研讨会</a><a class="webinar-ind-more fr" href="http://webinar.elecfans.com" target="_blank">更多会议&gt;&gt;</a></h5><div class="webinars-list clearfix"><div class="clearfix lh200"><h6 class="huiyi-title mt5"><a href="http://webinar.elecfans.com/533.html" title="国产FPGA芯片在细分领域有哪些发展？">国产FPGA芯片在细分领域有哪些发展？</a></h6><a class="fl mr10 mt10" href="http://webinar.elecfans.com/533.html" title="国产FPGA芯片在细分领域有哪些发展？"><img height="65" src="http://webinar.elecfans.comhttp://file.elecfans.com/web1/M00/BA/B3/o4YBAF6gGzeAZe1fAABGjLyakNQ347.png" width="104"/></a><p>2020-05-28 20:00:00</p><p>演讲人：黄晶晶</p><p><a href="http://webinar.elecfans.com/533.html" title="立即报名">立即报名&gt;&gt;</a></p></div><div class="clearfix lh200"><h6 class="huiyi-title mt5"><a href="http://webinar.elecfans.com/520.html" title="2020年5G技术创新研讨会">2020年5G技术创新研讨会</a></h6><a class="fl mr10 mt10" href="http://webinar.elecfans.com/520.html" title="2020年5G技术创新研讨会"><img height="65" src="http://webinar.elecfans.comhttp://file.elecfans.com/web1/M00/BA/B3/o4YBAF6gG9GAbG9NAABPrn0elWQ509.png" width="104"/></a><p>2020-05-29 13:30:00</p><p>演讲人：章鹰</p><p>470人报名  <a href="http://webinar.elecfans.com/520.html" title="立即报名">立即报名&gt;&gt;</a></p></div><div class="clearfix lh200"><h6 class="huiyi-title mt5"><a href="http://webinar.elecfans.com/529.html" title="Maxim 在 TWS 应用上的解决方案">Maxim 在 TWS 应用上的解决方案</a></h6><a class="fl mr10 mt10" href="http://webinar.elecfans.com/529.html" title="Maxim 在 TWS 应用上的解决方案"><img height="65" src="http://webinar.elecfans.comhttp://file.elecfans.com/web1/M00/BB/2B/pIYBAF6hB_WATZ9RAAAunrPDGIk322.png" width="104"/></a><p>2020-06-03 10:00:00</p><p>演讲人：方良</p><p>100人报名  <a href="http://webinar.elecfans.com/529.html" title="立即报名">立即报名&gt;&gt;</a></p></div></div></div></div>
+</div>
+</li>
+<li class="nav-item"><a class="nav-a" href="http://www.hqpcb.com">PCB打样</a></li>
+<li class="nav-item"><a class="nav-a" href="http://www.hqchip.com">元器件商城<em class="the-hot-nav"></em></a></li>
+<li class="nav-item"><a class="nav-a" href="http://smt.hqchip.com/">SMT</a></li>
+<li class="nav-item"><a class="nav-a" href="//www.elecfans.com/kf/ ">方案开发</a></li>
+<li class="nav-item see-more">
+<a class="nav-a" href="javascript:void(0);"></a>
+<div class="seem-menu">
+                ﻿<a class="seem-show" href="javascript:void(0);"></a>
+<div class="more-list">
+<h4><a href="http://www.elecfans.com/technical/all/">设计中心</a></h4>
+<ul>
+<li><a href="http://www.elecfans.com/xinpian/ic/">新品</a></li>
+<li><a href="http://www.elecfans.com/engineer/zatan/">工程师访谈</a></li>
+<li><a href="http://www.elecfans.com/article/interview/">高端访谈</a></li>
+<li><a href="http://www.elecfans.com/article/90/">行业聚焦</a></li>
+<li><a href="http://www.elecfans.com/EEReview/">一周精选</a></li>
+<li><a href="http://www.elecfans.com/topic/tech/">技术专题</a></li>
+<li><a href="http://www.elecfans.com/xinkeji/">新科技</a></li>
+</ul>
+</div>
+<div class="more-list">
+<h4><a href="http://www.elecfans.com/soft/">资源中心</a></h4>
+<ul>
+<li><a href="http://www.elecfans.com/soft/">资料下载</a></li>
+<li><a href="http://www.elecfans.com/article/88/131/">电路图</a></li>
+<li><a href="http://www.elecfans.com/technical/">技术文库</a></li>
+<li><a href="http://www.elecfans.com/resource/">厂商专区</a></li>
+<li><a href="http://www.elecfans.com/tekan/">技术特刊</a></li>
+<li><a href="http://v.elecfans.com/">微视频</a></li>
+<li><a href="http://www.elecfans.com/topic/hotsoft/">常用软件</a></li>
+</ul>
+</div>
+<div class="more-list">
+<h4><a href="http://event.elecfans.com/">活　动</a></h4>
+<ul>
+<li class="on-event"><a href="http://www.elecfans.com/topic/seminar/201504wireless/signup.html#baoming">第二届无线通信</a></li>
+<li class="on-event"><a href="http://www.elecfans.com/topic/seminar/201503wearable/signup.html#baoming">第三届可穿戴</a></li>
+<li><a href="http://webinar.elecfans.com/">在线研讨会</a></li>
+<li><a href="http://event.elecfans.com/index/seminar.html">技术研讨会</a></li>
+<li><a href="http://event.elecfans.com/index/salon.html">技术沙龙</a></li>
+<li><a href="http://www.elecfans.com/contest/">设计大赛</a></li>
+<li><a href="http://www.elecfans.com/quiz/">小测验</a></li>
+</ul>
+</div>
+<div class="more-list">
+<h4><a href="http://bbs.elecfans.com/">专　区</a></h4>
+<ul>
+<li><a href="http://bbs.elecfans.com/">问答</a></li>
+<li><a href="//www.elecfans.com/tags/拆解/">拆解</a></li>
+<li><a href="//bbs.elecfans.com/group">小组</a></li>
+<li><a href="http://z.elecfans.com/">聚丰众筹</a></li>
+<li><a href="//www.elecfans.com/tags/diy/">DIY</a></li>
+<li><a alt="开发版免费试用" href="http://bbs.elecfans.com/try/">开发板试用</a></li>
+<li><a href="http://www.elecfans.com/techweek/">技术周刊</a></li>
+<li><a href="http://www.elecfans.com/theme/">主题月</a></li>
+</ul>
+</div>
+<div class="more-list">
+<h4>服　务</h4>
+<ul>
+<li><a href="http://bbs.elecfans.com/infocenter.php">个人中心</a></li>
+<li><a href="http://bbs.elecfans.com/infocenter.php?mod=spacecp&amp;ac=email&amp;op=work">邮件速递</a></li>
+<li><a href="http://www.elecfans.com/app/">手机客户端</a></li>
+<li><a href="http://www.elecfans.com/adstat-1116.html">官方微博</a></li>
+<li>关注微信</li>
+<li class="nolh">
+<img alt="电子发烧友" id="erwms" src="/skin-2012/images/index/erweimas.jpg"/><span>移入鼠标可</span><span>放大二维码</span>
+</li>
+</ul>
+<img alt="电子发烧友" id="erwml" src="/skin-2012/images/index/erweimal.jpg"/>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="advertising clearfix">
+<div id="MiddleLeaderboard"><iframe frameborder="0" height="90" scrolling="no" src="http://www1.elecfans.com/www/delivery/myafr.php?target=_blank&amp;cb=0.5513871297787296&amp;zoneid=217&amp;prefer=http%3A%2F%2Fwww.elecfans.com%2Ftechnical%2Fall%2F" width="728"></iframe></div>
+<div class="company-ad"><iframe border="0" charset="utf-8" height="85" scrolling="no" src="/templets/default/elecfans/homehtml/adright.html" width="260"></iframe></div>
+</div>
+</div>
+<div id="content">
+<div class="column">
+<div class="col-main">
+<div class="main-wrap">
+<div class="pt5">
+<a href="http://www.elecfans.com/">电子发烧友网</a> &gt; <a href="/technical/all/">设计技术</a> &gt; 
+				</div>
+<div class="title-area">
+<h1 class="list-title clearfix"><span class="title-content"><em class="fl">设计技术 </em><em class="icons"></em></span><a class="icons Rss" href="http://www.elecfans.com/rss-992.html" target="_blank" title="RSS订阅"></a><div class="collect-content"><span class="tcollect-num">15</span><span>人已关注</span><input class="off tcollect-btn" type="button" value="+关注"/></div></h1>
+<div class="title-select">
+<div class="left-side">
+<ul class="title-list">
+<li><a href="http://www.elecfans.com/article/80/108/" target="_blank">Altium Designer/Protel</a></li>
+<li><a href="http://www.elecfans.com/pld/" target="_blank">可编程逻辑</a></li>
+<li><a class="thisclass" href="/technical/all/">设计技术</a> </li>
+<li><a href="http://www.elecfans.com/news/power/" target="_blank">电源新闻</a></li>
+<li><a href="http://www.elecfans.com/article/80/" target="_blank">PCB设计</a></li>
+<li><a href="http://www.elecfans.com/article/80/109/" target="_blank">powerpcb</a></li>
+<li><a href="http://www.elecfans.com/article/80/110/" target="_blank">Allegro</a></li>
+<li><a href="http://www.elecfans.com/article/83/" target="_blank">电源/新能源</a></li>
+<li><a href="http://www.elecfans.com/article/88/129/" target="_blank">AD技术</a></li>
+<li><a href="http://www.elecfans.com/article/80/111/" target="_blank">Mentor</a></li>
+<li><a href="http://www.elecfans.com/article/90/152/" target="_blank">测量新闻</a></li>
+<li><a href="http://www.elecfans.com/xianshi/jishu/" target="_blank">显示光电</a></li>
+<li><a href="http://www.elecfans.com/article/90/153/" target="_blank">嵌入式新闻</a></li>
+<li><a href="http://www.elecfans.com/article/80/112/" target="_blank">CAM350</a></li>
+<li><a href="http://www.elecfans.com/article/80/113/" target="_blank">orcad</a></li>
+<li><a href="http://www.elecfans.com/article/88/142/" target="_blank">MEMS/传感技术</a></li>
+<li><a href="http://www.elecfans.com/news/dianzi/" target="_blank">电子技术</a></li>
+<li><a href="http://www.elecfans.com/article/80/114/" target="_blank">布线技巧与EMC</a></li>
+<li><a href="http://www.elecfans.com/article/85/" target="_blank">测量仪表</a></li>
+<li><a href="http://www.elecfans.com/article/90/155/" target="_blank">制造新闻</a></li>
+<li><a href="http://www.elecfans.com/emb/" target="_blank">嵌入式技术</a></li>
+<li><a href="http://www.elecfans.com/article/90/156/" target="_blank">半导体新闻</a></li>
+<li><a href="http://www.elecfans.com/article/89/" target="_blank">制造/封装</a></li>
+<li><a href="http://www.elecfans.com/bandaoti/" target="_blank">半导体技术</a></li>
+<li><a href="http://www.elecfans.com/news/fpga/" target="_blank">PLD新闻</a></li>
+<li><a href="http://www.elecfans.com/analog/" target="_blank">模拟技术</a></li>
+<li><a href="http://www.elecfans.com/article/83/116/" target="_blank">电源设计应用</a></li>
+<li><a href="http://www.elecfans.com/article/83/144/" target="_blank">稳压电源</a></li>
+<li><a href="http://www.elecfans.com/kaiguandianyuan/" target="_blank">开关电源</a></li>
+<li><a href="http://www.elecfans.com/article/83/146/" target="_blank">充电电路</a></li>
+<li><a href="http://www.elecfans.com/article/83/147/" target="_blank">变流、电压变换、逆变电路</a></li>
+<li><a href="http://www.elecfans.com/article/83/dianlijishu/" target="_blank">电力技术</a></li>
+<li><a href="http://www.elecfans.com/tongxin/rf/" target="_blank">RF/无线</a></li>
+<li><a href="http://www.elecfans.com/article/85/126/" target="_blank">设计测试</a></li>
+<li><a href="http://www.elecfans.com/article/85/127/" target="_blank">安全设计</a></li>
+<li><a href="http://www.elecfans.com/article/85/158/" target="_blank">质量检测</a></li>
+<li><a href="http://www.elecfans.com/article/85/experiment/" target="_blank">课件中心</a></li>
+<li><a href="http://www.elecfans.com/emb/danpianji/" target="_blank">控制/MCU</a></li>
+<li><a href="http://www.elecfans.com/emb/jiekou/" target="_blank">接口/总线/驱动</a></li>
+<li><a href="http://www.elecfans.com/emb/arm/" target="_blank">ARM</a></li>
+<li><a href="http://www.elecfans.com/emb/dsp/" target="_blank">处理器/DSP</a></li>
+<li><a href="http://www.elecfans.com/emb/fpga/" target="_blank">FPGA/ASIC技术</a></li>
+<li><a href="http://www.elecfans.com/emb/app/" target="_blank">嵌入式设计应用</a></li>
+<li><a href="http://www.elecfans.com/emb/xitong/" target="_blank">嵌入式操作系统</a></li>
+<li><a href="http://www.elecfans.com/emb/tvcard/" target="_blank">电视卡</a></li>
+<li><a href="http://www.elecfans.com/article/89/91/" target="_blank">工艺综述</a></li>
+<li><a href="http://www.elecfans.com/article/89/92/" target="_blank">PCB制造相关</a></li>
+<li><a href="http://www.elecfans.com/article/89/139/" target="_blank">环境处理</a></li>
+<li><a href="http://www.elecfans.com/article/89/140/" target="_blank">焊接与组装</a></li>
+<li><a href="http://www.elecfans.com/article/89/169/" target="_blank">电子制作</a></li>
+<li><a href="http://www.elecfans.com/bandaoti/eda/" target="_blank">EDA/IC设计</a></li>
+<li><a href="http://www.elecfans.com/bandaoti/gongyi/" target="_blank">工艺/制造</a></li>
+<li><a href="http://www.elecfans.com/bandaoti/ceshi/" target="_blank">测试/封装</a></li>
+<li><a href="http://www.elecfans.com/bandaoti/cunchu/" target="_blank">缓冲/存储技术</a></li>
+<li><a href="http://www.elecfans.com/xianshi/" target="_blank">光电显示</a></li>
+<li><a href="http://www.elecfans.com/instrument/gongkongyibiao/" target="_blank">工控仪表</a></li>
+<li><a href="http://www.elecfans.com/instrument/tongyongceshiyiqi/" target="_blank">通用测试仪器</a></li>
+<li><a href="http://www.elecfans.com/instrument/xuniyiqi/" target="_blank">虚拟仪器</a></li>
+<li><a href="http://www.elecfans.com/instrument/bandaoticeshi/" target="_blank">半导体测试</a></li>
+<li><a href="http://www.elecfans.com/instrument/tongxinceshi/" target="_blank">通信测试</a></li>
+<li><a href="http://www.elecfans.com/instrument/rftest/" target="_blank">射频/微波/无线测试</a></li>
+<li><a href="http://www.elecfans.com/instrument/dianlubanceshi/" target="_blank">电路板测试</a></li>
+<li><a href="http://www.elecfans.com/instrument/xitongceshi/" target="_blank">系统测试</a></li>
+<li><a href="http://www.elecfans.com/instrument/xinhaocaiji/" target="_blank">数字信号采集</a></li>
+<li><a href="http://www.elecfans.com/instrument/gaosuchuanxingceshi/" target="_blank">高速串行测试</a></li>
+<li><a href="http://www.elecfans.com/instrument/kekaoxingfenxi/" target="_blank">可靠性分析</a></li>
+<li><a href="http://www.elecfans.com/instrument/chuangyi/" target="_blank">测量仪表创意</a></li>
+<li><a href="http://www.elecfans.com/consume/cunchujishu/" target="_blank">存储技术</a></li>
+<li><a href="http://www.elecfans.com/dianyuan/LEDdianyuanqudong/" target="_blank">LED电源驱动</a></li>
+<li><a href="http://www.elecfans.com/dianyuan/dianchijishu/" target="_blank">电池技术</a></li>
+<li><a href="http://www.elecfans.com/dianyuan/dianyuanceshi_fangzhen_renzheng/" target="_blank">电源测试/仿真/认证</a></li>
+<li><a href="http://www.elecfans.com/dianyuan/bianxiedianyuan/" target="_blank">便携电源</a></li>
+<li><a href="http://www.elecfans.com/dianyuan/yiliao_gongyedianyuan/" target="_blank">医疗/工业电源</a></li>
+<li><a href="http://www.elecfans.com/dianyuan/shuzidianyuan/" target="_blank">数字电源</a></li>
+<li><a href="http://www.elecfans.com/dianyuan/AC_DC_DC_DCzhuanhuan/" target="_blank">AC-DC/DC-DC转换</a></li>
+<li><a href="http://www.elecfans.com/dianyuan/jizhun_jiankong_baohudianlu/" target="_blank">基准/监控/保护电路</a></li>
+<li><a href="http://www.elecfans.com/dianyuan/dianchichongdian_fangdian/" target="_blank">电池充电/放电</a></li>
+<li><a href="http://www.elecfans.com/dianyuan/xianxingwenya/" target="_blank">功率器件</a></li>
+<li><a href="http://www.elecfans.com/dianyuan/dianyuanchanpinchuangyi/" target="_blank">电源产品创意</a></li>
+<li><a href="http://www.elecfans.com/emb/diaoshijiyouhua/" target="_blank">调试及优化</a></li>
+<li><a href="http://www.elecfans.com/emb/qianrushiruanjian_kaifaban/" target="_blank">嵌入式软件/开发板</a></li>
+<li><a href="http://www.elecfans.com/emb/bianchengyuyanjigongju/" target="_blank">编程语言及工具</a></li>
+<li><a href="http://www.elecfans.com/emb/shishiyingyongkaifa/" target="_blank">实时应用开发</a></li>
+<li><a href="http://www.elecfans.com/emb/qianrushilianwangjishu/" target="_blank">嵌入式联网技术</a></li>
+<li><a href="http://www.elecfans.com/emb/qianrushijishuchanpinchuangyi/" target="_blank">嵌入式技术产品创意</a></li>
+<li><a href="http://www.elecfans.com/emb/dianxingcankaosheji/" target="_blank">典型参考设计</a></li>
+<li><a href="http://www.elecfans.com/pld/jiekou_zongxian_qudong/" target="_blank">接口/总线/驱动</a></li>
+<li><a href="http://www.elecfans.com/pld/pianshangkebianchengxitong/" target="_blank">片上可编程系统</a></li>
+<li><a href="http://www.elecfans.com/pld/cankaosheji/" target="_blank">参考设计</a></li>
+<li><a href="http://www.elecfans.com/pld/HDLyuyanjiyuandaima/" target="_blank">HDL语言及源代码</a></li>
+<li><a href="http://www.elecfans.com/pld/PLDkaifaban/" target="_blank">PLD开发板</a></li>
+<li><a href="http://www.elecfans.com/pld/IPhesheji/" target="_blank">IP核设计</a></li>
+<li><a href="http://www.elecfans.com/pld/waishe_waiweidianlu/" target="_blank">FPGA外设/外围电路</a></li>
+<li><a href="http://www.elecfans.com/pld/jiandanPLD/" target="_blank">简单PLD</a></li>
+<li><a href="http://www.elecfans.com/connector/" target="_blank">连接器</a></li>
+<li><a href="http://www.elecfans.com/monijishu/zhuanhuanqi/" target="_blank">转换器</a></li>
+<li><a href="http://www.elecfans.com/monijishu/hunhexinhao/" target="_blank">混合信号</a></li>
+<li><a href="http://www.elecfans.com/emc_emi/" target="_blank">EMC/EMI设计</a></li>
+<li><a href="http://www.elecfans.com/monijishu/monikaiguan/" target="_blank">模拟开关</a></li>
+<li><a href="http://www.elecfans.com/monijishu/jiekou_shizhong_PLL/" target="_blank">接口/时钟/PLL</a></li>
+</ul>
+</div>
+<div class="right-side">
+<ul class="title-list">
+</ul>
+</div>
+</div>
+</div>
+<div class="type-description"> 设计技术 </div>
+<div class="type-nav">
+<ul class="type-nav-list clearfix">
+<li class="curr"><span>设计技术</span></li>
+<li><a href="http://www.elecfans.com/news-992.html">新闻</a></li>
+<li><a href="http://www.elecfans.com/newproduct-992.html">新品</a></li>
+<li><a href="http://www.elecfans.com/market-992.html">市场</a></li>
+<li><a href="http://www.elecfans.com/tech-992.html">技术</a></li>
+<li><a href="http://www.elecfans.com/apply-992.html">应用</a></li>
+</ul>
+</div>
+<div class="article-area clearfix">
+<div class="article-list-wrap">
+<div class="article-list">
+<h3 class="a-title"><a href="http://www.elecfans.com/emc_emi/1215282.html" target="_blank" title="电磁兼容的含义">电磁兼容的含义</a></h3>
+<div class="a-thumb"><a href="http://www.elecfans.com/emc_emi/1215282.html" target="_blank"><img alt="电磁兼容的含义" border="0" height="100" src="http://file.elecfans.com/web1/M00/BB/D7/o4YBAF62aBmAbfzDAACuyzk6GUs586.png" width="135"/></a></div>
+<div class="a-content">
+<p class="a-summary">电气电子设备在预定的电磁环境中能够稳定地工作，主要包括两个方面内容：第一，设备之间不会通过电磁现象产生相互的干扰，即两台设备同时工作时，二者都不会出现性能降低或者损坏的现...</p>
+<div class="summary-ft"> <span class="a-time">2020-05-09</span> <span class="a-tag">关键字： <a class="blue" href="/tags/%E7%94%B5%E7%A3%81%E5%85%BC%E5%AE%B9/" target="_blank">电磁兼容</a></span> </div>
+</div>
+</div>
+<!-- 1 --><div id="newListAdIc" style="height:150px;"><iframe frameborder="0" height="150" scrolling="no" src="http://ad.hqchip.com/www/delivery/afr.php?target=_blank&amp;cb=0.36741793955896895&amp;zoneid=175&amp;prefer=http%3A%2F%2Fwww.elecfans.com%2Ftechnical%2Fall%2F" width="675"></iframe></div><div class="article-list">
+<h3 class="a-title"><a href="http://www.elecfans.com/emb/danpianji/202005091215266.html" target="_blank" title="MCU和AI谁才是市场之王">MCU和AI谁才是市场之王</a></h3>
+<div class="a-thumb"><a href="http://www.elecfans.com/emb/danpianji/202005091215266.html" target="_blank"><img alt="MCU和AI谁才是市场之王" border="0" height="100" src="http://file.elecfans.com/web1/M00/BB/D6/o4YBAF62ZQ2ARMDeAAF3xh51eNo219.png" width="135"/></a></div>
+<div class="a-content">
+<p class="a-summary">MCU和SoC在AI市场是怎样的竞争关系？去年，AMD发布了锐龙嵌入式R1000SoC，这款产品一个重要应用就是AI。在采访中，我就这个一问题与AMD嵌入式解决方案产品管理和业务开发总监StephenTurnbull先生进...</p>
+<div class="summary-ft"> <span class="a-time">2020-05-09</span> <span class="a-tag">关键字： <a class="blue" href="/tags/mcu/" target="_blank">mcu</a><a class="blue" href="/tags/AI/" target="_blank">AI</a></span> </div>
+</div>
+</div>
+<!-- /default/elecfans/homehtml/typerecommend/ad_list_992.htm --><div class="article-list">
+<h3 class="a-title"><a href="http://www.elecfans.com/emb/danpianji/202005091215261.html" target="_blank" title="国产车载MCU的缓慢发展">国产车载MCU的缓慢发展</a></h3>
+<div class="a-thumb"><a href="http://www.elecfans.com/emb/danpianji/202005091215261.html" target="_blank"><img alt="国产车载MCU的缓慢发展" border="0" height="100" src="http://file.elecfans.com/web1/M00/BC/46/pIYBAF62Y92AXVGQAABNCijAIso763.jpg" width="135"/></a></div>
+<div class="a-content">
+<p class="a-summary">一则关于国内车规级 MCU 的报道引起业界关注，报道称“中国首家主攻车规 MCU 的芯片研发团队 -- 蜂驰高芯（天津）科技有限公司在中新天津生态城正式注册成立，注册资本 1 亿元，致力于高端...</p>
+<div class="summary-ft"> <span class="a-time">2020-05-09</span> <span class="a-tag">关键字： <a class="blue" href="/tags/mcu/" target="_blank">mcu</a></span> </div>
+</div>
+</div>
+<!-- 3 --><div class="article-list">
+<h3 class="a-title"><a href="http://www.elecfans.com/emb/danpianji/202005091215251.html" target="_blank" title="汽车电子中MCU技术原理及需求分析">汽车电子中MCU技术原理及需求分析</a></h3>
+<div class="a-thumb"><a href="http://www.elecfans.com/emb/danpianji/202005091215251.html" target="_blank"><img alt="汽车电子中MCU技术原理及需求分析" border="0" height="100" src="http://file.elecfans.com/web1/M00/BC/42/pIYBAF62YfGAAJjkAAEHeiCDjCw874.png" width="135"/></a></div>
+<div class="a-content">
+<p class="a-summary">微控制器（MCU）作为汽车电子系统内部运算和处理的核心，也遍布悬挂、气囊、门控和音响等几十种次系统（Sub-System）中。由于汽车作为高速交通工具承载了对用户生命安全的保障，同时汽车...</p>
+<div class="summary-ft"> <span class="a-time">2020-05-09</span> <span class="a-tag">关键字： <a class="blue" href="/tags/mcu/" target="_blank">mcu</a><a class="blue" href="/tags/%E6%B1%BD%E8%BD%A6%E7%94%B5%E5%AD%90/" target="_blank">汽车电子</a></span> </div>
+</div>
+</div>
+<!-- 4 --><div class="article-list">
+<h3 class="a-title"><a href="http://www.elecfans.com/emb/dsp/202005091215241.html" target="_blank" title="一文看懂DSP芯片主导摄像机的发展历程">一文看懂DSP芯片主导摄像机的发展历程</a></h3>
+<div class="a-thumb"><a href="http://www.elecfans.com/emb/dsp/202005091215241.html" target="_blank"><img alt="一文看懂DSP芯片主导摄像机的发展历程" border="0" height="100" src="http://file.elecfans.com/web1/M00/BC/42/pIYBAF62YGGATBDfAAGgrQr1ufE893.png" width="135"/></a></div>
+<div class="a-content">
+<p class="a-summary">DSP芯片对摄像机起着重要作用，它大大改观了传统摄像机的技术。在摄像机应用中，经过光学成像芯片产生的信号不可避免存在很多缺陷，如图像细节信号弱、亮度不均匀、色彩不自然等，必须...</p>
+<div class="summary-ft"> <span class="a-time">2020-05-09</span> <span class="a-tag">关键字： <a class="blue" href="/tags/dsp/" target="_blank">dsp</a><a class="blue" href="/tags/%E6%91%84%E5%83%8F%E6%9C%BA/" target="_blank">摄像机</a></span> </div>
+</div>
+</div>
+<!-- 5 --><div class="article-list">
+<h3 class="a-title"><a href="http://www.elecfans.com/emb/dsp/202005091215235.html" target="_blank" title="高清需求明显:传感器DSP核心技术寻创新">高清需求明显:传感器DSP核心技术寻创新</a></h3>
+<div class="a-thumb"><a href="http://www.elecfans.com/emb/dsp/202005091215235.html" target="_blank"><img alt="高清需求明显:传感器DSP核心技术寻创新" border="0" height="100" src="http://file.elecfans.com/web1/M00/BC/42/pIYBAF62X4eAEr0LAAEsXy4ZcWg538.png" width="135"/></a></div>
+<div class="a-content">
+<p class="a-summary">在模拟机芯产品中，CCD 传感器产生的模拟信号首先被转换为数字信号，通过其内置的 DSP芯片处理后，又被重新转化为模拟信号在同轴电缆上传输。最后，当该模拟信号到达后端 DVR时，又被重新...</p>
+<div class="summary-ft"> <span class="a-time">2020-05-09</span> <span class="a-tag">关键字： <a class="blue" href="/tags/%E4%BC%A0%E6%84%9F%E5%99%A8/" target="_blank">传感器</a><a class="blue" href="/tags/dsp/" target="_blank">dsp</a></span> </div>
+</div>
+</div>
+<!-- 6 --><div class="article-list">
+<h3 class="a-title"><a href="http://www.elecfans.com/emb/dsp/202005091215228.html" target="_blank" title="dsp的应用有哪些">dsp的应用有哪些</a></h3>
+<div class="a-thumb"><a href="http://www.elecfans.com/emb/dsp/202005091215228.html" target="_blank"><img alt="dsp的应用有哪些" border="0" height="100" src="http://file.elecfans.com/web1/M00/BB/D1/o4YBAF62XsmADHfSAACA24Twvzc726.jpg" width="135"/></a></div>
+<div class="a-content">
+<p class="a-summary">下面将为大家详细介绍“dsp应用有哪些？Dsp应用领域分析”的相关内容。...</p>
+<div class="summary-ft"> <span class="a-time">2020-05-09</span> <span class="a-tag">关键字： <a class="blue" href="/tags/dsp/" target="_blank">dsp</a></span> </div>
+</div>
+</div>
+<!-- 7 --><div class="article-list">
+<h3 class="a-title"><a href="http://www.elecfans.com/analog/202005091215199.html" target="_blank" title="智慧展馆中运用的四种数字化技术">智慧展馆中运用的四种数字化技术</a></h3>
+<div class="a-thumb"><a href="http://www.elecfans.com/analog/202005091215199.html" target="_blank"><img alt="智慧展馆中运用的四种数字化技术" border="0" height="100" src="http://file.elecfans.com/web1/M00/BB/D1/o4YBAF62WumAYU7EAACSDC3VP4Q041.png" width="135"/></a></div>
+<div class="a-content">
+<p class="a-summary">随着数字化技术的发展，智慧展馆中使用的数字化技术也多种多样，但是总体上归为几大类，都充分利用了声音、视频、三维动画等结合内容加以应用，将企业内容以生动互动的形式展示，增加...</p>
+<div class="summary-ft"> <span class="a-time">2020-05-09</span> <span class="a-tag">关键字： <a class="blue" href="/tags/%E5%B1%8F%E5%B9%95/" target="_blank">屏幕</a><a class="blue" href="/tags/%E6%95%B0%E5%AD%97%E5%8C%96%E6%8A%80%E6%9C%AF/" target="_blank">数字化技术</a></span> </div>
+</div>
+</div>
+<!-- 8 --><div class="article-list">
+<h3 class="a-title"><a href="http://www.elecfans.com/analog/202005091215195.html" target="_blank" title="运用数字展馆涉及哪些技术">运用数字展馆涉及哪些技术</a></h3>
+<div class="a-thumb"><a href="http://www.elecfans.com/analog/202005091215195.html" target="_blank"><img alt="运用数字展馆涉及哪些技术" border="0" height="100" src="http://file.elecfans.com/web1/M00/BB/D0/o4YBAF62Wk6ASiLLAAF6ise8Lf8355.png" width="135"/></a></div>
+<div class="a-content">
+<p class="a-summary">无论是企业还是博物馆以及学校，为了能够更好的宣传自身，其都会运用一些数字展馆以便更好的进行传播。因为专业服务好的数字展馆具有的作用是无比强大的，它能给人意想不到的收获。然...</p>
+<div class="summary-ft"> <span class="a-time">2020-05-09</span> <span class="a-tag">关键字： <a class="blue" href="/tags/%E6%95%B0%E5%AD%97%E6%8A%80%E6%9C%AF/" target="_blank">数字技术</a></span> </div>
+</div>
+</div>
+<!-- 9 --><div class="article-list">
+<h3 class="a-title"><a href="http://www.elecfans.com/article/80/2020/202005091215192.html" target="_blank" title="中国PCB生产受全球欢迎的原因">中国PCB生产受全球欢迎的原因</a></h3>
+<div class="a-thumb"><a href="http://www.elecfans.com/article/80/2020/202005091215192.html" target="_blank"><img alt="中国PCB生产受全球欢迎的原因" border="0" height="100" src="http://file.elecfans.com/web1/M00/BC/41/pIYBAF62WXCAQCBFAADd2GsvXNU599.jpg" width="135"/></a></div>
+<div class="a-content">
+<p class="a-summary">在市场化趋势的影响下，我国的PCB生产已形成一定的规模，整体发展平衡，人才技术上也有个全面化的跟进，且专业的PCB生产产业配套设施也较为完整，综合的产品服务意识也有个质的提高。...</p>
+<div class="summary-ft"> <span class="a-time">2020-05-09</span> <span class="a-tag">关键字： <a class="blue" href="/tags/pcb/" target="_blank">pcb</a></span> </div>
+</div>
+</div>
+<!-- 10 --><div class="article-list">
+<h3 class="a-title"><a href="http://www.elecfans.com/analog/202005091215190.html" target="_blank" title="数字技术在民用安防领域有哪些应用">数字技术在民用安防领域有哪些应用</a></h3>
+<div class="a-thumb"><a href="http://www.elecfans.com/analog/202005091215190.html" target="_blank"><img alt="数字技术在民用安防领域有哪些应用" border="0" height="100" src="http://file.elecfans.com/web1/M00/BB/D0/o4YBAF62WR-AMzg_AAFxwjhNXlw657.png" width="135"/></a></div>
+<div class="a-content">
+<p class="a-summary">现在的高科技社会，用火器自卫，用先进的数字技术观察情况，这不可谓不是一个大飞跃。安防走过这么多年，直到今天数字技术已经在该领域得到广泛应用，让现代人的生活更加舒适、安心。...</p>
+<div class="summary-ft"> <span class="a-time">2020-05-09</span> <span class="a-tag">关键字： <a class="blue" href="/tags/%E6%95%B0%E5%AD%97%E6%8A%80%E6%9C%AF/" target="_blank">数字技术</a></span> </div>
+</div>
+</div>
+<!-- 11 --><div class="article-list">
+<h3 class="a-title"><a href="http://www.elecfans.com/article/80/2020/202005091215184.html" target="_blank" title="PCB设计板材颜色对于性能的影响有哪些">PCB设计板材颜色对于性能的影响有哪些</a></h3>
+<div class="a-thumb"><a href="http://www.elecfans.com/article/80/2020/202005091215184.html" target="_blank"><img alt="PCB设计板材颜色对于性能的影响有哪些" border="0" height="100" src="http://file.elecfans.com/web1/M00/BB/D0/o4YBAF62WC-ABnUeAABJLv6JX2M629.jpg" width="135"/></a></div>
+<div class="a-content">
+<p class="a-summary">PCB板表层的颜色，实际上是阻焊剂的颜色。阻焊剂一是可避免元器件错焊状况的产生，二是减缓元器件使用期，避免元器件路线空气氧化和浸蚀。...</p>
+<div class="summary-ft"> <span class="a-time">2020-05-09</span> <span class="a-tag">关键字： <a class="blue" href="/tags/pcb/" target="_blank">pcb</a><a class="blue" href="/tags/PCB%E8%AE%BE%E8%AE%A1/" target="_blank">PCB设计</a></span> </div>
+</div>
+</div>
+<!-- 12 --><div class="article-list">
+<h3 class="a-title"><a href="http://www.elecfans.com/article/80/2020/202005091215179.html" target="_blank" title="PCB电路板维修技巧分享">PCB电路板维修技巧分享</a></h3>
+<div class="a-thumb"><a href="http://www.elecfans.com/article/80/2020/202005091215179.html" target="_blank"><img alt="PCB电路板维修技巧分享" border="0" height="100" src="http://file.elecfans.com/web1/M00/BC/40/pIYBAF62V6uAHwiPAACzgpijQaE954.jpg" width="135"/></a></div>
+<div class="a-content">
+<p class="a-summary">即根据望、问、闻、切的老一套方法，观查电路板是不是有烧糊的地区，敷铜是不是有破裂的地区，闻电路板上是不是异味重，是不是有电焊焊接欠佳的地区，插口、火红金手指是不是有长霉变...</p>
+<div class="summary-ft"> <span class="a-time">2020-05-09</span> <span class="a-tag">关键字： <a class="blue" href="/tags/%E7%94%B5%E8%B7%AF%E6%9D%BF/" target="_blank">电路板</a><a class="blue" href="/tags/PCB%E7%94%B5%E8%B7%AF%E6%9D%BF/" target="_blank">PCB电路板</a></span> </div>
+</div>
+</div>
+<!-- 13 --><div class="article-list">
+<h3 class="a-title"><a href="http://www.elecfans.com/emb/202005091215178.html" target="_blank" title="嵌入式系统C++代码如何变成">嵌入式系统C++代码如何变成</a></h3>
+<div class="a-thumb"><a href="http://www.elecfans.com/emb/202005091215178.html" target="_blank"><img alt="嵌入式系统C++代码如何变成" border="0" height="100" src="http://file.elecfans.com/web1/M00/BB/D0/o4YBAF62V5mAEuIaAAA9wcWQ-aI840.jpg" width="135"/></a></div>
+<div class="a-content">
+<p class="a-summary">在嵌入式软件技术中，C++语言具有较高的编程效率。但是，要实现高效率，还有许多问题需要特别注意。首先，应该正确理解C++的工作原理，逐步利用它的各种强大功能，把专业经验集成到对象...</p>
+<div class="summary-ft"> <span class="a-time">2020-05-09</span> <span class="a-tag">关键字： <a class="blue" href="/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E7%BB%9F/" target="_blank">嵌入式系统</a><a class="blue" href="/tags/C%2B%2B/" target="_blank">C++</a></span> </div>
+</div>
+</div>
+<!-- 14 --><div class="article-list">
+<h3 class="a-title"><a href="http://www.elecfans.com/emb/202005091215172.html" target="_blank" title="学习嵌入式Linux的基础有哪些">学习嵌入式Linux的基础有哪些</a></h3>
+<div class="a-thumb"><a href="http://www.elecfans.com/emb/202005091215172.html" target="_blank"><img alt="学习嵌入式Linux的基础有哪些" border="0" height="100" src="http://file.elecfans.com/web1/M00/BC/40/pIYBAF62VviAXGqfAAF5KefYFMw756.png" width="135"/></a></div>
+<div class="a-content">
+<p class="a-summary">无图形显示的应用程序主要用C语言编写，直接利用Linux内核提供的编程接口完成各种功能。C语言程序可以实现很多功能，就算是多线程、多进程也都可轻松搞定。Linux内核提供的编程接口都是...</p>
+<div class="summary-ft"> <span class="a-time">2020-05-09</span> <span class="a-tag">关键字： <a class="blue" href="/tags/Linux/" target="_blank">Linux</a></span> </div>
+</div>
+</div>
+<!-- 15 --><div class="article-list">
+<h3 class="a-title"><a href="http://www.elecfans.com/connector/202005091215165.html" target="_blank" title="识别优质军用电连接器的方法">识别优质军用电连接器的方法</a></h3>
+<div class="a-thumb"><a href="http://www.elecfans.com/connector/202005091215165.html" target="_blank"><img alt="识别优质军用电连接器的方法" border="0" height="100" src="http://file.elecfans.com/web1/M00/BC/40/pIYBAF62VYCAFUHsAAAzdTWB7aQ434.jpg" width="135"/></a></div>
+<div class="a-content">
+<p class="a-summary">不同的军工设备使用的军用电连接器型号规格有差别，那么在选择产品的时候，应该进行更多的了解，以便能在品质上更让人满意。...</p>
+<div class="summary-ft"> <span class="a-time">2020-05-09</span> <span class="a-tag">关键字： <a class="blue" href="/tags/%E8%BF%9E%E6%8E%A5%E5%99%A8/" target="_blank">连接器</a><a class="blue" href="/tags/%E7%94%B5%E8%BF%9E%E6%8E%A5%E5%99%A8/" target="_blank">电连接器</a></span> </div>
+</div>
+</div>
+<!-- 16 --><div class="article-list">
+<h3 class="a-title"><a href="http://www.elecfans.com/connector/202005091215161.html" target="_blank" title="如何选择工业插头连接器">如何选择工业插头连接器</a></h3>
+<div class="a-thumb"><a href="http://www.elecfans.com/connector/202005091215161.html" target="_blank"><img alt="如何选择工业插头连接器" border="0" height="100" src="http://file.elecfans.com/web1/M00/BB/D0/o4YBAF62VQqAWppaAAA0HiU_eUo021.jpg" width="135"/></a></div>
+<div class="a-content">
+<p class="a-summary">工业电连接器接线端子的选择方法连接器是连接电气线路的机电元件，因此连接器自身的电气参数是选择连接器首先要考虑的问题。正确选择和使用电连接器是保证电路可靠性的一个重要方面。...</p>
+<div class="summary-ft"> <span class="a-time">2020-05-09</span> <span class="a-tag">关键字： <a class="blue" href="/tags/%E8%BF%9E%E6%8E%A5%E5%99%A8/" target="_blank">连接器</a><a class="blue" href="/tags/%E6%8F%92%E5%A4%B4/" target="_blank">插头</a></span> </div>
+</div>
+</div>
+<!-- 17 --><div class="article-list">
+<h3 class="a-title"><a href="http://www.elecfans.com/emb/202005091215160.html" target="_blank" title="嵌入式技术与分布式计算的融合趋势">嵌入式技术与分布式计算的融合趋势</a></h3>
+<div class="a-thumb"><a href="http://www.elecfans.com/emb/202005091215160.html" target="_blank"><img alt="嵌入式技术与分布式计算的融合趋势" border="0" height="100" src="http://file.elecfans.com/web1/M00/BC/40/pIYBAF62VLGAG80WAAGBvrfSMgk592.png" width="135"/></a></div>
+<div class="a-content">
+<p class="a-summary">随着信息技术的高速发展，尤其是电子技术中集成电路技术的革新而出现的计算机，使现代科学发生了质的变化。嵌入式系统的出现给工控领域带来了新的里程碑，由嵌入式微控制器组成的系统...</p>
+<div class="summary-ft"> <span class="a-time">2020-05-09</span> <span class="a-tag">关键字： <a class="blue" href="/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F%E6%8A%80%E6%9C%AF/" target="_blank">嵌入式技术</a><a class="blue" href="/tags/%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/" target="_blank">分布式计算</a></span> </div>
+</div>
+</div>
+<!-- 18 --><div class="article-list">
+<h3 class="a-title"><a href="http://www.elecfans.com/connector/202005091215153.html" target="_blank" title="连接器绝缘失效的原因有哪些">连接器绝缘失效的原因有哪些</a></h3>
+<div class="a-thumb"><a href="http://www.elecfans.com/connector/202005091215153.html" target="_blank"><img alt="连接器绝缘失效的原因有哪些" border="0" height="100" src="http://file.elecfans.com/web1/M00/BC/40/pIYBAF62VAeAB79qAAAyuqpWnh8959.jpg" width="135"/></a></div>
+<div class="a-content">
+<p class="a-summary">对连接器进行使用的时候，可能会出现绝缘失效的问题，这对于今后的使用来说都会有着极大的影响，在整个应用的过程中，如果能够积极地考虑其中失效的具体原因。...</p>
+<div class="summary-ft"> <span class="a-time">2020-05-09</span> <span class="a-tag">关键字： <a class="blue" href="/tags/%E8%BF%9E%E6%8E%A5%E5%99%A8/" target="_blank">连接器</a><a class="blue" href="/tags/%E7%BB%9D%E7%BC%98/" target="_blank">绝缘</a></span> </div>
+</div>
+</div>
+<!-- 19 --><div class="article-list">
+<h3 class="a-title"><a href="http://www.elecfans.com/article/88/142/2020/202005091215144.html" target="_blank" title="全球四十九家知名的传感器制造商">全球四十九家知名的传感器制造商</a></h3>
+<div class="a-thumb"><a href="http://www.elecfans.com/article/88/142/2020/202005091215144.html" target="_blank"><img alt="全球四十九家知名的传感器制造商" border="0" height="100" src="http://file.elecfans.com/web1/M00/BB/CF/o4YBAF62UgiAZqjVAAEWtanzyRc584.png" width="135"/></a></div>
+<div class="a-content">
+<p class="a-summary">东欧、亚太区和加拿大成为传感器市场增长最快的地区，而美国、德国、日本依然是传感器市场分布最大的国家。今天，就让我们一起来盘点一下欧洲、北美洲和亚洲的知名传感器制造商。近年...</p>
+<div class="summary-ft"> <span class="a-time">2020-05-09</span> <span class="a-tag">关键字： <a class="blue" href="/tags/%E4%BC%A0%E6%84%9F%E5%99%A8/" target="_blank">传感器</a><a class="blue" href="/tags/%E9%80%9A%E7%94%A8%E7%94%B5%E6%B0%94/" target="_blank">通用电气</a><a class="blue" href="/tags/Meas/" target="_blank">Meas</a></span> </div>
+</div>
+</div>
+<!-- 20 -->
+</div>
+<div class="side-menu">
+<h3 class="sideMenu-title">热门主题</h3>
+<ul class="sideMenu-content">
+<li>·<a href="http://www.elecfans.com/tags/%E7%89%A9%E8%81%94%E7%BD%91/" target="_blank">物联网</a></li><li>·<a href="http://www.elecfans.com/tags/LED%E9%A9%B1%E5%8A%A8/" target="_blank">LED驱动</a></li><li>·<a href="http://www.elecfans.com/tags/LTE%E6%B5%8B%E8%AF%95/" target="_blank">LTE测试</a></li><li>·<a href="http://www.elecfans.com/tags/%E6%99%BA%E8%83%BD%E7%94%B5%E8%A1%A8/" target="_blank">智能电表</a></li><li>·<a href="http://www.elecfans.com/tags/%E5%A4%84%E7%90%86%E5%99%A8/" target="_blank">处理器</a></li><li>·<a href="http://www.elecfans.com/tags/%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7/" target="_blank">信号完整性</a></li><li>·<a href="http://www.elecfans.com/tags/FPGA/" target="_blank">FPGA</a></li><li>·<a href="http://www.elecfans.com/tags/802.11ac/" target="_blank">802.11ac</a></li><li>·<a href="http://www.elecfans.com/tags/IGBT/" target="_blank">IGBT</a></li><li>·<a href="http://www.elecfans.com/tags/MOSFET/" target="_blank">MOSFET</a></li><li>·<a href="http://www.elecfans.com/tags/OGS/" target="_blank">OGS</a></li><li>·<a href="http://www.elecfans.com/tags/%E8%A7%A6%E6%8E%A7%E6%8A%80%E6%9C%AF/" target="_blank">触控技术</a></li><li>·<a href="http://www.elecfans.com/tags/%E7%94%B5%E6%BA%90%E7%AE%A1%E7%90%86/" target="_blank">电源管理</a></li>
+</ul>
+</div>
+</div>
+<div class="pagn">
+<strong class="page-cur">1</strong><a class="page-num" href="992_2.html">2</a><a class="page-num" href="992_3.html">3</a><a class="page-num" href="992_4.html">4</a><a class="page-num" href="992_5.html">5</a><span class="pageBreak">…</span><a class="page-num" href="992_5488.html">5488</a><a class="page-next" href="992_2.html">下一页</a>
+</div>
+<div class="type-sns tab tab-style2">
+<h2 class="tabWrap-title">设计技术论坛讨论</h2>
+<h3 class="tab-title tab-cur">最新话题</h3>
+<div class="tab-content tab-show">
+<ul class="text-list clearfix">
+<li>·<a href="http://bbs.elecfans.com/jishu_1928740_1_1.html" target="_blank">“五一”犒劳最可爱的你，留言赠送心意好礼！</a></li><li>·<a href="http://bbs.elecfans.com/jishu_1923167_1_1.html" target="_blank">回收西门子模块触摸屏，求购触摸屏PLC无锡回收模块</a></li><li>·<a href="http://bbs.elecfans.com/jishu_1923093_1_1.html" target="_blank">有奖话题：新款iPhone SE发布，是否能对抗同价位安卓机？</a></li><li>·<a href="http://bbs.elecfans.com/jishu_1921256_1_1.html" target="_blank">【DIY分享】基于单片机的TDA7388数字控制功放</a></li><li>·<a href="http://bbs.elecfans.com/jishu_1921985_1_1.html" target="_blank">有奖话题：新基建时代来临，5G消息是否给微信带来冲击？</a></li><li>·<a href="http://bbs.elecfans.com/jishu_1925893_1_1.html" target="_blank">警方抓获百度网盘“破解版”Pandownload 开发者</a></li><li>·<a href="http://bbs.elecfans.com/jishu_1929721_1_1.html" target="_blank">有奖话题：工程师如何应对工作压力带来的负面情绪，进行有效解压？</a></li><li>·<a href="http://bbs.elecfans.com/jishu_1924951_1_1.html" target="_blank">有奖话题：台积电一季度业绩超预期，三大产业链迎大热？</a></li><li>·<a href="http://bbs.elecfans.com/jishu_1922674_1_1.html" target="_blank">电子发烧友“机器人云招聘”启动啦！高薪工作就等你来</a></li><li>·<a href="http://bbs.elecfans.com/jishu_1925205_1_1.html" target="_blank">蓝牙音箱前级声道平衡放大用什么IC</a></li>
+</ul>
+</div>
+<h3 class="tab-title tab-2">热门讨论</h3>
+<div class="tab-content">
+<ul class="text-list clearfix">
+<li>·<a href="http://bbs.elecfans.com/jishu_465949_1_1.html" target="_blank">cubieboard+花生棒+摄像头搭建视频监控外网查看</a></li><li>·<a href="http://bbs.elecfans.com/jishu_949190_1_1.html" target="_blank">开奖啦，快来看看你中奖了吗？——【TI 岁末有奖活动】有“料”你就来，大奖等你拿！</a></li><li>·<a href="http://bbs.elecfans.com/jishu_1164696_1_1.html" target="_blank">【TI 有奖活动】TI 告诉你哪些技术可以让智能音箱设计如此简单？ 答题闯关还能赢好礼！</a></li><li>·<a href="http://bbs.elecfans.com/jishu_205982_1_1.html" target="_blank">解析STM32的库函数——献给新手</a></li><li>·<a href="http://bbs.elecfans.com/jishu_1112046_1_1.html" target="_blank">LPWAN家族新贵—NB-IoT的技术难点和行业影响</a></li><li>·<a href="http://bbs.elecfans.com/jishu_102232_1_1.html" target="_blank">proe4.0野火中文版破解版下载</a></li><li>·<a href="http://bbs.elecfans.com/jishu_51517_1_1.html" target="_blank">虚拟电子实验室10.0中文破解版下载  (NI.Multisim 10.0) V10.0</a></li><li>·<a href="http://bbs.elecfans.com/jishu_464_1_1.html" target="_blank">什么是比特率和符号率</a></li><li>·<a href="http://bbs.elecfans.com/jishu_304271_1_1.html" target="_blank">cadence 16.3 16.5 16.6 下载+破解</a></li><li>·<a href="http://bbs.elecfans.com/jishu_241868_1_1.html" target="_blank">菜鸟升级教程：最全电子元器件介绍（PPT_88页图文并茂版）</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sub"><a class="send-write need-login" href="/d/article/write/" style="margin-top: 10px;" target="_blank"> <img src="/d/public/images/write_logo.png"/>发布文章</a><div id="new-adsm-berry" style="width:300px;height:250px;margin:10px 0"><iframe frameborder="0" height="250" scrolling="no" src="http://www1.elecfans.com/www/delivery/myafr.php?target=_blank&amp;cb=0.23199803758102666&amp;zoneid=305&amp;prefer=http%3A%2F%2Fwww.elecfans.com%2Ftechnical%2Fall%2F" width="300"></iframe></div><div class="tab-content tab-show ti" id="openx-ti-company"></div><div class="sub-wrap" id="AdHtmlRight"><iframe frameborder="0" height="125" scrolling="no" src="http://www1.elecfans.com/www/delivery/myafr.php?target=_blank&amp;cb=0.45416733938329124&amp;zoneid=781&amp;prefer=http%3A%2F%2Fwww.elecfans.com%2Ftechnical%2Fall%2F" width="300"></iframe></div>
+<!--电子说-->
+<div class="sub-wrap">
+<div class="new-hd">
+<h3>精品文章</h3>
+<a href="http://www.elecfans.com/d/" target="_blank">更多&gt;&gt;</a>
+</div>
+<div class="new-bd">
+<ul class="right-img-list"> <li>
+<a href="http://www.elecfans.com/d/1214995.html" target="_blank">
+<div class="right-img-part">
+<img src="http://file.elecfans.com/web1/M00/BB/C6/o4YBAF62EZSANBeRABHg2VAoAV4557.png"/>
+</div>
+<div class="right-text-part">
+<p>2020年的汽车电子市场还好吗？</p>
+<span>572次阅读</span>
+<span class="ml10">0条评论</span>
+</div>
+</a>
+</li> <li>
+<a href="http://www.elecfans.com/d/1214957.html" target="_blank">
+<div class="right-img-part">
+<img src="http://file.elecfans.com/web1/M00/BC/35/pIYBAF62CK2AWekbAAjSqHla5MY656.png"/>
+</div>
+<div class="right-text-part">
+<p>Imagination与北汽产投成立汽车合资企业...</p>
+<span>366次阅读</span>
+<span class="ml10">0条评论</span>
+</div>
+</a>
+</li> <li>
+<a href="http://www.elecfans.com/d/1214952.html" target="_blank">
+<div class="right-img-part">
+<img src="http://file.elecfans.com/web1/M00/BB/C4/o4YBAF62BqCAVirCAAQCykYGNSQ985.png"/>
+</div>
+<div class="right-text-part">
+<p>车桩比缺口大，新基建加速充电桩落地！</p>
+<span>407次阅读</span>
+<span class="ml10">0条评论</span>
+</div>
+</a>
+</li> <li>
+<a href="http://www.elecfans.com/d/1214948.html" target="_blank">
+<div class="right-img-part">
+<img src="http://file.elecfans.com/web1/M00/BB/C4/o4YBAF62BeOAPzYsAAPM-Yv3E_E606.png"/>
+</div>
+<div class="right-text-part">
+<p>中芯天津申报全球最大8英寸IC生产线，月产能高达...</p>
+<span>419次阅读</span>
+<span class="ml10">0条评论</span>
+</div>
+</a>
+</li> <li>
+<a href="http://www.elecfans.com/d/1214524.html" target="_blank">
+<div class="right-img-part">
+<img src="http://file.elecfans.com/web1/M00/BC/21/pIYBAF60tlmAR1ovAAGs1xQKmRg279.png"/>
+</div>
+<div class="right-text-part">
+<p>美国拟允许美企跟华为合作制定5G标准，华为作何回...</p>
+<span>1009次阅读</span>
+<span class="ml10">0条评论</span>
+</div>
+</a>
+</li> </ul>
+</div>
+</div>
+<div class="sub-wrap tab tab-style1 sub-firstWrap">
+<p class="tab-title tab-cur">推荐阅读</p>
+<div class="tab-content tab-show">
+<ul class="text-list">
+<li>·<a href="http://www.elecfans.com/emb/xitong/202005091215082.html" target="_blank" title="深入linux内核架构 Linux内核架构分析解读">深入linux内核架构 Linux内核架构分析解读</a></li>
+<li>·<a href="http://www.elecfans.com/emb/danpianji/20171208597570.html" target="_blank" title="LUT法能否能够加快程序执行的速度">LUT法能否能够加快程序执行的速度</a></li>
+<li>·<a href="http://www.elecfans.com/tongxin/rf/202005091214993.html" target="_blank" title="面向物联网芯片组或模块可破解射频设计难题的2种方案对比">面向物联网芯片组或模块可破解射频设计难题的2种方案对比</a></li>
+<li>·<a href="http://www.elecfans.com/article/88/142/2020/202005081214831.html" target="_blank" title="扫地机器人身体上的光学传感器">扫地机器人身体上的光学传感器</a></li>
+<li>·<a href="http://www.elecfans.com/analog/202005081214759.html" target="_blank" title="基于ADC的放大器噪声性能评估">基于ADC的放大器噪声性能评估</a></li>
+<li>·<a href="http://www.elecfans.com/analog/202005081214740.html" target="_blank" title="FPDLINK更高频的信号传输干扰原理及优化方案">FPDLINK更高频的信号传输干扰原理及优化方案</a></li>
+<li>·<a href="http://www.elecfans.com/article/83/2020/202005061213962.html" target="_blank" title="如何为温度传感器选择正确的热敏电阻">如何为温度传感器选择正确的热敏电阻</a></li>
+<li>·<a href="http://www.elecfans.com/xianshi/202005061213956.html" target="_blank" title="买了一台新手机，需要怎样视觉体验的屏幕？">买了一台新手机，需要怎样视觉体验的屏幕？</a></li>
+</ul>
+</div>
+<p class="tab-title tab-2">每月人物</p>
+<div class="tab-content">
+<div class="Q-tpList"><div class="Q-tpWrap"><a class="pic" href="http://www.elecfans.com/qichedianzi/1040318.html" target="_blank" title="电动汽车才是未来的核心力量"><img alt="电动汽车才是未来的核心力量" height="82" src="http://file.elecfans.com/web1/M00/A2/75/pIYBAF1LcvSAAHl9AAFonpVlYDM702.png" width="64"/></a>
+<p class="ptc"><em class="f14 fb yahei"><a href="http://www.elecfans.com/qichedianzi/1040318.html" target="_blank" title="电动汽车才是未来的核心力量">电动汽车才是未来的核心力量</a></em><br/>美国知名脱口秀主持人和汽车收藏家杰·雷诺（Jay Leno）认为，电动汽车才是未来，而汽油燃料汽车的日子已屈指可数了。杰·雷诺热衷于收藏汽车，他的汽...</p>
+</div></div>
+<div class="Q-tpList"><div class="Q-tpWrap"><a class="pic" href="http://www.elecfans.com/rengongzhineng/1003981.html" target="_blank" title="人工智能在未来不会取代人类只会让人更智能"><img alt="人工智能在未来不会取代人类只会让人更智能" height="82" src="http://file.elecfans.com/web1/M00/9F/01/pIYBAF0-WVOAYbL5AAKY__PnC-E192.png" width="64"/></a>
+<p class="ptc"><em class="f14 fb yahei"><a href="http://www.elecfans.com/rengongzhineng/1003981.html" target="_blank" title="人工智能在未来不会取代人类只会让人更智能">人工智能在未来不会取代人类只会让人更智能</a></em><br/>如果说谁有资格谈论人工智能革命，《深度学习》一书作者、被称为“世界AI之父”的特伦斯·谢诺夫斯基（Terry Sejnowski）是其一。...</p>
+</div></div>
+</div>
+<p class="tab-title tab-3">每周排行</p>
+<div class="tab-content">
+<ol class="rank-list">
+<li><a href="http://www.elecfans.com/emb/dsp/202004141202732.html" target="_blank" title="鲁大师Q1手机处理器排行榜公布 麒麟820力压骁龙765G">鲁大师Q1手机处理器排行榜公布 麒麟820力压骁龙765G</a></li>
+<li><a href="http://www.elecfans.com/d/1213229.html" target="_blank" title="让长电科技陷入1.75亿元诉讼漩涡的芯动科技是什么来头？">让长电科技陷入1.75亿元诉讼漩涡的芯动科技是什么来头？</a></li>
+<li><a href="http://www.elecfans.com/d/1200281.html" target="_blank" title="比额温枪更火的血氧仪，你想知道的都在这了…">比额温枪更火的血氧仪，你想知道的都在这了…</a></li>
+<li><a href="http://www.elecfans.com/d/1211755.html" target="_blank" title="闻泰科技加码投资安世；村田又一工厂停工…">闻泰科技加码投资安世；村田又一工厂停工…</a></li>
+<li><a href="http://www.elecfans.com/article/89/140/2020/202004171205563.html" target="_blank" title="超声波点焊机常见故障及解决办法">超声波点焊机常见故障及解决办法</a></li>
+<li><a href="http://www.elecfans.com/d/1213279.html" target="_blank" title="为何一个小改变就可以让电源的整体系统效率提升至98%？">为何一个小改变就可以让电源的整体系统效率提升至98%？</a></li>
+<li><a href="http://www.elecfans.com/d/1202165.html" target="_blank" title="Qorvo：集成化PAC芯片，助推BLDC电机应用多元化">Qorvo：集成化PAC芯片，助推BLDC电机应用多元化</a></li>
+<li><a href="http://www.elecfans.com/article/83/116/2020/202004091199899.html" target="_blank" title="超声波发生器是干什么用的_超声波发生器怎么调试">超声波发生器是干什么用的_超声波发生器怎么调试</a></li>
+</ol>
+</div>
+</div><!-- End .sub-wrap -->
+<div class="sub-wrap gg aside-gg-01" id="Right1">
+<iframe frameborder="0" height="600" scrolling="no" src="http://www1.elecfans.com/www/delivery/myafr.php?target=_blank&amp;cb=0.39875368832956193&amp;zoneid=218&amp;prefer=http%3A%2F%2Fwww.elecfans.com%2Ftechnical%2Fall%2F" width="300"></iframe></div><!-- End .sub-wrap -->
+<div class="sub-wrap">
+<div class="hd"><p class="title"><a href="http://pdf.elecfans.com" target="_blank">数据手册搜索</a></p></div>
+<div class="bd">
+<div class="pdf-logo">
+<a href="http://pdf.elecfans.com"></a>
+</div>
+<ul class="pdf-tab clearfix">
+<li class="curr" name="name">型 号</li>
+<li name="_all">产品描述</li>
+</ul>
+<div class="pdf-form">
+<form action="http://pdf.elecfans.com/Search">
+<input class="pdf-type" name="f" type="hidden" value="name"/>
+<input autocomplete="off" class="pdf-ipt" name="q" type="text" value="请输入要搜索的元器件的型号"/><button class="pdf-btn" type="submit">搜</button>
+</form>
+</div>
+</div>
+</div><!-- End .sub-wrap -->
+<div class="sub-wrap cxzt">
+<div class="hd"><p class="title">创新实用技术专题</p></div>
+<div class="bd">
+<div class="img-a"><a href="http://www.elecfans.com/zhuanti/usb_type_c.html" title="USB Type-C设计策略与电源快冲应用方案汇总|技术专题"><img alt="USB Type-C设计策略与电源快冲应用方案汇总|技术专题" height="190" src="/uploads/170719/833994-1FG9152P5b3.png" width="298"/><span class="tit">USB Type-C设计策略与电源快冲应用方案汇总|技术专题</span></a></div>
+<ul class="text-list mt5">
+<li><a href="http://www.elecfans.com/zhuanti/iiot.html" title="IIOT工业物联网干货集锦">IIOT工业物联网干货集锦</a></li>
+<li><a href="http://www.elecfans.com/zhuanti/adaszl.html" title="最全的ADAS资源集锦">最全的ADAS资源集锦</a></li>
+<li><a href="http://www.elecfans.com/zhuanti/houshijing.html" title="新手学车必看—教你快速玩转后视镜">新手学车必看—教你快速玩转后视镜</a></li>
+<li><a href="http://www.elecfans.com/zhuanti/obd.html" title="OBD工作原理_OBD接口位置_OBD故障诊断参考资料">OBD工作原理_OBD接口位置_OBD故障诊断参考资料</a></li>
+<li><a href="http://www.elecfans.com/zhuanti/Artix-7.html" title="Xilinx Artix-7系列FPGA教程资料及设计实例_Artix 7开发板电路图和例程">Xilinx Artix-7系列FPGA教程资料及设计实例_Artix 7开发板电路图和例</a></li>
+<li><a href="http://www.elecfans.com/zhuanti/daocheyingxiang.html" title="倒车影像安装教程_倒车影像工作原理和设计">倒车影像安装教程_倒车影像工作原理和设计</a></li>
+<li><a href="http://www.elecfans.com/zhuanti/gps.html" title="GPS定位导航方案_GPS注意事项精华大全">GPS定位导航方案_GPS注意事项精华大全</a></li>
+<li><a href="http://www.elecfans.com/zhuanti/lidianchi.html" title="锂电池管理">锂电池管理</a></li>
+</ul>
+</div>
+</div><!-- End .sub-wrap -->
+<div class="sub-wrap" id="Right2"><iframe frameborder="0" height="250" scrolling="no" src="http://www1.elecfans.com/www/delivery/myafr.php?target=_blank&amp;cb=0.3974450276532593&amp;zoneid=216&amp;prefer=http%3A%2F%2Fwww.elecfans.com%2Ftechnical%2Fall%2F" width="300"></iframe></div>
+<div class="sub-wrap">
+<div class="hd"><h2 class="title">资料下载</h2></div>
+<div class="bd">
+<ul class="text-list">
+<li><span class="ico pdf"></span><a href="http://www.elecfans.com/soft/20/2020/202002271169517.html" target="_blank" title="如何设计实现人体红外测温仪电路系统">如何设计实现人体红外测温仪电路系统</a></li>
+<li><span class="ico pdf"></span><a href="http://www.elecfans.com/soft/70/2020/202001161158917.html" target="_blank" title="TWS无线蓝牙耳机的简介与充电盒市场近况及业务总结">TWS无线蓝牙耳机的简介与充电盒市场近况及业务总结</a></li>
+<li><span class="ico rar"></span><a href="http://www.elecfans.com/soft/78/223/2020/202001161158909.html" target="_blank" title="IP5516集成MCU的TWS耳机充电仓管理SOC芯片的数据手册免费下载">IP5516集成MCU的TWS耳机充电仓管理SOC芯片的数据手册免费下载</a></li>
+<li><span class="ico rar"></span><a href="http://www.elecfans.com/soft/20/2019/201910151092673.html" target="_blank" title="机械臂电路设计开源合集，电机工程师们的杰作">机械臂电路设计开源合集，电机工程师们的杰作</a></li>
+<li><span class="ico rar"></span><a href="http://www.elecfans.com/soft/69/2019/201910151092408.html" target="_blank" title="ADI模拟对话合订本（2013-2018年）等16本手册，模电工程师典藏的技术指南">ADI模拟对话合订本（2013-2018年）等16本手册，模电工程师典藏的</a></li>
+<li><span class="ico rar"></span><a href="http://www.elecfans.com/soft/161/2019/201910151092395.html" target="_blank" title="“华为技术与产品入门”系列通信技术丛书汇总，全10本">“华为技术与产品入门”系列通信技术丛书汇总，全10本</a></li>
+<li><span class="ico rar"></span><a href="http://www.elecfans.com/soft/20/2019/201910151092371.html" target="_blank" title="7份电机电控PPT合集，工程师必收藏（电机设计/死区补偿/弱磁/可逆等）">7份电机电控PPT合集，工程师必收藏（电机设计/死区补偿/弱磁</a></li>
+<li><span class="ico pdf"></span><a href="http://www.elecfans.com/soft/33/2019/201909261082166.html" target="_blank" title="无感无刷直流电机之电调设计全攻略PDF电子教材免费下载">无感无刷直流电机之电调设计全攻略PDF电子教材免费下载</a></li>
+<li><span class="ico rar"></span><a href="http://www.elecfans.com/soft/type/course/2019/0906/1067151.html" target="_blank" title="1000+例各类获奖电赛作品资料集（电路篇、代码篇、教程篇……）">1000+例各类获奖电赛作品资料集（电路篇、代码篇、教程篇……</a></li>
+<li><span class="ico rar"></span><a href="http://www.elecfans.com/soft/70/2019/201909061067071.html" target="_blank" title="攻破模电！让你晋升大神的模电秘籍（案例、教程和精选电路）">攻破模电！让你晋升大神的模电秘籍（案例、教程和精选电路）</a></li>
+</ul>
+</div>
+</div><!-- End .sub-wrap -->
+<div class="sub-wrap gg aside-gg-03" id="Right3">
+<iframe frameborder="0" height="250" scrolling="no" src="http://www1.elecfans.com/www/delivery/myafr.php?target=_blank&amp;cb=0.8406201398914681&amp;zoneid=215&amp;prefer=http%3A%2F%2Fwww.elecfans.com%2Ftechnical%2Fall%2F" width="300"></iframe></div><!-- End .sub-wrap -->
+<div class="sub-wrap">
+<div class="hd"><h2 class="title">精品文章</h2></div>
+<div class="bd">
+<ul class="text-list">
+<li>·<a href="http://www.elecfans.com/article/89/169/2012/20120330266340.html" target="_blank" title="工程师电子制作故事：电子鬼才，仅用导线和晶体管DIY电脑">工程师电子制作故事：电子鬼才，仅用导线和晶体管DIY电脑</a></li>
+<li>·<a href="http://www.elecfans.com/article/89/169/2012/20121210301489.html" target="_blank" title="极致造工，手把手教你DIY一套桌面音响">极致造工，手把手教你DIY一套桌面音响</a></li>
+<li>·<a href="http://www.elecfans.com/analog/20110212186778.html" target="_blank" title="电子电路工程师必备的20种模拟电路">电子电路工程师必备的20种模拟电路</a></li>
+<li>·<a href="http://www.elecfans.com/article/89/169/2012/20121221302740.html" target="_blank" title="技术末日！电子鬼才8个元件完成无线供电">技术末日！电子鬼才8个元件完成无线供电</a></li>
+<li>·<a href="http://www.elecfans.com/emb/danpianji/20120328266057.html" target="_blank" title="创意无限:DIY可编程LED小玩具">创意无限:DIY可编程LED小玩具</a></li>
+<li>·<a href="http://www.elecfans.com/article/89/169/2012/20121118298290.html" target="_blank" title="集成声卡不给力？穷人教你制作低成本USB声卡">集成声卡不给力？穷人教你制作低成本USB声卡</a></li>
+<li>·<a href="http://www.elecfans.com/article/89/169/2012/20120426269291.html" target="_blank" title="工程师电子制作故事：无线网络控制激光坦克机器人">工程师电子制作故事：无线网络控制激光坦克机器人</a></li>
+<li>·<a href="http://www.elecfans.com/emb/app/20120504270168.html" target="_blank" title="外国牛人教你一步步快速打造首台机器人（超详细）">外国牛人教你一步步快速打造首台机器人（超详细）</a></li>
+<li>·<a href="http://www.elecfans.com/kaiguandianyuan/299157.html" target="_blank" title="从设计到维修，全方位学习开关电源">从设计到维修，全方位学习开关电源</a></li>
+<li>·<a href="http://www.elecfans.com/article/89/169/2013/20130109304584.html" target="_blank" title="高压电DIY:高压发生器、等离子蚀刻和电弧球">高压电DIY:高压发生器、等离子蚀刻和电弧球</a></li>
+</ul>
+</div>
+</div><!-- End .sub-wrap -->
+<div class="sub-wrap hot-tag">
+<div class="hd"><h2 class="title"><a href="http://www.elecfans.com/tags/" target="_blank">热门关键字</a></h2></div>
+<div class="bd">
+<a class="t-tag" href="http://www.elecfans.com/tags/%E4%B8%9C%E8%BD%AF/" target="_blank">东软</a>
+<a class="s-tag" href="http://www.elecfans.com/tags/%E5%B7%A5%E4%B8%9A%E4%BA%92%E8%81%94%E7%BD%91/" target="_blank">工业互联网</a>
+<a class="t-tag" href="http://www.elecfans.com/tags/%E9%AA%81%E9%BE%99660/" target="_blank">骁龙660</a>
+<a class="t-tag" href="http://www.elecfans.com/tags/%E7%B4%AB%E5%85%89%E5%B1%95%E9%94%90/" target="_blank">紫光展锐</a>
+<a class="t-tag" href="http://www.elecfans.com/tags/%E8%8A%AF%E5%8A%9B%E7%89%B9/" target="_blank">芯力特</a>
+<a class="s-tag" href="http://www.elecfans.com/tags/%E7%91%9E%E8%8A%AF%E5%BE%AE/" target="_blank">瑞芯微</a>
+<a class="t-tag" href="http://www.elecfans.com/tags/nRF52832/" target="_blank">nRF52832</a>
+<a class="s-tag" href="http://www.elecfans.com/tags/%E6%B5%B7%E5%BA%B7%E5%A8%81%E8%A7%86/" target="_blank">海康威视</a>
+<a class="s-tag" href="http://www.elecfans.com/tags/%E7%9B%9B%E6%80%9D%E9%94%90/" target="_blank">盛思锐</a>
+<a class="f-tag" href="http://www.elecfans.com/tags/type-c/" target="_blank">type-c</a>
+<a class="f-tag" href="http://www.elecfans.com/tags/%E8%93%9D%E7%89%995/" target="_blank">蓝牙5</a>
+<a class="f-tag" href="http://www.elecfans.com/tags/%E5%BF%AB%E5%85%85%E6%8A%80%E6%9C%AF/" target="_blank">快充技术</a>
+<a class="t-tag" href="http://www.elecfans.com/tags/%E8%89%BE%E5%BE%B7%E5%85%8B%E6%96%AF/" target="_blank">艾德克斯</a>
+<a class="t-tag" href="http://www.elecfans.com/tags/%E4%BC%A0%E9%9F%B3%E6%89%8B%E6%9C%BA/" target="_blank">传音手机</a>
+<a class="s-tag" href="http://www.elecfans.com/tags/%E5%85%86%E6%98%93%E5%88%9B%E6%96%B0/" target="_blank">兆易创新</a>
+<a class="t-tag" href="http://www.elecfans.com/tags/%E9%95%BF%E6%B1%9F%E5%AD%98%E5%82%A8/" target="_blank">长江存储</a>
+<a class="t-tag" href="http://www.elecfans.com/tags/%E5%AE%89%E8%B7%AF%E7%A7%91%E6%8A%80/" target="_blank">安路科技</a>
+<a class="s-tag" href="http://www.elecfans.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/" target="_blank">深度学习</a>
+<a class="t-tag" href="http://www.elecfans.com/tags/5G%E8%8A%AF%E7%89%87/" target="_blank">5G芯片</a>
+<a class="s-tag" href="http://www.elecfans.com/tags/%E9%98%88%E5%80%BC%E7%94%B5%E5%8E%8B/" target="_blank">阈值电压</a>
+</div>
+</div><!-- End .sub-wrap -->
+<div class="sub-wrap new-tag">
+<div class="hd"><h2 class="title"><a href="http://www.elecfans.com/tags/" target="_blank">最新关键字</a></h2></div>
+<div class="bd">
+<a class="t-tag" href="http://www.elecfans.com/tags/%E4%B8%80%E6%AC%A1%E7%94%B5%E6%BA%90/" target="_blank">一次电源</a>
+<a class="t-tag" href="http://www.elecfans.com/tags/%E5%AF%B9%E5%9C%B0%E7%94%B5%E5%AE%B9/" target="_blank">对地电容</a>
+<a class="t-tag" href="http://www.elecfans.com/tags/NovaSensor/" target="_blank">NovaSensor</a>
+<a class="t-tag" href="http://www.elecfans.com/tags/%E6%BF%80%E5%85%89%E6%8A%95%E5%BD%B1%E6%9C%BA/" target="_blank">激光投影机</a>
+<a class="s-tag" href="http://www.elecfans.com/tags/%E6%81%92%E7%94%B5%E5%8A%BF%E5%99%A8/" target="_blank">恒电势器</a>
+<a class="f-tag" href="http://www.elecfans.com/tags/%E9%93%9D%E7%94%B5%E5%AE%B9/" target="_blank">铝电容</a>
+<a class="t-tag" href="http://www.elecfans.com/tags/%E8%B7%B3%E5%8F%98%E4%BF%A1%E5%8F%B7/" target="_blank">跳变信号</a>
+<a class="f-tag" href="http://www.elecfans.com/tags/%E7%94%B5%E6%B1%A0%E8%B4%9F%E8%BD%BD/" target="_blank">电池负载</a>
+<a class="s-tag" href="http://www.elecfans.com/tags/%E7%94%B5%E6%B0%94%E9%9A%94%E7%A6%BB%E5%99%A8/" target="_blank">电气隔离器</a>
+<a class="t-tag" href="http://www.elecfans.com/tags/%E8%B0%90%E6%8C%AF%E7%94%B5%E5%AE%B9/" target="_blank">谐振电容</a>
+<a class="t-tag" href="http://www.elecfans.com/tags/%E7%94%B5%E6%BA%90%E9%A9%B1%E5%8A%A8%E5%99%A8/" target="_blank">电源驱动器</a>
+<a class="s-tag" href="http://www.elecfans.com/tags/%E6%95%A3%E7%83%AD%E5%AD%94/" target="_blank">散热孔</a>
+<a class="f-tag" href="http://www.elecfans.com/tags/5G%E6%A8%A1%E7%BB%84/" target="_blank">5G模组</a>
+<a class="s-tag" href="http://www.elecfans.com/tags/%E8%95%8A%E7%A3%81/" target="_blank">蕊磁</a>
+<a class="s-tag" href="http://www.elecfans.com/tags/%E8%8A%AF%E5%8A%9B%E7%89%B9/" target="_blank">芯力特</a>
+<a class="t-tag" href="http://www.elecfans.com/tags/%E7%94%B5%E5%8E%8B%E7%94%B5%E8%B7%AF%E5%9B%BE/" target="_blank">电压电路图</a>
+<a class="t-tag" href="http://www.elecfans.com/tags/%E5%B1%8F%E8%94%BD%E7%94%B5%E6%84%9F%E5%99%A8/" target="_blank">屏蔽电感器</a>
+<a class="s-tag" href="http://www.elecfans.com/tags/%E9%93%A0%E4%BE%A0/" target="_blank">铠侠</a>
+<a class="s-tag" href="http://www.elecfans.com/tags/%E7%83%AD%E6%84%9F%E7%9B%B8%E6%9C%BA/" target="_blank">热感相机</a>
+<a class="t-tag" href="http://www.elecfans.com/tags/ITES/" target="_blank">ITES</a>
+</div>
+</div><!-- End .sub-wrap --></div>
+</div>
+<input id="adChannel" type="hidden" value="992"/>
+<!-- *编辑推荐-->
+<!--可手动修改内容-->
+<meta charset="utf-8"/>
+<style>
+    #comment {
+        display: block;
+        border: 1px solid #d8d8d8;
+        border-top: 1px solid #c00;
+        margin: 15px auto;
+        font-family: "微软雅黑";
+    }
+    #comment .comment_title {
+        background: #f6f6f6;
+        text-indent: 10px;
+        padding: 0;
+        margin-bottom: 0;
+        border-bottom: 0;
+        color: #222;
+        font-size: 16px;
+        font-weight: bold;
+        color: #004276;
+        height: 32px;
+        line-height: 32px;
+        margin-top: 0;
+    }
+    #comment .comment_list {
+        margin: 10px 20px;
+        width: 100%;
+        border-collapse: collapse;
+    }
+    #comment td {
+        /*width: 105px;*/
+        padding: 3px 10px;
+    }
+    .comment_title span{
+        margin-right: 25px;
+        cursor: pointer;
+    }
+    .comment_column{display: none;}
+</style>
+<div class="clearfix" id="comment">
+<p class="comment_title"><span>编辑推荐</span><span>厂商</span><span>产品</span><span>技术</span><span>软件/工具</span><span>OS/语言</span></p>
+<!--编辑推荐-->
+<div class="comment_column" style="display: block;">
+<table class="comment_list">
+<tbody><tr>
+<td>
+<a href="http://www.elecfans.com/tags/开关电源/" traget="_blank">开关电源</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/步进电机/" traget="_blank">步进电机</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/无线充电/" traget="_blank">无线充电</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/自动驾驶/" traget="_blank">自动驾驶</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/EMC/" traget="_blank">EMC</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/PLC/" traget="_blank">PLC</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/OLED/" traget="_blank">OLED</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/AI/" traget="_blank">AI</a>
+</td>
+</tr>
+<tr>
+<td>
+<a href="http://www.elecfans.com/tags/5G/" traget="_blank">5G</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/m2m/" traget="_blank">m2m</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/无人驾驶/" traget="_blank">无人驾驶 </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/神经网络/" traget="_blank">神经网络 </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/亚马逊/" traget="_blank">亚马逊 </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/深度学习/" traget="_blank">深度学习</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/比特币/" traget="_blank">比特币 </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/机器视觉/" traget="_blank">机器视觉</a>
+</td>
+</tr>
+<tr>
+<td>
+<a href="http://www.elecfans.com/tags/NB-IoT/" traget="_blank">NB-IoT</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/LoRa/" traget="_blank">LoRa</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/大疆/" traget="_blank">大疆 </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/特斯拉/" traget="_blank">特斯拉 </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/tensorflow/" traget="_blank">tensorflow </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/iot/" traget="_blank">IoT </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/威马汽车/" traget="_blank">威马汽车 </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/寒武纪 /" traget="_blank">寒武纪 </a>
+</td>
+</tr>
+<tr>
+<td>
+<a href="http://www.elecfans.com/tags/Type-C/" traget="_blank">Type-C</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/麒麟970/" traget="_blank">麒麟970 </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/骁龙845/" traget="_blank">骁龙845 </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/联发科/" traget="_blank">联发科</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/智能音箱/" traget="_blank">智能音箱</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/海康威视/" traget="_blank">海康威视  </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/无人机/" traget="_blank">无人机 </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/黄仁勋/" traget="_blank">黄仁勋 </a>
+</td>
+</tr>
+</tbody></table>
+</div>
+<!--编辑推荐-->
+<!--厂商-->
+<div class="comment_column">
+<table class="comment_list">
+<tbody><tr>
+<td>
+<a href="http://www.elecfans.com/tags/ADI/" traget="_blank">ADI</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/德州仪器/" traget="_blank">德州仪器</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/英特尔/" traget="_blank">英特尔</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/TI/" traget="_blank">TI</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/Intel/" traget="_blank">Intel</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/博通/" traget="_blank">博通</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/安森美/" traget="_blank">安森美</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/意法半导体/" traget="_blank">意法半导体</a>
+</td>
+</tr>
+<tr>
+<td>
+<a href="http://www.elecfans.com/tags/泰克/" traget="_blank">泰克</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/泰科/" traget="_blank">泰科</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/TE/" traget="_blank">TE</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/Microchip/" traget="_blank">Microchip</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/是德科技/" traget="_blank">是德科技</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/美信/" traget="_blank">美信</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/英飞凌/" traget="_blank">英飞凌</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/赛灵思/" traget="_blank">赛灵思</a>
+</td>
+</tr>
+<tr>
+<td>
+<a href="http://www.elecfans.com/tags/AMD/" traget="_blank">AMD</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/英伟达/" traget="_blank">英伟达</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/TDK/" traget="_blank">TDK</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/Molex/" traget="_blank">Molex</a>
+</td>
+<td> <a href="http://www.elecfans.com/tags/SiTime/" traget="_blank">SiTime</a></td>
+<td> <a href="http://www.elecfans.com/tags/ams/" traget="_blank">ams</a></td>
+<td> <a href="http://www.elecfans.com/tags/arm/" traget="_blank">arm</a></td>
+<td> <a href="http://www.elecfans.com/tags/Atmel/" traget="_blank">Atmel </a></td>
+</tr>
+<tr>
+<td>
+<a href="http://www.elecfans.com/tags/Allegro/" traget="_blank">Allegro </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/Altera/" traget="_blank">Altera </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/Bosch/" traget="_blank">Bosch </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/博世/" traget="_blank">博世</a>
+</td>
+<td> <a href="http://www.elecfans.com/tags/Bourns/" traget="_blank">Bourns</a></td>
+<td> <a href="http://www.elecfans.com/tags/Cypress/" traget="_blank">Cypress </a></td>
+<td> <a href="http://www.elecfans.com/tags/赛普拉斯/" traget="_blank">赛普拉斯</a></td>
+<td> <a href="http://www.elecfans.com/tags/Cirrus logic/" traget="_blank">Cirrus logic </a></td>
+</tr>
+<tr>
+<td>
+<a href="http://www.elecfans.com/tags/CSR/" traget="_blank">CSR </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/Dialog/" traget="_blank">Dialog  </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/Enocean/" traget="_blank">Enocean </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/Exar/" traget="_blank">Exar </a>
+</td>
+<td> <a href="http://www.elecfans.com/tags/Fairchild/" traget="_blank">Fairchild </a></td>
+<td> <a href="http://www.elecfans.com/tags/FLIR/" traget="_blank">FLIR </a></td>
+<td> <a href="http://www.elecfans.com/tags/富士通/" traget="_blank">富士通</a></td>
+<td> <a href="http://www.elecfans.com/tags/NXP/" traget="_blank">NXP</a></td>
+</tr>
+<tr>
+<td>
+<a href="http://www.elecfans.com/tags/Linear/" traget="_blank">Linear  </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/凌力尔特/" traget="_blank">凌力尔特  </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/Littelfuse/" traget="_blank">Littelfuse </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/京瓷/" traget="_blank">京瓷 </a>
+</td>
+<td> <a href="http://www.elecfans.com/tags/Intersil/" traget="_blank">Intersil  </a></td>
+<td> <a href="http://www.elecfans.com/tags/Lattice/" traget="_blank">Lattice </a></td>
+<td> <a href="http://www.elecfans.com/tags/美满电子/" traget="_blank">美满电子</a></td>
+<td> <a href="http://www.elecfans.com/tags/Melexis/" traget="_blank">Melexis</a></td>
+</tr>
+<tr>
+<td>
+<a href="http://www.elecfans.com/tags/invensense/" traget="_blank">invensense  </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/vishay/" traget="_blank">vishay  </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/MPS/" traget="_blank">MPS </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/村田/" traget="_blank">村田 </a>
+</td>
+<td> <a href="http://www.elecfans.com/tags/mentor/" traget="_blank">mentor  </a></td>
+<td> <a href="http://www.elecfans.com/tags/nexperia/" traget="_blank">nexperia </a></td>
+<td> <a href="http://www.elecfans.com/tags/diode/" traget="_blank">Diode</a></td>
+<td> <a href="http://www.elecfans.com/tags/PI/" traget="_blank">PI</a></td>
+</tr>
+<tr>
+<td>
+<a href="http://www.elecfans.com/tags/尼吉康/" traget="_blank">尼吉康  </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/欧姆龙/" traget="_blank">欧姆龙  </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/松下/" traget="_blank">松下 </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/罗姆/" traget="_blank">罗姆 </a>
+</td>
+<td> <a href="http://www.elecfans.com/tags/东芝/" traget="_blank">东芝  </a></td>
+<td> <a href="http://www.elecfans.com/tags/Richtek/" traget="_blank">Richtek  </a></td>
+<td> <a href="http://www.elecfans.com/tags/RECOM/" traget="_blank">RECOM</a></td>
+<td> <a href="http://www.elecfans.com/tags/Silicon Labs/" traget="_blank">Silicon Labs</a></td>
+</tr>
+<tr>
+<td>
+<a href="http://www.elecfans.com/tags/semtech/" traget="_blank">semtech  </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/Torex/" traget="_blank">Torex   </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/三星/" traget="_blank">三星 </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/海思/" traget="_blank">海思 </a>
+</td>
+<td> <a href="http://www.elecfans.com/tags/Vicor/" traget="_blank">Vicor   </a></td>
+<td> <a href="http://www.elecfans.com/tags/Trinamic/" traget="_blank">Trinamic  </a></td>
+<td> <a href="http://www.elecfans.com/tags/盛思锐/" traget="_blank">盛思锐</a></td>
+<td> <a href="http://www.elecfans.com/tags/金升阳/" traget="_blank">金升阳</a></td>
+</tr>
+<tr>
+<td>
+<a href="http://www.elecfans.com/tags/Heilind/" traget="_blank">Heilind   </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/贸泽电子/" traget="_blank">贸泽电子   </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/Digi-Key/" traget="_blank">Digi-Key </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/福禄克/" traget="_blank">福禄克 </a>
+</td>
+<td> <a href="http://www.elecfans.com/tags/富昌电子/" traget="_blank">富昌电子   </a></td>
+<td> <a href="http://www.elecfans.com/tags/安富利/" traget="_blank">安富利  </a></td>
+<td> <a href="http://www.elecfans.com/tags/大联大/" traget="_blank">大联大</a></td>
+<td> <a href="http://www.elecfans.com/tags/IDT/" traget="_blank">IDT</a></td>
+</tr>
+<tr>
+<td>
+<a href="http://www.elecfans.com/tags/e络盟/" traget="_blank">e络盟   </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/RS/" traget="_blank">RS  </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/COMSOL/" traget="_blank">COMSOL </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/瑞萨/" traget="_blank">瑞萨 </a>
+</td>
+<td> <a href="http://www.elecfans.com/tags/ARROW/" traget="_blank">ARROW   </a></td>
+<td> <a href="http://www.elecfans.com/tags/Actel/" traget="_blank">Actel  </a></td>
+<td> <a href="http://www.elecfans.com/tags/Cadence/" traget="_blank">Cadence</a></td>
+<td> <a href="http://www.elecfans.com/tags/CEVA/" traget="_blank">CEVA</a></td>
+</tr>
+<tr>
+<td>
+<a href="http://www.elecfans.com/tags/Epson/" traget="_blank">Epson</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/FCI/" traget="_blank">FCI  </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/兆易创新/" traget="_blank">兆易创新 </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/Microsemi/" traget="_blank">Microsemi </a>
+</td>
+<td> <a href="http://www.elecfans.com/tags/MathWorks/" traget="_blank">MathWorks   </a></td>
+<td> <a href="http://www.elecfans.com/tags/Qorvo/" traget="_blank">Qorvo  </a></td>
+<td> <a href="http://www.elecfans.com/tags/Xicor/" traget="_blank">Xicor</a></td>
+<td> <a href="http://www.elecfans.com/tags/WIZnet/" traget="_blank">WIZnet </a></td>
+</tr>
+</tbody></table>
+</div>
+<!--厂商-->
+<!--产品-->
+<div class="comment_column">
+<table class="comment_list">
+<tbody><tr>
+<td>
+<a href="http://www.elecfans.com/tags/放大器/" traget="_blank">放大器</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/运算放大器/" traget="_blank">运算放大器</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/差动放大器/" traget="_blank">差动放大器 </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/电流感应放大器/" traget="_blank">电流感应放大器</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/比较器/" traget="_blank">比较器</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/仪表放大器/" traget="_blank">仪表放大器</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/可变增益放大器/" traget="_blank">可变增益放大器 </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/隔离放大器/" traget="_blank">隔离放大器</a>
+</td>
+</tr>
+<tr>
+<td>
+<a href="http://www.elecfans.com/tags/时钟/" traget="_blank">时钟</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/时钟振荡器/" traget="_blank">时钟振荡器</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/时钟发生器/" traget="_blank">时钟发生器 </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/时钟缓冲器/" traget="_blank">时钟缓冲器</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/定时器/" traget="_blank">定时器</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/寄存器/" traget="_blank">寄存器</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/实时时钟/" traget="_blank">实时时钟 </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/PWM/" traget="_blank">PWM 调制器</a>
+</td>
+</tr>
+<tr>
+<td>
+<a href="http://www.elecfans.com/tags/视频放大器/" traget="_blank">视频放大器</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/功率放大器/" traget="_blank">功率放大器</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/频率转换器/" traget="_blank">频率转换器 </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/扬声器放大器/" traget="_blank">扬声器放大器</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/音频转换器/" traget="_blank">音频转换器</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/音频开关/" traget="_blank">音频开关</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/音频接口/" traget="_blank">音频接口 </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/音频编解码器/" traget="_blank">音频编解码器</a>
+</td>
+</tr>
+<tr>
+<td>
+<a href="http://www.elecfans.com/tags/模数转换器/" traget="_blank">模数转换器</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/数模转换器/" traget="_blank">数模转换器</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/数字电位器/" traget="_blank">数字电位器 </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/触摸屏控制器/" traget="_blank">触摸屏控制器</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/AFE/" traget="_blank">AFE </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/ADC/" traget="_blank">ADC</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/DAC/" traget="_blank">DAC </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/电源管理/" traget="_blank">电源管理</a>
+</td>
+</tr>
+<tr>
+<td>
+<a href="http://www.elecfans.com/tags/线性稳压器/" traget="_blank">线性稳压器</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/LDO/" traget="_blank">LDO</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/开关稳压器/" traget="_blank">开关稳压器 </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/DC/DC/" traget="_blank">DC/DC </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/降压转换器/" traget="_blank">降压转换器 </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/电源模块/" traget="_blank">电源模块</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/MOSFET/" traget="_blank">MOSFET </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/IGBT/" traget="_blank">IGBT </a>
+</td>
+</tr>
+<tr>
+<td>
+<a href="http://www.elecfans.com/tags/振荡器/" traget="_blank">振荡器</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/谐振器/" traget="_blank">谐振器</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/滤波器/" traget="_blank">滤波器 </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/电容/" traget="_blank">电容器 </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/电感/" traget="_blank">电感器 </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/电阻/" traget="_blank">电阻器 </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/二极管/" traget="_blank">二极管  </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/晶体管/" traget="_blank">晶体管 </a>
+</td>
+</tr>
+<tr>
+<td>
+<a href="http://www.elecfans.com/tags/变送器/" traget="_blank">变送器</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/传感器/" traget="_blank">传感器</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/解析器/" traget="_blank">解析器 </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/编码器/" traget="_blank">编码器 </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/陀螺仪/" traget="_blank">陀螺仪 </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/加速计/" traget="_blank">加速计 </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/温度传感器/" traget="_blank">温度传感器  </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/压力传感器/" traget="_blank">压力传感器 </a>
+</td>
+</tr>
+<tr>
+<td>
+<a href="http://www.elecfans.com/tags/电机驱动器/" traget="_blank">电机驱动器</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/步进驱动器 /" traget="_blank">步进驱动器 </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/BDC/" traget="_blank">BDC </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/BLDC/" traget="_blank">BLDC </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/高频电容/" traget="_blank">高频电容</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/湿度传感器/" traget="_blank">湿度传感器 </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/光学传感器/" traget="_blank">光学传感器  </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/图像传感器/" traget="_blank">图像传感器 </a>
+</td>
+</tr>
+<tr>
+<td>
+<a href="http://www.elecfans.com/tags/数字隔离器/" traget="_blank">数字隔离器</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/ESD/" traget="_blank">ESD 保护 </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/收发器/" traget="_blank">收发器 </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/桥接器/" traget="_blank">桥接器 </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/多路复用器/" traget="_blank">多路复用器  </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/氮化镓/" traget="_blank">氮化镓  </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/PFC/" traget="_blank">PFC  </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/数字电源/" traget="_blank">数字电源 </a>
+</td>
+</tr>
+</tbody></table>
+</div>
+<!--产品-->
+<!--技术-->
+<div class="comment_column">
+<table class="comment_list">
+<tbody><tr>
+<td>
+<a href="http://www.elecfans.com/tags/开关电源/" traget="_blank">开关电源</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/步进电机/" traget="_blank">步进电机</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/无线充电/" traget="_blank">无线充电</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/LabVIEW/" traget="_blank">LabVIEW</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/EMC/" traget="_blank">EMC</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/PLC/" traget="_blank">PLC</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/OLED/" traget="_blank">OLED</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/单片机/" traget="_blank">单片机</a>
+</td>
+</tr>
+<tr>
+<td>
+<a href="http://www.elecfans.com/tags/5G/" traget="_blank">5G</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/m2m/" traget="_blank">m2m</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/DSP/" traget="_blank">DSP</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/MCU/" traget="_blank">MCU</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/ASIC/" traget="_blank">ASIC</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/CPU/" traget="_blank">CPU</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/ROM/" traget="_blank">ROM</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/DRAM/" traget="_blank">DRAM</a>
+</td>
+</tr>
+<tr>
+<td>
+<a href="http://www.elecfans.com/tags/NB-IoT/" traget="_blank">NB-IoT</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/LoRa/" traget="_blank">LoRa</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/Zigbee/" traget="_blank">Zigbee</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/NFC/" traget="_blank">NFC</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/蓝牙/" traget="_blank">蓝牙</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/RFID/" traget="_blank">RFID </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/Wi-Fi/" traget="_blank">Wi-Fi</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/SIGFOX/" traget="_blank">SIGFOX</a>
+</td>
+</tr>
+<tr>
+<td>
+<a href="http://www.elecfans.com/tags/Type-C/" traget="_blank">Type-C</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/USB/" traget="_blank">USB</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/以太网/" traget="_blank">以太网</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/仿真器/" traget="_blank">仿真器</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/RISC/" traget="_blank">RISC</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/RAM/" traget="_blank">RAM </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/寄存器/" traget="_blank">寄存器</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/GPU/" traget="_blank">GPU</a>
+</td>
+</tr>
+<tr>
+<td>
+<a href="http://www.elecfans.com/tags/语音识别/" traget="_blank">语音识别</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/万用表/" traget="_blank">万用表</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/CPLD/" traget="_blank">CPLD</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/耦合/" traget="_blank">耦合</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/电路仿真/" traget="_blank">电路仿真</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/电容滤波/" traget="_blank">电容滤波</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/保护电路/" traget="_blank">保护电路</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/看门狗/" traget="_blank">看门狗</a>
+</td>
+</tr>
+<tr>
+<td>
+<a href="http://www.elecfans.com/tags/CAN/" traget="_blank">CAN</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/CSI/" traget="_blank">CSI</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/DSI/" traget="_blank">DSI</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/DVI/" traget="_blank">DVI</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/Ethernet/" traget="_blank">Ethernet</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/HDMI/" traget="_blank">HDMI</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/I2C/" traget="_blank">I2C</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/RS-485/" traget="_blank">RS-485</a>
+</td>
+</tr>
+<tr>
+<td>
+<a href="http://www.elecfans.com/tags/SDI/" traget="_blank">SDI</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/NAS/" traget="_blank">nas</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/DMA/" traget="_blank">DMA</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/HomeKit/" traget="_blank">HomeKit</a>
+</td>
+<td> <a href="http://www.elecfans.com/tags/阈值电压/" traget="_blank">阈值电压</a></td>
+<td> <a href="http://www.elecfans.com/tags/UART/" traget="_blank">UART</a></td>
+<td> <a href="http://www.elecfans.com/tags/机器学习/" traget="_blank">机器学习</a></td>
+<td> <a href="http://www.elecfans.com/tags/TensorFlow/" traget="_blank">TensorFlow</a></td>
+</tr>
+</tbody></table>
+</div>
+<!--技术-->
+<!--软件/工具-->
+<div class="comment_column">
+<table class="comment_list">
+<tbody><tr>
+<td>
+<a href="http://www.elecfans.com/tags/Arduino/" traget="_blank">Arduino</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/BeagleBone/" traget="_blank">BeagleBone</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/树莓派/" traget="_blank">树莓派</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/STM32/" traget="_blank">STM32</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/MSP430/" traget="_blank">MSP430</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/EFM32/" traget="_blank">EFM32</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/mbed/" traget="_blank">ARM mbed</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/DragonBoard 410c/" traget="_blank">DragonBoard 410c</a>
+</td>
+</tr>
+<tr>
+<td>
+<a href="http://www.elecfans.com/tags/示波器/" traget="_blank">示波器</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/LPC/" traget="_blank">LPC</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/imx8/" traget="_blank">imx8</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/PSoC/" traget="_blank">PSoC</a>
+</td>
+<td>
+<a href="http://t.elecfans.com/9277.html" traget="_blank">Altium Designer19</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/Allegro/" traget="_blank">Allegro</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/Mentor/" traget="_blank">Mentor</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/Pads/" traget="_blank">Pads </a>
+</td>
+</tr>
+<tr>
+<td>
+<a href="http://www.elecfans.com/tags/OrCAD/" traget="_blank">OrCAD</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/Cadence/" traget="_blank">Cadence</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/AutoCAD/" traget="_blank">AutoCAD</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/ARM DS-5/" traget="_blank">ARM DS-5</a>
+</td>
+<td> <a href="http://www.elecfans.com/tags/Keil/" traget="_blank">Keil </a></td>
+<td> <a href="http://www.elecfans.com/tags/MATLAB/" traget="_blank">MATLAB</a></td>
+<td> <a href="http://www.elecfans.com/tags/MPLAB/" traget="_blank">MPLAB</a></td>
+<td> <a href="http://www.elecfans.com/tags/Quartus/" traget="_blank">Quartus</a></td>
+</tr>
+</tbody></table>
+</div>
+<!--软件/工具-->
+<!-- OS/语言-->
+<div class="comment_column">
+<table class="comment_list">
+<tbody><tr>
+<td>
+<a href="http://www.elecfans.com/tags/C++/" traget="_blank">C++</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/Java/" traget="_blank">Java</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/Python/" traget="_blank">Python</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/JavaScript/" traget="_blank">JavaScript</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/node.js/" traget="_blank">node.js</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/C#/" traget="_blank">C#</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/verilog/" traget="_blank">verilog </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/Tensorflow/" traget="_blank">Tensorflow</a>
+</td>
+</tr>
+<tr>
+<td>
+<a href="http://www.elecfans.com/tags/Android/" traget="_blank">Android</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/iOS/" traget="_blank">iOS </a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/linux/" traget="_blank">linux</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/RTOS/" traget="_blank">RTOS</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/FreeRTOS/" traget="_blank">FreeRTOS</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/LiteOS/" traget="_blank">LiteOS</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/AliOS/" traget="_blank">AliOS</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/RTThread/" traget="_blank">RTThread</a>
+</td>
+</tr>
+<tr>
+<td>
+<a href="http://www.elecfans.com/tags/uCOS/" traget="_blank">uCOS</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/DuerOS/" traget="_blank">DuerOS</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags//Brillo/" traget="_blank">Brillo</a>
+</td>
+<td>
+<a href="http://www.elecfans.com/tags/Windows 10/" traget="_blank">Windows 10</a>
+</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+</div>
+<!-- OS/语言-->
+</div>
+<!-- #编辑推荐-->
+</div>
+<div class="gg-footer" id="BottomLeaderboard"><iframe frameborder="0" height="90" scrolling="no" src="http://www1.elecfans.com/www/delivery/myafr.php?target=_blank&amp;cb=0.5408855910800465&amp;zoneid=213&amp;prefer=http%3A%2F%2Fwww.elecfans.com%2Ftechnical%2Fall%2F" width="728"></iframe></div>
+<link href="http://skin.elecfans.com/css/footgather.css" rel="stylesheet"/>
+<div class="gather-bottom">
+<div class="footer-gather">
+<div class="gather-top ga-clear">
+<div class="ga-lf">
+<a href="https://www.huaqiu.cn/" target="_blank"><b>华秋（原“华强聚丰”）：</b></a>
+<a href="http://www.elecfans.com/" target="_blank">电子发烧友</a>
+<a href="http://www.elecfans.com/kf/" target="_blank">华秋开发</a>
+<a href="https://data.hqchip.com:4006/t/Eca" target="_blank">华秋电路（原“华强PCB”）</a>
+<a href="https://data.hqchip.com:4006/t/7ca" target="_blank">华秋商城（原“华强芯城”）</a>
+<a href="https://data.hqchip.com:4006/t/vca" target="_blank">华秋智造</a>
+</div>
+<div class="ga-lr">
+<a href="http://bbs.elecfans.com/infocenter.php" rel="nofollow" target="_blank">My ElecFans </a>
+<a href="http://www.elecfans.com/app/" target="_blank"> APP </a>
+<a href="http://www.elecfans.com/sitemap.html" target="_blank">网站地图</a>
+</div>
+</div>
+<div class="gather-main ga-clear" id="gatherMain">
+<ul class="ga-lf" style="width: 125px">
+<b>产业</b>
+<li><a href="http://www.elecfans.com/iot/" target="_blank">物联网</a></li>
+<li><a href="http://www.elecfans.com/jiqiren/" target="_blank">机器人</a></li>
+<li><a href="http://www.elecfans.com/rengongzhineng/" target="_blank">人工智能</a></li>
+<li><a href="http://www.elecfans.com/vr/" target="_blank">vr|ar|虚拟现实</a></li>
+<li><a href="http://www.elecfans.com/wearable/" target="_blank">可穿戴设备</a></li>
+<li><a href="http://www.elecfans.com/video/" target="_blank">音视频及家电</a></li>
+<li><a href="http://www.elecfans.com/led/" target="_blank">LEDs</a></li>
+<li><a href="http://www.elecfans.com/qichedianzi/" target="_blank">汽车电子</a></li>
+<li><a href="http://www.elecfans.com/tongxin/" target="_blank">通信网络</a></li>
+<li><a href="http://www.elecfans.com/yiliaodianzi/" target="_blank">医疗电子</a></li>
+<li><a href="http://www.elecfans.com/dianyuan/diandongche_xinnenyuan/" target="_blank">智能电网</a></li>
+<li><a href="http://www.elecfans.com/application/Security/" target="_blank">安全设备/系统</a></li>
+<li><a href="http://www.elecfans.com/application/Military_avionics/" target="_blank">军用/航空电子</a></li>
+<li><a href="http://www.elecfans.com/application/Communication/" target="_blank">移动通信</a></li>
+<li><a href="http://www.elecfans.com/consume/bianxiedianzishebei/" target="_blank">便携设备</a></li>
+<li><a href="http://www.elecfans.com/consume/chukongjishu/" target="_blank">触控感测</a></li>
+<li><a href="http://www.elecfans.com/kongzhijishu/" target="_blank">工业控制</a></li>
+</ul>
+<ul class="ga-lf" style="width: 140px">
+<b>技术</b>
+<li><a href="http://www.elecfans.com/pld/" target="_blank">可编程逻辑</a></li>
+<li><a href="http://www.elecfans.com/article/83/" target="_blank">电源/新能源</a></li>
+<li><a href="http://www.elecfans.com/article/88/142/" target="_blank">MEMS/传感技术</a></li>
+<li><a href="http://www.elecfans.com/article/85/" target="_blank">测量仪表</a></li>
+<li><a href="http://www.elecfans.com/emb/" target="_blank">嵌入式技术</a></li>
+<li><a href="http://www.elecfans.com/article/90/155/" target="_blank">制造/封装</a></li>
+<li><a href="http://www.elecfans.com/analog/" target="_blank">模拟技术</a></li>
+<li><a href="http://www.elecfans.com/connector/" target="_blank">连接器</a></li>
+<li><a href="http://www.elecfans.com/emc_emi/" target="_blank">EMC/EMI设计</a></li>
+<li><a href="http://www.elecfans.com/xianshi/" target="_blank">光电显示</a></li>
+<li><a href="http://www.elecfans.com/consume/cunchujishu/" target="_blank">存储技术</a></li>
+<li><a href="http://www.elecfans.com/bandaoti/eda/" target="_blank">EDA/IC设计</a></li>
+<li><a href="http://www.elecfans.com/emb/dsp/" target="_blank">处理器/DSP</a></li>
+<li><a href="http://www.elecfans.com/emb/jiekou/" target="_blank">接口/总线/驱动</a></li>
+<li><a href="http://www.elecfans.com/emb/danpianji/" target="_blank">控制/MCU</a></li>
+<li><a href="http://www.elecfans.com/tongxin/rf/" target="_blank">RF/无线</a></li>
+</ul>
+<ul class="ga-lf" style="width: 110px">
+<b>特色栏目</b>
+<li><a href="http://www.elecfans.com/d/column/" target="_blank">专栏</a></li>
+<li><a href="http://www.elecfans.com/d/" target="_blank">电子说</a></li>
+<li><a href="http://t.elecfans.com/" target="_blank">发烧友学院</a></li>
+<li><a href="http://www.elecfans.com/soft/" target="_blank">资料下载</a></li>
+<li><a href="http://www.elecfans.com/topic/" target="_blank">技术专题</a></li>
+<li><a href="http://39.elecfans.com/" target="_blank">39°</a></li>
+<li><a href="http://pdf.elecfans.com/" target="_blank">Datasheet</a></li>
+<li><a href="http://www.elecfans.com/article/88/131/" target="_blank">电路图</a></li>
+<li><a href="http://www.elecfans.com/baike/" target="_blank">电子百科</a></li>
+<li><a href="http://www.elecfans.com/yuanqijian/" target="_blank">元器件知识</a></li>
+<li><a href="http://www.elecfans.com/tools/" target="_blank">在线工具</a></li>
+</ul>
+<ul class="ga-lf" style="width: 96px">
+<b>社群</b>
+<li><a href="http://bbs.elecfans.com/ask.html" target="_blank">问答</a></li>
+<li><a href="http://bbs.elecfans.com/" target="_blank">论坛</a></li>
+<li><a href="http://bbs.elecfans.com/group" target="_blank">小组</a></li>
+<li><a href="http://home.elecfans.com/infocenter.php" target="_blank">博客</a></li>
+<li><a href="http://z.elecfans.com/" target="_blank">华秋众筹</a></li>
+<li><a href="http://bbs.elecfans.com/try.html" target="_blank">评测试用</a></li>
+<li><a href="http://www.elecfans.com/vip/pay" target="_blank">VIP会员</a></li>
+</ul>
+<ul class="ga-lf" style="width: 110px">
+<b>供应链服务</b>
+<li><a href="http://www.elecfans.com/custom/" target="_blank">项目外包</a></li>
+<li><a href="https://data.hqchip.com:4006/t/wca" target="_blank">BOM配单</a></li>
+<li><a href="https://data.hqchip.com:4006/t/dca" target="_blank">PCB打板</a></li>
+<li><a href="https://data.hqchip.com:4006/t/hca" target="_blank">SMT加工</a></li>
+<li><a href="https://data.hqchip.com:4006/t/Rca" target="_blank">元器件商城</a></li>
+<li><a href="http://www.elecfans.com/kf/" target="_blank">定制开发</a></li>
+<b class="mt15">媒体服务</b>
+<li><a href="http://www.elecfans.com/help/service.html" target="_blank">网站广告</a></li>
+<li><a href="http://webinar.elecfans.com/" target="_blank">在线研讨会</a></li>
+<li><a href="http://event.elecfans.com/" target="_blank">活动策划</a></li>
+<li><a href="http://www.elecfans.com/news/" target="_blank">新闻发布</a></li>
+<li><a href="http://www.elecfans.com/xinpian/ic/" target="_blank">新品发布</a></li>
+<li><a href="http://www.elecfans.com/resource/" target="_blank">资源中心</a></li>
+<li><a href="http://www.elecfans.com/quiz/" target="_blank">小测验</a></li>
+<li><a href="http://www.elecfans.com/contest/" target="_blank">设计大赛</a></li>
+<li><a target="_blank">eDM</a></li>
+</ul>
+<ul class="ga-lf wid152" style="width: 140px"> <b>华秋</b> <li><a href="http://www.elecfans.com/about/" rel="nofollow" target="_blank">关于我们</a></li> <li><a href="http://www.hqchip.com/help/factsheet.html" rel="nofollow" target="_blank">投资关系</a></li> <li><a href="http://www.hqchip.com/help/news/lists.html" rel="nofollow" target="_blank">新闻动态</a></li> <li><a target="_blank">媒体报道</a></li> <li><a href="http://www.elecfans.com/about/zhaopin.html" rel="nofollow" target="_blank">加入我们</a></li> <li><a href="http://www.elecfans.com/about/contact.html" rel="nofollow" target="_blank">联系我们</a></li> <li><a href="http://www.elecfans.com/about/tousu.html" rel="nofollow" target="_blank">侵权投诉</a></li> <b class="mt15">社交网络</b> <li><a href="http://weibo.com/elecfanscom" rel="nofollow" target="_blank">微博</a></li> <b class="mt15">移动</b> <li><a href="http://www.elecfans.com/app/" target="_blank">电子发烧友 APP</a></li> <li><a href="http://m.elecfans.com/" target="_blank">电子发烧友 WAP</a></li> </ul> <ul class="ga-lf wid152" style="width: 120px"> <b>联系我们</b> <p>大中华区广告合作</p> <p>Ben Tseng</p> <p><a href="mailto:hezuo@elecfans.com">hezuo@elecfans.com</a></p> <p>Mike Zhang</p> <p class="mb16"><a href="mailto:mikezhang@elecfans.com">mikezhang@elecfans.com</a></p> <p>内容合作</p> <p>黄晶晶</p> <p class="mb16"><a href="mailto:huangjingjing@elecfans.com">huangjingjing@elecfans.com</a></p> <p>内容合作（海外）</p> <p>Brandon Smith</p> <p><a href="mailto:brandon.smith@elecfans.com">brandon.smith@elecfans.com</a></p> <div class="ga-attend"> <p>关注我们的微信</p> <img src="//skin.elecfans.com/images/u267.png"/> </div> </ul> <ul class="ga-lf absolute-ga"> <b> </b> <p>供应链服务 PCB/IC/PCBA</p> <p>江良华</p> <p class="mb16"><a href="mailto:lanhu@hqchip.com">lanhu@hqchip.com</a></p> <p>投资合作</p> <p>曾海银</p> <p class="mb16"><a href="mailto:zenghaiyin@elecfans.com">zenghaiyin@elecfans.com</a></p> <p>原厂入驻：<a href="http://www.hqchip.com/gongsi/settle.html" style="text-decoration: underline;" target="_blank">点击了解详情</a></p> <p>杨超群：134 2870 7711</p> <div class="ga-attend"> <p>下载发烧友APP</p> <img src="//skin.elecfans.com/images/u40.png"/> </div> </ul></div>
+<div class="ther-footer">
+<div class="foot-link">
+<a href="http://www.elecfans.com/about/" rel="nofollow" target="_blank">关于本站</a> ｜
+				<a href="http://www.elecfans.com/about/contribute.html" rel="nofollow" target="_blank">欢迎投稿</a> ｜
+				<a href="http://www.elecfans.com/about/feedback.html" rel="nofollow" target="_blank">用户建议</a> ｜
+				<a href="http://www.elecfans.com/about/copyright.html" rel="nofollow" target="_blank">版权申明</a> ｜
+				<a href="http://www.elecfans.com/about/friendlink.html" rel="nofollow" target="_blank">友情链接</a> ｜
+				<a href="http://www.elecfans.com/about/contact.html" rel="nofollow" target="_blank">联系我们</a> ｜
+				<a href="http://www.elecfans.com/sitemap.html" target="_blank">网站地图</a>
+</div>
+<p>版权所有 © 深圳华秋电子有限公司 <a href="http://www.elecfans.com">电子发烧友</a></p>
+<p class="mt10">
+<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030402000366" id="elecfans-gabeianhao" target="_blank">粤公网安备 44030402000349号</a> <a href="//www.elecfans.com/about/edi.html" target="_blank">电信与信息服务业务经营许可证：粤B2-20160233</a>
+<a href="http://szcert.ebs.org.cn/c6db625a-ba09-414a-bba4-f57240baac9c" id="elecfans-gongan" target="_blank">
+<img alt="工商网监认证" src="http://skin.elecfans.com/images/ebsIcon.png" style="margin: -5px 10px 0 12px;vertical-align: middle;"/>工商网监
+				</a>
+<a href="http://www.miibeian.gov.cn/" id="elecfans-beianhao" target="_blank"> 粤ICP备14022951号</a>
+</p>
+</div>
+</div>
+</div>
+<script src="http://skin.elecfans.com/js/footer.js"></script>
+<script type="text/javascript">
+
+
+	var gabeianhaoItem = document.getElementById('elecfans-gabeianhao');
+	gabeianhaoItem.setAttribute('href', 'http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030402000366');
+	gabeianhaoItem.setAttribute('target', '_blank');
+
+	var gonganItem = document.getElementById('elecfans-gongan');
+	gonganItem.setAttribute('href', 'http://szcert.ebs.org.cn/c6db625a-ba09-414a-bba4-f57240baac9c');
+	gonganItem.setAttribute('target', '_blank');
+</script>
+<script src="http://skin.elecfans.com/js/header_nav.js"></script>
+<!-- <script type="text/javascript" src="/min/?b=skin-2012/js/elecfans&amp;f=elecfans_jquery.js,common.js,list.js"></script> -->
+<script src="/skin-2012/js/elecfans_jquery.js"></script>
+<script src="/skin-2012/js/elecfans/common.js?v20150624"></script><div class="banner_ad201905"><style type="text/css">.banner_ad201905{position: fixed;bottom: 15px;left: 0;right: 0;margin: auto;z-index: 10;display: none;}.banner_ad201905 .close_banner_ad201905 {position: absolute;z-index: 1;right: 328px;top: 3px;padding: 8px;line-height: 1;cursor: pointer;background: url(/static/main/img/close-icons.png) no-repeat;}.banner_ad201905 .close_banner_ad201905:hover {background-position: 0 -16px;}</style><div style="width: 1000px;margin: 0 auto;position: relative;"><a href="https://data.hqchip.com:4006/t/jNc" target="_blank"><img src="/skin-2012/images/hqpcb_20200307.jpg?20200428" style="width:675px;height: 90px;"/></a><span class="close_banner_ad201905" title="点击关闭"></span></div></div>
+<script src="/skin-2012/js/elecfans/list.js"></script>
+<script data-ssoreferer="http://www.elecfans.com/technical/all/" data-ssosite="https://passport.elecfans.com" data-ssositeid="11" id="sso_script" src="https://passport.elecfans.com/public/pc/js/sso.passport.js" type="text/javascript"></script><div id="remainLogBox"><div class="sso_layer"></div><div class="remain-log clearfix"><div class="fl LogBgPart"><h3>电子发烧友</h3> <p>中国电子工程师最喜欢的网站</p> <ul><li>与<span id="downNum">2931785</span>位工程师会员交流学习</li><li>获取您个性化的科技前沿技术信息</li> <li>参加活动获取丰厚的礼品</li> </ul></div><div class="fr LogRightPart"><div id="colseRemainLog"><img src="/skin-2012/images/remain_log_colse.png"/></div><div id="ssoScrollLog"></div></div></div></div></body></html>

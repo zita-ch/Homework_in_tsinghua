@@ -1,0 +1,177 @@
+<html><head id="ctl00_Head1"><meta charset="utf-8"/><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/><meta content="240" name="MobileOptimized"/><meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="yes" name="apple-mobile-web-app-capable"/><meta content="black" name="apple-mobile-web-app-status-bar-style"/><title>
+	RFID世界网新闻频道,最权威的RFID行业新闻资讯,中国最大RFID行业门户
+</title><link href="/Images/mobile.css?v=1.1.2" rel="Stylesheet" type="text/css"/>
+<script src="/Scripts/jquery-1.10.2.js" type="text/javascript"></script>
+<script type="text/javascript">        !function (a) { "use strict"; function g(a) { a.touches || (a.touches = a.originalEvent.touches) } function h(a, b) { b._startY = a.touches[0].pageY, b.touchScrollTop = b.$scrollArea.scrollTop() } function i(b, c) { c._curY = b.touches[0].pageY, c._moveY = c._curY - c._startY, c._moveY > 0 ? c.direction = "down" : c._moveY < 0 && (c.direction = "up"); var d = Math.abs(c._moveY); "" != c.opts.loadUpFn && c.touchScrollTop <= 0 && "down" == c.direction && !c.isLockUp && (b.preventDefault(), c.$domUp = a("." + c.opts.domUp.domClass), c.upInsertDOM || (c.$element.prepend('<div class="' + c.opts.domUp.domClass + '"></div>'), c.upInsertDOM = !0), n(c.$domUp, 0), d <= c.opts.distance ? (c._offsetY = d, c.$domUp.html(c.opts.domUp.domRefresh)) : d > c.opts.distance && d <= 2 * c.opts.distance ? (c._offsetY = c.opts.distance + .5 * (d - c.opts.distance), c.$domUp.html(c.opts.domUp.domUpdate)) : c._offsetY = c.opts.distance + .5 * c.opts.distance + .2 * (d - 2 * c.opts.distance), c.$domUp.css({ height: c._offsetY })) } function j(b) { var c = Math.abs(b._moveY); "" != b.opts.loadUpFn && b.touchScrollTop <= 0 && "down" == b.direction && !b.isLockUp && (n(b.$domUp, 300), c > b.opts.distance ? (b.$domUp.css({ height: b.$domUp.children().height() }), b.$domUp.html(b.opts.domUp.domLoad), b.loading = !0, b.opts.loadUpFn(b)) : b.$domUp.css({ height: "0" }).on("webkitTransitionEnd mozTransitionEnd transitionend", function () { b.upInsertDOM = !1, a(this).remove() }), b._moveY = 0) } function k(a) { a.opts.autoLoad && a._scrollContentHeight - a._threshold <= a._scrollWindowHeight && m(a) } function l(a) { a._scrollContentHeight = a.opts.scrollArea == b ? e.height() : a.$element[0].scrollHeight } function m(a) { a.direction = "up", a.$domDown.html(a.opts.domDown.domLoad), a.loading = !0, a.opts.loadDownFn(a) } function n(a, b) { a.css({ "-webkit-transition": "all " + b + "ms", transition: "all " + b + "ms" }) } var f, b = window, c = document, d = a(b), e = a(c); a.fn.dropload = function (a) { return new f(this, a) }, f = function (a, b) { var c = this; c.$element = a, c.upInsertDOM = !1, c.loading = !1, c.isLockUp = !1, c.isLockDown = !1, c.isData = !0, c._scrollTop = 0, c._threshold = 0, c.init(b) }, f.prototype.init = function (f) { var l = this; l.opts = a.extend(!0, {}, { scrollArea: l.$element, domUp: { domClass: "dropload-up", domRefresh: '<div class="dropload-refresh">↓下拉刷新</div>', domUpdate: '<div class="dropload-update">↑释放更新</div>', domLoad: '<div class="dropload-load"><span class="loading"></span>加载中...</div>' }, domDown: { domClass: "dropload-down", domRefresh: '<div class="dropload-refresh">↑上拉加载更多</div>', domLoad: '<div class="dropload-load"><span class="loading"></span>加载中...</div>', domNoData: '<div class="dropload-noData">暂无数据</div>' }, autoLoad: !0, distance: 50, threshold: "", loadUpFn: "", loadDownFn: "" }, f), "" != l.opts.loadDownFn && (l.$element.append('<div class="' + l.opts.domDown.domClass + '">' + l.opts.domDown.domRefresh + "</div>"), l.$domDown = a("." + l.opts.domDown.domClass)), l._threshold = l.$domDown && "" === l.opts.threshold ? Math.floor(1 * l.$domDown.height() / 3) : l.opts.threshold, l.opts.scrollArea == b ? (l.$scrollArea = d, l._scrollContentHeight = e.height(), l._scrollWindowHeight = c.documentElement.clientHeight) : (l.$scrollArea = l.opts.scrollArea, l._scrollContentHeight = l.$element[0].scrollHeight, l._scrollWindowHeight = l.$element.height()), k(l), d.on("resize", function () { l._scrollWindowHeight = l.opts.scrollArea == b ? b.innerHeight : l.$element.height() }), l.$element.on("touchstart", function (a) { l.loading || (g(a), h(a, l)) }), l.$element.on("touchmove", function (a) { l.loading || (g(a, l), i(a, l)) }), l.$element.on("touchend", function () { l.loading || j(l) }), l.$scrollArea.on("scroll", function () { l._scrollTop = l.$scrollArea.scrollTop(), "" != l.opts.loadDownFn && !l.loading && !l.isLockDown && l._scrollContentHeight - l._threshold <= l._scrollWindowHeight + l._scrollTop && m(l) }) }, f.prototype.lock = function (a) { var b = this; void 0 === a ? "up" == b.direction ? b.isLockDown = !0 : "down" == b.direction ? b.isLockUp = !0 : (b.isLockUp = !0, b.isLockDown = !0) : "up" == a ? b.isLockUp = !0 : "down" == a && (b.isLockDown = !0, b.direction = "up") }, f.prototype.unlock = function () { var a = this; a.isLockUp = !1, a.isLockDown = !1, a.direction = "up" }, f.prototype.noData = function (a) { var b = this; void 0 === a || 1 == a ? b.isData = !1 : 0 == a && (b.isData = !0) }, f.prototype.resetload = function () { var b = this; "down" == b.direction && b.upInsertDOM ? b.$domUp.css({ height: "0" }).on("webkitTransitionEnd mozTransitionEnd transitionend", function () { b.loading = !1, b.upInsertDOM = !1, a(this).remove(), l(b) }) : "up" == b.direction && (b.loading = !1, b.isData ? (b.$domDown.html(b.opts.domDown.domRefresh), l(b), k(b)) : b.$domDown.html(b.opts.domDown.domNoData)) } } (window.Zepto || window.jQuery);</script>
+<script type="text/javascript">
+        $(function () { $('#txtK').keydown(function (e) { if (e.keyCode == 13) { S(null); } }); });
+        function S(sender) {
+            var k = $("#txtK").val();
+            if (!k || k.length < 1) { alert("请输入搜索关键词！"); return false; }
+            location.href = "/news.aspx?k=" + encodeURIComponent(k);
+            return false;
+        }
+    </script>
+<script type="text/javascript">
+    var pSize = parseInt('15', 10), currPage = 2;
+    var chanel = 'QNews', qKey = "";    $(function () {
+        $("body").addClass("yaowen");
+        LoadMore(chanel, qKey);
+    });
+</script> <script type="text/javascript">
+        $(function () {
+            var btnPageButtom = $("#divLoadMore");
+            if (!btnPageButtom) { return; }
+            var totalHeight = 0;
+            function autoLoad() {
+                totalHeight = parseFloat($(window).height()) + parseFloat($(window).scrollTop());
+                if ($(document).height() <= totalHeight) { btnPageButtom.click(); }
+            }
+            $(window).scroll(function () { autoLoad(); });
+        });
+
+        function LoadMore(act, qKey) {
+            return false;
+            $('#ULMore').dropload({
+                scrollArea: window,
+                domDown: {
+                    domClass: 'dropload-down',
+                    domRefresh: '<div class="dropload-refresh"><span>上拉加载更多</span></div>',
+                    domLoad: '<div class="dropload-load">正在加载中...</div>',
+                    domNoData: ''
+                },
+                loadDownFn: function (me) {
+                    $.ajax({
+                        type: 'GET', url: 'AjaxHandler.aspx', dataType: 'json',
+                        data: { "act": act, "pSize": pSize, "page": currPage, "k": qKey, "_R_": Math.random() },
+                        success: function (data) {
+                            var result = data.data;
+                            var totalNum = data.totalNum;
+                            $('#ULMore').append(result);                            if (currPage * pSize + 1 > totalNum) { me.lock(); me.noData(); return; }
+                            currPage++; me.resetload(); /* 每次数据加载完，必须重置 */
+                        },
+                        error: function (xhr, type) { /* 即使加载出错，也得重置 */me.resetload(); }
+                    });
+                }
+            });
+        }
+        function ClickLoadMore(act, sKey) {
+            var act = act || chanel;
+            var qKey = (sKey || qKey) || '';
+            $.ajax({
+                type: 'GET', url: 'AjaxHandler.aspx', dataType: 'json',
+                data: { "act": act, "pSize": pSize, "page": currPage, "k": qKey, "_R_": Math.random() },
+                success: function (data) {
+                    var result = data.data;
+                    var totalNum = data.totalNum;
+                    $('#ULMore').append(result);                    if (currPage * pSize + 1 > totalNum) { $("#divLoadMore").unbind("unbind", ClickLoadMore); return; }
+                    currPage++;
+                },
+                error: function (xhr, type) { /* 即使加载出错，也得重置 */me.resetload(); }
+            });
+        }
+    </script></head>
+<body class="yaowen" style="">
+<div id="PageContainer">
+<div class="titBar">RFID行业资讯早知道！</div>
+<div class="serq">
+<input id="txtK" name="txtK" placeholder="找资讯、找产品、找商机、找方案" type="text"/>
+<input id="btnSearch" onclick="S(this);" type="submit" value="搜索"/>
+</div> <div class="subNav"><a href="News.aspx" title="新闻">新闻</a><a href="Tech.aspx" title="技术">技术</a><a href="Sol.aspx" title="方案">方案</a><a href="Pro.aspx" title="产品">产品</a></div>
+<div><ul class="newsList" id="ULMore"><li class="clearfix">
+<a href="NewsView.aspx?id=135712">
+<span class="tit">国务院最新发文，物联网领域这个万众瞩目的活动终于要如期登场了</span>
+<span class="cont">会展活动解禁，IOTE如期登场，助力企业掘金万亿级的物联网市场！</span>
+<span class="date">7小时前</span>
+</a>
+</li><li class="clearfix">
+<a href="NewsView.aspx?id=135711">
+<span class="tit">长征路上的ETC+停车</span>
+<span class="cont">3月中旬，交通运输部发布《2020年交通运输更贴近民生实事》的公示，计划从9个方面推进交通运输贴近民生实事，其中包括将在10个以上城市开展ETC智慧停车试点。</span>
+<span class="date">8小时前</span>
+</a>
+</li><li class="clearfix">
+<a href="NewsView.aspx?id=135710">
+<span class="tit">RFID技术溯源提升农村鸡养殖业的品牌影响力</span>
+<span class="cont">RFID技术在畜牧行业的应用主要有两个方面，一方面是建立畜牧管理系统进行动物的精细养殖，另一方面是建立动物的追踪管理系统。全世界20多个国家和地区对食品的生产过程都采用RFID技术进行跟踪与追溯，并获得了良好的效果。</span>
+<span class="date">10小时前</span>
+</a>
+</li><li class="clearfix">
+<a href="NewsView.aspx?id=135709">
+<span class="tit">2000亿市场在望！5G与智慧农业“你侬我侬”</span>
+<span class="cont">提到农业，你会想起什么?是挥汗如雨的农民，还是卖力耕田的水牛，又或是麦穗金黄的丰收景象?</span>
+<span class="date">10小时前</span>
+</a>
+</li><li class="clearfix">
+<a href="NewsView.aspx?id=135707">
+<span class="tit">卖房不如养猪？继碧桂园、恒大后，万科也开始养猪了</span>
+<span class="cont">房子是安身之所，猪肉是保身之用，二者皆为民生基础。</span>
+<span class="date">10小时前</span>
+</a>
+</li><li class="clearfix">
+<a href="NewsView.aspx?id=135706">
+<span class="tit">耐克森用RFID技术管理供应给阿尔斯通的新列车电缆</span>
+<span class="cont">为期三年的全球框架协议将使耐克森每年为阿尔斯通的新一代轨道车辆提供数万公里的专用铁路电缆。</span>
+<span class="date">10小时前</span>
+</a>
+</li><li class="clearfix">
+<a href="NewsView.aspx?id=135705">
+<span class="tit">Acucote推出用于食品行业安全封闭防篡改标签</span>
+<span class="cont">Acucote推出了一套完整的防篡改标签和干剥离产品，为食品服务提供商提供了额外的安全技术。防篡改产品包括移除时容易撕裂的易碎纸以及薄膜面材。这些很方便用作袋、纸箱和托盘的封口，并提供防篡改保护。</span>
+<span class="date">11小时前</span>
+</a>
+</li><li class="clearfix">
+<a href="NewsView.aspx?id=135704">
+<span class="tit">重庆江北五一期间强化RFID等科技应用严格路检路查，以保障道路通畅</span>
+<span class="cont">节日期间，该支队利用辖区电子警察、卡口、RFID系统，实时监测研判道路交通流量并结合OD数据，及时调整各路口、路段信号灯配时，优化道路交通组织。</span>
+<span class="date">12小时前</span>
+</a>
+</li><li class="clearfix">
+<a href="NewsView.aspx?id=135703">
+<span class="tit">美国昆虫学家计划用RFID标签监视亚洲大黄蜂去向</span>
+<span class="cont">鲁尼说，一旦大黄蜂困在捕蜂器里，他们计划有可能使用射频识别标签来监视它的去向——或者，简单地附上一个小的彩条，然后跟着它回到蜂巢。</span>
+<span class="date">12小时前</span>
+</a>
+</li><li class="clearfix">
+<a href="NewsView.aspx?id=135702">
+<span class="tit">厦门港利用RFID、GPS等技术打造集装箱智慧物流平台</span>
+<span class="cont">“智慧港口”建设的目的，是增强港口综合竞争力、打造国际一流营商环境，同时也将助力建设“四个一流”港口和交通强国。</span>
+<span class="date">12小时前</span>
+</a>
+</li><li class="clearfix">
+<a href="NewsView.aspx?id=135701">
+<span class="tit">达摩院自动驾驶算法实现识别“厘米级”障碍物，将用于无人物流车</span>
+<span class="cont">5月8日消息，在自动驾驶权威数据集Semantic KITTI上，达摩院算法在“单帧3D点云语义分割”排行榜获得第一。</span>
+<span class="date">12小时前</span>
+</a>
+</li><li class="clearfix">
+<a href="NewsView.aspx?id=135700">
+<span class="tit">国外学者在量子计算效率研究上获突破：首次观察到分子量子位振动</span>
+<span class="cont">爱尔兰圣三一大学研究小组同英国、意大利学者共同宣布了一项突破性进展：实验小组第一次观察到分子量子位的振动，为研究自旋与原子运动之间的相互作用等基本现象提供了新的线索。</span>
+<span class="date">12小时前</span>
+</a>
+</li><li class="clearfix">
+<a href="NewsView.aspx?id=135699">
+<span class="tit">我国科学家实现用量子计算机模拟化学分子</span>
+<span class="cont">经过发展和完善，FQE将有望成为普遍使用的通用量子化学计算平台。</span>
+<span class="date">12小时前</span>
+</a>
+</li><li class="clearfix">
+<a href="NewsView.aspx?id=135698">
+<span class="tit">为什么仍有许多人看好NFC？</span>
+<span class="cont">NFC成长历程~</span>
+<span class="date">12小时前</span>
+</a>
+</li><li class="clearfix">
+<a href="NewsView.aspx?id=135697">
+<span class="tit">百度AI测温系统落地北京多所小学</span>
+<span class="cont">日前，百度AI测温系统部署在北京“教育重镇”海淀区多所学校，包括有北京大学附属小学、中关村一小、中关村二小、八里庄小学等，为即将到来的开学提前做准备。</span>
+<span class="date">12小时前</span>
+</a>
+</li></ul><div id="divLoadMore" onclick="ClickLoadMore();">↑上拉或点击加载更多..</div></div>
+</div>
+<div style="display:none"><script language="javascript" src="http://js.users.51.la/19118031.js" type="text/javascript"></script><noscript><a href="http://www.51.la/?19118031" target="_blank"><img alt="我要啦免费统计" src="http://img.users.51.la/19118031.asp" style="border:none"/></a></noscript></div><div> <input id="__VIEWSTATEGENERATOR" name="__VIEWSTATEGENERATOR" type="hidden" value="CA8C29DA"/>
+</div>
+</body></html>

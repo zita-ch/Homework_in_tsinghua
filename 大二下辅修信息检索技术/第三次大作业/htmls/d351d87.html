@@ -1,0 +1,1128 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>电子工程世界-创新电子设计之原-中国专业的电子工程门户</title>
+<meta content="电子工程世界" name="author"/>
+<meta content="ImkJlqMweh" name="baidu-site-verification"/>
+<meta content="电子工程世界" name="Copyright"/>
+<meta content="电子工程,电子工程世界,eeworld,电子应用,电子工程师,电子,电子网,电子网站" name="keywords"/>
+<meta content="电子工程世界（EEWorld）是一家专为中国电子工程师和电子设计主管提供电子技术开发应用资讯的网络传媒。其内容服务核心是快速传播半导体集成电路领域电子元器件的最新技术产品，深入挖掘并分享各类电子设备开发经验和电子技术应用知识，提供电子工程师和设计主管所需要的各种工具资料。频道包括:汽车电子,手机便携,数字电视,网络通信,工业控制,测试测量,安防电子,医疗电子,单片机,嵌入式,模拟电子,DSP,电源管理,FPGA,RF无线,光电显示,传感技术,缓冲存储,MEMS,半导体设计制造,LED" name="description"/>
+<meta content="f017c9c2508782f7932d918e00ad0497" name="baidu_ssp_verify"/>
+<link href="http://www.eeworld.com.cn" rel="canonical"/>
+<link href="//1.eewimg.cn/favicon.ico" mce_href="//1.eewimg.cn/favicon.ico" rel="icon" type="image/x-icon"/>
+<link href="//1.eewimg.cn/favicon.ico" mce_href="//1.eewimg.cn/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<link href="/statics/hp/styles/indexm.css?s" rel="stylesheet" type="text/css"/>
+<meta data-jc="82" data-jc-version="r20200506"/><meta data-jc="82" data-jc-version="r20200506"/><meta data-jc="82" data-jc-version="r20200506"/><script async="" src="https://pos.baidu.com/auto_dup?psi=77046b676bb8a0381f57213310577416&amp;di=0&amp;dri=0&amp;dis=0&amp;dai=0&amp;ps=0x0&amp;enu=encoding&amp;exps=110011&amp;ant=0&amp;dcb=___baidu_union_callback&amp;dtm=AUTO_JSONP&amp;dvi=0.0&amp;dci=-1&amp;dpt=none&amp;tsr=0&amp;tpr=1589031517122&amp;ti=%E7%94%B5%E5%AD%90%E5%B7%A5%E7%A8%8B%E4%B8%96%E7%95%8C-%E5%88%9B%E6%96%B0%E7%94%B5%E5%AD%90%E8%AE%BE%E8%AE%A1%E4%B9%8B%E5%8E%9F-%E4%B8%AD%E5%9B%BD%E4%B8%93%E4%B8%9A%E7%9A%84%E7%94%B5%E5%AD%90%E5%B7%A5%E7%A8%8B%E9%97%A8%E6%88%B7&amp;ari=2&amp;ver=0506&amp;dbv=2&amp;drs=1&amp;pcs=1920x1080&amp;pss=1920x1080&amp;cfv=0&amp;cpl=0&amp;chi=50&amp;cce=true&amp;cec=UTF-8&amp;tlm=1589031517&amp;prot=2&amp;rw=1080&amp;ltu=http%3A%2F%2Fwww.eeworld.com.cn%2F&amp;ecd=1&amp;uc=1920x1080&amp;pis=-1x-1&amp;sr=1920x1080&amp;tcn=1589031517&amp;dc=4" type="text/javascript"></script><script async="" src="//tpc.googlesyndication.com/sodar/UFYwWwmt.js" type="text/javascript"></script><script data-jc="86" data-jc-version="r20200506" src="https://pagead2.googlesyndication.com/pagead/js/r20200506/r20110914/elements/html/omrhp.js"></script><script async="" src="//tpc.googlesyndication.com/sodar/UFYwWwmt.js" type="text/javascript"></script><script data-jc="86" data-jc-version="r20200506" src="https://pagead2.googlesyndication.com/pagead/js/r20200506/r20110914/elements/html/omrhp.js"></script><script async="" src="//tpc.googlesyndication.com/sodar/UFYwWwmt.js" type="text/javascript"></script><script data-jc="86" data-jc-version="r20200506" src="https://pagead2.googlesyndication.com/pagead/js/r20200506/r20110914/elements/html/omrhp.js"></script><script async="true" src="/statics/js/terminator2.2.min.js" type="text/javascript"></script><script async="" charset="UTF-8" src="https://cdn.jsdelivr.net/npm/sa-sdk-javascript@1.14.22/sensorsdata.min.js"></script><script src="http://push.zhanzhang.baidu.com/push.js"></script><script src="/statics/js/jquery.min.js" type="text/javascript"></script>
+<script src="http://3.eewimg.cn/eeworld2010static/script/jquery.iframetracker.js" type="text/javascript"></script>
+<script src="http://www.eeworld.com.cn/advmanagez/bd_adm_lib_js.php" type="text/javascript"></script>
+<script src="http://news.eeworld.com.cn/statics/js/sensors_s.js" type="text/javascript"></script>
+<script src="/statics/js/news_common.js?s" type="text/javascript"></script>
+<script src="/statics/js/jquery.bxslider.js" type="text/javascript"></script>
+<script src="//1.eewimg.cn/js/HeadPop.b2.js?" type="text/javascript"></script>
+<script src="/statics/js/koala.min.1.5.js" type="text/javascript"></script>
+<script src="https://dup.baidustatic.com/js/ds.js"></script>
+<script type="text/javascript">	
+if(/AppleWebKit.*mobile/i.test(navigator.userAgent) || (/iphone|android|phone|MicroMessenger|mobile|wap|netfront|java|opera mobi|opera mini|ucweb|windows ce|symbian|series|webos|sony|blackberry|dopod|nokia|samsung|palmsource|xda|pieplus|meizu|midp|cldc|motorola|foma|docomo|up.browser|up.link|blazer|helio|hosin|huawei|novarra|coolpad|webos|techfaith|palmsource|alcatel|amoi|ktouch|nexian|ericsson|philips|sagem|wellcom|bunjalloo|maui|smartphone|iemobile|spice|bird|zte-|longcos|pantech|gionee|portalmmm|jig browser|hiptop|benq|haier|^lct|320x320|240x320|176x220|windows phone|MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/i.test(navigator.userAgent))){
+	if(window.location.href.indexOf("www.eeworld.com.cn")>0&&window.location.href.indexOf("?v")<0){
+		try{
+			if(typeof(mobile_web_url)=='undefined'){
+				window.location.href = "http://m.eeworld.com.cn";
+			}else{
+				window.location.href = mobile_web_url;
+			}
+			
+		}catch(e){}
+	}
+}
+</script>
+<link href="/statics/css/header.css" rel="stylesheet" type="text/css"/>
+<style>#lovexin12 img{max-width:100px;}</style>
+</head>
+<body><script async="" src="https://www.googletagservices.com/activeview/js/current/rx_lidar.js?cache=r20110914" type="text/javascript"></script><script async="" src="https://www.googletagservices.com/activeview/js/current/rx_lidar.js?cache=r20110914" type="text/javascript"></script><script async="" src="https://www.googletagservices.com/activeview/js/current/rx_lidar.js?cache=r20110914" type="text/javascript"></script>
+<center id="roadblock">
+<div class="eeworldadvs" data="200579"><script type="text/javascript">BAIDU_CLB_fillSlot("200579");</script><div id="BAIDU_SSP__wrapper_200579_0"></div><script charset="utf-8" src="https://pos.baidu.com/pchm?psi=77046b676bb8a0381f57213310577416&amp;di=200579&amp;dri=0&amp;dis=0&amp;dai=0&amp;ps=0x0&amp;enu=encoding&amp;exps=110011&amp;ant=0&amp;dcb=___adblockplus_&amp;dtm=SSP_JSONP&amp;dvi=0.0&amp;dci=-1&amp;dpt=none&amp;tsr=0&amp;tpr=1589031517122&amp;ti=%E7%94%B5%E5%AD%90%E5%B7%A5%E7%A8%8B%E4%B8%96%E7%95%8C-%E5%88%9B%E6%96%B0%E7%94%B5%E5%AD%90%E8%AE%BE%E8%AE%A1%E4%B9%8B%E5%8E%9F-%E4%B8%AD%E5%9B%BD%E4%B8%93%E4%B8%9A%E7%9A%84%E7%94%B5%E5%AD%90%E5%B7%A5%E7%A8%8B%E9%97%A8%E6%88%B7&amp;ari=2&amp;ver=0506&amp;dbv=2&amp;drs=1&amp;pcs=1920x1080&amp;pss=1920x1080&amp;cfv=0&amp;cpl=0&amp;chi=50&amp;cce=true&amp;cec=UTF-8&amp;tlm=1589031517&amp;prot=2&amp;rw=1080&amp;ltu=http%3A%2F%2Fwww.eeworld.com.cn%2F&amp;ecd=1&amp;uc=1920x1080&amp;pis=-1x-1&amp;sr=1920x1080&amp;tcn=1589031517"></script></div></center>
+<div class="hp_content">
+<!-- 顶部468广告位 -->
+<section id="adshow" style="margin-top:10px;">
+<div class="boxwrapmix">
+<div class="ad_468show1">
+<div class="adleft">
+<div class="eeworldadvs" data="5444914"><script type="text/javascript">BAIDU_CLB_fillSlot("5444914");</script><div id="BAIDU_SSP__wrapper_5444914_0"></div><script charset="utf-8" src="https://pos.baidu.com/pchm?psi=77046b676bb8a0381f57213310577416&amp;di=5444914&amp;dri=0&amp;dis=0&amp;dai=0&amp;ps=10x357&amp;enu=encoding&amp;exps=110011&amp;ant=0&amp;dcb=___adblockplus_&amp;dtm=SSP_JSONP&amp;dvi=0.0&amp;dci=-1&amp;dpt=none&amp;tsr=0&amp;tpr=1589031517122&amp;ti=%E7%94%B5%E5%AD%90%E5%B7%A5%E7%A8%8B%E4%B8%96%E7%95%8C-%E5%88%9B%E6%96%B0%E7%94%B5%E5%AD%90%E8%AE%BE%E8%AE%A1%E4%B9%8B%E5%8E%9F-%E4%B8%AD%E5%9B%BD%E4%B8%93%E4%B8%9A%E7%9A%84%E7%94%B5%E5%AD%90%E5%B7%A5%E7%A8%8B%E9%97%A8%E6%88%B7&amp;ari=2&amp;ver=0506&amp;dbv=2&amp;drs=1&amp;pcs=1920x1080&amp;pss=1920x1080&amp;cfv=0&amp;cpl=0&amp;chi=50&amp;cce=true&amp;cec=UTF-8&amp;tlm=1589031517&amp;prot=2&amp;rw=1080&amp;ltu=http%3A%2F%2Fwww.eeworld.com.cn%2F&amp;ecd=1&amp;uc=1920x1080&amp;pis=-1x-1&amp;sr=1920x1080&amp;tcn=1589031517"></script><ins class="dcmads" data-dcm-app-id="" data-dcm-https-only="" data-dcm-placement="N562802.285034EEWORLD.COM.CN/B23882439.269387092" data-dcm-processed="y" data-dcm-rendering-mode="script" data-dcm-resettable-device-id="" style="display: inline-block; width: 468px; height: 60px; text-decoration: none;">
+<script src="https://www.googletagservices.com/dcm/dcmads.js"></script><script src="https://www.googletagservices.com/dcm/impl_v55.js"></script><script src="https://ad.doubleclick.net/ddm/adj/N562802.285034EEWORLD.COM.CN/B23882439.269387092;dc_ver=55.153;dc_eid=40004000;sz=468x60;u_sd=1;dc_adk=2819125188;ord=mojpcr;dc_rfl=0,http%3A%2F%2Fwww.eeworld.com.cn%2F$0;xdt=0;crlt=SUTejF4bdy;sttr=7;prcl=s?"></script><div active_view_class_name="GoogleActiveViewElement" class="GoogleActiveViewElement" data-creative-load-listener="" data-google-av-adk="2819125188" data-google-av-aid="0" data-google-av-btr="" data-google-av-cpmav="" data-google-av-cxn="https://pagead2.googlesyndication.com/pcs/activeview?xai=AKAOjss8cZ_OtZl2-bp9DKQbizivRZwEbr31We5U0C3ngPtciP1MkwjyGXRzOkAkzidtDDpxt3fs3bYM4i_GgvjfWgQ&amp;sig=Cg0ArKJSzI3-4cKUnJvlEAE" data-google-av-dm="2" data-google-av-immediate="true" data-google-av-itpl="32" data-google-av-metadata="la=0&amp;" data-google-av-naid="1" data-google-av-override="-1" data-google-av-rs="6" data-google-av-slift="" id="DfaVisibilityIdentifier_2305858811"><div class="GoogleCreativeContainerClass" data-creative-load-listener="" id="gcc_XLK2XsLwE8KJ8ALVnoCICg"><a href="https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjsuyt8LDM25VSm91SJhY4ByJtXyjqimjXsul4nfMMqhPnP3oI-4o3HdoR5zs7arU4sdO6k4RO02J9ek2wkj6q-Ifpbn08UxUzBrb6DaKANA9FbjVzBDRzCHW7J5N6RW0vp4mKblZVePi2llY6Q&amp;sig=Cg0ArKJSzErDRYehxVvG&amp;urlfix=1&amp;adurl=https://cn.micron.com/insight/streamer-builds-a-career-and-a-community%3Futm_medium%3Ddisplay%26utm_source%3Deeworld%26utm_campaign%3Dcn_5g%26utm_content%3Dcn_5g_a%26utm_term%3Decosystem" id="img_anch_CMKOxdjzpukCFcIEXAodVQ8AoQ" target="_blank"><img alt="Advertisement" border="0" height="60" src="https://s0.2mdn.net/8973407/China_468x60_A.jpg" width="468"/></a><script data-jc="74" data-jc-version="r20200506" data-jcp-a-id="img_anch_CMKOxdjzpukCFcIEXAodVQ8AoQ">(function(){/*  Copyright The Closure Library Authors. SPDX-License-Identifier: Apache-2.0 */ var b=/^(?:(?:https?|mailto|ftp):|[^:/?#]*(?:[/?#]|$))/i;var e,f=document.currentScript;e=(f=void 0===f?null:f)&&74==f.getAttribute("data-jc")?f:document.querySelector('[data-jc="74"]');if(null==e)throw Error("JSC not found 74");for(var g={},l=e.attributes,m=l.length-1;0<=m;m--){var n=l[m].name;0===n.indexOf("data-jcp-")&&(g[n.substring(9)]=l[m].value)} document.getElementById(g["a-id"]).addEventListener("mousedown",function(c){var h=c.currentTarget,a=h.querySelector("img[alt]");if(a){var d=h.href;var p=+Math.round(c.clientX-a.offsetLeft);c=+Math.round(c.clientY-a.offsetTop);a=+a.width+"x"+ +a.height;var k=/^(https?:[^:?]+[/]pcs[/]click[^/]+?)(?:&nx[^&]+&ny[^&]+&dim[^&]+)?(&adurl=.*)/.exec(d);d=k?k[1]+("&nx="+p+"&ny="+c+"&dim="+a)+k[2]:d;b.test(d)&&(h.href=d)}});}).call(this);</script></div></div>
+</ins></div> <!-- CMS_首页_HA1 -->
+</div>
+<div class="admid">
+<div class="eeworldadvs" data="200581"><script type="text/javascript">BAIDU_CLB_fillSlot("200581");</script><div id="BAIDU_SSP__wrapper_200581_0"></div><script charset="utf-8" src="https://pos.baidu.com/pchm?psi=77046b676bb8a0381f57213310577416&amp;di=200581&amp;dri=0&amp;dis=0&amp;dai=0&amp;ps=10x837&amp;enu=encoding&amp;exps=110011&amp;ant=0&amp;dcb=___adblockplus_&amp;dtm=SSP_JSONP&amp;dvi=0.0&amp;dci=-1&amp;dpt=none&amp;tsr=0&amp;tpr=1589031517122&amp;ti=%E7%94%B5%E5%AD%90%E5%B7%A5%E7%A8%8B%E4%B8%96%E7%95%8C-%E5%88%9B%E6%96%B0%E7%94%B5%E5%AD%90%E8%AE%BE%E8%AE%A1%E4%B9%8B%E5%8E%9F-%E4%B8%AD%E5%9B%BD%E4%B8%93%E4%B8%9A%E7%9A%84%E7%94%B5%E5%AD%90%E5%B7%A5%E7%A8%8B%E9%97%A8%E6%88%B7&amp;ari=2&amp;ver=0506&amp;dbv=2&amp;drs=1&amp;pcs=1920x1080&amp;pss=1920x1080&amp;cfv=0&amp;cpl=0&amp;chi=50&amp;cce=true&amp;cec=UTF-8&amp;tlm=1589031517&amp;prot=2&amp;rw=1080&amp;ltu=http%3A%2F%2Fwww.eeworld.com.cn%2F&amp;ecd=1&amp;uc=1920x1080&amp;pis=-1x-1&amp;sr=1920x1080&amp;tcn=1589031517"></script></div> <!--  CMS_首页_HA2 -->
+</div>
+<div class="adri">
+<div class="eeworldadvs" data="5444451"><script type="text/javascript">BAIDU_CLB_fillSlot("5444451");</script><div id="BAIDU_SSP__wrapper_5444451_0"></div><script charset="utf-8" src="https://pos.baidu.com/pchm?psi=77046b676bb8a0381f57213310577416&amp;di=5444451&amp;dri=0&amp;dis=0&amp;dai=0&amp;ps=10x1562&amp;enu=encoding&amp;exps=110011&amp;ant=0&amp;dcb=___adblockplus_&amp;dtm=SSP_JSONP&amp;dvi=0.0&amp;dci=-1&amp;dpt=none&amp;tsr=0&amp;tpr=1589031517122&amp;ti=%E7%94%B5%E5%AD%90%E5%B7%A5%E7%A8%8B%E4%B8%96%E7%95%8C-%E5%88%9B%E6%96%B0%E7%94%B5%E5%AD%90%E8%AE%BE%E8%AE%A1%E4%B9%8B%E5%8E%9F-%E4%B8%AD%E5%9B%BD%E4%B8%93%E4%B8%9A%E7%9A%84%E7%94%B5%E5%AD%90%E5%B7%A5%E7%A8%8B%E9%97%A8%E6%88%B7&amp;ari=2&amp;ver=0506&amp;dbv=2&amp;drs=1&amp;pcs=1920x1080&amp;pss=1920x1080&amp;cfv=0&amp;cpl=0&amp;chi=50&amp;cce=true&amp;cec=UTF-8&amp;tlm=1589031517&amp;prot=2&amp;rw=1080&amp;ltu=http%3A%2F%2Fwww.eeworld.com.cn%2F&amp;ecd=1&amp;uc=1920x1080&amp;pis=-1x-1&amp;sr=1920x1080&amp;tcn=1589031517"></script></div> <!-- CMS_新_首页_H-B1 -->
+<div class="eeworldadvs" data="5576302"><script type="text/javascript">BAIDU_CLB_fillSlot("5576302");</script><div id="BAIDU_SSP__wrapper_5576302_0"><iframe align="center,center" allowtransparency="true" frameborder="0" height="60" hspace="0" id="iframe5576302_0" marginheight="0" marginwidth="0" name="iframe5576302_0" onload="___baidu_union_callback(3, '5576302_0', this);" scrolling="no" src="about:blank" style="border:0;vertical-align:bottom;margin:0;width:708px;height:60px" vspace="0" width="708"></iframe></div><script charset="utf-8" src="https://pos.baidu.com/pchm?psi=77046b676bb8a0381f57213310577416&amp;di=5576302&amp;dri=0&amp;dis=0&amp;dai=0&amp;ps=10x1562&amp;enu=encoding&amp;exps=110011&amp;ant=0&amp;dcb=___adblockplus_&amp;dtm=SSP_JSONP&amp;dvi=0.0&amp;dci=-1&amp;dpt=none&amp;tsr=0&amp;tpr=1589031517122&amp;ti=%E7%94%B5%E5%AD%90%E5%B7%A5%E7%A8%8B%E4%B8%96%E7%95%8C-%E5%88%9B%E6%96%B0%E7%94%B5%E5%AD%90%E8%AE%BE%E8%AE%A1%E4%B9%8B%E5%8E%9F-%E4%B8%AD%E5%9B%BD%E4%B8%93%E4%B8%9A%E7%9A%84%E7%94%B5%E5%AD%90%E5%B7%A5%E7%A8%8B%E9%97%A8%E6%88%B7&amp;ari=2&amp;ver=0506&amp;dbv=2&amp;drs=1&amp;pcs=1920x1080&amp;pss=1920x1080&amp;cfv=0&amp;cpl=0&amp;chi=50&amp;cce=true&amp;cec=UTF-8&amp;tlm=1589031517&amp;prot=2&amp;rw=1080&amp;ltu=http%3A%2F%2Fwww.eeworld.com.cn%2F&amp;ecd=1&amp;uc=1920x1080&amp;pis=-1x-1&amp;sr=1920x1080&amp;tcn=1589031517"></script></div> </div>
+</div>
+</div>
+<div class="clearfix"></div>
+</section>
+<!-- 顶部468广告位结束 -->
+<!-- 通用顶部全站导航 -->
+<script type="text/javascript">
+	(function($){
+		$(function () {
+			$(document).click(function () {
+				$(".select dd").hide();
+			});
+			$('.select').click(function (event) {
+				$(".select dd").show();
+				event.stopPropagation();
+			});
+
+			$(".nav-item").hover(function () {
+				$(this).children('.eew-menu').css("display", "block");
+				$(this).find('img').each(function(){
+				    var img_data_src = $(this).attr("data-src");
+					if(img_data_src){
+					   $(this).attr('src',img_data_src);
+					}
+				});
+			}, function () {
+				$(this).children('.eew-menu').css("display", "none");
+			});
+
+			$('.user-logo').click(function () {
+				$('.user-card-page').toggle();
+			});
+			
+			$(".search_pc_button").click(function () {
+				$(".search_pc_button").css("display", "none");
+				$("#searchnone").css("display", "block");
+			});
+			
+		});
+	})(jQuery);
+	
+	function clickTab(id,blockid) {
+		for(var i=1;i<=12;i++){
+			if(id==i){
+			document.getElementById('tabdetails'+blockid+"_"+i).style.display = 'block';
+			document.getElementById('Tag-lin'+blockid+"_"+i).className='curr';
+			}else{
+			document.getElementById('tabdetails'+blockid+"_"+i).style.display = 'none';
+			document.getElementById('Tag-lin'+blockid+"_"+i).className='';	
+			}
+		}
+	}
+</script>
+<nav class="bgf boxline3" id="channelpubhead">
+<div class="boxfit clearfix">
+<div class="boxwrapmix">
+<div class="newspubhead clearfix">
+<div class="cph_l" style="position: relative">
+<ul class="clearfix" id="nav" style="height:72px;">
+<li class="nav-item"><span class="hd">|</span><span class="mt28"><a href="//www.eeworld.com.cn">首页</a></span><span class="hd">|</span></li>
+<li class="nav-item">
+<span class="popmenu"><a href="//news.eeworld.com.cn/electronic" target="_blank">电子技术</a></span><span class="hd">|</span>
+<div class="dropdown-menu tech-menu tese-zone f12 eew-menu none">
+<div class="pull-down-box clearfix">
+<menu class="right-bar">
+<p>技术分类</p>
+</menu><ul class="clearfix btn">
+<li><a href="//news.eeworld.com.cn/qrs" target="_blank">嵌入式</a></li>
+<li><a href="//news.eeworld.com.cn/mndz" target="_blank">模拟电子</a></li>
+<li><a href="//news.eeworld.com.cn/mcu" target="_blank">单片机</a></li>
+<li><a href="//news.eeworld.com.cn/dygl" target="_blank">电源管理</a></li>
+<li><a href="//news.eeworld.com.cn/MEMS" target="_blank">传感器</a></li>
+<li><a href="//news.eeworld.com.cn/LED" target="_blank">LED</a></li>
+<li><a href="//news.eeworld.com.cn/DSP" target="_blank">DSP</a></li>
+<li><a href="//news.eeworld.com.cn/FPGA" target="_blank">FPGA</a></li>
+<li><a href="//news.eeworld.com.cn/manufacture" target="_blank">半导体</a></li>
+</ul>
+<div class="left-bar" id="top_menu1">
+<p>今日技术</p>
+<ul class="clearfix">
+<li><a href="http://news.eeworld.com.cn/mndz/ic495182.html" target="_blank" title="开关降压-升压控制器，具备直通功能，可消除开关噪声">开关降压-升压控制器，具备直通功能，可消除开关噪声</a></li>
+<li><a href="http://news.eeworld.com.cn/mndz/ic494939.html" target="_blank" title="高性能模拟前端信号链解决方案如何助力医疗超声系统发展">高性能模拟前端信号链解决方案如何助力医疗超声系统发展</a></li>
+<li><a href="http://news.eeworld.com.cn/mndz/ic494849.html" target="_blank" title="EmStat Pico：支持软件运行的嵌入式小型电化学恒电势器系统化">EmStat Pico：支持软件运行的嵌入式小型电化学恒电势器系统化</a></li>
+<li><a href="http://news.eeworld.com.cn/mndz/ic494355.html" target="_blank" title="您真的能通过运算放大器实现ppm精度吗？">您真的能通过运算放大器实现ppm精度吗？</a></li>
+</ul>
+<div class="jj-deiset boxm2">
+<a href="http://news.eeworld.com.cn/mndz/ic493779.html" style="margin-right:5%;" target="_blank" title="集成式收发器支持实现小型相控阵雷达平台">
+<img alt="集成式收发器支持实现小型相控阵雷达平台" class="img-border" data-src="http://6.eewimg.cn/news/uploadfile/2020/0408/1586335520958219.jpeg?imageView2/2/w/180" src="http://6.eewimg.cn/news/statics/images/loading.gif" style="width:162px;height:91px;"/>
+<p class="intrdou-tt">集成式收发器支持实现小型相控阵雷达平台</p>
+</a>
+<a href="http://news.eeworld.com.cn/mndz/ic493299.html" target="_blank" title="两个具有DAC同步功能AD9139器件进行宽带基带I/Q发射器设计">
+<img alt="两个具有DAC同步功能AD9139器件进行宽带基带I/Q发射器设计" class="img-border" data-src="http://6.eewimg.cn/news/uploadfile/2020/0403/1585903955220843.jpeg?imageView2/2/w/180" src="http://6.eewimg.cn/news/statics/images/loading.gif" style="width:162px;height:91px;"/>
+<p class="intrdou-tt">两个具有DAC同步功能AD9139器件进行宽带基带I/Q发射器设计</p>
+</a>
+</div>
+</div>
+<div class="center-bar" id="top_menu2">
+<p>热门技术文章</p>
+<ul class="clearfix">
+<li><a href="http://news.eeworld.com.cn/manufacture/ic496347.html" target="_blank" title="IGBT产业，功率半导体核心元器件的发展"><tt class="frist-label">1</tt>IGBT产业，功率半导体核心元器件的发展</a></li>
+<li><a href="http://news.eeworld.com.cn/manufacture/ic496105.html" target="_blank" title="华为投资之道：先给两个亿订单 一年送上市"><tt class="two-label">2</tt>华为投资之道：先给两个亿订单 一年送上市</a></li>
+<li><a href="http://news.eeworld.com.cn/manufacture/ic496081.html" target="_blank" title="疫情正在对光电，传感器/执行器和分立器件造成破坏"><tt class="three-label">3</tt>疫情正在对光电，传感器/执行器和分立器件造成破坏</a></li>
+<li><a href="http://news.eeworld.com.cn/MEMS/ic496345.html" target="_blank" title="Sony第四代图像传感器有哪些黑科技"><tt class="">4</tt>Sony第四代图像传感器有哪些黑科技</a></li>
+<li><a href="http://news.eeworld.com.cn/manufacture/ic496095.html" target="_blank" title="美国考虑将部分中国商品的关税排除延长一年"><tt class="">5</tt>美国考虑将部分中国商品的关税排除延长一年</a></li>
+<li><a href="http://news.eeworld.com.cn/dygl/ic496109.html" target="_blank" title="5G+新能源+汽车电子，MLCC再掀涨价潮"><tt class="">6</tt>5G+新能源+汽车电子，MLCC再掀涨价潮</a></li>
+<li><a href="http://news.eeworld.com.cn/qrs/ic496217.html" target="_blank" title=" 5nm 工艺，X60 5G 基带芯片，骁龙 875即将亮相"><tt class="">7</tt> 5nm 工艺，X60 5G 基带芯片，骁龙 875即将亮相</a></li>
+<li><a href="http://news.eeworld.com.cn/manufacture/ic496213.html" target="_blank" title="SEMI：Q1全球硅晶圆出货面积增长2.7%"><tt class="">8</tt>SEMI：Q1全球硅晶圆出货面积增长2.7%</a></li>
+</ul>
+</div>
+</div>
+</div>
+</li>
+<li class="nav-item">
+<span class="popmenu"><a href="//news.eeworld.com.cn/applications" target="_blank">电子产品应用</a></span><span class="hd">|</span>
+<div class="dropdown-menu tech-menu tese-zone f12 eew-menu none">
+<div class="pull-down-box clearfix">
+<menu class="right-bar">
+<p><a href="javascript:;">应用分类</a></p>
+</menu><ul class="clearfix btn">
+<li><a href="//news.eeworld.com.cn/gykz" target="_blank">工业控制</a></li>
+<li><a href="//news.eeworld.com.cn/IoT" target="_blank">物联网</a></li>
+<li><a href="//news.eeworld.com.cn/qcdz" target="_blank">汽车电子</a></li>
+<li><a href="//news.eeworld.com.cn/wltx" target="_blank">网络通信</a></li>
+<li><a href="//news.eeworld.com.cn/medical_electronics" target="_blank">医疗电子</a></li>
+<li><a href="//news.eeworld.com.cn/xfdz" target="_blank">手机便携</a></li>
+<li><a href="//news.eeworld.com.cn/Test_and_measurement" target="_blank">测试测量</a></li>
+<li><a href="//news.eeworld.com.cn/afdz" target="_blank">安防电子</a></li>
+<li><a href="//news.eeworld.com.cn/szds" target="_blank">家用电子</a></li>
+</ul>
+<div class="left-bar" id="top_menu3">
+<p>今日应用</p>
+<ul class="clearfix">
+<li><a href="http://news.eeworld.com.cn/qcdz/ic496456.html" target="_blank" title="科普文章：让你彻底了解Lidar">科普文章：让你彻底了解Lidar</a></li>
+<li><a href="http://news.eeworld.com.cn/qcdz/ic496454.html" target="_blank" title="北汽联手Imagination成立芯片公司，专注智能座舱语音交互芯片">北汽联手Imagination成立芯片公司，专注智能座舱语音交互芯片</a></li>
+<li><a href="http://news.eeworld.com.cn/qcdz/ic496362.html" target="_blank" title="Nexperia P沟道MOSFET可将封装占位面积减少50%以上">Nexperia P沟道MOSFET可将封装占位面积减少50%以上</a></li>
+<li><a href="http://news.eeworld.com.cn/qcdz/ic496343.html" target="_blank" title="特斯拉再次刷新我们的认知，新款Roadster1.9s破百 续航998公里">特斯拉再次刷新我们的认知，新款Roadster1.9s破百 续航998公里</a></li>
+</ul>
+<div class="jj-deiset boxm2">
+<a href="http://news.eeworld.com.cn/qcdz/ic496250.html" style="margin-right:5%;" target="_blank" title="英特尔收购Moovit，意义深远">
+<img alt="英特尔收购Moovit，意义深远" class="img-border" data-src="http://8.eewimg.cn/uploadfile/2020/0507/1588842034207331.png?imageView2/2/w/180" src="http://6.eewimg.cn/news/statics/images/loading.gif" style="width:162px;height:91px;"/>
+<p class="intrdou-tt">英特尔收购Moovit，意义深远</p>
+</a>
+<a href="http://news.eeworld.com.cn/qcdz/ic496246.html" target="_blank" title="到2035年，将有8300万辆5G汽车在路上飞驰">
+<img alt="到2035年，将有8300万辆5G汽车在路上飞驰" class="img-border" data-src="http://6.eewimg.cn/news/uploadfile/2020/0507/1588841279758457.jpeg?imageView2/2/w/180" src="http://6.eewimg.cn/news/statics/images/loading.gif" style="width:162px;height:91px;"/>
+<p class="intrdou-tt">到2035年，将有8300万辆5G汽车在路上飞驰</p>
+</a>
+</div>
+</div>
+<div class="center-bar" id="top_menu4">
+<p>热门应用文章</p>
+<ul class="clearfix">
+<li><a href="http://news.eeworld.com.cn/qcdz/ic496515.html" target="_blank" title="Lightning Systems为电动汽车推出移动式直流快速充电器"><tt class="frist-label">1</tt>Lightning Systems为电动汽车推出移动式直流快速充电器</a></li>
+<li><a href="http://news.eeworld.com.cn/qcdz/ic496513.html" target="_blank" title="全新650 V CoolMOS™ CFD7A系列为汽车应用带来量身定制的超结MOSFET性能"><tt class="two-label">2</tt>全新650 V CoolMOS™ CFD7A系列为汽车应用带来量身定制的超结MOSFET性能</a></li>
+<li><a href="http://news.eeworld.com.cn/IoT/ic496505.html" target="_blank" title="IoT如何帮助我们抑制病毒的肆虐"><tt class="three-label">3</tt>IoT如何帮助我们抑制病毒的肆虐</a></li>
+<li><a href="http://news.eeworld.com.cn/IoT/ic496497.html" target="_blank" title="研华紧凑强固型单板电脑让巡检机器人更加聪明"><tt class="">4</tt>研华紧凑强固型单板电脑让巡检机器人更加聪明</a></li>
+<li><a href="http://news.eeworld.com.cn/xfdz/ic496494.html" target="_blank" title="荣耀X10内部结构图解密：大面积石墨烯散热加持"><tt class="">5</tt>荣耀X10内部结构图解密：大面积石墨烯散热加持</a></li>
+<li><a href="http://news.eeworld.com.cn/xfdz/ic496470.html" target="_blank" title="联建光电违规披露信息遭处罚，赔偿1.58亿"><tt class="">6</tt>联建光电违规披露信息遭处罚，赔偿1.58亿</a></li>
+<li><a href="http://news.eeworld.com.cn/IoT/ic496458.html" target="_blank" title="技术文章—呼吸机/医用鼓风机设计支持和资源"><tt class="">7</tt>技术文章—呼吸机/医用鼓风机设计支持和资源</a></li>
+<li><a href="http://news.eeworld.com.cn/qcdz/ic496456.html" target="_blank" title="科普文章：让你彻底了解Lidar"><tt class="">8</tt>科普文章：让你彻底了解Lidar</a></li>
+</ul>
+</div>
+</div>
+</div>
+</li>
+<li class="nav-item"><span class="popmenu"><a href="//news.eeworld.com.cn/mp" target="_blank">电子头条</a></span><span class="hd">|</span>
+<div class="dropdown-menu tech-menu tese-zone f12 eew-menu none">
+<div class="pull-down-box clearfix">
+<menu class="right-bar">
+<p>公众号推荐</p>
+</menu><ul class="clearfix btn">
+<li><a href="//news.eeworld.com.cn/mp/ctrade/68" target="_blank">电子工程世界</a></li>
+<li><a href="//news.eeworld.com.cn/mp/ctrade/19" target="_blank">德州仪器</a></li>
+<li><a href="//news.eeworld.com.cn/mp/ctrade/16" target="_blank">亚德诺半导体</a></li>
+<li><a href="//news.eeworld.com.cn/mp/ctrade/70" target="_blank">得捷电子DigiKey</a></li>
+<li><a href="//news.eeworld.com.cn/mp/ctrade/84" target="_blank">量子位</a></li>
+<li><a href="//news.eeworld.com.cn/mp/ctrade/87" target="_blank">无线技术联盟</a></li>
+<li><a href="//news.eeworld.com.cn/mp/ctrade/81" target="_blank">物联江湖</a></li>
+<li><a href="//news.eeworld.com.cn/mp/ctrade/69" target="_blank">鲜枣课堂</a></li>
+<li><a href="//news.eeworld.com.cn/mp/ctrade/82" target="_blank">雷锋网</a></li>
+</ul>
+<div class="left-bar" id="top_menu5">
+<p>今日电子头条</p>
+<ul class="clearfix">
+<li><a href="//news.eeworld.com.cn/mp/EEWorld/a88155.jspx" target="_blank" title="干货 | 开关电源基础：工作原理和电路图">干货 | 开关电源基础：工作原理和电路图</a></li>
+<li><a href="//news.eeworld.com.cn/mp/EEWorld/a88156.jspx" target="_blank" title="虎门大桥“振动”之后，一起了解下物联网在桥梁监测中的应用">虎门大桥“振动”之后，一起了解下物联网在桥梁监测中的应用</a></li>
+<li><a href="//news.eeworld.com.cn/mp/EEWorld/a88157.jspx" target="_blank" title="角度传感器如何选？这个电机轴感测难题有解了！">角度传感器如何选？这个电机轴感测难题有解了！</a></li>
+<li><a href="//news.eeworld.com.cn/mp/EEWorld/a88158.jspx" target="_blank" title="【今日直播】Microchip嵌入式安全解决方案｜RISC-V安全之地">【今日直播】Microchip嵌入式安全解决方案｜RISC-V安全之地</a></li>
+</ul>
+<div class="jj-deiset boxm2">
+<a href="/mp/EEWorld/a88046.jspx" style="margin-right:5%;" target="_blank" title="疯狂过后，AI芯片走下神坛">
+<img alt="疯狂过后，AI芯片走下神坛" class="img-border" data-src="http://6.eewimg.cn/mp/uploads/2020/05/05/0eea8316-8eac-11ea-88a6-00163e2e672a.jpg?imageView2/2/w/180" src="http://6.eewimg.cn/news/statics/images/loading.gif" style="width:162px;height:91px;"/>
+<p class="intrdou-tt">疯狂过后，AI芯片走下神坛</p>
+</a>
+<a href="/mp/EEWorld/a88077.jspx" target="_blank" title="接棒额温枪！爆红的血氧仪将带火哪些芯片方案？">
+<img alt="接棒额温枪！爆红的血氧仪将带火哪些芯片方案？" class="img-border" data-src="http://6.eewimg.cn/mp/uploads/2020/05/06/4a994f6c-8f4e-11ea-8922-00163e2e672a.jpg?imageView2/2/w/180" src="http://6.eewimg.cn/news/statics/images/loading.gif" style="width:162px;height:91px;"/>
+<p class="intrdou-tt">接棒额温枪！爆红的血氧仪将带火哪些芯片方案？</p>
+</a>
+</div>
+</div>
+<div class="center-bar" id="top_menu6">
+<p>头条推荐</p>
+<ul class="clearfix">
+<li><a href="//news.eeworld.com.cn/mp/EEWorld/a88155.jspx" target="_blank" title="干货 | 开关电源基础：工作原理和电路图"><tt class="frist-label">1</tt>干货 | 开关电源基础：工作原理和电路图</a></li>
+<li><a href="//news.eeworld.com.cn/mp/EEWorld/a88156.jspx" target="_blank" title="虎门大桥“振动”之后，一起了解下物联网在桥梁监测中的应用"><tt class="two-label">2</tt>虎门大桥“振动”之后，一起了解下物联网在桥梁监测中的应用</a></li>
+<li><a href="//news.eeworld.com.cn/mp/EEWorld/a88157.jspx" target="_blank" title="角度传感器如何选？这个电机轴感测难题有解了！"><tt class="three-label">3</tt>角度传感器如何选？这个电机轴感测难题有解了！</a></li>
+<li><a href="//news.eeworld.com.cn/mp/EEWorld/a88158.jspx" target="_blank" title="【今日直播】Microchip嵌入式安全解决方案｜RISC-V安全之地"><tt class="">4</tt>【今日直播】Microchip嵌入式安全解决方案｜RISC-V安全之地</a></li>
+<li><a href="//news.eeworld.com.cn/mp/EEWorld/a88077.jspx" target="_blank" title="接棒额温枪！爆红的血氧仪将带火哪些芯片方案？"><tt class="">5</tt>接棒额温枪！爆红的血氧仪将带火哪些芯片方案？</a></li>
+<li><a href="//news.eeworld.com.cn/mp/EEWorld/a88078.jspx" target="_blank" title="登陆云边端，AI芯片产业打响全线战争"><tt class="">6</tt>登陆云边端，AI芯片产业打响全线战争</a></li>
+<li><a href="//news.eeworld.com.cn/mp/EEWorld/a88079.jspx" target="_blank" title="干货 | 运放的电压追随电路"><tt class="">7</tt>干货 | 运放的电压追随电路</a></li>
+<li><a href="//news.eeworld.com.cn/mp/EEWorld/a88080.jspx" target="_blank" title="有奖直播 | 三大硬核厂商齐聚，共话新能源动力设计最新方案"><tt class="">8</tt>有奖直播 | 三大硬核厂商齐聚，共话新能源动力设计最新方案</a></li>
+</ul>
+</div>
+</div>
+</div>
+</li>
+<li class="nav-item">
+<span class="popmenu">
+<a href="//bbs.eeworld.com.cn">论坛</a>
+</span>
+<span class="hd">|</span>
+<div class="dropdown-menu tech-menu tese-zone f12 eew-menu none">
+<div class="pull-down-box clearfix">
+<menu class="right-bar">
+<p><a href="//bbs.eeworld.com.cn" target="_blank">社区导航</a></p>
+</menu><ul class="clearfix btn">
+<li><a href="//bbs.eeworld.com.cn/forum-154-1.html" target="_blank">TI 技术论坛</a></li>
+<li><a href="//bbs.eeworld.com.cn/forum-245-1.html" target="_blank">ST MEMS 传感器技术</a></li>
+<li><a href="//bbs.eeworld.com.cn/forum-15-1.html" target="_blank">嵌入式系统编程</a></li>
+<li><a href="//bbs.eeworld.com.cn/forum-16-1.html" target="_blank">单片机</a></li>
+<li><a href="//bbs.eeworld.com.cn/forum-251-1.html" target="_blank">电机驱动控制</a></li>
+<li><a href="//bbs.eeworld.com.cn/forum-12-1.html" target="_blank">FPGA/CPLD</a></li>
+<li><a href="//bbs.eeworld.com.cn/forum-28-1.html" target="_blank">模拟电子</a></li>
+<li><a href="//bbs.eeworld.com.cn/forum-25-1.html" target="_blank">电源技术</a></li>
+<li><a href="//bbs.eeworld.com.cn/forum-68-1.html" target="_blank">PCB设计</a></li>
+<li><a href="//bbs.eeworld.com.cn/forum-20-1.html" target="_blank">RF/无线</a></li>
+<li><a href="//bbs.eeworld.com.cn/forum-148-1.html" target="_blank">综合技术交流</a></li>
+<li><a href="//bbs.eeworld.com.cn/forum-72-1.html" target="_blank">DIY/开源硬件专区</a></li>
+<li><a href="//bbs.eeworld.com.cn/forum-32-1.html" target="_blank">聊聊、笑笑、闹闹</a></li>
+<li><a class="more" href="//bbs.eeworld.com.cn/forum.php" target="_blank">查看全部版块
+										</a></li>
+</ul>
+<div class="left-bar" id="top_menu7">
+<p><a href="//bbs.eeworld.com.cn/forum.php?mod=guide&amp;view=newthread" target="_blank">最新帖子</a></p>
+<ul class="clearfix">
+<li><a href="http://bbs.eeworld.com.cn/thread-1121825-1-1.html" target="_blank" title="32.768K晶体不起振，选型很重要！">32.768K晶体不起振，选型很重要！</a></li>
+<li><a href="http://bbs.eeworld.com.cn/thread-1121816-1-1.html" target="_blank" title="去哪里可以查到德国的这个专利号，急">去哪里可以查到德国的这个专利号，急</a></li>
+<li><a href="http://bbs.eeworld.com.cn/thread-1121813-1-1.html" target="_blank" title="SRAM中灵敏放大器的原理">SRAM中灵敏放大器的原理</a></li>
+<li><a href="http://bbs.eeworld.com.cn/thread-1121811-1-1.html" target="_blank" title="30V10A内置MOS同步升压芯片ZCC9430">30V10A内置MOS同步升压芯片ZCC9430</a></li>
+</ul>
+<p class="mt20"><a href="//bbs.eeworld.com.cn/drycargo/" target="_blank">干货图文</a></p>
+<ul class="clearfix">
+<li><a href="http://bbs.eeworld.com.cn/drycargo/show.php?tid=1120250" target="_blank" title="TI - MCU - MSP430使用指南34 -&gt; USS 模块">TI - MCU - MSP430使用指南34 -&gt; USS 模块</a></li>
+<li><a href="http://bbs.eeworld.com.cn/drycargo/show.php?tid=1120522" target="_blank" title="TI - MCU - MSP430使用指南4 -&gt; PMM&amp;SVS 电源管理监控模块">TI - MCU - MSP430使用指南4 -&gt; PMM&amp;SVS 电源管理监控模块</a></li>
+<li><a href="http://bbs.eeworld.com.cn/drycargo/show.php?tid=1115197" target="_blank" title="LIS25BA的STEVAL-MKI109V3评估方法">LIS25BA的STEVAL-MKI109V3评估方法</a></li>
+<li><a href="http://bbs.eeworld.com.cn/drycargo/show.php?tid=640500" target="_blank" title="正弦振荡电路杂谈(三)">正弦振荡电路杂谈(三)</a></li>
+</ul>
+</div>
+<div class="center-bar" id="top_menu8">
+<p><a href="//bbs.eeworld.com.cn/elecplay.html" target="_blank">评测频道</a></p>
+<ol class="clearfix appraisal mt10">
+<li class="clearfix">
+<a href="http://bbs.eeworld.com.cn/elecplay/content/130" target="_blank" title="NXP RAPID IOT套件">
+<div class="appraisal-bg">
+<img data-src="http://bbs.eeworld.com.cn/data/attachment/forum/202004/29/093306xe1qcfq35eqsmqz1.jpg?imageView2/2/w/120" src="http://6.eewimg.cn/news/statics/images/loading.gif" style="width:100px;height: 100px;margin-bottom: 5px;"/>
+<div class="appraisal-bg-gg">
+														NXP RAPID IOT套件													</div>
+</div>
+<div style="display:inline-block;text-align: center;font-size: 12px;
+												line-height: 20px;">
+<p style="color: #333;font-weight: 600;text-align: center;">10</p>
+<p>产品数量</p>
+</div>
+<div style="display:inline-block;text-align: center;font-size: 12px;line-height: 20px;">
+<p style="color: #333;font-weight: 600;text-align: center;">13</p>
+<p>申请人数</p>
+</div>
+</a>
+</li>
+<li class="clearfix">
+<a href="http://bbs.eeworld.com.cn/elecplay/content/129" target="_blank" title="STM32H743开发板">
+<div class="appraisal-bg">
+<img data-src="http://bbs.eeworld.com.cn/data/attachment/forum/202004/10/145151d3aea243g24ooeea.jpg?imageView2/2/w/120" src="http://6.eewimg.cn/news/statics/images/loading.gif" style="width:100px;height: 100px;margin-bottom: 5px;"/>
+<div class="appraisal-bg-gg">
+														STM32H743开发板													</div>
+</div>
+<div style="display:inline-block;text-align: center;font-size: 12px;
+												line-height: 20px;">
+<p style="color: #333;font-weight: 600;text-align: center;">3</p>
+<p>产品数量</p>
+</div>
+<div style="display:inline-block;text-align: center;font-size: 12px;line-height: 20px;">
+<p style="color: #333;font-weight: 600;text-align: center;">6</p>
+<p>申请人数</p>
+</div>
+</a>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</li>
+<li class="nav-item">
+<span class="popmenu"><a href="//training.eeworld.com.cn" target="_blank">大学堂</a></span><span class="hd">|</span>
+<div class="dropdown-menu tech-menu tese-zone f12 eew-menu none c666">
+<div class="pull-down-box clearfix" id="top_menu9">
+<div class="left-bar">
+<p><a href="//training.eeworld.com.cn/" target="_blank">今日推荐</a></p>
+<div class="jj-deiset boxm2">
+<a href="//training.eeworld.com.cn/course/5614" style="margin-right:5%;" target="_blank">
+<img class="img-border" data-src="http://training.eeworld.com.cn/files/course/2020/05-08/153511f8aa2a880865.jpg?imageView2/2/w/180" src="http://6.eewimg.cn/news/statics/images/loading.gif" style="width:100%;"/>
+<p class="intrdou-tt" style="margin:0 0 5px;">车载信息娱乐系统发展趋势及深度技术解析</p>
+</a>
+<a href="//training.eeworld.com.cn/course/4426" target="_blank">
+<img class="img-border" data-src="http://training.eeworld.com.cn/files/course/2018/11-02/15395179e414588164.jpg?imageView2/2/w/180" src="http://6.eewimg.cn/news/statics/images/loading.gif" style="width:100%;"/>
+<p class="intrdou-tt" style="margin:0 0 5px;">[高精度实验室] ADC 输入驱动电路</p>
+</a>
+<a href="//training.eeworld.com.cn/course/1944" style="margin-right:5%;" target="_blank">
+<img class="img-border" data-src="http://training.eeworld.com.cn/files/course/2015/08-03/161127f039e4264892.png?imageView2/2/w/180" src="http://6.eewimg.cn/news/statics/images/loading.gif" style="width:100%;"/>
+<p class="intrdou-tt" style="margin:0 0 5px;">[高精度实验室] 运算放大器 : 8 噪声</p>
+</a>
+<a href="//training.eeworld.com.cn/course/5611" target="_blank">
+<img class="img-border" data-src="http://training.eeworld.com.cn/files/course/2020/05-07/1006019c94bd094787.png?imageView2/2/w/180" src="http://6.eewimg.cn/news/statics/images/loading.gif" style="width:100%;"/>
+<p class="intrdou-tt" style="margin:0 0 5px;">「嵌入式人工智能」- 中文聊天机器人开发</p>
+</a>
+</div>
+</div>
+<div class="center-bar" style="width:360px;">
+<p><a href="//bbs.eeworld.com.cn/forum.php?mod=eeworldactivity&amp;action=Tlive" target="_blank">直播频道</a></p>
+<ol class="clearfix live-recommend mt10">
+<li class="clearfix">
+<a href="http://www.eeworld.com.cn/huodong/TI_20200402/" target="_blank">
+<p>有奖直播：TI 低功耗 MCU 产品和 Zigbee 无线解决方案</p>
+<img alt="有奖直播：TI 低功耗 MCU 产品和 Zigbee 无线解决方案" class="img-border" data-src="http://bbs.eeworld.com.cn/data/attachment/forum/202004/07/162058qzb8ivox2ngddev9.png?imageView2/2/w/120" src="http://6.eewimg.cn/news/statics/images/loading.gif" style="width:100px;float: left;"/>
+<div style="margin-left:100px">
+<span style="font-size:12px;">厂商：TI / 德州仪器</span>
+<span style="font-size:12px;">直播时间：2020-05-12 10:00</span>
+</div>
+</a>
+</li>
+<li class="clearfix">
+<a href="http://www.eeworld.com.cn/huodong/adi_20200513/" target="_blank">
+<p>ADI基于ADPD188BI的烟雾探测器集成解决方案 有奖直播 5月13日上午10:00-11:30 为您揭晓！</p>
+<img alt="ADI基于ADPD188BI的烟雾探测器集成解决方案 有奖直播 5月13日上午10:00-11:30 为您揭晓！" class="img-border" data-src="http://bbs.eeworld.com.cn/data/attachment/forum/202004/20/210715fy9bbkbsuf9ay3a4.png?imageView2/2/w/120" src="http://6.eewimg.cn/news/statics/images/loading.gif" style="width:100px;float: left;"/>
+<div style="margin-left:100px">
+<span style="font-size:12px;">厂商：ADI / 亚德诺半导体</span>
+<span style="font-size:12px;">直播时间：2020-05-13 10:00</span>
+</div>
+</a>
+</li>
+<li class="clearfix">
+<a href="http://www.eeworld.com.cn/huodong/cytech_adi_webinar_20200401/?sid=102" target="_blank">
+<p>骏龙科技携手ADI有奖直播：隔离系统设计的隐藏成本</p>
+<img alt="骏龙科技携手ADI有奖直播：隔离系统设计的隐藏成本" class="img-border" data-src="http://bbs.eeworld.com.cn/data/attachment/forum/202004/10/171921u631yiuh6uhm7um1.jpg?imageView2/2/w/120" src="http://6.eewimg.cn/news/statics/images/loading.gif" style="width:100px;float: left;"/>
+<div style="margin-left:100px">
+<span style="font-size:12px;">厂商：ADI / 亚德诺半导体</span>
+<span style="font-size:12px;">直播时间：2020-05-14 10:00</span>
+</div>
+</a>
+</li>
+</ol>
+</div>
+<div class="right-bar">
+<p style="padding-left:15px"><a href="//training.eeworld.com.cn/TI/" target="_blank">TI在线培训</a></p>
+<ul class="clearfix on-line" style="padding:5px 15px;">
+<li>
+<a href="//training.eeworld.com.cn/course/5614" target="_blank">
+<span class="play-btn"></span>
+												车载信息娱乐系统发展趋势及深度技术解析											</a>
+</li>
+<li>
+<a href="//training.eeworld.com.cn/course/3748" target="_blank">
+<span class="play-btn"></span>
+												DesignDRIVE中EtherCAT通信支持_2016 TI 嵌入式产品研讨会实录 											</a>
+</li>
+<li>
+<a href="//training.eeworld.com.cn/course/3875" target="_blank">
+<span class="play-btn"></span>
+												TI 2016 电机驱动线上研讨会											</a>
+</li>
+<li>
+<a href="//training.eeworld.com.cn/course/5607" target="_blank">
+<span class="play-btn"></span>
+												直播回放 : TI MSP430 低功耗模拟外设助力家用便携式医疗保健产品											</a>
+</li>
+<li>
+<a href="//training.eeworld.com.cn/course/5606" target="_blank">
+<span class="play-btn"></span>
+												[高精度实验室] 电机驱动 : 电机驱动技术											</a>
+</li>
+</ul>
+<div class="line-classify clearfix" style="padding-top:0;">
+<a href="//training.eeworld.com.cn/TI/jsfl/76" target="_blank">应用与设计</a>
+<a href="//training.eeworld.com.cn/TI/jsfl/59" target="_blank">产品</a>
+<a href="//training.eeworld.com.cn/TI/jsfl/72" target="_blank">工具与软件</a>
+<a href="//training.eeworld.com.cn/TI/jsfl/79" target="_blank">现场培训</a>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="nav-item">
+<span class="popmenu">
+<a href="//download.eeworld.com.cn" target="_blank">下载中心</a>
+</span>
+<span class="hd">|</span>
+<div class="dropdown-menu tech-menu tese-zone f12 eew-menu none">
+<div class="pull-down-box clearfix">
+<div class="left-bar" id="top_menu10">
+<p><a href="//download.eeworld.com.cn" target="_blank">今日推荐</a></p>
+<ul class="clearfix recommend-list">
+<li><a href="http://download.eeworld.com.cn/detail/FANGJerry/611061" target="_blank" title="PCB设计秘籍">PCB设计秘籍</a></li>
+<li><a href="http://download.eeworld.com.cn/detail/nijntje/610989" target="_blank" title="高压强脉冲放电及其应用">高压强脉冲放电及其应用</a></li>
+<li><a href="http://download.eeworld.com.cn/detail/nijntje/609824" target="_blank" title="电磁场理论">电磁场理论</a></li>
+<li><a href="http://download.eeworld.com.cn/detail/nijntje/609819" target="_blank" title="Ansoft工程磁场有限元分析">Ansoft工程磁场有限元分析</a></li>
+</ul>
+<div class="jj-deiset boxm2">
+<p><a href="//download.eeworld.com.cn/wenji" target="_blank">精品文集</a></p>
+<a href="http://bbs.eeworld.com.cn/huodongform/index.php?id=130&amp;sid=7" style="margin-right:5%;" target="_blank" title="TEK049 ASIC为下一代示波器提供动力">
+<img class="img-border" data-src="http://download.eeworld.com.cn/images/adv/20180910.jpg?imageView2/2/w/180" src="http://6.eewimg.cn/news/statics/images/loading.gif" style="width:100%;"/>
+<p class="intrdou-tt">TEK049 ASIC为下一代示波器提供动力</p>
+</a>
+<a href="http://www.eeworld.com.cn/a17958" target="_blank" title="ADI 《新概念模拟电路》系列第一本电子书《晶体管》">
+<img class="img-border" data-src="http://download.eeworld.com.cn/adv/banner20180903.jpg?imageView2/2/w/180" src="http://6.eewimg.cn/news/statics/images/loading.gif" style="width:100%;"/>
+<p class="intrdou-tt">ADI 《新概念模拟电路》系列第一本电子书《晶体管》</p>
+</a>
+</div>
+</div>
+<div class="center-bar"></div>
+<menu class="right-bar">
+<p><a href="//download.eeworld.com.cn" target="_blank">资源分类</a></p>
+</menu><ul class="clearfix btn">
+<li><a href="//download.eeworld.com.cn/listRes/1_0_0_0_1" target="_blank">嵌入式开发</a></li>
+<li><a href="//download.eeworld.com.cn/listRes/30_0_0_0_1" target="_blank">电子电路</a></li>
+<li><a href="//download.eeworld.com.cn/listRes/51_0_0_0_1" target="_blank">编程语言</a></li>
+<li><a href="//download.eeworld.com.cn/listRes/5_0_0_0_1" target="_blank">FPGA/CPLD</a></li>
+<li><a href="//download.eeworld.com.cn/listRes/28_0_0_0_1" target="_blank">应用技术</a></li>
+<li><a href="//download.eeworld.com.cn/listRes/96_0_0_0_1" target="_blank">网络及通信技术</a></li>
+<li><a href="//download.eeworld.com.cn/listRes/90_0_0_0_1" target="_blank">工业控制</a></li>
+<li><a href="//download.eeworld.com.cn/listRes/8_0_0_0_1" target="_blank">电源技术</a></li>
+<li><a href="//download.eeworld.com.cn/listRes/9_0_0_0_1" target="_blank">PCB layout</a></li>
+<li><a href="//download.eeworld.com.cn/listRes/15_0_0_0_1" target="_blank">IC设计及制造</a></li>
+<li><a href="//download.eeworld.com.cn/listRes/83_0_0_0_1" target="_blank">应用软件</a></li>
+<li><a href="//download.eeworld.com.cn/listRes/17_0_0_0_1" target="_blank">其它</a></li>
+</ul>
+</div>
+</div>
+</li>
+<li class="nav-item"><span class="popmenu"><a href="//datasheet.eeworld.com.cn" target="_blank">Datasheet</a></span><span class="hd">|</span></li>
+<li class="nav-item"><span class="popmenu"><a href="//bbs.eeworld.com.cn/activity.php" target="_blank">活动中心</a></span><span class="hd">|</span>
+<div class="dropdown-menu tech-menu tese-zone f12 eew-menu none">
+<div class="pull-down-box clearfix" id="top_menu11">
+<div class="left-bar">
+<p><a href="//bbs.eeworld.com.cn/forum.php?mod=eeworldactivity&amp;action=activitylist" target="_blank">最新活动 </a></p>
+<ul class="clearfix newest-list">
+<li><a class="mt10" href="http://bbs.eeworld.com.cn/huodong/Arrow_Infineon_d_audio_amplifier_solutions_2020_05/?sid=102" target="_blank" title="英飞凌MERUS™ D类音频解决方案｜【阅读赢好礼，下单送开发板】"><img data-src="http://bbs.eeworld.com.cn/data/attachment/forum/202005/06/115450hgjptdskj0apab9w.png?imageView2/2/w/120" src="http://6.eewimg.cn/news/statics/images/loading.gif"/><p>英飞凌MERUS™ D类音频解决方案｜【阅读赢好礼，下单送开发板】</p></a></li>
+<li><a class="mt10" href="http://bbs.eeworld.com.cn/thread-1120576-1-1.html" target="_blank" title="和风暖阳，我与春天有个约会！"><img data-src="http://bbs.eeworld.com.cn/data/attachment/forum/202004/29/173906s1f7v9fqo76qhw9f.jpg?imageView2/2/w/120" src="http://6.eewimg.cn/news/statics/images/loading.gif"/><p>和风暖阳，我与春天有个约会！</p></a></li>
+<li><a class="mt10" href="http://bbs.eeworld.com.cn/elecplay/content/130" target="_blank" title="EE邀你一起来玩NXP RAPID IOT套件"><img data-src="http://bbs.eeworld.com.cn/data/attachment/forum/202004/29/173722xgg7ac7aogyaz8gq.jpg?imageView2/2/w/120" src="http://6.eewimg.cn/news/statics/images/loading.gif"/><p>EE邀你一起来玩NXP RAPID IOT套件</p></a></li>
+</ul>
+</div>
+<div class="center-bar" style="width:360px;">
+<p><a href="//bbs.eeworld.com.cn/forum.php?mod=eeworldactivity&amp;action=Tlive" target="_blank">技术直播 </a> </p>
+<ol class="clearfix live-recommend mt10">
+<li class="clearfix">
+<a href="http://www.eeworld.com.cn/huodong/TI_20200402/" target="_blank" title="有奖直播：TI 低功耗 MCU 产品和 Zigbee 无线解决方案">
+<p>有奖直播：TI 低功耗 MCU 产品和 Zigbee 无线解决方案</p>
+<img alt="有奖直播：TI 低功耗 MCU 产品和 Zigbee 无线解决方案" class="img-border" data-src="http://bbs.eeworld.com.cn/data/attachment/forum/202004/07/162058qzb8ivox2ngddev9.png?imageView2/2/w/110" src="http://6.eewimg.cn/news/statics/images/loading.gif" style="width:100px;float: left;"/>
+<div style="margin-left:100px">
+<div style="font-size:12px;padding:5px 10px;">厂商：TI / 德州仪器</div> <div style="font-size:12px;padding:5px 10px;">直播时间：2020-05-12 10:00</div>
+</div>
+</a>
+</li>
+<li class="clearfix">
+<a href="http://www.eeworld.com.cn/huodong/adi_20200513/" target="_blank" title="ADI基于ADPD188BI的烟雾探测器集成解决方案 有奖直播 5月13日上午10:00-11:30 为您揭晓！">
+<p>ADI基于ADPD188BI的烟雾探测器集成解决方案 有奖直播 5月13日上午10:00-11:30 为您揭晓！</p>
+<img alt="ADI基于ADPD188BI的烟雾探测器集成解决方案 有奖直播 5月13日上午10:00-11:30 为您揭晓！" class="img-border" data-src="http://bbs.eeworld.com.cn/data/attachment/forum/202004/20/210715fy9bbkbsuf9ay3a4.png?imageView2/2/w/110" src="http://6.eewimg.cn/news/statics/images/loading.gif" style="width:100px;float: left;"/>
+<div style="margin-left:100px">
+<div style="font-size:12px;padding:5px 10px;">厂商：ADI / 亚德诺半导体</div> <div style="font-size:12px;padding:5px 10px;">直播时间：2020-05-13 10:00</div>
+</div>
+</a>
+</li>
+<li class="clearfix">
+<a href="http://www.eeworld.com.cn/huodong/cytech_adi_webinar_20200401/?sid=102" target="_blank" title="骏龙科技携手ADI有奖直播：隔离系统设计的隐藏成本">
+<p>骏龙科技携手ADI有奖直播：隔离系统设计的隐藏成本</p>
+<img alt="骏龙科技携手ADI有奖直播：隔离系统设计的隐藏成本" class="img-border" data-src="http://bbs.eeworld.com.cn/data/attachment/forum/202004/10/171921u631yiuh6uhm7um1.jpg?imageView2/2/w/110" src="http://6.eewimg.cn/news/statics/images/loading.gif" style="width:100px;float: left;"/>
+<div style="margin-left:100px">
+<div style="font-size:12px;padding:5px 10px;">厂商：ADI / 亚德诺半导体</div> <div style="font-size:12px;padding:5px 10px;">直播时间：2020-05-14 10:00</div>
+</div>
+</a>
+</li>
+</ol>
+</div>
+<div class="right-bar">
+<p> </p>
+<div class="c_searchs" id="searchnone" style="margin-right: 30px;display: none">
+<div class="txtc2">
+<form accept-charset="GBK" action="//bbs.eeworld.com.cn/forum.php?mod=eeworldactivity&amp;action=search" method="post" target="_blank">
+<input autocomplete="off" class="inputkey" name="searchkey" placeholder="活动搜索" type="text" value=""/>
+<input class="subdatasheet" type="submit" value=" "/>
+</form>
+</div>
+</div>
+<a class="search_pc_button" href="javascript:;">
+<tt class="search_pc_icon"></tt>
+<span>查找活动</span>
+</a>
+<div class="clearfix"></div>
+<div class="keyword-box">
+<a class="pull-down-button" href="javascript:;" style="margin-left: 20px;">
+<tt class="labe-pull-icon"></tt>
+<span class="type-parameter" style="color: #333;font-size: 16px;float: none;">热门标签</span>
+</a>
+<ol class="clearfix">
+<li><a href="//bbs.eeworld.com.cn/forum.php?mod=eeworldactivity&amp;action=activitylist&amp;queryprod=68" target="_blank">物联网</a></li>
+<li><a href="//bbs.eeworld.com.cn/forum.php?mod=eeworldactivity&amp;action=activitylist&amp;queryprod=47" target="_blank">综合</a></li>
+<li><a href="//bbs.eeworld.com.cn/forum.php?mod=eeworldactivity&amp;action=activitylist&amp;queryprod=35" target="_blank">射频与通信</a></li>
+<li><a href="//bbs.eeworld.com.cn/forum.php?mod=eeworldactivity&amp;action=activitylist&amp;queryprod=34" target="_blank">嵌入式</a></li>
+<li><a href="//bbs.eeworld.com.cn/forum.php?mod=eeworldactivity&amp;action=activitylist&amp;queryprod=33" target="_blank">测试测量</a></li>
+<li><a href="//bbs.eeworld.com.cn/forum.php?mod=eeworldactivity&amp;action=activitylist&amp;queryprod=32" target="_blank">FPGA</a></li>
+<li><a href="//bbs.eeworld.com.cn/forum.php?mod=eeworldactivity&amp;action=activitylist&amp;queryprod=31" target="_blank">模拟</a></li>
+<li><a href="//bbs.eeworld.com.cn/forum.php?mod=eeworldactivity&amp;action=activitylist&amp;queryprod=30" target="_blank">电源</a></li>
+<li><a href="//bbs.eeworld.com.cn/forum.php?mod=eeworldactivity&amp;action=activitylist&amp;queryprod=29" target="_blank">分立器件</a></li>
+<li><a href="//bbs.eeworld.com.cn/forum.php?mod=eeworldactivity&amp;action=activitylist&amp;queryprod=28" target="_blank">传感器</a></li>
+<li><a href="//bbs.eeworld.com.cn/forum.php?mod=eeworldactivity&amp;action=activitylist&amp;queryprod=27" target="_blank">DSP</a></li>
+</ol>
+</div>
+<!--div class="technical-entrance">
+										<p>技术中心</p>
+										<div class="entrance-bel">
+											<p style="padding-top:10px;">
+											<a href="http://www.eeworld.com.cn/huodong/Nichicon/" style="color:#fff;background:#083b96;" target="_blank">尼吉康技术子站专区</a></p>
+										</div>
+									</div-->
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="cph_r boxm6">
+<form action="http://www.eeworld.com.cn/search.php" method="get" name="search" target="_blank">
+<input id="channel" name="channel" type="hidden" value="datasheet"/>
+<div class="psosocho">
+<dl class="select">
+<dt>datasheet</dt>
+<dd style="display: none;">
+<ul>
+<li><a data-channel="datasheet" href="javascript:;">datasheet</a></li>
+<li><a data-channel="news" href="javascript:;">文章</a></li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="psosotxt">
+<ul>
+<li><input class="kw" name="key" placeholder="请输入关键字" type="text"/></li>
+<li class="sbtico"><a href="javascript:;" onclick="document.forms['search'].submit();" target="_blank">搜索</a></li>
+</ul>
+</div>
+<div class="psosolog" id="Mcenter">
+<script src="//bbs.eeworld.com.cn/my/my.php" type="text/javascript"></script><p><a href="http://bbs.eeworld.com.cn/member.php?mod=logging&amp;action=login&amp;referer=http://www.eeworld.com.cn/">登录</a><a href="http://bbs.eeworld.com.cn/member.php?mod=register_eeworld.php&amp;referer=http://www.eeworld.com.cn/">注册</a></p>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+</nav>
+<!-- 通用顶部全站导航结束 -->
+<!-- 第二区域468广告 -->
+<section id="adshow">
+<div class="boxwrapmix">
+<div class="ad_468show1 boxm6">
+<div class="adleft">
+<div class="eeworldadvs" data="200582"><script type="text/javascript">BAIDU_CLB_fillSlot("200582");</script><div id="BAIDU_SSP__wrapper_200582_0"><iframe align="center,center" allowtransparency="true" frameborder="0" height="60" hspace="0" id="iframe200582_0" marginheight="0" marginwidth="0" name="iframe200582_0" onload="___baidu_union_callback(3, '200582_0', this);" scrolling="no" src="about:blank" style="border:0;vertical-align:bottom;margin:0;width:468px;height:60px" vspace="0" width="468"></iframe></div><script charset="utf-8" src="https://pos.baidu.com/pchm?psi=77046b676bb8a0381f57213310577416&amp;di=200582&amp;dri=0&amp;dis=0&amp;dai=0&amp;ps=164x357&amp;enu=encoding&amp;exps=110011&amp;ant=0&amp;dcb=___adblockplus_&amp;dtm=SSP_JSONP&amp;dvi=0.0&amp;dci=-1&amp;dpt=none&amp;tsr=0&amp;tpr=1589031517122&amp;ti=%E7%94%B5%E5%AD%90%E5%B7%A5%E7%A8%8B%E4%B8%96%E7%95%8C-%E5%88%9B%E6%96%B0%E7%94%B5%E5%AD%90%E8%AE%BE%E8%AE%A1%E4%B9%8B%E5%8E%9F-%E4%B8%AD%E5%9B%BD%E4%B8%93%E4%B8%9A%E7%9A%84%E7%94%B5%E5%AD%90%E5%B7%A5%E7%A8%8B%E9%97%A8%E6%88%B7&amp;ari=2&amp;ver=0506&amp;dbv=2&amp;drs=1&amp;pcs=1920x1080&amp;pss=1920x1080&amp;cfv=0&amp;cpl=0&amp;chi=50&amp;cce=true&amp;cec=UTF-8&amp;tlm=1589031517&amp;prot=2&amp;rw=1080&amp;ltu=http%3A%2F%2Fwww.eeworld.com.cn%2F&amp;ecd=1&amp;uc=1920x1080&amp;pis=-1x-1&amp;sr=1920x1080&amp;tcn=1589031518"></script></div> <!-- CMS_首页_HA3 -->
+</div>
+<div class="admid">
+<div class="eeworldadvs" data="6530033"><script type="text/javascript">BAIDU_CLB_fillSlot("6530033");</script><div id="BAIDU_SSP__wrapper_6530033_0"><iframe align="center,center" allowtransparency="true" frameborder="0" height="60" hspace="0" id="iframe6530033_0" marginheight="0" marginwidth="0" name="iframe6530033_0" onload="___baidu_union_callback(3, '6530033_0', this);" scrolling="no" src="about:blank" style="border:0;vertical-align:bottom;margin:0;width:468px;height:60px" vspace="0" width="468"></iframe></div><script charset="utf-8" src="https://pos.baidu.com/pchm?psi=77046b676bb8a0381f57213310577416&amp;di=6530033&amp;dri=0&amp;dis=0&amp;dai=0&amp;ps=164x837&amp;enu=encoding&amp;exps=110011&amp;ant=0&amp;dcb=___adblockplus_&amp;dtm=SSP_JSONP&amp;dvi=0.0&amp;dci=-1&amp;dpt=none&amp;tsr=0&amp;tpr=1589031517122&amp;ti=%E7%94%B5%E5%AD%90%E5%B7%A5%E7%A8%8B%E4%B8%96%E7%95%8C-%E5%88%9B%E6%96%B0%E7%94%B5%E5%AD%90%E8%AE%BE%E8%AE%A1%E4%B9%8B%E5%8E%9F-%E4%B8%AD%E5%9B%BD%E4%B8%93%E4%B8%9A%E7%9A%84%E7%94%B5%E5%AD%90%E5%B7%A5%E7%A8%8B%E9%97%A8%E6%88%B7&amp;ari=2&amp;ver=0506&amp;dbv=2&amp;drs=1&amp;pcs=1920x1080&amp;pss=1920x1080&amp;cfv=0&amp;cpl=0&amp;chi=50&amp;cce=true&amp;cec=UTF-8&amp;tlm=1589031517&amp;prot=2&amp;rw=1080&amp;ltu=http%3A%2F%2Fwww.eeworld.com.cn%2F&amp;ecd=1&amp;uc=1920x1080&amp;pis=-1x-1&amp;sr=1920x1080&amp;tcn=1589031518"></script></div> <!-- CMS_首页_HA4 -->
+</div>
+<div class="adri">
+<div class="eeworldadvs" data="5444452"><script type="text/javascript">BAIDU_CLB_fillSlot("5444452");</script><div id="BAIDU_SSP__wrapper_5444452_0"><iframe align="center,center" allowtransparency="true" frameborder="0" height="60" hspace="0" id="iframe5444452_0" marginheight="0" marginwidth="0" name="iframe5444452_0" onload="___baidu_union_callback(3, '5444452_0', this);" scrolling="no" src="about:blank" style="border:0;vertical-align:bottom;margin:0;width:240px;height:60px" vspace="0" width="240"></iframe></div><script charset="utf-8" src="https://pos.baidu.com/pchm?psi=77046b676bb8a0381f57213310577416&amp;di=5444452&amp;dri=0&amp;dis=0&amp;dai=0&amp;ps=164x1562&amp;enu=encoding&amp;exps=110011&amp;ant=0&amp;dcb=___adblockplus_&amp;dtm=SSP_JSONP&amp;dvi=0.0&amp;dci=-1&amp;dpt=none&amp;tsr=0&amp;tpr=1589031517122&amp;ti=%E7%94%B5%E5%AD%90%E5%B7%A5%E7%A8%8B%E4%B8%96%E7%95%8C-%E5%88%9B%E6%96%B0%E7%94%B5%E5%AD%90%E8%AE%BE%E8%AE%A1%E4%B9%8B%E5%8E%9F-%E4%B8%AD%E5%9B%BD%E4%B8%93%E4%B8%9A%E7%9A%84%E7%94%B5%E5%AD%90%E5%B7%A5%E7%A8%8B%E9%97%A8%E6%88%B7&amp;ari=2&amp;ver=0506&amp;dbv=2&amp;drs=1&amp;pcs=1920x1080&amp;pss=1920x1080&amp;cfv=0&amp;cpl=0&amp;chi=50&amp;cce=true&amp;cec=UTF-8&amp;tlm=1589031517&amp;prot=2&amp;rw=1080&amp;ltu=http%3A%2F%2Fwww.eeworld.com.cn%2F&amp;ecd=1&amp;uc=1920x1080&amp;pis=-1x-1&amp;sr=1920x1080&amp;tcn=1589031518"></script></div> <!-- CMS_首页_HB2 -->
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+</section>
+<!-- 第二区域468广告结束 -->
+<!-- logo layer -->
+<section id="mainlogo">
+<div class="boxwrapmix">
+<div class="mainlogobox boxm6">
+<div class="logo_l"><a href="//www.eeworld.com.cn/"><img alt="电子工程世界" src="http://6.eewimg.cn/news/statics/hp/images/index_mainlogo.png"/></a></div>
+<div class="ad_m">
+<div class="eeworldadvs" data="5444586"><script type="text/javascript">BAIDU_CLB_fillSlot("5444586");</script><div id="BAIDU_SSP__wrapper_5444586_0"></div><script charset="utf-8" src="https://pos.baidu.com/pchm?psi=77046b676bb8a0381f57213310577416&amp;di=5444586&amp;dri=0&amp;dis=0&amp;dai=0&amp;ps=246x575&amp;enu=encoding&amp;exps=110011&amp;ant=0&amp;dcb=___adblockplus_&amp;dtm=SSP_JSONP&amp;dvi=0.0&amp;dci=-1&amp;dpt=none&amp;tsr=0&amp;tpr=1589031517122&amp;ti=%E7%94%B5%E5%AD%90%E5%B7%A5%E7%A8%8B%E4%B8%96%E7%95%8C-%E5%88%9B%E6%96%B0%E7%94%B5%E5%AD%90%E8%AE%BE%E8%AE%A1%E4%B9%8B%E5%8E%9F-%E4%B8%AD%E5%9B%BD%E4%B8%93%E4%B8%9A%E7%9A%84%E7%94%B5%E5%AD%90%E5%B7%A5%E7%A8%8B%E9%97%A8%E6%88%B7&amp;ari=2&amp;ver=0506&amp;dbv=2&amp;drs=1&amp;pcs=1920x1080&amp;pss=1920x1080&amp;cfv=0&amp;cpl=0&amp;chi=50&amp;cce=true&amp;cec=UTF-8&amp;tlm=1589031517&amp;prot=2&amp;rw=1080&amp;ltu=http%3A%2F%2Fwww.eeworld.com.cn%2F&amp;ecd=1&amp;uc=1920x1080&amp;pis=-1x-1&amp;sr=1920x1080&amp;tcn=1589031518"></script><ins class="dcmads" data-dcm-app-id="" data-dcm-placement="N5744.153166EEWORLD/B10672804.142395042" data-dcm-processed="y" data-dcm-rendering-mode="script" data-dcm-resettable-device-id="" style="display: inline-block; width: 728px; height: 90px; text-decoration: none;">
+<script src="http://www.googletagservices.com/dcm/dcmads.js"></script><script src="http://www.googletagservices.com/dcm/impl_v55.js"></script><script src="https://ad.doubleclick.net/ddm/adj/N5744.153166EEWORLD/B10672804.142395042;dc_ver=55.153;dc_eid=40004001;sz=728x90;u_sd=1;dc_adk=922060736;ord=ynrwmq;dc_rfl=0,http%3A%2F%2Fwww.eeworld.com.cn%2F$0;xdt=0;crlt=SUTejF4bdy;sttr=43;prcl=n?"></script><div active_view_class_name="GoogleActiveViewElement" class="GoogleActiveViewElement" data-creative-load-listener="" data-google-av-adk="922060736" data-google-av-aid="0" data-google-av-btr="" data-google-av-cpmav="" data-google-av-cxn="https://pagead2.googlesyndication.com/pcs/activeview?xai=AKAOjsvTUDr2PMfNuhE5F2b0e7EJX-COfaFS2GqvhG5p03m-_gTYb5ePsbkEfviJodvYswL1uZ9mwAT-CnrnUKfYsK0&amp;sig=Cg0ArKJSzBDEmtRphkeVEAE" data-google-av-dm="2" data-google-av-immediate="true" data-google-av-itpl="32" data-google-av-metadata="la=0&amp;" data-google-av-naid="1" data-google-av-override="-1" data-google-av-rs="6" data-google-av-slift="" id="DfaVisibilityIdentifier_2873635564"><div class="GoogleCreativeContainerClass" data-creative-load-listener="" id="gcc_XLK2XtfxO8eL8ALVlqiABw"><a href="https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjss1-ak4oLTYT-X2GMjobmHBhJNY-crFNAzKNxJ0EeZQWHNMlYax7Bun-KwWmUMVyZsRWgKkvdoQmC2O2IZ7Rc8lh13L76ScbNyTXEMpqwOcFJzwyxDfYP62b8aeAdhZQyAO2nFJY3uKnWmNvw&amp;sig=Cg0ArKJSzF5t5iUTNQXo&amp;urlfix=1&amp;adurl=http://www.ti.com.cn/zh-cn/amplifier-circuit/featured-products.html%3FHQS%3Dasc-amps-null-amps_lowpoweramps19-bs-lp-EEWORLD-cn%26DCM%3Dyes%26dclid%3D%25edclid!%23low-power" id="img_anch_CNeP7djzpukCFccFXAodVQsKcA" target="_blank"><img alt="Advertisement" border="0" height="90" src="https://s0.2mdn.net/5167093/ASC_AMPS_NULL_amps_lowpoweramps19_728x90_st_CN.gif" width="728"/></a><script data-jc="74" data-jc-version="r20200506" data-jcp-a-id="img_anch_CNeP7djzpukCFccFXAodVQsKcA">(function(){/*  Copyright The Closure Library Authors. SPDX-License-Identifier: Apache-2.0 */ var b=/^(?:(?:https?|mailto|ftp):|[^:/?#]*(?:[/?#]|$))/i;var e,f=document.currentScript;e=(f=void 0===f?null:f)&&74==f.getAttribute("data-jc")?f:document.querySelector('[data-jc="74"]');if(null==e)throw Error("JSC not found 74");for(var g={},l=e.attributes,m=l.length-1;0<=m;m--){var n=l[m].name;0===n.indexOf("data-jcp-")&&(g[n.substring(9)]=l[m].value)} document.getElementById(g["a-id"]).addEventListener("mousedown",function(c){var h=c.currentTarget,a=h.querySelector("img[alt]");if(a){var d=h.href;var p=+Math.round(c.clientX-a.offsetLeft);c=+Math.round(c.clientY-a.offsetTop);a=+a.width+"x"+ +a.height;var k=/^(https?:[^:?]+[/]pcs[/]click[^/]+?)(?:&nx[^&]+&ny[^&]+&dim[^&]+)?(&adurl=.*)/.exec(d);d=k?k[1]+("&nx="+p+"&ny="+c+"&dim="+a)+k[2]:d;b.test(d)&&(h.href=d)}});}).call(this);</script></div></div>
+</ins></div> <!-- CMS_首页_H-L1 -->
+</div>
+<div class="gb_r">
+<span id="FS_numList_02"></span>
+<div class="wfbox">
+<div class="left-bar" id="FS_arr_left_02"></div>
+<div class="scroll_cont" id="FS_Cont_02">
+<script language="javascript" src="/notice"></script><div class="box"><dl><dt><a href="http://bbs.eeworld.com.cn/huodong/Microchip_webinar_2020_2021_12/?sid=103" target="_blank"><font color="red">Microchip有奖直播｜通过TrustFlex安全元件和Microsoft Azure实现安全身份验证</font></a></dt><dd><a href="http://bbs.eeworld.com.cn/huodong/Microchip_webinar_2020_2021_12/?sid=103" target="_blank">6月2日（周二）上午10:30-11:30</a></dd></dl></div><div class="box"><dl><dt><a href=" 	http://bbs.eeworld.com.cn/huodong/element14_TE_202004/?sid=103#cc" target="_blank"><font color="red">TE 全线产品三重优惠｜前12名返京东卡，先到先得】</font></a> </dt></dl></div><div class="box"><dl><dt><a href="http://www.eeworld.com.cn/huodong/TI_water_meter_20200603/?sid=103" target="_blank"><font color="red">有奖直播｜TI 新一代 MSP430 产品在低成本超声波水表中的方案介绍</font></a></dt><dd><a href="http://www.eeworld.com.cn/huodong/TI_water_meter_20200603/?sid=103" target="_blank">直播时间：6月3日（周三）上午10:00-11:30</a></dd></dl></div><div class="box"><dl><dt><a href=" 	http://training.eeworld.com.cn/TI/video/1140184?utm_source=EEW&amp;utm_medium=Textlinkr&amp;utm_campaign=1140184" target="_blank"><font color="red">【TI 培训】小容量电池供电产品的开关型充电方案</font></a> </dt></dl></div><div class="box"><dl><dt><a href="http://bbs.eeworld.com.cn/huodong/Arrow_Infineon_d_audio_amplifier_solutions_2020_05/?sid=103" target="_blank"><font color="red">英飞凌MERUS D类音频解决方案｜【阅读赢好礼，下单送开发板】</font></a> </dt><dd><a href="http://bbs.eeworld.com.cn/huodong/Arrow_Infineon_d_audio_amplifier_solutions_2020_05/?sid=103" target="_blank">即日起—2020年5月31日</a></dd></dl></div><div class="box"><dl><dt><a href="http://www.eeworld.com.cn/huodong/TI_C2000_20200520/?sid=103" target="_blank"><font color="red">【技术直播】</font></a> </dt><dd><a href="http://www.eeworld.com.cn/huodong/TI_C2000_20200520/?sid=103" target="_blank"> TI最新C2000实时控制器 专场</a></dd><dd><a href="http://www.eeworld.com.cn/huodong/TI_C2000_20200520/?sid=103" target="_blank"> 遇见让你的电源项目省成本、升性能的神器</a></dd></dl></div><div class="box"><dl><dt><a href="http://www.eeworld.com.cn/a45136" target="_blank"><font color="red">英飞凌天猫店生日大促：三重好礼奉上，买指定商品满200元即送价值500元开发板！</font></a> </dt></dl></div><div class="box"><dl><dt><a href="http://www.eeworld.com.cn/huodong/arrow-adi_mems_202004/?sid=103" target="_blank"><font color="red">有奖问答：ADI MEMS助力机器大健康</font></a> </dt><dd><a href="http://www.eeworld.com.cn/huodong/arrow-adi_mems_202004/?sid=103" target="_blank">答题赢好礼，抽取50元京东卡！</a></dd></dl></div><div class="box"><dl><dt><a href=" 	http://www.eeworld.com.cn/huodong/TI_20200402/" target="_blank"><font color="red">有奖直播：TI 低功耗 MCU 产品和 Zigbee 无线解决方案 点击报名</font></a> </dt></dl></div><div class="box"><dl><dt><a href=" 	http://www.eeworld.com.cn/huodong/TI_20200526/ " target="_blank"><font color="red">有奖直播：TI毫米波雷达在汽车车内的应用 报名中</font></a> </dt></dl></div>
+</div>
+<div class="right-bar" id="FS_arr_right_02"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- logo layer end -->
+<!-- 首页副导航 -->
+<section id="snav">
+<div class="boxfit boxbg4">
+<div class="boxwrapmix boxm6">
+<div class="navtxt">
+<ul>
+<li class="ftxt">技术中心<em>|</em></li>
+<li><a href="//bbs.eeworld.com.cn/TI/" target="_blank">TI技术论坛</a></li>
+<li><a href="//training.eeworld.com.cn/TI/" target="_blank">TI培训</a></li>
+<li><a href="//www.eeworld.com.cn/zt/PowerIntegrations/" target="_blank">PI技术中心</a></li>
+<li><a href="//www.eeworld.com.cn/zt/Qorvo/" style="color:#1AA3DF;font-weight:bold;" target="_blank">射频技术研习社</a></li>
+<li class="sponsor">
+<div style="width:210px;float:right;"><div class="eeworldadvs" data="5518082"><script type="text/javascript">BAIDU_CLB_fillSlot("5518082");</script><div id="BAIDU_SSP__wrapper_5518082_0"></div><script charset="utf-8" src="https://pos.baidu.com/pchm?psi=77046b676bb8a0381f57213310577416&amp;di=5518082&amp;dri=0&amp;dis=0&amp;dai=0&amp;ps=341x1352&amp;enu=encoding&amp;exps=110011&amp;ant=0&amp;dcb=___adblockplus_&amp;dtm=SSP_JSONP&amp;dvi=0.0&amp;dci=-1&amp;dpt=none&amp;tsr=0&amp;tpr=1589031517122&amp;ti=%E7%94%B5%E5%AD%90%E5%B7%A5%E7%A8%8B%E4%B8%96%E7%95%8C-%E5%88%9B%E6%96%B0%E7%94%B5%E5%AD%90%E8%AE%BE%E8%AE%A1%E4%B9%8B%E5%8E%9F-%E4%B8%AD%E5%9B%BD%E4%B8%93%E4%B8%9A%E7%9A%84%E7%94%B5%E5%AD%90%E5%B7%A5%E7%A8%8B%E9%97%A8%E6%88%B7&amp;ari=2&amp;ver=0506&amp;dbv=2&amp;drs=1&amp;pcs=1920x1080&amp;pss=1920x1080&amp;cfv=0&amp;cpl=0&amp;chi=50&amp;cce=true&amp;cec=UTF-8&amp;tlm=1589031518&amp;prot=2&amp;rw=1080&amp;ltu=http%3A%2F%2Fwww.eeworld.com.cn%2F&amp;ecd=1&amp;uc=1920x1080&amp;pis=-1x-1&amp;sr=1920x1080&amp;tcn=1589031518"></script></div></div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+</section>
+<!-- 首页副导航结束 -->
+<!-- 第一屏内容盒模型 -->
+<section id="contentpart1">
+<div class="boxwrapmix boxm6">
+<div class="cp1box">
+<!-- 首屏左侧开始 -->
+<div class="cp1b_l">
+<div class="cp1_tp">
+<div class="focus" id="fsD1">
+<div class="fPic" id="D1pic1">
+<div class="fcon" style="display: block;">
+<a href="http://www.eeworld.com.cn/huodong/MNT_NEVPower_20200519/?sid=80" target="_blank"><img src="http://www.eeworld.com.cn/adv/202005/312.jpg" style="opacity: 0.64;"/></a>
+<span class="shadow"><a href="http://www.eeworld.com.cn/huodong/MNT_NEVPower_20200519/?sid=80" target="_blank">电源 电机 电控 ，你想看的新能源汽车热点技术，集齐了</a></span>
+</div>
+<div class="fcon" style="display: none;">
+<a href="http://news.eeworld.com.cn/MEMS/ic496345.html" target="_blank" title="Sony第四代图像传感器有哪些黑科技"><img src="http://6.eewimg.cn/news/uploadfile/2020/0508/1588903827881398.png?imageView2/2/w/420" style="opacity: 1; "/></a>
+<span class="shadow"><a href="http://news.eeworld.com.cn/MEMS/ic496345.html" target="_blank">Sony第四代图像传感器有哪些黑科技</a></span>
+</div>
+<div class="fcon" style="display: none;">
+<a href="http://news.eeworld.com.cn/qcdz/ic495945.html" target="_blank" title="锂电池：新能源车带动上游繁荣"><img src="http://6.eewimg.cn/news/uploadfile/2020/0430/1588212108580079.png?imageView2/2/w/420" style="opacity: 1; "/></a>
+<span class="shadow"><a href="http://news.eeworld.com.cn/qcdz/ic495945.html" target="_blank">锂电池：新能源车带动上游繁荣</a></span>
+</div>
+<div class="fcon" style="display: none;">
+<a href="http://news.eeworld.com.cn/MEMS/ic495472.html" target="_blank" title="事件相机正缓慢而稳定的上升"><img src="http://6.eewimg.cn/news/uploadfile/2020/0426/20200426052555140.jpg?imageView2/2/w/420" style="opacity: 1; "/></a>
+<span class="shadow"><a href="http://news.eeworld.com.cn/MEMS/ic495472.html" target="_blank">事件相机正缓慢而稳定的上升</a></span>
+</div>
+<div class="fcon" style="display: none;">
+<a href="http://news.eeworld.com.cn/manufacture/ic495446.html" target="_blank" title="SiC市场前景如何？英飞凌高管告诉你"><img src="http://6.eewimg.cn/news/uploadfile/2020/0426/1587866796757033.png?imageView2/2/w/420" style="opacity: 1; "/></a>
+<span class="shadow"><a href="http://news.eeworld.com.cn/manufacture/ic495446.html" target="_blank">SiC市场前景如何？英飞凌高管告诉你</a></span>
+</div>
+<div class="fcon" style="display: none;">
+<a href="http://news.eeworld.com.cn/qcdz/ic495077.html" target="_blank" title="ISO 26262安全机构插入和验证四步骤讲解"><img src="http://6.eewimg.cn/news/uploadfile/2020/0422/1587548057450796.jpeg?imageView2/2/w/420" style="opacity: 1; "/></a>
+<span class="shadow"><a href="http://news.eeworld.com.cn/qcdz/ic495077.html" target="_blank">ISO 26262安全机构插入和验证四步骤讲解</a></span>
+</div>
+</div>
+<div class="fbg">
+<div class="D1fBt" id="D1fBt">
+<a class="current" hidefocus="true" href="javascript:void(0)" target="_self"><i>1</i></a>
+<a class="" hidefocus="true" href="javascript:void(0)" target="_self"><i>2</i></a>
+<a class="" hidefocus="true" href="javascript:void(0)" target="_self"><i>3</i></a>
+<a class="" hidefocus="true" href="javascript:void(0)" target="_self"><i>4</i></a>
+<a class="" hidefocus="true" href="javascript:void(0)" target="_self"><i>5</i></a>
+<a class="" hidefocus="true" href="javascript:void(0)" target="_self"><i>6</i></a>
+</div>
+</div>
+<span class="prev"></span>
+<span class="next"></span>
+</div>
+<script type="text/javascript">
+						Qfast.add('widgets', { path: "/statics/js/terminator2.2.min.js", type: "js", requires: ['fx'] });  
+						Qfast(false, 'widgets',function(){K.tabs({id: 'fsD1',conId: "D1pic1",tabId:"D1fBt",tabTn:"a",conCn: '.fcon',auto: 1,effect: 'fade',eType: 'click',pageBt:true,bns: ['.prev', '.next'],interval:8000}) })
+					</script>
+</div>
+<div class="cp1_xt boxm6">
+<h5><span><a href="http://training.eeworld.com.cn/" target="_blank">更多</a></span><a href="http://training.eeworld.com.cn/" target="_blank">大学堂</a></h5>
+<ul>
+<li><span><a href="//training.eeworld.com.cn/course/5614" target="_blank">播放</a></span><em><a href="//training.eeworld.com.cn/course/5614" target="_blank" title="车载信息娱乐系统发展趋势及深度技术解析">车载信息娱乐系统发展趋势及深度技术解析</a></em></li>
+<li><span><a href="//training.eeworld.com.cn/course/4335" target="_blank">播放</a></span><em><a href="//training.eeworld.com.cn/course/4335" target="_blank" title="直播回放：TI MSP430 铁电超值微控制器方案 ">直播回放：TI MSP430 铁电超值微控制器方案 </a></em></li>
+<li><span><a href="//training.eeworld.com.cn/course/215" target="_blank">播放</a></span><em><a href="//training.eeworld.com.cn/course/215" target="_blank" title="Brammo e-摩托车显示">Brammo e-摩托车显示</a></em></li>
+<li><span><a href="//training.eeworld.com.cn/course/5611" target="_blank">播放</a></span><em><a href="//training.eeworld.com.cn/course/5611" target="_blank" title="「嵌入式人工智能」- 中文聊天机器人开发">「嵌入式人工智能」- 中文聊天机器人开发</a></em></li>
+<li><span><a href="//training.eeworld.com.cn/course/5599" target="_blank">播放</a></span><em><a href="//training.eeworld.com.cn/course/5599" target="_blank" title="工业控制PLC系列课程">工业控制PLC系列课程</a></em></li>
+</ul>
+<div class="clearfix"></div>
+</div>
+<div class="cp1_sq boxm6">
+<h5>社区焦点</h5>
+<div class="cp1_sqbox">
+<dl>
+<dt><a href="http://bbs.eeworld.com.cn/thread-1115816-1-1.html" target="_blank" title="Android 开发学习之路">Android 开发学习之路</a></dt>
+</dl>
+</div>
+<div class="cp1_sqbox">
+<dl>
+<dt><a href="http://bbs.eeworld.com.cn/thread-1121390-1-1.html" target="_blank" title="原创| 约会春天－家里的菜园和水果">原创| 约会春天－家里的菜园和水果</a></dt>
+</dl>
+</div>
+<div class="cp1_sqbox">
+<dl>
+<dt><a href="http://bbs.eeworld.com.cn/thread-1121236-1-1.html" target="_blank" title="翻译|STM32F429 Discovery的Commodore 64 模拟器">翻译|STM32F429 Discovery的Commodore 64 模拟器</a></dt>
+</dl>
+</div>
+<div class="cp1_sqbox">
+<dl>
+<dt><a href="https://infineon.tmall.com/shop/view_shop.htm" target="_blank" title="活动|英飞凌天猫店生日大促：三重好礼奉上！">活动|英飞凌天猫店生日大促：三重好礼奉上！</a></dt>
+</dl>
+</div>
+<div class="clearfix"></div>
+</div>
+</div>
+<!-- 首屏左侧开始结束 -->
+<div class="cp1b_m">
+<!-- 中部新闻头条开始 -->
+<div class="topnewslist">
+<h2><a href="http://news.eeworld.com.cn/IoT/ic496384.html" target="_blank" title="疫情期间，机器人能否帮助我们？">疫情期间，机器人能否帮助我们？</a></h2>
+<dl>
+<dt><span><a href="//news.eeworld.com.cn/qcdz/" target="_blank">[汽车电子]</a></span><a class="tag_title_link" href="http://news.eeworld.com.cn/qcdz/ic496454.html" target="_blank" title="北汽联手Imagination成立芯片公司，专注智能座舱语音交互芯片">北汽联手Imagination成立芯片公司，专注智能座舱语音交互芯片</a></dt>
+<dt><span><a href="//news.eeworld.com.cn/LED/" target="_blank">[LED]</a></span><a class="tag_title_link" href="http://news.eeworld.com.cn/LED/ic496452.html" target="_blank" title="OLED有新对手了，低成本 高亮度优势的OLCD亮相">OLED有新对手了，低成本 高亮度优势的OLCD亮相</a></dt>
+<dd>
+<div class="eeworldadvs" data="5444916"><script type="text/javascript">BAIDU_CLB_fillSlot("5444916");</script><div id="BAIDU_SSP__wrapper_5444916_0"><iframe align="center,center" allowtransparency="true" frameborder="0" height="60" hspace="0" id="iframe5444916_0" marginheight="0" marginwidth="0" name="iframe5444916_0" onload="___baidu_union_callback(3, '5444916_0', this);" scrolling="no" src="about:blank" style="border:0;vertical-align:bottom;margin:0;width:468px;height:60px" vspace="0" width="468"></iframe></div><script charset="utf-8" src="https://pos.baidu.com/pchm?psi=77046b676bb8a0381f57213310577416&amp;di=5444916&amp;dri=0&amp;dis=0&amp;dai=0&amp;ps=507x757&amp;enu=encoding&amp;exps=110011&amp;ant=0&amp;dcb=___adblockplus_&amp;dtm=SSP_JSONP&amp;dvi=0.0&amp;dci=-1&amp;dpt=none&amp;tsr=0&amp;tpr=1589031517122&amp;ti=%E7%94%B5%E5%AD%90%E5%B7%A5%E7%A8%8B%E4%B8%96%E7%95%8C-%E5%88%9B%E6%96%B0%E7%94%B5%E5%AD%90%E8%AE%BE%E8%AE%A1%E4%B9%8B%E5%8E%9F-%E4%B8%AD%E5%9B%BD%E4%B8%93%E4%B8%9A%E7%9A%84%E7%94%B5%E5%AD%90%E5%B7%A5%E7%A8%8B%E9%97%A8%E6%88%B7&amp;ari=2&amp;ver=0506&amp;dbv=2&amp;drs=1&amp;pcs=1920x1080&amp;pss=1920x1080&amp;cfv=0&amp;cpl=0&amp;chi=50&amp;cce=true&amp;cec=UTF-8&amp;tlm=1589031518&amp;prot=2&amp;rw=1080&amp;ltu=http%3A%2F%2Fwww.eeworld.com.cn%2F&amp;ecd=1&amp;uc=1920x1080&amp;pis=-1x-1&amp;sr=1920x1080&amp;tcn=1589031518"></script></div> <!-- CMS_首页_H-A5 -->
+</dd>
+<dt><span><a href="//news.eeworld.com.cn/xfdz/" target="_blank">[手机便携]</a></span><a class="tag_title_link" href="http://news.eeworld.com.cn/xfdz/ic496450.html" target="_blank" title="iPhone 12都会标配5G：但在频段上有大差异">iPhone 12都会标配5G：但在频段上有大差异</a></dt>
+<dt><span><a href="//news.eeworld.com.cn/manufacture/" target="_blank">[半导体]</a></span><a class="tag_title_link" href="http://news.eeworld.com.cn/manufacture/ic496448.html" target="_blank" title="中美AI之战：将没有赢家">中美AI之战：将没有赢家</a></dt>
+<dt><span><a href="//news.eeworld.com.cn/manufacture/" target="_blank">[半导体]</a></span><a class="tag_title_link" href="http://news.eeworld.com.cn/manufacture/ic496446.html" target="_blank" title="又一家PCB企业未能躲过疫情的暴虐">又一家PCB企业未能躲过疫情的暴虐</a></dt>
+<dt><span><a href="//news.eeworld.com.cn/IoT/" target="_blank">[物联网]</a></span><a class="tag_title_link" href="http://news.eeworld.com.cn/IoT/ic496444.html" target="_blank" title="Qorvo 公布2020财年第四季度财务业绩，继续加强5G网络部署">Qorvo 公布2020财年第四季度财务业绩，继续加强5G网络部署</a></dt>
+<dd><div class="eeworldadvs" data="5444917"><script type="text/javascript">BAIDU_CLB_fillSlot("5444917");</script><div id="BAIDU_SSP__wrapper_5444917_0"><iframe align="center,center" allowtransparency="true" frameborder="0" height="60" hspace="0" id="iframe5444917_0" marginheight="0" marginwidth="0" name="iframe5444917_0" onload="___baidu_union_callback(3, '5444917_0', this);" scrolling="no" src="about:blank" style="border:0;vertical-align:bottom;margin:0;width:468px;height:60px" vspace="0" width="468"></iframe></div><script charset="utf-8" src="https://pos.baidu.com/pchm?psi=77046b676bb8a0381f57213310577416&amp;di=5444917&amp;dri=0&amp;dis=0&amp;dai=0&amp;ps=731x757&amp;enu=encoding&amp;exps=110011&amp;ant=0&amp;dcb=___adblockplus_&amp;dtm=SSP_JSONP&amp;dvi=0.0&amp;dci=-1&amp;dpt=none&amp;tsr=0&amp;tpr=1589031517122&amp;ti=%E7%94%B5%E5%AD%90%E5%B7%A5%E7%A8%8B%E4%B8%96%E7%95%8C-%E5%88%9B%E6%96%B0%E7%94%B5%E5%AD%90%E8%AE%BE%E8%AE%A1%E4%B9%8B%E5%8E%9F-%E4%B8%AD%E5%9B%BD%E4%B8%93%E4%B8%9A%E7%9A%84%E7%94%B5%E5%AD%90%E5%B7%A5%E7%A8%8B%E9%97%A8%E6%88%B7&amp;ari=2&amp;ver=0506&amp;dbv=2&amp;drs=1&amp;pcs=1920x1080&amp;pss=1920x1080&amp;cfv=0&amp;cpl=0&amp;chi=50&amp;cce=true&amp;cec=UTF-8&amp;tlm=1589031518&amp;prot=2&amp;rw=1080&amp;ltu=http%3A%2F%2Fwww.eeworld.com.cn%2F&amp;ecd=1&amp;uc=1920x1080&amp;pis=-1x-1&amp;sr=1920x1080&amp;tcn=1589031518"></script></div> <!-- CMS_首页_H-A6 --></dd>
+<dt><span><a href="//news.eeworld.com.cn/qrs/" target="_blank">[嵌入式]</a></span><a class="tag_title_link" href="http://news.eeworld.com.cn/qrs/ic496442.html" target="_blank" title="我提出新型无线充电芯片架构，让芯片集成度再上一个台阶">我提出新型无线充电芯片架构，让芯片集成度再上一个台阶</a></dt>
+<dt><span><a href="//news.eeworld.com.cn/wltx/" target="_blank">[网络通信]</a></span><a class="tag_title_link" href="http://news.eeworld.com.cn/wltx/ic496440.html" target="_blank" title="美拟与华为展开5G合作，是回心转意还是另有它意？">美拟与华为展开5G合作，是回心转意还是另有它意？</a></dt>
+<dt><span><a href="//news.eeworld.com.cn/IoT/" target="_blank">[物联网]</a></span><a class="tag_title_link" href="http://news.eeworld.com.cn/IoT/ic496381.html" target="_blank" title="5G时代云游戏将成为大热门">5G时代云游戏将成为大热门</a></dt>
+<dt><span><a href="//news.eeworld.com.cn/manufacture/" target="_blank">[半导体]</a></span><a class="tag_title_link" href="http://news.eeworld.com.cn/manufacture/ic496379.html" target="_blank" title="一文看懂功率半导体产业">一文看懂功率半导体产业</a></dt>
+<dt><span><a href="//news.eeworld.com.cn/wltx/" target="_blank">[网络通信]</a></span><a class="tag_title_link" href="http://news.eeworld.com.cn/wltx/ic496377.html" target="_blank" title="通信网络已是刚需业务，VIAVI的服务已在路上">通信网络已是刚需业务，VIAVI的服务已在路上</a></dt>
+<dt><span><a href="//news.eeworld.com.cn/MEMS/" target="_blank">[传感技术]</a></span><a class="tag_title_link" href="http://news.eeworld.com.cn/MEMS/ic496373.html" target="_blank" title="Teledyne e2v 的Emerald图像传感器又添新产品">Teledyne e2v 的Emerald图像传感器又添新产品</a></dt>
+<dt><span><a href="//news.eeworld.com.cn/news/jydz/" target="_blank">[家用电子]</a></span><a class="tag_title_link" href="http://news.eeworld.com.cn/szds/ic496366.html" target="_blank" title="研究发现，PC 现代化对于未来工作至关重要">研究发现，PC 现代化对于未来工作至关重要</a></dt>
+</dl>
+</div>
+<!-- 中部新闻头条结束 -->
+</div>
+<div class="cp1b_r">
+<div class="cp1rad">
+<div class="eeworldadvs" data="5444578"><script type="text/javascript">BAIDU_CLB_fillSlot("5444578");</script><div id="BAIDU_SSP__wrapper_5444578_0"></div><script charset="utf-8" src="https://pos.baidu.com/pchm?psi=77046b676bb8a0381f57213310577416&amp;di=5444578&amp;dri=0&amp;dis=0&amp;dai=0&amp;ps=386x1262&amp;enu=encoding&amp;exps=110011&amp;ant=0&amp;dcb=___adblockplus_&amp;dtm=SSP_JSONP&amp;dvi=0.0&amp;dci=-1&amp;dpt=none&amp;tsr=0&amp;tpr=1589031517122&amp;ti=%E7%94%B5%E5%AD%90%E5%B7%A5%E7%A8%8B%E4%B8%96%E7%95%8C-%E5%88%9B%E6%96%B0%E7%94%B5%E5%AD%90%E8%AE%BE%E8%AE%A1%E4%B9%8B%E5%8E%9F-%E4%B8%AD%E5%9B%BD%E4%B8%93%E4%B8%9A%E7%9A%84%E7%94%B5%E5%AD%90%E5%B7%A5%E7%A8%8B%E9%97%A8%E6%88%B7&amp;ari=2&amp;ver=0506&amp;dbv=2&amp;drs=1&amp;pcs=1920x1080&amp;pss=1920x1080&amp;cfv=0&amp;cpl=0&amp;chi=50&amp;cce=true&amp;cec=UTF-8&amp;tlm=1589031518&amp;prot=2&amp;rw=1080&amp;ltu=http%3A%2F%2Fwww.eeworld.com.cn%2F&amp;ecd=1&amp;uc=1920x1080&amp;pis=-1x-1&amp;sr=1920x1080&amp;tcn=1589031518"></script><ins class="dcmads" data-dcm-app-id="" data-dcm-https-only="" data-dcm-placement="N5744.153166EEWORLD/B10672804.262556250" data-dcm-processed="y" data-dcm-rendering-mode="script" data-dcm-resettable-device-id="" style="display: inline-block; width: 300px; height: 250px; text-decoration: none;">
+<script src="https://www.googletagservices.com/dcm/dcmads.js"></script><script src="https://www.googletagservices.com/dcm/impl_v55.js"></script><script src="https://ad.doubleclick.net/ddm/adj/N5744.153166EEWORLD/B10672804.262556250;dc_ver=55.153;sz=300x250;u_sd=1;dc_adk=2945474429;ord=m493le;dc_rfl=0,http%3A%2F%2Fwww.eeworld.com.cn%2F$0;xdt=0;crlt=SUTejF4bdy;sttr=2;prcl=s?"></script><div active_view_class_name="GoogleActiveViewElement" class="GoogleActiveViewElement" data-creative-load-listener="" data-google-av-adk="2945474429" data-google-av-aid="0" data-google-av-btr="" data-google-av-cpmav="" data-google-av-cxn="https://pagead2.googlesyndication.com/pcs/activeview?xai=AKAOjstuEr4LOmcALpqp480_0N4QhV3Zi48sAMAHclL36lk6kLxH3JCVDB9zyoJ0FEXlVl7_6FpkR9JHmA4psYMD_fA&amp;sig=Cg0ArKJSzAFMYnNyACCbEAE" data-google-av-dm="2" data-google-av-immediate="true" data-google-av-itpl="32" data-google-av-metadata="la=0&amp;" data-google-av-naid="1" data-google-av-override="-1" data-google-av-rs="6" data-google-av-slift="" id="DfaVisibilityIdentifier_1799154423"><div class="GoogleCreativeContainerClass" data-creative-load-listener="" id="gcc_XbK2XrOWIoH72gT0loqwBQ"><a href="https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjss1iD_QfLBCh3KILHXoVwF2nyPgwb9hajv5eA8uX346aXHUJv7dGM-QHvtSQjVQcHcvv6NMBrUiFp8PlSuC-gODYpVZ2VuSIaFYjcjElrQDip7jVL9VJLTh-lhla-Ov7CZZuc9ag3E9P4939g&amp;sig=Cg0ArKJSzBtVOnulU873&amp;urlfix=1&amp;adurl=http://www.ti.com.cn/tool/cn/DLPDLCR3310EVM%3FHQS%3Ddlp-pico-null-dlp3310-bs-evm-EEWORLD-cn%26DCM%3Dyes%26dclid%3D%25edclid!" id="img_anch_CPO4kNnzpukCFYG9lgoddIsCVg" target="_blank"><img alt="Advertisement" border="0" height="250" src="https://s0.2mdn.net/5167093/02142020-122357969-DLP_PICO_dlp3310_DLPDLCR3310EVM_Update_300x250_cn_st.gif" width="300"/></a><script data-jc="74" data-jc-version="r20200506" data-jcp-a-id="img_anch_CPO4kNnzpukCFYG9lgoddIsCVg">(function(){/*  Copyright The Closure Library Authors. SPDX-License-Identifier: Apache-2.0 */ var b=/^(?:(?:https?|mailto|ftp):|[^:/?#]*(?:[/?#]|$))/i;var e,f=document.currentScript;e=(f=void 0===f?null:f)&&74==f.getAttribute("data-jc")?f:document.querySelector('[data-jc="74"]');if(null==e)throw Error("JSC not found 74");for(var g={},l=e.attributes,m=l.length-1;0<=m;m--){var n=l[m].name;0===n.indexOf("data-jcp-")&&(g[n.substring(9)]=l[m].value)} document.getElementById(g["a-id"]).addEventListener("mousedown",function(c){var h=c.currentTarget,a=h.querySelector("img[alt]");if(a){var d=h.href;var p=+Math.round(c.clientX-a.offsetLeft);c=+Math.round(c.clientY-a.offsetTop);a=+a.width+"x"+ +a.height;var k=/^(https?:[^:?]+[/]pcs[/]click[^/]+?)(?:&nx[^&]+&ny[^&]+&dim[^&]+)?(&adurl=.*)/.exec(d);d=k?k[1]+("&nx="+p+"&ny="+c+"&dim="+a)+k[2]:d;b.test(d)&&(h.href=d)}});}).call(this);</script></div></div>
+</ins></div> <!-- CMS_首页_Boom box -->
+</div>
+<div class="cp1rb boxm5">
+<h6><span><a href="http://bbs.eeworld.com.cn/activity.php" target="_blank">更多</a></span>社区活动</h6>
+<dl>
+<dt><a href="http://www.eeworld.com.cn/huodong/TI_water_meter_20200603/?sid=102" target="_blank">有奖直播｜TI 新一代 MSP430™ 产品在低成本超声波水表中的方案介绍</a></dt>
+<dd><a href="http://www.eeworld.com.cn/huodong/TI_water_meter_20200603/?sid=102" target="_blank"><img alt="有奖直播｜TI 新一代 MSP430™ 产品在低成本超声波水表中的方案介绍" src="http://bbs.eeworld.com.cn/data/attachment/forum/202005/09/094222oi8gp6l8isdnnz8d.jpg?imageView2/2/w/120"/></a></dd>
+</dl>
+<dl>
+<dt><a href="http://bbs.eeworld.com.cn/huodong/Arrow_Infineon_d_audio_amplifier_solutions_2020_05/?sid=102" target="_blank">英飞凌MERUS™ D类音频解决方案｜【阅读赢好礼，下单送开发板】</a></dt>
+<dd><a href="http://bbs.eeworld.com.cn/huodong/Arrow_Infineon_d_audio_amplifier_solutions_2020_05/?sid=102" target="_blank"><img alt="英飞凌MERUS™ D类音频解决方案｜【阅读赢好礼，下单送开发板】" src="http://bbs.eeworld.com.cn/data/attachment/forum/202005/06/115450hgjptdskj0apab9w.png?imageView2/2/w/120"/></a></dd>
+</dl>
+<dl>
+<dt><a href="http://www.eeworld.com.cn/huodong/TI_C2000_20200520/" target="_blank">有奖直播：TI最新C2000实时控制器，在功率变换应用中实现高性能的成本优化型设计</a></dt>
+<dd><a href="http://www.eeworld.com.cn/huodong/TI_C2000_20200520/" target="_blank"><img alt="有奖直播：TI最新C2000实时控制器，在功率变换应用中实现高性能的成本优化型设计" src="http://bbs.eeworld.com.cn/data/attachment/forum/202004/29/181622dsnnros77oaosslt.jpg?imageView2/2/w/120"/></a></dd>
+</dl>
+<dl>
+<dt><a href="http://bbs.eeworld.com.cn/thread-1120576-1-1.html" target="_blank">和风暖阳，我与春天有个约会！</a></dt>
+<dd><a href="http://bbs.eeworld.com.cn/thread-1120576-1-1.html" target="_blank"><img alt="和风暖阳，我与春天有个约会！" src="http://bbs.eeworld.com.cn/data/attachment/forum/202004/29/173906s1f7v9fqo76qhw9f.jpg?imageView2/2/w/120"/></a></dd>
+</dl>
+</div>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+</section>
+<!-- 第一屏内容盒模型结束 -->
+<!-- 通栏960广告 -->
+<section id="genad">
+<div class="boxwrapmix">
+<div class="boxm2">
+<div class="eeworldadvs" data="5444587"><script type="text/javascript">BAIDU_CLB_fillSlot("5444587");</script><div id="BAIDU_SSP__wrapper_5444587_0"></div><script charset="utf-8" src="https://pos.baidu.com/pchm?psi=77046b676bb8a0381f57213310577416&amp;di=5444587&amp;dri=0&amp;dis=0&amp;dai=0&amp;ps=1083x349&amp;enu=encoding&amp;exps=110011&amp;ant=0&amp;dcb=___adblockplus_&amp;dtm=SSP_JSONP&amp;dvi=0.0&amp;dci=-1&amp;dpt=none&amp;tsr=0&amp;tpr=1589031517122&amp;ti=%E7%94%B5%E5%AD%90%E5%B7%A5%E7%A8%8B%E4%B8%96%E7%95%8C-%E5%88%9B%E6%96%B0%E7%94%B5%E5%AD%90%E8%AE%BE%E8%AE%A1%E4%B9%8B%E5%8E%9F-%E4%B8%AD%E5%9B%BD%E4%B8%93%E4%B8%9A%E7%9A%84%E7%94%B5%E5%AD%90%E5%B7%A5%E7%A8%8B%E9%97%A8%E6%88%B7&amp;ari=2&amp;ver=0506&amp;dbv=2&amp;drs=1&amp;pcs=1903x1080&amp;pss=1903x1083&amp;cfv=0&amp;cpl=0&amp;chi=50&amp;cce=true&amp;cec=UTF-8&amp;tlm=1589031518&amp;prot=2&amp;rw=1080&amp;ltu=http%3A%2F%2Fwww.eeworld.com.cn%2F&amp;ecd=1&amp;uc=1920x1080&amp;pis=-1x-1&amp;sr=1920x1080&amp;tcn=1589031519"></script></div> <!-- CMS_首页_H-L2 -->
+</div>
+<div class="clearfix"></div>
+</div>
+</section>
+<!-- 通栏960广告结束 -->
+<!-- 第二屏内容盒模型 -->
+<section id="contentpart1">
+<div class="boxwrapmix">
+<div class="cp2box">
+<!-- 第二区盒模型区域左侧 -->
+<div class="cp2box_l">
+<div class="clearfix" style="margin: 10px 0 20px;">
+<div class="le-bar fl" style="float: left;">
+<div class="dwc_mlisttit" id="list" style="list-style: none;">
+<ol class="slider4">
+<li class="slide cur">
+<a data-id="1" href="//news.eeworld.com.cn/LED" id="tablin1_8" onclick="clitabs(8,6);return false;">LED</a><span>|</span>
+</li>
+<li class="slide">
+<a data-id="2" href="//news.eeworld.com.cn/DSP" id="tablin2_8" onclick="clitabs(8,7);return false;">DSP</a><span>|</span>
+</li>
+<li class="slide">
+<a data-id="3" href="//news.eeworld.com.cn/FPGA" id="tablin3_8" onclick="clitabs(8,8);return false;">FPGA</a><span>|</span>
+</li>
+<li class="slide">
+<a data-id="4" href="//news.eeworld.com.cn/qrs/" id="tablin4_8" onclick="clitabs(8,1);return false;">嵌入式</a><span>|</span>
+</li>
+<li class="slide">
+<a data-id="5" href="//news.eeworld.com.cn/mndz" id="tablin5_8" onclick="clitabs(8,2);return false;">模拟电子</a><span>|</span>
+</li>
+<li class="slide">
+<a data-id="6" href="//news.eeworld.com.cn/mcu" id="tablin6_8" onclick="clitabs(8,3);return false;">单片机</a><span>|</span>
+</li>
+<li class="slide">
+<a data-id="7" href="//news.eeworld.com.cn/dygl" id="tablin7_8" onclick="clitabs(8,4);return false;">电源管理</a><span>|</span>
+</li>
+<li class="slide">
+<a data-id="8" href="//news.eeworld.com.cn/MEMS" id="tablin8_8" onclick="clitabs(8,5);return false;">传感器</a><span>|</span>
+</li>
+<li class="slide">
+<a data-id="9" href="//news.eeworld.com.cn/manufacture" id="tablin9_8" onclick="clitabs(8,9);return false;">半导体</a><span>|</span>
+</li>
+</ol>
+<div>
+<div class="tab_cent" id="tabcontent1_8">
+<ul>
+<li><a href="http://news.eeworld.com.cn/LED/ic496452.html" target="_blank" title="OLED有新对手了，低成本 高亮度优势的OLCD亮相">OLED有新对手了，低成本 高亮度优势的OLCD亮相</a></li>
+<li><a href="http://news.eeworld.com.cn/LED/ic496093.html" target="_blank" title="夏普再度为三星供应液晶面板，但产量少的可怜">夏普再度为三星供应液晶面板，但产量少的可怜</a></li>
+<li><a href="http://news.eeworld.com.cn/LED/ic495813.html" target="_blank" title="疫情或让全球新型显示产业链重构">疫情或让全球新型显示产业链重构</a></li>
+<li><a href="http://news.eeworld.com.cn/LED/ic495669.html" target="_blank" title="扩大Micro LED产能，雷曼光电将募集3.8亿资金">扩大Micro LED产能，雷曼光电将募集3.8亿资金</a></li>
+<li><a href="http://news.eeworld.com.cn/LED/ic495573.html" target="_blank" title="比头发丝还细？赛绚 Flex引领可折叠玻璃革命">比头发丝还细？赛绚 Flex引领可折叠玻璃革命</a></li>
+</ul>
+</div>
+<div class="tab_cent" id="tabcontent2_8" style="display: none;">
+<ul>
+<li><a href="http://news.eeworld.com.cn/DSP/ic478794.html" target="_blank" title="AMD多次公开确认Zen4架构正在设计之中 很大概率会推进到台积">AMD多次公开确认Zen4架构正在设计之中 很大概率会推进到台积</a></li>
+<li><a href="http://news.eeworld.com.cn/DSP/ic478793.html" target="_blank" title="IntelQ3季度总营收创半年来新高">IntelQ3季度总营收创半年来新高</a></li>
+<li><a href="http://news.eeworld.com.cn/DSP/ic478792.html" target="_blank" title="Intel第二代10nm Tiger LakeU系列或超越AMD桌面高端锐龙9 3900X">Intel第二代10nm Tiger LakeU系列或超越AMD桌面高端锐龙9 3900X</a></li>
+<li><a href="http://news.eeworld.com.cn/DSP/ic478791.html" target="_blank" title="微星宣布主板BIOS升级计划 总体速度提升了大概20%左右">微星宣布主板BIOS升级计划 总体速度提升了大概20%左右</a></li>
+<li><a href="http://news.eeworld.com.cn/DSP/ic478790.html" target="_blank" title="英特尔推出全新支持LPDDR5的Tiger Lake处理器">英特尔推出全新支持LPDDR5的Tiger Lake处理器</a></li>
+</ul>
+</div>
+<div class="tab_cent" id="tabcontent3_8" style="display: none;">
+<ul>
+<li><a href="http://news.eeworld.com.cn/FPGA/ic496141.html" target="_blank" title="简化AI与图像处理应用，Microchip Hello FPGA套件贸泽开售">简化AI与图像处理应用，Microchip Hello FPGA套件贸泽开售</a></li>
+<li><a href="http://news.eeworld.com.cn/FPGA/ic495981.html" target="_blank" title="片上网络技术的发展及其给高端FPGA带来的优势">片上网络技术的发展及其给高端FPGA带来的优势</a></li>
+<li><a href="http://news.eeworld.com.cn/FPGA/ic495180.html" target="_blank" title="紫光同创、ALINX强强联合，发布国产入门级FPGA开发套件">紫光同创、ALINX强强联合，发布国产入门级FPGA开发套件</a></li>
+<li><a href="http://news.eeworld.com.cn/FPGA/ic494965.html" target="_blank" title="加速边缘服务器发展，BittWare 新型 TeraBox FPGA 问市">加速边缘服务器发展，BittWare 新型 TeraBox FPGA 问市</a></li>
+<li><a href="http://news.eeworld.com.cn/FPGA/ic494935.html" target="_blank" title="高云半导体安全FPGA系列推进嵌入式产品安全开发">高云半导体安全FPGA系列推进嵌入式产品安全开发</a></li>
+</ul>
+</div>
+<div class="tab_cent" id="tabcontent4_8" style="display: none;">
+<ul>
+<li><a href="http://news.eeworld.com.cn/qrs/ic496442.html" target="_blank" title="我提出新型无线充电芯片架构，让芯片集成度再上一个台阶">我提出新型无线充电芯片架构，让芯片集成度再上一个台阶</a></li>
+<li><a href="http://news.eeworld.com.cn/qrs/ic496416.html" target="_blank" title="大昌华嘉结合LDS和Formulaction合作拓展稳定性分析技术">大昌华嘉结合LDS和Formulaction合作拓展稳定性分析技术</a></li>
+<li><a href="http://news.eeworld.com.cn/qrs/ic496415.html" target="_blank" title="注意力机制想要觉醒AI，需分几步？">注意力机制想要觉醒AI，需分几步？</a></li>
+<li><a href="http://news.eeworld.com.cn/qrs/ic496414.html" target="_blank" title="中芯国际申报全球最大8英寸IC生产线，月产能可达15万片">中芯国际申报全球最大8英寸IC生产线，月产能可达15万片</a></li>
+<li><a href="http://news.eeworld.com.cn/qrs/ic496413.html" target="_blank" title="燧原科技努力打造国内芯片领域强有力供应，已完成B轮融资">燧原科技努力打造国内芯片领域强有力供应，已完成B轮融资</a></li>
+</ul>
+</div>
+<div class="tab_cent" id="tabcontent5_8" style="display: none;">
+<ul>
+<li><a href="http://news.eeworld.com.cn/mndz/ic495182.html" target="_blank" title="开关降压-升压控制器，具备直通功能，可消除开关噪声">开关降压-升压控制器，具备直通功能，可消除开关噪声</a></li>
+<li><a href="http://news.eeworld.com.cn/mndz/ic494939.html" target="_blank" title="高性能模拟前端信号链解决方案如何助力医疗超声系统发展">高性能模拟前端信号链解决方案如何助力医疗超声系统发展</a></li>
+<li><a href="http://news.eeworld.com.cn/mndz/ic494849.html" target="_blank" title="EmStat Pico：支持软件运行的嵌入式小型电化学恒电势器系统化">EmStat Pico：支持软件运行的嵌入式小型电化学恒电势器系统化</a></li>
+<li><a href="http://news.eeworld.com.cn/mndz/ic494355.html" target="_blank" title="您真的能通过运算放大器实现ppm精度吗？">您真的能通过运算放大器实现ppm精度吗？</a></li>
+<li><a href="http://news.eeworld.com.cn/mndz/ic493779.html" target="_blank" title="集成式收发器支持实现小型相控阵雷达平台">集成式收发器支持实现小型相控阵雷达平台</a></li>
+</ul>
+</div>
+<div class="tab_cent" id="tabcontent6_8" style="display: none;">
+<ul>
+<li><a href="http://news.eeworld.com.cn/mcu/ic496439.html" target="_blank" title="MSP430 大型数组 上电不启动">MSP430 大型数组 上电不启动</a></li>
+<li><a href="http://news.eeworld.com.cn/mcu/ic496438.html" target="_blank" title="MSP430单片机写Info Memory">MSP430单片机写Info Memory</a></li>
+<li><a href="http://news.eeworld.com.cn/mcu/ic496437.html" target="_blank" title="关于MSP430F5438程序升级介绍--防迷路">关于MSP430F5438程序升级介绍--防迷路</a></li>
+<li><a href="http://news.eeworld.com.cn/mcu/ic496436.html" target="_blank" title="MSP430 flash 操作">MSP430 flash 操作</a></li>
+<li><a href="http://news.eeworld.com.cn/mcu/ic496435.html" target="_blank" title="MSP430读写片内FLASH保存数据">MSP430读写片内FLASH保存数据</a></li>
+</ul>
+</div>
+<div class="tab_cent" id="tabcontent7_8" style="display: none;">
+<ul>
+<li><a href="http://news.eeworld.com.cn/dygl/ic496387.html" target="_blank" title="电力革命引发锂离子电池不断进步">电力革命引发锂离子电池不断进步</a></li>
+<li><a href="http://news.eeworld.com.cn/dygl/ic496254.html" target="_blank" title="ST 推出首款航天级可配置集成限流器，降低BOM成本">ST 推出首款航天级可配置集成限流器，降低BOM成本</a></li>
+<li><a href="http://news.eeworld.com.cn/dygl/ic496113.html" target="_blank" title="提高电源转换效率，延长电池寿命，Silicon Labs 全新PMIC问市">提高电源转换效率，延长电池寿命，Silicon Labs 全新PMIC问市</a></li>
+<li><a href="http://news.eeworld.com.cn/dygl/ic496109.html" target="_blank" title="5G+新能源+汽车电子，MLCC再掀涨价潮">5G+新能源+汽车电子，MLCC再掀涨价潮</a></li>
+<li><a href="http://news.eeworld.com.cn/dygl/ic496083.html" target="_blank" title="Advanced Energy 的UltraVolt LE 系列产品又添新武器">Advanced Energy 的UltraVolt LE 系列产品又添新武器</a></li>
+</ul>
+</div>
+<div class="tab_cent" id="tabcontent8_8" style="display: none;">
+<ul>
+<li><a href="http://news.eeworld.com.cn/MEMS/ic496373.html" target="_blank" title="Teledyne e2v 的Emerald图像传感器又添新产品">Teledyne e2v 的Emerald图像传感器又添新产品</a></li>
+<li><a href="http://news.eeworld.com.cn/MEMS/ic496345.html" target="_blank" title="Sony第四代图像传感器有哪些黑科技">Sony第四代图像传感器有哪些黑科技</a></li>
+<li><a href="http://news.eeworld.com.cn/MEMS/ic496274.html" target="_blank" title="阿尔卑斯阿尔派联手Sensirion扩大环境传感器业务">阿尔卑斯阿尔派联手Sensirion扩大环境传感器业务</a></li>
+<li><a href="http://news.eeworld.com.cn/MEMS/ic496268.html" target="_blank" title="瑞萨电子全新精密温度传感器问市，符合JEDEC标准，适用DDR5">瑞萨电子全新精密温度传感器问市，符合JEDEC标准，适用DDR5</a></li>
+<li><a href="http://news.eeworld.com.cn/MEMS/ic496147.html" target="_blank" title="如何为温度传感器选择正确的热敏电阻">如何为温度传感器选择正确的热敏电阻</a></li>
+</ul>
+</div>
+<div class="tab_cent" id="tabcontent9_8" style="display: none;">
+<ul>
+<li><a href="http://news.eeworld.com.cn/manufacture/ic496503.html" target="_blank" title="技术领先的台积电在2021年将更上一层楼">技术领先的台积电在2021年将更上一层楼</a></li>
+<li><a href="http://news.eeworld.com.cn/manufacture/ic496499.html" target="_blank" title="贸泽电子连续第三年荣获Neutrik年度分销商大奖">贸泽电子连续第三年荣获Neutrik年度分销商大奖</a></li>
+<li><a href="http://news.eeworld.com.cn/manufacture/ic496448.html" target="_blank" title="中美AI之战：将没有赢家">中美AI之战：将没有赢家</a></li>
+<li><a href="http://news.eeworld.com.cn/manufacture/ic496446.html" target="_blank" title="又一家PCB企业未能躲过疫情的暴虐">又一家PCB企业未能躲过疫情的暴虐</a></li>
+<li><a href="http://news.eeworld.com.cn/manufacture/ic496379.html" target="_blank" title="一文看懂功率半导体产业">一文看懂功率半导体产业</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="rig-bar fr" style="float: right;">
+<div class="dwc_mlisttit" id="list" style="list-style: none;">
+<ol class="slider4">
+<li class="slide cur">
+<a data-id="1" href="//news.eeworld.com.cn/gykz" id="tablin1_9" onclick="clitabs(9,1);return false;">工业控制</a><span>|</span>
+</li>
+<li class="slide">
+<a data-id="2" href="//news.eeworld.com.cn/IoT" id="tablin2_9" onclick="clitabs(9,2);return false;">物联网</a><span>|</span>
+</li>
+<li class="slide">
+<a data-id="3" href="//news.eeworld.com.cn/qcdz" id="tablin3_9" onclick="clitabs(9,3);return false;">汽车电子</a><span>|</span>
+</li>
+<li class="slide">
+<a data-id="4" href="//news.eeworld.com.cn/wltx" id="tablin4_9" onclick="clitabs(9,4);return false;">网络通信</a><span>|</span>
+</li>
+<li class="slide">
+<a data-id="5" href="//news.eeworld.com.cn/medical_electronics" id="tablin5_9" onclick="clitabs(9,5);return false;">医疗电子</a><span>|</span>
+</li>
+<li class="slide">
+<a data-id="6" href="//news.eeworld.com.cn/xfdz" id="tablin6_9" onclick="clitabs(9,6);return false;">手机便携</a><span>|</span>
+</li>
+<li class="slide">
+<a data-id="7" href="//news.eeworld.com.cn/Test_and_measurement" id="tablin7_9" onclick="clitabs(9,7);return false;">测试测量</a><span>|</span>
+</li>
+<li class="slide">
+<a data-id="8" href="//news.eeworld.com.cn/afdz" id="tablin8_9" onclick="clitabs(9,8);return false;">安防电子</a><span>|</span>
+</li>
+<li class="slide">
+<a data-id="9" href="//news.eeworld.com.cn/szds" id="tablin9_9" onclick="clitabs(9,9);return false;">家用电子</a><span>|</span>
+</li>
+</ol>
+<div>
+<div class="tab_cent" id="tabcontent1_9">
+<ul>
+<li><a href="http://news.eeworld.com.cn/gykz/ic495837.html" target="_blank" title="Trinamic全新三相BLDC/PMSM电池供电电机高效驱动器问市">Trinamic全新三相BLDC/PMSM电池供电电机高效驱动器问市</a></li>
+<li><a href="http://news.eeworld.com.cn/gykz/ic495731.html" target="_blank" title="Qorvo 为各种I/O BLDC 电机应用提供紧凑型解决方案">Qorvo 为各种I/O BLDC 电机应用提供紧凑型解决方案</a></li>
+<li><a href="http://news.eeworld.com.cn/gykz/ic495726.html" target="_blank" title="安森美扩充应用于工业电机驱动的产品阵容">安森美扩充应用于工业电机驱动的产品阵容</a></li>
+<li><a href="http://news.eeworld.com.cn/gykz/ic495587.html" target="_blank" title="《慧心智造》白皮书，带您走进智能工厂新旅程">《慧心智造》白皮书，带您走进智能工厂新旅程</a></li>
+<li><a href="http://news.eeworld.com.cn/gykz/ic495585.html" target="_blank" title="海克斯康增材制造设计仿真方案 聚焦虚拟制造仿真数字孪生">海克斯康增材制造设计仿真方案 聚焦虚拟制造仿真数字孪生</a></li>
+</ul>
+</div>
+<div class="tab_cent" id="tabcontent2_9" style="display: none;">
+<ul>
+<li><a href="http://news.eeworld.com.cn/IoT/ic496505.html" target="_blank" title="IoT如何帮助我们抑制病毒的肆虐">IoT如何帮助我们抑制病毒的肆虐</a></li>
+<li><a href="http://news.eeworld.com.cn/IoT/ic496501.html" target="_blank" title="提升医疗成像，Xilinx AI能有多大本事？">提升医疗成像，Xilinx AI能有多大本事？</a></li>
+<li><a href="http://news.eeworld.com.cn/IoT/ic496497.html" target="_blank" title="研华紧凑强固型单板电脑让巡检机器人更加聪明">研华紧凑强固型单板电脑让巡检机器人更加聪明</a></li>
+<li><a href="http://news.eeworld.com.cn/IoT/ic496462.html" target="_blank" title="全球疫情下“走出去”的中国教育行业如何保证教育连续性">全球疫情下“走出去”的中国教育行业如何保证教育连续性</a></li>
+<li><a href="http://news.eeworld.com.cn/IoT/ic496460.html" target="_blank" title="浩亭全面服务客户的数字化进程">浩亭全面服务客户的数字化进程</a></li>
+</ul>
+</div>
+<div class="tab_cent" id="tabcontent3_9" style="display: none;">
+<ul>
+<li><a href="http://news.eeworld.com.cn/qcdz/ic496525.html" target="_blank" title="华为组建5G汽车生态联盟">华为组建5G汽车生态联盟</a></li>
+<li><a href="http://news.eeworld.com.cn/qcdz/ic496524.html" target="_blank" title="主动安全配置大汇总 究竟哪些有用哪些是鸡肋？">主动安全配置大汇总 究竟哪些有用哪些是鸡肋？</a></li>
+<li><a href="http://news.eeworld.com.cn/qcdz/ic496523.html" target="_blank" title="比亚迪汉的“野心”，磷酸铁锂能否成为电池发展过程的拐点？">比亚迪汉的“野心”，磷酸铁锂能否成为电池发展过程的拐点？</a></li>
+<li><a href="http://news.eeworld.com.cn/qcdz/ic496522.html" target="_blank" title="动力电池梯次利用/可同时为3辆车充电 奥迪发布集装箱充电站">动力电池梯次利用/可同时为3辆车充电 奥迪发布集装箱充电站</a></li>
+<li><a href="http://news.eeworld.com.cn/qcdz/ic496521.html" target="_blank" title="宁德时代被LG化学超越 全球动力电池“头把交椅”Q1易主">宁德时代被LG化学超越 全球动力电池“头把交椅”Q1易主</a></li>
+</ul>
+</div>
+<div class="tab_cent" id="tabcontent4_9" style="display: none;">
+<ul>
+<li><a href="http://news.eeworld.com.cn/wltx/ic496507.html" target="_blank" title="英国两大移动运营商合二为一">英国两大移动运营商合二为一</a></li>
+<li><a href="http://news.eeworld.com.cn/wltx/ic496440.html" target="_blank" title="美拟与华为展开5G合作，是回心转意还是另有它意？">美拟与华为展开5G合作，是回心转意还是另有它意？</a></li>
+<li><a href="http://news.eeworld.com.cn/wltx/ic496377.html" target="_blank" title="通信网络已是刚需业务，VIAVI的服务已在路上">通信网络已是刚需业务，VIAVI的服务已在路上</a></li>
+<li><a href="http://news.eeworld.com.cn/wltx/ic496364.html" target="_blank" title="更安全的电缆选择,技术和法规领域的进步改善了消防安全">更安全的电缆选择,技术和法规领域的进步改善了消防安全</a></li>
+<li><a href="http://news.eeworld.com.cn/wltx/ic496341.html" target="_blank" title="首批商用5G国家网速一览：Wi-Fi已经不需要了？">首批商用5G国家网速一览：Wi-Fi已经不需要了？</a></li>
+</ul>
+</div>
+<div class="tab_cent" id="tabcontent5_9" style="display: none;">
+<ul>
+<li><a href="http://news.eeworld.com.cn/medical_electronics/ic495565.html" target="_blank" title="助力医疗器械制造企业紧密合作，2020Medtec注册系统正式开启">助力医疗器械制造企业紧密合作，2020Medtec注册系统正式开启</a></li>
+<li><a href="http://news.eeworld.com.cn/medical_electronics/ic494959.html" target="_blank" title="疫情之下，TDK电子确保医疗设备通过严格的EMC标准">疫情之下，TDK电子确保医疗设备通过严格的EMC标准</a></li>
+<li><a href="http://news.eeworld.com.cn/medical_electronics/ic494148.html" target="_blank" title="为什么治疗新冠肺炎中呼吸机必不可少？">为什么治疗新冠肺炎中呼吸机必不可少？</a></li>
+<li><a href="http://news.eeworld.com.cn/medical_electronics/ic494119.html" target="_blank" title="2020 Medtec中国展：法规、质量先行，创新技术护航">2020 Medtec中国展：法规、质量先行，创新技术护航</a></li>
+<li><a href="http://news.eeworld.com.cn/medical_electronics/ic493919.html" target="_blank" title="Cobham测序用ASIC因冠状病毒影响需求增长30%">Cobham测序用ASIC因冠状病毒影响需求增长30%</a></li>
+</ul>
+</div>
+<div class="tab_cent" id="tabcontent6_9" style="display: none;">
+<ul>
+<li><a href="http://news.eeworld.com.cn/xfdz/ic496494.html" target="_blank" title="荣耀X10内部结构图解密：大面积石墨烯散热加持">荣耀X10内部结构图解密：大面积石墨烯散热加持</a></li>
+<li><a href="http://news.eeworld.com.cn/xfdz/ic496493.html" target="_blank" title="一加8美成功完成T-Mobile SA 5G网络连接">一加8美成功完成T-Mobile SA 5G网络连接</a></li>
+<li><a href="http://news.eeworld.com.cn/xfdz/ic496492.html" target="_blank" title="骁龙768G规格：大核GPU全面升级 性能涨10%">骁龙768G规格：大核GPU全面升级 性能涨10%</a></li>
+<li><a href="http://news.eeworld.com.cn/xfdz/ic496491.html" target="_blank" title="三星S21：搭载骁龙875或Exynos 1000 5G Soc">三星S21：搭载骁龙875或Exynos 1000 5G Soc</a></li>
+<li><a href="http://news.eeworld.com.cn/xfdz/ic496490.html" target="_blank" title="苹果的高端头戴耳机的 传闻汇总">苹果的高端头戴耳机的 传闻汇总</a></li>
+</ul>
+</div>
+<div class="tab_cent" id="tabcontent7_9" style="display: none;">
+<ul>
+<li><a href="http://news.eeworld.com.cn/Test_and_measurement/ic496360.html" target="_blank" title="RIGOL全新“R标”背后的故事……">RIGOL全新“R标”背后的故事……</a></li>
+<li><a href="http://news.eeworld.com.cn/Test_and_measurement/ic496264.html" target="_blank" title="e络盟推出具有自动测量功能的泰克新款数字存储示波器 ">e络盟推出具有自动测量功能的泰克新款数字存储示波器 </a></li>
+<li><a href="http://news.eeworld.com.cn/Test_and_measurement/ic495975.html" target="_blank" title="RIGOL教你3分钟玩转示波器的伯德图功能">RIGOL教你3分钟玩转示波器的伯德图功能</a></li>
+<li><a href="http://news.eeworld.com.cn/Test_and_measurement/ic495957.html" target="_blank" title="体积更小，性能更强，Microchip全新相位噪声分析仪问市">体积更小，性能更强，Microchip全新相位噪声分析仪问市</a></li>
+<li><a href="http://news.eeworld.com.cn/Test_and_measurement/ic495833.html" target="_blank" title="泰克全新10μs脉冲/SMU仪器问市，首次采用消除脉冲调谐技术">泰克全新10μs脉冲/SMU仪器问市，首次采用消除脉冲调谐技术</a></li>
+</ul>
+</div>
+<div class="tab_cent" id="tabcontent8_9" style="display: none;">
+<ul>
+<li><a href="http://news.eeworld.com.cn/afdz/ic480366.html" target="_blank" title="英飞凌开发全新eID安全解决方案SECORA ID">英飞凌开发全新eID安全解决方案SECORA ID</a></li>
+<li><a href="http://news.eeworld.com.cn/afdz/ic480137.html" target="_blank" title="海康威视两高管被调查，市值跌超百亿！">海康威视两高管被调查，市值跌超百亿！</a></li>
+<li><a href="http://news.eeworld.com.cn/afdz/ic471893.html" target="_blank" title="Arcturus采用NXP边缘处理器保障公共安全">Arcturus采用NXP边缘处理器保障公共安全</a></li>
+<li><a href="http://news.eeworld.com.cn/afdz/ic470474.html" target="_blank" title="思特威科技联手EMS Drive，助力CMOS图像传感芯片级防抖技术发">思特威科技联手EMS Drive，助力CMOS图像传感芯片级防抖技术发</a></li>
+<li><a href="http://news.eeworld.com.cn/afdz/ic469755.html" target="_blank" title="Verint再次获得IVA供应商整体满意度最高得分">Verint再次获得IVA供应商整体满意度最高得分</a></li>
+</ul>
+</div>
+<div class="tab_cent" id="tabcontent9_9" style="display: none;">
+<ul>
+<li><a href="http://news.eeworld.com.cn/szds/ic496495.html" target="_blank" title="疫情期间笔记本电脑需求反弹，但将会持续多久？">疫情期间笔记本电脑需求反弹，但将会持续多久？</a></li>
+<li><a href="http://news.eeworld.com.cn/szds/ic496366.html" target="_blank" title="研究发现，PC 现代化对于未来工作至关重要">研究发现，PC 现代化对于未来工作至关重要</a></li>
+<li><a href="http://news.eeworld.com.cn/szds/ic496115.html" target="_blank" title="平板电脑市场在COVID-19影响下表现低迷">平板电脑市场在COVID-19影响下表现低迷</a></li>
+<li><a href="http://news.eeworld.com.cn/szds/ic495733.html" target="_blank" title="满足新零售商用多场景需求，优派VG20系列显示器问市">满足新零售商用多场景需求，优派VG20系列显示器问市</a></li>
+<li><a href="http://news.eeworld.com.cn/szds/ic495440.html" target="_blank" title="微软全新Surface Book 3和Go 2即将面世">微软全新Surface Book 3和Go 2即将面世</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cp2_bnav">
+<h3><a class="newslink" href="/ic_news/0/1">新闻</a></h3>
+<ul>
+<li><a data="286" href="/ic_news/286/1">产业</a>|</li>
+<li><a data="287" href="/ic_news/287/1">技术</a>|</li>
+<li><a data="288" href="/ic_news/288/1">应用</a></li>
+</ul>
+</div>
+<div class="news_content" data="496455,496453,496451,496449,496447,496445,496443,496441,496383,496380,496378,496374,496367">
+<div class="cp2liststy">
+<h4><a href="http://news.eeworld.com.cn/wltx/ic496507.html" target="_blank" title="英国两大移动运营商合二为一">英国两大移动运营商合二为一</a></h4>
+<div class="newslnopic">
+<p>据国外媒体报道，英国移动运营商O2和电信服务提供商Virgin Media将合并，成为英国最大的娱乐和电信公司之一。今日，Virgin Media母公司Li   ...<i><a href="http://news.eeworld.com.cn/wltx/ic496507.html" target="_blank">[详细]</a></i></p>
+</div>
+<div class="clearfix"></div>
+<em>发布时间：2020-05-09</em>
+<span>
+<a href="//tags.eeworld.com.cn/tags/移动运营商" target="_blank">移动运营商</a>|									   										 <a href="//tags.eeworld.com.cn/tags/O2" target="_blank">O2</a> </span>
+<div class="clearfix"></div>
+</div>
+<div class="cp2liststy">
+<h4><a href="http://news.eeworld.com.cn/IoT/ic496505.html" target="_blank" title="IoT如何帮助我们抑制病毒的肆虐">IoT如何帮助我们抑制病毒的肆虐</a></h4>
+<div class="newslpic"><a href="http://news.eeworld.com.cn/IoT/ic496505.html" target="_blank" title="IoT如何帮助我们抑制病毒的肆虐"><img alt="IoT如何帮助我们抑制病毒的肆虐" height="88" src="http://6.eewimg.cn/news/uploadfile/2020/0509/1589016960382181.png?imageView2/2/w/140" width="140"/></a></div>
+<div class="newsltxt"><p>翻译自——eetimes联合国可持续发展目标之一是做好预防传染病传播的准备。在Covid-19大流行期间，这一目标从未像现在这样重要。技术在战胜   ...<i><a href="http://news.eeworld.com.cn/IoT/ic496505.html">[详细]</a></i></p></div>
+<div class="clearfix"></div>
+<em>发布时间：2020-05-09</em>
+<span>
+<a href="//tags.eeworld.com.cn/tags/IoT" target="_blank">IoT</a>|									   										 <a href="//tags.eeworld.com.cn/tags/疫情" target="_blank">疫情</a> </span>
+<div class="clearfix"></div>
+</div>
+<div class="cp2liststy">
+<h4><a href="http://news.eeworld.com.cn/manufacture/ic496503.html" target="_blank" title="技术领先的台积电在2021年将更上一层楼">技术领先的台积电在2021年将更上一层楼</a></h4>
+<div class="newslpic"><a href="http://news.eeworld.com.cn/manufacture/ic496503.html" target="_blank" title="技术领先的台积电在2021年将更上一层楼"><img alt="技术领先的台积电在2021年将更上一层楼" height="88" src="http://6.eewimg.cn/news/uploadfile/2020/0509/1589016839729265.png?imageView2/2/w/140" width="140"/></a></div>
+<div class="newsltxt"><p>翻译自——eetimesWedbush Securities高级副总裁Matt Bryson表示，随着AMD等无晶圆厂企业从英特尔手中夺取市场份额，台积电(TSMC)有望从   ...<i><a href="http://news.eeworld.com.cn/manufacture/ic496503.html">[详细]</a></i></p></div>
+<div class="clearfix"></div>
+<em>发布时间：2020-05-09</em>
+<span>
+<a href="//tags.eeworld.com.cn/tags/台积电" target="_blank">台积电</a>|									   										 <a href="//tags.eeworld.com.cn/tags/英特尔" target="_blank">英特尔</a>|									   										 <a href="//tags.eeworld.com.cn/tags/三星" target="_blank">三星</a> </span>
+<div class="clearfix"></div>
+</div>
+<div class="eeworldadvs" data="5444940"><script type="text/javascript">BAIDU_CLB_fillSlot("5444940");</script><div id="BAIDU_SSP__wrapper_5444940_0"></div><script charset="utf-8" src="https://pos.baidu.com/pchm?psi=77046b676bb8a0381f57213310577416&amp;di=5444940&amp;dri=0&amp;dis=0&amp;dai=0&amp;ps=1955x349&amp;enu=encoding&amp;exps=110011&amp;ant=0&amp;dcb=___adblockplus_&amp;dtm=SSP_JSONP&amp;dvi=0.0&amp;dci=-1&amp;dpt=none&amp;tsr=0&amp;tpr=1589031517122&amp;ti=%E7%94%B5%E5%AD%90%E5%B7%A5%E7%A8%8B%E4%B8%96%E7%95%8C-%E5%88%9B%E6%96%B0%E7%94%B5%E5%AD%90%E8%AE%BE%E8%AE%A1%E4%B9%8B%E5%8E%9F-%E4%B8%AD%E5%9B%BD%E4%B8%93%E4%B8%9A%E7%9A%84%E7%94%B5%E5%AD%90%E5%B7%A5%E7%A8%8B%E9%97%A8%E6%88%B7&amp;ari=2&amp;ver=0506&amp;dbv=2&amp;drs=1&amp;pcs=1903x1080&amp;pss=1903x1955&amp;cfv=0&amp;cpl=0&amp;chi=50&amp;cce=true&amp;cec=UTF-8&amp;tlm=1589031518&amp;prot=2&amp;rw=1080&amp;ltu=http%3A%2F%2Fwww.eeworld.com.cn%2F&amp;ecd=1&amp;uc=1920x1080&amp;pis=-1x-1&amp;sr=1920x1080&amp;tcn=1589031519"></script></div></div></div></div></div></section></div><iframe height="0" src="//tpc.googlesyndication.com/sodar/Enqz_20U.html" style="display: none;" width="0"></iframe><iframe height="0" src="//tpc.googlesyndication.com/sodar/Enqz_20U.html" style="display: none;" width="0"></iframe><iframe height="0" src="//tpc.googlesyndication.com/sodar/Enqz_20U.html" style="display: none;" width="0"></iframe></body></html>

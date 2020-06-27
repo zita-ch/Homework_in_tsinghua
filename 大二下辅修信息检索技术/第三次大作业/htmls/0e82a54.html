@@ -1,0 +1,989 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<title>发布IC采购信息--维库电子市场网</title>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<link href="http://img3.dzsc.com/css/web/common/base.css" rel="stylesheet" type="text/css"/>
+<link href="http://img3.dzsc.com/css/web/common/top.css" rel="stylesheet" type="text/css"/>
+<link href="http://img3.dzsc.com/css/web/ic/fabuIC.css" rel="stylesheet" type="text/css"/>
+<link href="/js/jqueryplus/uploadify/uploadify3.2.1/uploadify.css" rel="stylesheet" type="text/css"/>
+<script src="http://img3.dzsc.com/js/jquery/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="http://img3.dzsc.com/js/jqueryplus/My97DatePicker/WdatePicker.js" type="text/javascript"></script><link href="http://img3.dzsc.com/js/jqueryplus/My97DatePicker/skin/WdatePicker.css" rel="stylesheet" type="text/css"/>
+<script src="/js/jqueryplus/uploadify/uploadify3.2.1/jquery.uploadify.min.js" type="text/javascript"></script>
+<script src="/js/common/uploadimg.js" type="text/javascript"></script>
+<style type="text/css">
+        body, td, th {
+            font-family: "Microsoft Yahei", "微软雅黑", arial, "宋体", sans-serif;
+        }
+        .red{color:red;}
+    </style>
+<script type="text/javascript">
+       $(document).ready(function () {
+           for (var i = 0; i < 4;i++)
+               uploadImage.initSingleUpImg('fileimg' + i,'preview'+i, 'imglist' + i, 'Web', 'http://img3.dzsc.com/img/common/upload.jpg', '0s7434', 'b011bc94', 144, 124,true);
+           
+        });        
+    </script>
+</head>
+<body>
+<!--顶部-->
+<div class="top-nav">
+<div class="w1190 clearfix">
+<ul class="fl">
+<li class="top-navmenu top-iphone">
+<div class="top-navmenutitle"><i class="ico-iphone"></i>手机端<i class="ico-iphone-jt"></i></div>
+<div class="top-iphone-ewm clearfix">
+<dl>
+<dt><img src="http://img3.dzsc.com/img/web/common/iphoneewm.jpg" width="100"/></dt>
+<dd>手机版</dd>
+</dl>
+<dl>
+<dt><img src="http://img3.dzsc.com/img/web/common/dzscapp.png" width="100"/></dt>
+<dd>Android APP</dd>
+</dl>
+<dl>
+<dt><img src="http://img3.dzsc.com/img/web/common/gzh.jpg" width="100"/></dt>
+<dd>微信公众号</dd>
+</dl>
+</div>
+</li>
+<li class="top-line">|</li>
+<li class="login">
+<div class="login-out clearfix">
+<div class="fl" id="topuserinfo">
+<p class="fl">你好，欢迎来到维库电子市场网</p>
+<a class="blue fl" href="/member/login.aspx?returnurl=http%3a%2f%2fwww.dzsc.com%2fic%2fbuystockadd.aspx" rel="nofollow" target="_self">登录</a>
+<span class="fl">|</span>
+<a class="blue fl" href="http://www.dzsc.com/member/reg.aspx" rel="nofollow" target="_self">免费注册</a>
+</div>
+</div>
+</li>
+</ul>
+<ul class="fr">
+<li class="top-navmenu">
+<a class="gray" href="/cart/" rel="nofollow" target="_self"><i class="ico-gwc"></i>购物车</a>
+</li>
+<li class="top-line">|</li>
+<li class="top-navmenu">
+<a class="gray" href="http://www.dzsc.com/" target="_self">网站首页</a>
+</li>
+<li class="top-line">|</li>
+<li class="top-navmenu">
+<div class="top-navmenutitle"><a class="gray" href="javascript:;" rel="nofollow">采购商服务<i class="ico-topxjt"></i></a></div>
+<div class="top-navmenulist">
+<div><a href="/ic/buystockadd.aspx" rel="nofollow" target="_blank">发布采购信息</a></div>
+<div><a href="/ic/buystocklist.aspx" rel="nofollow" target="_blank">修改/删除采购</a></div>
+</div>
+</li>
+<li class="top-line">|</li>
+<li class="top-navmenu">
+<div class="top-navmenutitle"><a class="gray" href="javascript:;" rel="nofollow">会员服务<i class="ico-topxjt"></i></a></div>
+<div class="top-navmenulist">
+<div><a href="http://xianhuo.dzsc.com/service/agent.aspx" rel="nofollow" target="_blank">现货认证</a></div>
+<div><a href="/topic/serv_member/" rel="nofollow" target="_blank">基础会员服务</a></div>
+<div><a href="/topic/serv_bigcustom/" rel="nofollow" target="_blank">百维通</a></div>
+<div><a href="http://www.dzsc.com/topic/marketing_softwen/" rel="nofollow" target="_blank">软文营销</a></div>
+</div>
+</li>
+<li class="top-line">|</li>
+<li class="top-navmenu">
+<div class="top-navmenutitle"><a class="gray" href="javascript:;" rel="nofollow">工程师服务<i class="ico-topxjt"></i></a></div>
+<div class="top-navmenulist">
+<div><a href="http://pdf.dzsc.com/" target="_blank">PDF下载</a></div>
+<div><a href="http://www.dzsc.com/data/" target="_blank">技术资料</a></div>
+<div><a href="http://product.dzsc.com/news/" target="_blank">电子资讯</a></div>
+<div><a href="http://www.dzsc.com/data/circuitmore.html" target="_blank">电路图</a></div>
+</div>
+</li>
+<li class="top-line">|</li>
+<li class="top-navmenu">
+<div class="top-navmenutitle"><a class="gray" href="javascript:;" rel="nofollow">网站导航<i class="ico-topxjt"></i></a></div>
+<div class="top-navmenulist" style="min-width:77px;">
+<div><a href="http://www.dzsc.com/" target="_blank">网站首页</a></div>
+<div><a href="http://product.dzsc.com/" target="_blank">电子元器件</a></div>
+<div><a href="http://www.dzsc.com/ic/" target="_blank">IC</a></div>
+<div><a href="http://www.dzsc.com/data/" target="_blank">技术资料</a></div>
+<div><a href="http://product.dzsc.com/news/" target="_blank">电子资讯</a></div>
+<div><a href="http://pdf.dzsc.com/" target="_blank">Datasheet</a></div>
+<div><a href="http://www.dzsc.com/data/Circuitmore.asp" target="_blank">电路图</a></div>
+<div><a href="http://wiki.dzsc.com/" target="_blank">电子通</a></div>
+<div><a href="http://www.dzsc.com/topic/" rel="nofollow" target="_blank">维库活动</a></div>
+<div><a href="http://www.dzsc.com/ic/caution.asp" rel="nofollow" target="_blank">行业黑名单</a></div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<script type="text/javascript">
+   
+        $.ajax({
+            url: "/member/login.aspx",
+            data: { act: "checklogin", r: Math.random() },
+            dataType: "json",
+            success: function (result) {
+                if (result.islogin == 1) {
+                    $("#topuserinfo").html('<p class="fl">你好，'+result.username + ',</p><a href="/member/" rel="nofollow" class="blue fl">我的会员助手</a><span class="fl">|</span><a href="/member/exit.asp" class="blue fl" rel="nofollow">退出</a>');
+                    var loginbox = $(".login-box");
+                    if (loginbox) {
+                        $(".login-tx").find("img").attr("src", result.cmppic);
+                        $(".login-w").hide();
+                        loginbox.append("<div class=\"login-y\"><a href=\"http://www.dzsc.com/member/\" target=\"_blank\">进入会员中心</a></div>");
+                    }
+                }
+               
+            }
+        });
+ 
+</script>
+<div class="w1190">
+<div class="logo_box bgfff">
+<h1><a class="logo" href="http://www.dzsc.com/">维库电子市场网-十六年专注打造电子元器件采购网</a></h1>
+<div class="Search">
+<form action="/ic/sell_search.html" id="form1" method="get" onsubmit="return CheckTopSearch(this)">
+<span class="relative" onmouseout="javascript:$('#choose').hide();" onmouseover="javascript:$('#choose').show()">
+<a href="javascript:void(0)" id="searchtitle">产品</a><i></i> <font id="choose" onmouseout="javascript:$('#choose').hide();" onmouseover="javascript:$('#choose').show()" style="z-index: 100;
+                    display: none">
+<a href="javascript:void(0)" onclick="ChangeSearch(0,$(this).html())">产品</a><br/>
+<a href="javascript:void(0)" onclick="ChangeSearch(1,$(this).html())">PDF</a><br/>
+<a href="javascript:void(0)" onclick="ChangeSearch(2,$(this).html())">资讯</a><br/>
+<a href="javascript:void(0)" onclick="ChangeSearch(3,$(this).html())">资料</a><br/>
+<a href="javascript:void(0)" onclick="ChangeSearch(4,$(this).html())">电路图</a>
+</font></span>
+<input autocomplete="off" class="ss_text" id="keyword" name="keyword" onblur="javascript:blur_key(this);" onfocus="javascript:focus_key(this);" onkeyup="autolist();" type="text" value="可输入型号品牌封装批号(如 LM358 TI SOP 19+)或中文关键词"/>
+<input class="enter" type="submit" value="搜索"/><input class="lockbtn" onclick="SearchSpotStk(this);" type="button" value="原装锁货"/>
+<div class="search-result">
+</div>
+</form>
+<form action="http://www.dzsc.com/ic/locksearch.html" id="frmspot" method="get"><input name="keyword" type="hidden" value=""/></form>
+</div>
+<div class="fabu">
+<a class="enter" href="http://www.dzsc.com/ic/buystockadd.aspx" rel="nofollow" style="float:right;" target="_blank"><i></i>发布采购信息</a>
+</div>
+</div>
+</div>
+<script type="text/javascript"> 
+if(typeof(jQuery)=="undefined") document.write("<sc" + "ript lang" + "uage=\"java" + "script\" src=\"http://img3.dzsc.com/js/jquery/jquery-1.4.2.min.js\"></scr" + "ipt>");
+var stype=0;
+stype=0; 
+    var isBox=false;
+function SearchSpotStk(obj){ 
+    var spotkeyword=$.trim($(obj).siblings("input[name='keyword']").val());
+    if (!/^[0-9a-zA-Z#][0-9a-zA-Z-_\+\/\.\\ \(\)#\=%\,:]{2,49}$/.test(spotkeyword)) 
+	{
+	    alert("请正确填写搜索锁货型号！");
+	    $(obj).siblings("input[name='keyword']").focus();
+	    return false;
+	}
+	$("#frmspot").find("input[name='keyword']").val(spotkeyword);
+	$("#frmspot").submit();
+}
+function hidesearch()
+{
+    $(".search-result").hide(); 
+}
+function autolist()
+{
+    
+    var keyword = $("#keyword").val();
+    if(keyword=="")
+    {
+        $.ajax({
+            url: '/ajax/iclock.aspx?act=gethotic',
+            dataType: 'text',
+            success: function (data) {
+                if(data!="none")
+                {
+                    $(".search-result").html('');
+                    $(".search-result").html(data);
+                    $(".search-result").show();
+                }
+            }
+        });
+    }
+    else if(/^[0-9a-zA-Z#][0-9a-zA-Z-_\+\/\.\\ \(\)#\=%\,:]{0,49}$/.test(keyword)) {        
+        $.ajax({
+            url: '/ajax/iclock.aspx?act=geticlock&keyword=' + escape(keyword).replace('%','')+"&t="+Math.random(),
+            dataType: 'text',
+            success: function (data) {
+                if(data!="none")
+                {
+                    $(".search-result").html('');
+                    $(".search-result").html(data);
+                    $(".search-result").show();
+                }
+            }
+        });
+    }
+    
+}
+function focus_key(obj)
+{
+    if($(obj).val()=='请输入元器件的型号或中文关键词'||$(obj).val()=='可输入型号品牌封装批号(如 LM358 TI SOP 19+)或中文关键词')
+        $(obj).val("");
+    $(obj).addClass("Black"); 
+    isBox=true;
+    autolist();    
+}
+
+function blur_key(obj)
+{
+    if($(obj).val()=='')
+        $(obj).val("可输入型号品牌封装批号(如 LM358 TI SOP 19+)或中文关键词");
+    $(obj).removeClass("Black");     
+    if (isBox == true) return;
+    hidesearch();
+}
+$(".search-result,#keyword").mousemove(function () { // 鼠标进入input-box区域内打开焦点开关
+    isBox = true;    
+});
+$(".search-result,#keyword").mouseout(function () { // 鼠标离开input-box区域内关闭焦点开关
+    isBox = false;         
+});
+
+
+
+function stopPropagation(e){
+    if(e.stopPropagation){
+        e.stopPropagation();
+    }else{
+        e.cancelBubble = true;
+    }
+}
+$(document).bind('click',function(){
+    $('.search-result').hide();
+});
+$('#form1').bind('click',function(e){
+    stopPropagation(e);
+});
+</script>
+<script src="http://img3.dzsc.com/js/web/common/top.js" type="text/javascript"></script>
+<div class="w1190 mb10 mt10"><a href="http://www.dzsc.com/ic/locksearch.html" target="_blank">
+<img alt="现货" border="0" src="http://img3.dzsc.com/img/web/g-g/xianhuo/1190X60.gif"/></a><div style="position:relative"><span class="ad-label-rb">广告</span></div></div>
+<form action="buystockadd.aspx" id="frmbuy" method="post" name="frmbuy" onsubmit=" return checkform()">
+<div>
+<input id="__VIEWSTATE" name="__VIEWSTATE" type="hidden" value="/wEPDwUKMTc4ODE4MzMxOWRk0pHJA/GypzcfKJAZ6Zoo2J+q4Ho="/>
+</div>
+<div>
+<input id="__VIEWSTATEGENERATOR" name="__VIEWSTATEGENERATOR" type="hidden" value="E78CD1B6"/>
+</div>
+<input name="act" type="hidden" value="add"/><input id="isappoint" name="isappoint" type="hidden" value="0"/><input id="type" name="type" type="hidden" value="0"/>
+<div class="fubuIC w1190 mb10">
+<div class="h2">发布求购</div>
+<div class="fabu-box">
+<div class="fabu-item">
+<div class="f14 red">安全提示：如进行线下交易，请 <a href="http://www.dzsc.com/member/buyer/companylist.aspx" target="_blank">核实供应商信息</a> 并签订正规合同通过对公账号交易；建议通过维库 <a href="http://www.dzsc.com/ic/entrustdeal.html" target="_blank">委托交易</a> 或 <a href="http://www.dzsc.com/ic/spotlockdocument.html" target="_blank">锁货交易</a>，以确保交易安全.</div>
+<div class="fabu-label"><span></span><font color="ff0000">*</font>请选择求购意向：</div>
+<div class="fabu-condition cfix" id="yixiang">
+<input id="yixiang01" name="yixiang" type="radio" value="1"/>
+<label for="yixiang01">IC/有源器件</label>
+<input id="yixiang02" name="yixiang" type="radio" value="2"/>
+<label for="yixiang02">被动元件</label>
+<input id="yixiang03" name="yixiang" type="radio" value="3"/>
+<label for="yixiang03">周边产品</label>
+<input id="yixiang04" name="yixiang" type="radio" value="4"/>
+<label for="yixiang04">机电元件</label>
+<input id="yixiang05" name="yixiang" type="radio" value="5"/>
+<label for="yixiang05">周边设备</label>
+<input id="yixiang06" name="yixiang" type="radio" value="6"/>
+<label for="yixiang06">基础材料与产品</label>
+<input id="yixiang07" name="yixiang" type="radio" value="7"/>
+<label for="yixiang07">其他</label>
+</div>
+</div>
+<div class="fabu-item fenlei" style="display:block;">
+<div class="fabu-label"><span></span><font color="ff0000">*</font>请选择分类：</div>
+<div class="fabu-condition cfix" id="category01">
+<span> <input id="fenlei07" name="fenlei" type="checkbox" value="1372"/>
+<label for="fenlei07">IC</label>
+</span>
+<span> <input id="fenlei036" name="fenlei" type="checkbox" value="1975"/>
+<label for="fenlei036">半导体存储器</label>
+</span>
+<span> <input id="fenlei028" name="fenlei" type="checkbox" value="506"/>
+<label for="fenlei028">电源模块</label>
+</span>
+<span> <input id="fenlei00" name="fenlei" type="checkbox" value="284"/>
+<label for="fenlei00">二极管</label>
+</span>
+<span> <input id="fenlei03" name="fenlei" type="checkbox" value="636"/>
+<label for="fenlei03">三极管</label>
+</span>
+<span> <input id="fenlei04" name="fenlei" type="checkbox" value="504"/>
+<label for="fenlei04">场效应管</label>
+</span>
+<span> <input id="fenlei026" name="fenlei" type="checkbox" value="552"/>
+<label for="fenlei026">可控硅</label>
+</span>
+<span> <input id="fenlei06" name="fenlei" type="checkbox" value="1155"/>
+<label for="fenlei06">单片机</label>
+</span>
+<span> <input id="fenlei01" name="fenlei" type="checkbox" value="291"/>
+<label for="fenlei01">LED器件</label>
+</span>
+</div>
+</div>
+<div class="fabu-item fenlei">
+<div class="fabu-label"><span></span><font color="ff0000">*</font>请选择分类：</div>
+<div class="fabu-condition cfix" id="category02">
+<span> <input id="fenlei05" name="fenlei" type="checkbox" value="471"/>
+<label for="fenlei05">传感器</label>
+</span>
+<span> <input id="fenlei011" name="fenlei" type="checkbox" value="308"/>
+<label for="fenlei011">电容器</label>
+</span>
+<span> <input id="fenlei012" name="fenlei" type="checkbox" value="507"/>
+<label for="fenlei012">电感器</label>
+</span>
+<span> <input id="fenlei08" name="fenlei" type="checkbox" value="321"/>
+<label for="fenlei08">电阻器</label>
+</span>
+<span> <input id="fenlei010" name="fenlei" type="checkbox" value="329"/>
+<label for="fenlei010">电位器</label>
+</span>
+<span> <input id="fenlei017" name="fenlei" type="checkbox" value="411"/>
+<label for="fenlei017">开关</label>
+</span>
+<span> <input id="fenlei022" name="fenlei" type="checkbox" value="340"/>
+<label for="fenlei022">变压器</label>
+</span>
+<span> <input id="fenlei023" name="fenlei" type="checkbox" value="506"/>
+<label for="fenlei023">电源/稳压器</label>
+</span>
+<span> <input id="fenlei013" name="fenlei" type="checkbox" value="637"/>
+<label for="fenlei013">压电陶瓷元件</label>
+</span>
+<span> <input id="fenlei014" name="fenlei" type="checkbox" value="638"/>
+<label for="fenlei014">石英晶体器件</label>
+</span>
+<span> <input id="fenlei024" name="fenlei" type="checkbox" value="734"/>
+<label for="fenlei024">电声元件</label>
+</span>
+<span> <input id="fenlei020" name="fenlei" type="checkbox" value="539"/>
+<label for="fenlei020">保险器件</label>
+</span>
+</div>
+</div>
+<div class="fabu-item fenlei">
+<div class="fabu-label"><span></span><font color="ff0000">*</font>请选择分类：</div>
+<div class="fabu-condition cfix" id="category03">
+<span> <input id="fenlei09" name="fenlei" type="checkbox" value="1892"/>
+<label for="fenlei09">PCB</label>
+</span>
+<span> <input id="fenlei02" name="fenlei" type="checkbox" value="462"/>
+<label for="fenlei02">显示屏/显示器件/配件</label>
+</span>
+<span> <input id="fenlei016" name="fenlei" type="checkbox" value="383"/>
+<label for="fenlei016">连接器</label>
+</span>
+<span> <input id="fenlei025" name="fenlei" type="checkbox" value="735"/>
+<label for="fenlei025">电声(扬声器)配件</label>
+</span>
+<span> <input id="fenlei034" name="fenlei" type="checkbox" value="505"/>
+<label for="fenlei034">电池/蓄电池</label>
+</span>
+<span> <input id="fenlei015" name="fenlei" type="checkbox" value="1849"/>
+<label for="fenlei015">电线电缆</label>
+</span>
+</div>
+</div>
+<div class="fabu-item fenlei">
+<div class="fabu-label"><span></span><font color="ff0000">*</font>请选择分类：</div>
+<div class="fabu-condition cfix" id="category04">
+<span> <input id="fenlei0364" name="fenlei" type="checkbox" value="364"/>
+<label for="fenlei0364">继电器</label>
+</span>
+<span> <input id="fenlei027" name="fenlei" type="checkbox" value="1699"/>
+<label for="fenlei027">变送器</label>
+</span>
+<span> <input id="fenlei029" name="fenlei" type="checkbox" value="376"/>
+<label for="fenlei029">变频器</label>
+</span>
+<span> <input id="fenlei032" name="fenlei" type="checkbox" value="500"/>
+<label for="fenlei032">逆变器</label>
+</span>
+<span> <input id="fenlei038" name="fenlei" type="checkbox" value="503"/>
+<label for="fenlei038">编码器</label>
+</span>
+<span> <input id="fenlei030" name="fenlei" type="checkbox" value="1719"/>
+<label for="fenlei030">微特电机</label>
+</span>
+<span> <input id="fenlei037" name="fenlei" type="checkbox" value="1165"/>
+<label for="fenlei037">PLC/可编程控制器</label>
+</span>
+</div>
+</div>
+<div class="fabu-item fenlei">
+<div class="fabu-label"><span></span><font color="ff0000">*</font>请选择分类：</div>
+<div class="fabu-condition cfix" id="category05">
+<span> <input id="fenlei041" name="fenlei" type="checkbox" value="981"/>
+<label for="fenlei041">电子测量仪器</label>
+</span>
+<span> <input id="fenlei043" name="fenlei" type="checkbox" value="1360"/>
+<label for="fenlei043">电子产品制造设备</label>
+</span>
+<span> <input id="fenlei044" name="fenlei" type="checkbox" value="13"/>
+<label for="fenlei044">仪器/仪表</label>
+</span>
+<span> <input id="fenlei047" name="fenlei" type="checkbox" value="508"/>
+<label for="fenlei047">五金/工具</label>
+</span>
+</div>
+</div>
+<div class="fabu-item fenlei">
+<div class="fabu-label"><span></span><font color="ff0000">*</font>请选择分类：</div>
+<div class="fabu-condition cfix" id="category06">
+<span> <input id="fenlei045" name="fenlei" type="checkbox" value="489"/>
+<label for="fenlei045">电子材料</label>
+</span>
+<span> <input id="fenlei046" name="fenlei" type="checkbox" value="1416"/>
+<label for="fenlei046">防静电产品</label>
+</span>
+</div>
+</div>
+<div class="fabu-item">
+<div class="fabu-label"><span></span><font color="ff0000">*</font>需求类别：</div>
+<div class="fabu-condition cfix">
+<input id="xuqiu01" name="PurchaseType" type="radio" value="0"/>
+<label for="xuqiu01">BOM配单</label>
+<input id="xuqiu02" name="PurchaseType" type="radio" value="1"/>
+<label for="xuqiu02">样片采购</label>
+<input id="xuqiu03" name="PurchaseType" type="radio" value="2"/>
+<label for="xuqiu03">单次现货采购</label>
+<input id="xuqiu04" name="PurchaseType" type="radio" value="3"/>
+<label for="xuqiu04">批量周期采购</label>
+<input id="xuqiu05" name="PurchaseType" type="radio" value="4"/>
+<label for="xuqiu05">其他</label>
+</div>
+</div>
+<div class="fabu-item">
+<div class="fabu-label"><span></span><font color="ff0000">*</font>价格要求：</div>
+<div class="fabu-condition cfix">
+<input checked="checked" id="jiage01" name="PriceRequir" type="radio" value="报不含税价"/>
+<label for="jiage01">报不含税价</label>
+<input id="jiage02" name="PriceRequir" type="radio" value="报含税价（普通）"/>
+<label for="jiage02">报含税价（普通）</label>
+<input id="jiage03" name="PriceRequir" type="radio" value="报含税价（增值税普通）"/>
+<label for="jiage03">报含税价（增值税普通）</label>
+<input id="jiage04" name="PriceRequir" type="radio" value="报含税价（增值税专用）"/>
+<label for="jiage04">报含税价（增值税专用）</label>
+</div>
+</div>
+<div class="fabu-item">
+<div class="fabu-label"><span></span>询价产品：</div>
+<div class="fabu-condition J_tab cfix">
+<ul class="cfix uptab J_tabli" style="display:none;">
+<li class="selected">逐条上传</li>
+<li>批量上传</li>
+</ul>
+<div class="J_tabbox block">
+<table cellspacing="0" id="tabprono">
+<thead>
+<tr>
+<th id="procount" width="25"> </th>
+<th width="216"><font color="#ff0000">*</font> 型号/产品名称</th>
+<th width="163">品牌/制造商</th>
+<th width="104">封装</th>
+<th width="100">批号</th>
+<th width="107"><font color="#ff0000">*</font> 求购数量</th>
+<th width="102">目标单价</th>
+<th width="102">可替代型号</th>
+<th width="189">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr id="defaultfirst">
+<td></td>
+<td>
+<input name="prono" type="text" value=""/><p class="i-error"><i></i>数量不能为空</p>
+</td>
+<td>
+<input name="brand" type="text"/></td>
+<td>
+<input name="pack" type="text"/></td>
+<td>
+<input name="dc" type="text"/></td>
+<td>
+<input name="stocknum" type="text"/><p class="i-error"><i></i>数量不能为空</p></td>
+<td>
+<input name="price" type="text"/>
+</td>
+<td>
+<input name="replacemodel" type="text"/></td>
+<td>
+<input name="remark" type="text"/></td>
+</tr>
+</tbody>
+</table>
+<div class="add-td"><span onclick="addrow()"><i class="i-add"></i>添加求购</span><p class="fl" id="adderror" style="padding-left:20px;"></p></div>
+</div>
+<div class="J_tabbox">
+<div>
+<span><font color="#ff0000">*</font> 型号/产品名称</span>
+<span>品牌/制造商</span>
+<span>封装</span>
+<span>批号</span>
+<span><font color="#ff0000">*</font> 求购数量</span>
+<span>目标单价</span>
+<span>可替代型号</span>
+<span>备注</span>
+<span><a href="http://img3.dzsc.com/img/web/ic/buydemo.xls" target="_blank">下载需求单模板</a></span>
+</div>
+<textarea id="pContent" name="Content"></textarea>
+</div>
+</div>
+</div>
+<div class="fabu-item" id="piclist" style="display:none;">
+<div class="fabu-label"><span></span>上传图片：</div>
+<div class="uploadifypiclist">
+<ul>
+<li id="preview0"><input id="fileimg0" type="file"/></li>
+<li id="preview1"><input id="fileimg1" type="file"/></li>
+<li id="preview2"><input id="fileimg2" type="file"/></li>
+<li id="preview3"><input id="fileimg3" type="file"/></li>
+</ul>
+<input id="imglist0" name="imglist" type="hidden"/>
+<input id="imglist1" name="imglist" type="hidden"/>
+<input id="imglist2" name="imglist" type="hidden"/>
+<input id="imglist3" name="imglist" type="hidden"/>
+</div>
+</div>
+<div class="cl fabu-item qita">
+<div class="fabu-label"><span></span>其他要求：</div>
+<div class="fabu-condition cfix">
+<span><font color="ff0000">*</font> 有效期：</span>
+<input checked="checked" id="date01" name="PeriodDay" type="radio" value="1"/>
+<label for="date01">1天内</label>
+<input id="date02" name="PeriodDay" type="radio" value="3"/>
+<label for="date02">3天内</label>
+<input id="date03" name="PeriodDay" type="radio" value="7"/>
+<label for="date03">1周内</label>
+<input id="date04" name="PeriodDay" type="radio" value="15"/>
+<label for="date04">半个月内</label>
+<input id="date05" name="PeriodDay" type="radio" value="30"/>
+<label for="date05">1月内</label>
+<input id="date06" name="PeriodDay" type="radio" value="90"/>
+<label for="date06">3月内</label>
+</div>
+<div class="fabu-condition cfix">
+<span><font color="ff0000">*</font>交货期：</span>
+<input class="DeliveryDate" id="deliverydate" name="deliverydate" onclick="WdatePicker({ minDate: new Date(), transtarttime: '当前时间', dateFmt: 'yyyy-M-d' });" readonly="readonly" type="text" value=""/>
+</div>
+<div class="fabu-condition cfix">
+<span>交货地：</span>
+<input name="deliveryplace" type="text"/>
+</div>
+<div class="fabu-condition cfix">
+<span><font color="ff0000">*</font> 公司/联系人：</span>
+<input class="input" id="contact" maxlength="80" name="contact" type="text" value=""/>
+</div>
+<div class="fabu-condition cfix">
+<span><font color="ff0000">*</font> 联系电话：</span>
+<input class="input" id="tel" maxlength="40" name="tel" type="text" value=""/>
+</div>
+<div class="fabu-condition cfix">
+<span>QQ：</span>
+<input class="input" id="qq" maxlength="40" name="qq" type="text" value=""/>
+</div>
+<div class="fabu-condition cfix">
+<span>E-mail：</span>
+<input class="input" id="email" maxlength="40" name="email" type="text" value=""/>
+</div>
+</div>
+<div class="fabu-item">
+<div class="f14 red">提醒：请勿发布广告信息，若有发现将关闭账号采购功能.<br/>请勿上传任何形式的侵权信息，例如：包含图片、品牌、产品专利、商标、版权等相关侵权信息资料。本公司（本网站）保留删除任何疑似前诉侵权资料的权利。</div>
+</div>
+<div class="fabu-item txt-c">
+<input class="submit-btn" id="Submit2" type="submit" value="提交保存"/>
+</div>
+</div>
+</div>
+</form>
+<div class="login-popup" style="display:none;">
+<div class="login-bg"></div>
+<div class="logins">
+<div class="tabs">
+<a class="on" href="javascript:void(0);">会员登录</a><span class="login-close"></span>
+</div>
+<div class="logins_box dis">
+<ul>
+<li><em>用户名</em><span><input class="inputs" id="username" name="username" onblur="if (this.value == '') this.value = '用户名/手机号';" onclick="if (this.value == '用户名/手机号') this.value = '';" type="text" value="用户名/手机号"/></span></li>
+<li><em>密码</em><span><input class="inputs" id="password" name="password" type="password" value=""/></span></li>
+<li style="margin-top: -14px;"><em> </em><span><a class="fl" href="/member/reg.asp" target="_blank">免费注册</a><i class="fr"><a href="/member/getpsw.asp" target="_blank">忘记登录密码?</a></i></span></li>
+<li><em> </em><span><input class="subbtn" name="Submit3" onclick="javascript:loginto();" type="button" value=" 登 录 "/></span></li>
+</ul>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+        $(function () {
+            $("input[name=yixiang]").each(function (i) {                
+                $(this).bind("click", function () {
+                    $("input[name=fenlei]").attr("checked",false);
+                    $(".fenlei").hide();
+                    $(".fenlei").eq(i).show();
+                    if(i==0)
+                        $("#piclist").hide();
+                    else
+                        $("#piclist").show();
+                });
+                
+            });
+            $("input[name=PurchaseType]").each(function () {                
+                $(this).bind("click", function () {
+                    $(".J_tabbox").hide();
+                    $(".J_tabbox:eq(0)").show();
+                    if ($(this).val() == "0") {
+                        $(".J_tabli").show();
+                    }
+                    else {
+                        if ($(".J_tabli li:eq(1)").hasClass("selected")) {
+                            $(".J_tabli li:eq(1)").removeClass('selected');
+                            $(".J_tabli li:eq(0)").addClass('selected');
+                        }
+                        $(".J_tabli").hide();
+                    }
+                });
+            });
+
+            $(".login-close").click(function () {
+                $(".login-popup").hide();
+            });
+
+            $(".J_tab .J_tabli li").click(function () {
+                var th = $(this);
+                var box = $(this).parents(".J_tab").find('.J_tabbox');
+                $("#type").val(th.index());
+                tab(th, box);
+            })
+        });
+        //切换
+        function tab(th, box) {
+            if (th.hasClass("selected")) {
+                return false;
+            } else {
+                th.addClass('selected').siblings().removeClass('selected');
+                var index = th.index();
+                box.hide();
+                box.eq(index).stop().show();
+            }
+        }
+        function addrow() {
+            if ($("#defaultfirst>input[name='prono']").val() == "" || $("#defaultfirst>input[name='stocknum']").val() == "") {
+                alert("请输入产品名称和数量");
+                return;
+            }
+            var procount = 0;
+            procount = $("#procount").val();
+            if (procount == "") {
+                if ($("#defaultfirst>td").find("input[name='prono']").val() == "" || $("#defaultfirst>td").find("input[name='stocknum']").val() == "") {
+                    $("#adderror").html(" 请输入产品名称和数量");
+                    setTimeout(function () { $("#adderror").html(""); }, 2000);
+                    return;
+                }
+            }
+            else if(parseInt(procount)>0)
+            {
+                if ($("#" + procount + ">td").find("input[name='prono']").val() == "" || $("#" + procount + ">td").find("input[name='stocknum']").val() == "") {
+                    $("#adderror").html(" 请输入产品名称和数量");
+                    setTimeout(function () { $("#adderror").html(""); }, 2000);
+                    return;
+                }
+            }
+            procount++;
+            
+            var str = "";
+            str += " <tr id=\"" + procount + "\">";
+            str += "<td><i class=\"i-del\" onclick=\"deleterow('" + procount + "')\"></i></td>";
+            str += "<td><input name=\"prono\" type=\"text\" /><p class=\"i-error\"><i></i>型号/产品名称</p></td>";
+            str += "<td><input name=\"brand\" type=\"text\" /></td>";
+            str += "<td><input name=\"pack\" type=\"text\" /></td>";
+            str += "<td><input name=\"dc\" type=\"text\" /></td>";
+            str += "<td><input name=\"stocknum\" type=\"text\" /><p class=\"i-error\"><i></i>数量不能为空</p></td>";
+            str += "<td><input name=\"price\" type=\"text\" /></td>";
+            str += "<td><input name=\"replacemodel\" type=\"text\" /></td>";
+            str += "<td><input name=\"remark\" type=\"text\" /></td>";
+            str += "</tr>";
+            $("#tabprono tbody").append(str);
+            $("#procount").val(procount);
+
+        }
+        //删除单条
+        function deleterow(id) {
+            $("#" + id).remove();
+        }
+    </script>
+<script type="text/javascript">
+
+    
+    
+    var islogin = "False";
+    
+    function checkform()
+    {
+        
+        //$("#Submit2").attr("disabled", true);
+       
+        var isappoint=0;
+        isappoint=$("#isappoint").val();
+        if(isappoint==1)
+        {
+            var cmpid=$("input[name='cmpid']:checked").val();
+            if(cmpid==undefined)
+            {
+                alert("请选择要发送的供应商");
+                //$("#Submit2").attr("disabled", false);
+                return false;
+            }
+        }
+        else if (isappoint == 0) {
+            var yixiang = $("input[name='yixiang']:checked").val();
+            if (yixiang == "" || yixiang == undefined) {
+                alert("请选择求购意向");
+                //$("#Submit2").attr("disabled", false);
+                return false;
+            }
+            if (yixiang != "7") {
+                var fenlei = $("input[name='fenlei']:checked").val();
+                if (fenlei == "" || fenlei == undefined) {
+                    alert("请选择具体分类");
+                    //$("#Submit2").attr("disabled", false);
+                    return false;
+                }
+            }
+        }
+        var type=$("input[name='PurchaseType']:checked").val();
+        if(type==undefined)
+        {
+            alert("请选择采购类型");
+            //$("#Submit2").attr("disabled", false);
+            return false;
+        }
+        
+        var type=0;
+        var flag=false;
+        type=parseInt($("#type").val());
+        //单条上传
+        if(type==0)
+        {
+            var count = 0;
+            var err = "";
+            //验证产品
+            $("input[name='prono']").each(  
+               function(){  
+                   if($(this).val()=="")
+                   {
+                       alert("产品不能为空");
+                        $(this).focus();
+                        count=1;
+                        return false;
+                     
+                   }
+                   if($(this).val()!="")
+                   {
+                       if (yixiang == "1" && (/[\u4e00-\u9fa5]+$/.test($(this).val()))) {
+                           alert("发布IC产品名称不能包括汉字");
+                           $(this).focus();
+                           count = 1;
+                           return false;
+                           
+                       }
+                      //$(this).val($(this).val().replace(/,/g, "，"));   
+                      
+                   }
+               } 
+            );
+            if(count==1)
+            {
+                //$("#Submit2").attr("disabled", false);
+                return false;
+            }   
+            //验证数量
+            $("input[name='stocknum']").each(  
+               function(){  
+                   if(!isUnsignedInteger($(this).val()))
+                   {
+                        alert("数量格式有误");
+                        $(this).focus();
+                        count=1;
+                        return false;
+                   }
+                   if($(this).val()=="0")
+                   {
+                        alert("数量必须大于0");
+                        $(this).focus();
+                        count=1;
+                        return false;
+                   }
+               } 
+            );  
+             $("input[name='brand']").each(  
+               function(){  
+                  
+                   if($(this).val()!="")
+                   {
+                      $(this).val($(this).val().replace(/,/g, "，"));   
+                       
+                   }
+               } 
+             );
+             $("input[name='remark']").each(  
+               function(){  
+                  
+                   if($(this).val()!="")
+                   {
+                      $(this).val($(this).val().replace(/,/g, "，")); 
+                      
+                   }
+               } 
+             ); 
+             $("input[name='replacemodel']").each(
+               function(){  
+                  
+                   if($(this).val()!="")
+                   {
+                      $(this).val($(this).val().replace(/,/g, "，"));     
+                   }
+               } 
+             ); 
+             $("input[name='dc']").each(  
+               function(){  
+                  
+                   if($(this).val()!="")
+                   {
+                      $(this).val($(this).val().replace(/,/g, "，"));     
+                   }
+               } 
+             ); 
+             $("input[name='pack']").each(  
+               function(){  
+                  
+                   if($(this).val()!="")
+                   {
+                      $(this).val($(this).val().replace(/,/g, "，"));     
+                   }
+               } 
+             ); 
+            if(count==1)
+            {
+                //$("#Submit2").attr("disabled", false);
+                return false;
+            }    
+              //验证数量
+            $("input[name='price']").each(  
+               function(){  
+                   if($(this).val()!=""&&!isDecimal($(this).val()))
+                   {
+                        alert("目标单价必须为整数或小数");
+                        $(this).focus();
+                        count=1;
+                        return false;
+                   }
+                  
+               } 
+            );  
+            if(count==1)
+            {
+                //$("#Submit2").attr("disabled", false);
+                return false;
+            }    
+        }
+        else if(type==1)
+        {
+            if ($("#pContent").val() == "") {
+                alert("请输入批量上传的数据");
+                return false;
+            }
+        }
+        
+        if($("input[name='deliverydate']").val()==""){
+            alert("交货期不能为空");
+            $("#deliverydate").trigger("click");
+            return false;
+        }
+        if ($("input[name='contact']").val() == "") {
+            alert("联系人不能为空");
+            $("input[name='contact']").focus();
+            return false;
+        }
+        if ($("input[name='tel']").val() == "") {
+            alert("联系电话不能为空");
+            $("input[name='tel']").focus();
+            return false;
+        }
+      
+
+        $.ajax({
+            url: "buystockadd.aspx?mt="+Math.random(),
+            data: { act: "checklogin" },
+            async: false,
+            success:function(data) {
+                if (data == "false") {
+                    $(".login-popup").show();
+                    islogin= false;
+                }
+                else
+                    islogin= true;
+            }
+        });
+        return islogin;
+       
+        return false;
+    }
+
+    function loginto()
+    {
+        var username = $("#username").val();
+        var pwd = $("#password").val();
+        if (username == "") {
+            alert("请输入用户名");
+            return false;
+        }
+        if(pwd=="")
+        {
+            alert("请输入密码");
+            return false;
+        }
+        $.ajax({
+            url: "/ajax/checklogin.aspx?mt="+Math.random(),
+            data: { username: username, password: pwd },
+            success: function (data) {
+                if(data=="true")
+                {
+                    islogin = data;
+                    $(".login-popup").hide();
+                    $("#frmbuy").submit();
+                }
+                else
+                {
+                    alert("用户名密码错误");
+                    return;
+                }
+            }
+        });
+    }
+    function isDecimal( str ){   
+        if(isInteger(str)) return true;
+        var re = /^[-]{0,1}(\d+)[\.]+(\d+)$/;
+        if (re.test(str)) {
+            if(RegExp.$1==0&&RegExp.$2==0) 
+                return false;
+            return true;
+        } else {
+            return false;
+        }
+    }
+    function isInteger( str ){  
+        var regu = /^[-]{0,1}[0-9]{1,}$/;
+        return regu.test(str);
+    }
+
+     function  isUnsignedInteger(strInteger)  
+     {  
+        var  newPar=/^\d+$/  
+        return  newPar.test(strInteger);  
+     } 
+     function isEmail( str ){
+         var myReg = /^[a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/; 
+        if(myReg.test(str)) return true; 
+            return false; 
+    } 
+</script>
+</body></html>

@@ -1,0 +1,607 @@
+<html lang="zh-CN"><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/><meta content="IE=Edge,chrome=1" http-equiv="X-UA-Compatible"/><title>
+	中国自动化网-工业互联与智能制造 产业链“互联网+”服务平台
+</title><meta content="中国自动化网（CA800.com），工业互联与智能制造的产业互联网服务平台。面向制造业的工业自动化，两化深度融合的企业信息化，招聘，下载，工业智能化，智能制造，PLC，变频器，伺服，传感器，工业机器人，运动控制，互联网+，互联网,制造,制造业,电气,装备。包含自动化新闻、企业库、产品、供求、专业展会、行业应用、工控搜索、工控资料下载、专业杂志、自动化、智能、智能伺服、工业等服务，同时为自动化企业提供移动互联网、数字营销等一站式服务，同时以业内的行业精英人士为依托，构建自动化行业SNS交流互动生态圈。" name="description"/><meta content="自动化,智能,智能伺服,招聘,下载,工业,自动化网,工控,工业自动化,PLC,变频器,互联网+,互联网,工业机器人,运动控制,伺服,传感器,自动化网,制造,制造业,电气,装备" name="keywords"/>
+<link href="/skin/2016/js/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="/skin/2016/js/jquery.flexslider/jquery.flexslider.css" rel="stylesheet"/>
+<script src="http://push.zhanzhang.baidu.com/push.js"></script><script src="//hm.baidu.com/hm.js?57a0c48ef04a2d3a7e7dec8e459b2bb4"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script src="/skin/2016/js/jquery-1.11.2.js"></script>
+<script src="/skin/2016/js/bootstrap/js/bootstrap.min.js"></script>
+<script src="/skin/2016/js/jquery.flexslider/jquery.flexslider.js"></script>
+<script src="/skin/2016/js/jquery.bxSlider.js"></script>
+<script src="/skin/2016/js/jPages.js"></script>
+<link href="skin/2016/css/jPages.css" rel="stylesheet"/>
+<script src="/skin/2016/js/base.js"></script>
+<script language="javascript" src="/script/fun.js" type="text/javascript"></script>
+<!--[if lt IE 9]> 
+        <script> 
+           (function() {     if (! 
+             /*@cc_on!@*/
+             0) return;     var e = "abbr, article, aside, audio, canvas, datalist, details, dialog, eventsource, figure, footer, header, hgroup, mark, menu, meter, nav, output, progress, section, time, video".split(', ');     var i= e.length;     while (i--){
+                 document.createElement(e[i])
+             } 
+        })() 
+        </script>
+<![endif]-->
+<script src="/skin/2016/js/dd.js"></script>
+<script>
+    $(document).ready(function (e) {
+        //convert
+        $(".btn-select select").msDropdown({ roundedBorder: false });
+        $("#tech").data("dd");
+    });
+    function showValue(h) {
+        console.log(h.name, h.value);
+    }
+    $("#tech").change(function () {
+        console.log("by jquery: ", this.value);
+    })
+</script>
+<link href="/skin/2016/css/base.css" rel="stylesheet"/><link href="/skin/2016/css/home.css" rel="stylesheet"/><link href="/skin/2016/css/sdsy.skin.css" rel="stylesheet"/>
+<script src="http://www.ca800.com/skin/2016/js/home.js"></script>
+<script language="javascript" src="/script/LoadData.js" type="text/javascript"></script>
+<script src="/script/jquery.jtemplates.js" type="text/javascript"></script>
+<script>
+        function showLoading(obj) {
+            $(obj).append("<div class='loadingDiv'><span></span></div>");
+        }
+
+        function closeLoading(obj) {
+            $(obj).find(".loadingDiv").remove();
+        }
+    </script>
+<style>
+        .loadingDiv span
+        {
+            width: 100%;
+            height: 70px;
+            position: absolute;
+            z-index: 102;
+            top: 50px;
+            left: 0;
+            display: block;
+            background: url(/c/images/loading1.GIF) no-repeat center;
+        }
+        .sup-buy a
+        {
+            display: inline;
+        }
+        .indexlogin
+        {
+            height: 263px;
+        }
+        .hot-top, .course-rec, .recruit-job
+        {
+            height: 480px;
+        }
+        .menu-left p a
+        {
+            font-size: 16px;
+            color: #fff;
+            font-weight: 600;
+            padding: 16px 0px 0 0;
+        }
+        .right-nav
+        {
+            height: 520px;
+        }
+        .line-tit li
+        {
+            display: block;
+            font-size: 12px;
+            line-height: 27px;
+            color: #3e3a39;
+            padding-left: 16px;
+            background: url(../images/icon/rec01.png) center left no-repeat;
+            background-position-x: 5px;
+            padding-left: 0px;
+        }
+        .channel li
+        {
+            width: auto;
+            margin-right: 15px;
+            float: left;
+        }
+        .ad_top
+        {
+            width: 238px;
+            height: 45px;
+            border: 1px #e6e7e8 solid;
+            display: inline-block;
+            float: left;
+            margin-bottom: 8px;
+            text-align: center;
+            overflow: hidden;
+        }
+        .ad_top_big
+        {
+            width: 600px;
+            height: 64px;
+            /*width: 600px;
+            height: 90px;*/
+            border: 1px #e6e7e8 solid;
+            display: inline-block;
+            float: left;
+            margin-bottom: 8px;
+            text-align: center;
+            overflow: hidden;
+        }
+        .banner-ad  .ad_top img {
+            width: 240px; 
+            height: 45px;
+        }
+        .banner-ad  .ad_top_big img {
+            /*width: 600px; 
+            height: 90px;*/
+            /*width: 600px; */
+            width: auto;
+            height: 64px;
+        }
+
+        .item li a:nth-child(1) {
+            padding-right: 0px; 
+            width: 70px;
+        }
+        .bottom-ad ul a {
+            padding: 2px 4px;
+        }
+    </style>
+<script src="/script/function.js" type="text/javascript"></script>
+<script>
+        browserRedirect("@home", "/mobile/ca800/");
+    </script>
+<link href="/images/webicon.png" rel="shortcut icon" type="image/x-icon"/><link href="/images/webicon_16X16.ico" rel="shortcut icon"/><link href="/images/webicon_16X16.ico" rel="bookmark"/></head>
+<body><div style="display: none;">
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+  m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-78822443-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+<script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?57a0c48ef04a2d3a7e7dec8e459b2bb4";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+<script>
+        (function () {
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            }
+            else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+</script>
+</div>
+<form action="default2.aspx?ac=ok" id="aspnetForm" method="post" name="aspnetForm">
+<div>
+</div>
+<!--左侧-->
+<style>
+    #FolatRightBannerDiv A.gg_freplay2
+    {
+        display: block;
+        background: url(http://www.ca800.com/image/default/dingbu/images/gg_btn.png) no-repeat 0px 0px;
+        height: 55px;
+        overflow: hidden;
+        width: 18px;
+    }
+</style>
+<!--右侧--->
+<script>
+    folatDiv = function (id, _top) {
+        var me = id.charAt ? document.getElementById(id) : id, d1 = document.body, d2 = document.documentElement;
+        d1.style.height = d2.style.height = '100%'; me.style.top = _top ? _top + 'px' : 0; //me.style.left=_left+"px";//[(_left>0?'left':'left')]=_left?Math.abs(_left)+'px':0;
+        me.style.position = 'absolute';
+        setInterval(function () { me.style.top = parseInt(me.style.top) + (Math.max(d1.scrollTop, d2.scrollTop) + _top - parseInt(me.style.top)) * 0.1 + 'px'; }, 10 + parseInt(Math.random() * 20));
+        
+        return arguments.callee;
+    };
+
+
+    
+    
+    /*window.onload = function () {alert("b")
+      folatDiv('FolatRightBannerDiv', 100);
+      
+    }*/
+</script>
+<!--微信-->
+<style>
+    .menu a
+    {
+        padding: 9px 24px;
+    }
+    .search{ margin-top:-10px; }
+    .roll-news{ width:100%; height: 20px; overflow:hidden; position:relative;}
+    .roll-news ul{ width: 100%; }
+    .roll-news ul li{ float:left; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; margin-right:20px; line-height: 20px; background:url(/skin/2016/images/icon/roll_news.png) no-repeat; padding-left:20px; background-position: 0 center;}
+    .roll-news ul li a{ overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-size:12px; line-height: 20px; }
+</style>
+<a name="index_head"></a>
+<header class="container">
+<div class="header-top">
+<div class="logo"><a href="http://www.ca800.com" title="自动化网(ca800.com)"><h1 style="display:inline;"><img alt="自动化网(ca800.com)" src="http://picture.ca800.com/common/images/logo.png"/></h1></a>
+<a href="" target="_blank" title="自动化网(ca800.com)"><img alt="自动化网(ca800.com)" src="skin/2016/images/default/logo2.png"/></a>
+</div>
+<div class="search">
+<div class="hot-search">
+<a href="https://www.baidu.com/s?ie=utf-8&amp;f=8&amp;rsv_bp=1&amp;ch=1&amp;tn=04081028_dg&amp;wd=%E5%8F%B0%E8%BE%BE%20site%3Awww.ca800.com&amp;oq=plc%2520site%253Awww.ca800.com&amp;rsv_pq=d8df66040000fa0e&amp;rsv_t=9df3%2FQq7a%2FQ2dE6%2B9Nc6gjRLv1xVENL7r%2BA56iPl2iXB5QzojTFVlbTgXJwYdPlkH08&amp;rqlang=cn&amp;rsv_enter=1&amp;inputT=3194&amp;rsv_sug3=31&amp;rsv_sug1=4&amp;rsv_sug7=100&amp;rsv_sug2=0&amp;rsv_sug4=3194" target="_blank" title="台达">
+                                    台达</a> | 
+                            
+                                <a href="https://www.baidu.com/s?ie=utf-8&amp;f=8&amp;rsv_bp=1&amp;ch=1&amp;tn=04081028_dg&amp;wd=plc%20site%3Awww.ca800.com&amp;oq=%25E9%25AB%2598%25E5%258E%258B%25E5%258F%2598%25E9%25A2%2591%25E5%2599%25A8%2520site%253Awww.ca800.com&amp;rsv_pq=9ae9d5fc0000fd33&amp;rsv_t=6c7f0wyKtYnyIpN4PNRK%2Bu6%2F%2FUexwRZtn6O4uXL%2Fb1%2FHrpzqNEznklDT%2F7TZqucl%2Fhw&amp;rqlang=cn&amp;rsv_enter=1&amp;inputT=767&amp;rsv_sug3=23&amp;rsv_sug2=0&amp;rsv_sug4=768" target="_blank" title="PLC">
+                                    PLC</a> | 
+                            
+                                <a href="https://www.baidu.com/s?ie=utf-8&amp;f=8&amp;rsv_bp=1&amp;ch=1&amp;tn=04081028_dg&amp;wd=%E5%8F%98%E9%A2%91%E5%99%A8%20site%3Awww.ca800.com&amp;oq=%25E5%258F%25B0%25E8%25BE%25BE%2520site%253Awww.ca800.com&amp;rsv_pq=a114334000012801&amp;rsv_t=3c14SMUl3tNZnfhf7GFdphV6DsVi2pICaRYBoZBgtEUb7TPHpI8TYn22UtAQRYNfcYg&amp;rqlang=cn&amp;rsv_enter=1&amp;inputT=3194&amp;rsv_n=2&amp;rsv_sug3=32&amp;bs=%E5%8F%B0%E8%BE%BE%20site%3Awww.ca800.com" target="_blank" title="变频器">
+                                    变频器</a> | 
+                            
+			<a href="https://www.baidu.com/s?ie=utf-8&amp;f=3&amp;rsv_bp=1&amp;ch=1&amp;tn=04081028_dg&amp;wd=%E5%B7%A5%E4%B8%9A%E6%9C%BA%E5%99%A8%E4%BA%BA%20site%3Awww.ca800.com&amp;oq=%25E5%258F%2598%25E9%25A2%2591%25E5%2599%25A8%2520site%253Awww.ca800.com&amp;rsv_pq=87819e1900012414&amp;rsv_t=8a5aYldAOtRNkbObaNAwe1Veyr2AmRx0zqluntGQGHbmkix6JVIa1BfANI42fwdJfEk&amp;rqlang=cn&amp;rsv_enter=0&amp;inputT=843&amp;rsv_sug3=34&amp;rsv_sug1=6&amp;rsv_sug7=100&amp;rsv_n=2&amp;bs=%E5%8F%98%E9%A2%91%E5%99%A8%20site%3Awww.ca800.com" target="_blank" title="工业机器人">
+<h2 style=" font-size:12px; display:inline;">工业机器人</h2></a> | 
+			<a href="https://www.baidu.com/s?ie=utf-8&amp;f=8&amp;rsv_bp=1&amp;ch=1&amp;tn=04081028_dg&amp;wd=%E8%BF%90%E5%8A%A8%E6%8E%A7%E5%88%B6%20site%3Awww.ca800.com&amp;oq=%25E5%25B7%25A5%25E4%25B8%259A%25E6%259C%25BA%25E5%2599%25A8%25E4%25BA%25BA%2520site%253Awww.ca800.com&amp;rsv_pq=cf341d9900011b17&amp;rsv_t=af664Tpw7e%2Fy%2F9Pro3AeL2ywFmNDYLyvFI10aWxIkgfKYe1mTq8vZq9R5EccVKmur18&amp;rqlang=cn&amp;rsv_enter=0&amp;inputT=944&amp;rsv_n=2&amp;rsv_sug3=35&amp;bs=%E5%B7%A5%E4%B8%9A%E6%9C%BA%E5%99%A8%E4%BA%BA%20site%3Awww.ca800.com" target="_blank" title="运动控制">
+<h2 style=" font-size:12px; display:inline;">运动控制</h2></a> | 
+                                    <a href="https://www.baidu.com/s?ie=utf-8&amp;f=8&amp;rsv_bp=1&amp;ch=1&amp;tn=04081028_dg&amp;wd=%E5%B7%A5%E4%B8%9A4.0%20site%3Awww.ca800.com&amp;oq=%25E8%25BF%2590%25E5%258A%25A8%25E6%258E%25A7%25E5%2588%25B6%2520site%253Awww.ca800.com&amp;rsv_pq=85b335ab0000f1a9&amp;rsv_t=45daJcCQg6Dj15SMRMX%2FVGA0OnYRihEObDP%2Fk1EXtkov4wmQ6WP2%2BP4vltC4odK8e2Y&amp;rqlang=cn&amp;rsv_enter=0&amp;inputT=988&amp;rsv_n=2&amp;rsv_sug3=36&amp;bs=%E8%BF%90%E5%8A%A8%E6%8E%A7%E5%88%B6%20site%3Awww.ca800.com" target="_blank" title="工业4.0">
+<h2 style=" font-size:12px; display:inline;">工业4.0</h2></a> | 
+                                    <a href="https://www.baidu.com/s?ie=utf-8&amp;f=8&amp;rsv_bp=1&amp;ch=1&amp;tn=04081028_dg&amp;wd=%E6%99%BA%E8%83%BD%E5%88%B6%E9%80%A0%20site%3Awww.ca800.com&amp;oq=site%253Awww.ca800.com&amp;rsv_pq=91096e4500011f9e&amp;rsv_t=28801rE7N8ugNLce7OVzHw6XnZmFmk7mhKCy5lMp%2Fdy937jctS5rX%2FJ5G2sQPzardL8&amp;rqlang=cn&amp;rsv_enter=0&amp;inputT=759&amp;rsv_sug3=39&amp;rsv_n=2&amp;bs=site%3Awww.ca800.com" target="_blank" title="智能制造">
+<h2 style=" font-size:12px; display:inline;">智能制造</h2></a> | 
+                                    <a href="https://www.baidu.com/s?ie=utf-8&amp;f=8&amp;rsv_bp=1&amp;ch=1&amp;tn=04081028_dg&amp;wd=%E4%BA%92%E8%81%94%E7%BD%91%2B%20site%3Awww.ca800.com&amp;oq=%25E4%25BA%2592%25E8%2581%2594%25E7%25BD%2591%252B%2520site%253Awww.ca800.com&amp;rsv_pq=861a2aa5000136f7&amp;rsv_t=f5cdRQZcT8Ok%2BaD9r75OcUeVMFvNmBi1YIDR4nsEDOcoUwuWlZHFpMs%2FjzJTKo3tnc0&amp;rqlang=cn&amp;rsv_enter=0" target="_blank" title="互联网+">
+<h2 style=" font-size:12px; display:inline;">互联网+</h2></a> | 
+            </div>
+<div class="input-group">
+<a class="btn-select">
+<select class="tech" id="tech" name="tech" onchange="showValue(this)" style="width:70px">
+<option data-image="/skin/2016/images/icon/baidu.jpg" value="calendar">百度</option>
+<option data-image="/skin/2016/images/icon/icon-ser.png" value="shopping_cart">站内</option>
+</select>
+</a>
+<input class="form-control" id="keyword" onfocus="setDefaultButton('search_htbt')" type="text" value=""/>
+<span class="input-group-btn search-span">
+<button class="btn btn-default" id="search_htbt" onclick="searchByBaidu()" type="button">
+                     搜索
+                  </button>
+</span>
+<script>
+                   function searchByBaidu() {
+                       //var url = 'http://zhannei.baidu.com/cse/search?s=11497640653257248201&entry=1&area=1&q=';
+                       var url = '/common/searchkey.aspx?type='+$("#tech").val()+"&keyword=";
+                       if ($("#tech").val() == "shopping_cart") {
+                           //url = '/search/list.aspx?type=Article&wd=';
+                       }
+                       
+                        window.open(url + $("#keyword").val());
+                       
+                   }
+			   </script>
+</div>
+<div class="roll-news" style="width: 100%; overflow: hidden; height: 13.2392px; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;">
+<ul><li><a alt="实验室直播｜碳化硅MOSFET特性及驱动设计" href="/news/d_1o259jcd8fja1.html" target="_blank" title="实验室直播｜碳化硅MOSFET特性及驱动设计">实验室直播｜碳化硅MOSFET特性及</a></li><li><a alt="欧盟：未来推“量子互联网”" href="/news/d_1o259jc6bmp31.html" target="_blank" title="欧盟：未来推“量子互联网”">欧盟：未来推“量子互联网”</a></li><li><a alt="LG化学成全球最大动力电池厂商" href="/news/d_1o259ja39u7f1.html" target="_blank" title="LG化学成全球最大动力电池厂商">LG化学成全球最大动力电池厂商</a></li><div class="clear"></div></ul><ul><li><a alt="上海出台“新基建”行动方案" href="/news/d_1o259j9jcipe1.html" target="_blank" title="上海出台“新基建”行动方案">上海出台“新基建”行动方案</a></li><li><a alt="巴航工业拟寻求政府援助" href="/news/d_1o259j9gdpb41.html" target="_blank" title="巴航工业拟寻求政府援助">巴航工业拟寻求政府援助</a></li><li><a alt="西门子按原计划分拆西门子能源并上市" href="/news/d_1o259j9bu8ef1.html" target="_blank" title="西门子按原计划分拆西门子能源并上市">西门子按原计划分拆西门子能源并</a></li><div class="clear"></div></ul><ul><li><a alt="工信部新规划大力扶持NB-IoT " href="/news/d_1o259j874f7p1.html" target="_blank" title="工信部新规划大力扶持NB-IoT ">工信部新规划大力扶持NB-IoT </a></li><li><a alt="在线研讨会|2020工业以太网趋势" href="/news/d_1o259j7ie7qp1.html" target="_blank" title="在线研讨会|2020工业以太网趋势">在线研讨会|2020工业以太网趋势</a></li><li><a alt="直播|机械系统温度点检技术及工业总线故障快速检测定位" href="/news/d_1o259j7mj9181.html" target="_blank" title="直播|机械系统温度点检技术及工业总线故障快速检测定位">直播|机械系统温度点检技术及工业</a></li><div class="clear"></div></ul><ul><li><a alt="问卷福利|免费加送20个蓝牙耳机" href="/news/d_1o259ja8vsvj1.html" target="_blank" title="问卷福利|免费加送20个蓝牙耳机">问卷福利|免费加送20个蓝牙耳机</a></li><li><a alt="广东拟出台机器人产业集群行动计划" href="/news/d_1o259ge91iae1.html" target="_blank" title="广东拟出台机器人产业集群行动计划">广东拟出台机器人产业集群行动计划</a></li><li><a alt="1-3月煤炭开采和洗选业利润同比降29.9%" href="/news/d_1o259geaqpc61.html" target="_blank" title="1-3月煤炭开采和洗选业利润同比降29.9%">1-3月煤炭开采和洗选业利润同比降</a></li><div class="clear"></div></ul><ul><li><a alt="1-2月合成橡胶产量累计下降14.8%" href="/news/d_1o259ge4ivub1.html" target="_blank" title="1-2月合成橡胶产量累计下降14.8%">1-2月合成橡胶产量累计下降14</a></li><li><a alt="三菱重工拟6月完成对庞巴迪CRJ业务的收购" href="/news/d_1o259gdfd73c1.html" target="_blank" title="三菱重工拟6月完成对庞巴迪CRJ业务的收购">三菱重工拟6月完成对庞巴迪CRJ业</a></li><li><a alt="宝武钢铁产能跃居世界首位引日企担忧" href="/news/d_1o259gdvdtbc1.html" target="_blank" title="宝武钢铁产能跃居世界首位引日企担忧">宝武钢铁产能跃居世界首位引日企</a></li><div class="clear"></div></ul>
+<div class="clear"></div>
+</div>
+<script>                   $(".roll-news").slideUp();</script>
+</div>
+<div class="code">
+<ul>
+<li class="wxTag">
+<i class="icongfwx"></i>
+<span class="code_title">官方微信</span>
+<p class="wx-tag"><em class="sharp"></em><img alt="CA800二维码" height="110" src="images/wxdyhcode.jpg" width="110"/><span>微平台  大视野</span></p>
+</li>
+<li id="appTagLi">
+<i class="icongfapp"></i>
+<span>工控头条</span>
+<p class="app-tag" id="appTagP"><em class="sharp"></em><img alt="CA800二维码" height="110" src="images/appcode.jpg" width="110"/><span>工控头条App</span></p>
+</li>
+</ul>
+<!-- <img src="picture/code.jpg" alt="扫一扫">
+            <p>扫一扫<br />订阅今日头条</p> -->
+</div>
+<script type="text/javascript">
+            $(function () {
+                $("#appTagLi").mouseenter(function () {
+                    $(".app-tag").css("display", "block");
+                })
+                $("#appTagLi").mouseleave(function () {
+                    $(".app-tag").css("display", "none");
+                })
+                $(".wxTag").mouseenter(function () {
+                    $(".wx-tag").css("display", "block");
+                })
+                $(".wxTag").mouseleave(function () {
+                    $(".wx-tag").css("display", "none");
+                })
+            })
+
+    </script>
+<div class="sdMerry"></div>
+<div class="sdnavbg"></div>
+<div class="sdlogo"></div>
+<div class="header-sdlu"></div>
+<div class="clear"></div>
+</div>
+<div class="left-nav">
+<p>导航</p>
+<ul>
+<li><a href="#index_head"><img alt="首屏" src="/skin/2016/images/icon/left-01.png"/><div class="lfno">首屏</div></a></li>
+<li><a href="#index_info"><img alt="资讯" src="/skin/2016/images/icon/left-02.png"/><div class="lfno">资讯</div></a></li>
+<li><a href="#index_product"><img alt="产品" src="/skin/2016/images/icon/left-03.png"/><div class="lfno">产品</div></a></li>
+<li><a href="#index_train"><img alt="课程" src="/skin/2016/images/icon/left-04.png"/><div class="lfno">课程</div></a></li>
+<li><a href="#index_app"><img alt="案例" src="/skin/2016/images/icon/left-05.png"/><div class="lfno">案例</div></a></li>
+</ul>
+</div>
+<div class="right-nav">
+<a href="/c/" id="right_user_a" target="_blank"><p class="sdp"></p><img alt="我" id="right_user_pic" onerror="this.src='/c/images/icon05.png'" src="/c/images/icon05.png"/>我</a>
+<a href="http://sns.ca800.com/" target="_blank"><img alt="社区" src="skin/2016/images/icon/rnav2.png"/>社区</a>
+<a class="tan-up" href="javascript:void(0)"><img alt="客户端" src="skin/2016/images/icon/rnav3.png"/>客户端</a>
+<a href="/message/" target="_blank"><img alt="反馈" src="skin/2016/images/icon/rnav4.png"/>反馈</a>
+<a class="top"><img alt="" src="skin/2016/images/icon/rnav5.png"/>顶部</a>
+<div class="up-t brand-none"><em>×</em><img alt="X" src="skin/2016/images/default/code.jpg"/></div>
+<div class="sd_pendant"></div>
+</div>
+<div class="clear"></div>
+</header>
+<nav class="container navpro">
+<div class="menu-left">
+<p><img alt="工业互联" src="skin/2016/images/icon/menu1.png"/><span><a href="/gyhl/" target="_blank">工业互联</a></span></p>
+</div>
+<div class="menu">
+<a href="/news/" target="_blank">新闻</a>
+<a href="/tv/" target="_blank">视频</a>
+<a href="/special/" target="_blank">专题</a>
+<a href="/news/profile/l_1.html" target="_blank">专访</a>
+<a href="/exhibit/" target="_blank">展会</a>
+<a href="/company/" target="_blank">企业</a>
+<a href="/product/" target="_blank">产品</a>
+<a href="/biz/" target="_blank">供求</a>
+<a href="/book/" target="_blank">媒体</a>
+<a href="/talent/" target="_blank">招聘</a>
+<a href="/organise/" target="_blank">组织</a>
+<a href="/solicit/l_1.html" target="_blank">征文</a>
+</div>
+<div class="clear"></div>
+</nav>
+<div class="clear">
+</div>
+<section class="container sec-top">
+<div id="temp_navleft" style=" display:;"></div>
+<div class="sub-menu">
+<div class="menu-box" id="product_menu">
+<a href="/pt/plc.html" id="plc_submenu" onclick="SaveLeftNav('product','plc');" target="_blank">
+<img alt="PLC" src="skin/2016/images/icon/plc_submenu.png"/>PLC</a>
+<a href="/pt/inveter.html" id="inveter_submenu" onclick="SaveLeftNav('product','inveter');" target="_blank">
+<img alt="低压变频" src="skin/2016/images/icon/inveter_submenu.png"/>低压变频</a> <a href="/pt/robot.html" id="robot_submenu" onclick="SaveLeftNav('product','robot');" target="_blank">
+<img alt="机器人" src="skin/2016/images/icon/robot_submenu.png"/>机器人</a>
+<a href="/pt/servo.html" id="servo_submenu" onclick="SaveLeftNav('product','servo');" target="_blank">
+<img alt="伺服系统" src="skin/2016/images/icon/servo_submenu.png"/>伺服系统</a> <a href="/pt/sensor.html" id="sensor_submenu" onclick="SaveLeftNav('product','sensor');" target="_blank">
+<img alt="传感器" src="skin/2016/images/icon/sensor_submenu.png"/>传感器</a> <a href="/pt/hmi.html" id="hmi_submenu" onclick="SaveLeftNav('product','hmi');" target="_blank">
+<img alt="人机界面" src="skin/2016/images/icon/hmi_submenu.png"/>人机界面</a>
+<a href="/pt/machinevision.html" id="machinevision_submenu" onclick="SaveLeftNav('product','machinevision');" target="_blank">
+<img alt="机器视觉" src="skin/2016/images/icon/machinevision_submenu.png"/>机器视觉</a>
+<a href="/pt/controlsystem.html" id="controlsystem_submenu" onclick="SaveLeftNav('product','controlsystem');" target="_blank">
+<img alt="控制系统" src="skin/2016/images/icon/controlsystem_submenu.png"/>控制系统</a>
+<a href="/pt/software.html" id="software_submenu" onclick="SaveLeftNav('product','software');" target="_blank">
+<img alt="自动化软件" src="skin/2016/images/icon/software_submenu.png"/>自动化软件</a>
+<a href="/pt/embedded.html" id="embedded_submenu" onclick="SaveLeftNav('product','embedded');" target="_blank">
+<img alt="嵌入式系统" src="skin/2016/images/icon/embedded_submenu.png"/>嵌入式系统</a>
+<a href="/pt/instrument.html" id="instrument_submenu" onclick="SaveLeftNav('product','instrument');" target="_blank">
+<img alt="仪器仪表" src="skin/2016/images/icon/instrument_submenu.png"/>仪器仪表</a>
+<a href="/pt/powersupply.html" id="powersupply_submenu" onclick="SaveLeftNav('product','powersupply');" target="_blank">
+<img alt="工业电源" src="skin/2016/images/icon/powersupply_submenu.png"/>工业电源</a>
+<a href="/pt/remotemonitoring.html" id="remotemonitoring_submenu" onclick="SaveLeftNav('product','remotemonitoring');" target="_blank">
+<img alt="RTU" src="skin/2016/images/icon/remotemonitoring_submenu.png"/>RTU</a>
+<a href="/pt/motordrive.html" id="motordrive_submenu" onclick="SaveLeftNav('product','motordrive');" target="_blank">
+<img alt="电机传动" src="skin/2016/images/icon/motordrive_submenu.png"/>电机传动</a>
+<a href="/pt/fieldbus.html" id="fieldbus_submenu" onclick="SaveLeftNav('product','fieldbus');" target="_blank">
+<img alt="现场总线" src="skin/2016/images/icon/fieldbus_submenu.png"/>现场总线</a> <a href="/pt/industrialethernet.html" id="industrialethernet_submenu" onclick="SaveLeftNav('product','industrialethernet');" target="_blank">
+<img alt="工业以太网" src="skin/2016/images/icon/industrialethernet_submenu.png"/>工业以太网</a>
+<a href="/pt/hvdriver.html" id="hvdriver_submenu" onclick="SaveLeftNav('product','hvdriver');" target="_blank">
+<img alt="高压变频" src="skin/2016/images/icon/hvdriver_submenu.png"/>高压变频</a> <a href="/pt/powerelectronic.html" id="powerelectronic_submenu" onclick="SaveLeftNav('product','powerelectronic');" target="_blank">
+<img alt="电力电子" src="skin/2016/images/icon/powerelectronic_submenu.png"/>电力电子</a>
+<a href="/pt/components.html" id="components_submenu" onclick="SaveLeftNav('product','components');" target="_blank">
+<img alt="控制元件" src="skin/2016/images/icon/components_submenu.png"/>控制元件</a>
+<a href="/pt/ipc.html" id="ipc_submenu" onclick="SaveLeftNav('product','ipc');" target="_blank">
+<img alt="IPC" src="skin/2016/images/icon/ipc_submenu.png"/>IPC</a> <a href="/pt/industrialelectrical.html" id="industrialelectrical_submenu" onclick="SaveLeftNav('product','industrialelectrical');" target="_blank">
+<img alt="工业电器" src="skin/2016/images/icon/industrialelectrical_submenu.png"/>工业电器</a>
+<a href="/pt/fluidcontrol.html" id="fluidcontrol_submenu" onclick="SaveLeftNav('product','fluidcontrol');" target="_blank">
+<img alt="流体控制" src="skin/2016/images/icon/fluidcontrol_submenu.png"/>流体控制</a>
+<a href="/pt/industrialsafety.html" id="industrialsafety_submenu" onclick="SaveLeftNav('product','industrialsafety');" target="_blank">
+<img alt="工业安全" src="skin/2016/images/icon/industrialsafety_submenu.png"/>工业安全</a>
+<div class="bg-right">
+</div>
+<div class="bg-bottom bg-bot bg-bot1">
+<em>产</em><em>品</em><em>线</em></div>
+</div>
+<div class="menu-box" id="industry_menu">
+<a href="/industry/elec.html" id="elec_submenu" onclick="SaveLeftNav('industry','elec');" target="_blank">
+<img alt="电力" src="skin/2016/images/icon/elec_submenu.png"/>电力</a> <a href="/industry/energy.html" id="energy_submenu" onclick="SaveLeftNav('industry','energy');" target="_blank">
+<img alt="新能源" src="skin/2016/images/icon/energy_submenu.png"/>新能源</a> <a href="/industry/logistics.html" id="logistics_submenu" onclick="SaveLeftNav('industry','logistics');" target="_blank">
+<img alt="物流" src="skin/2016/images/icon/logistics_submenu.png"/>物流</a>
+<a href="/industry/petro.html" id="petro_submenu" onclick="SaveLeftNav('industry','petro');" target="_blank">
+<img alt="石油化工" src="skin/2016/images/icon/petro_submenu.png"/>石油化工</a> <a href="/industry/textile.html" id="textile_submenu" onclick="SaveLeftNav('industry','textile');" target="_blank">
+<img alt="纺织印染" src="skin/2016/images/icon/textile_submenu.png"/>纺织印染</a>
+<a href="/industry/jc.html" id="jc_submenu" onclick="SaveLeftNav('industry','jc');" target="_blank">
+<img alt="机床" src="skin/2016/images/icon/jc_submenu.png"/>机床</a> <a href="/industry/water.html" id="water_submenu" onclick="SaveLeftNav('industry','water');" target="_blank">
+<img alt="水工业" src="skin/2016/images/icon/water_submenu.png"/>水工业</a> <a href="/industry/construction.html" id="construction_submenu" onclick="SaveLeftNav('industry','construction');" target="_blank">
+<img alt="建筑楼宇" src="skin/2016/images/icon/construction_submenu.png"/>建筑楼宇</a>
+<a href="/industry/plastic.html" id="plastic_submenu" onclick="SaveLeftNav('industry','plastic');" target="_blank">
+<img alt="塑胶机械" src="skin/2016/images/icon/plastic_submenu.png"/>塑胶机械</a> <a href="/industry/automobile.html" id="automobile_submenu" onclick="SaveLeftNav('industry','automobile');" target="_blank">
+<img alt="汽车" src="skin/2016/images/icon/automobile_submenu.png"/>汽车</a>
+<a href="/industry/metallurgy.html" id="metallurgy_submenu" onclick="SaveLeftNav('industry','metallurgy');" target="_blank">
+<img alt="冶金" src="skin/2016/images/icon/metallurgy_submenu.png"/>冶金</a> <a href="/industry/traffic.html" id="traffic_submenu" onclick="SaveLeftNav('industry','traffic');" target="_blank">
+<img alt="交通" src="skin/2016/images/icon/traffic_submenu.png"/>交通</a> <a href="/industry/medicine.html" id="medicine_submenu" onclick="SaveLeftNav('industry','medicine');" target="_blank">
+<img alt="医药" src="skin/2016/images/icon/medicine_submenu.png"/>医药</a>
+<a href="/industry/bm.html" id="bm_submenu" onclick="SaveLeftNav('industry','bm');" target="_blank">
+<img alt="建材" src="skin/2016/images/icon/bm_submenu.png"/>建材</a> <a href="/industry/machinery.html" id="machinery_submenu" onclick="SaveLeftNav('industry','machinery');" target="_blank">
+<img alt="工程机械" src="skin/2016/images/icon/machinery_submenu.png"/>工程机械</a>
+<a href="/industry/paper.html" id="paper_submenu" onclick="SaveLeftNav('industry','paper');" target="_blank">
+<img alt="造纸" src="skin/2016/images/icon/paper_submenu.png"/>造纸</a>
+<div class="bg-right">
+</div>
+<div class="bg-bottom bg-bot bg-bot2">
+<em>行</em><em>业</em><em>线</em></div>
+</div>
+<div class="menu-box" id="everybody_menu">
+<a href="/train/" id="sns_submenu" onclick="SaveLeftNav('everybody','sns');" target="_blank">
+<img alt="自动化学院" src="skin/2016/images/icon/sns_submenu.png"/>自动化学院</a>
+<a href="/gyhl" id="gyhl_submenu" onclick="SaveLeftNav('everybody','gyhl');" target="_blank">
+<img alt="工业互联" src="skin/2016/images/icon/gyhl_submenu.png"/>工业互联</a>
+<a href="/news/" id="news_submenu" onclick="SaveLeftNav('everybody','news');" target="_blank">
+<img alt="新闻" src="skin/2016/images/icon/news_submenu.png"/>新闻</a> <a href="/biz/" id="biz_submenu" onclick="SaveLeftNav('everybody','biz');" target="_blank">
+<img alt="供求" src="skin/2016/images/icon/biz_submenu.png"/>供求</a> <a href="/organise/" id="organise_submenu" onclick="SaveLeftNav('everybody','organise');" target="_blank">
+<img alt="组织" src="skin/2016/images/icon/organise_submenu.png"/>组织</a>
+<a href="/down/" id="download_submenu" onclick="SaveLeftNav('everybody','download');" target="_blank">
+<img alt="下载" src="skin/2016/images/icon/download_submenu.png"/>下载</a> <a href="/apply/" id="apply_submenu" onclick="SaveLeftNav('everybody','apply');" target="_blank">
+<img alt="文库" src="skin/2016/images/icon/apply_submenu.png"/>文库</a> <a href="/special/" id="special_submenu" onclick="SaveLeftNav('everybody','special');" target="_blank">
+<img alt="专题" src="skin/2016/images/icon/special_submenu.png"/>专题</a>
+<a href="/exhibit/" id="exhibit_submenu" onclick="SaveLeftNav('everybody','exhibit');" target="_blank">
+<img alt="展会" src="skin/2016/images/icon/industrialelectrical_submenu.png"/>展会</a>
+<a href="/weekly/" id="weekly_submenu" onclick="SaveLeftNav('everybody','weekly');" target="_blank">
+<img alt="周刊" src="skin/2016/images/icon/weekly_submenu.png"/>周刊</a>
+<div class="bg-right">
+</div>
+<div class="bg-bottom bg-bot bg-bot3">
+<em>资</em><em>讯</em><em>线</em></div>
+</div>
+<div class="menu-box">
+<!--<a target="_blank" href="/appservice/">
+            <img src="skin/2016/images/icon/sub-menu09.png" alt="移动服务">移动服务</a> <a target="_blank"
+                href="/appservice/">
+                <img src="skin/2016/images/icon/sub-menu015.png" alt="营销工具">营销工具</a> <a target="_blank"
+                    href="/appservice/">
+                    <img src="skin/2016/images/icon/sub-menu012.png" alt="CRM">CRM</a>
+                    -->
+<a href="http://app.ca800.com/c/maf.apps.wesite.html" target="_blank"><img alt="微网站" src="skin/2016/images/icon/mobile/img03-11`1.png"/>微网站</a>
+<a href="http://app.ca800.com/c/maf.apps.wechat.html" target="_blank"><img alt="微信服务" src="skin/2016/images/icon/mobile/img03-03`1.png"/>微信服务</a>
+<a href="http://app.ca800.com/c/maf.apps.wechatmarketing.html" target="_blank"><img alt="微信营销" src="skin/2016/images/icon/mobile/img03-16`1.png"/>微信营销</a>
+<a href="http://app.ca800.com/c/maf.apps.edm.html" target="_blank"><img alt="EDM" src="skin/2016/images/icon/mobile/img03-12`1.png"/>EDM</a>
+<a href="http://app.ca800.com/c/maf.apps.sms.html" target="_blank"><img alt="SMS" src="skin/2016/images/icon/mobile/img03-13`1.png"/>SMS</a>
+<a href="http://app.ca800.com/c/maf.apps.zdhseo.html" target="_blank"><img alt="SEO" src="skin/2016/images/icon/mobile/img03-18`1.png"/>SEO</a>
+<a href="http://app.ca800.com/c/maf.apps.browsemonitoring.html" target="_blank"><img alt="流量监控" src="skin/2016/images/icon/mobile/img03-17`1.png"/>流量监控</a>
+<a href="http://app.ca800.com/c/maf.apps.browsemonitoring.html" target="_blank"><img alt="CRM" src="skin/2016/images/icon/mobile/img03-14`1.png"/>CRM</a>
+<a href="http://meeting.ca800.com/Admin/Index" target="_blank"><img alt="微群荟" src="skin/2016/images/icon/mobile/img03-15`1.png"/>微群荟</a>
+<div class="bg-bottom bg-bot4">
+<em>应</em><em>用</em><em>服</em><em>务</em></div>
+</div>
+<!-- 1/20左边菜单展现右边  -->
+<div class="main-me">
+<span id="product_menu_span"></span>
+<div class="show-me plc_quickmenu product_quickmenu">
+</div>
+<div class="show-me inveter_quickmenu product_quickmenu">
+</div>
+<div class="show-me robot_quickmenu product_quickmenu">
+</div>
+<div class="show-me servo_quickmenu product_quickmenu">
+</div>
+<div class="show-me sensor_quickmenu product_quickmenu">
+</div>
+<div class="show-me hmi_quickmenu product_quickmenu">
+</div>
+<div class="show-me machinevision_quickmenu product_quickmenu">
+</div>
+<div class="show-me controlsystem_quickmenu product_quickmenu">
+</div>
+<div class="show-me software_quickmenu product_quickmenu">
+</div>
+<div class="show-me embedded_quickmenu product_quickmenu">
+</div>
+<div class="show-me instrument_quickmenu product_quickmenu">
+</div>
+<div class="show-me powersupply_quickmenu product_quickmenu">
+</div>
+<div class="show-me remotemonitoring_quickmenu product_quickmenu">
+</div>
+<div class="show-me motordrive_quickmenu product_quickmenu">
+</div>
+<div class="show-me fieldbus_quickmenu product_quickmenu">
+</div>
+<div class="show-me industrialethernet_quickmenu product_quickmenu">
+</div>
+<div class="show-me hvdriver_quickmenu product_quickmenu">
+</div>
+<div class="show-me powerelectronic_quickmenu product_quickmenu">
+</div>
+<div class="show-me components_quickmenu product_quickmenu">
+</div>
+<div class="show-me ipc_quickmenu product_quickmenu">
+</div>
+<div class="show-me industrialelectrical_quickmenu product_quickmenu">
+</div>
+<div class="show-me fluidcontrol_quickmenu product_quickmenu">
+</div>
+<div class="show-me industrialsafety_quickmenu product_quickmenu">
+</div>
+<!------------行业线---------------->
+<span id="industry_menu_span"></span>
+<div class="show-me show-me1 elec_quickmenu industry_quickmenu">
+</div>
+<div class="show-me show-me1 energy_quickmenu industry_quickmenu">
+</div>
+<div class="show-me show-me1 logistics_quickmenu industry_quickmenu">
+</div>
+<div class="show-me show-me1 petro_quickmenu industry_quickmenu">
+</div>
+<div class="show-me show-me1 textile_quickmenu industry_quickmenu">
+</div>
+<div class="show-me show-me1 jc_quickmenu industry_quickmenu">
+</div>
+<div class="show-me show-me1 water_quickmenu industry_quickmenu">
+</div>
+<div class="show-me show-me1 construction_quickmenu industry_quickmenu">
+</div>
+<div class="show-me show-me1 plastic_quickmenu industry_quickmenu">
+</div>
+<div class="show-me show-me1 automobile_quickmenu industry_quickmenu">
+</div>
+<div class="show-me show-me1 metallurgy_quickmenu industry_quickmenu">
+</div>
+<div class="show-me show-me1 traffic_quickmenu industry_quickmenu">
+</div>
+<div class="show-me show-me1 medicine_quickmenu industry_quickmenu">
+</div>
+<div class="show-me show-me1 bm_quickmenu industry_quickmenu">
+</div>
+<div class="show-me show-me1 machinery_quickmenu industry_quickmenu">
+</div>
+<div class="show-me show-me1 paper_quickmenu industry_quickmenu">
+</div>
+<!-------------资讯线--------------->
+<div class="show-me show-me2 sns_quickmenu everybody_quickmenu">
+</div>
+<div class="show-me show-me2 gyhl_quickmenu everybody_quickmenu" style="width;
+            1px; height: 1px; font-size: 1px; line-height: 1px;">
+</div>
+<div class="show-me show-me2 news_quickmenu everybody_quickmenu">
+</div>
+<div class="show-me show-me2 biz_quickmenu everybody_quickmenu">
+</div>
+<div class="show-me show-me2 organise_quickmenu everybody_quickmenu">
+</div>
+<div class="show-me show-me2 download_quickmenu everybody_quickmenu" style="width;
+            1px; height: 1px; font-size: 1px; line-height: 1px;">
+</div>
+<div class="show-me show-me2 apply_quickmenu everybody_quickmenu">
+</div>
+<div class="show-me show-me2 special_quickmenu everybody_quickmenu">
+</div>
+<div class="show-me show-me2 exhibit_quickmenu everybody_quickmenu">
+<!--展会-->
+</div>
+<div class="show-me show-me2 weekly_quickmenu everybody_quickmenu" style="width;
+            1px; height: 1px; font-size: 1px; line-height: 1px;">
+<!--周刊-->
+</div>
+</div>
+</div>
+</section></form></body></html>

@@ -1,0 +1,688 @@
+<html lang="en"><head>
+<link href="/themes/dfcn_v3/js/home/swiper.min.css" rel="stylesheet"/>
+<link href="/themes/dfcn_v3/js/home/assets/font/iconfont.css" rel="stylesheet"/>
+<link href="/themes/dfcn_v3/js/home/assets/css/reset.css" rel="stylesheet"/>
+<link href="/themes/dfcn_v3/js/home/assets/css/index.css" rel="stylesheet"/>
+<title>DFRobot官网-创客_Makelog造物记_DF创客社区_DF创客商城</title>
+<meta content="DFRobot,Makelog造物记,创客教育,STEAM教育,创客商城,创客社区" name="keywords"/>
+<meta content="DFRobot为全球创客提供产品和服务的综合性平台，致力于为青少年和创客爱好者提供开源硬件产品、机器人及零配件产品。已为全球超200多个国家和地区8000多所学校20000多名老师和同学提供创客教育产品和STEAM教育方案。" name="description"/>
+</head>
+<body>
+<!--<div class="top-bar" id="topBar">
+  <div class="top-bar-box">
+    <div class="fl top-bar-item">
+      <span onclick="setHome()">设为首页</span>
+      <span onclick="addFavorite()">收藏本站</span>
+    </div>
+    <div class="fr top-bar-item">
+      <div class="top-bar-msg display-none">
+        <span class="iconfont icon-icons64x6479"></span>
+        <span class="msg-tips">消息</span>
+      </div>
+      <div class="top-bar-head display-none"></div>
+      <div class="top-bar-login" onclick="toLogin()">注册/登录</div>
+    </div>
+  </div>
+</div>-->
+<nav class="top-nav" id="topBar">
+<div class="top-nav-box">
+<div class="fl top-nav-logo">
+<img alt="DFRobot官网Logo" src="/themes/dfcn_v3/js/home/assets/images/DFRobotLogo.png"/>
+</div>
+<ul class="nav-ul clearfix">
+<a href="http://www.dfrobot.com.cn/">
+<li class="fl">首页</li>
+</a>
+<a href="https://makelog.dfrobot.com.cn/" target="_blank">
+<li class="fl">造物记</li>
+</a>
+<a href="http://mc.dfrobot.com.cn/" target="_blank">
+<li class="fl">DF创客社区</li>
+</a>
+<a href="http://www.dfrobot.com.cn/index.php" target="_blank">
+<li class="fl">DF创客商城</li>
+</a>
+<a href="http://wiki.dfrobot.com.cn" target="_blank">
+<li class="fl">产品资料库</li>
+</a>
+</ul>
+<div class="nav-search-box">
+<form action="home.php" id="form" method="get">
+<input name="act" type="hidden" value="search"/>
+<input name="s" type="hidden" value="community"/>
+<input maxlength="100" name="keyword" placeholder="搜索 社区帖子 | 产品 | 造物记 "/>
+<label class="nav-search-icon">
+<span class="iconfont icon-fangdajing"></span>
+</label>
+</form>
+</div>
+</div>
+</nav>
+<div class="home-container">
+<div class="home-container-box">
+<div class="top-section">
+<div class="fl top-section-left swiper-container swiper-container-initialized swiper-container-horizontal">
+<div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-850px, 0px, 0px);"><div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="3" style="width: 850px;">
+<a href="https://www.dfrobot.com.cn/goods-2580.html" target="_blank"><img alt="DFRobot最新创客活动-TinkerNode NB-IoT 物联网开发板 " src="http://ws.dfrobot.com.cn/FgfIcZ4Du-9ks3i8V4PhBfhlyfst"/></a>
+</div>
+<div class="swiper-slide swiper-slide-active" data-swiper-slide-index="0" style="width: 850px;">
+<a href="https://mc.dfrobot.com.cn/event/ai2020/" target="_blank"><img alt="DFRobot最新创客活动-英特尔®OpenVINO™领航者联盟 DFRobot行业AI开发者大赛" src="http://ws.dfrobot.com.cn/Ft1_foptha8Bc9sMdTOa6Dxqt1XG"/></a>
+</div>
+<div class="swiper-slide swiper-slide-next" data-swiper-slide-index="1" style="width: 850px;">
+<a href="https://mc.dfrobot.com.cn/thread-303185-1-1.html" target="_blank"><img alt="DFRobot最新创客活动-什么是MicroPyhthon？uPyCraft IDE编辑器" src="http://ws.dfrobot.com.cn/Fm0jZA_6HYXZ5NmiGtiK5DVHs8RP"/></a>
+</div>
+<div class="swiper-slide" data-swiper-slide-index="2" style="width: 850px;">
+<a href="https://www.dfrobot.com.cn/huskylens.html" target="_blank"><img alt="DFRobot最新创客活动-新品上市 二哈识图(HuskyLens)震撼首发" src="http://ws.dfrobot.com.cn/Fg8kzTgvpdGkVZGzuOWmnhGDXstK"/></a>
+</div>
+<div class="swiper-slide swiper-slide-duplicate-prev" data-swiper-slide-index="3" style="width: 850px;">
+<a href="https://www.dfrobot.com.cn/goods-2580.html" target="_blank"><img alt="DFRobot最新创客活动-TinkerNode NB-IoT 物联网开发板 " src="http://ws.dfrobot.com.cn/FgfIcZ4Du-9ks3i8V4PhBfhlyfst"/></a>
+</div>
+<div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="0" style="width: 850px;">
+<a href="https://mc.dfrobot.com.cn/event/ai2020/" target="_blank"><img alt="DFRobot最新创客活动-英特尔®OpenVINO™领航者联盟 DFRobot行业AI开发者大赛" src="http://ws.dfrobot.com.cn/Ft1_foptha8Bc9sMdTOa6Dxqt1XG"/></a>
+</div></div>
+<div aria-label="Previous slide" class="swiper-button-prev" role="button" tabindex="0">
+<span class="iconfont icon-zuoyoujiantou"></span>
+</div>
+<div aria-label="Next slide" class="swiper-button-next" role="button" tabindex="0">
+<span class="iconfont icon-zuoyoujiantou1"></span>
+</div>
+<span aria-atomic="true" aria-live="assertive" class="swiper-notification"></span></div>
+<div class="fr top-section-right">
+<a href="http://mindplus.cc/" target="_blank">
+<div class="top-right-box">
+<div class="top-right-img">
+<img alt="DFRobot最新创客大赛-Mind+重装归来 免费下载！" src="http://ws.dfrobot.com.cn/Fpb9WPMC8LQhxy_dK3IAm6Gyb2db?imageView2/1/w/309/h/133"/>
+</div>
+<div class="top-right-text">Mind+重装归来 免费下载！                            </div>
+</div>
+</a>
+<a href="http://mc.dfrobot.com.cn/thread-280249-1-1.html" target="_blank">
+<div class="top-right-box">
+<div class="top-right-img">
+<img alt="DFRobot最新创客大赛-会员福利大放送，创造力0元换好物" src="http://ws.dfrobot.com.cn/Fh7bxUa1me5kb7vSvLQxfxxgvzCG?imageView2/1/w/309/h/133"/>
+</div>
+<div class="top-right-text">会员福利大放送，创造力0元换好物                            </div>
+</div>
+</a>
+</div>
+</div>
+<div class="home-section">
+<div class="home-section-title title-before">学习</div>
+<ul class="learn-section clearfix">
+<li class="fl learn-section-item">
+<div class="learn-icon-box">
+<div>
+<img alt="DFRobot创客学习教程推荐Arduino教程" src="http://ws.dfrobot.com.cn/Fl7dM3CXU2trhX69vW1fhXlH8uFz"/>
+</div>
+<div class="learn-icon-text">Arduino</div>
+</div>
+<ul>
+<a href="http://mc.dfrobot.com.cn/thread-1019-1-1.html" target="_blank">
+<li>Lesson 01 -- 驱动安装及下载</li>
+</a>
+<a href="http://mc.dfrobot.com.cn/thread-1042-1-1.html" target="_blank">
+<li>Lesson 02 -- LED灯闪烁</li>
+</a>
+<a href="http://mc.dfrobot.com.cn/thread-1062-1-1.html" target="_blank">
+<li>Lesson 03 -- 做一个S.O.S求救</li>
+</a>
+<a href="http://mc.dfrobot.com.cn/thread-1316-1-1.html" target="_blank">
+<li>Lesson 04 -- 互动交通信号灯</li>
+</a>
+<a href="http://mc.dfrobot.com.cn/thread-1413-1-1.html" target="_blank">
+<li>Lesson 05 -- 呼吸灯</li>
+</a>
+</ul>
+<a href="http://mc.dfrobot.com.cn/thread-280817-1-1.html" target="_blank">
+<div class="learn-more">&gt;更多</div>
+</a>
+</li>
+<li class="fl learn-section-item">
+<div class="learn-icon-box">
+<div>
+<img alt="DFRobot创客学习教程推荐mind+教程" src="http://ws.dfrobot.com.cn/Fph19xLrPsf_-dVgcCwfupyrNX9p"/>
+</div>
+<div class="learn-icon-text">mind+</div>
+</div>
+<ul>
+<a href="http://mc.dfrobot.com.cn/thread-273137-1-1.html" target="_blank">
+<li>mind+零基础教程 新手村-神秘的Mind+</li>
+</a>
+<a href="http://mc.dfrobot.com.cn/thread-273142-1-1.html" target="_blank">
+<li>mind+零基础教程 新手村-装扮自己的舞台</li>
+</a>
+<a href="http://mc.dfrobot.com.cn/thread-273143-1-1.html" target="_blank">
+<li>mind+零基础教程 新手村-简单的角色动画</li>
+</a>
+<a href="http://mc.dfrobot.com.cn/thread-273152-1-1.html" target="_blank">
+<li>mind+零基础教程 欢乐谷-集结了</li>
+</a>
+<a href="http://mc.dfrobot.com.cn/thread-273154-1-1.html" target="_blank">
+<li>mind+零基础教程 欢乐谷 欢乐的聚会</li>
+</a>
+</ul>
+<a href="http://mc.dfrobot.com.cn/thread-273135-1-1.html" target="_blank">
+<div class="learn-more">&gt;更多</div>
+</a>
+</li>
+<li class="fl learn-section-item">
+<div class="learn-icon-box">
+<div>
+<img alt="DFRobot创客学习教程推荐micro:bit教程" src="http://ws.dfrobot.com.cn/Fve6kLqkQrRzu1ZYU52CTZB-qKvD"/>
+</div>
+<div class="learn-icon-text">micro:bit</div>
+</div>
+<ul>
+<a href="http://mc.dfrobot.com.cn/thread-37721-1-1.html" target="_blank">
+<li>micro:bit造物粒子01— 入门篇</li>
+</a>
+<a href="http://mc.dfrobot.com.cn/thread-37812-1-1.html" target="_blank">
+<li>micro:bit造物粒子02— 自制表情包</li>
+</a>
+<a href="http://mc.dfrobot.com.cn/thread-37826-1-1.html" target="_blank">
+<li>micro:bit造物粒子03— 闪烁的LED</li>
+</a>
+<a href="http://mc.dfrobot.com.cn/thread-38047-1-1.html" target="_blank">
+<li>micro:bit造物粒子04— 手控信号灯</li>
+</a>
+<a href="http://mc.dfrobot.com.cn/thread-38049-1-1.html" target="_blank">
+<li>micro:bit造物粒子05— 变速风扇</li>
+</a>
+</ul>
+<a href="http://mc.dfrobot.com.cn/thread-37721-1-1.html" target="_blank">
+<div class="learn-more">&gt;更多</div>
+</a>
+</li>
+<li class="fl learn-section-item">
+<div class="learn-icon-box">
+<div>
+<img alt="DFRobot创客学习教程推荐掌控板教程" src="http://ws.dfrobot.com.cn/Fp6JFDV465dCSI9Ylp-RKmNkNfX0"/>
+</div>
+<div class="learn-icon-text">掌控板</div>
+</div>
+<ul>
+<a href="http://mc.dfrobot.com.cn/thread-274978-1-1.html" target="_blank">
+<li>掌控板入门教程01 “秀”出我创意</li>
+</a>
+<a href="http://mc.dfrobot.com.cn/thread-275159-1-1.html" target="_blank">
+<li>掌控板入门教程02 趣味相框</li>
+</a>
+<a href="http://mc.dfrobot.com.cn/thread-275175-1-1.html" target="_blank">
+<li>掌控板入门教程03 节日的祝福</li>
+</a>
+<a href="http://mc.dfrobot.com.cn/thread-275284-1-1.html" target="_blank">
+<li>掌控板入门教程04 迷你动画片</li>
+</a>
+<a href="http://mc.dfrobot.com.cn/thread-275309-1-1.html" target="_blank">
+<li>掌控板入门教程05 心情灯</li>
+</a>
+</ul>
+<a href="http://mc.dfrobot.com.cn/thread-274975-1-1.html" target="_blank">
+<div class="learn-more">&gt;更多</div>
+</a>
+</li>
+</ul>
+</div>
+<div class="home-section">
+<div class="home-section-title makelog-icon">
+<a href="https://makelog.dfrobot.com.cn/" target="_blank"><span>Makelog造物记</span></a>
+<a href="https://makelog.dfrobot.com.cn/" target="_blank"><div class="view-all fr">查看全部</div></a>
+</div>
+<ul class="makelog-section clearfix">
+<a href="https://makelog.dfrobot.com.cn/article-308358.html" target="_blank">
+<li class="fl makelog-section-item">
+<div class="makelog-section-item-img">
+<img alt="DFRobot-Makelog造物记精选项目推荐祝贺！深圳8岁女孩斩获micro:bit全球青少年挑战活动亚太区冠军" src="https://makelogimg.dfrobot.com.cn/Fk8tDYc3Cgep6AknNk2qWUtepX7z?imageView2/1/w/186/h/186"/>
+</div>
+<div class="makelog-item-title">祝贺！深圳8岁女孩斩获micro:bit全球青少年挑战活动亚太区冠军</div>
+<div class="makelog-item-head">
+<img src="http://makelogimg.dfrobot.com.cn/FnkfLxvIdVbJ-6YKBvCcyQZPvziX"/>
+<span>粒子</span>
+</div>
+<div class="makelog-item-tag">
+<span>#micro:bit</span>
+<span>#科学探究</span>
+<span>#环境</span>
+</div>
+<div class="makelog-item-count">
+<span class="iconfont icon-msg"></span>
+<span>7</span>
+<span class="iconfont icon-xin"></span>
+<span>3</span>
+</div>
+</li>
+</a>
+<a href="https://makelog.dfrobot.com.cn/article-308363.html" target="_blank">
+<li class="fl makelog-section-item">
+<div class="makelog-section-item-img">
+<img alt="DFRobot-Makelog造物记精选项目推荐基于Mind+古诗词阅读项目" src="https://makelogimg.dfrobot.com.cn/158823102647842?imageView2/1/w/186/h/186"/>
+</div>
+<div class="makelog-item-title">基于Mind+古诗词阅读项目</div>
+<div class="makelog-item-head">
+<img src="http://makelogimg.dfrobot.com.cn/1552773564084"/>
+<span>rzegkly</span>
+</div>
+<div class="makelog-item-tag">
+<span>#Mind+</span>
+<span>#掌控板</span>
+<span>#二哈识图HUSKYLENS</span>
+<span>#人工智能</span>
+</div>
+<div class="makelog-item-count">
+<span class="iconfont icon-msg"></span>
+<span>0</span>
+<span class="iconfont icon-xin"></span>
+<span>3</span>
+</div>
+</li>
+</a>
+<a href="https://makelog.dfrobot.com.cn/article-308251.html" target="_blank">
+<li class="fl makelog-section-item">
+<div class="makelog-section-item-img">
+<img alt="DFRobot-Makelog造物记精选项目推荐【家有二哈】从晶体管到二哈" src="https://makelogimg.dfrobot.com.cn/FnhttwQqkoAB5yJhe8SE68UT3IJU?imageView2/1/w/186/h/186"/>
+</div>
+<div class="makelog-item-title">【家有二哈】从晶体管到二哈</div>
+<div class="makelog-item-head">
+<img src="http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTLksibnCgErxGoxQBqXHRN5T278moZ9Dib7EXWP1IagbTVicSZ7qwBHT8RJVe0IJ5RiaWKeLDzicTfyPZw/132"/>
+<span>Anders项勇</span>
+</div>
+<div class="makelog-item-tag">
+<span>#家有二哈欢乐多</span>
+</div>
+<div class="makelog-item-count">
+<span class="iconfont icon-msg"></span>
+<span>2</span>
+<span class="iconfont icon-xin"></span>
+<span>4</span>
+</div>
+</li>
+</a>
+<a href="https://makelog.dfrobot.com.cn/article-308281.html" target="_blank">
+<li class="fl makelog-section-item">
+<div class="makelog-section-item-img">
+<img alt="DFRobot-Makelog造物记精选项目推荐HuskyLens|桌面新宠--我的小二哈" src="https://makelogimg.dfrobot.com.cn/Fj4WW9tSARqnerjx_ciENENXxC0z?imageView2/1/w/186/h/186"/>
+</div>
+<div class="makelog-item-title">HuskyLens|桌面新宠--我的小二哈</div>
+<div class="makelog-item-head">
+<img src="http://makelogimg.dfrobot.com.cn/1569312155466"/>
+<span>rzyzzxw</span>
+</div>
+<div class="makelog-item-tag">
+<span>#二哈识图HUSKYLENS</span>
+<span>#人工智能</span>
+<span>#DF冬季AI挑战赛</span>
+</div>
+<div class="makelog-item-count">
+<span class="iconfont icon-msg"></span>
+<span>4</span>
+<span class="iconfont icon-xin"></span>
+<span>6</span>
+</div>
+</li>
+</a>
+<a href="https://makelog.dfrobot.com.cn/article-308317.html" target="_blank">
+<li class="fl makelog-section-item">
+<div class="makelog-section-item-img">
+<img alt="DFRobot-Makelog造物记精选项目推荐HUSKYLENS:AI无人售药机2.0" src="https://makelogimg.dfrobot.com.cn/FnhODEKQNZyfF8-H2M-fCKExGlTv?imageView2/1/w/186/h/186"/>
+</div>
+<div class="makelog-item-title">HUSKYLENS:AI无人售药机2.0</div>
+<div class="makelog-item-head">
+<img src="http://makelogimg.dfrobot.com.cn/1573886955115"/>
+<span>hockel</span>
+</div>
+<div class="makelog-item-tag">
+<span>#Arduino</span>
+<span>#掌控板</span>
+<span>#二哈识图HUSKYLENS</span>
+<span>#人工智能</span>
+<span>#DF冬季AI挑战赛</span>
+</div>
+<div class="makelog-item-count">
+<span class="iconfont icon-msg"></span>
+<span>8</span>
+<span class="iconfont icon-xin"></span>
+<span>20</span>
+</div>
+</li>
+</a>
+<a href="https://makelog.dfrobot.com.cn/article-308353.html" target="_blank">
+<li class="fl makelog-section-item">
+<div class="makelog-section-item-img">
+<img alt="DFRobot-Makelog造物记精选项目推荐3D打印音乐盒" src="https://makelogimg.dfrobot.com.cn/FtpMyXhtwL-S5OLXp1FwVlazmJTZ?imageView2/1/w/186/h/186"/>
+</div>
+<div class="makelog-item-title">3D打印音乐盒</div>
+<div class="makelog-item-head">
+<img src="http://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83eoIHicz9LeWnvRVwML1GQ967ib7XlU4fsFUxia3juEF1oyicianySttHbicq2eeicm518BUufpA1sZUNw3lg/132"/>
+<span>初见_已泯</span>
+</div>
+<div class="makelog-item-tag">
+<span>#手工制作</span>
+<span>#其它平台</span>
+<span>#3D打印</span>
+<span>#音乐</span>
+</div>
+<div class="makelog-item-count">
+<span class="iconfont icon-msg"></span>
+<span>1</span>
+<span class="iconfont icon-xin"></span>
+<span>2</span>
+</div>
+</li>
+</a>
+</ul>
+</div>
+<div class="home-section">
+<div class="home-section-title df-icon">
+<a href="http://mc.dfrobot.com.cn/" target="_blank"><span>DF创客社区</span></a>
+<a href="http://mc.dfrobot.com.cn/" target="_blank"><div class="view-all fr">查看全部</div></a>
+</div>
+<ul class="community-section clearfix">
+<a href="http://mc.dfrobot.com.cn/thread-302194-1-1.html" target="_blank">
+<li class="fl community-section-item">
+<div class="community-section-item-img">
+<img alt="DFRobot创客社区热门项目“懒癌”晚期的福利——快乐肥宅机 " src="http://ws.dfrobot.com.cn/Ft9FRfuc8wQLGOt104zYyRkEsSd8"/>
+</div>
+<div class="community-section-item-text">“懒癌”晚期的福利——快乐肥宅机 </div>
+</li>
+</a>
+<a href="http://mc.dfrobot.com.cn/thread-298615-1-1.html" target="_blank">
+<li class="fl community-section-item">
+<div class="community-section-item-img">
+<img alt="DFRobot创客社区热门项目你有多快？手“速”传感器了解一下" src="http://ws.dfrobot.com.cn/FrI8nBZDB8eQ6TlUiCwRcL8ZQxab"/>
+</div>
+<div class="community-section-item-text">你有多快？手“速”传感器了解一下</div>
+</li>
+</a>
+<a href="http://mc.dfrobot.com.cn/thread-296465-1-1.html" target="_blank">
+<li class="fl community-section-item">
+<div class="community-section-item-img">
+<img alt="DFRobot创客社区热门项目基于3D打印+Arduino的LED时钟" src="http://ws.dfrobot.com.cn/Frji4afb7KyPuu_JA6LnT2RfiKbh"/>
+</div>
+<div class="community-section-item-text">基于3D打印+Arduino的LED时钟</div>
+</li>
+</a>
+<a href="http://mc.dfrobot.com.cn/thread-297096-1-1.html" target="_blank">
+<li class="fl community-section-item">
+<div class="community-section-item-img">
+<img alt="DFRobot创客社区热门项目看得见的心跳" src="http://ws.dfrobot.com.cn/FixHowPIzikFoWbeaZjVWn4j0WIO"/>
+</div>
+<div class="community-section-item-text">看得见的心跳</div>
+</li>
+</a>
+<a href="http://mc.dfrobot.com.cn/thread-273922-1-1.html" target="_blank">
+<li class="fl community-section-item">
+<div class="community-section-item-img">
+<img alt="DFRobot创客社区热门项目Windloom织风-Arduino多媒体交互乐器" src="http://ws.dfrobot.com.cn/FjXEgCcU6ajdt7zGlOGQ5PbOZW5J"/>
+</div>
+<div class="community-section-item-text">Windloom织风-Arduino多媒体交互乐器</div>
+</li>
+</a>
+<a href="http://mc.dfrobot.com.cn/thread-289862-1-1.html" target="_blank">
+<li class="fl community-section-item">
+<div class="community-section-item-img">
+<img alt="DFRobot创客社区热门项目史上最全！绘制电路接线图教程" src="http://ws.dfrobot.com.cn/Fl4-uQJ7EofsWHj-sdBZ6aQJVV4h"/>
+</div>
+<div class="community-section-item-text">史上最全！绘制电路接线图教程</div>
+</li>
+</a>
+<a href="http://mc.dfrobot.com.cn/thread-280334-1-1.html" target="_blank">
+<li class="fl community-section-item">
+<div class="community-section-item-img">
+<img alt="DFRobot创客社区热门项目造一个美队的LED电子护盾Shield" src="http://ws.dfrobot.com.cn/Fipu57EJepwtx8GZmiQCGk-YKdDt"/>
+</div>
+<div class="community-section-item-text">造一个美队的LED电子护盾Shield</div>
+</li>
+</a>
+<a href="http://mc.dfrobot.com.cn/thread-280652-1-1.html" target="_blank">
+<li class="fl community-section-item">
+<div class="community-section-item-img">
+<img alt="DFRobot创客社区热门项目魔镜制作" src="http://ws.dfrobot.com.cn/Fjtgod73XKV3OVnOPViN1Af6nY03"/>
+</div>
+<div class="community-section-item-text">魔镜制作</div>
+</li>
+</a>
+</ul>
+</div>
+<div class="home-section">
+<div class="home-section-title df-icon">
+<a href="//www.dfrobot.com.cn/index.php" target="_blank"><span>DF创客商城</span></a>
+</div>
+<div class="home-section-item-title title-before">
+<a href="//www.dfrobot.com.cn/category-217.html" target="_blank"><span>新品</span></a>
+<a href="//www.dfrobot.com.cn/category-217.html" target="_blank"><div class="view-all fr">查看全部</div></a>
+</div>
+<ul class="mall-section clearfix">
+<a href="goods-2696.html" target="_blank">
+<li class="fl mall-section-item">
+<div class="mall-section-item-img">
+<img alt="DFRobot创客商城新品推荐0.91”128x32 I2C OLED贴片焊盘单色显示屏" src="https://ws.dfrobot.com.cn/FvvunrhZNehI1HLwW-zwR9TSGlx9?imageView2/1/w/276/h/276"/>
+</div>
+<div class="mall-section-item-title">0.91”128x32 I2C OLED贴片焊盘单色显示屏</div>
+<div class="mall-section-item-price">
+                                                                    ￥59.00<label>
+</label></div>
+</li>
+</a>
+<a href="goods-2695.html" target="_blank">
+<li class="fl mall-section-item">
+<div class="mall-section-item-img">
+<img alt="DFRobot创客商城新品推荐SHT30数字温湿度传感器" src="https://ws.dfrobot.com.cn/Fuyp4irixsg5gAKkUoCibhP2WQoo?imageView2/1/w/276/h/276"/>
+</div>
+<div class="mall-section-item-title">SHT30数字温湿度传感器</div>
+<div class="mall-section-item-price">
+                                                                    ￥49.00<label>
+</label></div>
+</li>
+</a>
+<a href="goods-2689.html" target="_blank">
+<li class="fl mall-section-item">
+<div class="mall-section-item-img">
+<img alt="DFRobot创客商城新品推荐Gravity SHT31-F数字温湿度传感器" src="https://ws.dfrobot.com.cn/FjTdwIrpySkLuD6jRaoC0ROUMGQv?imageView2/1/w/276/h/276"/>
+</div>
+<div class="mall-section-item-title">Gravity SHT31-F数字温湿度传感器</div>
+<div class="mall-section-item-price">
+                                                                    ￥69.00<label>
+</label></div>
+</li>
+</a>
+<a href="goods-2679.html" target="_blank">
+<li class="fl mall-section-item">
+<div class="mall-section-item-img">
+<img alt="DFRobot创客商城新品推荐麦昆工程队-装载机配件" src="https://ws.dfrobot.com.cn/FpI9qzmQNgQAh7uc0eFoKLCS6NAn?imageView2/1/w/276/h/276"/>
+</div>
+<div class="mall-section-item-title">麦昆工程队-装载机配件</div>
+<div class="mall-section-item-price">
+                                                                    ￥80.00<label>
+</label></div>
+</li>
+</a>
+</ul>
+<div class="home-section-item-title title-before">
+<a href="//www.dfrobot.com.cn/category-216-0-0-0-0-1-sales-DESC-1.html" target="_blank"><span>热卖推荐</span></a>
+<a href="//www.dfrobot.com.cn/category-216-0-0-0-0-1-sales-DESC-1.html" target="_blank"><div class="view-all fr">查看全部</div></a>
+</div>
+<ul class="mall-section clearfix">
+<a href="goods-1802.html" target="_blank">
+<li class="fl mall-section-item">
+<div class="mall-section-item-img">
+<img alt="DFRobot创客商城热卖推荐麦昆: micro:bit教育机器人 V4.0" src="https://ws.dfrobot.com.cn/FnWfHeq0wfnhdYofU7al9c1YdcfS?imageView2/1/w/276/h/276"/>
+</div>
+<div class="mall-section-item-title">麦昆: micro:bit教育机器人 V4.0</div>
+<div class="mall-section-item-price">
+                                                                   ￥168.00<label>
+</label></div>
+</li>
+</a>
+<a href="goods-2050.html" target="_blank">
+<li class="fl mall-section-item">
+<div class="mall-section-item-img">
+<img alt="DFRobot创客商城热卖推荐Gravity: 二哈识图（HuskyLens）AI 视觉传感器" src="https://ws.dfrobot.com.cn/FnUaheGA_yP8i36fm5eTxszo4FD2?imageView2/1/w/276/h/276"/>
+</div>
+<div class="mall-section-item-title">Gravity: 二哈识图（HuskyLens）AI 视觉传感器</div>
+<div class="mall-section-item-price">
+                                                                   ￥329.00<label>
+</label></div>
+</li>
+</a>
+<a href="goods-149.html" target="_blank">
+<li class="fl mall-section-item">
+<div class="mall-section-item-img">
+<img alt="DFRobot创客商城热卖推荐Arduino入门套件" src="https://ws.dfrobot.com.cn/FifwoNWd97UfGYDWJhc4-lPgySV8?imageView2/1/w/276/h/276"/>
+</div>
+<div class="mall-section-item-title">Arduino入门套件</div>
+<div class="mall-section-item-price">
+                                                                   ￥259.00<label>
+</label></div>
+</li>
+</a>
+<a href="goods-893.html" target="_blank">
+<li class="fl mall-section-item">
+<div class="mall-section-item-img">
+<img alt="DFRobot创客商城热卖推荐RPLIDAR A1 激光雷达扫描测距仪（改良版）" src="https://ws.dfrobot.com.cn/FnI1X2Bi_ynQPmHVk8McR2dBhlRO?imageView2/1/w/276/h/276"/>
+</div>
+<div class="mall-section-item-title">RPLIDAR A1 激光雷达扫描测距仪（改良版）</div>
+<div class="mall-section-item-price">
+                                                                   ￥498.00<label>
+</label></div>
+</li>
+</a>
+</ul>
+</div>
+<div class="link-section">
+<div class="link-section-title">友情链接</div>
+<ul class="link-section-box clearfix">
+<a href="https://www.arduino.cn/" target="_blank"><li>Arduino中文社区</li></a>
+<a href="https://www.gkzhan.com/" target="_blank"><li>智能制造网</li></a>
+<a href="https://robot.ofweek.com" target="_blank"><li>OFweek机器人网</li></a>
+<a href="http://bbs.elecfans.com" target="_blank"><li>电子发烧友论坛</li></a>
+<a href="http://www.jcpeixun.com" target="_blank"><li>技成培训</li></a>
+<a href="https://www.iczoom.com/" target="_blank"><li>拍明芯城元器件商城</li></a>
+<a href="https://www.szlcsc.com/" target="_blank"><li>电子元器件采购网</li></a>
+<a href="http://zhidx.com/" target="_blank"><li>智东西</li></a>
+</ul>
+</div>
+</div>
+</div>
+<a href="#topBar">
+<div class="go-top-icon"></div>
+</a>
+<footer class="footer">
+<div class="footer-section"></div>
+<div class="footer-container">
+<div class="footer-nav">
+<ul class="footer-nav-box clearfix">
+<li class="fl footer-nav-box-item">
+<div class="footer-nav-box-title">平台产品</div>
+<ul class="footer-nav-box-ul">
+<a href="https://makelog.dfrobot.com.cn/" target="_blank">
+<li>造物记</li>
+</a>
+<a href="http://mc.dfrobot.com.cn/" target="_blank">
+<li>DF创客社区</li>
+</a>
+<a href="http://www.dfrobot.com.cn/index.php" target="_blank">
+<li>DF创客商城</li>
+</a>
+<a href="http://edu.dfrobot.cn/" target="_blank">
+<li>蘑菇云创客教育</li>
+</a>
+<a href="http://www.makercarnival.org/" target="_blank">
+<li>创客嘉年华</li>
+</a>
+</ul>
+</li>
+<li class="fl footer-nav-box-item">
+<div class="footer-nav-box-title">媒体信息</div>
+<ul class="footer-nav-box-ul">
+<a href="https://weibo.com/dfrobot" rel="nofollow" target="_blank">
+<li class="sina-icon">新浪微博</li>
+</a>
+<a href="https://space.bilibili.com/29737524#!/" rel="nofollow" target="_blank">
+<li class="bili-icon">bilibili</li>
+</a>
+<a href="https://www.toutiao.com/c/user/5502405182/" rel="nofollow" target="_blank">
+<li class="toutiao-icon">今日头条</li>
+</a>
+</ul>
+</li>
+<li class="fl footer-nav-box-item">
+<div class="footer-nav-box-title">购买渠道</div>
+<ul class="footer-nav-box-ul">
+<a href="http://www.dfrobot.com.cn/index.php" target="_blank">
+<li>DF创客商城</li>
+</a>
+<a href="https://mall.jd.com/index-195980.html" rel="nofollow" target="_blank">
+<li>京东</li>
+</a>
+<a href="https://dfrobot.taobao.com/" rel="nofollow" target="_blank">
+<li>淘宝</li>
+</a>
+</ul>
+</li>
+<li class="fl footer-nav-box-item">
+<div class="footer-nav-box-title">关于DFRobot</div>
+<ul class="footer-nav-box-ul">
+<a href="http://www.dfrobot.cn/?page_id=734" target="_blank">
+<li>关于我们</li>
+</a>
+<a href="http://www.dfrobot.cn/?page_id=695" target="_blank">
+<li>招募精英</li>
+</a>
+<a href="http://www.dfrobot.cn/?page_id=47" target="_blank">
+<li>联系我们</li>
+</a>
+</ul>
+</li>
+</ul>
+</div>
+<div class="footer-bar">
+<div class="footer-bar-box">
+<span class="fl">上海智位机器人股份有限公司  沪ICP备09038501号-4</span>
+</div>
+</div>
+</div>
+</footer>
+<script src="https://ada.baidu.com/phone-tracker/getjs_bdtj?sid=2363901"></script><script charset="utf-8" src="https://ada.baidu.com/phone-tracker/insert_bdtj?sid=2363901"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script src="https://hm.baidu.com/hm.js?5fef7aee3daa348b1cc86301508b7e57"></script><script src="/themes/dfcn_v3/js/home/jquery-2.1.1.min.js"></script>
+<script src="/themes/dfcn_v3/js/home/index.js"></script>
+<script src="/themes/dfcn_v3/js/home/swiper.min.js"></script>
+<script>
+    var mySwiper = new Swiper ('.swiper-container', {
+        // direction: 'vertical', // 垂直切换选项
+        loop: true, // 循环模式选项
+        autoplay: {
+            disableOnInteraction: false,
+        },
+        // 如果需要前进后退按钮
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        }
+    })
+</script>
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?5fef7aee3daa348b1cc86301508b7e57";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+<script charset="UTF-8" src="http://tajs.qq.com/stats?sId=11346859" type="text/javascript"></script>
+<script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-33344788-1', 'auto');
+    ga('send', 'pageview');
+</script>
+</body></html>
